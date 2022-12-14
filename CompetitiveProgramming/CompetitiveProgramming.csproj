@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CoderByte\" />
+    <None Remove="CoderByte\First Factorial\" />
+    <None Remove="CoderByte\First Reverse\" />
+    <None Remove="LeetCode\" />
+    <None Remove="LeetCode\124. Binary Tree Maximum Path Sum\" />
+    <None Remove="LeetCode\198. House Robber\" />
+    <None Remove="LeetCode\2235. Add Two Integers\" />
+    <None Remove="LeetCode\70. Climbing Stairs\" />
+    <None Remove="CodeWars\" />
+    <None Remove="CodeWars\6kyu\Replace With Alphabet Position\" />
+    <None Remove="CodeWars\Eight Kyu\" />
+    <None Remove="CodeWars\Eight Kyu\Grasshopper Summation\" />
+    <None Remove="LeetCode\1. Two Sum\" />
+    <None Remove="CodeWars\Eight Kyu\Return Hello World\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CoderByte\" />
+    <Folder Include="CoderByte\First Factorial\" />
+    <Folder Include="CoderByte\First Reverse\" />
+    <Folder Include="LeetCode\" />
+    <Folder Include="LeetCode\124. Binary Tree Maximum Path Sum\" />
+    <Folder Include="LeetCode\198. House Robber\" />
+    <Folder Include="LeetCode\2235. Add Two Integers\" />
+    <Folder Include="LeetCode\70. Climbing Stairs\" />
+    <Folder Include="CodeWars\" />
+    <Folder Include="CodeWars\Six Kyu\Replace With Alphabet Position\" />
+    <Folder Include="CodeWars\Eight Kyu\" />
+    <Folder Include="CodeWars\Eight Kyu\Grasshopper Summation\" />
+    <Folder Include="LeetCode\1. Two Sum\" />
+    <Folder Include="CodeWars\Eight Kyu\Return Hello World\" />
+  </ItemGroup>
+</Project>
