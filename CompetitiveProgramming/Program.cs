@@ -16,6 +16,11 @@ namespace CompetitiveProgramming
             FirstReverseFunc();
             ReplaceWithAlphabetPositionFunc();
             GrasshopperSummationFunc();
+            NumberOfStepsFunc();
+            SumArrayFunc();
+            LongestCommonSubsequenceFunc();
+            RemoveFirstandLastCharacterFunc();
+            ItIsIsogramFunc();
         }
 
         public static void Space()
@@ -28,7 +33,7 @@ namespace CompetitiveProgramming
             Space();
             Console.WriteLine("--- {0} ---", StringTitle);
         }
-
+            
         private static void ClimbingStairsFunc()
         {
             Space();
@@ -106,6 +111,89 @@ namespace CompetitiveProgramming
             // Case 3
             int Case3_Grasshopper_Summation = CodeWars.EightKyu.GrasshopperSummation.Solution.summation(8);
             Console.WriteLine(Case3_Grasshopper_Summation);
+        }
+
+        private static void NumberOfStepsFunc()
+        {
+            Space();
+            Title("Number of Steps to Reduce a Number to Zero");
+            // Case 1
+            int Case1_NumberOfSteps = LeetCode.NumberofStepstoReduceaNumbertoZero.Solution.NumberOfSteps(14);
+            Console.WriteLine(Case1_NumberOfSteps);
+            // Case 2
+            int Case2_NumberOfSteps = LeetCode.NumberofStepstoReduceaNumbertoZero.Solution.NumberOfSteps(8);
+            Console.WriteLine(Case2_NumberOfSteps);
+            // Case 3
+            int Case3_NumberOfSteps = LeetCode.NumberofStepstoReduceaNumbertoZero.Solution.NumberOfSteps(123);
+            Console.WriteLine(Case3_NumberOfSteps);
+        }
+
+        private static void SumArrayFunc()
+        {
+            Space();
+            Title("Sum Array");
+            // Case 1
+            double[] sumArrayCase1 = { 10, 20, 30, 40 };
+            double sumArrayResultCase1 = CodeWars.EightKyu.SumArray.Solution.SumArray(sumArrayCase1);
+            Console.WriteLine(sumArrayResultCase1);
+            // Case 2
+            double[] sumArrayCase2 = Array.Empty<double>();
+            double sumArrayResultCase2 = CodeWars.EightKyu.SumArray.Solution.SumArray(sumArrayCase2);
+            Console.WriteLine(sumArrayResultCase2);
+            // Case 3
+            double[] sumArrayCase3 = { 0 };
+            double sumArrayResultCase3 = CodeWars.EightKyu.SumArray.Solution.SumArray(sumArrayCase3);
+            Console.WriteLine(sumArrayResultCase3);
+            // Case 4
+            double[] sumArrayCase4 = { 1, 5.2, 4, 0, -1 };
+            double sumArrayResultCase4 = CodeWars.EightKyu.SumArray.Solution.SumArray(sumArrayCase4);
+            Console.WriteLine(sumArrayResultCase4);
+        }
+
+        private static void LongestCommonSubsequenceFunc()
+        {
+            Space();
+            Title("Longest Common Subsequence");
+            // Case 1
+            string Case1Text1 = "test"; string Case1Text2 = "tesabcde";
+            int Case1Result = LeetCode.LongestCommonSubsequence.Solution.LongestCommonSubsequence(Case1Text1, Case1Text2);
+            Console.WriteLine(Case1Result);
+        }
+
+        private static void RemoveFirstandLastCharacterFunc()
+        {
+            Space();
+            Title("Remove First and Last Character");
+            // Case 1
+            string Case1 = "test";
+            string Case1Result = CodeWars.EightKyu.RemoveFirstandLastCharacter.Solution.Remove_char(Case1);
+            Console.WriteLine(Case1Result);
+        }
+
+        private static void ItIsIsogramFunc()
+        {
+            Space();
+            Title("It is an Isogram");
+            // Case 1
+            string Case1_Isogram = "test";
+            bool Case1_IsogramResult = CodeWars.SevenKyu.Isograms.Solution.IsIsogram(Case1_Isogram);
+            Console.WriteLine(Case1_IsogramResult);
+            // Case 2
+            string Case2_Isogram = "machine";
+            bool Case2_IsogramResult = CodeWars.SevenKyu.Isograms.Solution.IsIsogram(Case2_Isogram);
+            Console.WriteLine(Case2_IsogramResult);
+            // Case 3
+            string Case3_Isogram = "moose";
+            bool Case3_IsogramResult = CodeWars.SevenKyu.Isograms.Solution.IsIsogram(Case3_Isogram);
+            Console.WriteLine(Case3_IsogramResult);
+            // Case 4
+            string Case4_Isogram = "aba";
+            bool Case4_IsogramResult = CodeWars.SevenKyu.Isograms.Solution.IsIsogram(Case4_Isogram);
+            Console.WriteLine(Case4_IsogramResult);
+            // Case 5
+            string Case5_Isogram = "csharp";
+            bool Case5_IsogramResult = CodeWars.SevenKyu.Isograms.Solution.IsIsogram(Case5_Isogram);
+            Console.WriteLine(Case5_IsogramResult);
         }
     }
 }
