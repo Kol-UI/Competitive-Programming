@@ -21,6 +21,7 @@ namespace CompetitiveProgramming
             LongestCommonSubsequenceFunc();
             RemoveFirstandLastCharacterFunc();
             ItIsIsogramFunc();
+            CountDigitOneFunc();
         }
 
         public static void Space()
@@ -194,6 +195,24 @@ namespace CompetitiveProgramming
             string Case5_Isogram = "csharp";
             bool Case5_IsogramResult = CodeWars.SevenKyu.Isograms.Solution.IsIsogram(Case5_Isogram);
             Console.WriteLine(Case5_IsogramResult);
+        }
+
+        private static void CountDigitOneFunc()
+        {
+            Space();
+            Title("Count Digit One");
+            // Case 1
+            int Case1_233 = 1;
+            int Case1_233_Result = LeetCode.NumberofDigitOne.Solution.CountDigitOne(Case1_233);
+            Console.WriteLine(Case1_233_Result);
+            // Case 2
+            int Case2_233 = 13;
+            int Case2_233_Result = LeetCode.NumberofDigitOne.Solution.CountDigitOne(Case2_233);
+            Console.WriteLine(Case2_233_Result);
+            // Case 3
+            int Case3_233 = 0;
+            int Case3_233_Result = LeetCode.NumberofDigitOne.Solution.CountDigitOne(Case3_233);
+            Console.WriteLine(Case3_233_Result);
         }
     }
 }
