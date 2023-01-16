@@ -12,55 +12,23 @@
     <None Remove="CoderByte\First Factorial\" />
     <None Remove="CoderByte\First Reverse\" />
     <None Remove="LeetCode\" />
-    <None Remove="LeetCode\124. Binary Tree Maximum Path Sum\" />
-    <None Remove="LeetCode\198. House Robber\" />
-    <None Remove="LeetCode\2235. Add Two Integers\" />
-    <None Remove="LeetCode\70. Climbing Stairs\" />
     <None Remove="CodeWars\" />
     <None Remove="CodeWars\6kyu\Replace With Alphabet Position\" />
     <None Remove="CodeWars\Eight Kyu\" />
     <None Remove="CodeWars\Eight Kyu\Grasshopper Summation\" />
-    <None Remove="LeetCode\1. Two Sum\" />
     <None Remove="CodeWars\Eight Kyu\Return Hello World\" />
-    <None Remove="LeetCode\520. Detect Capital\" />
-    <None Remove="LeetCode\290. Word Pattern\" />
-    <None Remove="LeetCode\944. Delete Columns to Make Sorted\" />
-    <None Remove="LeetCode\622. Design Circular Queue\" />
-    <None Remove="LeetCode\284. Peeking Iterator\" />
-    <None Remove="LeetCode\2496. Maximum Value of a String in an Array\" />
-    <None Remove="LeetCode\337. House Robber III\" />
-    <None Remove="LeetCode\452. Minimum Number of Arrows to Burst Balloons\" />
-    <None Remove="LeetCode\2244. Minimum Rounds to Complete All Tasks\" />
-    <None Remove="LeetCode\217. Contains Duplicate\" />
-    <None Remove="LeetCode\1833. Maximum Ice Cream Bars\" />
-    <None Remove="LeetCode\347. Top K Frequent Elements\" />
+    <None Remove="LeetCode\1443 Minimum Time to Collect All Apples in a Tree\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CoderByte\" />
     <Folder Include="CoderByte\First Factorial\" />
     <Folder Include="CoderByte\First Reverse\" />
     <Folder Include="LeetCode\" />
-    <Folder Include="LeetCode\124. Binary Tree Maximum Path Sum\" />
-    <Folder Include="LeetCode\198. House Robber\" />
-    <Folder Include="LeetCode\2235. Add Two Integers\" />
-    <Folder Include="LeetCode\70. Climbing Stairs\" />
     <Folder Include="CodeWars\" />
     <Folder Include="CodeWars\Six Kyu\Replace With Alphabet Position\" />
     <Folder Include="CodeWars\Eight Kyu\" />
     <Folder Include="CodeWars\Eight Kyu\Grasshopper Summation\" />
-    <Folder Include="LeetCode\1. Two Sum\" />
     <Folder Include="CodeWars\Eight Kyu\Return Hello World\" />
-    <Folder Include="LeetCode\520. Detect Capital\" />
-    <Folder Include="LeetCode\290. Word Pattern\" />
-    <Folder Include="LeetCode\944. Delete Columns to Make Sorted\" />
-    <Folder Include="LeetCode\622. Design Circular Queue\" />
-    <Folder Include="LeetCode\284. Peeking Iterator\" />
-    <Folder Include="LeetCode\2496. Maximum Value of a String in an Array\" />
-    <Folder Include="LeetCode\337. House Robber III\" />
-    <Folder Include="LeetCode\452. Minimum Number of Arrows to Burst Balloons\" />
-    <Folder Include="LeetCode\2244. Minimum Rounds to Complete All Tasks\" />
-    <Folder Include="LeetCode\217. Contains Duplicate\" />
-    <Folder Include="LeetCode\1833. Maximum Ice Cream Bars\" />
-    <Folder Include="LeetCode\347. Top K Frequent Elements\" />
+    <Folder Include="LeetCode\1443 Minimum Time to Collect All Apples in a Tree\" />
   </ItemGroup>
 </Project>
