@@ -25,6 +25,8 @@ namespace CompetitiveProgramming
             ContainsDuplicateFunc();
             MaxIceCreamFunc();
             TopKFrequentFunc();
+            LongestPathWithDifferentAdjacentCharactersFunc();
+            LexicographicallySmallestEquivalentStringFunc();
         }
 
         public static void Space()
@@ -41,7 +43,7 @@ namespace CompetitiveProgramming
         private static void ClimbingStairsFunc()
         {
             Space();
-            Title("70. Climbing Stairs");
+            Title("70 Climbing Stairs");
             // Climbing Stairs
             // Case 1
             int Case1_70 = LeetCode.ClimbingStairs.Solution.ClimbStairs(2);
@@ -276,6 +278,46 @@ namespace CompetitiveProgramming
             int KCase3 = 1;
             int Case3_347_Result = LeetCode.MaximumIceCreamBars.Solution.MaxIceCream(Case3_347, KCase3);
             Console.WriteLine(Case3_347_Result);
+        }
+
+        private static void LongestPathWithDifferentAdjacentCharactersFunc()
+        {
+            Space();
+            Title("Longest Path With Different Adjacent Characters");
+            // Case 1
+            int[] Case1_2246 = { -1, 0, 0, 0 };
+            string s1 = "abacbe";
+            int Case1_2246_Result = LeetCode.LongestPathWithDifferentAdjacentCharacters.Solution.LongestPath(Case1_2246, s1);
+            Console.WriteLine(Case1_2246_Result);
+            // Case 2
+            int[] Case2_2246 = { 1, 1, 1, 2, 2, 3 };
+            string s2 = "aabc";
+            int Case2_2246_Result = LeetCode.LongestPathWithDifferentAdjacentCharacters.Solution.LongestPath(Case2_2246, s2);
+            Console.WriteLine(Case2_2246_Result);
+        }
+
+        private static void LexicographicallySmallestEquivalentStringFunc()
+        {
+            Space();
+            Title("Lexicographically Smallest Equivalent String");
+            // Case 1
+            string Case1_s1 = "parker";
+            string Case1_s2 = "morris";
+            string Case1_baseStr = "parser";
+            string Case1_1061_Result = LeetCode.LexicographicallySmallestEquivalentString.Solution.SmallestEquivalentString(Case1_s1, Case1_s2, Case1_baseStr);
+            Console.WriteLine(Case1_1061_Result);
+            // Case 2
+            string Case2_s1 = "hello";
+            string Case2_s2 = "world";
+            string Case2_baseStr = "hold";
+            string Case2_1061_Result = LeetCode.LexicographicallySmallestEquivalentString.Solution.SmallestEquivalentString(Case2_s1, Case2_s2, Case2_baseStr);
+            Console.WriteLine(Case2_1061_Result);
+            // Case 3
+            string Case3_s1 = "leetcode";
+            string Case3_s2 = "programs";
+            string Case3_baseStr = "sourcecode";
+            string Case3_1061_Result = LeetCode.LexicographicallySmallestEquivalentString.Solution.SmallestEquivalentString(Case3_s1, Case3_s2, Case3_baseStr);
+            Console.WriteLine(Case3_1061_Result);
         }
     }
 }
