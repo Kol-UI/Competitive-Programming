@@ -33,6 +33,7 @@ namespace CompetitiveProgramming
             InsertIntervalFunc();
             BestTimetoBuyandSellStockFunc();
             FirstUniqueCharacterinaStringFunc();
+            SingleNumberFunc();
         }
 
         public static void Space()
@@ -376,10 +377,6 @@ namespace CompetitiveProgramming
             };
             int[] newIntervalsCase1_57 = { 2, 5 };
             int[][] Case1_57_Result = LeetCode.InsertInterval.Solution.Insert(intervalsCase1_57, newIntervalsCase1_57);
-            foreach (var item in Case1_57_Result)
-            {
-                Console.WriteLine(item.ToString());
-            }
             // Case 2
             int[][] intervalsCase2_57 = new int[][]
             {
@@ -391,10 +388,6 @@ namespace CompetitiveProgramming
             };
             int[] newIntervalsCase2_57 = { 4, 8 };
             int[][] Case2_57_Result = LeetCode.InsertInterval.Solution.Insert(intervalsCase2_57, newIntervalsCase2_57);
-            foreach (var item2 in Case2_57_Result)
-            {
-                Console.WriteLine(item2.ToString());
-            }
         }
 
         private static void BestTimetoBuyandSellStockFunc()
@@ -429,7 +422,23 @@ namespace CompetitiveProgramming
             Console.WriteLine(Case3_387_Result);
         }
 
-
+        private static void SingleNumberFunc()
+        {
+            Space();
+            Title("Single Number");
+            // Case 1
+            int[] numsCase1_136 = { 2, 2, 1 };
+            int Case1_136_Result = LeetCode.SingleNumber.Solution.SingleNumber(numsCase1_136);
+            Console.WriteLine(Case1_136_Result);
+            // Case 2
+            int[] numsCase2_136 = { 4, 1, 2, 1, 2 };
+            int Case2_136_Result = LeetCode.SingleNumber.Solution.SingleNumber(numsCase2_136);
+            Console.WriteLine(Case2_136_Result);
+            // Case 3
+            int[] numsCase3_136 = { 1 };
+            int Case3_136_Result = LeetCode.SingleNumber.Solution.SingleNumber(numsCase3_136);
+            Console.WriteLine(Case3_136_Result);
+        }
 
     }
 }
