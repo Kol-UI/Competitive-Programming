@@ -30,6 +30,9 @@ namespace CompetitiveProgramming
             LexicographicallySmallestEquivalentStringFunc();
             FlipStringtoMonotoneIncreasingFunc();
             SearchA2DMatrixFunc();
+            InsertIntervalFunc();
+            BestTimetoBuyandSellStockFunc();
+            FirstUniqueCharacterinaStringFunc();
         }
 
         public static void Space()
@@ -361,8 +364,70 @@ namespace CompetitiveProgramming
             Console.WriteLine(Case2_74_Result);
         }
 
-        
+        private static void InsertIntervalFunc()
+        {
+            Space();
+            Title("Insert Interval");
+            // Case 1
+            int[][] intervalsCase1_57 = new int[][]
+            {
+                new int[] { 1, 3 },
+                new int[] { 6, 9 }
+            };
+            int[] newIntervalsCase1_57 = { 2, 5 };
+            int[][] Case1_57_Result = LeetCode.InsertInterval.Solution.Insert(intervalsCase1_57, newIntervalsCase1_57);
+            foreach (var item in Case1_57_Result)
+            {
+                Console.WriteLine(item.ToString());
+            }
+            // Case 2
+            int[][] intervalsCase2_57 = new int[][]
+            {
+                new int[] { 1, 2 },
+                new int[] { 3, 5 },
+                new int[] { 6, 7 },
+                new int[] { 8, 10 },
+                new int[] { 12, 16 }
+            };
+            int[] newIntervalsCase2_57 = { 4, 8 };
+            int[][] Case2_57_Result = LeetCode.InsertInterval.Solution.Insert(intervalsCase2_57, newIntervalsCase2_57);
+            foreach (var item2 in Case2_57_Result)
+            {
+                Console.WriteLine(item2.ToString());
+            }
+        }
 
+        private static void BestTimetoBuyandSellStockFunc()
+        {
+            Space();
+            Title("Best Time to Buy and Sell Stock");
+            // Case 1
+            int[] pricesCase1_121 = { 7, 1, 5, 3, 6, 4 };
+            int Case1_121_Result = LeetCode.BestTimetoBuyandSellStock.Solution.MaxProfit(pricesCase1_121);
+            Console.WriteLine(Case1_121_Result);
+            // Case 2
+            int[] pricesCase2_121 = { 7, 6, 4, 3, 1 };
+            int Case2_121_Result = LeetCode.BestTimetoBuyandSellStock.Solution.MaxProfit(pricesCase2_121);
+            Console.WriteLine(Case2_121_Result);
+        }
+
+        private static void FirstUniqueCharacterinaStringFunc()
+        {
+            Space();
+            Title("First Unique Character in a String");
+            // Case 1
+            string stringCase1_387 = "leetcode";
+            int Case1_387_Result = LeetCode.FirstUniqueCharacterinaString.Solution.FirstUniqChar(stringCase1_387);
+            Console.WriteLine(Case1_387_Result);
+            // Case 2
+            string stringCase2_387 = "loveleetcode";
+            int Case2_387_Result = LeetCode.FirstUniqueCharacterinaString.Solution.FirstUniqChar(stringCase2_387);
+            Console.WriteLine(Case2_387_Result);
+            // Case 3
+            string stringCase3_387 = "aabb";
+            int Case3_387_Result = LeetCode.FirstUniqueCharacterinaString.Solution.FirstUniqChar(stringCase3_387);
+            Console.WriteLine(Case3_387_Result);
+        }
 
 
 
