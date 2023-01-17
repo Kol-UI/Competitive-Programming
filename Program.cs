@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using CompetitiveProgramming.CoderByte;
 using CompetitiveProgramming.LeetCode;
+using CompetitiveProgramming.CodeWars;
 
 namespace CompetitiveProgramming
 {
@@ -25,6 +26,10 @@ namespace CompetitiveProgramming
             ContainsDuplicateFunc();
             MaxIceCreamFunc();
             TopKFrequentFunc();
+            LongestPathWithDifferentAdjacentCharactersFunc();
+            LexicographicallySmallestEquivalentStringFunc();
+            FlipStringtoMonotoneIncreasingFunc();
+            SearchA2DMatrixFunc();
         }
 
         public static void Space()
@@ -277,5 +282,89 @@ namespace CompetitiveProgramming
             int Case3_347_Result = LeetCode.MaximumIceCreamBars.Solution.MaxIceCream(Case3_347, KCase3);
             Console.WriteLine(Case3_347_Result);
         }
+
+        private static void LongestPathWithDifferentAdjacentCharactersFunc()
+        {
+            Space();
+            Title("Longest Path With Different Adjacent Characters");
+            // Case 1
+            int[] Case1_2246 = { -1, 0, 0, 0 };
+            string s1 = "abacbe";
+            int Case1_2246_Result = LeetCode.LongestPathWithDifferentAdjacentCharacters.Solution.LongestPath(Case1_2246, s1);
+            Console.WriteLine(Case1_2246_Result);
+            // Case 2
+            int[] Case2_2246 = { 1, 1, 1, 2, 2, 3 };
+            string s2 = "aabc";
+            int Case2_2246_Result = LeetCode.LongestPathWithDifferentAdjacentCharacters.Solution.LongestPath(Case2_2246, s2);
+            Console.WriteLine(Case2_2246_Result);
+        }
+
+        private static void LexicographicallySmallestEquivalentStringFunc()
+        {
+            Space();
+            Title("Lexicographically Smallest Equivalent String");
+            // Case 1
+            string Case1_s1 = "parker";
+            string Case1_s2 = "morris";
+            string Case1_baseStr = "parser";
+            string Case1_1061_Result = LeetCode.LexicographicallySmallestEquivalentString.Solution.SmallestEquivalentString(Case1_s1, Case1_s2, Case1_baseStr);
+            Console.WriteLine(Case1_1061_Result);
+            // Case 2
+            string Case2_s1 = "hello";
+            string Case2_s2 = "world";
+            string Case2_baseStr = "hold";
+            string Case2_1061_Result = LeetCode.LexicographicallySmallestEquivalentString.Solution.SmallestEquivalentString(Case2_s1, Case2_s2, Case2_baseStr);
+            Console.WriteLine(Case2_1061_Result);
+            // Case 3
+            string Case3_s1 = "leetcode";
+            string Case3_s2 = "programs";
+            string Case3_baseStr = "sourcecode";
+            string Case3_1061_Result = LeetCode.LexicographicallySmallestEquivalentString.Solution.SmallestEquivalentString(Case3_s1, Case3_s2, Case3_baseStr);
+            Console.WriteLine(Case3_1061_Result);
+        }
+
+        private static void FlipStringtoMonotoneIncreasingFunc()
+        {
+            Space();
+            Title("Flip String to Monotone Increasing");
+            // Case 1
+            string Case1_926 = "00110";
+            int Case1_926_Result = LeetCode.FlipStringtoMonotoneIncreasing.Solution.MinFlipsMonoIncr(Case1_926);
+            Console.WriteLine(Case1_926_Result);
+            // Case 2
+            string Case2_926 = "010110";
+            int Case2_926_Result = LeetCode.FlipStringtoMonotoneIncreasing.Solution.MinFlipsMonoIncr(Case2_926);
+            Console.WriteLine(Case2_926_Result);
+            // Case 3
+            string Case3_926 = "00011000";
+            int Case3_926_Result = LeetCode.FlipStringtoMonotoneIncreasing.Solution.MinFlipsMonoIncr(Case3_926);
+            Console.WriteLine(Case3_926_Result);
+        }
+
+        private static void SearchA2DMatrixFunc()
+        {
+            Space();
+            Title("Search a Matrix");
+            int[][] Matrix74 = new int[][]
+            {
+                new int[] { 1, 3, 5, 7 },
+                new int[] { 10, 11, 16, 20 },
+                new int[] { 23, 30, 34, 60 }
+            };
+            // Case 1
+            int Case1_74_Target = 3;
+            bool Case1_74_Result = LeetCode.Searcha2DMatrix.Solution.SearchMatrix(Matrix74, Case1_74_Target);
+            Console.WriteLine(Case1_74_Result);
+            // Case 2
+            int Case2_74_Target = 13;
+            bool Case2_74_Result = LeetCode.Searcha2DMatrix.Solution.SearchMatrix(Matrix74, Case2_74_Target);
+            Console.WriteLine(Case2_74_Result);
+        }
+
+        
+
+
+
+
     }
 }
