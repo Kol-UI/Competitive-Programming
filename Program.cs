@@ -34,6 +34,7 @@ namespace CompetitiveProgramming
             BestTimetoBuyandSellStockFunc();
             FirstUniqueCharacterinaStringFunc();
             SingleNumberFunc();
+            MaxSubarraySumCircularFunc();
         }
 
         public static void Space()
@@ -438,6 +439,24 @@ namespace CompetitiveProgramming
             int[] numsCase3_136 = { 1 };
             int Case3_136_Result = LeetCode.SingleNumber.Solution.SingleNumber(numsCase3_136);
             Console.WriteLine(Case3_136_Result);
+        }
+
+        private static void MaxSubarraySumCircularFunc()
+        {
+            Space();
+            Title("Max Subarray Sum Circular");
+            // Case 1
+            int[] numsCase1_918 = { 1, -2, 3, -2 };
+            int Case1_918_Result = LeetCode.MaximumSumCircularSubarray.Solution.MaxSubarraySumCircular(numsCase1_918);
+            Console.WriteLine(Case1_918_Result);
+            // Case 2
+            int[] numsCase2_918 = { 5, -3, 5 };
+            int Case2_918_Result = LeetCode.MaximumSumCircularSubarray.Solution.MaxSubarraySumCircular(numsCase2_918);
+            Console.WriteLine(Case2_918_Result);
+            // Case 3
+            int[] numsCase3_918 = { -3, -2, -3 };
+            int Case3_918_Result = LeetCode.MaximumSumCircularSubarray.Solution.MaxSubarraySumCircular(numsCase3_918);
+            Console.WriteLine(Case3_918_Result);
         }
 
     }
