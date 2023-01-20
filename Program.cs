@@ -35,6 +35,8 @@ namespace CompetitiveProgramming
             FirstUniqueCharacterinaStringFunc();
             SingleNumberFunc();
             MaxSubarraySumCircularFunc();
+            SubarraySumFunc();
+            SubarraysDivByKFunc();
         }
 
         public static void Space()
@@ -457,6 +459,38 @@ namespace CompetitiveProgramming
             int[] numsCase3_918 = { -3, -2, -3 };
             int Case3_918_Result = LeetCode.MaximumSumCircularSubarray.Solution.MaxSubarraySumCircular(numsCase3_918);
             Console.WriteLine(Case3_918_Result);
+        }
+
+        private static void SubarraySumFunc()
+        {
+            Space();
+            Title("Subarray Sum");
+            // Case 1
+            int[] numsCase1_560 = { 1, 1, 1 };
+            int kCase1 = 2;
+            int Case1_560_Result = LeetCode.SubarraySumEqualsK.Solution.SubarraySum(numsCase1_560, kCase1);
+            Console.WriteLine(Case1_560_Result);
+            // Case 2
+            int[] numsCase2_560 = { 1, 2, 3 };
+            int kCase2 = 3;
+            int Case2_560_Result = LeetCode.SubarraySumEqualsK.Solution.SubarraySum(numsCase2_560, kCase2);
+            Console.WriteLine(Case2_560_Result);
+        }
+
+        private static void SubarraysDivByKFunc()
+        {
+            Space();
+            Title("Subarrays Div By K");
+            // Case 1
+            int[] numsCase1_974 = { 4, 5, 0, -2, -3, 1 };
+            int kCase1 = 5;
+            int Case1_974_Result = LeetCode.SubarraySumEqualsK.Solution.SubarraySum(numsCase1_974, kCase1);
+            Console.WriteLine(Case1_974_Result);
+            // Case 2
+            int[] numsCase2_974 = { 5 };
+            int kCase2 = 9;
+            int Case2_974_Result = LeetCode.SubarraySumEqualsK.Solution.SubarraySum(numsCase2_974, kCase2);
+            Console.WriteLine(Case2_974_Result);
         }
 
     }
