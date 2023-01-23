@@ -37,6 +37,8 @@ namespace CompetitiveProgramming
             MaxSubarraySumCircularFunc();
             SubarraySumFunc();
             SubarraysDivByKFunc();
+            FindJudgeFunc();
+            RestoreIpAddressesFunc();
         }
 
         public static void Space()
@@ -491,6 +493,69 @@ namespace CompetitiveProgramming
             int kCase2 = 9;
             int Case2_974_Result = LeetCode.SubarraySumEqualsK.Solution.SubarraySum(numsCase2_974, kCase2);
             Console.WriteLine(Case2_974_Result);
+        }
+
+        private static void FindJudgeFunc()
+        {
+            Space();
+            Title("Find Judge");
+            // Case 1
+            int[][] trustCase1_997 = new int[][]
+            {
+                new int[] { 1, 2 }
+            };
+            int Case1_997 = 2;
+            int Case1_997_Result = LeetCode.FindtheTownJudge.Solution.FindJudge(Case1_997, trustCase1_997);
+            Console.WriteLine(Case1_997_Result);
+            // Case 2
+            int[][] trustCase2_997 = new int[][]
+            {
+                new int[] { 1, 3 },
+                new int[] { 2, 3 }
+            };
+            int Case2_997 = 3;
+            int Case2_997_Result = LeetCode.FindtheTownJudge.Solution.FindJudge(Case2_997, trustCase2_997);
+            Console.WriteLine(Case2_997_Result);
+            // Case 3
+            int[][] trustCase3_997 = new int[][]
+            {
+                new int[] { 1, 3 },
+                new int[] { 2, 3 },
+                new int[] { 3, 1 }
+            };
+            int Case3_997 = 3;
+            int Case3_997_Result = LeetCode.FindtheTownJudge.Solution.FindJudge(Case3_997, trustCase3_997);
+            Console.WriteLine(Case3_997_Result);
+        }
+
+        private static void RestoreIpAddressesFunc()
+        {
+            Space();
+            Title("Restore Ip Addresses");
+            // Case 1
+            string Case1_93 = "25525511135";
+            IList<string> Case1_93_Result = LeetCode.RestoreIPAddresses.Solution.RestoreIpAddresses(Case1_93);
+            foreach (var s in Case1_93_Result)
+            {
+                Console.Write("{0} ", s);
+            }
+            Space();
+            // Case 2
+            string Case2_93 = "0000";
+            IList<string> Case2_93_Result = LeetCode.RestoreIPAddresses.Solution.RestoreIpAddresses(Case2_93);
+            foreach (var s in Case2_93_Result)
+            {
+                Console.Write("{0} ", s);
+            }
+            Space();
+            // Case 3
+            string Case3_93 = "101023";
+            IList<string> Case3_93_Result = LeetCode.RestoreIPAddresses.Solution.RestoreIpAddresses(Case3_93);
+            foreach (var s in Case3_93_Result)
+            {
+                Console.Write("{0} ", s);
+            }
+            Space();
         }
 
     }
