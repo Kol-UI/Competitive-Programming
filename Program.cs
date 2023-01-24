@@ -40,6 +40,7 @@ namespace CompetitiveProgramming
             FindJudgeFunc();
             RestoreIpAddressesFunc();
             CheckifPointIsReachableFunc();
+            SnakesAndLaddersFunc();
         }
 
 
@@ -679,6 +680,35 @@ namespace CompetitiveProgramming
             int case2_targetY = 7;
             bool Case2_2543_Result = LeetCode.CheckifPointIsReachable.Solution.IsReachable(case2_targetX, case2_targetY);
             Console.WriteLine(Case2_2543_Result);
+        }
+
+
+        private static void SnakesAndLaddersFunc()
+        {
+            Space();
+            Title("Snakes And Ladders");
+
+            // Case 1
+            int[][] boardCase1_909 = new int[][]
+            {
+                new int[] { -1,-1,-1,-1,-1,-1 },
+                new int[] { -1, -1, -1, -1, -1, -1 },
+                new int[] { -1,-1,-1,-1,-1,-1 },
+                new int[] { -1,35,-1,-1,13,-1 },
+                new int[] { -1,-1,-1,-1,-1,-1 },
+                new int[] { -1,15,-1,-1,-1,-1 }
+            };
+            int Case1_909_Result = LeetCode.SnakesandLadders.Solution.SnakesAndLadders(boardCase1_909);
+            Console.WriteLine(Case1_909_Result);
+
+            // Case 2
+            int[][] boardCase2_909 = new int[][]
+            {
+                new int[] { -1,-1 },
+                new int[] { -1, 3 },
+            };
+            int Case2_909_Result = LeetCode.SnakesandLadders.Solution.SnakesAndLadders(boardCase2_909);
+            Console.WriteLine(Case2_909_Result);
         }
 
     }
