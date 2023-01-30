@@ -41,6 +41,7 @@ namespace CompetitiveProgramming
             RestoreIpAddressesFunc();
             CheckifPointIsReachableFunc();
             SnakesAndLaddersFunc();
+            FindClosestNodetoGivenTwoNodesFunc();
         }
 
 
@@ -709,6 +710,27 @@ namespace CompetitiveProgramming
             };
             int Case2_909_Result = LeetCode.SnakesandLadders.Solution.SnakesAndLadders(boardCase2_909);
             Console.WriteLine(Case2_909_Result);
+        }
+
+
+        private static void FindClosestNodetoGivenTwoNodesFunc()
+        {
+            Space();
+            Title("Find Closest Node to Given Two Nodes");
+
+            // Case 1
+            int[] edgesCase1_2359 = { 2, 2, 3, -1 };
+            int node1Case1_2359 = 0;
+            int node2Case1_2359 = 1;
+            int Case1_2359_Result = LeetCode.FindClosestNodetoGivenTwoNodes.Solution.ClosestMeetingNode(edgesCase1_2359, node1Case1_2359, node2Case1_2359);
+            Console.WriteLine(Case1_2359_Result);
+
+            // Case 2
+            int[] edgesCase2_2359 = { 1, 2, -1 };
+            int node1Case2_2359 = 0;
+            int node2Case2_2359 = 2;
+            int Case2_2359_Result = LeetCode.FindClosestNodetoGivenTwoNodes.Solution.ClosestMeetingNode(edgesCase2_2359, node1Case2_2359, node2Case2_2359);
+            Console.WriteLine(Case2_2359_Result);
         }
 
     }
