@@ -3,7 +3,7 @@ namespace CompetitiveProgramming.Codeforces.Watermelon
 {
 	public class Solution
 	{
-        public static void Main(string[] args)
+        public static void MainWatermelon(string[] args)
         {
             string? str = Console.ReadLine();
             var watermelon = new Watermelon(Int32.Parse(str!));

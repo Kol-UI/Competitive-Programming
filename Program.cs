@@ -42,6 +42,7 @@ namespace CompetitiveProgramming
             CheckifPointIsReachableFunc();
             SnakesAndLaddersFunc();
             FindClosestNodetoGivenTwoNodesFunc();
+            ShuffleTheArrayFunc();
         }
 
 
@@ -55,6 +56,12 @@ namespace CompetitiveProgramming
         {
             Space();
             Console.WriteLine("--- {0} ---", StringTitle);
+        }
+
+
+        public static void PrintArray(int[] array)
+        {
+            Console.WriteLine("[{0}]", string.Join(", ", array));
         }
 
 
@@ -731,6 +738,31 @@ namespace CompetitiveProgramming
             int node2Case2_2359 = 2;
             int Case2_2359_Result = LeetCode.FindClosestNodetoGivenTwoNodes.Solution.ClosestMeetingNode(edgesCase2_2359, node1Case2_2359, node2Case2_2359);
             Console.WriteLine(Case2_2359_Result);
+        }
+
+
+        private static void ShuffleTheArrayFunc()
+        {
+            Space();
+            Title("Shuffle The Array");
+
+            // Case 1
+            int[] arrayCase1_1470 = { 2, 5, 1, 3, 4, 7 };
+            int nCase1_1470 = 3;
+            int[] Case1_1470_Result = LeetCode.ShuffletheArray.Solution.Shuffle(arrayCase1_1470, nCase1_1470);
+            PrintArray(Case1_1470_Result);
+
+            // Case 2
+            int[] arrayCase2_1470 = { 1, 2, 3, 4, 4, 3, 2, 1 };
+            int nCase2_1470 = 4;
+            int[] Case2_1470_Result = LeetCode.ShuffletheArray.Solution.Shuffle(arrayCase2_1470, nCase2_1470);
+            PrintArray(Case2_1470_Result);
+            
+            // Case 3
+            int[] arrayCase3_1470 = { 1, 1, 2, 2 };
+            int nCase3_1470 = 2;
+            int[] Case3_1470_Result = LeetCode.ShuffletheArray.Solution.Shuffle(arrayCase3_1470, nCase3_1470);
+            PrintArray(Case3_1470_Result);
         }
 
     }
