@@ -43,6 +43,9 @@ namespace CompetitiveProgramming
             SnakesAndLaddersFunc();
             FindClosestNodetoGivenTwoNodesFunc();
             ShuffleTheArrayFunc();
+            CountOddNumbersInAnIntervalRangeFunc();
+            FruitIntoBasketsFunc();
+            JumpGameIIFunc();
         }
 
 
@@ -763,6 +766,64 @@ namespace CompetitiveProgramming
             int nCase3_1470 = 2;
             int[] Case3_1470_Result = LeetCode.ShuffletheArray.Solution.Shuffle(arrayCase3_1470, nCase3_1470);
             PrintArray(Case3_1470_Result);
+        }
+
+
+        private static void CountOddNumbersInAnIntervalRangeFunc()
+        {
+            Space();
+            Title("Count Odd Numbers in an Interval Range");
+
+            // Case 1
+            int lowCase1_1523 = 3;
+            int highCase1_1523 = 7;
+            int Case1_1523_Result = LeetCode.CountOddNumbersinanIntervalRange.Solution.CountOdds(lowCase1_1523, highCase1_1523);
+            Console.WriteLine(Case1_1523_Result);
+
+            // Case 2
+            int lowCase2_1523 = 8;
+            int highCase2_1523 = 10;
+            int Case2_1523_Result = LeetCode.CountOddNumbersinanIntervalRange.Solution.CountOdds(lowCase2_1523, highCase2_1523);
+            Console.WriteLine(Case2_1523_Result);
+        }
+
+
+        private static void FruitIntoBasketsFunc()
+        {
+            Space();
+            Title("Fruit Into Baskets");
+
+            // Case 1
+            int[] arrayCase1_904 = { 1, 2, 1 };
+            int Case1_904_Result = LeetCode.FruitIntoBaskets.Solution.TotalFruit(arrayCase1_904);
+            Console.WriteLine(Case1_904_Result);
+
+            // Case 2
+            int[] arrayCase2_904 = { 0, 1, 2, 2 };
+            int Case2_904_Result = LeetCode.FruitIntoBaskets.Solution.TotalFruit(arrayCase2_904);
+            Console.WriteLine(Case2_904_Result);
+
+            // Case 3
+            int[] arrayCase3_904 = { 1, 2, 3, 2, 2 };
+            int Case3_904_Result = LeetCode.FruitIntoBaskets.Solution.TotalFruit(arrayCase3_904);
+            Console.WriteLine(Case3_904_Result);
+        }
+
+
+        private static void JumpGameIIFunc()
+        {
+            Space();
+            Title("Jump Game II");
+
+            // Case 1
+            int[] arrayCase1_45 = { 2, 3, 1, 1, 4};
+            int Case1_45_Result = LeetCode.JumpGameII.Solution.Jump(arrayCase1_45);
+            Console.WriteLine(Case1_45_Result);
+
+            // Case 2
+            int[] arrayCase2_45 = { 2, 3, 0, 1, 4};
+            int Case2_45_Result = LeetCode.JumpGameII.Solution.Jump(arrayCase2_45);
+            Console.WriteLine(Case2_45_Result);
         }
 
     }
