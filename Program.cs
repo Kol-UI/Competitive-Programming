@@ -46,6 +46,8 @@ namespace CompetitiveProgramming
             CountOddNumbersInAnIntervalRangeFunc();
             FruitIntoBasketsFunc();
             JumpGameIIFunc();
+            EvenOrOddFunc();
+            NamingaCompanyFunc();
         }
 
 
@@ -824,6 +826,73 @@ namespace CompetitiveProgramming
             int[] arrayCase2_45 = { 2, 3, 0, 1, 4};
             int Case2_45_Result = LeetCode.JumpGameII.Solution.Jump(arrayCase2_45);
             Console.WriteLine(Case2_45_Result);
+        }
+
+
+        private static void EvenOrOddFunc()
+        {
+            Space();
+            Title("Even or Odd");
+
+            // Case 1
+            int case1IntEvenOrOdd = 2;
+            string Case1_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case1IntEvenOrOdd);
+
+            // Case 2
+            int case2IntEvenOrOdd = 0;
+            string Case2_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case2IntEvenOrOdd);
+
+            // Case 3
+            int case3IntEvenOrOdd = 1;
+            string Case3_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case3IntEvenOrOdd);
+
+            // Case 4
+            int case4IntEvenOrOdd = 7;
+            string Case4_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case4IntEvenOrOdd);
+
+            // Case 5
+            int case5IntEvenOrOdd = -1;
+            string Case5_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case5IntEvenOrOdd);
+
+            // Case 6
+            int case6IntEvenOrOdd = 1545452;
+            string Case6_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case6IntEvenOrOdd);
+
+            // Case 7
+            int case7IntEvenOrOdd = 17;
+            string Case7_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case7IntEvenOrOdd);
+
+            // Case 8
+            int case8IntEvenOrOdd = 78;
+            string Case8_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case8IntEvenOrOdd);
+
+            // Case 9
+            int case9IntEvenOrOdd = -123;
+            string Case9_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case9IntEvenOrOdd);
+
+            // Case 10
+            int case10IntEvenOrOdd = -456;
+            string Case10_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case10IntEvenOrOdd);
+
+            // Case 11
+            int case11IntEvenOrOdd = 74156741;
+            string Case11_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case11IntEvenOrOdd);
+        }
+
+        private static void NamingaCompanyFunc()
+        {
+            Space();
+            Title("Naming a Company");
+
+            // Case 1
+            string[] arrayCase1_2306 = { "coffee", "donuts", "time", "toffee"};
+            long Case1_2306_Result = LeetCode.NamingaCompany.Solution.DistinctNames(arrayCase1_2306);
+            Console.WriteLine(Case1_2306_Result);
+
+            // Case 2
+            string[] arrayCase2_2306 = { "lack", "back"};
+            long Case2_2306_Result = LeetCode.NamingaCompany.Solution.DistinctNames(arrayCase2_2306);
+            Console.WriteLine(Case2_2306_Result);
         }
 
     }
