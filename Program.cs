@@ -50,6 +50,10 @@ namespace CompetitiveProgramming
             NamingaCompanyFunc();
             AsFarfromLandasPossibleFunc();
             ShortestPathWithAlternatingColorsFunc();
+            MinimumFuelCosttoReporttotheCapitalFunc();
+            AddBinaryFunc();
+            OppositeNumberFunc();
+            ConvertaNumbertoaStringFunc();
         }
 
 
@@ -789,6 +793,12 @@ namespace CompetitiveProgramming
             int highCase2_1523 = 10;
             int Case2_1523_Result = LeetCode.CountOddNumbersinanIntervalRange.Solution.CountOdds(lowCase2_1523, highCase2_1523);
             Console.WriteLine(Case2_1523_Result);
+
+            // Case 3
+            int lowCase3_1523 = 21;
+            int highCase3_1523 = 22;
+            int Case3_1523_Result = LeetCode.CountOddNumbersinanIntervalRange.Solution.CountOdds(lowCase3_1523, highCase3_1523);
+            Console.WriteLine(Case3_1523_Result);
         }
 
 
@@ -972,6 +982,179 @@ namespace CompetitiveProgramming
             };
             int[] Case3_1129_Result = LeetCode.ShortestPathwithAlternatingColors.Solution.ShortestAlternatingPaths(nCase3_1129, redEdgesCase3_1129, blueEdgesCase3_1129);
             PrintArray(Case3_1129_Result);
+        }
+
+
+        private static void MinimumFuelCosttoReporttotheCapitalFunc()
+        {
+            Space();
+            Title("Minimum Fuel Cost to Report to the Capital");
+
+            // Case 1
+            int[][] roadsCase1_2477 = new int[][]
+            {
+                new int[] {0, 1},
+                new int[] {0, 2},
+                new int[] {0, 3}
+            };
+            int seatsCase1_2477 = 5;
+            long Case1_2477_Result = LeetCode.MinimumFuelCosttoReporttotheCapital.Solution.MinimumFuelCost(roadsCase1_2477, seatsCase1_2477);
+            Console.WriteLine(Case1_2477_Result);
+
+            // Case 2
+            int[][] roadsCase2_2477 = new int[][]
+            {
+                new int[] {3, 1},
+                new int[] {3, 2},
+                new int[] {1, 0},
+                new int[] {0, 4},
+                new int[] {0, 5},
+                new int[] {4, 6}
+            };
+            int seatsCase2_2477 = 2;
+            long Case2_2477_Result = LeetCode.MinimumFuelCosttoReporttotheCapital.Solution.MinimumFuelCost(roadsCase2_2477, seatsCase2_2477);
+            Console.WriteLine(Case2_2477_Result);
+
+            // Case 3
+            int[][] roadsCase3_2477 = new int[][] { };
+            int seatsCase3_2477 = 1;
+            long Case3_2477_Result = LeetCode.MinimumFuelCosttoReporttotheCapital.Solution.MinimumFuelCost(roadsCase3_2477, seatsCase3_2477);
+            Console.WriteLine(Case3_2477_Result);
+        }
+
+
+        private static void AddBinaryFunc()
+        {
+            Space();
+            Title("Add Binary");
+
+            // Case 1
+            string aCase1_67 = "11";
+            string bCase1_67 = "1";
+            string Case1_67_Result = LeetCode.AddBinary.Solution.AddBinary(aCase1_67, bCase1_67);
+            Console.WriteLine(Case1_67_Result);
+
+            // Case 2
+            string aCase2_67 = "1010";
+            string bCase2_67 = "1011";
+            string Case2_67_Result = LeetCode.AddBinary.Solution.AddBinary(aCase2_67, bCase2_67);
+            Console.WriteLine(Case2_67_Result);
+        }
+
+
+        private static void OppositeNumberFunc()
+        {
+            Space();
+            Title("Opposite number");
+            System.Random random = new System.Random();
+
+            // Case 1
+            int case1IntOppositeNumber = 1;
+            int Case1_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case1IntOppositeNumber);
+            Console.WriteLine(Case1_OppositeNumber_Result);
+
+            // Case 2
+            int case2IntOppositeNumber = -1;
+            int Case2_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case2IntOppositeNumber);
+            Console.WriteLine(Case2_OppositeNumber_Result);            
+
+            // Case 3
+            int case3IntOppositeNumber = 14;
+            int Case3_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case3IntOppositeNumber);
+            Console.WriteLine(Case3_OppositeNumber_Result);
+
+            // Case 4
+            int case4IntOppositeNumber = -14;
+            int Case4_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case4IntOppositeNumber);
+            Console.WriteLine(Case4_OppositeNumber_Result);
+
+            // Case 5
+            int case5IntOppositeNumber = 34;
+            int Case5_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case5IntOppositeNumber);
+            Console.WriteLine(Case5_OppositeNumber_Result);
+
+            // Case 6
+            int case6IntOppositeNumber = -34;
+            int Case6_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case6IntOppositeNumber);
+            Console.WriteLine(Case6_OppositeNumber_Result);
+
+            // Case 7
+            int case7IntOppositeNumber = 0;
+            int Case7_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case7IntOppositeNumber);
+            Console.WriteLine(Case7_OppositeNumber_Result);
+
+            // Case 8
+            int case8IntOppositeNumber = random.Next();
+            int Case8_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case8IntOppositeNumber);
+            Console.WriteLine(Case8_OppositeNumber_Result);
+            
+            // Case 9
+            int case9IntOppositeNumber = random.Next();
+            int Case9_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case9IntOppositeNumber);
+            Console.WriteLine(Case9_OppositeNumber_Result);
+
+            // Case 10
+            int case10IntOppositeNumber = random.Next();
+            int Case10_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case10IntOppositeNumber);
+            Console.WriteLine(Case10_OppositeNumber_Result);
+        }
+
+
+        private static void ConvertaNumbertoaStringFunc()
+        {
+            Space();
+            Title("Convert a Number to a String");
+            System.Random random = new System.Random();
+
+            // Case 1
+            int case1IntToString = 123;
+            string Case1_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case1IntToString);
+            Console.WriteLine(Case1_IntToString_Result);
+
+            // Case 2
+            int case2IntToString = 999;
+            string Case2_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case2IntToString);
+            Console.WriteLine(Case2_IntToString_Result);
+
+            // Case 3
+            int case3IntToString = -100;
+            string Case3_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case3IntToString);
+            Console.WriteLine(Case3_IntToString_Result);
+
+            // Case 4
+            int case4IntToString = 67;
+            string Case4_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case4IntToString);
+            Console.WriteLine(Case4_IntToString_Result);
+
+            // Case 5
+            int case5IntToString = 79585;
+            string Case5_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case5IntToString);
+            Console.WriteLine(Case5_IntToString_Result);
+
+            // Case 6
+            int case6IntToString = 1 + 2;
+            string Case6_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case6IntToString);
+            Console.WriteLine(Case6_IntToString_Result);
+
+            // Case 7
+            int case7IntToString = 1 - 2;
+            string Case7_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case7IntToString);
+            Console.WriteLine(Case7_IntToString_Result);
+
+            // Case 8
+            int case8IntToString = random.Next();
+            string Case8_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case8IntToString);
+            Console.WriteLine(Case8_IntToString_Result);
+
+            // Case 9
+            int case9IntToString = random.Next();
+            string Case9_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case9IntToString);
+            Console.WriteLine(Case9_IntToString_Result);
+
+            // Case 10
+            int case10IntToString = random.Next();
+            string Case10_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case10IntToString);
+            Console.WriteLine(Case10_IntToString_Result);
         }
 
     }
