@@ -48,6 +48,8 @@ namespace CompetitiveProgramming
             JumpGameIIFunc();
             EvenOrOddFunc();
             NamingaCompanyFunc();
+            AsFarfromLandasPossibleFunc();
+            ShortestPathWithAlternatingColorsFunc();
         }
 
 
@@ -893,6 +895,83 @@ namespace CompetitiveProgramming
             string[] arrayCase2_2306 = { "lack", "back"};
             long Case2_2306_Result = LeetCode.NamingaCompany.Solution.DistinctNames(arrayCase2_2306);
             Console.WriteLine(Case2_2306_Result);
+        }
+
+
+        private static void AsFarfromLandasPossibleFunc()
+        {
+            Space();
+            Title("As Far from Land as Possible");
+
+            // Case 1
+            int[][] gridCase1_1162 = new int[][]
+            {
+                new int[] {1, 0, 1},
+                new int[] {0, 0, 0},
+                new int[] {1, 0, 1}
+            };
+            int Case1_1162_Result = LeetCode.AsFarfromLandasPossible.Solution.MaxDistance(gridCase1_1162);
+            Console.WriteLine(Case1_1162_Result);
+
+            // Case 2
+            int[][] gridCase2_1162 = new int[][]
+            {
+                new int[] {1, 0, 0},
+                new int[] {0, 0, 0},
+                new int[] {0, 0, 0}
+            };
+            int Case2_1162_Result = LeetCode.AsFarfromLandasPossible.Solution.MaxDistance(gridCase2_1162);
+            Console.WriteLine(Case2_1162_Result);
+        }
+
+
+        private static void ShortestPathWithAlternatingColorsFunc()
+        {
+            Space();
+            Title("Shortest Path With Alternating Colors");
+
+            // Case 1
+            int nCase1_1129 = 3;
+            int[][] redEdgesCase1_1129 = new int[][]
+            {
+                new int[] {0, 1},
+                new int[] {1, 2}
+            };
+            int[][] blueEdgesCase1_1129 = new int[][] { };
+            int[] Case1_1129_Result = LeetCode.ShortestPathwithAlternatingColors.Solution.ShortestAlternatingPaths(nCase1_1129, redEdgesCase1_1129, blueEdgesCase1_1129);
+            PrintArray(Case1_1129_Result);
+
+            // Case 2
+            int nCase2_1129 = 3;
+            int[][] redEdgesCase2_1129 = new int[][]
+            {
+                new int[] {0, 1}
+            };
+            int[][] blueEdgesCase2_1129 = new int[][]
+            {
+                new int[] {2, 1}
+            };
+            int[] Case2_1129_Result = LeetCode.ShortestPathwithAlternatingColors.Solution.ShortestAlternatingPaths(nCase2_1129, redEdgesCase2_1129, blueEdgesCase2_1129);
+            PrintArray(Case2_1129_Result);
+
+            // Case 3
+            int nCase3_1129 = 7;
+            int[][] redEdgesCase3_1129 = new int[][]
+            {
+                new int[] {0, 1},
+                new int[] {0, 2},
+                new int[] {1, 4},
+                new int[] {1, 2},
+                new int[] {2, 3}
+            };
+            int[][] blueEdgesCase3_1129 = new int[][]
+            {
+                new int[] {1, 2},
+                new int[] {2, 5},
+                new int[] {3, 6}
+            };
+            int[] Case3_1129_Result = LeetCode.ShortestPathwithAlternatingColors.Solution.ShortestAlternatingPaths(nCase3_1129, redEdgesCase3_1129, blueEdgesCase3_1129);
+            PrintArray(Case3_1129_Result);
         }
 
     }
