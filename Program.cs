@@ -54,6 +54,11 @@ namespace CompetitiveProgramming
             AddBinaryFunc();
             OppositeNumberFunc();
             ConvertaNumbertoaStringFunc();
+            DefanginganIPAddressFunc();
+            FindLuckyIntegerinanArrayFunc();
+            ConvertbooleanvaluestostringsYesorNoFunc();
+            SumOfPositiveFunc();
+            StringRepeatFunc();
         }
 
 
@@ -1155,6 +1160,218 @@ namespace CompetitiveProgramming
             int case10IntToString = random.Next();
             string Case10_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case10IntToString);
             Console.WriteLine(Case10_IntToString_Result);
+        }
+
+
+        private static void DefanginganIPAddressFunc()
+        {
+            Space();
+            Title("Defanging an IP Address");
+
+            // Case 1
+            string Case1_1108 = "1.1.1.1";
+            string Case1_1108_Result = LeetCode.DefanginganIPAddress.Solution.DefangIPaddr(Case1_1108);
+            Console.WriteLine(Case1_1108_Result);
+
+            // Case 2
+            string Case2_1108 = "255.100.50.0";
+            string Case2_1108_Result = LeetCode.DefanginganIPAddress.Solution.DefangIPaddr(Case2_1108);
+            Console.WriteLine(Case2_1108_Result);
+        }
+
+
+        private static void FindLuckyIntegerinanArrayFunc()
+        {
+            Space();
+            Title("Find Lucky Integer in an Array");
+            System.Random random = new System.Random();
+
+            // Case 1
+            int[] arrCase1_1394 = { 2, 2, 3, 4 };
+            int Case1_1394_Result = LeetCode.FindLuckyIntegerinanArray.Solution.FindLucky(arrCase1_1394);
+            Console.WriteLine(Case1_1394_Result);
+
+            // Case 2
+            int[] arrCase2_1394 = { 1, 2, 2, 3, 3, 3 };
+            int Case2_1394_Result = LeetCode.FindLuckyIntegerinanArray.Solution.FindLucky(arrCase2_1394);
+            Console.WriteLine(Case2_1394_Result);
+
+            // Case 3
+            int[] arrCase3_1394 = { 2, 2, 2, 3, 3 };
+            int Case3_1394_Result = LeetCode.FindLuckyIntegerinanArray.Solution.FindLucky(arrCase3_1394);
+            Console.WriteLine(Case3_1394_Result);
+            
+            // Case 4
+            int value1 = random.Next(1, 5);
+            int value2 = random.Next(1, 5);
+            int value3 = random.Next(1, 5);
+            int value4 = random.Next(1, 5);
+            int[] arrCase4_1394 = { value1, value2, value3, value4 };
+            int Case4_1394_Result = LeetCode.FindLuckyIntegerinanArray.Solution.FindLucky(arrCase4_1394);
+            Console.WriteLine(Case4_1394_Result);
+        }
+
+
+        private static void ConvertbooleanvaluestostringsYesorNoFunc()
+        {
+            Space();
+            Title("Convert boolean values to strings Yes or No");
+
+            // Case 1
+            bool boolCase1 = false;
+            string Case1_Result = CodeWars.EightKyu.ConvertbooleanvaluestostringsYesorNo.Solution.boolToWord(boolCase1);
+            Console.WriteLine(Case1_Result);
+
+            // Case 1
+            bool boolCase2 = true;
+            string Case2_Result = CodeWars.EightKyu.ConvertbooleanvaluestostringsYesorNo.Solution.boolToWord(boolCase2);
+            Console.WriteLine(Case2_Result);
+
+            // Case 3
+            string Case3_Result = CodeWars.EightKyu.ConvertbooleanvaluestostringsYesorNo.Solution.boolToWordClever(boolCase1);
+            Console.WriteLine(Case1_Result);
+
+            // Case 4
+            string Case4_Result = CodeWars.EightKyu.ConvertbooleanvaluestostringsYesorNo.Solution.boolToWordClever(boolCase2);
+            Console.WriteLine(Case4_Result);
+        }
+
+
+        private static void SumOfPositiveFunc()
+        {
+            Space();
+            Title("Sum Of Positive");
+            System.Random random = new System.Random();
+
+            // Case 1
+            int[] arrCase1 = { 1, 2, 3, 4, 5};
+            int Case1_Result = CodeWars.EightKyu.Sumofpositive.Solution.PositiveSum(arrCase1);
+            Console.WriteLine(Case1_Result);
+
+            // Case 2
+            int[] arrCase2 = { 1, -2, 3, 4, 5};
+            int Case2_Result = CodeWars.EightKyu.Sumofpositive.Solution.PositiveSum(arrCase2);
+            Console.WriteLine(Case2_Result);
+
+            // Case 3
+            int[] arrCase3 = { -1, 2, 3, 4, -5};
+            int Case3_Result = CodeWars.EightKyu.Sumofpositive.Solution.PositiveSum(arrCase3);
+            Console.WriteLine(Case3_Result);
+
+            // Case 4
+            int[] arrCase4 = {};
+            int Case4_Result = CodeWars.EightKyu.Sumofpositive.Solution.PositiveSum(arrCase4);
+            Console.WriteLine(Case4_Result);
+
+            // Case 5
+            int value1 = random.Next(-5, 5);
+            int value2 = random.Next(-5, 5);
+            int value3 = random.Next(-5, 5);
+            int value4 = random.Next(-5, 5);
+            int value5 = random.Next(-5, 5);
+            int[] arrCase5 = { value1, value2, value3, value4, value5};
+            int Case5_Result = CodeWars.EightKyu.Sumofpositive.Solution.PositiveSum(arrCase5);
+            Console.WriteLine(Case5_Result);
+
+            // Case 6
+            int[] arrCase6 = { 1, -4, 7, 12};
+            int Case6_Result = CodeWars.EightKyu.Sumofpositive.Solution.PositiveSum(arrCase6);
+            Console.WriteLine(Case6_Result);
+
+            // Clever
+            // Case 1
+            int Case1_CleverResult = CodeWars.EightKyu.Sumofpositive.Solution.CleverPositiveSum(arrCase1);
+            Console.WriteLine(Case1_CleverResult);
+
+            // Case 2
+            int Case2_CleverResult = CodeWars.EightKyu.Sumofpositive.Solution.CleverPositiveSum(arrCase2);
+            Console.WriteLine(Case2_CleverResult);
+
+            // Case 3
+            int Case3_CleverResult = CodeWars.EightKyu.Sumofpositive.Solution.CleverPositiveSum(arrCase3);
+            Console.WriteLine(Case3_CleverResult);
+
+            // Case 4
+            int Case4_CleverResult = CodeWars.EightKyu.Sumofpositive.Solution.CleverPositiveSum(arrCase4);
+            Console.WriteLine(Case4_CleverResult);
+
+            // Case 5
+            int Case5_CleverResult = CodeWars.EightKyu.Sumofpositive.Solution.CleverPositiveSum(arrCase5);
+            Console.WriteLine(Case5_CleverResult);
+
+            // Case 6
+            int Case6_CleverResult = CodeWars.EightKyu.Sumofpositive.Solution.CleverPositiveSum(arrCase6);
+            Console.WriteLine(Case6_CleverResult);
+        }
+
+
+        private static void StringRepeatFunc()
+        {
+            Space();
+            Title("String Repeat");
+            System.Random random = new System.Random();
+
+            // Case 1
+            int numberCase1 = 6;
+            string stringCase1 = "I";
+            string Case1_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase1, stringCase1);
+            string Case1_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase1, stringCase1);
+            string Case1_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase1, stringCase1);
+            StringRepeatPrint(Case1_Result, Case1_ResultConcat, Case1_ResultStringBuilder);
+
+            // Case 2
+            int numberCase2 = 5;
+            string stringCase2 = "Hello";
+            string Case2_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase2, stringCase2);
+            string Case2_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase2, stringCase2);
+            string Case2_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase2, stringCase2);
+            StringRepeatPrint(Case2_Result, Case2_ResultConcat, Case2_ResultStringBuilder);
+
+            // Case 3
+            int numberCase3 = 3;
+            string stringCase3 = "*";
+            string Case3_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase3, stringCase3);
+            string Case3_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase3, stringCase3);
+            string Case3_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase3, stringCase3);
+            StringRepeatPrint(Case3_Result, Case3_ResultConcat, Case3_ResultStringBuilder);
+
+            // Case 4
+            int numberCase4 = 5;
+            string stringCase4 = "#";
+            string Case4_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase4, stringCase4);
+            string Case4_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase4, stringCase4);
+            string Case4_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase4, stringCase4);
+            StringRepeatPrint(Case4_Result, Case4_ResultConcat, Case4_ResultStringBuilder);
+
+            // Case 5
+            int numberCase5 = 2;
+            string stringCase5 = "ha ";
+            string Case5_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase5, stringCase5);
+            string Case5_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase5, stringCase5);
+            string Case5_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase5, stringCase5);
+            StringRepeatPrint(Case5_Result, Case5_ResultConcat, Case5_ResultStringBuilder);
+
+            // Case 6
+            int numberCase6 = random.Next(1, 10);
+            string stringCase6 = "random ";
+            string Case6_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase6, stringCase6);
+            string Case6_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase6, stringCase6);
+            string Case6_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase6, stringCase6);
+            StringRepeatPrint(Case6_Result, Case6_ResultConcat, Case6_ResultStringBuilder);
+
+            // Case 7
+            int numberCase7 = 0;
+            string stringCase7 = "nothing";
+            string Case7_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase7, stringCase7);
+            string Case7_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase7, stringCase7);
+            string Case7_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase7, stringCase7);
+            StringRepeatPrint(Case7_Result, Case7_ResultConcat, Case7_ResultStringBuilder);
+        }
+
+        private static void StringRepeatPrint(string Case_Result, string Case_ResultConcat, string Case_ResultStringBuilder)
+        {
+            Console.WriteLine("For Loop : '{0}' \nConcat : '{1}' \nStringBuilder : '{2}'", Case_Result, Case_ResultConcat, Case_ResultStringBuilder);
+            Space();
         }
 
     }
