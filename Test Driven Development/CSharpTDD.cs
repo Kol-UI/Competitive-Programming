@@ -58,6 +58,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ConvertbooleanvaluestostringsYesorNoFunc();
             SumOfPositiveFunc();
             StringRepeatFunc();
+            FindMinAndMaxOfListFunc();
+            RemoveExclamationMarksFunc();
+            MakeNegativeFunc();
         }
 
 
@@ -1369,6 +1372,161 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Console.WriteLine("For Loop : '{0}' \nConcat : '{1}' \nStringBuilder : '{2}'", Case_Result, Case_ResultConcat, Case_ResultStringBuilder);
             Program.Space();
+        }
+
+
+        private static void FindMinAndMaxOfListFunc()
+        {
+            Program.Space();
+            Program.Title("Find Min And Max Of List");
+            System.Random random = new System.Random();
+
+            // Case 1
+            int[] Case1 = { 1, -4, 7, 12};
+            int minCase1 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case1);
+            int maxCase1 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case1);
+            FindMinAndMaxOfListPrint(Case1, minCase1, maxCase1);
+
+            // Case 2
+            int[] Case2 = { 26, 7, 7, 8, 7, 30};
+            int minCase2 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case2);
+            int maxCase2 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case2);
+            FindMinAndMaxOfListPrint(Case2, minCase2, maxCase2);
+
+            // Case 3
+            int[] Case3 = { -2, -6, -17, -3, -8, -9, -10};
+            int minCase3 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case3);
+            int maxCase3 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case3);
+            FindMinAndMaxOfListPrint(Case3, minCase3, maxCase3);
+
+            // Case 4
+            int value1 = random.Next();
+            int value2 = random.Next();
+            int value3 = random.Next();
+            int value4 = random.Next();
+            int value5 = random.Next();
+            int[] Case4 = { value1, value2, value3, value4, value5 };
+            int minCase4 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case4);
+            int maxCase4 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case4);
+            FindMinAndMaxOfListPrint(Case4, minCase4, maxCase4);
+
+            // Case 5
+            int value6 = random.Next(-100, -1);
+            int value7 = random.Next(-100, -1);
+            int value8 = random.Next(-100, -1);
+            int value9 = random.Next(-100, -1);
+            int value10 = random.Next(-100, -1);
+            int[] Case5 = { value6, value7, value8, value9, value10 };
+            int minCase5 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case5);
+            int maxCase5 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case5);
+            FindMinAndMaxOfListPrint(Case5, minCase5, maxCase5);
+
+            // Case 6
+            int[] Case6 = { 1, 2, 3, 4, 5 };
+            int minCase6 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case6);
+            int maxCase6 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case6);
+            FindMinAndMaxOfListPrint(Case6, minCase6, maxCase6);
+
+            // Case 7
+            int[] Case7 = { 6, 7, 8, 9, 0 };
+            int minCase7 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case7);
+            int maxCase7 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case7);
+            FindMinAndMaxOfListPrint(Case7, minCase7, maxCase7);
+            
+            // Case 8
+            int[] Case8 = Case1.Union(Case2).Union(Case3).Union(Case4).Union(Case5).Union(Case6).Union(Case7).ToArray();
+            int minCase8 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case8);
+            int maxCase8 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case8);
+            FindMinAndMaxOfListPrint(Case8, minCase8, maxCase8);
+        }
+
+        private static void FindMinAndMaxOfListPrint(int[] list, int min, int max)
+        {
+            Console.WriteLine("The List : {0}", string.Join(", ", list));
+            Console.WriteLine("The Min : {0}", min);
+            Console.WriteLine("The Max : {0}", max);
+            Program.Space();
+        }
+
+
+        private static void RemoveExclamationMarksFunc()
+        {
+            Program.Space();
+            Program.Title("Remove Exclamation Marks");
+
+            // Case 1
+            string case1ToRemove = "Test!";
+            string case1ToRemove_Result = CodeWars.EightKyu.RemoveExclamationMarks.Solution.RemoveExclamationMarks(case1ToRemove);
+            Program.PrintBeforeAfterStringToString(case1ToRemove, case1ToRemove_Result);
+
+            // Case 2
+            string case2ToRemove = "! Test!!";
+            string case2ToRemove_Result = CodeWars.EightKyu.RemoveExclamationMarks.Solution.RemoveExclamationMarks(case2ToRemove);
+            Program.PrintBeforeAfterStringToString(case2ToRemove, case2ToRemove_Result);
+        }
+
+
+        private static void MakeNegativeFunc()
+        {
+            Program.Space();
+            Program.Title("Make Negative");
+            System.Random random = new System.Random();
+
+            // Case 1
+            int valueCase1 = random.Next();
+            int resultCase1 = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegative(valueCase1);
+            Program.PrintBeforeAfterIntToInt(valueCase1, resultCase1);
+
+            // Case 2
+            int valueCase2 = 1;
+            int resultCase2 = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegative(valueCase2);
+            Program.PrintBeforeAfterIntToInt(valueCase2, resultCase2);
+
+            // Case 3
+            int valueCase3 = -5;
+            int resultCase3 = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegative(valueCase3);
+            Program.PrintBeforeAfterIntToInt(valueCase3, resultCase3);
+
+            // Case 4
+            int valueCase4 = 0;
+            int resultCase4 = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegative(valueCase4);
+            Program.PrintBeforeAfterIntToInt(valueCase4, resultCase4);
+
+            // Using Math
+            Program.SubTitle("Math");
+            // Case 1
+            int resultCase1Math = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeMath(valueCase1);
+            Program.PrintBeforeAfterIntToInt(valueCase1, resultCase1Math);
+
+            // Case 2
+            int resultCase2Math = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeMath(valueCase2);
+            Program.PrintBeforeAfterIntToInt(valueCase2, resultCase2Math);
+
+            // Case 3
+            int resultCase3Math = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeMath(valueCase3);
+            Program.PrintBeforeAfterIntToInt(valueCase3, resultCase3Math);
+
+            // Case 4
+            int resultCase4Math = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeMath(valueCase4);
+            Program.PrintBeforeAfterIntToInt(valueCase4, resultCase4Math);
+
+            // One Line
+            Program.SubTitle("One Line");
+            // Case 1
+            int resultCase1OneLine = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeOneLine(valueCase1);
+            Program.PrintBeforeAfterIntToInt(valueCase1, resultCase1OneLine);
+
+            // Case 2
+            int resultCase2OneLine = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeOneLine(valueCase2);
+            Program.PrintBeforeAfterIntToInt(valueCase2, resultCase2OneLine);
+
+            // Case 3
+            int resultCase3OneLine = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeOneLine(valueCase3);
+            Program.PrintBeforeAfterIntToInt(valueCase3, resultCase3OneLine);
+
+            // Case 4
+            int resultCase4OneLine = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeOneLine(valueCase4);
+            Program.PrintBeforeAfterIntToInt(valueCase4, resultCase4OneLine);
         }
 
     }
