@@ -15,38 +15,26 @@ namespace CompetitiveProgramming.LeetCode.BinaryTreeInorderTraversal
     // Example 3:
     // Input: root = [1]
     // Output: [1]
+    
+    public class Solution
+    {
+        public IList<int> InorderTraversal(TreeNode root) {
 
-    /**
-    * Definition for a binary tree node.
-    * public class TreeNode {
-    *     public int val;
-    *     public TreeNode left;
-    *     public TreeNode right;
-    *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
-    *         this.val = val;
-    *         this.left = left;
-    *         this.right = right;
-    *     }
-    * }
-    */
-    // public class Solution {
-    //     public IList<int> InorderTraversal(TreeNode root) {
+            var result = new List<int>();
 
-    //         var result = new List<int>();
+            return InorderTraversal(root, result);
+        }
 
-    //         return InorderTraversal(root, result);
-    //     }
+        private IList<int> InorderTraversal(TreeNode current, IList<int> result)
+        {
+            if(current == null)
+            return result;
 
-    //     private IList<int> InorderTraversal(TreeNode current, IList<int> result)
-    //     {
-    //         if(current == null)
-    //         return result;
+            InorderTraversal(current.left, result);
+            result.Add(current.val);
+            InorderTraversal(current.right, result);
 
-    //         InorderTraversal(current.left, result);
-    //         result.Add(current.val);
-    //         InorderTraversal(current.right, result);
-
-    //         return result;
-    //     }
-    // }
+            return result;
+        }
+    }
 }

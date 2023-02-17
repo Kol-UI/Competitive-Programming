@@ -14,18 +14,6 @@ namespace CompetitiveProgramming.LeetCode.BinaryTreePreorderTraversal
     //Example 3:
     //Input: root = [1]
     //Output: [1]
-
-    //Definition for a binary tree node.
-    /* public class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-        public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
  
     public class Solution
     {
@@ -48,6 +36,6 @@ namespace CompetitiveProgramming.LeetCode.BinaryTreePreorderTraversal
 
             return result;
         }
-    } */
+    }
 }
 

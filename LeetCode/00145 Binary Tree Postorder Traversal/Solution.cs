@@ -16,42 +16,29 @@ namespace CompetitiveProgramming.LeetCode.BinaryTreePostorderTraversal
     // Input: root = [1]
     // Output: [1]
 
-    // /**
-    // * Definition for a binary tree node.
-    // * public class TreeNode {
-    // *     public int val;
-    // *     public TreeNode left;
-    // *     public TreeNode right;
-    // *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
-    // *         this.val = val;
-    // *         this.left = left;
-    // *         this.right = right;
-    // *     }
-    // * }
-    // */
-    // public class Solution
-    // {
-    //     private IList<int> list=new List<int>();
-    //     private Stack<TreeNode> s=new Stack<TreeNode>();
-    //     private HashSet<TreeNode> visited=new HashSet<TreeNode>();
-    //     public IList<int> PostorderTraversal(TreeNode root)
-    //     {
-    //         if(root==null) return list;
-    //         s.Push(root);
-    //         while(s.Count>0)
-    //         {
-    //             TreeNode node=s.Pop();
-    //             if(!visited.Contains(node))
-    //             {
-    //                 visited.Add(node);
-    //                 s.Push(node);
-    //                 if(node.right!=null) s.Push(node.right);
-    //                 if(node.left!=null) s.Push(node.left);
-    //             }
-    //             else
-    //                 list.Add(node.val);         
-    //         }
-    //         return list;   
-    //     }
-    // }
+    public class Solution
+    {
+        private IList<int> list=new List<int>();
+        private Stack<TreeNode> s=new Stack<TreeNode>();
+        private HashSet<TreeNode> visited=new HashSet<TreeNode>();
+        public IList<int> PostorderTraversal(TreeNode root)
+        {
+            if(root==null) return list;
+            s.Push(root);
+            while(s.Count>0)
+            {
+                TreeNode node=s.Pop();
+                if(!visited.Contains(node))
+                {
+                    visited.Add(node);
+                    s.Push(node);
+                    if(node.right!=null) s.Push(node.right);
+                    if(node.left!=null) s.Push(node.left);
+                }
+                else
+                    list.Add(node.val);         
+            }
+            return list;   
+        }
+    }
 }
