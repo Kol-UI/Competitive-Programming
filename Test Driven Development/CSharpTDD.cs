@@ -62,6 +62,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MakeNegativeFunc();
             BinaryTreeZigzagLevelOrderFunc();
             SearchInsertPositionFunc();
+            SingleElementinaSortedArrayFunc();
+            CapacityToShipPackagesWithinDDaysFunc();
+            IPOFunc();
         }
 
 
@@ -1486,6 +1489,33 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Search Insert Position");
+
+            // TODO
+        }
+
+
+        private static void SingleElementinaSortedArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Single Element in a Sorted Array");
+
+            // TODO
+        }
+
+
+        private static void CapacityToShipPackagesWithinDDaysFunc()
+        {
+            Program.Space();
+            Program.Title("Capacity To Ship Packages Within D Days");
+
+            // TODO
+        }
+
+
+        private static void IPOFunc()
+        {
+            Program.Space();
+            Program.Title("IPO");
 
             // TODO
         }
