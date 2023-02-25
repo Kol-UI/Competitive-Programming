@@ -51,7 +51,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ShortestPathWithAlternatingColorsFunc();
             MinimumFuelCosttoReporttotheCapitalFunc();
             AddBinaryFunc();
-            OppositeNumberFunc();
             ConvertaNumbertoaStringFunc();
             DefanginganIPAddressFunc();
             FindLuckyIntegerinanArrayFunc();
@@ -61,6 +60,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             FindMinAndMaxOfListFunc();
             RemoveExclamationMarksFunc();
             MakeNegativeFunc();
+            BinaryTreeZigzagLevelOrderFunc();
+            SearchInsertPositionFunc();
         }
 
 
@@ -1047,64 +1048,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
-        private static void OppositeNumberFunc()
-        {
-            Program.Space();
-            Program.Title("Opposite number");
-            System.Random random = new System.Random();
-
-            // Case 1
-            int case1IntOppositeNumber = 1;
-            int Case1_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case1IntOppositeNumber);
-            Console.WriteLine(Case1_OppositeNumber_Result);
-
-            // Case 2
-            int case2IntOppositeNumber = -1;
-            int Case2_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case2IntOppositeNumber);
-            Console.WriteLine(Case2_OppositeNumber_Result);            
-
-            // Case 3
-            int case3IntOppositeNumber = 14;
-            int Case3_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case3IntOppositeNumber);
-            Console.WriteLine(Case3_OppositeNumber_Result);
-
-            // Case 4
-            int case4IntOppositeNumber = -14;
-            int Case4_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case4IntOppositeNumber);
-            Console.WriteLine(Case4_OppositeNumber_Result);
-
-            // Case 5
-            int case5IntOppositeNumber = 34;
-            int Case5_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case5IntOppositeNumber);
-            Console.WriteLine(Case5_OppositeNumber_Result);
-
-            // Case 6
-            int case6IntOppositeNumber = -34;
-            int Case6_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case6IntOppositeNumber);
-            Console.WriteLine(Case6_OppositeNumber_Result);
-
-            // Case 7
-            int case7IntOppositeNumber = 0;
-            int Case7_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case7IntOppositeNumber);
-            Console.WriteLine(Case7_OppositeNumber_Result);
-
-            // Case 8
-            int case8IntOppositeNumber = random.Next();
-            int Case8_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case8IntOppositeNumber);
-            Console.WriteLine(Case8_OppositeNumber_Result);
-            
-            // Case 9
-            int case9IntOppositeNumber = random.Next();
-            int Case9_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case9IntOppositeNumber);
-            Console.WriteLine(Case9_OppositeNumber_Result);
-
-            // Case 10
-            int case10IntOppositeNumber = random.Next();
-            int Case10_OppositeNumber_Result = CodeWars.EightKyu.Oppositenumber.Solution.Opposite(case10IntOppositeNumber);
-            Console.WriteLine(Case10_OppositeNumber_Result);
-        }
-
-
         private static void ConvertaNumbertoaStringFunc()
         {
             Program.Space();
@@ -1527,6 +1470,24 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             // Case 4
             int resultCase4OneLine = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeOneLine(valueCase4);
             Program.PrintBeforeAfterIntToInt(valueCase4, resultCase4OneLine);
+        }
+
+
+        private static void BinaryTreeZigzagLevelOrderFunc()
+        {
+            Program.Space();
+            Program.Title("Binary Tree Zigzag Level Order");
+
+            // TODO
+        }
+
+
+        private static void SearchInsertPositionFunc()
+        {
+            Program.Space();
+            Program.Title("Search Insert Position");
+
+            // TODO
         }
 
     }
