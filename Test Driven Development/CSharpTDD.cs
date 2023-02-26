@@ -1520,5 +1520,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             // TODO
         }
 
+
+        private static void EditDistanceFunc()
+        {
+            Program.Space();
+            Program.Title("Edit Distance");
+
+            // TODO
+        }
+
     }
 }
