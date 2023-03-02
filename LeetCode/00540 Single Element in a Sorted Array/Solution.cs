@@ -16,7 +16,7 @@ namespace CompetitiveProgramming.LeetCode.SingleElementinaSortedArray
 
     public class Solution
     {
-        public int SingleNonDuplicate(int[] nums) => nums.Aggregate((x, y) => x ^ y);
+        public static int SingleNonDuplicate(int[] nums) => nums.Aggregate((x, y) => x ^ y);
     }
 }
 

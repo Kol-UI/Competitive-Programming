@@ -40,7 +40,7 @@ namespace CompetitiveProgramming.LeetCode.CapacityToShipPackagesWithinDDays
 
     public class Solution
     {
-        public int ShipWithinDays(int[] weights, int days)
+        public static int ShipWithinDays(int[] weights, int days)
         {
             var maxLoad = 0;
             var totalLoad = 0;
@@ -71,7 +71,7 @@ namespace CompetitiveProgramming.LeetCode.CapacityToShipPackagesWithinDDays
             return left;
         }
 
-        private bool CanBeShipped(int[] weights, int days, int capacity)
+        private static bool CanBeShipped(int[] weights, int days, int capacity)
         {
             var sum = 0;
             var count = 1;

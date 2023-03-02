@@ -27,7 +27,7 @@ namespace CompetitiveProgramming.LeetCode.IPO
 
     public class Solution
     {
-        public int FindMaximizedCapital(int k, int w, int[] profits, int[] capital)
+        public static int FindMaximizedCapital(int k, int w, int[] profits, int[] capital)
         {
             Dictionary<int,List<int>> projBuckets = new();
             for (int i = 0; i < profits.Length; i++)

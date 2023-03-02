@@ -10,61 +10,139 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
     {
         public static void StartAllTDD()
         {
+            // All CoderByte Solutions
+            CoderByteTests();
+
+            // All CodeWars Solutions
+            CodeWarsTests();
+
+            // All LeetCode Solutions
+            LeetCodeTests();
+
+            // Current Testing Solution
+            CurrentTests();
+        }
+
+        
+        private static void CodeWarsTests()
+        {
+            // 8 Kyu
+            EightKyuTests();
+
+            // 7 Kyu
+            SevenKyuTests();
+
+            // 6 Kyu
+            SixKyuTests();
+        }
+
+
+        private static void LeetCodeTests()
+        {
+            // Easy 
+            EasyLeetCodeTests();
+
+            // Medium
+            MediumLeetCodeTests();
+
+            // Hard
+            HardLeetCodeTests();
+        }
+
+
+        // 8 KYU
+        private static void EightKyuTests()
+        {
+            GrasshopperSummationFunc();
+            SumArrayFunc();
+            RemoveFirstandLastCharacterFunc();
+            MakeNegativeFunc();
+            RemoveExclamationMarksFunc();
+            FindMinAndMaxOfListFunc();
+            StringRepeatFunc();
+            SumOfPositiveFunc();
+            ConvertbooleanvaluestostringsYesorNoFunc();
+            ConvertaNumbertoaStringFunc();
+            EvenOrOddFunc();
+        }
+
+
+        // 7 KYU
+        private static void SevenKyuTests()
+        {
+            ItIsIsogramFunc();
+        }
+
+
+        // 6 KYU
+        private static void SixKyuTests()
+        {
+            ReplaceWithAlphabetPositionFunc();
+        }
+
+
+        // EASY LEETCODE
+        private static void EasyLeetCodeTests()
+        {
             ClimbingStairsFunc();
             AddTwoIntegersFunc();
-            FirstFactorialFunc();
-            FirstReverseFunc();
-            ReplaceWithAlphabetPositionFunc();
-            GrasshopperSummationFunc();
             NumberOfStepsFunc();
-            SumArrayFunc();
-            LongestCommonSubsequenceFunc();
-            RemoveFirstandLastCharacterFunc();
-            ItIsIsogramFunc();
-            CountDigitOneFunc();
             ContainsDuplicateFunc();
+            BestTimetoBuyandSellStockFunc();
+            FirstUniqueCharacterinaStringFunc();
+            SingleNumberFunc();
+            FindJudgeFunc();
+            ShuffleTheArrayFunc();
+            CountOddNumbersInAnIntervalRangeFunc();
+            AddBinaryFunc();
+            DefanginganIPAddressFunc();
+            FindLuckyIntegerinanArrayFunc();
+            SearchInsertPositionFunc();
+        }
+
+
+        // MEDIUM LEETCODE
+        private static void MediumLeetCodeTests()
+        {
+            LongestCommonSubsequenceFunc();
             MaxIceCreamFunc();
             TopKFrequentFunc();
-            LongestPathWithDifferentAdjacentCharactersFunc();
             LexicographicallySmallestEquivalentStringFunc();
             FlipStringtoMonotoneIncreasingFunc();
             SearchA2DMatrixFunc();
             InsertIntervalFunc();
-            BestTimetoBuyandSellStockFunc();
-            FirstUniqueCharacterinaStringFunc();
-            SingleNumberFunc();
             MaxSubarraySumCircularFunc();
             SubarraySumFunc();
             SubarraysDivByKFunc();
-            FindJudgeFunc();
             RestoreIpAddressesFunc();
-            CheckifPointIsReachableFunc();
             SnakesAndLaddersFunc();
             FindClosestNodetoGivenTwoNodesFunc();
-            ShuffleTheArrayFunc();
-            CountOddNumbersInAnIntervalRangeFunc();
             FruitIntoBasketsFunc();
             JumpGameIIFunc();
-            EvenOrOddFunc();
-            NamingaCompanyFunc();
             AsFarfromLandasPossibleFunc();
             ShortestPathWithAlternatingColorsFunc();
             MinimumFuelCosttoReporttotheCapitalFunc();
-            AddBinaryFunc();
-            ConvertaNumbertoaStringFunc();
-            DefanginganIPAddressFunc();
-            FindLuckyIntegerinanArrayFunc();
-            ConvertbooleanvaluestostringsYesorNoFunc();
-            SumOfPositiveFunc();
-            StringRepeatFunc();
-            FindMinAndMaxOfListFunc();
-            RemoveExclamationMarksFunc();
-            MakeNegativeFunc();
             BinaryTreeZigzagLevelOrderFunc();
-            SearchInsertPositionFunc();
             SingleElementinaSortedArrayFunc();
             CapacityToShipPackagesWithinDDaysFunc();
-            IPOFunc();
+        }
+
+
+        // HARD LEETCODE
+        private static void HardLeetCodeTests()
+        {
+            CountDigitOneFunc();
+            LongestPathWithDifferentAdjacentCharactersFunc();
+            CheckifPointIsReachableFunc();
+            NamingaCompanyFunc();
+        }
+
+
+        // CODERBYTE
+        private static void CoderByteTests()
+        {
+            FirstFactorialFunc();
+            FirstReverseFunc();
         }
 
 
@@ -1489,8 +1567,31 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Search Insert Position");
+            System.Random random = new System.Random();
 
-            // TODO
+            // Case 1
+            int[] Case1_35 = { 1, 3, 5, 6 };
+            int targetCase1_35 = 5;
+            int resultCase1_35 = LeetCode.SearchInsertPosition.Solution.SearchInsert(Case1_35, targetCase1_35);
+            Console.WriteLine(resultCase1_35);
+
+            // Case 2
+            int[] Case2_35 = { 1, 3, 5, 6 };
+            int targetCase2_35 = 2;
+            int resultCase2_35 = LeetCode.SearchInsertPosition.Solution.SearchInsert(Case2_35, targetCase2_35);
+            Console.WriteLine(resultCase2_35);
+
+            // Case 3
+            int[] Case3_35 = { 1, 3, 5, 6 };
+            int targetCase3_35 = 7;
+            int resultCase3_35 = LeetCode.SearchInsertPosition.Solution.SearchInsert(Case3_35, targetCase3_35);
+            Console.WriteLine(resultCase3_35);
+
+            // Case 4
+            int[] Case4_35 = { 1, 3, 5, 6 };
+            int targetCase4_35 = random.Next(1, 10);
+            int resultCase4_35 = LeetCode.SearchInsertPosition.Solution.SearchInsert(Case4_35, targetCase4_35);
+            Console.WriteLine(resultCase4_35);
         }
 
 
@@ -1499,7 +1600,15 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Single Element in a Sorted Array");
 
-            // TODO
+            // Case 1
+            int[] Case1_540 = { 1, 1, 2, 3, 3, 4, 4, 8, 8 };
+            int resultCase1_540 = LeetCode.SingleElementinaSortedArray.Solution.SingleNonDuplicate(Case1_540);
+            Console.WriteLine(resultCase1_540);
+
+            // Case 2
+            int[] Case2_540 = { 3, 3, 7, 7, 10, 11, 11 };
+            int resultCase2_540 = LeetCode.SingleElementinaSortedArray.Solution.SingleNonDuplicate(Case2_540);
+            Console.WriteLine(resultCase2_540);
         }
 
 
@@ -1507,8 +1616,47 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Capacity To Ship Packages Within D Days");
+            System.Random random = new System.Random();
 
-            // TODO
+            // Case 1
+            int[] weightsCase1_1011 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int daysCase1_1011 = 5;
+            int resultCase1_1011 = LeetCode.CapacityToShipPackagesWithinDDays.Solution.ShipWithinDays(weightsCase1_1011, daysCase1_1011);
+            Console.WriteLine(resultCase1_1011);
+
+            // Case 2
+            int[] weightsCase2_1011 = { 3, 2, 2, 4, 1, 4 };
+            int daysCase2_1011 = 3;
+            int resultCase2_1011 = LeetCode.CapacityToShipPackagesWithinDDays.Solution.ShipWithinDays(weightsCase2_1011, daysCase2_1011);
+            Console.WriteLine(resultCase2_1011);
+
+            // Case 3
+            int[] weightsCase3_1011 = { 1, 2, 3, 1, 1 };
+            int daysCase3_1011 = 4;
+            int resultCase3_1011 = LeetCode.CapacityToShipPackagesWithinDDays.Solution.ShipWithinDays(weightsCase3_1011, daysCase3_1011);
+            Console.WriteLine(resultCase3_1011);
+
+            // Case 4
+            int value1_1011 = random.Next(1, 10);
+            int value2_1011 = random.Next(1, 10);
+            int value3_1011 = random.Next(1, 10);
+            int value4_1011 = random.Next(1, 10);
+            int value5_1011 = random.Next(1, 10);
+            int[] weightsCase4_1011 = { value1_1011, value2_1011, value3_1011, value4_1011, value5_1011 };
+            int daysCase4_1011 = random.Next(1, 10);
+            int resultCase4_1011 = LeetCode.CapacityToShipPackagesWithinDDays.Solution.ShipWithinDays(weightsCase4_1011, daysCase4_1011);
+            Console.WriteLine(resultCase4_1011);
+
+            // Case 5
+            int value6_1011 = random.Next(1, 10);
+            int value7_1011 = random.Next(1, 10);
+            int value8_1011 = random.Next(1, 10);
+            int value9_1011 = random.Next(1, 10);
+            int value10_1011 = random.Next(1, 10);
+            int[] weightsCase5_1011 = { value6_1011, value7_1011, value8_1011, value9_1011, value10_1011 };
+            int daysCase5_1011 = random.Next(1, 10);
+            int resultCase5_1011 = LeetCode.CapacityToShipPackagesWithinDDays.Solution.ShipWithinDays(weightsCase5_1011, daysCase5_1011);
+            Console.WriteLine(resultCase5_1011);
         }
 
 
@@ -1517,17 +1665,28 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("IPO");
 
-            // TODO
+            // Case 1
+            int k_502 = 2;
+            int w_502 = 0;
+            int[] profits_502 = {1, 2, 3};
+            int[] capital_502 = {0, 1, 1};
+            int result_502 = LeetCode.IPO.Solution.FindMaximizedCapital(k_502, w_502, profits_502, capital_502);
+            Console.WriteLine(result_502);
+
+            // Case 2
+            int k2_502 = 3;
+            int w2_502 = 0;
+            int[] profits2_502 = {1, 2, 3};
+            int[] capital2_502 = {0, 1, 2};
+            int result2_502 = LeetCode.IPO.Solution.FindMaximizedCapital(k2_502, w2_502, profits2_502, capital2_502);
+            Console.WriteLine(result2_502);
         }
 
 
-        private static void EditDistanceFunc()
+        // CURRENT TESTS
+        private static void CurrentTests()
         {
-            Program.Space();
-            Program.Title("Edit Distance");
-
-            // TODO
+            IPOFunc(); // hard
         }
-
     }
 }

@@ -20,7 +20,7 @@ namespace CompetitiveProgramming.LeetCode.SearchInsertPosition
 
     public class Solution
     {
-        public int SearchInsert(int[] nums, int target)
+        public static int SearchInsert(int[] nums, int target)
         {
             var left = 0;
             var right = nums.Length - 1;
