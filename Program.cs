@@ -36,6 +36,13 @@ namespace CompetitiveProgramming
             Console.WriteLine("[{0}]", string.Join(", ", array));
         }
 
+        public static void PrintBeforeAfterIntArray(int[] before, int[] after)
+        {
+            string beforeValue = string.Join(", ", before);
+            string afterValue = string.Join(", ", after);
+            Console.WriteLine("Before : [{0}] - After : [{1}]", beforeValue, afterValue);
+        }
+
         public static void PrintBeforeAfterStringToString(string before, string after)
         {
             Console.WriteLine("Before : '{0}' - After : '{1}'", before, after);

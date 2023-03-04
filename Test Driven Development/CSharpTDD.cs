@@ -124,6 +124,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumFuelCosttoReporttotheCapitalFunc();
             SingleElementinaSortedArrayFunc();
             CapacityToShipPackagesWithinDDaysFunc();
+            SortanArrayFunc();
+            StringCompressionFunc();
         }
 
 
@@ -1691,6 +1693,155 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine(result2_72);
         }
 
+
+        private static void SortanArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Sort an Array");
+            System.Random random = new System.Random();
+
+            // Case 1
+            int[] case1_912 = { 5, 2, 3, 1 };
+            int[] result1_912 = LeetCode.SortanArray.Solution.SortArray(case1_912);
+            Program.PrintBeforeAfterIntArray(case1_912, result1_912);
+
+            // Case 2
+            int[] case2_912 = { 1, 2, 3, 5 };
+            int[] result2_912 = LeetCode.SortanArray.Solution.SortArray(case2_912);
+            Program.PrintBeforeAfterIntArray(case2_912, result2_912);
+
+            // Case 3
+            int[] case3_912 = { 5, 1, 1, 2, 0, 0 };
+            int[] result3_912 = LeetCode.SortanArray.Solution.SortArray(case3_912);
+            Program.PrintBeforeAfterIntArray(case3_912, result3_912);
+
+            // Case 4
+            int[] case4_912 = { 0, 0, 1, 1, 2, 5 };
+            int[] result4_912 = LeetCode.SortanArray.Solution.SortArray(case4_912);
+            Program.PrintBeforeAfterIntArray(case4_912, result4_912);
+
+            // Case 5
+            int[] case5_912 = { 7, 1, 2, 3 };
+            int[] result5_912 = LeetCode.SortanArray.Solution.SortArray(case5_912);
+            Program.PrintBeforeAfterIntArray(case5_912, result5_912);
+
+            // Case 6
+            int[] case6_912 = { 9, 7, 6, 2, 1, 1, 2, 3, 3, 4, 4, 8, 8 };
+            int[] result6_912 = LeetCode.SortanArray.Solution.SortArray(case6_912);
+            Program.PrintBeforeAfterIntArray(case6_912, result6_912);
+
+            // Case 7
+            int[] case7_912 = { 82, 4, 3, 1, 3, 3, 7, 7, 10, 11, 11 };
+            int[] result7_912 = LeetCode.SortanArray.Solution.SortArray(case7_912);
+            Program.PrintBeforeAfterIntArray(case7_912, result7_912);
+
+            // Case 8
+            int[] case8_912 = { 7, -1, 1, 2, 3 };
+            int[] result8_912 = LeetCode.SortanArray.Solution.SortArray(case8_912);
+            Program.PrintBeforeAfterIntArray(case8_912, result8_912);
+
+            // Case 9
+            int a = random.Next(1, 10);
+            int b = random.Next(1, 10);
+            int c = random.Next(1, 10);
+            int d = random.Next(1, 10);
+            int e = random.Next(1, 10);
+            int[] case9_912 = { a, b, c, d, e };
+            int[] result9_912 = LeetCode.SortanArray.Solution.SortArray(case9_912);
+            Program.PrintBeforeAfterIntArray(case9_912, result9_912);
+
+            // Case 10
+            int[] case10_912 = { 3, 2, 8, 2, 6 };
+            int[] result10_912 = LeetCode.SortanArray.Solution.SortArray(case10_912);
+            Program.PrintBeforeAfterIntArray(case10_912, result10_912);
+
+            // Case 11
+            int[] case11_912 = { a+b, b+c, c+d, d+e, e+a };
+            int[] result11_912 = LeetCode.SortanArray.Solution.SortArray(case11_912);
+            Program.PrintBeforeAfterIntArray(case11_912, result11_912);
+
+            // Case 12
+            int[] case12_912 = { 14, 10, 3, 2, 7 };
+            int[] result12_912 = LeetCode.SortanArray.Solution.SortArray(case12_912);
+            Program.PrintBeforeAfterIntArray(case12_912, result12_912);
+
+            // Case 13
+            int[] case13_912 = { 6, 8, 2, 1, 1 };
+            int[] result13_912 = LeetCode.SortanArray.Solution.SortArray(case13_912);
+            Program.PrintBeforeAfterIntArray(case13_912, result13_912);
+
+            // Case 14
+            int[] case14_912 = { a+b+c, b+c+d, c+d+e, d+e+a, e+a+b };
+            int[] result14_912 = LeetCode.SortanArray.Solution.SortArray(case14_912);
+            Program.PrintBeforeAfterIntArray(case14_912, result14_912);
+
+            // Case 15
+            int[] case15_912 = { 24, 24, 22, 21, 23 };
+            int[] result15_912 = LeetCode.SortanArray.Solution.SortArray(case15_912);
+            Program.PrintBeforeAfterIntArray(case15_912, result15_912);
+
+            // Case 16
+            int[] case16_912 = { a+b+c+d, b+c+d+e, c+d+e+a, d+e+a+b, e+a+b+c };
+            int[] result16_912 = LeetCode.SortanArray.Solution.SortArray(case16_912);
+            Program.PrintBeforeAfterIntArray(case16_912, result16_912);
+
+            // Case 17
+            int f = random.Next(-10, 0);
+            int g = random.Next(-10, 0);
+            int h = random.Next(-10, 0);
+            int i = random.Next(-10, 0);
+            int j = random.Next(-10, 0);
+            int[] case17_912 = { f, g, h, i, j };
+            int[] result17_912 = LeetCode.SortanArray.Solution.SortArray(case17_912);
+            Program.PrintBeforeAfterIntArray(case17_912, result17_912);
+
+            // Case 18
+            int[] case18_912 = { -9, -6, -6, -6, -1 };
+            int[] result18_912 = LeetCode.SortanArray.Solution.SortArray(case18_912);
+            Program.PrintBeforeAfterIntArray(case18_912, result18_912);
+
+            // Case 19
+            int[] case19_912 = { a+f, b+g, c+h, d+i, e+j };
+            int[] result19_912 = LeetCode.SortanArray.Solution.SortArray(case19_912);
+            Program.PrintBeforeAfterIntArray(case19_912, result19_912);
+
+            // Case 20
+            int[] case20_912 = case1_912.Concat(case2_912).Concat(case3_912).Concat(case4_912)
+                                        .Concat(case5_912).Concat(case6_912).Concat(case7_912)
+                                        .Concat(case8_912).Concat(case9_912).Concat(case10_912)
+                                        .Concat(case11_912).Concat(case12_912).Concat(case13_912)
+                                        .Concat(case14_912).Concat(case15_912).Concat(case16_912)
+                                        .Concat(case17_912).Concat(case18_912).Concat(case19_912).ToArray();
+            int[] result20_912 = LeetCode.SortanArray.Solution.SortArray(case20_912);
+            Program.PrintBeforeAfterIntArray(case20_912, result20_912);
+        }
+
+
+        private static void StringCompressionFunc()
+        {
+            Program.Space();
+            Program.Title("String Compression");
+
+            // Case 1
+            char[] case1_443 = { 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
+            int result1_443 = LeetCode.StringCompression.Solution.Compress(case1_443);
+            Console.WriteLine(result1_443);
+
+            // Case 2
+            char[] case2_443 = { 'a' };
+            int result2_443 = LeetCode.StringCompression.Solution.Compress(case2_443);
+            Console.WriteLine(result2_443);
+
+            // Case 3
+            char[] case3_443 = { 'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b' };
+            int result3_443 = LeetCode.StringCompression.Solution.Compress(case3_443);
+            Console.WriteLine(result3_443);
+
+            // Case 4
+            char[] case4_443 = { '1', '1', '2' };
+            int result4_443 = LeetCode.StringCompression.Solution.Compress(case4_443);
+            Console.WriteLine(result4_443);
+        }
 
         // CURRENT TESTS
         private static void CurrentTests()
