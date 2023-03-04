@@ -135,6 +135,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             LongestPathWithDifferentAdjacentCharactersFunc();
             CheckifPointIsReachableFunc();
             NamingaCompanyFunc();
+            IPOFunc();
         }
 
 
@@ -1683,10 +1684,26 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void EditDistanceFunc()
+        {
+            Program.Space();
+            Program.Title("Edit Distance");
+
+            // Case 1
+            string word1 = "horse", word2 = "ros";
+            int result1_72 = LeetCode.EditDistance.Solution.MinDistance(word1, word2);
+            Console.WriteLine(result1_72);
+
+            // Case 2
+            string word3 = "intention", word4 = "execution";
+            int result2_72 = LeetCode.EditDistance.Solution.MinDistance(word3, word4);
+            Console.WriteLine(result2_72);
+        }
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            IPOFunc(); // hard
+            EditDistanceFunc(); // Hard
         }
     }
 }

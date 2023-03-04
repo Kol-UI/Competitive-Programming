@@ -28,7 +28,7 @@ namespace CompetitiveProgramming.LeetCode.EditDistance
 
 	public class Solution
 	{
-        int Dfs(string word1, string word2, int i, int j, int[][] dp)
+        static int Dfs(string word1, string word2, int i, int j, int[][] dp)
         {
             if (i >= word1.Length || j >= word2.Length)
             {
@@ -57,7 +57,7 @@ namespace CompetitiveProgramming.LeetCode.EditDistance
             return dp[i][j];
         }
 
-        public int MinDistance(string word1, string word2)
+        public static int MinDistance(string word1, string word2)
         {
             int[][] dp = new int[word1.Length][];
             for (int i = 0; i < word1.Length; i++)
