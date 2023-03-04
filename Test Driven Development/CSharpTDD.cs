@@ -122,7 +122,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             AsFarfromLandasPossibleFunc();
             ShortestPathWithAlternatingColorsFunc();
             MinimumFuelCosttoReporttotheCapitalFunc();
-            BinaryTreeZigzagLevelOrderFunc();
             SingleElementinaSortedArrayFunc();
             CapacityToShipPackagesWithinDDaysFunc();
         }
@@ -136,6 +135,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CheckifPointIsReachableFunc();
             NamingaCompanyFunc();
             IPOFunc();
+            EditDistanceFunc();
         }
 
 
@@ -1555,15 +1555,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
-        private static void BinaryTreeZigzagLevelOrderFunc()
-        {
-            Program.Space();
-            Program.Title("Binary Tree Zigzag Level Order");
-
-            // TODO
-        }
-
-
         private static void SearchInsertPositionFunc()
         {
             Program.Space();
@@ -1700,10 +1691,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine(result2_72);
         }
 
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            EditDistanceFunc(); // Hard
+            
         }
     }
 }
