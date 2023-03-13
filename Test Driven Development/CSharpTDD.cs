@@ -98,6 +98,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             DefanginganIPAddressFunc();
             FindLuckyIntegerinanArrayFunc();
             SearchInsertPositionFunc();
+            FindtheIndexoftheFirstOccurrenceinaStringFunc();
+            KthMissingPositiveNumberFunc();
         }
 
 
@@ -138,6 +140,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             NamingaCompanyFunc();
             IPOFunc();
             EditDistanceFunc();
+            CountSubarraysWithFixedBoundsFunc();
+            JumpGameIVFunc();
         }
 
 
@@ -1843,10 +1847,224 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine(result4_443);
         }
 
+        private static void FindtheIndexoftheFirstOccurrenceinaStringFunc()
+        {
+            Program.Space();
+            Program.Title("Find the Index of the First Occurrence in a String");
+
+            // Case 1
+            string haystackCase1_28 = "sadbutsad";
+            string needleCase1_28 = "sad";
+            int result_Case1_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase1_28, needleCase1_28);
+            Console.WriteLine(result_Case1_28);
+
+            // Case 2
+            string haystackCase2_28 = "leetcode";
+            string needleCase2_28 = "leeto";
+            int result_Case2_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase2_28, needleCase2_28);
+            Console.WriteLine(result_Case2_28);
+
+            // Case 3
+            string haystackCase3_28 = "mississippi";
+            string needleCase3_28 = "issip";
+            int result_Case3_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase3_28, needleCase3_28);
+            Console.WriteLine(result_Case3_28);
+
+            // Case 4
+            string haystackCase4_28 = "a";
+            string needleCase4_28 = "a";
+            int result_Case4_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase4_28, needleCase4_28);
+            Console.WriteLine(result_Case4_28);
+
+            // Case 5
+            string haystackCase5_28 = "hello";
+            string needleCase5_28 = "ll";
+            int result_Case5_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase5_28, needleCase5_28);
+            Console.WriteLine(result_Case5_28);
+        }
+
+
+        private static void CountSubarraysWithFixedBoundsFunc()
+        {
+            Program.Space();
+            Program.Title("Count Subarrays With Fixed Bounds");
+
+            // Case 1
+            int[] numsCase1_2444 = {1, 3, 5, 2, 7, 5};
+            int minKCase1_2444 = 1;
+            int maxKCase1_2444 = 5;
+            long resultCase1_2444 = LeetCode.CountSubarraysWithFixedBounds.Solution.CountSubarrays(numsCase1_2444, minKCase1_2444, maxKCase1_2444);
+            Console.WriteLine(resultCase1_2444);
+
+            // Case 2
+            int[] numsCase2_2444 = {1, 1, 1, 1};
+            int minKCase2_2444 = 1;
+            int maxKCase2_2444 = 1;
+            long resultCase2_2444 = LeetCode.CountSubarraysWithFixedBounds.Solution.CountSubarrays(numsCase2_2444, minKCase2_2444, maxKCase2_2444);
+            Console.WriteLine(resultCase2_2444);
+        }
+
+
+        private static void JumpGameIVFunc()
+        {
+            Program.Space();
+            Program.Title("Jump Game IV");
+
+            // Case 1
+            int[] arrCase1_1345 = { 100, -23, -23, 404, 100, 23, 23, 23, 3, 404 };
+            Console.WriteLine("Array Case 1 :");
+            Program.PrintArray(arrCase1_1345);
+            int resultCase1_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase1_1345);
+            Console.WriteLine(resultCase1_1345);
+
+            // Case 2
+            int[] arrCase2_1345 = { 7 };
+            Console.WriteLine("Array Case 2 :");
+            Program.PrintArray(arrCase2_1345);
+            int resultCase2_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase2_1345);
+            Console.WriteLine(resultCase2_1345);
+
+            // Case 3
+            int[] arrCase3_1345 = { 7, 6, 9, 6, 9, 6, 9, 7 };
+            Console.WriteLine("Array Case 3 :");
+            Program.PrintArray(arrCase3_1345);
+            int resultCase3_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase3_1345);
+            Console.WriteLine(resultCase3_1345);
+
+            // Case 4
+            int[] arrCase4_1345 = { -1, 100, 100, 100, 100, 100, 100, -1, };
+            Console.WriteLine("Array Case 4 :");
+            Program.PrintArray(arrCase4_1345);
+            int resultCase4_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase4_1345);
+            Console.WriteLine(resultCase4_1345);
+
+            // Case 5
+            int[] arrCase5_1345 = Program.GenerateRandomNumber(100, 5);
+            Console.WriteLine("Array Case 5 :");
+            Program.PrintArray(arrCase5_1345);
+            int resultCase5_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase5_1345);
+            Console.WriteLine(resultCase5_1345);
+
+            // Case 6
+            int[] arrCase6_1345 = Program.GenerateRandomNumber(1000, 5);
+            Console.WriteLine("Array Case 6 :");
+            Program.PrintArray(arrCase6_1345);
+            int resultCase6_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase6_1345);
+            Console.WriteLine(resultCase6_1345);
+
+            // Case 7
+            int[] arrCase7_1345 = Program.GenerateRandomNumber(100, 10);
+            Console.WriteLine("Array Case 7 :");
+            Program.PrintArray(arrCase7_1345);
+            int resultCase7_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase7_1345);
+            Console.WriteLine(resultCase7_1345);
+
+            // Case 8
+            int[] arrCase8_1345 = Program.GenerateRandomNumber(1000, 10);
+            Console.WriteLine("Array Case 8 :");
+            Program.PrintArray(arrCase8_1345);
+            int resultCase8_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase8_1345);
+            Console.WriteLine(resultCase8_1345);
+
+            // Case 9
+            int[] arrCase9_1345 = Program.GenerateRandomNumber(10, 100);
+            Console.WriteLine("Array Case 9 :");
+            Program.PrintArray(arrCase9_1345);
+            int resultCase9_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase9_1345);
+            Console.WriteLine(resultCase9_1345);
+
+            // Case 10
+            int[] arrCase10_1345 = Program.GenerateRandomNegativeNumber(5);
+            Console.WriteLine("Array Case 10 :");
+            Program.PrintArray(arrCase10_1345);
+            int resultCase10_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase10_1345);
+            Console.WriteLine(resultCase10_1345);
+
+            // Case 11
+            int[] arrCase11_1345 = Program.GenerateRandomNegativeNumber(10);
+            Console.WriteLine("Array Case 11 :");
+            Program.PrintArray(arrCase11_1345);
+            int resultCase11_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase11_1345);
+            Console.WriteLine(resultCase11_1345);
+
+            // Case 12
+            int[] arrCase12_1345 = Program.GenerateRandomNegativePositiveNumber(5);
+            Console.WriteLine("Array Case 12 :");
+            Program.PrintArray(arrCase12_1345);
+            int resultCase12_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase12_1345);
+            Console.WriteLine(resultCase12_1345);
+
+            // Case 13
+            int[] arrCase13_1345 = Program.GenerateRandomNegativePositiveNumber(10);
+            Console.WriteLine("Array Case 13 :");
+            Program.PrintArray(arrCase13_1345);
+            int resultCase13_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase13_1345);
+            Console.WriteLine(resultCase13_1345);
+
+            // Case 14
+            int[] arrCase14_1345 = arrCase1_1345.Concat(arrCase2_1345).Concat(arrCase3_1345).Concat(arrCase4_1345)
+                                                .Concat(arrCase5_1345).Concat(arrCase6_1345).Concat(arrCase7_1345)
+                                                .Concat(arrCase8_1345).Concat(arrCase9_1345).Concat(arrCase10_1345)
+                                                .Concat(arrCase11_1345).Concat(arrCase12_1345)
+                                                .Concat(arrCase13_1345).ToArray();
+            Console.WriteLine("Array Case 14 :");
+            Program.PrintArray(arrCase14_1345);
+            int resultCase14_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase14_1345);
+            Console.WriteLine(resultCase14_1345);
+
+            // Case 15
+            int[] arrCase15_1345 = arrCase14_1345;
+            Program.ShuffleArray(arrCase15_1345);
+            Console.WriteLine("Array Case 15 :");
+            Program.PrintArray(arrCase15_1345);
+            int resultCase15_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase15_1345);
+            Console.WriteLine(resultCase15_1345);
+        }
+
+
+        private static void KthMissingPositiveNumberFunc()
+        {
+            Program.Space();
+            Program.Title("Kth Missing Positive Number");
+
+            // Case 1
+            int[] arrCase1_1539 = { 2, 3, 4, 7, 11 };
+            int kCase1_1539 = 5;
+            Console.WriteLine("Array Case 1 :");
+            Program.PrintArray(arrCase1_1539);
+            Console.WriteLine("Case 1 Kth Missing Number :");
+            Console.WriteLine(kCase1_1539);
+            int resultCase1_1345 = LeetCode.KthMissingPositiveNumber.Solution.FindKthPositive(arrCase1_1539, kCase1_1539);
+            Console.WriteLine(resultCase1_1345);
+
+            // Case 2
+            int[] arrCase2_1539 = { 1, 2, 3, 4 };
+            int kCase2_1539 = 2;
+            Console.WriteLine("Array Case 2 :");
+            Program.PrintArray(arrCase2_1539);
+            Console.WriteLine("Case 2 Kth Missing Number :");
+            Console.WriteLine(kCase2_1539);
+            int resultCase2_1345 = LeetCode.KthMissingPositiveNumber.Solution.FindKthPositive(arrCase2_1539, kCase2_1539);
+            Console.WriteLine(resultCase2_1345);
+
+            // Case 3
+            int[] arrCase3_1539 = { 1, 2, 3, 4, 9, 10, 12, 17 };
+            int kCase3_1539 = 6;
+            Console.WriteLine("Array Case 3 :");
+            Program.PrintArray(arrCase3_1539);
+            Console.WriteLine("Case 3 Kth Missing Number :");
+            Console.WriteLine(kCase3_1539);
+            int resultCase3_1345 = LeetCode.KthMissingPositiveNumber.Solution.FindKthPositive(arrCase3_1539, kCase3_1539);
+            Console.WriteLine(resultCase3_1345);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            
+            FindtheIndexoftheFirstOccurrenceinaStringFunc();
+            CountSubarraysWithFixedBoundsFunc();
+            KthMissingPositiveNumberFunc();
         }
     }
 }
