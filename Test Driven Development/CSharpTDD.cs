@@ -128,6 +128,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CapacityToShipPackagesWithinDDaysFunc();
             SortanArrayFunc();
             StringCompressionFunc();
+            MinimumTimetoCompleteTripsFunc();
+            KokoEatingBananasFunc();
         }
 
 
@@ -2059,12 +2061,93 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void MinimumTimetoCompleteTripsFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Time to Complete Trips");
+
+            // Case 1
+            int[] time1_1287 = {1, 2, 3};
+            int totalTrips1_1287 = 5;
+            long result1_1287 = LeetCode.MinimumTimetoCompleteTrips.Solution.MinimumTime(time1_1287, totalTrips1_1287);
+            Console.WriteLine(result1_1287);
+
+            // Case 2
+            int[] time2_1287 = { 2 };
+            int totalTrips2_1287 = 1;
+            long result2_1287 = LeetCode.MinimumTimetoCompleteTrips.Solution.MinimumTime(time2_1287, totalTrips2_1287);
+            Console.WriteLine(result2_1287);
+        }
+
+
+        private static void KokoEatingBananasFunc()
+        {
+            Program.Space();
+            Program.Title("Koko Eating Bananas");
+            System.Random random = new System.Random();
+
+            // Case 1
+            int[] piles1_875 = { 3, 6, 7, 11 };
+            int h1_875 = 8;
+            Console.WriteLine("Case 1 Piles :");
+            Program.PrintArray(piles1_875);
+            Console.WriteLine("Case 1 Hours :");
+            Console.WriteLine(h1_875);
+            int result1_875 = LeetCode.KokoEatingBananas.Solution.MinEatingSpeed(piles1_875, h1_875);
+            Console.WriteLine("Number of Bananas Koko needs to eat per hour :");
+            Console.WriteLine(result1_875);
+
+            // Case 2
+            int[] piles2_875 = { 30, 11, 23, 4, 20 };
+            int h2_875 = 5;
+            Console.WriteLine("Case 2 Piles :");
+            Program.PrintArray(piles2_875);
+            Console.WriteLine("Case 2 Hours :");
+            Console.WriteLine(h2_875);
+            int result2_875 = LeetCode.KokoEatingBananas.Solution.MinEatingSpeed(piles2_875, h2_875);
+            Console.WriteLine("Number of Bananas Koko needs to eat per hour :");
+            Console.WriteLine(result2_875);
+
+            // Case 3
+            int[] piles3_875 = { 30, 11, 23, 4, 20 };
+            int h3_875 = 6;
+            Console.WriteLine("Case 3 Piles :");
+            Program.PrintArray(piles3_875);
+            Console.WriteLine("Case 3 Hours :");
+            Console.WriteLine(h3_875);
+            int result3_875 = LeetCode.KokoEatingBananas.Solution.MinEatingSpeed(piles3_875, h3_875);
+            Console.WriteLine("Number of Bananas Koko needs to eat per hour :");
+            Console.WriteLine(result3_875);
+
+            // Case 4
+            int[] piles4_875 = Program.GenerateRandomNumber(25, 10);
+            int h4_875 = random.Next(1, 10);
+            Console.WriteLine("Case 4 Piles :");
+            Program.PrintArray(piles4_875);
+            Console.WriteLine("Case 4 Hours :");
+            Console.WriteLine(h4_875);
+            int result4_875 = LeetCode.KokoEatingBananas.Solution.MinEatingSpeed(piles4_875, h4_875);
+            Console.WriteLine("Number of Bananas Koko needs to eat per hour :");
+            Console.WriteLine(result4_875);
+
+            // Case 5
+            int[] piles5_875 = Program.GenerateRandomNumber(25, 10);
+            int h5_875 = random.Next(1, 10);
+            Console.WriteLine("Case 5 Piles :");
+            Program.PrintArray(piles5_875);
+            Console.WriteLine("Case 5 Hours :");
+            Console.WriteLine(h5_875);
+            int result5_875 = LeetCode.KokoEatingBananas.Solution.MinEatingSpeed(piles5_875, h5_875);
+            Console.WriteLine("Number of Bananas Koko needs to eat per hour :");
+            Console.WriteLine(result5_875);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            FindtheIndexoftheFirstOccurrenceinaStringFunc();
-            CountSubarraysWithFixedBoundsFunc();
-            KthMissingPositiveNumberFunc();
+            MinimumTimetoCompleteTripsFunc();
+            KokoEatingBananasFunc();
         }
     }
 }
