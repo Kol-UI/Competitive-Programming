@@ -100,6 +100,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SearchInsertPositionFunc();
             FindtheIndexoftheFirstOccurrenceinaStringFunc();
             KthMissingPositiveNumberFunc();
+            ConvertSortedArraytoBinarySearchTree();
         }
 
 
@@ -2142,12 +2143,28 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine(result5_875);
         }
 
+        private static void ConvertSortedArraytoBinarySearchTree()
+        {
+            Program.Space();
+            Program.Title("Convert Sorted Array to Binary Search Tree");
+
+            // Case 1
+            Program.SubTitle("Case 1");
+            int[] numsCase1_108 = { -10, -3, 0, 5, 9 };
+            TreeNode resultCase1_108 = LeetCode.ConvertSortedArraytoBinarySearchTree.Solution.SortedArrayToBST(numsCase1_108);
+            
+            // Case 2
+            Program.SubTitle("Case 2");
+            int[] numsCase2_108 = { 1, 3 };
+            TreeNode resultCase2_108 = LeetCode.ConvertSortedArraytoBinarySearchTree.Solution.SortedArrayToBST(numsCase2_108);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            MinimumTimetoCompleteTripsFunc();
-            KokoEatingBananasFunc();
+            ConvertSortedArraytoBinarySearchTree();
         }
     }
 }
