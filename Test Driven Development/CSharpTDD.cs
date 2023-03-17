@@ -64,6 +64,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ConvertbooleanvaluestostringsYesorNoFunc();
             ConvertaNumbertoaStringFunc();
             EvenOrOddFunc();
+            SquareNSumFunc();
+            FindthesmallestintegerinthearrayFunc();
         }
 
 
@@ -131,6 +133,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             StringCompressionFunc();
             MinimumTimetoCompleteTripsFunc();
             KokoEatingBananasFunc();
+            ImplementTriePrefixTreeFunc();
         }
 
 
@@ -2160,11 +2163,368 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void ImplementTriePrefixTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Implement Trie Prefix Tree");
+
+            LeetCode.ImplementTriePrefixTree.Trie obj_208 = new LeetCode.ImplementTriePrefixTree.Trie();
+            string word1_208 = "Trie";
+            Program.SubTitle(word1_208);
+            obj_208.Insert(word1_208);
+            bool searchResult1_208 = obj_208.Search(word1_208);
+            bool startsWithResult1_208 = obj_208.StartsWith(word1_208);
+            Console.WriteLine("Search: {0} - Starts With: {1}", searchResult1_208, startsWithResult1_208);
+
+            string word2_208 = "insert";
+            Program.SubTitle(word2_208);
+            obj_208.Insert(word2_208);
+            bool searchResult2_208 = obj_208.Search(word2_208);
+            bool startsWithResult2_208 = obj_208.StartsWith(word2_208);
+            Console.WriteLine("Search: {0} - Starts With: {1}", searchResult2_208, startsWithResult2_208);
+
+            string word3_208 = "search";
+            Program.SubTitle(word3_208);
+            obj_208.Insert(word3_208);
+            bool searchResult3_208 = obj_208.Search(word3_208);
+            bool startsWithResult3_208 = obj_208.StartsWith(word3_208);
+            Console.WriteLine("Search: {0} - Starts With: {1}", searchResult3_208, startsWithResult3_208);
+            
+            Program.SubTitle(word3_208);
+            obj_208.Insert(word3_208);
+            bool searchResult3_2_208 = obj_208.Search(word3_208);
+            bool startsWithResult3_2_208 = obj_208.StartsWith(word3_208);
+            Console.WriteLine("Search: {0} - Starts With: {1}", searchResult3_2_208, startsWithResult3_2_208);
+
+            string word4_208 = "startsWith";
+            Program.SubTitle(word4_208);
+            obj_208.Insert(word4_208);
+            bool searchResult4_208 = obj_208.Search(word4_208);
+            bool startsWithResult4_208 = obj_208.StartsWith(word4_208);
+            Console.WriteLine("Search: {0} - Starts With: {1}", searchResult4_208, startsWithResult4_208);
+
+            Program.SubTitle(word2_208);
+            obj_208.Insert(word2_208);
+            bool searchResult2_2_208 = obj_208.Search(word2_208);
+            bool startsWithResult2_2_208 = obj_208.StartsWith(word2_208);
+            Console.WriteLine("Search: {0} - Starts With: {1}", searchResult2_2_208, startsWithResult2_2_208);
+
+            Program.SubTitle(word3_208);
+            obj_208.Insert(word3_208);
+            bool searchResult3_3_208 = obj_208.Search(word3_208);
+            bool startsWithResult3_3_208 = obj_208.StartsWith(word3_208);
+            Console.WriteLine("Search: {0} - Starts With: {1}", searchResult3_3_208, startsWithResult3_3_208);
+
+            string word5_208 = "apple";
+            Program.SubTitle(word5_208);
+            obj_208.Insert(word5_208);
+            bool searchResult5_208 = obj_208.Search(word5_208);
+            bool startsWithResult5_208 = obj_208.StartsWith(word5_208);
+            Console.WriteLine("Search: {0} - Starts With: {1}", searchResult5_208, startsWithResult5_208);
+
+            LeetCode.ImplementTriePrefixTree.Trie trie = new LeetCode.ImplementTriePrefixTree.Trie();
+            Program.SubTitle(word5_208);
+            trie.Insert(word5_208);
+            bool test1_2_208 = trie.StartsWith(word5_208);
+            bool test1_208 = trie.Search(word5_208);
+            Console.WriteLine(test1_2_208);
+            Console.WriteLine(test1_208);
+
+            string word6_208 = "app";
+            Program.SubTitle(word6_208);
+            bool test2_208 = trie.Search(word6_208);
+            Console.WriteLine(test2_208);
+        }
+
+
+        private static void SquareNSumFunc()
+        {
+            Program.Space();
+            Program.Title("Square(n) Sum");
+            
+            // Case 1
+            int[] case1_SquareNSum = {};
+            int case1_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(case1_SquareNSum);
+            Console.WriteLine(case1_SquareNSumResult);
+
+            // Case 2
+            int[] case2_SquareNSum = { 1, 2, 2 };
+            int case2_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(case2_SquareNSum);
+            Console.WriteLine(case2_SquareNSumResult);
+
+            // Case 3
+            int[] case3_SquareNSum = { 1, 2 };
+            int case3_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(case3_SquareNSum);
+            Console.WriteLine(case3_SquareNSumResult);
+
+            // Case 4
+            int[] case4_SquareNSum = { 5, 3, 4 };
+            int case4_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(case4_SquareNSum);
+            Console.WriteLine(case4_SquareNSumResult);
+
+            // Case 5
+            int[] case5_SquareNSum = Program.GenerateRandomNumber(10, 100);
+            int case5_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(case5_SquareNSum);
+            Console.WriteLine(case5_SquareNSumResult);
+
+            // Case 6
+            int[] Case6_SquareNSum = Program.GenerateRandomNumber(10, 100);
+            int Case6_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case6_SquareNSum);
+            Console.WriteLine(Case6_SquareNSumResult);
+
+            // Case 7
+            int[] Case7_SquareNSum = Program.GenerateRandomNumber(10, 100);
+            int Case7_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case7_SquareNSum);
+            Console.WriteLine(Case7_SquareNSumResult);
+
+            // Case 8
+            int[] Case8_SquareNSum = Program.GenerateRandomNumber(10, 100);
+            int Case8_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case8_SquareNSum);
+            Console.WriteLine(Case8_SquareNSumResult);
+
+            // Case 9
+            int[] Case9_SquareNSum = Program.GenerateRandomNegativeNumber(100);
+            int Case9_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case9_SquareNSum);
+            Console.WriteLine(Case9_SquareNSumResult);
+
+            // Case 10
+            int[] Case10_SquareNSum = Program.GenerateRandomNegativeNumber(100);
+            int Case10_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case10_SquareNSum);
+            Console.WriteLine(Case10_SquareNSumResult);
+
+            // Case 11
+            int[] Case11_SquareNSum = Program.GenerateRandomNegativeNumber(100);
+            int Case11_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case11_SquareNSum);
+            Console.WriteLine(Case11_SquareNSumResult);
+
+            // Case 12
+            int[] Case12_SquareNSum = Program.GenerateRandomNegativeNumber(100);
+            int Case12_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case12_SquareNSum);
+            Console.WriteLine(Case12_SquareNSumResult);
+
+            // Case 1 Clever
+            int[] case1_SquareNSumClever = {};
+            int case1_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(case1_SquareNSumClever);
+            Console.WriteLine(case1_SquareNSumResultClever);
+
+            // Case 2 Clever
+            int[] case2_SquareNSumClever = { 1, 2, 2 };
+            int case2_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(case2_SquareNSumClever);
+            Console.WriteLine(case2_SquareNSumResultClever);
+
+            // Case 3 Clever
+            int[] case3_SquareNSumClever = { 1, 2 };
+            int case3_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(case3_SquareNSumClever);
+            Console.WriteLine(case3_SquareNSumResultClever);
+
+            // Case 4 Clever
+            int[] case4_SquareNSumClever = { 5, 3, 4 };
+            int case4_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(case4_SquareNSumClever);
+            Console.WriteLine(case4_SquareNSumResultClever);
+
+            // Case 5 Clever
+            int[] case5_SquareNSumClever = Program.GenerateRandomNumber(10, 100);
+            int case5_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(case5_SquareNSumClever);
+            Console.WriteLine(case5_SquareNSumResultClever);
+
+            // Case 6 Clever
+            int[] Case6_SquareNSumClever = Program.GenerateRandomNumber(10, 100);
+            int Case6_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case6_SquareNSumClever);
+            Console.WriteLine(Case6_SquareNSumResultClever);
+
+            // Case 7 Clever
+            int[] Case7_SquareNSumClever = Program.GenerateRandomNumber(10, 100);
+            int Case7_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case7_SquareNSumClever);
+            Console.WriteLine(Case7_SquareNSumResultClever);
+
+            // Case 8 Clever
+            int[] Case8_SquareNSumClever = Program.GenerateRandomNumber(10, 100);
+            int Case8_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case8_SquareNSumClever);
+            Console.WriteLine(Case8_SquareNSumResultClever);
+
+            // Case 9 Clever
+            int[] Case9_SquareNSumClever = Program.GenerateRandomNegativeNumber(100);
+            int Case9_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case9_SquareNSumClever);
+            Console.WriteLine(Case9_SquareNSumResultClever);
+
+            // Case 10 Clever
+            int[] Case10_SquareNSumClever = Program.GenerateRandomNegativeNumber(100);
+            int Case10_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case10_SquareNSumClever);
+            Console.WriteLine(Case10_SquareNSumResultClever);
+
+            // Case 11 Clever
+            int[] Case11_SquareNSumClever = Program.GenerateRandomNegativeNumber(100);
+            int Case11_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case11_SquareNSumClever);
+            Console.WriteLine(Case11_SquareNSumResultClever);
+
+            // Case 12 Clever
+            int[] Case12_SquareNSumClever = Program.GenerateRandomNegativeNumber(100);
+            int Case12_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case12_SquareNSumClever);
+            Console.WriteLine(Case12_SquareNSumResultClever);
+        }
+
+
+        private static void FindthesmallestintegerinthearrayFunc()
+        {
+            Program.Space();
+            Program.Title("Find the smallest integer in the array");
+
+            // Case 1
+            int[] case1_Findthesmallestintegerinthearray = { -1, -2 };
+            int case1_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case1_Findthesmallestintegerinthearray);
+            Console.WriteLine(case1_FindthesmallestintegerinthearrayResult);
+
+            // Case 2
+            int[] case2_Findthesmallestintegerinthearray = { 1, 2, 2 };
+            int case2_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case2_Findthesmallestintegerinthearray);
+            Console.WriteLine(case2_FindthesmallestintegerinthearrayResult);
+
+            // Case 3
+            int[] case3_Findthesmallestintegerinthearray = { 1, 2 };
+            int case3_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case3_Findthesmallestintegerinthearray);
+            Console.WriteLine(case3_FindthesmallestintegerinthearrayResult);
+
+            // Case 4
+            int[] case4_Findthesmallestintegerinthearray = { 5, 3, 4 };
+            int case4_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case4_Findthesmallestintegerinthearray);
+            Console.WriteLine(case4_FindthesmallestintegerinthearrayResult);
+
+            // Case 5
+            int[] case5_Findthesmallestintegerinthearray = Program.GenerateRandomNumber(10, 100);
+            int case5_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case5_Findthesmallestintegerinthearray);
+            Console.WriteLine(case5_FindthesmallestintegerinthearrayResult);
+
+            // Case 6
+            int[] Case6_Findthesmallestintegerinthearray = Program.GenerateRandomNumber(10, 100);
+            int Case6_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case6_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case6_FindthesmallestintegerinthearrayResult);
+
+            // Case 7
+            int[] Case7_Findthesmallestintegerinthearray = Program.GenerateRandomNumber(10, 100);
+            int Case7_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case7_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case7_FindthesmallestintegerinthearrayResult);
+
+            // Case 8
+            int[] Case8_Findthesmallestintegerinthearray = Program.GenerateRandomNumber(10, 100);
+            int Case8_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case8_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case8_FindthesmallestintegerinthearrayResult);
+
+            // Case 9
+            int[] Case9_Findthesmallestintegerinthearray = Program.GenerateRandomNegativeNumber(100);
+            int Case9_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case9_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case9_FindthesmallestintegerinthearrayResult);
+
+            // Case 10
+            int[] Case10_Findthesmallestintegerinthearray = Program.GenerateRandomNegativeNumber(100);
+            int Case10_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case10_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case10_FindthesmallestintegerinthearrayResult);
+
+            // Case 11
+            int[] Case11_Findthesmallestintegerinthearray = Program.GenerateRandomNegativeNumber(100);
+            int Case11_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case11_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case11_FindthesmallestintegerinthearrayResult);
+
+            // Case 12
+            int[] Case12_Findthesmallestintegerinthearray = Program.GenerateRandomNegativeNumber(100);
+            int Case12_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case12_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case12_FindthesmallestintegerinthearrayResult);
+
+            // Case 13
+            int[] case13_Findthesmallestintegerinthearray = { 78, 56, 232, 12, 11, 43 };
+            int case13_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case13_Findthesmallestintegerinthearray);
+            Console.WriteLine(case13_FindthesmallestintegerinthearrayResult);
+
+            // Case 14
+            int[] case14_Findthesmallestintegerinthearray = { 78, 56, -2, 12, 8, -33 };
+            int case14_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case14_Findthesmallestintegerinthearray);
+            Console.WriteLine(case14_FindthesmallestintegerinthearrayResult);
+
+            // Case 15
+            int[] case15_Findthesmallestintegerinthearray = { 34, 15, 88, 2 };
+            int case15_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case15_Findthesmallestintegerinthearray);
+            Console.WriteLine(case15_FindthesmallestintegerinthearrayResult);
+
+            // Case 16
+            int[] case16_Findthesmallestintegerinthearray = { 34, -345, -1, 100 };
+            int case16_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case16_Findthesmallestintegerinthearray);
+            Console.WriteLine(case16_FindthesmallestintegerinthearrayResult);
+
+            
+            // Case 1 Clever Linq
+            int case1_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case1_Findthesmallestintegerinthearray);
+            Console.WriteLine(case1_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 2 Clever Linq
+            int case2_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case2_Findthesmallestintegerinthearray);
+            Console.WriteLine(case2_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 3 Clever Linq
+            int case3_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case3_Findthesmallestintegerinthearray);
+            Console.WriteLine(case3_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 4 Clever Linq
+            int case4_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case4_Findthesmallestintegerinthearray);
+            Console.WriteLine(case4_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 5 Clever Linq
+            int case5_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case5_Findthesmallestintegerinthearray);
+            Console.WriteLine(case5_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 6 Clever Linq
+            int Case6_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case6_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case6_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 7 Clever Linq
+            int Case7_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case7_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case7_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 8 Clever Linq
+            int Case8_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case8_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case8_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 9 Clever Linq
+            int Case9_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case9_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case9_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 10 Clever Linq
+            int Case10_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case10_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case10_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 11 Clever Linq
+            int Case11_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case11_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case11_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 12 Clever Linq
+            int Case12_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case12_Findthesmallestintegerinthearray);
+            Console.WriteLine(Case12_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 13 Clever Linq
+            int case13_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case13_Findthesmallestintegerinthearray);
+            Console.WriteLine(case13_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 14 Clever Linq
+            int case14_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case14_Findthesmallestintegerinthearray);
+            Console.WriteLine(case14_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 15 Clever Linq
+            int case15_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case15_Findthesmallestintegerinthearray);
+            Console.WriteLine(case15_FindthesmallestintegerinthearrayResultCleverLinq);
+
+            // Case 16 Clever Linq
+            int case16_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case16_Findthesmallestintegerinthearray);
+            Console.WriteLine(case16_FindthesmallestintegerinthearrayResultCleverLinq);
+
+        }
+
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            ConvertSortedArraytoBinarySearchTree();
+            ImplementTriePrefixTreeFunc(); // Medium
+            SquareNSumFunc(); // 8Kyu
+            FindthesmallestintegerinthearrayFunc(); // 8Kyu
         }
     }
 }
