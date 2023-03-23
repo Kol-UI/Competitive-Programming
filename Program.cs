@@ -36,6 +36,11 @@ namespace CompetitiveProgramming
             Console.WriteLine("[{0}]", string.Join(", ", array));
         }
 
+        public static void PrintBoolArray(bool[] array)
+        {
+            Console.WriteLine("[{0}]", string.Join(", ", array));
+        }
+
         public static void PrintBeforeAfterIntArray(int[] before, int[] after)
         {
             string beforeValue = string.Join(", ", before);

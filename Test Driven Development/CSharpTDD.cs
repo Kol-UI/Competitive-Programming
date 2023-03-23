@@ -16,6 +16,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             // All CodeWars Solutions
             CodeWarsTests();
 
+            // All GeeksForGeeks Solutions
+            GeeksForGeeksTests();
+
             // All LeetCode Solutions
             LeetCodeTests();
 
@@ -50,6 +53,25 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void GeeksForGeeksTests()
+        {
+            // School 
+            SchoolGeeksForGeeksTests();
+
+            // Basic
+            BasicGeeksForGeeksTests();
+
+            // Easy
+            EasyGeeksForGeeksTests();
+
+            // Medium
+            MediumGeeksForGeeksTests();
+
+            // Hard
+            HardGeeksForGeeksTests();
+        }
+
+
         // 8 KYU
         private static void EightKyuTests()
         {
@@ -66,6 +88,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             EvenOrOddFunc();
             SquareNSumFunc();
             FindthesmallestintegerinthearrayFunc();
+            RemoveStringSpacesFunc();
+            CountingsheepFunc();
+            ConvertaStringtoaNumberFunc();
         }
 
 
@@ -80,6 +105,42 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static void SixKyuTests()
         {
             ReplaceWithAlphabetPositionFunc();
+        }
+
+
+        // SCHOOL GEEKSFORGEEKS
+        private static void SchoolGeeksForGeeksTests()
+        {
+            SumofSeriesFunc();
+            PrintSecondLargestFunc();
+        }
+
+
+        // BASIC GEEKSFORGEEKS
+        private static void BasicGeeksForGeeksTests()
+        {
+
+        }
+
+
+        // EASY GEEKSFORGEEKS
+        private static void EasyGeeksForGeeksTests()
+        {
+
+        }
+
+
+        // MEDIUM GEEKSFORGEEKS
+        private static void MediumGeeksForGeeksTests()
+        {
+            StringrporprFunc();
+        }
+
+
+        // HARD GEEKSFORGEEKS
+        private static void HardGeeksForGeeksTests()
+        {
+
         }
 
 
@@ -103,6 +164,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             FindtheIndexoftheFirstOccurrenceinaStringFunc();
             KthMissingPositiveNumberFunc();
             ConvertSortedArraytoBinarySearchTree();
+            CanPlaceFlowersFunc();
         }
 
 
@@ -134,6 +196,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumTimetoCompleteTripsFunc();
             KokoEatingBananasFunc();
             ImplementTriePrefixTreeFunc();
+            NumberofZeroFilledSubarraysFunc();
+            MinimumScoreofaPathBetweenTwoCitiesFunc();
+            NumberofOperationstoMakeNetworkConnectedFunc();
         }
 
 
@@ -2513,18 +2578,306 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             // Case 16 Clever Linq
             int case16_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case16_Findthesmallestintegerinthearray);
             Console.WriteLine(case16_FindthesmallestintegerinthearrayResultCleverLinq);
-
         }
 
 
+        private static void SumofSeriesFunc()
+        {
+            Program.Space();
+            Program.Title("Sum of Series");
+
+            // Case 1
+            int NCase1 = 1;
+            Console.WriteLine("Input: {0}", NCase1);
+            long Output1 = GeeksForGeeks.School.SumofSeries.Solution.SeriesSum(NCase1);
+            Console.WriteLine("Output: {0}", Output1);
+
+            // Case 2
+            int NCase2 = 5;
+            Console.WriteLine("Input: {0}", NCase2);
+            long Output2 = GeeksForGeeks.School.SumofSeries.Solution.SeriesSum(NCase2);
+            Console.WriteLine("Output: {0}", Output2);
+        }
+
+
+        private static void PrintSecondLargestFunc()
+        {
+            Program.Space();
+            Program.Title("Print Second Largest");
+
+            // Case 1
+            int[] case1_PrintSecondLargest = { 12, 35, 1, 10, 34, 1 };
+            int NCase1_PrintSecondLargest = 6;
+            int case1_PrintSecondLargestResult = GeeksForGeeks.School.SecondLargest.Solution.PrintSecondLargest(case1_PrintSecondLargest, NCase1_PrintSecondLargest);
+            Console.WriteLine("Input: {0}", case1_PrintSecondLargestResult);
+            Program.PrintArray(case1_PrintSecondLargest);
+            Console.WriteLine("Output: {0}", case1_PrintSecondLargestResult);
+            Program.Space();
+
+            // Case 2
+            int[] case2_PrintSecondLargest = { 10, 5, 10 };
+            int NCase2_PrintSecondLargest = 3;
+            int case2_PrintSecondLargestResult = GeeksForGeeks.School.SecondLargest.Solution.PrintSecondLargest(case2_PrintSecondLargest, NCase2_PrintSecondLargest);
+            Console.WriteLine("Input: {0}", case2_PrintSecondLargestResult);
+            Program.PrintArray(case2_PrintSecondLargest);
+            Console.WriteLine("Output: {0}", case2_PrintSecondLargestResult);
+            Program.Space();
+        }
+
+
+        private static void StringrporprFunc()
+        {
+            Program.Space();
+            Program.Title("String rp or pr");
+
+            // Case 1
+            int X_Case1 = 5;
+            int Y_Case1 = 4;
+	        string S_Case1 = "abppprrr";
+            long case1_Result = GeeksForGeeks.Medium.Stringrporpr.Solution.Solve(X_Case1, Y_Case1, S_Case1);
+            Console.WriteLine("Input X Y S: {0} - {1} - {2}", X_Case1, Y_Case1, S_Case1);
+            Console.WriteLine("Output: {0}", case1_Result);
+            Program.Space();
+
+            // Case 1
+            int X_Case2 = 7;
+            int Y_Case2 = 7;
+	        string S_Case2 = "prpptppr";
+            long Case2_Result = GeeksForGeeks.Medium.Stringrporpr.Solution.Solve(X_Case2, Y_Case2, S_Case2);
+            Console.WriteLine("Input X Y S: {0} - {1} - {2}", X_Case2, Y_Case2, S_Case2);
+            Console.WriteLine("Output: {0}", Case2_Result);
+            Program.Space();
+        }
+
+
+        private static void CanPlaceFlowersFunc()
+        {
+            Program.Space();
+            Program.Title("Can Place Flowers");
+
+            // Case 1
+            int[] arrayCase1_605 = { 1, 0, 0, 0, 1 };
+            int intCase1_605 = 1;
+            Console.WriteLine("Input: {0}", intCase1_605);
+            Program.PrintArray(arrayCase1_605);
+            bool case1_605Result = LeetCode.CanPlaceFlowers.Solution.CanPlaceFlowers(arrayCase1_605, intCase1_605);
+            Console.WriteLine("Output: {0}", case1_605Result);
+            Program.PrintArray(arrayCase1_605);
+            Program.Space();
+
+            // Case 2
+            int[] arrayCase2_605 = { 1, 0, 0, 0, 1 };
+            int intCase2_605 = 2;
+            Console.WriteLine("Input: {0}", intCase2_605);
+            Program.PrintArray(arrayCase2_605);
+            bool case2_605Result = LeetCode.CanPlaceFlowers.Solution.CanPlaceFlowers(arrayCase2_605, intCase2_605);
+            Console.WriteLine("Output: {0}", case2_605Result);
+            Program.PrintArray(arrayCase2_605);
+            Program.Space();
+
+            // Case 3
+            int[] arrayCase3_605 = { 1, 0, 0, 0, 0, 0, 1 };
+            int intCase3_605 = 2;
+            Console.WriteLine("Input: {0}", intCase3_605);
+            Program.PrintArray(arrayCase3_605);
+            bool case3_605Result = LeetCode.CanPlaceFlowers.Solution.CanPlaceFlowers(arrayCase3_605, intCase3_605);
+            Console.WriteLine("Output: {0}", case3_605Result);
+            Program.PrintArray(arrayCase3_605);
+            Program.Space();
+        }
+
+
+        private static void NumberofZeroFilledSubarraysFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Zero-Filled Subarrays");
+
+            // Case 1
+            int[] arrayCase1_2348 = { 1, 3, 0, 0, 2, 0, 0, 4 };
+            Console.WriteLine("Input:");
+            Program.PrintArray(arrayCase1_2348);
+            long case1_2348Result = LeetCode.NumberofZeroFilledSubarrays.Solution.ZeroFilledSubarray(arrayCase1_2348);
+            Console.WriteLine("Output: {0}", case1_2348Result);
+            Program.Space();
+
+            // Case 2
+            int[] arrayCase2_2348 = { 0, 0, 0, 2, 0, 0 };
+            Console.WriteLine("Input:");
+            Program.PrintArray(arrayCase2_2348);
+            long case2_2348Result = LeetCode.NumberofZeroFilledSubarrays.Solution.ZeroFilledSubarray(arrayCase2_2348);
+            Console.WriteLine("Output: {0}", case2_2348Result);
+            Program.Space();
+        }
+
+
+        private static void MinimumScoreofaPathBetweenTwoCitiesFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Score of a Path Between Two Cities");
+
+            // Case 1
+            int[][] roads2492Case1 = new int[][]
+            {
+                new int[] { 1, 2, 9 },
+                new int[] { 2, 3, 6 },
+                new int[] { 1, 4, 7 }
+            };
+            int n2492Case1 = 4;
+            int result2492Case1 = LeetCode.MinimumScoreofaPathBetweenTwoCities.Solution.MinScore(n2492Case1, roads2492Case1);
+            Console.WriteLine("Output: {0}", result2492Case1);
+
+            // Case 2
+            int[][] roads2492Case2 = new int[][]
+            {
+                new int[] { 1, 2, 2 },
+                new int[] { 1, 3, 4 },
+                new int[] { 3, 4, 7 }
+            };
+            int n2492Case2 = 4;
+            int result2492Case2 = LeetCode.MinimumScoreofaPathBetweenTwoCities.Solution.MinScore(n2492Case2, roads2492Case2);
+            Console.WriteLine("Output: {0}", result2492Case2);
+        }
+
+
+        private static void NumberofOperationstoMakeNetworkConnectedFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Operations to Make Network Connected");
+
+            // Case 1
+            int[][] connections1319Case1 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 0, 2 },
+                new int[] { 1, 2 }
+            };
+            int n1319Case1 = 4;
+            int result1319Case1 = LeetCode.NumberofOperationstoMakeNetworkConnected.Solution.MakeConnected(n1319Case1, connections1319Case1);
+            Console.WriteLine("Output: {0}", result1319Case1);
+
+            // Case 2
+            int[][] connections1319Case2 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 0, 2 },
+                new int[] { 0, 3 },
+                new int[] { 1, 2 },
+                new int[] { 1, 3 }
+            };
+            int n1319Case2 = 6;
+            int result1319Case2 = LeetCode.NumberofOperationstoMakeNetworkConnected.Solution.MakeConnected(n1319Case2, connections1319Case2);
+            Console.WriteLine("Output: {0}", result1319Case2);
+
+            // Case 3
+            int[][] connections1319Case3 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 0, 2 },
+                new int[] { 0, 3 },
+                new int[] { 1, 2 }
+            };
+            int n1319Case3 = 6;
+            int result1319Case3 = LeetCode.NumberofOperationstoMakeNetworkConnected.Solution.MakeConnected(n1319Case3, connections1319Case3);
+            Console.WriteLine("Output: {0}", result1319Case3);
+        }
+
+
+        private static void RemoveStringSpacesFunc()
+        {
+            Program.Space();
+            Program.Title("Remove String Spaces");
+
+            // Case 1
+            string Case1 = "8 j 8   mBliB8g  imjB8B8  jl  B";
+            Console.WriteLine("Input: {0}", Case1);
+            string Case1_Result = CodeWars.EightKyu.RemoveStringSpaces.Solution.NoSpace(Case1);
+            Console.WriteLine("Output: {0}", Case1_Result);
+            Program.Space();
+
+            // Case 2
+            string Case2 = "8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd";
+            Console.WriteLine("Input: {0}", Case2);
+            string Case2_Result = CodeWars.EightKyu.RemoveStringSpaces.Solution.NoSpace(Case2);
+            Console.WriteLine("Output: {0}", Case2_Result);
+            Program.Space();
+
+            // Case 3
+            string Case3 = "8aaaaa dddd r     ";
+            Console.WriteLine("Input: {0}", Case3);
+            string Case3_Result = CodeWars.EightKyu.RemoveStringSpaces.Solution.NoSpace(Case3);
+            Console.WriteLine("Output: {0}", Case3_Result);
+            Program.Space();
+        }
+
+        
+        private static void CountingsheepFunc()
+        {
+            Program.Space();
+            Program.Title("Counting Sheep");
+
+            // Case 1
+            bool[] sheepsCase1 =
+            {
+                true,  true,  true,  false,
+                true,  true,  true,  true ,
+                true,  false, true,  false,
+                true,  false, false, true ,
+                true,  true,  true,  true ,
+                false, false, true,  true
+            };
+            Console.WriteLine("Input:");
+            Program.PrintBoolArray(sheepsCase1);
+            int Case1_Sheeps = CodeWars.EightKyu.Countingsheep.Kata.CountSheeps(sheepsCase1);
+            Console.WriteLine("Output: {0}", Case1_Sheeps);
+            Program.Space();
+
+            // Case 2
+            bool[] sheepsCase2 = { true,  false,  true };
+            Console.WriteLine("Input:");
+            Program.PrintBoolArray(sheepsCase2);
+            int Case2_Sheeps = CodeWars.EightKyu.Countingsheep.Kata.CountSheeps(sheepsCase2);
+            Console.WriteLine("Output: {0}", Case2_Sheeps);
+            Program.Space();
+        }
+
+
+        private static void ConvertaStringtoaNumberFunc()
+        {
+            Program.Space();
+            Program.Title("Convert a String to a Number");
+
+            string case1ConvertaStringtoaNumber = "1234";
+            Console.WriteLine("Input: {0}", case1ConvertaStringtoaNumber);
+            int resultcase1ConvertaStringtoaNumber = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumber(case1ConvertaStringtoaNumber);
+            int resultcase1ConvertaStringtoaNumberClever = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumberClever(case1ConvertaStringtoaNumber);
+            string case2ConvertaStringtoaNumber = "605";
+            Console.WriteLine("Input: {0}", case2ConvertaStringtoaNumber);
+            int resultcase2ConvertaStringtoaNumber = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumber(case2ConvertaStringtoaNumber);
+            int resultcase2ConvertaStringtoaNumberClever = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumberClever(case2ConvertaStringtoaNumber);
+            string case3ConvertaStringtoaNumber = "1405";
+            Console.WriteLine("Input: {0}", case3ConvertaStringtoaNumber);
+            int resultcase3ConvertaStringtoaNumber = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumber(case3ConvertaStringtoaNumber);
+            int resultcase3ConvertaStringtoaNumberClever = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumberClever(case3ConvertaStringtoaNumber);
+            string case4ConvertaStringtoaNumber = "-7";
+            Console.WriteLine("Input: {0}", case4ConvertaStringtoaNumber);
+            int resultcase4ConvertaStringtoaNumber = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumber(case4ConvertaStringtoaNumber);
+            int resultcase4ConvertaStringtoaNumberClever = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumberClever(case4ConvertaStringtoaNumber);
+        }
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            ImplementTriePrefixTreeFunc(); // Medium
-            SquareNSumFunc(); // 8Kyu
-            FindthesmallestintegerinthearrayFunc(); // 8Kyu
+            SumofSeriesFunc(); // School
+            PrintSecondLargestFunc(); // School
+            StringrporprFunc(); // Medium
+            CanPlaceFlowersFunc(); // Easy
+            NumberofZeroFilledSubarraysFunc(); // Medium
+            MinimumScoreofaPathBetweenTwoCitiesFunc(); // Medium
+            NumberofOperationstoMakeNetworkConnectedFunc(); // Medium
+            RemoveStringSpacesFunc(); // 8Kyu
+            CountingsheepFunc(); // 8Kyu
+            ConvertaStringtoaNumberFunc(); // 8Kyu
         }
     }
 }
