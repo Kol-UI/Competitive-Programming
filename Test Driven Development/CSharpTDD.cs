@@ -200,6 +200,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumScoreofaPathBetweenTwoCitiesFunc();
             NumberofOperationstoMakeNetworkConnectedFunc();
             ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc();
+            CountUnreachablePairsofNodesinanUndirectedGraphFunc();
+            MinimumPathSumFunc();
+            PrimeSubtractionOperationFunc();
         }
 
 
@@ -214,6 +217,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             EditDistanceFunc();
             CountSubarraysWithFixedBoundsFunc();
             JumpGameIVFunc();
+            LongestCycleinaGraphFunc();
         }
 
 
@@ -2906,12 +2910,123 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int result1466Case3 = LeetCode.ReorderRoutestoMakeAllPathsLeadtotheCityZero.Solution.MinReorder(n1466Case3, connections1466Case3);
             Console.WriteLine("Output: {0}", result1466Case3);
         }
+
+
+        private static void CountUnreachablePairsofNodesinanUndirectedGraphFunc()
+        {
+            Program.Space();
+            Program.Title("Count Unreachable Pairs of Nodes in an Undirected Graph");
+            
+            // Case 1
+            int[][] edges2316Case1 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 0, 2 },
+                new int[] { 1, 2 }
+            };
+            int n2316Case1 = 3;
+            long Result2316Case1 = LeetCode.CountUnreachablePairsofNodesinanUndirectedGraph.Solution.CountPairs(n2316Case1, edges2316Case1);
+            Console.WriteLine("Result Case 1: {0}", Result2316Case1);
+
+            // Case 2
+            int[][] edges2316Case2 = new int[][]
+            {
+                new int[] { 0, 2 },
+                new int[] { 0, 5 },
+                new int[] { 2, 4 },
+                new int[] { 1, 6 },
+                new int[] { 5, 4 }
+            };
+            int n2316Case2 = 7;
+            long Result2316Case2 = LeetCode.CountUnreachablePairsofNodesinanUndirectedGraph.Solution.CountPairs(n2316Case2, edges2316Case2);
+            Console.WriteLine("Result Case 2: {0}", Result2316Case2);
+        }
+
+
+        private static void LongestCycleinaGraphFunc()
+        {
+            Program.Space();
+            Program.Title("Longest Cycle in a Graph");
+
+            // Case 1
+            int[] edges2360Case1 = { 3, 3, 4, 2, 3 };
+            int result2360Case1 = LeetCode.LongestCycleinaGraph.Solution.LongestCycle(edges2360Case1);
+            Console.WriteLine("Result Case 1: {0}", result2360Case1);
+
+            // Case 2
+            int[] edges2360Case2 = { 2, -1, 3, 1 };
+            int result2360Case2 = LeetCode.LongestCycleinaGraph.Solution.LongestCycle(edges2360Case2);
+            Console.WriteLine("Result Case 2: {0}", result2360Case2);
+        }
+
+
+        private static void MinimumPathSumFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Path Sum");
+            
+            // Case 1
+            int[][] grid64Case1 = new int[][]
+            {
+                new int[] { 1, 3, 1 },
+                new int[] { 1, 5, 1 },
+                new int[] { 4, 2, 1 }
+            };
+            int result64Case1 = LeetCode.MinimumPathSum.Solution.MinPathSum(grid64Case1);
+            Console.WriteLine("Result Case 1: {0}", result64Case1);
+
+            // Case 2
+            int[][] grid64Case2 = new int[][]
+            {
+                new int[] { 1, 3, 1 },
+                new int[] { 1, 5, 1 },
+                new int[] { 4, 2, 1 }
+            };
+            int result64Case2 = LeetCode.MinimumPathSum.Solution.MinPathSum(grid64Case2);
+            Console.WriteLine("Result Case 2: {0}", result64Case2);
+        }
+
+
+        private static void PrimeSubtractionOperationFunc()
+        {
+            Program.Space();
+            Program.Title("Prime Subtraction Operation");
+
+            // Case 1
+            Program.Space();
+            int[] nums2601Case1 = { 4, 9, 6, 10 };
+            Console.WriteLine("Array Case 1: ");
+            Program.PrintArray(nums2601Case1);
+            bool result2601Case1 = LeetCode.PrimeSubtractionOperation.Solution.PrimeSubOperation(nums2601Case1);
+            Console.WriteLine("Result Case 1: {0}", result2601Case1);
+
+            // Case 2
+            Program.Space();
+            int[] nums2601Case2 = { 6, 8, 11, 12 };
+            Console.WriteLine("Array Case 2: ");
+            Program.PrintArray(nums2601Case2);
+            bool result2601Case2 = LeetCode.PrimeSubtractionOperation.Solution.PrimeSubOperation(nums2601Case2);
+            Console.WriteLine("Result Case 2: {0}", result2601Case2);
+
+            // Case 3
+            Program.Space();
+            int[] nums2601Case3 = { 5, 8, 3 };
+            Console.WriteLine("Array Case 3: ");
+            Program.PrintArray(nums2601Case3);
+            bool result2601Case3 = LeetCode.PrimeSubtractionOperation.Solution.PrimeSubOperation(nums2601Case3);
+            Console.WriteLine("Result Case 3: {0}", result2601Case3);
+        }
+
         
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc(); // Medium LC
+            CountUnreachablePairsofNodesinanUndirectedGraphFunc(); // Medium LC
+            LongestCycleinaGraphFunc(); // Hard LC
+            MinimumPathSumFunc(); // Medium LC
+            PrimeSubtractionOperationFunc(); // Medium LC
         }
     }
 }
