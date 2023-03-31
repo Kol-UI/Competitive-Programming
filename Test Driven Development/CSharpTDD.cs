@@ -126,7 +126,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         // EASY GEEKSFORGEEKS
         private static void EasyGeeksForGeeksTests()
         {
-
+            CounttheSubstringsFunc();
+            MinimumIntegerFunc();
         }
 
 
@@ -134,6 +135,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static void MediumGeeksForGeeksTests()
         {
             StringrporprFunc();
+            EvenSwapFunc();
         }
 
 
@@ -165,6 +167,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             KthMissingPositiveNumberFunc();
             ConvertSortedArraytoBinarySearchTree();
             CanPlaceFlowersFunc();
+            KItemsWiththeMaximumSumFunc();
         }
 
 
@@ -203,6 +206,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CountUnreachablePairsofNodesinanUndirectedGraphFunc();
             MinimumPathSumFunc();
             PrimeSubtractionOperationFunc();
+            MinimumCostForTicketsFunc();
         }
 
 
@@ -218,6 +222,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CountSubarraysWithFixedBoundsFunc();
             JumpGameIVFunc();
             LongestCycleinaGraphFunc();
+            NumberofWaysofCuttingaPizzaFunc();
+            ReducingDishesFunc();
+            ScrambleStringFunc();
         }
 
 
@@ -3017,16 +3024,204 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result Case 3: {0}", result2601Case3);
         }
 
+
+        private static void MinimumCostForTicketsFunc()
+        {
+            Program.Space();
+            Program.Title("PMinimum Cost For Tickets");
+
+            // Case 1
+            int[] days983Case1 = { 1, 4, 6, 7, 8, 20 };
+            int[] costs983Case1 = { 2, 7, 15 };
+            Console.WriteLine("Days:");
+            Program.PrintArray(days983Case1);
+            Console.WriteLine("Costs:");
+            Program.PrintArray(costs983Case1);
+            int result983Case1 = LeetCode.MinimumCostForTickets.Solution.MincostTickets(days983Case1, costs983Case1);
+            Console.WriteLine("Result: {0}", result983Case1);
+            Program.Space();
+
+            // Case 2
+            int[] days983Case2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 31 };
+            int[] costs983Case2 = { 2, 7, 15 };
+            Console.WriteLine("Days:");
+            Program.PrintArray(days983Case2);
+            Console.WriteLine("Costs:");
+            Program.PrintArray(costs983Case2);
+            int result983Case2 = LeetCode.MinimumCostForTickets.Solution.MincostTickets(days983Case2, costs983Case2);
+            Console.WriteLine("Result: {0}", result983Case2);
+        }
+
+
+        private static void KItemsWiththeMaximumSumFunc()
+        {
+            Program.Space();
+            Program.Title("K Items With the Maximum Sums");
+
+            // Case 1
+            int numOnes2600Case1 = 3;
+            int numZeros2600Case1 = 2;
+            int numNegOnes2600Case1 = 0;
+            int k2600Case1 = 2;
+            int result2600Case1 = LeetCode.KItemsWiththeMaximumSum.Solution.KItemsWithMaximumSum(numOnes2600Case1, numZeros2600Case1, numNegOnes2600Case1, k2600Case1);
+            Console.WriteLine("numOnes = {0}, numZeros = {1}, numNegOnes = {2}, k = {3}, Result = {4}", numOnes2600Case1, numZeros2600Case1, numNegOnes2600Case1, k2600Case1, result2600Case1);
+
+            // Case 2
+            int numOnes2600Case2 = 3;
+            int numZeros2600Case2 = 2;
+            int numNegOnes2600Case2 = 0;
+            int k2600Case2 = 4;
+            int result2600Case2 = LeetCode.KItemsWiththeMaximumSum.Solution.KItemsWithMaximumSum(numOnes2600Case2, numZeros2600Case2, numNegOnes2600Case2, k2600Case2);
+            Console.WriteLine("numOnes = {0}, numZeros = {1}, numNegOnes = {2}, k = {3}, Result = {4}", numOnes2600Case2, numZeros2600Case2, numNegOnes2600Case2, k2600Case2, result2600Case2);
+        }
+
+
+        private static void CounttheSubstringsFunc()
+        {
+            Program.Space();
+            Program.Title("Count the Substrings");
+
+            // Case 1
+            string Case1S = "gEEk";
+            Console.WriteLine("Case 1 {0}", Case1S);
+            int resultCase1 = GeeksForGeeks.Easy.CounttheSubstrings.Solution.CountSubstring(Case1S);
+            Console.WriteLine("Result {0}", resultCase1);
+
+            // Case 2
+            string Case2S = "WomensDAY";
+            Console.WriteLine("Case 2 {0}", Case2S);
+            int resultCase2 = GeeksForGeeks.Easy.CounttheSubstrings.Solution.CountSubstring(Case2S);
+            Console.WriteLine("Result {0}", resultCase2);
+        }
+
+
+        private static void MinimumIntegerFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Integer");
+
+            // Case 1
+            int N = 3;
+            int[] A = { 1, 3, 2 };
+            int resultCase1 = GeeksForGeeks.Easy.MinimumInteger.Solution.MinimumInteger(N, A);
+            Console.WriteLine("Result {0}", resultCase1);
+            
+            // Case 2
+            int N2 = 1;
+            int[] A2 = { 3 };
+            int resultCase2 = GeeksForGeeks.Easy.MinimumInteger.Solution.MinimumInteger(N2, A2);
+            Console.WriteLine("Result {0}", resultCase2);
+        }
+
+
+        private static void EvenSwapFunc()
+        {
+            Program.Space();
+            Program.Title("Even Swap");
+
+            // Case 1
+            int N1 = 3;
+            int[] a1 = { 1, 3, 5 };
+            int[] result1 = GeeksForGeeks.Medium.EvenSwap.Solution.LexicographicallyLargest(a1, N1);
+            Program.PrintArray(result1);
+            Program.Space();
+        }
+
+
+        private static void NumberofWaysofCuttingaPizzaFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Ways of Cutting a Pizza");
+            
+            // Case 1
+            string[] pizza1444_1 = { "A..","AAA","..." };
+            int k1444_1 = 3;
+            Console.WriteLine("Case 1 : {0}", k1444_1);
+            Program.PrintStringArray(pizza1444_1);
+            int result1444_1 = LeetCode.NumberofWaysofCuttingaPizza.Solution.Ways(pizza1444_1, k1444_1);
+            Console.WriteLine("Result : {0}", result1444_1);
+
+            // Case 2
+            string[] pizza1444_2 = { "A..","AA.","..." };
+            int k1444_2 = 3;
+            Console.WriteLine("Case 2 : {0}", k1444_2);
+            Program.PrintStringArray(pizza1444_2);
+            int result1444_2 = LeetCode.NumberofWaysofCuttingaPizza.Solution.Ways(pizza1444_2, k1444_2);
+            Console.WriteLine("Result : {0}", result1444_2);
+
+            // Case 3
+            string[] pizza1444_3 = { "A..","A..","..." };
+            int k1444_3 = 1;
+            Console.WriteLine("Case 3 : {0}", k1444_3);
+            Program.PrintStringArray(pizza1444_3);
+            int result1444_3 = LeetCode.NumberofWaysofCuttingaPizza.Solution.Ways(pizza1444_3, k1444_3);
+            Console.WriteLine("Result : {0}", result1444_3);
+        }
+
+
+        private static void ReducingDishesFunc()
+        {
+            Program.Space();
+            Program.Title("Reducing Dishes");
+
+            // Case 1
+            Program.Space();
+            int[] satisfaction1402_1 = { -1 , -8 , 0 , 5 , -9 };
+            Program.PrintArray(satisfaction1402_1);
+            int result1402_1 = LeetCode.ReducingDishes.Solution.MaxSatisfaction(satisfaction1402_1);
+            Console.WriteLine("Result : {0}", result1402_1);
+
+            // Case 2
+            Program.Space();
+            int[] satisfaction1402_2 = { 4, 3, 2 };
+            Program.PrintArray(satisfaction1402_2);
+            int result1402_2 = LeetCode.ReducingDishes.Solution.MaxSatisfaction(satisfaction1402_2);
+            Console.WriteLine("Result : {0}", result1402_2);
+
+            // Case 3
+            Program.Space();
+            int[] satisfaction1402_3 = { -1, -4 , -5 };
+            Program.PrintArray(satisfaction1402_3);
+            int result1402_3 = LeetCode.ReducingDishes.Solution.MaxSatisfaction(satisfaction1402_3);
+            Console.WriteLine("Result : {0}", result1402_3);
+        }
+
+
+        private static void ScrambleStringFunc()
+        {
+            Program.Space();
+            Program.Title("Scramble String");
+
+            // Case 1
+            string s1_87_1 = "great";
+            string s2_87_1 = "rgeat";
+            bool result87_1 = LeetCode.ScrambleString.Solution.IsScramble(s1_87_1, s2_87_1);
+            Console.WriteLine("Result : {0}", result87_1);
+
+            // Case 2
+            string s1_87_2 = "great";
+            string s2_87_2 = "rgeat";
+            bool result87_2 = LeetCode.ScrambleString.Solution.IsScramble(s1_87_2, s2_87_2);
+            Console.WriteLine("Result : {0}", result87_2);
+
+            // Case 3
+            string s1_87_3 = "great";
+            string s2_87_3 = "rgeat";
+            bool result87_3 = LeetCode.ScrambleString.Solution.IsScramble(s1_87_3, s2_87_3);
+            Console.WriteLine("Result : {0}", result87_3);
+        }
         
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            CountUnreachablePairsofNodesinanUndirectedGraphFunc(); // Medium LC
-            LongestCycleinaGraphFunc(); // Hard LC
-            MinimumPathSumFunc(); // Medium LC
-            PrimeSubtractionOperationFunc(); // Medium LC
+            CounttheSubstringsFunc(); // Easy GFG
+            MinimumIntegerFunc(); // Easy GFG
+            EvenSwapFunc(); // Medium GFG
+            NumberofWaysofCuttingaPizzaFunc(); // Hard LC
+            ReducingDishesFunc(); // Hard LC
+            ScrambleStringFunc(); // Hard LC
         }
     }
 }
