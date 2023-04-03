@@ -168,6 +168,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ConvertSortedArraytoBinarySearchTree();
             CanPlaceFlowersFunc();
             KItemsWiththeMaximumSumFunc();
+            BinarySearchFunc();
         }
 
 
@@ -207,6 +208,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumPathSumFunc();
             PrimeSubtractionOperationFunc();
             MinimumCostForTicketsFunc();
+            SuccessfulPairsofSpellsandPotionsFunc();
+            BoatstoSavePeopleFunc();
         }
 
 
@@ -3210,18 +3213,104 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             bool result87_3 = LeetCode.ScrambleString.Solution.IsScramble(s1_87_3, s2_87_3);
             Console.WriteLine("Result : {0}", result87_3);
         }
+
+
+        private static void BinarySearchFunc()
+        {
+            Program.Space();
+            Program.Title("Binary Search");
+
+            // Case 1
+            int[] nums704_1 = {-1,0,3,5,9,12};
+            int target704_1 = 9;
+            int result704_1 = LeetCode.BinarySearch.Solution.Search(nums704_1, target704_1);
+            Console.WriteLine("Case 1");
+            Program.PrintArray(nums704_1);
+            Console.WriteLine(target704_1);
+            Console.WriteLine("Result : {0}", result704_1);
+
+            // Case 2
+            Program.Space();
+            int[] nums704_2 = {-1,0,3,5,9,12};
+            int target704_2 = 2;
+            int result704_2 = LeetCode.BinarySearch.Solution.Search(nums704_2, target704_2);
+            Console.WriteLine("Case 2");
+            Program.PrintArray(nums704_2);
+            Console.WriteLine(target704_2);
+            Console.WriteLine("Result : {0}", result704_2);
+        }
+
+
+        private static void SuccessfulPairsofSpellsandPotionsFunc()
+        {
+            Program.Space();
+            Program.Title("Successful Pairs of Spells and Potions");
+
+            // Case 1
+            int[] spells2300_1 = {5,1,3};
+            int[] potions2300_1 = {1,2,3,4,5};
+            long success2300_1 = 7;
+            int[] result2300_1 = LeetCode.SuccessfulPairsofSpellsandPotions.Solution.SuccessfulPairs(spells2300_1, potions2300_1, success2300_1);
+            Console.WriteLine("Case 1 :");
+            Program.PrintArray(result2300_1);
+
+            // Case 2
+            Program.Space();
+            int[] spells2300_2 = {3,1,2};
+            int[] potions2300_2 = {8,5,8};
+            long success2300_2 = 16;
+            int[] result2300_2 = LeetCode.SuccessfulPairsofSpellsandPotions.Solution.SuccessfulPairs(spells2300_2, potions2300_2, success2300_2);
+            Console.WriteLine("Case 2 :");
+            Program.PrintArray(result2300_2);
+        }
+
+
+        private static void BoatstoSavePeopleFunc()
+        {
+            Program.Space();
+            Program.Title("Boats to Save People");
+
+            Program.SubTitle("Solution 1");
+            // Case 1
+            int[] people881_1 = {1,2};
+            int limit881_1 = 3;
+            int result881_1 = LeetCode.BoatstoSavePeople.Solution.NumRescueBoats(people881_1, limit881_1);
+            Console.WriteLine("Result : {0}", result881_1);
+
+            // Case 2
+            int[] people881_2 = {3,2,2,1};
+            int limit881_2 = 3;
+            int result881_2 = LeetCode.BoatstoSavePeople.Solution.NumRescueBoats(people881_2, limit881_2);
+            Console.WriteLine("Result : {0}", result881_2);
+
+            // Case 3
+            int[] people881_3 = {3,5,3,4};
+            int limit881_3 = 5;
+            int result881_3 = LeetCode.BoatstoSavePeople.Solution.NumRescueBoats(people881_3, limit881_3);
+            Console.WriteLine("Result : {0}", result881_3);
+
+            Program.SubTitle("Solution 2");
+            // Case 1
+            int result881_1_2 = LeetCode.BoatstoSavePeople.Solution.NumRescueBoats2(people881_1, limit881_1);
+            Console.WriteLine("Result : {0}", result881_1_2);
+
+            // Case 2
+            int result881_2_2 = LeetCode.BoatstoSavePeople.Solution.NumRescueBoats2(people881_2, limit881_2);
+            Console.WriteLine("Result : {0}", result881_2_2);
+
+            // Case 3
+            int result881_3_2 = LeetCode.BoatstoSavePeople.Solution.NumRescueBoats(people881_3, limit881_3);
+            Console.WriteLine("Result : {0}", result881_3_2);
+        }
         
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            CounttheSubstringsFunc(); // Easy GFG
-            MinimumIntegerFunc(); // Easy GFG
-            EvenSwapFunc(); // Medium GFG
-            NumberofWaysofCuttingaPizzaFunc(); // Hard LC
-            ReducingDishesFunc(); // Hard LC
-            ScrambleStringFunc(); // Hard LC
+            BinarySearchFunc(); // Easy LC
+            SuccessfulPairsofSpellsandPotionsFunc(); // Medium LC
+            BoatstoSavePeopleFunc(); // Medium LC
         }
     }
 }
