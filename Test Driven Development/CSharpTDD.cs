@@ -128,6 +128,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             CounttheSubstringsFunc();
             MinimumIntegerFunc();
+            Remainderondividingby11Func();
+            MakeArrayElementsEqualFunc();
         }
 
 
@@ -136,6 +138,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             StringrporprFunc();
             EvenSwapFunc();
+            MinimumStepsRequiredFunc();
         }
 
 
@@ -210,6 +213,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumCostForTicketsFunc();
             SuccessfulPairsofSpellsandPotionsFunc();
             BoatstoSavePeopleFunc();
+            OptimalPartitionofStringFunc();
         }
 
 
@@ -3302,15 +3306,82 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int result881_3_2 = LeetCode.BoatstoSavePeople.Solution.NumRescueBoats(people881_3, limit881_3);
             Console.WriteLine("Result : {0}", result881_3_2);
         }
+
+
+        private static void Remainderondividingby11Func()
+        {
+            Program.Space();
+            Program.Title("Remainder on dividing by 11");
+
+            // Case 1
+            string RemainderCase1 = "1345";
+            int RemainderCase1_Result = GeeksForGeeks.Easy.Remainderondividingby11.Solution.xmod11(RemainderCase1);
+            Console.WriteLine("Result : {0}", RemainderCase1_Result);
+            
+            // Case 2
+            string RemainderCase2 = "231456786543567898765";
+            int RemainderCase2_Result = GeeksForGeeks.Easy.Remainderondividingby11.Solution.xmod11(RemainderCase2);
+            Console.WriteLine("Result : {0}", RemainderCase2_Result);
+        }
+
+
+        private static void MakeArrayElementsEqualFunc()
+        {
+            Program.Space();
+            Program.Title("Make Array Elements Equal");
+
+            // Case 1
+            long MakeArrayElementsEqual1 = GeeksForGeeks.Easy.MakeArrayElementsEqual.Solution.MinOperations(12);
+            Console.WriteLine(MakeArrayElementsEqual1);
+
+            // Case 2
+            long MakeArrayElementsEqual2 = GeeksForGeeks.Easy.MakeArrayElementsEqual.Solution.MinOperations(3);
+            Console.WriteLine(MakeArrayElementsEqual2);
+
+            // Case 3
+            long MakeArrayElementsEqual3 = GeeksForGeeks.Easy.MakeArrayElementsEqual.Solution.MinOperations(2);
+            Console.WriteLine(MakeArrayElementsEqual3);
+        }
+
+
+        private static void OptimalPartitionofStringFunc()
+        {
+            Program.Space();
+            Program.Title("Optimal Partition of String");
+
+            // Case 1
+            int Case1Result2405 = LeetCode.OptimalPartitionofString.Solution.PartitionString("abacaba");
+            Console.WriteLine("Result 1 : {0}", Case1Result2405);
+
+            // Case 2
+            int Case2Result2405 = LeetCode.OptimalPartitionofString.Solution.PartitionString("ssssss");
+            Console.WriteLine("Result 2 : {0}", Case2Result2405);
+        }
+
+
+        private static void MinimumStepsRequiredFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Steps Required");
+
+            // Case 1
+            int case1_MinimumSteps = GeeksForGeeks.Medium.MinimumStepsRequired.Solution.minSteps("bbaaabb");
+            Console.WriteLine("Result 1 : {0}", case1_MinimumSteps);
+
+            // Case 2
+            int case2_MinimumSteps = GeeksForGeeks.Medium.MinimumStepsRequired.Solution.minSteps("aababaa");
+            Console.WriteLine("Result 2 : {0}", case2_MinimumSteps);
+        }
         
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            BinarySearchFunc(); // Easy LC
-            SuccessfulPairsofSpellsandPotionsFunc(); // Medium LC
-            BoatstoSavePeopleFunc(); // Medium LC
+            Remainderondividingby11Func(); // Easy GFG
+            MakeArrayElementsEqualFunc(); // Easy GFG
+            OptimalPartitionofStringFunc(); // Medium LC
+            MinimumStepsRequiredFunc(); // Medium GFG
         }
     }
 }
