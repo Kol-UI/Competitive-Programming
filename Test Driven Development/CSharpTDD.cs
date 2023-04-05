@@ -214,6 +214,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SuccessfulPairsofSpellsandPotionsFunc();
             BoatstoSavePeopleFunc();
             OptimalPartitionofStringFunc();
+            MinimizeMaximumofArrayFunc();
         }
 
 
@@ -3372,16 +3373,30 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int case2_MinimumSteps = GeeksForGeeks.Medium.MinimumStepsRequired.Solution.minSteps("aababaa");
             Console.WriteLine("Result 2 : {0}", case2_MinimumSteps);
         }
+
+
+        private static void MinimizeMaximumofArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Minimize Maximum of Array");
+
+            // Case 1
+            int[] nums2439_1 = {3,7,1,6};
+            int result2439_1 = LeetCode.MinimizeMaximumofArray.Solution.MinimizeArrayValue(nums2439_1);
+            Console.WriteLine("Result 1 : {0}", result2439_1);
+
+            // Case 2
+            int[] nums2439_2 = {10,1};
+            int result2439_2 = LeetCode.MinimizeMaximumofArray.Solution.MinimizeArrayValue(nums2439_2);
+            Console.WriteLine("Result 2 : {0}", result2439_2);
+        }
         
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            Remainderondividingby11Func(); // Easy GFG
-            MakeArrayElementsEqualFunc(); // Easy GFG
-            OptimalPartitionofStringFunc(); // Medium LC
-            MinimumStepsRequiredFunc(); // Medium GFG
+            MinimizeMaximumofArrayFunc(); // Medium LC
         }
     }
 }
