@@ -130,6 +130,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumIntegerFunc();
             Remainderondividingby11Func();
             MakeArrayElementsEqualFunc();
+            EqualLeftandRightSubarraySumFunc();
         }
 
 
@@ -139,6 +140,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             StringrporprFunc();
             EvenSwapFunc();
             MinimumStepsRequiredFunc();
+            AddMinimumCharactersFunc();
         }
 
 
@@ -215,6 +217,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             BoatstoSavePeopleFunc();
             OptimalPartitionofStringFunc();
             MinimizeMaximumofArrayFunc();
+            NumberofEnclavesFunc();
         }
 
 
@@ -3390,13 +3393,78 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int result2439_2 = LeetCode.MinimizeMaximumofArray.Solution.MinimizeArrayValue(nums2439_2);
             Console.WriteLine("Result 2 : {0}", result2439_2);
         }
+
+
+        private static void EqualLeftandRightSubarraySumFunc()
+        {
+            Program.Space();
+            Program.Title("Equal Left and Right Subarray Sum");
+
+            // Case 1
+            int[] ACase1 = {1,3,5,2,2};
+            int n1 = 5;
+            int Output1 = GeeksForGeeks.Easy.EqualLeftandRightSubarraySum.Solution.EqualSum(ACase1 , n1);
+            Console.WriteLine("Result 1 : {0}", Output1);
+
+            // Case2
+            int[] ACase2 = {1};
+            int n2 = 1;
+            int Output2 = GeeksForGeeks.Easy.EqualLeftandRightSubarraySum.Solution.EqualSum(ACase1 , n2);
+            Console.WriteLine("Result 2 : {0}", Output2);
+        }
+
+
+        private static void AddMinimumCharactersFunc()
+        {
+            Program.Space();
+            Program.Title("Add Minimum Characters");
+
+            // Case 1
+            int Output1 = GeeksForGeeks.Medium.AddMinimumCharacters.Solution.AddMinChar("ABCD");
+            Console.WriteLine("Result 1 : {0}", Output1);
+
+            // Case 2
+            int Output2 = GeeksForGeeks.Medium.AddMinimumCharacters.Solution.AddMinChar("ABA");
+            Console.WriteLine("Result 2 : {0}", Output2);
+        }
+
+
+        private static void NumberofEnclavesFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Enclaves");
+
+            // Case 1
+            int[][] Grid1020_1 = new int[][]
+            {
+                new int[]{0,0,0,0},
+                new int[]{1,0,1,0},
+                new int[]{0,1,1,0},
+                new int[]{0,0,0,0}
+            };
+            int Result1020_1 = LeetCode.NumberofEnclaves.Solution.NumEnclaves(Grid1020_1);
+            Console.WriteLine("Result 1 : {0}", Result1020_1);
+
+            // Case 2
+            int[][] Grid1020_2 = new int[][]
+            {
+                new int[]{0,1,1,0},
+                new int[]{0,0,1,0},
+                new int[]{0,0,1,0},
+                new int[]{0,0,0,0}
+            };
+            int Result1020_2 = LeetCode.NumberofEnclaves.Solution.NumEnclaves(Grid1020_2);
+            Console.WriteLine("Result 2 : {0}", Result1020_2);
+        }
         
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            MinimizeMaximumofArrayFunc(); // Medium LC
+            EqualLeftandRightSubarraySumFunc(); // Easy GFG
+            AddMinimumCharactersFunc(); // Medium GFG
+            NumberofEnclavesFunc(); // Medium LC
         }
     }
 }
