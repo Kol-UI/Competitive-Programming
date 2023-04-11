@@ -174,6 +174,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CanPlaceFlowersFunc();
             KItemsWiththeMaximumSumFunc();
             BinarySearchFunc();
+            CheckIfNandItsDoubleExistFunc();
         }
 
 
@@ -218,6 +219,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             OptimalPartitionofStringFunc();
             MinimizeMaximumofArrayFunc();
             NumberofEnclavesFunc();
+            RemoveStarsFunc();
+            NumberofClosedIslandsFunc();
         }
 
 
@@ -236,6 +239,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             NumberofWaysofCuttingaPizzaFunc();
             ReducingDishesFunc();
             ScrambleStringFunc();
+            MinimumReverseOperationsFunc();
+            LargestColorValueinaDirectedGraphFunc();
         }
 
 
@@ -3456,6 +3461,143 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int Result1020_2 = LeetCode.NumberofEnclaves.Solution.NumEnclaves(Grid1020_2);
             Console.WriteLine("Result 2 : {0}", Result1020_2);
         }
+
+
+        private static void RemoveStarsFunc()
+        {
+            Program.Space();
+            Program.Title("Removing Stars From a String");
+
+            // Case 1
+            string output2390_1 = LeetCode.RemovingStarsFromaString.Solution.RemoveStars("leet**cod*e");
+            Console.WriteLine("Result 1 : {0}", output2390_1);
+
+            // Case 2
+            string output2390_2 = LeetCode.RemovingStarsFromaString.Solution.RemoveStars("erase*****");
+            Console.WriteLine("Result 2 : {0}", output2390_2);
+        }
+
+
+        private static void NumberofClosedIslandsFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Closed Islands");
+
+            // Case 1
+            int[][] Grid1254_1 = new int[][]
+            {
+                new int[]{1,1,1,1,1,1,1,0},
+                new int[]{1,0,0,0,0,1,1,0},
+                new int[]{1,0,1,0,1,1,1,0},
+                new int[]{1,0,0,0,0,1,0,1},
+                new int[]{1,1,1,1,1,1,1,0}
+            };
+            int result1254_1 = LeetCode.NumberofClosedIslands.Solution.ClosedIsland(Grid1254_1);
+            Console.WriteLine("Result 1 : {0}", result1254_1);
+
+            // Case 2
+            int[][] Grid1254_2 = new int[][]
+            {
+                new int[]{1,1,1,1,1,1,1},
+                new int[]{1,0,0,0,0,0,1},
+                new int[]{1,0,1,1,1,0,1},
+                new int[]{1,0,1,0,1,0,1},
+                new int[]{1,0,1,1,1,0,1},
+                new int[]{1,0,0,0,0,0,1},
+                new int[]{1,1,1,1,1,1,1}
+            };
+            int result1254_2 = LeetCode.NumberofClosedIslands.Solution.ClosedIsland(Grid1254_2);
+            Console.WriteLine("Result 2 : {0}", result1254_2);
+
+            // Case 3
+            int[][] Grid1254_3 = new int[][]
+            {
+                new int[]{0,0,1,0,0},
+                new int[]{0,1,0,1,0},
+                new int[]{0,1,1,1,0}
+            };
+            int result1254_3 = LeetCode.NumberofClosedIslands.Solution.ClosedIsland(Grid1254_3);
+            Console.WriteLine("Result 3 : {0}", result1254_3);
+        }
+
+
+        private static void CheckIfNandItsDoubleExistFunc()
+        {
+            Program.Space();
+            Program.Title("Check If N and Its Double Exist");
+
+            // Case 1
+            int[] arr2346_1 = {10,2,5,3};
+            bool result2346_1 = LeetCode.CheckIfNandItsDoubleExist.Solution.CheckIfExist(arr2346_1);
+            Console.WriteLine("Result 1 : {0}", result2346_1);
+            
+            // Case 2
+            int[] arr2346_2 = {3,1,7,11};
+            bool result2346_2 = LeetCode.CheckIfNandItsDoubleExist.Solution.CheckIfExist(arr2346_2);
+            Console.WriteLine("Result 2 : {0}", result2346_2);
+        }
+
+
+        private static void MinimumReverseOperationsFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Reverse Operations");
+
+            // Case 1
+            int n_2612_1 = 4;
+            int p_2612_1 = 0;
+            int[] banned_2612_1 = {1,2};
+            int k_2612_1 = 4;
+            int[] result2612_1 = LeetCode.MinimumReverseOperations.Solution.MinReverseOperations(n_2612_1, p_2612_1, banned_2612_1, k_2612_1);
+            Console.WriteLine("Result 1 :");
+            Program.PrintArray(result2612_1);
+
+            // Case 2
+            int n_2612_2 = 5;
+            int p_2612_2 = 0;
+            int[] banned_2612_2 = {2,4};
+            int k_2612_2 = 3;
+            int[] result2612_2 = LeetCode.MinimumReverseOperations.Solution.MinReverseOperations(n_2612_2, p_2612_2, banned_2612_2, k_2612_2);
+            Console.WriteLine("Result 2 :");
+            Program.PrintArray(result2612_2);
+
+            // Case 3
+            int n_2612_3 = 4;
+            int p_2612_3 = 2;
+            int[] banned_2612_3 = {0,1,3};
+            int k_2612_3 = 1;
+            int[] result2612_3 = LeetCode.MinimumReverseOperations.Solution.MinReverseOperations(n_2612_3, p_2612_3, banned_2612_3, k_2612_3);
+            Console.WriteLine("Result 3 :");
+            Program.PrintArray(result2612_3);
+        }
+
+
+        private static void LargestColorValueinaDirectedGraphFunc()
+        {
+            Program.Space();
+            Program.Title("Largest Color Value in a Directed Graph");
+
+            // Case 1
+            string colors1857_1 = "abaca";
+            int[][] edges1857_1 = new int[][]
+            {
+                new int[]{0,1},
+                new int[]{0,2},
+                new int[]{2,3},
+                new int[]{3,4}
+            };
+            int result1857_1 = LeetCode.LargestColorValueinaDirectedGraph.Solution.LargestPathValue(colors1857_1, edges1857_1);
+            Console.WriteLine("Result 1 : {0}", result1857_1);
+
+            // Case 2
+            string colors1857_2 = "a";
+            int[][] edges1857_2 = new int[][]
+            {
+                new int[]{0,0}
+            };
+            int result1857_2 = LeetCode.LargestColorValueinaDirectedGraph.Solution.LargestPathValue(colors1857_2, edges1857_2);
+            Console.WriteLine("Result 2 : {0}", result1857_2);
+        }
         
 
 
@@ -3465,6 +3607,12 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             EqualLeftandRightSubarraySumFunc(); // Easy GFG
             AddMinimumCharactersFunc(); // Medium GFG
             NumberofEnclavesFunc(); // Medium LC
+
+            RemoveStarsFunc(); // Medium LC
+            NumberofClosedIslandsFunc(); // Medium LC
+            CheckIfNandItsDoubleExistFunc(); // Easy LC
+            MinimumReverseOperationsFunc(); // Hard LC
+            LargestColorValueinaDirectedGraphFunc(); // Hard LC
         }
     }
 }
