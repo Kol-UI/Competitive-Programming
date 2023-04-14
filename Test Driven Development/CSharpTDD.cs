@@ -141,6 +141,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             EvenSwapFunc();
             MinimumStepsRequiredFunc();
             AddMinimumCharactersFunc();
+            MaximumLengthFunc();
         }
 
 
@@ -221,6 +222,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             NumberofEnclavesFunc();
             RemoveStarsFunc();
             NumberofClosedIslandsFunc();
+            SimplifyPathFunc();
         }
 
 
@@ -3598,6 +3600,41 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int result1857_2 = LeetCode.LargestColorValueinaDirectedGraph.Solution.LargestPathValue(colors1857_2, edges1857_2);
             Console.WriteLine("Result 2 : {0}", result1857_2);
         }
+
+
+        private static void SimplifyPathFunc()
+        {
+            Program.Space();
+            Program.Title("Simplify Path");
+
+            // Case 1
+            string result71_1 = LeetCode.SimplifyPath.Solution.SimplifyPath("/home/");
+            Console.WriteLine("Result 1 : {0}", result71_1);
+
+            // Case 2
+            string result71_2 = LeetCode.SimplifyPath.Solution.SimplifyPath("/../");
+            Console.WriteLine("Result 2 : {0}", result71_2);
+
+            // Case 3
+            string result71_3 = LeetCode.SimplifyPath.Solution.SimplifyPath("/home//foo/");
+            Console.WriteLine("Result 3 : {0}", result71_3);
+        }
+
+
+        private static void MaximumLengthFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Length");
+
+            // Case 1
+            int result_testML_1 = GeeksForGeeks.Medium.MaximumLength.Solution.Solve(3, 3, 3);
+            Console.WriteLine("Result 1 : {0}", result_testML_1);
+
+            // Case 2
+            int result_testML_2 = GeeksForGeeks.Medium.MaximumLength.Solution.Solve(11, 2, 2);
+            Console.WriteLine("Result 2 : {0}", result_testML_2);
+        }
+
         
 
 
@@ -3613,6 +3650,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CheckIfNandItsDoubleExistFunc(); // Easy LC
             MinimumReverseOperationsFunc(); // Hard LC
             LargestColorValueinaDirectedGraphFunc(); // Hard LC
+
+            SimplifyPathFunc(); // Medium LC
+            MaximumLengthFunc(); // Medium GFG
         }
     }
 }
