@@ -176,6 +176,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             KItemsWiththeMaximumSumFunc();
             BinarySearchFunc();
             CheckIfNandItsDoubleExistFunc();
+            ConcatenationofArrayFunc();
         }
 
 
@@ -223,6 +224,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             RemoveStarsFunc();
             NumberofClosedIslandsFunc();
             SimplifyPathFunc();
+            ValidateStackSequencesFunc();
+            LongestPalindromicSubsequenceFunc();
         }
 
 
@@ -243,6 +246,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ScrambleStringFunc();
             MinimumReverseOperationsFunc();
             LargestColorValueinaDirectedGraphFunc();
+            MaximumValueofKCoinsFromPilesFunc();
         }
 
 
@@ -3635,24 +3639,155 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 2 : {0}", result_testML_2);
         }
 
-        
 
+        private static void ValidateStackSequencesFunc()
+        {
+            Program.Space();
+            Program.Title("Validate Stack Sequences");
+
+            // Case 1
+            int[] pushed1 = {1,2,3,4,5};
+            int[] popped1 = {4,5,3,2,1};
+            bool case1_946 = LeetCode.ValidateStackSequences.Solution.ValidateStackSequences(pushed1, popped1);
+            Console.WriteLine("Pushed 1 :");
+            Program.PrintArray(pushed1);
+            Console.WriteLine("Popped 1 :");
+            Program.PrintArray(popped1);
+            Console.WriteLine("Result 1 : {0}", case1_946);
+            Program.Space();
+
+            // Case 2
+            int[] pushed2 = {1,2,3,4,5};
+            int[] popped2 = {4,3,5,1,2};
+            bool case2_946 = LeetCode.ValidateStackSequences.Solution.ValidateStackSequences(pushed2, popped2);
+            Console.WriteLine("Pushed 2 :");
+            Program.PrintArray(pushed2);
+            Console.WriteLine("Popped 2 :");
+            Program.PrintArray(popped2);
+            Console.WriteLine("Result 2 : {0}", case2_946);
+            Program.Space();
+        }
+
+
+        private static void LongestPalindromicSubsequenceFunc()
+        {
+            Program.Space();
+            Program.Title("Longest Palindromic Subsequence");
+
+            // Case 1
+            string s516_1 = "bbbab";
+            int output516_1 = LeetCode.LongestPalindromicSubsequence.Solution.LongestPalindromeSubseq(s516_1);
+            Console.WriteLine("Case 1 : {0}", s516_1);
+            Console.WriteLine("Result 1 : {0}", output516_1);
+            Program.Space();
+
+            // Case 2
+            string s516_2 = "cbbd";
+            int output516_2 = LeetCode.LongestPalindromicSubsequence.Solution.LongestPalindromeSubseq(s516_2);
+            Console.WriteLine("Case 2 : {0}", s516_2);
+            Console.WriteLine("Result 2 : {0}", output516_2);
+            Program.Space();
+
+            // Case 3
+            string s516_3 = "noon";
+            int output516_3 = LeetCode.LongestPalindromicSubsequence.Solution.LongestPalindromeSubseq(s516_3);
+            Console.WriteLine("Case 3 : {0}", s516_3);
+            Console.WriteLine("Result 3 : {0}", output516_3);
+            Program.Space();
+
+            // Case 4
+            string s516_4 = "civic";
+            int output516_4 = LeetCode.LongestPalindromicSubsequence.Solution.LongestPalindromeSubseq(s516_4);
+            Console.WriteLine("Case 4 : {0}", s516_4);
+            Console.WriteLine("Result 4 : {0}", output516_4);
+            Program.Space();
+
+            // Case 5
+            string s516_5 = "racecar";
+            int output516_5 = LeetCode.LongestPalindromicSubsequence.Solution.LongestPalindromeSubseq(s516_5);
+            Console.WriteLine("Case 5 : {0}", s516_5);
+            Console.WriteLine("Result 5 : {0}", output516_5);
+            Program.Space();
+
+            // Case 6
+            string s516_6 = "level";
+            int output516_6 = LeetCode.LongestPalindromicSubsequence.Solution.LongestPalindromeSubseq(s516_6);
+            Console.WriteLine("Case 6 : {0}", s516_6);
+            Console.WriteLine("Result 6 : {0}", output516_6);
+            Program.Space();
+
+            // Case 7
+            string s516_7 = "mom";
+            int output516_7 = LeetCode.LongestPalindromicSubsequence.Solution.LongestPalindromeSubseq(s516_7);
+            Console.WriteLine("Case 7 : {0}", s516_7);
+            Console.WriteLine("Result 7 : {0}", output516_7);
+            Program.Space();
+        }
+
+
+        private static void MaximumValueofKCoinsFromPilesFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Value of K Coins From Piles");
+
+            // Case 1
+            int[][] piles1_2218 = new int[][]
+            {
+                new int[]{1,100,3},
+                new int[]{7,8,9}
+            };
+            int k1_2218 = 2;
+            int output1_2218 = LeetCode.MaximumValueofKCoinsFromPiles.Solution.MaxValueOfCoins(piles1_2218, k1_2218);
+            Console.WriteLine("Result 1 : {0}", output1_2218);
+            Program.Space();
+
+            // Case 2
+            int[][] piles2_2218 = new int[][]
+            {
+                new int[]{100},
+                new int[]{100},
+                new int[]{100},
+                new int[]{100},
+                new int[]{100},
+                new int[]{100},
+                new int[]{1,1,1,1,1,1,700}
+            };
+            int k2_2218 = 7;
+            int output2_2218 = LeetCode.MaximumValueofKCoinsFromPiles.Solution.MaxValueOfCoins(piles2_2218, k2_2218);
+            Console.WriteLine("Result 2 : {0}", output2_2218);
+            Program.Space();
+        }
+
+
+        private static void ConcatenationofArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Concatenation of Array");
+
+            // Case 1
+            int[] nums1_1929 = {1,2,1};
+            int[] output1_1929 = LeetCode.ConcatenationofArray.Solution.GetConcatenation(nums1_1929);
+            Console.WriteLine("Result 1 :");
+            Program.PrintArray(output1_1929);
+            Program.Space();
+
+            // Case 2
+            int[] nums2_1929 = {1,3,2,1};
+            int[] output2_1929 = LeetCode.ConcatenationofArray.Solution.GetConcatenation(nums2_1929);
+            Console.WriteLine("Result 2 :");
+            Program.PrintArray(output2_1929);
+            Program.Space();
+        }
+
+    
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            EqualLeftandRightSubarraySumFunc(); // Easy GFG
-            AddMinimumCharactersFunc(); // Medium GFG
-            NumberofEnclavesFunc(); // Medium LC
-
-            RemoveStarsFunc(); // Medium LC
-            NumberofClosedIslandsFunc(); // Medium LC
-            CheckIfNandItsDoubleExistFunc(); // Easy LC
-            MinimumReverseOperationsFunc(); // Hard LC
-            LargestColorValueinaDirectedGraphFunc(); // Hard LC
-
-            SimplifyPathFunc(); // Medium LC
-            MaximumLengthFunc(); // Medium GFG
+            ValidateStackSequencesFunc(); // LC Medium
+            LongestPalindromicSubsequenceFunc(); // LC Medium
+            MaximumValueofKCoinsFromPilesFunc(); // LC Hard
+            ConcatenationofArrayFunc(); // LC Easy
         }
     }
 }
