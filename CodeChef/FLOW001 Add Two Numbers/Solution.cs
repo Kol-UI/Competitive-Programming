@@ -30,6 +30,7 @@ namespace CompetitiveProgramming.CodeChef.AddTwoNumbers
 {
     public class Solution
     {
+        /*
         public static void Main()
         {
             int T = int.Parse(Console.ReadLine());
@@ -39,5 +40,6 @@ namespace CompetitiveProgramming.CodeChef.AddTwoNumbers
                 Console.WriteLine(int.Parse(lines[0])+int.Parse(lines[1]));
             }
         }
+        */
     }
 }
