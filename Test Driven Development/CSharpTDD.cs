@@ -177,6 +177,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             BinarySearchFunc();
             CheckIfNandItsDoubleExistFunc();
             ConcatenationofArrayFunc();
+            KidsWiththeGreatestNumberofCandiesFunc();
         }
 
 
@@ -3801,12 +3802,32 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
         }
 
+
+        private static void KidsWiththeGreatestNumberofCandiesFunc()
+        {
+            Program.Space();
+            Program.Title("Kids With the Greatest Number of Candies");
+
+            // Case 1
+            int[] candies1 = {2,3,5,1,3};
+            int extraCandies1 = 3;
+            IList<bool> result1 = LeetCode.KidsWiththeGreatestNumberofCandies.Solution.KidsWithCandies(candies1, extraCandies1);
+            Console.WriteLine("[{0}]", string.Join(", ", result1));
+
+            // Case 1
+            int[] candies2 = {4,2,1,1,2};
+            int extraCandies2 = 1;
+            IList<bool> result2 = LeetCode.KidsWiththeGreatestNumberofCandies.Solution.KidsWithCandies(candies2, extraCandies2);
+            Console.WriteLine("[{0}]", string.Join(", ", result2));
+        }
+
     
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
             NumberofWaystoFormaTargetStringGivenaDictionaryFunc(); // Hard LC
+            KidsWiththeGreatestNumberofCandiesFunc(); // Easy LC
         }
     }
 }
