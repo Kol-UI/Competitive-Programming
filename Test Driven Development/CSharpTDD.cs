@@ -247,6 +247,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumReverseOperationsFunc();
             LargestColorValueinaDirectedGraphFunc();
             MaximumValueofKCoinsFromPilesFunc();
+            NumberofWaystoFormaTargetStringGivenaDictionaryFunc();
         }
 
 
@@ -3779,15 +3780,33 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
         }
 
+
+        private static void NumberofWaystoFormaTargetStringGivenaDictionaryFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Ways to Form a Target String Given a Dictionary");
+
+            // Case 1
+            string[] words1_1639 = {"acca","bbbb","caca"};
+            string target1_1639 = "aba";
+            int result1_1639 = LeetCode.NumberofWaystoFormaTargetStringGivenaDictionary.Solution.NumWays(words1_1639, target1_1639);
+            Console.WriteLine("Result 1 : {0}", result1_1639);
+            Program.Space();
+
+            // Case 2
+            string[] words2_1639 = {"abba","baab"};
+            string target2_1639 = "bab";
+            int result2_1639 = LeetCode.NumberofWaystoFormaTargetStringGivenaDictionary.Solution.NumWays(words2_1639, target2_1639);
+            Console.WriteLine("Result 2 : {0}", result2_1639);
+            Program.Space();
+        }
+
     
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            ValidateStackSequencesFunc(); // LC Medium
-            LongestPalindromicSubsequenceFunc(); // LC Medium
-            MaximumValueofKCoinsFromPilesFunc(); // LC Hard
-            ConcatenationofArrayFunc(); // LC Easy
+            NumberofWaystoFormaTargetStringGivenaDictionaryFunc(); // Hard LC
         }
     }
 }
