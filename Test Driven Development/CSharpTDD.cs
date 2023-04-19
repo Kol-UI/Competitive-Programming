@@ -178,6 +178,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CheckIfNandItsDoubleExistFunc();
             ConcatenationofArrayFunc();
             KidsWiththeGreatestNumberofCandiesFunc();
+            MergeStringsAlternatelyFunc();
+            RomantoIntegerFunc();
         }
 
 
@@ -3821,6 +3823,44 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("[{0}]", string.Join(", ", result2));
         }
 
+
+        private static void MergeStringsAlternatelyFunc()
+        {
+            Program.Space();
+            Program.Title("Merge Strings Alternately");
+
+            // Case 1
+            string Case1_1768 = LeetCode.MergeStringsAlternately.Solution.MergeAlternately("abc", "pqr");
+            Console.WriteLine("Result 1 : {0}", Case1_1768);
+
+            // Case 2
+            string Case2_1768 = LeetCode.MergeStringsAlternately.Solution.MergeAlternately("ab", "pqrs");
+            Console.WriteLine("Result 2 : {0}", Case2_1768);
+
+            // Case 3
+            string Case3_1768 = LeetCode.MergeStringsAlternately.Solution.MergeAlternately("abcd", "pq");
+            Console.WriteLine("Result 3 : {0}", Case3_1768);
+        }
+
+
+        private static void RomantoIntegerFunc()
+        {
+            Program.Space();
+            Program.Title("Roman to Integer");
+
+            // Case 1
+            int Case1_13 = LeetCode.RomantoInteger.Solution.RomanToInt("III");
+            Console.WriteLine("Result 1 : {0}", Case1_13);
+
+            // Case 2
+            int Case2_13 = LeetCode.RomantoInteger.Solution.RomanToInt("LVIII");            
+            Console.WriteLine("Result 2 : {0}", Case2_13);
+
+            // Case 3
+            int Case3_13 = LeetCode.RomantoInteger.Solution.RomanToInt("MCMXCIV");
+            Console.WriteLine("Result 3 : {0}", Case3_13);
+        }
+
     
 
         // CURRENT TESTS
@@ -3828,6 +3868,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             NumberofWaystoFormaTargetStringGivenaDictionaryFunc(); // Hard LC
             KidsWiththeGreatestNumberofCandiesFunc(); // Easy LC
+            
+            MergeStringsAlternatelyFunc(); // Easy LC
+            RomantoIntegerFunc(); // Easy LC
         }
     }
 }
