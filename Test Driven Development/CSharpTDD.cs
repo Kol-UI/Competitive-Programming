@@ -251,6 +251,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             LargestColorValueinaDirectedGraphFunc();
             MaximumValueofKCoinsFromPilesFunc();
             NumberofWaystoFormaTargetStringGivenaDictionaryFunc();
+            ProfitableSchemesFunc();
+            MinimumInsertionStepstoMakeaStringPalindromeFunc();
         }
 
 
@@ -3861,16 +3863,55 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 3 : {0}", Case3_13);
         }
 
+
+        private static void ProfitableSchemesFunc()
+        {
+            Program.Space();
+            Program.Title("Profitable Schemes");
+
+            // Case 1
+            int n1 = 5;
+            int minProfit1 = 3;
+            int[] group1 = {2,2};
+            int[] profit1 = {2,3};
+            int Case1_879 = LeetCode.ProfitableSchemes.Solution.ProfitableSchemes(n1, minProfit1, group1, profit1);
+            Console.WriteLine("Result 1 : {0}", Case1_879);
+
+            // Case 2
+            int n2 = 10;
+            int minProfit2 = 5;
+            int[] group2 = {2,3,5};
+            int[] profit2 = {6,7,8};
+            int Case2_879 = LeetCode.ProfitableSchemes.Solution.ProfitableSchemes(n2, minProfit2, group2, profit2);
+            Console.WriteLine("Result 2 : {0}", Case2_879);
+        }
+
+
+        private static void MinimumInsertionStepstoMakeaStringPalindromeFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Insertion Steps to Make a String Palindrome");
+
+            // Case 1
+            int Case1_1312 = LeetCode.MinimumInsertionStepstoMakeaStringPalindrome.Solution.MinInsertions("zzazz");
+            Console.WriteLine("Result 1 : {0}", Case1_1312);
+
+            // Case 2
+            int Case2_1312 = LeetCode.MinimumInsertionStepstoMakeaStringPalindrome.Solution.MinInsertions("mbadm");
+            Console.WriteLine("Result 2 : {0}", Case2_1312);
+
+            // Case 3
+            int Case3_1312 = LeetCode.MinimumInsertionStepstoMakeaStringPalindrome.Solution.MinInsertions("leetcode");
+            Console.WriteLine("Result 3 : {0}", Case3_1312);
+        }
+
     
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            NumberofWaystoFormaTargetStringGivenaDictionaryFunc(); // Hard LC
-            KidsWiththeGreatestNumberofCandiesFunc(); // Easy LC
-            
-            MergeStringsAlternatelyFunc(); // Easy LC
-            RomantoIntegerFunc(); // Easy LC
+            ProfitableSchemesFunc(); // Hard LC
+            MinimumInsertionStepstoMakeaStringPalindromeFunc(); // Hard LC
         }
     }
 }
