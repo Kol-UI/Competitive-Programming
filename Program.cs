@@ -9,8 +9,14 @@ namespace CompetitiveProgramming
     {
         static void Main(string[] args)
         {
+            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+            sw.Start();
+
             Console.WriteLine("Hello World!");
             CSharpTDD.StartAllTDD();
+
+            sw.Stop();
+            Console.WriteLine("\nTime Elapsed: {0} ms", sw.ElapsedMilliseconds);
         }
 
         // Helpers
@@ -39,6 +45,11 @@ namespace CompetitiveProgramming
         public static void PrintStringArray(string[] array)
         {
             Console.WriteLine("[{0}]", string.Join(", ", array));
+        }
+
+        public static void PrintCharArray(char[] array)
+        {
+            Console.WriteLine("Result : {0}",new string(array));
         }
 
         public static void PrintBoolArray(bool[] array)
