@@ -204,6 +204,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             LemonadeChangeFunc();
             LargestPerimeterTriangleFunc();
             CheckIfItIsaStraightLineFunc();
+            ReverseVowelsofaStringFunc();
         }
 
 
@@ -258,6 +259,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MatrixDiagonalSumFunc();
             MultiplyStringsFunc();
             PowxnFunc();
+            ReverseWordsinaStringFunc();
+            ProductofArrayExceptSelfFunc();
         }
 
 
@@ -4686,41 +4689,213 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 3 : {0}", result3);
         }
 
+
+        private static void ReverseVowelsofaStringFunc()
+        {
+            Program.Space();
+            Program.Title("Reverse Vowels of a String");
+
+            string Case1_345 = LeetCode.ReverseVowelsofaString.Solution.ReverseVowels("hello");
+            string Case2_345 = LeetCode.ReverseVowelsofaString.Solution.ReverseVowels("leetcode");
+            Console.WriteLine("Result 1 : {0}", Case1_345);
+            Console.WriteLine("Result 2 : {0}", Case2_345);
+        }
+
+
+
+        private static void ReverseWordsinaStringFunc()
+        {
+            Program.Space();
+            Program.Title("Reverse Words in a String");
+            string s1 = "the sky is blue";
+            string s2 = "  hello world  ";
+            string s3 = "a good   example";
+            string solution1Case1 = LeetCode.ReverseWordsinaString.Solution.ReverseWords(s1);
+            string solution2Case1 = LeetCode.ReverseWordsinaString.Solution.ReverseWordsSecond(s1);
+            Console.WriteLine("Solution 1 Result 1 : {0}", solution1Case1);
+            Console.WriteLine("Solution 2 Result 1 : {0}", solution2Case1);
+            string solution1Case2 = LeetCode.ReverseWordsinaString.Solution.ReverseWords(s2);
+            string solution2Case2 = LeetCode.ReverseWordsinaString.Solution.ReverseWordsSecond(s2);
+            Console.WriteLine("Solution 1 Result 2 : {0}", solution1Case2);
+            Console.WriteLine("Solution 2 Result 2 : {0}", solution2Case2);
+            string solution1Case3 = LeetCode.ReverseWordsinaString.Solution.ReverseWords(s3);
+            string solution2Case3 = LeetCode.ReverseWordsinaString.Solution.ReverseWordsSecond(s3);
+            Console.WriteLine("Solution 1 Result 3 : {0}", solution1Case3);
+            Console.WriteLine("Solution 2 Result 3 : {0}", solution2Case3);
+        }
+
+
+        private static void ProductofArrayExceptSelfFunc()
+        {
+            Program.Space();
+            Program.Title("Product of Array Except Self");
+
+            int[] Case1 = {-1,-2,-3,-4,3,2,1};
+            int[] Case2 = {1,5,0,2,-3};
+            int[] Case3 = {-1,1,-1,1,-1};
+            int[] Case4 = {1000,2000,3000};
+            int[] Case5 = {4000,3000,1000,2000};
+            int[] Case6 = {3,5,1};
+            int[] Case7 = {1,2,4};
+            int[] Case8 = {1,2,2,3};
+            int[] Case9 = {6,5,4,4};
+            int[] Case10 = {1,3,2};
+            int[] Case11 = { 30, 11, 23, 4, 20 };
+            int[] Case12 = { 3, 6, 7, 11 };
+            int[] Case13 = { -30, -11, 23, 4, 20 };
+            int[] Case14 = { -10, -3, 0, 5, 9 };
+            int[] Case15 = { 1, 3 };
+            int[] Case16 = { 1, 2, 2 };
+            int[] Case17 = { 1, 2 };
+            int[] Case18 = { 5, 3, 4 };
+            int[] Case19 = Program.GenerateRandomNumber(10, 100);
+            int[] Case20 = Program.GenerateRandomNumber(10, 100);
+            int[] Case21 = Program.GenerateRandomNumber(10, 100);
+            int[] Case22 = Program.GenerateRandomNumber(10, 100);
+            int[] Case23 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case24 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case25 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case26 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case27 = { -1, -2 };
+            int[] Case28 = { 78, 56, 232, 12, 11, 43 };
+            int[] Case29 = { 78, 56, -2, 12, 8, -33 };
+            int[] Case30 = { 34, 15, 88, 2 };
+            int[] Case31 = { 34, -345, -1, 100 };
+            int[] Case32 = { 12, 35, 1, 10, 34, 1 };
+            int[] Case33 = { 10, 5, 10 };
+            int[] Case34 = { 1, 0, 0, 0, 1 };
+            int[] Case35 = { 1, 0, 0, 0, 0, 0, 1 };
+            int[] Case36 = { 1, 3, 0, 0, 2, 0, 0, 4 };
+            int[] Case37 = { 0, 0, 0, 2, 0, 0 };
+            int[] Case38 = { 1, 2, 3, 4 };
+            int[] Case39 = { -1, 1, 0, -3, 3 };
+
+            int[] result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case1);
+            Console.WriteLine("Result 1 :");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case2);
+            Console.WriteLine("Result 2 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case3);
+            Console.WriteLine("Result 3 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case4);
+            Console.WriteLine("Result 4 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case5);
+            Console.WriteLine("Result 5 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case6);
+            Console.WriteLine("Result 6 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case7);
+            Console.WriteLine("Result 7 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case8);
+            Console.WriteLine("Result 8 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case9);
+            Console.WriteLine("Result 9 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case10);
+            Console.WriteLine("Result 10 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case11);
+            Console.WriteLine("Result 11 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case12);
+            Console.WriteLine("Result 12 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case13);
+            Console.WriteLine("Result 13 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case14);
+            Console.WriteLine("Result 14 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case15);
+            Console.WriteLine("Result 15 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case16);
+            Console.WriteLine("Result 16 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case17);
+            Console.WriteLine("Result 17 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case18);
+            Console.WriteLine("Result 18 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case19);
+            Console.WriteLine("Result 19 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case20);
+            Console.WriteLine("Result 20 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case21);
+            Console.WriteLine("Result 21 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case22);
+            Console.WriteLine("Result 22 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case23);
+            Console.WriteLine("Result 23 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case24);
+            Console.WriteLine("Result 24 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case25);
+            Console.WriteLine("Result 25 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case26);
+            Console.WriteLine("Result 26 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case27);
+            Console.WriteLine("Result 27 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case28);
+            Console.WriteLine("Result 28 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case29);
+            Console.WriteLine("Result 29 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case30);
+            Console.WriteLine("Result 30 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case31);
+            Console.WriteLine("Result 31 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case32);
+            Console.WriteLine("Result 32 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case33);
+            Console.WriteLine("Result 33 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case34);
+            Console.WriteLine("Result 34 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case35);
+            Console.WriteLine("Result 35 : ");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case36);
+            Console.WriteLine("Result 36 :");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case37);
+            Console.WriteLine("Result 37 :");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case38);
+            Console.WriteLine("Result 38 :");
+            Program.PrintArray(result);
+            result = LeetCode.ProductofArrayExceptSelf.Solution.ProductExceptSelf(Case39);
+            Console.WriteLine("Result 39 :");
+            Program.PrintArray(result);
+        }
     
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            BestPokerHandFunc(); // Easy LC
-            RestoreTheArrayFunc(); // Hard LC
-            LastStoneWeightFunc(); // Easy LC
-            AddDigitsFunc(); // Easy LC
-            BulbSwitcherFunc(); // Easy LC
-            FindtheDifferenceFunc(); // Easy LC
-            RepeatedSubstringPatternFunc(); // Easy LC
-            MoveZeroesFunc(); // Easy LC
-            PlusOneFunc(); // Easy LC
-            AverageSalaryExcludingtheMinimumandMaximumSalaryFunc(); // Easy LC
-            NonoverlappingIntervalsFunc(); // Medium LC
-            SignoftheProductofanArrayFunc(); // Easy LC
-            CanMakeArithmeticProgressionFunc(); // Easy LC
-            MonotonicArrayFunc(); // Easy LC
-            LengthofLastWordFunc(); // Easy LC
-            ToLowerCaseFunc(); // Easy LC
-            FindSmallestLetterGreaterThanTargetFunc(); // Easy LC
-            CountNegativeNumbersinaSortedMatrixFunc(); // Easy LC
-            ValidPerfectSquareFunc(); // Easy LC
-            ArrangingCoinsFunc(); // Easy LC
-            BaseballGameFunc(); // Easy LC
-            RobotReturntoOriginFunc(); // Easy LC
-            FindWinneronaTicTacToeGameFunc(); // Easy LC
-            RobotBoundedInCircleFunc(); // Medium LC
-            MatrixDiagonalSumFunc(); // Medium LC
-            LemonadeChangeFunc(); // Easy LC
-            LargestPerimeterTriangleFunc(); // Easy LC
-            CheckIfItIsaStraightLineFunc(); // Easy LC
-            MultiplyStringsFunc(); // Medium LC
-            PowxnFunc(); // Medium LC
+            ReverseVowelsofaStringFunc(); // Easy LC
+            ReverseWordsinaStringFunc(); // Medium LC
+            ProductofArrayExceptSelfFunc(); // Medium LC
         }
     }
 }
