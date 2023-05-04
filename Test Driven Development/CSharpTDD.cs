@@ -205,6 +205,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             LargestPerimeterTriangleFunc();
             CheckIfItIsaStraightLineFunc();
             ReverseVowelsofaStringFunc();
+            CountingBitsFunc();
+            IsSubsequenceFunc();
         }
 
 
@@ -261,6 +263,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             PowxnFunc();
             ReverseWordsinaStringFunc();
             ProductofArrayExceptSelfFunc();
+            Dota2SenateFunc();
+            MinimumFlipstoMakeaORbEqualtocFunc();
+            BestTimetoBuyandSellStockwithTransactionFeeFunc();
+            IncreasingTripletSubsequenceFunc();
         }
 
 
@@ -4888,14 +4894,230 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 39 :");
             Program.PrintArray(result);
         }
+
+
+        private static void Dota2SenateFunc()
+        {
+            Program.Space();
+            Program.Title("Dota2 Senate");
+
+            string senate1 = "RD";
+            string senate2 = "RDD";
+
+            string result1 = LeetCode.Dota2Senate.Solution.PredictPartyVictory(senate1);
+            string result2 = LeetCode.Dota2Senate.Solution.PredictPartyVictory(senate2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void MinimumFlipstoMakeaORbEqualtocFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Flips to Make a OR b Equal to c");
+
+            int result1 = LeetCode.MinimumFlipstoMakeaORbEqualtoc.Solution.MinFlips(2,6,5);
+            int result2 = LeetCode.MinimumFlipstoMakeaORbEqualtoc.Solution.MinFlips(4,2,7);
+            int result3 = LeetCode.MinimumFlipstoMakeaORbEqualtoc.Solution.MinFlips(1,2,3);
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void CountingBitsFunc()
+        {
+            Program.Space();
+            Program.Title("Counting Bits");
+
+            int[] result1 = LeetCode.CountingBits.Solution.CountBits(2);
+            int[] result2 = LeetCode.CountingBits.Solution.CountBits(5);
+            Program.PrintArray(result1);
+            Program.PrintArray(result2);
+        }
+
+
+        private static void BestTimetoBuyandSellStockwithTransactionFeeFunc()
+        {
+            Program.Space();
+            Program.Title("Best Time to Buy and Sell Stock with Transaction Fee");
+
+            int[] prices1 = {1,3,2,8,4,9};
+            int fee1 = 2;
+            int[] prices2 = {1,3,7,5,10,3};
+            int fee2 = 3;
+
+            int result1 = LeetCode.BestTimetoBuyandSellStockwithTransactionFee.Solution.MaxProfit(prices1, fee1);
+            int result2 = LeetCode.BestTimetoBuyandSellStockwithTransactionFee.Solution.MaxProfit(prices2, fee2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void IncreasingTripletSubsequenceFunc()
+        {
+            Program.Space();
+            Program.Title("Increasing Triplet Subsequence");
+
+            int[] Case1 = { -1, -2, -3, -4, 3, 2, 1};
+            int[] Case2 = { 1, 5, 0, 2,-3 };
+            int[] Case3 = { -1, 1, -1, 1, -1 };
+            int[] Case4 = { 1000, 2000, 3000 };
+            int[] Case5 = { 4000, 3000, 1000, 2000 };
+            int[] Case6 = { 3, 5, 1 };
+            int[] Case7 = { 1, 2, 4 };
+            int[] Case8 = { 1, 2, 2, 3 };
+            int[] Case9 = { 6, 5, 4, 4 };
+            int[] Case10 = { 1, 3, 2 };
+            int[] Case11 = { 30, 11, 23, 4, 20 };
+            int[] Case12 = { 3, 6, 7, 11 };
+            int[] Case13 = { -30, -11, 23, 4, 20 };
+            int[] Case14 = { -10, -3, 0, 5, 9 };
+            int[] Case15 = { 1, 3 };
+            int[] Case16 = { 1, 2, 2 };
+            int[] Case17 = { 1, 2 };
+            int[] Case18 = { 5, 3, 4 };
+            int[] Case19 = Program.GenerateRandomNumber(10, 100);
+            int[] Case20 = Program.GenerateRandomNumber(10, 100);
+            int[] Case21 = Program.GenerateRandomNumber(10, 100);
+            int[] Case22 = Program.GenerateRandomNumber(10, 100);
+            int[] Case23 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case24 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case25 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case26 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case27 = { -1, -2 };
+            int[] Case28 = { 78, 56, 232, 12, 11, 43 };
+            int[] Case29 = { 78, 56, -2, 12, 8, -33 };
+            int[] Case30 = { 34, 15, 88, 2 };
+            int[] Case31 = { 34, -345, -1, 100 };
+            int[] Case32 = { 12, 35, 1, 10, 34, 1 };
+            int[] Case33 = { 10, 5, 10 };
+            int[] Case34 = { 1, 0, 0, 0, 1 };
+            int[] Case35 = { 1, 0, 0, 0, 0, 0, 1 };
+            int[] Case36 = { 1, 3, 0, 0, 2, 0, 0, 4 };
+            int[] Case37 = { 0, 0, 0, 2, 0, 0 };
+            int[] Case38 = { 1, 2, 3, 4 };
+            int[] Case39 = { -1, 1, 0, -3, 3 };
+            int[] Case40 = { 1, 2, 3, 4, 5 };
+            int[] Case41 = { 5, 4, 3, 2, 1 };
+            int[] Case42 = { 2, 1, 5, 0, 4, 6 };
+
+            bool result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case1);
+            Console.WriteLine("Result 1 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case2);
+            Console.WriteLine("Result 2 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case3);
+            Console.WriteLine("Result 3 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case4);
+            Console.WriteLine("Result 4 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case5);
+            Console.WriteLine("Result 5 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case6);
+            Console.WriteLine("Result 6 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case7);
+            Console.WriteLine("Result 7 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case8);
+            Console.WriteLine("Result 8 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case9);
+            Console.WriteLine("Result 9 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case10);
+            Console.WriteLine("Result 10 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case11);
+            Console.WriteLine("Result 11 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case12);
+            Console.WriteLine("Result 12 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case13);
+            Console.WriteLine("Result 13 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case14);
+            Console.WriteLine("Result 14 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case15);
+            Console.WriteLine("Result 15 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case16);
+            Console.WriteLine("Result 16 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case17);
+            Console.WriteLine("Result 17 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case18);
+            Console.WriteLine("Result 18 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case19);
+            Console.WriteLine("Result 19 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case20);
+            Console.WriteLine("Result 20 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case21);
+            Console.WriteLine("Result 21 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case22);
+            Console.WriteLine("Result 22 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case23);
+            Console.WriteLine("Result 23 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case24);
+            Console.WriteLine("Result 24 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case25);
+            Console.WriteLine("Result 25 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case26);
+            Console.WriteLine("Result 26 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case27);
+            Console.WriteLine("Result 27 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case28);
+            Console.WriteLine("Result 28 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case29);
+            Console.WriteLine("Result 29 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case30);
+            Console.WriteLine("Result 30 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case31);
+            Console.WriteLine("Result 31 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case32);
+            Console.WriteLine("Result 32 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case33);
+            Console.WriteLine("Result 33 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case34);
+            Console.WriteLine("Result 34 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case35);
+            Console.WriteLine("Result 35 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case36);
+            Console.WriteLine("Result 36 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case37);
+            Console.WriteLine("Result 37 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case38);
+            Console.WriteLine("Result 38 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case39);
+            Console.WriteLine("Result 39 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case40);
+            Console.WriteLine("Result 40 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case41);
+            Console.WriteLine("Result 41 : {0}", result);
+            result = LeetCode.IncreasingTripletSubsequence.Solution.IncreasingTriplet(Case42);
+            Console.WriteLine("Result 42 : {0}", result);
+        }
+
+
+        private static void IsSubsequenceFunc()
+        {
+            Program.Space();
+            Program.Title("Is Subsequence");
+
+            string s1 = "abc";
+            string t1 = "ahbgdc";
+            string s2 = "axc";
+            string t2 = "ahbgdc";
+
+            bool result1 = LeetCode.IsSubsequence.Solution.IsSubsequence(s1,t1);
+            bool result2 = LeetCode.IsSubsequence.Solution.IsSubsequence(s2,t2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
     
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            ReverseVowelsofaStringFunc(); // Easy LC
-            ReverseWordsinaStringFunc(); // Medium LC
-            ProductofArrayExceptSelfFunc(); // Medium LC
+            Dota2SenateFunc(); // Medium LC
+            MinimumFlipstoMakeaORbEqualtocFunc(); // Medium LC
+            CountingBitsFunc(); // Easy LC
+            BestTimetoBuyandSellStockwithTransactionFeeFunc(); // Medium LC
+            IncreasingTripletSubsequenceFunc(); // Medium LC
+            IsSubsequenceFunc(); // Easy LC
         }
     }
 }
