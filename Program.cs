@@ -20,6 +20,8 @@ namespace CompetitiveProgramming
         }
 
         // Helpers
+
+        // Console Style Helpers
         public static void Space()
         {
             Console.WriteLine();
@@ -37,6 +39,7 @@ namespace CompetitiveProgramming
             Console.WriteLine("- {0} -", StringTitle);
         }
 
+        // Console Print Helpers
         public static void PrintArray(int[] array)
         {
             Console.WriteLine("[{0}]", string.Join(", ", array));
@@ -117,6 +120,12 @@ namespace CompetitiveProgramming
                 arr[j] = arr[i];
                 arr[i] = tmp;
             }
+        }
+
+        // Other Helpers
+        public static bool isVowel(char c)
+        {
+            return (c == 'a') || (c == 'e') || (c == 'i') || (c == 'o') || (c == 'u');
         }
     }
 }

@@ -207,6 +207,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ReverseVowelsofaStringFunc();
             CountingBitsFunc();
             IsSubsequenceFunc();
+            MinCostClimbingStairsFunc();
+            MaximumAverageSubarrayIFunc();
+            FindtheHighestAltitudeFunc();
+            FindPivotIndexFunc();
         }
 
 
@@ -267,6 +271,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumFlipstoMakeaORbEqualtocFunc();
             BestTimetoBuyandSellStockwithTransactionFeeFunc();
             IncreasingTripletSubsequenceFunc();
+            MaximumNumberofVowelsinaSubstringofGivenLengthFunc();
+            DominoandTrominoTilingFunc();
+            ContainerWithMostWaterFunc();
+            MaxNumberofKSumPairsFunc();
+            UniquePathsFunc();
+            MaxConsecutiveOnesIIIFunc();
+            LongestSubarrayof1sAfterDeletingOneElementFunc();
+            NumberofProvincesFunc();
         }
 
 
@@ -5107,17 +5119,232 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 1 : {0}", result1);
             Console.WriteLine("Result 2 : {0}", result2);
         }
+
+
+        private static void MaximumNumberofVowelsinaSubstringofGivenLengthFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Number of Vowels in a Substring of Given Length");
+
+            int result1 = LeetCode.MaximumNumberofVowelsinaSubstringofGivenLength.Solution.MaxVowels("abciiidef", 3);
+            int result2 = LeetCode.MaximumNumberofVowelsinaSubstringofGivenLength.Solution.MaxVowels("aeiou", 2);
+            int result3 = LeetCode.MaximumNumberofVowelsinaSubstringofGivenLength.Solution.MaxVowels("leetcode", 3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void DominoandTrominoTilingFunc()
+        {
+            Program.Space();
+            Program.Title("Domino and Tromino Tiling");
+
+            int result1 = LeetCode.DominoandTrominoTiling.Solution.NumTilings(3);
+            int result2 = LeetCode.DominoandTrominoTiling.Solution.NumTilings(1);
+            
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void MinCostClimbingStairsFunc()
+        {
+            Program.Space();
+            Program.Title("Min Cost Climbing Stairs");
+
+            // Case 1
+            int[] cost1 = {10,15,20};
+            int result1 = LeetCode.MinCostClimbingStairs.Solution.MinCostClimbingStairs(cost1);
+            Console.WriteLine("Result 1 : {0}", result1);
+
+            // Case 2
+            int[] cost2 = {1,100,1,1,1,100,1,1,100,1};
+            int result2 = LeetCode.MinCostClimbingStairs.Solution.MinCostClimbingStairs(cost2);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void ContainerWithMostWaterFunc()
+        {
+            Program.Space();
+            Program.Title("Container With Most Water");
+
+            int[] height1 = {1,8,6,2,5,4,8,3,7};
+            int[] height2 = {1,1};
+
+            int result1 = LeetCode.ContainerWithMostWater.Solution.MaxArea(height1);
+            int result2 = LeetCode.ContainerWithMostWater.Solution.MaxArea(height2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void MaxNumberofKSumPairsFunc()
+        {
+            Program.Space();
+            Program.Title("Max Number of K-Sum Pairs");
+
+            // Case 1
+            int[] nums1 = {1,2,3,4};
+            int k1 = 5;
+            int result1 = LeetCode.MaxNumberofKSumPairs.Solution.MaxOperations(nums1, k1);
+            Console.WriteLine("Result 1 : {0}", result1);
+
+            // Case 2
+            int[] nums2 = {3,1,3,4,3};
+            int k2 = 6;
+            int result2 = LeetCode.MaxNumberofKSumPairs.Solution.MaxOperations(nums2, k2);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void MaximumAverageSubarrayIFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Average Subarray I");
+
+            // Case 1
+            int[] nums1 = {1,12,-5,-6,50,3};
+            int k1 = 4;
+            double result1 = LeetCode.MaximumAverageSubarrayI.Solution.FindMaxAverage(nums1, k1);
+            Console.WriteLine("Result 1 : {0}", result1);
+
+            // Case 2
+            int[] nums2 = {5};
+            int k2 = 1;
+            double result2 = LeetCode.MaximumAverageSubarrayI.Solution.FindMaxAverage(nums2, k2);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void UniquePathsFunc()
+        {
+            Program.Space();
+            Program.Title("Unique Paths");
+
+            int result1 = LeetCode.UniquePaths.Solution.UniquePaths(3, 7);
+            int result2 = LeetCode.UniquePaths.Solution.UniquePaths(3, 2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void MaxConsecutiveOnesIIIFunc()
+        {
+            Program.Space();
+            Program.Title("Max Consecutive Ones III");
+            int[] nums1 = {1,1,1,0,0,0,1,1,1,1,0};
+            int k1 = 2;
+            int[] nums2 = {0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1};
+            int k2 = 3;
+            int result1 = LeetCode.MaxConsecutiveOnesIII.Solution.LongestOnes(nums1, k1);
+            int result2 = LeetCode.MaxConsecutiveOnesIII.Solution.LongestOnes(nums2, k2);
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void LongestSubarrayof1sAfterDeletingOneElementFunc()
+        {
+            Program.Space();
+            Program.Title("Longest Subarray of 1's After Deleting One Element");
+            
+            int[] nums1 = {1,1,0,1};
+            int[] nums2 = {0,1,1,1,0,1,1,0,1};
+            int[] nums3 = {1,1,1};
+
+            int result1 = LeetCode.LongestSubarrayof1sAfterDeletingOneElement.Solution.LongestSubarray(nums1);
+            int result2 = LeetCode.LongestSubarrayof1sAfterDeletingOneElement.Solution.LongestSubarray(nums2);
+            int result3 = LeetCode.LongestSubarrayof1sAfterDeletingOneElement.Solution.LongestSubarray(nums3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void FindtheHighestAltitudeFunc()
+        {
+            Program.Space();
+            Program.Title("Find the Highest Altitude");
+
+            int[] gain1 = {-5,1,5,0,-7};
+            int[] gain2 = {-4,-3,-2,-1,4,3,2};
+
+            int result1 = LeetCode.FindtheHighestAltitude.Solution.LargestAltitude(gain1);
+            int result2 = LeetCode.FindtheHighestAltitude.Solution.LargestAltitude(gain2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void FindPivotIndexFunc()
+        {
+            Program.Space();
+            Program.Title("Find Pivot Index");
+
+            int[] nums1 = {1,7,3,6,5,6};
+            int[] nums2 = {1,2,3};
+            int[] nums3 = {2,1,-1};
+
+            int result1 = LeetCode.FindPivotIndex.Solution.PivotIndex(nums1);
+            int result2 = LeetCode.FindPivotIndex.Solution.PivotIndex(nums2);
+            int result3 = LeetCode.FindPivotIndex.Solution.PivotIndex(nums3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void NumberofProvincesFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Provinces");
+
+            // Case 1
+            int[][] case1_547 = new int[][]
+            {
+                new int[] { 1,1,0 },
+                new int[] { 1,1,0 },
+                new int[] { 0,0,1 }
+            };
+            int result1 = LeetCode.NumberofProvinces.Solution.FindCircleNum(case1_547);
+            Console.WriteLine("Result 1 : {0}", result1);
+            
+            // Case 2
+            int[][] case2_547 = new int[][]
+            {
+                new int[] { 1,0,0 },
+                new int[] { 0,1,0 },
+                new int[] { 0,0,1 }
+            };
+            int result2 = LeetCode.NumberofProvinces.Solution.FindCircleNum(case2_547);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
     
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            Dota2SenateFunc(); // Medium LC
-            MinimumFlipstoMakeaORbEqualtocFunc(); // Medium LC
-            CountingBitsFunc(); // Easy LC
-            BestTimetoBuyandSellStockwithTransactionFeeFunc(); // Medium LC
-            IncreasingTripletSubsequenceFunc(); // Medium LC
-            IsSubsequenceFunc(); // Easy LC
+            MaximumNumberofVowelsinaSubstringofGivenLengthFunc(); // Medium LC
+            DominoandTrominoTilingFunc(); // Medium LC
+            MinCostClimbingStairsFunc(); // Easy LC
+            ContainerWithMostWaterFunc(); // Medium LC
+            MaxNumberofKSumPairsFunc(); // Medium LC
+            MaximumAverageSubarrayIFunc(); // Easy LC
+            UniquePathsFunc(); // Medium LC
+            MaxConsecutiveOnesIIIFunc(); // Medium LC
+            LongestSubarrayof1sAfterDeletingOneElementFunc(); // Medium LC
+            FindtheHighestAltitudeFunc(); // Easy LC
+            FindPivotIndexFunc(); // Easy LC
+            NumberofProvincesFunc(); // Medium LC
         }
     }
 }
