@@ -279,6 +279,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MaxConsecutiveOnesIIIFunc();
             LongestSubarrayof1sAfterDeletingOneElementFunc();
             NumberofProvincesFunc();
+            NumberofSubsequencesThatSatisfytheGivenSumConditionFunc();
         }
 
 
@@ -5327,24 +5328,35 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int result2 = LeetCode.NumberofProvinces.Solution.FindCircleNum(case2_547);
             Console.WriteLine("Result 2 : {0}", result2);
         }
+
+
+        private static void NumberofSubsequencesThatSatisfytheGivenSumConditionFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Subsequences That Satisfy the Given Sum Condition");
+
+            int[] nums1 = {3,5,6,7};
+            int target1 = 9;
+            int[] nums2 = {3,3,6,8};
+            int target2 = 10;
+            int[] nums3 = {2,3,3,4,6,7};
+            int target3 = 12;
+
+            int result1 = LeetCode.NumberofSubsequencesThatSatisfytheGivenSumCondition.Solution.NumSubseq(nums1, target1);
+            int result2 = LeetCode.NumberofSubsequencesThatSatisfytheGivenSumCondition.Solution.NumSubseq(nums2, target2);
+            int result3 = LeetCode.NumberofSubsequencesThatSatisfytheGivenSumCondition.Solution.NumSubseq(nums3, target3);
+            
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
     
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            MaximumNumberofVowelsinaSubstringofGivenLengthFunc(); // Medium LC
-            DominoandTrominoTilingFunc(); // Medium LC
-            MinCostClimbingStairsFunc(); // Easy LC
-            ContainerWithMostWaterFunc(); // Medium LC
-            MaxNumberofKSumPairsFunc(); // Medium LC
-            MaximumAverageSubarrayIFunc(); // Easy LC
-            UniquePathsFunc(); // Medium LC
-            MaxConsecutiveOnesIIIFunc(); // Medium LC
-            LongestSubarrayof1sAfterDeletingOneElementFunc(); // Medium LC
-            FindtheHighestAltitudeFunc(); // Easy LC
-            FindPivotIndexFunc(); // Easy LC
-            NumberofProvincesFunc(); // Medium LC
+            NumberofSubsequencesThatSatisfytheGivenSumConditionFunc(); // Medium LC
         }
     }
 }
