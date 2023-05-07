@@ -305,6 +305,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ProfitableSchemesFunc();
             MinimumInsertionStepstoMakeaStringPalindromeFunc();
             RestoreTheArrayFunc();
+            FindtheLongestValidObstacleCourseatEachPositionFunc();
         }
 
 
@@ -5350,13 +5351,30 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 2 : {0}", result2);
             Console.WriteLine("Result 3 : {0}", result3);
         }
+
+
+        private static void FindtheLongestValidObstacleCourseatEachPositionFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Subsequences That Satisfy the Given Sum Condition");
+
+            int[] obstacles1 = {1,2,3,2};
+            int[] obstacles2 = {2,2,1};
+            int[] obstacles3 = {3,1,5,6,4,2};
+            int[] result1 = LeetCode.FindtheLongestValidObstacleCourseatEachPosition.Solution.LongestObstacleCourseAtEachPosition(obstacles1);
+            int[] result2 = LeetCode.FindtheLongestValidObstacleCourseatEachPosition.Solution.LongestObstacleCourseAtEachPosition(obstacles2);
+            int[] result3 = LeetCode.FindtheLongestValidObstacleCourseatEachPosition.Solution.LongestObstacleCourseAtEachPosition(obstacles3);
+            Program.PrintArray(result1);
+            Program.PrintArray(result2);
+            Program.PrintArray(result3);
+        }
     
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            NumberofSubsequencesThatSatisfytheGivenSumConditionFunc(); // Medium LC
+            FindtheLongestValidObstacleCourseatEachPositionFunc(); // Hard LC
         }
     }
 }
