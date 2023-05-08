@@ -280,6 +280,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             LongestSubarrayof1sAfterDeletingOneElementFunc();
             NumberofProvincesFunc();
             NumberofSubsequencesThatSatisfytheGivenSumConditionFunc();
+            AsteroidCollisionFunc();
         }
 
 
@@ -5368,13 +5369,32 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.PrintArray(result2);
             Program.PrintArray(result3);
         }
+
+
+        private static void AsteroidCollisionFunc()
+        {
+            Program.Space();
+            Program.Title("Asteroid Collision");
+
+            int[] asteroids1 = {5,10,-5};
+            int[] asteroids2 = {8,-8};
+            int[] asteroids3 = {10,2,-5};
+
+            int[] result1 = LeetCode.AsteroidCollision.Solution.AsteroidCollision(asteroids1);
+            int[] result2 = LeetCode.AsteroidCollision.Solution.AsteroidCollision(asteroids2);
+            int[] result3 = LeetCode.AsteroidCollision.Solution.AsteroidCollision(asteroids3);
+
+            Program.PrintArray(result1);
+            Program.PrintArray(result2);
+            Program.PrintArray(result3);
+        }
     
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            FindtheLongestValidObstacleCourseatEachPositionFunc(); // Hard LC
+            AsteroidCollisionFunc(); // Medium LC
         }
     }
 }
