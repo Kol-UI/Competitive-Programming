@@ -281,6 +281,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             NumberofProvincesFunc();
             NumberofSubsequencesThatSatisfytheGivenSumConditionFunc();
             AsteroidCollisionFunc();
+            FindPeakElementFunc();
         }
 
 
@@ -5388,13 +5389,29 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.PrintArray(result2);
             Program.PrintArray(result3);
         }
+
+
+        private static void FindPeakElementFunc()
+        {
+            Program.Space();
+            Program.Title("Find Peak Element");
+
+            int[] nums1 = {1,2,3,1};
+            int[] nums2 = {1,2,1,3,5,6,4};
+
+            int result1 = LeetCode.FindPeakElement.Solution.FindPeakElement(nums1);
+            int result2 = LeetCode.FindPeakElement.Solution.FindPeakElement(nums2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
     
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            AsteroidCollisionFunc(); // Medium LC
+            FindPeakElementFunc(); // Medium LC
         }
     }
 }
