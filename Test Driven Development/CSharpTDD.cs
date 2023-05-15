@@ -308,6 +308,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumInsertionStepstoMakeaStringPalindromeFunc();
             RestoreTheArrayFunc();
             FindtheLongestValidObstacleCourseatEachPositionFunc();
+            MaximizeScoreAfterNOperationsFunc();
         }
 
 
@@ -5405,13 +5406,32 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 1 : {0}", result1);
             Console.WriteLine("Result 2 : {0}", result2);
         }
+
+
+        private static void MaximizeScoreAfterNOperationsFunc()
+        {
+            Program.Space();
+            Program.Title("Maximize Score After N Operations");
+
+            int[] case1_1799 = {1,2};
+            int[] case2_1799 = {3,4,6,8};
+            int[] case3_1799 = {1,2,3,4,5,6};
+
+            int result1 = LeetCode.MaximizeScoreAfterNOperations.Solution.MaxScore(case1_1799);
+            int result2 = LeetCode.MaximizeScoreAfterNOperations.Solution.MaxScore(case2_1799);
+            int result3 = LeetCode.MaximizeScoreAfterNOperations.Solution.MaxScore(case3_1799);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
     
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            FindPeakElementFunc(); // Medium LC
+            MaximizeScoreAfterNOperationsFunc(); // Hard LC
         }
     }
 }
