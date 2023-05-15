@@ -282,6 +282,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             NumberofSubsequencesThatSatisfytheGivenSumConditionFunc();
             AsteroidCollisionFunc();
             FindPeakElementFunc();
+            WateringPlantsIIFunc();
+            CarPoolingFunc();
+            CountWaysToBuildGoodStringsFunc();
         }
 
 
@@ -5425,13 +5428,88 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 2 : {0}", result2);
             Console.WriteLine("Result 3 : {0}", result3);
         }
+
+
+        private static void WateringPlantsIIFunc()
+        {
+            Program.Space();
+            Program.Title("Watering Plants II");
+
+            int[] plants1 = {2,2,3,3};
+            int capacityA1 = 5;
+            int capacityB1 = 5;
+
+            int[] plants2 = {2,2,3,3};
+            int capacityA2 = 3;
+            int capacityB2 = 4;
+
+            int[] plants3 = {5};
+            int capacityA3 = 10;
+            int capacityB3 = 8;
+
+            int result1 = LeetCode.WateringPlantsII.Solution.MinimumRefill(plants1, capacityA1, capacityB1);
+            int result2 = LeetCode.WateringPlantsII.Solution.MinimumRefill(plants2, capacityA2, capacityB2);
+            int result3 = LeetCode.WateringPlantsII.Solution.MinimumRefill(plants3, capacityA3, capacityB3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void CarPoolingFunc()
+        {
+            Program.Space();
+            Program.Title("Car Pooling");
+
+            int[][] trips = new int[][]
+            {
+                new int[] { 2, 1, 5 },
+                new int[] { 3, 3, 7 }
+            };
+            int capacity1 = 4;
+            int capacity2 = 5;
+
+            bool result1 = LeetCode.CarPooling.Solution.CarPooling(trips, capacity1);
+            bool result2 = LeetCode.CarPooling.Solution.CarPooling(trips, capacity2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void CountWaysToBuildGoodStringsFunc()
+        {
+            Program.Space();
+            Program.Title("Count Ways To Build Good Strings");
+
+            int low1 = 3;
+            int high1 = 3;
+            int zero1 = 1;
+            int one1 = 1;
+
+            int result1 = LeetCode.CountWaysToBuildGoodStrings.Solution.CountGoodStrings(low1, high1, zero1, one1);
+            Console.WriteLine("Result 1 : {0}", result1);
+
+            int low2 = 2;
+            int high2 = 3;
+            int zero2 = 1;
+            int one2 = 2;
+
+            int result2 = LeetCode.CountWaysToBuildGoodStrings.Solution.CountGoodStrings(low2, high2, zero2, one2);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+        
     
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            MaximizeScoreAfterNOperationsFunc(); // Hard LC
+            WateringPlantsIIFunc(); // Medium LC
+            CarPoolingFunc(); // Medium LC
+            CountWaysToBuildGoodStringsFunc(); // Medium LC
         }
     }
 }
