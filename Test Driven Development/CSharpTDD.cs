@@ -285,6 +285,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             WateringPlantsIIFunc();
             CarPoolingFunc();
             CountWaysToBuildGoodStringsFunc();
+            TotalCosttoHireKWorkersFunc();
+            MaximumSubsequenceScoreFunc();
+            KthLargestElementinanArrayFunc();
         }
 
 
@@ -5500,6 +5503,66 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 2 : {0}", result2);
         }
 
+
+        private static void TotalCosttoHireKWorkersFunc()
+        {
+            Program.Space();
+            Program.Title("Total Cost to Hire K Workers");
+
+            int[] costs1 = {17,12,10,2,7,2,11,20,8};
+            int k1 = 3;
+            int candidates1 = 4;
+
+            int[] costs2 = {1,2,4,1};
+            int k2 = 3;
+            int candidates2 = 3;
+
+            long result1 = LeetCode.TotalCosttoHireKWorkers.Solution.TotalCost(costs1, k1, candidates1);
+            long result2 = LeetCode.TotalCosttoHireKWorkers.Solution.TotalCost(costs2, k2, candidates2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void MaximumSubsequenceScoreFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Subsequence Score");
+
+            int[] nums1_1 = {1,3,3,2};
+            int[] nums2_1 = {2,1,3,4};
+            int k1 = 3;
+
+            int[] nums1_2 = {4,2,3,1,1};
+            int[] nums2_2 = {7,5,10,9,6};
+            int k2 = 1;
+
+            long result1 = LeetCode.MaximumSubsequenceScore.Solution.MaxScore(nums1_1, nums2_1, k1);
+            long result2 = LeetCode.MaximumSubsequenceScore.Solution.MaxScore(nums1_2, nums2_2, k2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void KthLargestElementinanArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Kth Largest Element in an Array");
+
+            int[] nums1 = {3,2,1,5,6,4};
+            int k1 = 2;
+
+            int[] nums2 = {3,2,3,1,2,4,5,5,6};
+            int k2 = 4;
+
+            int result1 = LeetCode.KthLargestElementinanArray.Solution.FindKthLargest(nums1, k1);
+            int result2 = LeetCode.KthLargestElementinanArray.Solution.FindKthLargest(nums2, k2);
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
         
     
 
@@ -5507,9 +5570,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            WateringPlantsIIFunc(); // Medium LC
-            CarPoolingFunc(); // Medium LC
-            CountWaysToBuildGoodStringsFunc(); // Medium LC
+            TotalCosttoHireKWorkersFunc(); // Medium LC
+            MaximumSubsequenceScoreFunc(); // Medium LC
+            KthLargestElementinanArrayFunc(); // Medium LC
         }
     }
 }
