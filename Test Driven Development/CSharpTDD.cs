@@ -288,6 +288,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             TotalCosttoHireKWorkersFunc();
             MaximumSubsequenceScoreFunc();
             KthLargestElementinanArrayFunc();
+            EqualRowandColumnPairsFunc();
         }
 
 
@@ -5564,15 +5565,43 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
         
-    
+        private static void EqualRowandColumnPairsFunc()
+        {
+            Program.Space();
+            Program.Title("Equal Row and Column Pairs");
+
+            int[][] case1 = new int[][]
+            {
+                new int[] { 3, 2, 1 },
+                new int[] { 1, 7, 6 },
+                new int[] { 2, 7, 7 }
+            };
+
+            int[][] case2 = new int[][]
+            {
+                new int[] { 3,1,2,2 },
+                new int[] { 1,4,4,5 },
+                new int[] { 2,4,2,2 },
+                new int[] { 2,4,2,2 }
+            };
+
+            int result1 = LeetCode.EqualRowandColumnPairs.Solution.EqualPairs(case1);
+            int result2 = LeetCode.EqualRowandColumnPairs.Solution.EqualPairs(case2);
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+        
+
+        // 1557
+        // 872
+        // 2352
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            TotalCosttoHireKWorkersFunc(); // Medium LC
-            MaximumSubsequenceScoreFunc(); // Medium LC
-            KthLargestElementinanArrayFunc(); // Medium LC
+            EqualRowandColumnPairsFunc(); // Medium LC
         }
     }
 }
