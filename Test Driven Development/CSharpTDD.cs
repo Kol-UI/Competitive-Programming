@@ -211,6 +211,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MaximumAverageSubarrayIFunc();
             FindtheHighestAltitudeFunc();
             FindPivotIndexFunc();
+            UniqueNumberofOccurrencesFunc();
         }
 
 
@@ -289,6 +290,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MaximumSubsequenceScoreFunc();
             KthLargestElementinanArrayFunc();
             EqualRowandColumnPairsFunc();
+            DetermineifTwoStringsAreCloseFunc();
         }
 
 
@@ -5591,17 +5593,188 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 2 : {0}", result2);
         }
 
+
+        private static void UniqueNumberofOccurrencesFunc()
+        {
+            Program.Space();
+            Program.Title("Unique Number of Occurrences");
+
+            int[] Case1 = { -1, -2, -3, -4, 3, 2, 1};
+            int[] Case2 = { 1, 5, 0, 2,-3 };
+            int[] Case3 = { -1, 1, -1, 1, -1 };
+            int[] Case4 = { 1000, 2000, 3000 };
+            int[] Case5 = { 4000, 3000, 1000, 2000 };
+            int[] Case6 = { 3, 5, 1 };
+            int[] Case7 = { 1, 2, 4 };
+            int[] Case8 = { 1, 2, 2, 3 };
+            int[] Case9 = { 6, 5, 4, 4 };
+            int[] Case10 = { 1, 3, 2 };
+            int[] Case11 = { 30, 11, 23, 4, 20 };
+            int[] Case12 = { 3, 6, 7, 11 };
+            int[] Case13 = { -30, -11, 23, 4, 20 };
+            int[] Case14 = { -10, -3, 0, 5, 9 };
+            int[] Case15 = { 1, 3 };
+            int[] Case16 = { 1, 2, 2 };
+            int[] Case17 = { 1, 2 };
+            int[] Case18 = { 5, 3, 4 };
+            int[] Case19 = Program.GenerateRandomNumber(10, 100);
+            int[] Case20 = Program.GenerateRandomNumber(10, 100);
+            int[] Case21 = Program.GenerateRandomNumber(10, 100);
+            int[] Case22 = Program.GenerateRandomNumber(10, 100);
+            int[] Case23 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case24 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case25 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case26 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case27 = { -1, -2 };
+            int[] Case28 = { 78, 56, 232, 12, 11, 43 };
+            int[] Case29 = { 78, 56, -2, 12, 8, -33 };
+            int[] Case30 = { 34, 15, 88, 2 };
+            int[] Case31 = { 34, -345, -1, 100 };
+            int[] Case32 = { 12, 35, 1, 10, 34, 1 };
+            int[] Case33 = { 10, 5, 10 };
+            int[] Case34 = { 1, 0, 0, 0, 1 };
+            int[] Case35 = { 1, 0, 0, 0, 0, 0, 1 };
+            int[] Case36 = { 1, 3, 0, 0, 2, 0, 0, 4 };
+            int[] Case37 = { 0, 0, 0, 2, 0, 0 };
+            int[] Case38 = { 1, 2, 3, 4 };
+            int[] Case39 = { -1, 1, 0, -3, 3 };
+            int[] Case40 = { 1, 2, 3, 4, 5 };
+            int[] Case41 = { 5, 4, 3, 2, 1 };
+            int[] Case42 = { 2, 1, 5, 0, 4, 6 };
+            int[] Case43 = { 3, 2, 1, 5, 6, 4 };
+            int[] Case44 = { 3, 2, 3, 1, 2, 4, 5, 5, 6 };
+            int[] Case45 = { 1, 3, 3, 2 };
+            int[] Case46 = { 2, 1, 3, 4 };
+            int[] Case47 = { 4, 2, 3, 1, 1 };
+            int[] Case48 = { 7, 5, 10, 9, 6 };
+
+            bool result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case1);
+            Console.WriteLine("Result 1 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case2);
+            Console.WriteLine("Result 2 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case3);
+            Console.WriteLine("Result 3 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case4);
+            Console.WriteLine("Result 4 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case5);
+            Console.WriteLine("Result 5 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case6);
+            Console.WriteLine("Result 6 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case7);
+            Console.WriteLine("Result 7 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case8);
+            Console.WriteLine("Result 8 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case9);
+            Console.WriteLine("Result 9 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case10);
+            Console.WriteLine("Result 10 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case11);
+            Console.WriteLine("Result 11 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case12);
+            Console.WriteLine("Result 12 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case13);
+            Console.WriteLine("Result 13 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case14);
+            Console.WriteLine("Result 14 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case15);
+            Console.WriteLine("Result 15 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case16);
+            Console.WriteLine("Result 16 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case17);
+            Console.WriteLine("Result 17 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case18);
+            Console.WriteLine("Result 18 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case19);
+            Console.WriteLine("Result 19 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case20);
+            Console.WriteLine("Result 20 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case21);
+            Console.WriteLine("Result 21 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case22);
+            Console.WriteLine("Result 22 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case23);
+            Console.WriteLine("Result 23 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case24);
+            Console.WriteLine("Result 24 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case25);
+            Console.WriteLine("Result 25 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case26);
+            Console.WriteLine("Result 26 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case27);
+            Console.WriteLine("Result 27 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case28);
+            Console.WriteLine("Result 28 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case29);
+            Console.WriteLine("Result 29 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case30);
+            Console.WriteLine("Result 30 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case31);
+            Console.WriteLine("Result 31 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case32);
+            Console.WriteLine("Result 32 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case33);
+            Console.WriteLine("Result 33 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case34);
+            Console.WriteLine("Result 34 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case35);
+            Console.WriteLine("Result 35 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case36);
+            Console.WriteLine("Result 36 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case37);
+            Console.WriteLine("Result 37 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case38);
+            Console.WriteLine("Result 38 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case39);
+            Console.WriteLine("Result 39 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case40);
+            Console.WriteLine("Result 40 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case41);
+            Console.WriteLine("Result 41 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case42);
+            Console.WriteLine("Result 42 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case43);
+            Console.WriteLine("Result 43 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case44);
+            Console.WriteLine("Result 44 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case45);
+            Console.WriteLine("Result 45 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case46);
+            Console.WriteLine("Result 46 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case47);
+            Console.WriteLine("Result 47 : {0}", result);
+            result = LeetCode.UniqueNumberofOccurrences.Solution.UniqueOccurrences(Case48);
+            Console.WriteLine("Result 48 : {0}", result);
+        }
+
+
+        private static void DetermineifTwoStringsAreCloseFunc()
+        {
+            Program.Space();
+            Program.Title("Determine if Two Strings Are Close");
+
+            string word1_1 = "abc";
+            string word2_1 = "bca";
+            string word1_2 = "a";
+            string word2_2 = "aa";
+            string word1_3 = "cabbba";
+            string word2_3 = "abbccc";
+
+            bool result1 = LeetCode.DetermineifTwoStringsAreClose.Solution.CloseStrings(word1_1, word2_1);
+            bool result2 = LeetCode.DetermineifTwoStringsAreClose.Solution.CloseStrings(word1_2, word2_2);
+            bool result3 = LeetCode.DetermineifTwoStringsAreClose.Solution.CloseStrings(word1_3, word2_3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
         
-
-        // 1557
-        // 872
-        // 2352
-
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            EqualRowandColumnPairsFunc(); // Medium LC
+            UniqueNumberofOccurrencesFunc(); // Easy LC
+            DetermineifTwoStringsAreCloseFunc(); // Medium LC
         }
     }
 }
