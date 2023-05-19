@@ -291,6 +291,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             KthLargestElementinanArrayFunc();
             EqualRowandColumnPairsFunc();
             DetermineifTwoStringsAreCloseFunc();
+            IsGraphBipartiteFunc();
         }
 
 
@@ -5768,13 +5769,40 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 3 : {0}", result3);
         }
 
+
+        private static void IsGraphBipartiteFunc()
+        {
+            Program.Space();
+            Program.Title("Is Graph Bipartite");
+
+            int[][] case1 = new int[][]
+            {
+                new int[] { 1, 2, 3 },
+                new int[] { 0, 2 },
+                new int[] { 0, 1, 3 },
+                new int[] { 0, 2 }
+            };
+
+            int[][] case2 = new int[][]
+            {
+                new int[] { 1, 3 },
+                new int[] { 0, 2 },
+                new int[] { 1, 3 },
+                new int[] { 0, 2 }
+            };
+
+            bool result1 = LeetCode.IsGraphBipartite.Solution.IsBipartite(case1);
+            bool result2 = LeetCode.IsGraphBipartite.Solution.IsBipartite(case2);
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
         
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            UniqueNumberofOccurrencesFunc(); // Easy LC
-            DetermineifTwoStringsAreCloseFunc(); // Medium LC
+            IsGraphBipartiteFunc(); // Medium LC
         }
     }
 }
