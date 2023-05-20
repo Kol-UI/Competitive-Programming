@@ -292,6 +292,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             EqualRowandColumnPairsFunc();
             DetermineifTwoStringsAreCloseFunc();
             IsGraphBipartiteFunc();
+            NextPermutationFunc();
         }
 
 
@@ -5797,12 +5798,26 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 2 : {0}", result2);
         }
 
-        
+
+        private static void NextPermutationFunc()
+        {
+            Program.Space();
+            Program.Title("Is Graph Bipartite");
+
+            int[] case1 = { 1, 2, 3 };
+            int[] case2 = { 3, 2, 1 };
+            int[] case3 = { 1, 1, 5 };
+
+            LeetCode.NextPermutation.Solution.NextPermutation(case1);
+            LeetCode.NextPermutation.Solution.NextPermutation(case2);
+            LeetCode.NextPermutation.Solution.NextPermutation(case3);
+        }
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            IsGraphBipartiteFunc(); // Medium LC
+            NextPermutationFunc(); // Medium LC
         }
     }
 }
