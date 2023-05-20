@@ -5802,7 +5802,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static void NextPermutationFunc()
         {
             Program.Space();
-            Program.Title("Is Graph Bipartite");
+            Program.Title("Next Permutation");
 
             int[] case1 = { 1, 2, 3 };
             int[] case2 = { 3, 2, 1 };
