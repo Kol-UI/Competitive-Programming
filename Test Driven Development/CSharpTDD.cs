@@ -294,6 +294,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             IsGraphBipartiteFunc();
             NextPermutationFunc();
             ShortestBridgeFunc();
+            FindtheDuplicateNumberFunc();
         }
 
 
@@ -5852,10 +5853,26 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void FindtheDuplicateNumberFunc()
+        {
+            Program.Space();
+            Program.Title("Find the Duplicate Number");
+
+            int[] nums1 = {1,3,4,2,2};
+            int[] nums2 = {3,1,3,4,2};
+
+            int result1 = LeetCode.FindtheDuplicateNumber.Solution.FindDuplicate(nums1);
+            int result2 = LeetCode.FindtheDuplicateNumber.Solution.FindDuplicate(nums2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            ShortestBridgeFunc(); // Medium LC
+            FindtheDuplicateNumberFunc(); // Medium LC
         }
     }
 }
