@@ -293,6 +293,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             DetermineifTwoStringsAreCloseFunc();
             IsGraphBipartiteFunc();
             NextPermutationFunc();
+            ShortestBridgeFunc();
         }
 
 
@@ -5814,10 +5815,47 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void ShortestBridgeFunc()
+        {
+            Program.Space();
+            Program.Title("Shortest Bridge");
+
+            int[][] case1 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 1, 0 }
+            };
+
+            int[][] case2 = new int[][]
+            {
+                new int[] { 0,1,0 },
+                new int[] { 0,0,0 },
+                new int[] { 0,0,1 }
+            };
+
+            int[][] case3 = new int[][]
+            {
+                new int[] { 1,1,1,1,1 },
+                new int[] { 1,0,0,0,1 },
+                new int[] { 1,0,1,0,1 },
+                new int[] { 1,0,0,0,1 },
+                new int[] { 1,1,1,1,1 }
+            };
+
+            int result1 = LeetCode.ShortestBridge.Solution.ShortestBridge(case1);
+            int result2 = LeetCode.ShortestBridge.Solution.ShortestBridge(case2);
+            int result3 = LeetCode.ShortestBridge.Solution.ShortestBridge(case3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            NextPermutationFunc(); // Medium LC
+            ShortestBridgeFunc(); // Medium LC
         }
     }
 }
