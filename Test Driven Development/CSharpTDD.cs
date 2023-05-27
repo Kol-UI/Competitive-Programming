@@ -295,6 +295,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             NextPermutationFunc();
             ShortestBridgeFunc();
             FindtheDuplicateNumberFunc();
+            New21GameFunc();
+            FindMinimuminRotatedSortedArrayFunc();
+            StoneGameIIFunc();
+            CourseScheduleFunc();
         }
 
 
@@ -322,6 +326,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             RestoreTheArrayFunc();
             FindtheLongestValidObstacleCourseatEachPositionFunc();
             MaximizeScoreAfterNOperationsFunc();
+            StoneGameIIIFunc();
         }
 
 
@@ -5869,10 +5874,120 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void New21GameFunc()
+        {
+            Program.Space();
+            Program.Title("New 21 Game");
+
+            int n1 = 10;
+            int k1 = 1;
+            int maxPts1 = 10;
+            int n2 = 6;
+            int k2 = 1;
+            int maxPts2 = 10;
+            int n3 = 21;
+            int k3 = 17;
+            int maxPts3 = 10;
+
+            double result1 = LeetCode.New21Game.Solution.New21Game(n1, k1, maxPts1);
+            double result2 = LeetCode.New21Game.Solution.New21Game(n2, k2, maxPts2);
+            double result3 = LeetCode.New21Game.Solution.New21Game(n3, k3, maxPts3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void FindMinimuminRotatedSortedArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Find Minimum in Rotated Sorted Array");
+
+            int[] nums1 = {3,4,5,1,2};
+            int[] nums2 = {4,5,6,7,0,1,2};
+            int[] nums3 = {11,13,15,17};
+
+            int result1 = LeetCode.FindMinimuminRotatedSortedArray.Solution.FindMin(nums1);
+            int result2 = LeetCode.FindMinimuminRotatedSortedArray.Solution.FindMin(nums2);
+            int result3 = LeetCode.FindMinimuminRotatedSortedArray.Solution.FindMin(nums3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void StoneGameIIFunc()
+        {
+            Program.Space();
+            Program.Title("Stone Game II");
+
+            int[] nums1 = {2,7,9,4,4};
+            int[] nums2 = {1,2,3,4,5,100};
+
+            int result1 = LeetCode.StoneGameII.Solution.StoneGameII(nums1);
+            int result2 = LeetCode.StoneGameII.Solution.StoneGameII(nums2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void CourseScheduleFunc()
+        {
+            Program.Space();
+            Program.Title("Course Schedule");
+
+            int numCourses1 = 2;
+            int[][] prerequisites1 = new int[][]
+            {
+                new int[] { 1, 0 }
+            };
+
+            int numCourses2 = 2;
+            int[][] prerequisites2 = new int[][]
+            {
+                new int[] { 1, 0 },
+                new int[] { 0, 1 }
+            };
+
+            bool result1 = LeetCode.CourseSchedule.Solution.CanFinish(numCourses1, prerequisites1);
+            bool result2 = LeetCode.CourseSchedule.Solution.CanFinish(numCourses2, prerequisites2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void StoneGameIIIFunc()
+        {
+            Program.Space();
+            Program.Title("Stone Game III");
+
+            int[] nums1 = {1,2,3,7};
+            int[] nums2 = {1,2,3,-9};
+            int[] nums3 = {1,2,3,6};
+
+            string result1 = LeetCode.StoneGameIII.Solution.StoneGameIII(nums1);
+            string result2 = LeetCode.StoneGameIII.Solution.StoneGameIII(nums2);
+            string result3 = LeetCode.StoneGameIII.Solution.StoneGameIII(nums3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            FindtheDuplicateNumberFunc(); // Medium LC
+            New21GameFunc(); // Medium LC
+            FindMinimuminRotatedSortedArrayFunc(); // Medium LC
+            StoneGameIIFunc(); // Medium LC
+            CourseScheduleFunc(); // Medium LC
+            StoneGameIIIFunc(); // Hard LC
         }
     }
 }

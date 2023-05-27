@@ -29,7 +29,7 @@ namespace CompetitiveProgramming.LeetCode.FindtheDuplicateNumber
         {
             bool[] found = new bool[nums.Length];
 
-            for(int i= 0; i< nums.Length; i++)
+            for(int i = 0; i < nums.Length; i++)
             {
                 if(found[nums[i]]) return nums[i];
                 found[nums[i]] = true;
