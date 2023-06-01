@@ -212,6 +212,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             FindtheHighestAltitudeFunc();
             FindPivotIndexFunc();
             UniqueNumberofOccurrencesFunc();
+            MajorityElementFunc();
         }
 
 
@@ -327,6 +328,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             FindtheLongestValidObstacleCourseatEachPositionFunc();
             MaximizeScoreAfterNOperationsFunc();
             StoneGameIIIFunc();
+            MinimumCosttoCutaStickFunc();
         }
 
 
@@ -5979,15 +5981,46 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void MinimumCosttoCutaStickFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Cost to Cut a Stick");
+
+            int n1 = 7;
+            int[] cuts1 = {1,3,4,5};
+            int n2 = 9;
+            int[] cuts2 = {5,6,1,4,2};
+
+            int result1 = LeetCode.MinimumCosttoCutaStick.Solution.MinCost(n1, cuts1);
+            int result2 = LeetCode.MinimumCosttoCutaStick.Solution.MinCost(n2, cuts2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void MajorityElementFunc()
+        {
+            Program.Space();
+            Program.Title("Majority Element");
+
+            int[] nums1 = {3,2,3};
+            int[] nums2 = {2,2,1,1,1,2,2};
+
+            int result1 = LeetCode.MajorityElement.Solution.MajorityElement(nums1);
+            int result2 = LeetCode.MajorityElement.Solution.MajorityElement(nums2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            New21GameFunc(); // Medium LC
-            FindMinimuminRotatedSortedArrayFunc(); // Medium LC
-            StoneGameIIFunc(); // Medium LC
-            CourseScheduleFunc(); // Medium LC
-            StoneGameIIIFunc(); // Hard LC
+            MinimumCosttoCutaStickFunc(); // Hard LC
+            MajorityElementFunc(); // Easy LC
         }
     }
 }
