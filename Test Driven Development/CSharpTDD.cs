@@ -218,6 +218,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             HappyNumberFunc();
             DecryptStringfromAlphabettoIntegerMappingFunc();
             TheKWeakestRowsinaMatrixFunc();
+            CheckifOneStringSwapCanMakeStringsEqualFunc();
         }
 
 
@@ -305,6 +306,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             FindMinimuminRotatedSortedArrayFunc();
             StoneGameIIFunc();
             CourseScheduleFunc();
+            ThreeSumFunc();
+            PeakIndexinaMountainArrayFunc();
         }
 
 
@@ -6136,6 +6139,60 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void CheckifOneStringSwapCanMakeStringsEqualFunc()
+        {
+            Program.Space();
+            Program.Title("Check if One String Swap Can Make Strings Equal");
+
+            string case1s1 = "bank";
+            string case1s2 = "kanb";
+            string case2s1 = "attack";
+            string case2s2 = "defend";
+            string case3s1 = "kelb";
+            string case3s2 = "kelb";
+
+            bool result1 = LeetCode.CheckifOneStringSwapCanMakeStringsEqual.Solution.AreAlmostEqual(case1s1, case1s2);
+            bool result2 = LeetCode.CheckifOneStringSwapCanMakeStringsEqual.Solution.AreAlmostEqual(case2s1, case2s2);
+            bool result3 = LeetCode.CheckifOneStringSwapCanMakeStringsEqual.Solution.AreAlmostEqual(case3s1, case3s2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void ThreeSumFunc()
+        {
+            Program.Space();
+            Program.Title("3Sum");
+
+            int[] nums1 = { 0,1,1 };
+            int[] nums2 = { 0,0,0 };
+
+            IList<IList<int>> result1 = LeetCode.ThreeSum.Solution.ThreeSum(nums1);
+            IList<IList<int>> result2 = LeetCode.ThreeSum.Solution.ThreeSum(nums2);
+        }
+
+
+        private static void PeakIndexinaMountainArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Peak Index in a Mountain Array");
+
+            int[] arr1 = { 0,1,0 };
+            int[] arr2 = { 0,2,1,0 };
+            int[] arr3 = { 0,10,5,2 };
+
+            int result1 = LeetCode.PeakIndexinaMountainArray.Solution.PeakIndexInMountainArray(arr1);
+            int result2 = LeetCode.PeakIndexinaMountainArray.Solution.PeakIndexInMountainArray(arr2);
+            int result3 = LeetCode.PeakIndexinaMountainArray.Solution.PeakIndexInMountainArray(arr3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
@@ -6145,6 +6202,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             HappyNumberFunc(); // Easy LC
             DecryptStringfromAlphabettoIntegerMappingFunc(); // Easy LC
             TheKWeakestRowsinaMatrixFunc(); // Easy LC
+            CheckifOneStringSwapCanMakeStringsEqualFunc(); // Easy LC
+            ThreeSumFunc(); // Medium LC
+            PeakIndexinaMountainArrayFunc(); // Medium LC
         }
     }
 }
