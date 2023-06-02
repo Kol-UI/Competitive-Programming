@@ -77,6 +77,18 @@ namespace CompetitiveProgramming
             Console.WriteLine("Before : '{0}' - After : '{1}'", before, after);
         }
 
+        public static void Print2DIntArray(int[][] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                for (int j = 0; j < array[i].Length; j++)
+                {
+                    Console.Write(array[i][j] + " ");
+                }
+                Console.WriteLine();
+            }
+        }
+
         public static int[] GenerateRandomNumber(int maxNum, int size)
 		{
 			var array = new int[size];

@@ -213,6 +213,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             FindPivotIndexFunc();
             UniqueNumberofOccurrencesFunc();
             MajorityElementFunc();
+            GoalParserInterpretationFunc();
+            FloodFillFunc();
+            HappyNumberFunc();
+            DecryptStringfromAlphabettoIntegerMappingFunc();
+            TheKWeakestRowsinaMatrixFunc();
         }
 
 
@@ -6015,12 +6020,131 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void GoalParserInterpretationFunc()
+        {
+            Program.Space();
+            Program.Title("Goal Parser Interpretation");
+
+            string command1 = "G()(al)";
+            string command2 = "G()()()()(al)";
+            string command3 = "(al)G(al)()()G";
+
+            string result1 = LeetCode.GoalParserInterpretation.Solution.Interpret(command1);
+            string result2 = LeetCode.GoalParserInterpretation.Solution.Interpret(command2);
+            string result3 = LeetCode.GoalParserInterpretation.Solution.Interpret(command3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void FloodFillFunc()
+        {
+            Program.Space();
+            Program.Title("Flood Fill");
+
+            int[][] image1 = new int[][]
+            {
+                new int[] { 1, 1, 1 },
+                new int[] { 1, 1, 0 },
+                new int[] { 1, 0, 1 }
+            };
+            int sr1 = 1;
+            int sc1 = 1;
+            int color1 = 2;
+
+            int[][] image2 = new int[][]
+            {
+                new int[] { 0, 0, 0 },
+                new int[] { 0, 0, 0 }
+            };
+            int sr2 = 0;
+            int sc2 = 0;
+            int color2 = 0;
+
+            int[][] result1 = LeetCode.FloodFill.Solution.FloodFill(image1, sr1, sc1, color1);
+            int[][] result2 = LeetCode.FloodFill.Solution.FloodFill(image2, sr2, sc2, color2);
+
+            Program.Print2DIntArray(result1);
+            Program.Print2DIntArray(result2);
+        }
+
+
+        private static void HappyNumberFunc()
+        {
+            Program.Space();
+            Program.Title("Happy Number");
+
+            int n1 = 19;
+            int n2 = 2;
+
+            bool result1 = LeetCode.HappyNumber.Solution.IsHappy(n1);
+            bool result2 = LeetCode.HappyNumber.Solution.IsHappy(n2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void DecryptStringfromAlphabettoIntegerMappingFunc()
+        {
+            Program.Space();
+            Program.Title("Decrypt String from Alphabet to Integer Mapping");
+
+            string s1 = "10#11#12";
+            string s2 = "1326#";
+
+            string result1 = LeetCode.DecryptStringfromAlphabettoIntegerMapping.Solution.FreqAlphabets(s1);
+            string result2 = LeetCode.DecryptStringfromAlphabettoIntegerMapping.Solution.FreqAlphabets(s2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void TheKWeakestRowsinaMatrixFunc()
+        {
+            Program.Space();
+            Program.Title("The K Weakest Rows in a Matrix");
+
+            int[][] mat1 = new int[][]
+            {
+                new int[] { 1,1,0,0,0 },
+                new int[] { 1,1,1,1,0 },
+                new int[] { 1,1,0,0,0 },
+                new int[] { 1,0,0,0,0 },
+                new int[] { 1,1,0,0,0 },
+                new int[] { 1,1,1,1,1 }
+            };
+            int k1 = 3;
+
+            int[][] mat2 = new int[][]
+            {
+                new int[] { 1,0,0,0 },
+                new int[] { 1,1,1,1 },
+                new int[] { 1,0,0,0 },
+                new int[] { 1,0,0,0 },
+            };
+            int k2 = 2;
+
+            int[] result1 = LeetCode.TheKWeakestRowsinaMatrix.Solution.KWeakestRows(mat1, k1);
+            int[] result2 = LeetCode.TheKWeakestRowsinaMatrix.Solution.KWeakestRows(mat2, k2);
+
+            Program.PrintArray(result1);
+            Program.PrintArray(result2);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            MinimumCosttoCutaStickFunc(); // Hard LC
-            MajorityElementFunc(); // Easy LC
+            GoalParserInterpretationFunc(); // Easy LC
+            FloodFillFunc(); // Easy LC
+            HappyNumberFunc(); // Easy LC
+            DecryptStringfromAlphabettoIntegerMappingFunc(); // Easy LC
+            TheKWeakestRowsinaMatrixFunc(); // Easy LC
         }
     }
 }
