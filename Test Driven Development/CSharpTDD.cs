@@ -19,6 +19,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             // All GeeksForGeeks Solutions
             GeeksForGeeksTests();
 
+            // All HackerRank Solutions
+            HackerRankTests();
+
             // All LeetCode Solutions
             LeetCodeTests();
 
@@ -50,6 +53,19 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
             // Hard
             HardLeetCodeTests();
+        }
+
+
+        private static void HackerRankTests()
+        {
+            // Easy
+            EasyHackerRankTests();
+
+            // Medium
+            MediumHackerRankTests();
+
+            // Hard
+            HardHackerRankTests();
         }
 
 
@@ -152,6 +168,28 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        // EASY HACKERRANK
+        private static void EasyHackerRankTests()
+        {
+            SimpleArraySumFunc();
+            SolveMeFirstFunc();
+        }
+
+
+        // MEDIUM HACKERRANK
+        private static void MediumHackerRankTests()
+        {
+
+        }
+
+
+        // HARD HACKERRANK
+        private static void HardHackerRankTests()
+        {
+
+        }
+
+
         // EASY LEETCODE
         private static void EasyLeetCodeTests()
         {
@@ -219,6 +257,17 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             DecryptStringfromAlphabettoIntegerMappingFunc();
             TheKWeakestRowsinaMatrixFunc();
             CheckifOneStringSwapCanMakeStringsEqualFunc();
+            SubtracttheProductandSumofDigitsofanIntegerFunc();
+            SpecialArrayWithXElementsGreaterThanorEqualXFunc();
+            SqrtxFunc();
+            FindtheDistanceValueBetweenTwoArraysFunc();
+            SortColorsFunc();
+            SumofAllOddLengthSubarraysFunc();
+            NextGreaterElementIFunc();
+            SquaresofaSortedArrayFunc();
+            FibonacciNumberFunc();
+            FindNearestPointThatHastheSameXorYCoordinateFunc();
+            Numberof1BitsFunc();
         }
 
 
@@ -308,6 +357,15 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CourseScheduleFunc();
             ThreeSumFunc();
             PeakIndexinaMountainArrayFunc();
+            DeleteandEarnFunc();
+            TwoSumIIInputArrayIsSortedFunc();
+            FindFirstandLastPositionofElementinSortedArrayFunc();
+            MergeIntervalsFunc();
+            TimeNeededtoInformAllEmployeesFunc();
+            SumofSquareNumbersFunc();
+            DecodeWaysFunc();
+            ArithmeticSlicesFunc();
+            RotateArrayFunc();
         }
 
 
@@ -6193,6 +6251,414 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void SubtracttheProductandSumofDigitsofanIntegerFunc()
+        {
+            Program.Space();
+            Program.Title("Subtract the Product and Sum of Digits of an Integer");
+
+            int case1 = 234;
+            int case2 = 4421;
+
+            int result1 = LeetCode.SubtracttheProductandSumofDigitsofanInteger.Solution.SubtractProductAndSum(case1);
+            int result2 = LeetCode.SubtracttheProductandSumofDigitsofanInteger.Solution.SubtractProductAndSum(case2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void DeleteandEarnFunc()
+        {
+            Program.Space();
+            Program.Title("Delete and Earn");
+
+            int[] nums1 = {3,4,2};
+            int[] nums2 = {2,2,3,3,3,4};
+
+            int result1 = LeetCode.DeleteandEarn.Solution.DeleteAndEarn(nums1);
+            int result2 = LeetCode.DeleteandEarn.Solution.DeleteAndEarn(nums2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void SpecialArrayWithXElementsGreaterThanorEqualXFunc()
+        {
+            Program.Space();
+            Program.Title("Special Array With X Elements Greater Than or Equal X");
+
+            int[] nums1 = {3,5};
+            int[] nums2 = {0,0};
+
+            int result1 = LeetCode.SpecialArrayWithXElementsGreaterThanorEqualX.Solution.SpecialArray(nums1);
+            int result2 = LeetCode.SpecialArrayWithXElementsGreaterThanorEqualX.Solution.SpecialArray(nums2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void TwoSumIIInputArrayIsSortedFunc()
+        {
+            Program.Space();
+            Program.Title("Two Sum II - Input Array Is Sorted");
+
+            int[] nums1 = {2,7,11,15};
+            int target1 = 9;
+            int[] nums2 = {2,3,4};
+            int target2 = 6;
+            int[] nums3 = {-1,0};
+            int target3 = -1;
+
+            int[] result1 = LeetCode.TwoSumIIInputArrayIsSorted.Solution.TwoSum(nums1, target1);
+            int[] result2 = LeetCode.TwoSumIIInputArrayIsSorted.Solution.TwoSum(nums2, target2);
+            int[] result3 = LeetCode.TwoSumIIInputArrayIsSorted.Solution.TwoSum(nums3, target3);
+
+            Program.PrintArray(result1);
+            Program.PrintArray(result2);
+            Program.PrintArray(result3);
+        }
+
+
+        private static void FindFirstandLastPositionofElementinSortedArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Find First and Last Position of Element in Sorted Array");
+
+            int[] nums1 = {5,7,7,8,8,10};
+            int target1 = 8;
+            int[] nums2 = {5,7,7,8,8,10};
+            int target2 = 6;
+            int[] nums3 = {};
+            int target3 = 0;
+
+            int[] result1 = LeetCode.FindFirstandLastPositionofElementinSortedArray.Solution.SearchRange(nums1, target1);
+            int[] result2 = LeetCode.FindFirstandLastPositionofElementinSortedArray.Solution.SearchRange(nums2, target2);
+            int[] result3 = LeetCode.FindFirstandLastPositionofElementinSortedArray.Solution.SearchRange(nums3, target3);
+
+            Program.PrintArray(result1);
+            Program.PrintArray(result2);
+            Program.PrintArray(result3);
+        }
+
+
+        private static void SqrtxFunc()
+        {
+            Program.Space();
+            Program.Title("Sqrt(x)");
+
+            int case1 = 4;
+            int case2 = 8;
+
+            int result1 = LeetCode.Sqrtx.Solution.MySqrt(case1);
+            int result2 = LeetCode.Sqrtx.Solution.MySqrt(case2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void FindtheDistanceValueBetweenTwoArraysFunc()
+        {
+            Program.Space();
+            Program.Title("Find the Distance Value Between Two Arrays");
+
+            int[] arr1case1 = {4,5,8};
+            int[] arr2case1 = {10,9,1,8};
+            int dcase1 = 2;
+
+            int[] arr1case2 = {1,4,2,3};
+            int[] arr2case2 = {-4,-3,6,10,20,30};
+            int dcase2 = 3;
+
+            int[] arr1case3 = {2,1,100,3};
+            int[] arr2case3 = {-5,-2,10,-3,7};
+            int dcase3 = 6;
+
+            int result1 = LeetCode.FindtheDistanceValueBetweenTwoArrays.Solution.FindTheDistanceValue(arr1case1, arr2case1, dcase1);
+            int result2 = LeetCode.FindtheDistanceValueBetweenTwoArrays.Solution.FindTheDistanceValue(arr1case2, arr2case2, dcase2);
+            int result3 = LeetCode.FindtheDistanceValueBetweenTwoArrays.Solution.FindTheDistanceValue(arr1case3, arr2case3, dcase3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void MergeIntervalsFunc()
+        {
+            Program.Space();
+            Program.Title("Merge Intervals");
+
+            int[][] intervals1 = new int[][]
+            {
+                new int[] { 1,3 },
+                new int[] { 2,6 },
+                new int[] { 8,10 },
+                new int[] { 15,18 }
+            };
+
+            int[][] intervals2 = new int[][]
+            {
+                new int[] { 1,4 },
+                new int[] { 4,5 }
+            };
+
+            int[][] result1 = LeetCode.MergeIntervals.Solution.Merge(intervals1);
+            int[][] result2 = LeetCode.MergeIntervals.Solution.Merge(intervals2);
+
+            Program.Print2DIntArray(result1);
+            Program.Space();
+            Program.Print2DIntArray(result2);
+        }
+
+
+        private static void SortColorsFunc()
+        {
+            Program.Space();
+            Program.Title("Sort Colors");
+
+            int[] case1 = {2,0,2,1,1,0};
+            int[] case2 = {2,0,1};
+
+            Console.WriteLine("Result 1 :");
+            LeetCode.SortColors.Solution.SortColors(case1);
+            Console.WriteLine("Result 2 :");
+            LeetCode.SortColors.Solution.SortColors(case2);
+        }
+
+
+        private static void TimeNeededtoInformAllEmployeesFunc()
+        {
+            Program.Space();
+            Program.Title("Time Needed to Inform All Employees");
+
+            int n1 = 1;
+            int headID1 = 0;
+            int[] manager1 = {-1};
+            int[] informTime1 = {0};
+
+            int n2 = 6;
+            int headID2 = 2;
+            int[] manager2 = {2,2,-1,2,2,2};
+            int[] informTime2 = {0,0,1,0,0,0};
+
+            int result1 = LeetCode.TimeNeededtoInformAllEmployees.Solution.NumOfMinutes(n1, headID1, manager1, informTime1);
+            int result2 = LeetCode.TimeNeededtoInformAllEmployees.Solution.NumOfMinutes(n2, headID2, manager2, informTime2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void SumofSquareNumbersFunc()
+        {
+            Program.Space();
+            Program.Title("Sum of Square Numbers");
+
+            int c1 = 5;
+            int c2 = 3;
+
+            bool result1 = LeetCode.SumofSquareNumbers.Solution.JudgeSquareSum(c1);
+            bool result2 = LeetCode.SumofSquareNumbers.Solution.JudgeSquareSum(c2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void DecodeWaysFunc()
+        {
+            Program.Space();
+            Program.Title("Decode Ways");
+
+            int result1 = LeetCode.DecodeWays.Solution.NumDecodings("12");
+            int result2 = LeetCode.DecodeWays.Solution.NumDecodings("226");
+            int result3 = LeetCode.DecodeWays.Solution.NumDecodings("06");
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void ArithmeticSlicesFunc()
+        {
+            Program.Space();
+            Program.Title("Arithmetic Slices");
+
+            int[] nums1 = {1,2,3,4};
+            int[] nums2 = {1};
+
+            int result1 = LeetCode.ArithmeticSlices.Solution.NumberOfArithmeticSlices(nums1);
+            int result2 = LeetCode.ArithmeticSlices.Solution.NumberOfArithmeticSlices(nums2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void SumofAllOddLengthSubarraysFunc()
+        {
+            Program.Space();
+            Program.Title("Sum of All Odd Length Subarrays");
+
+            int[] arr1 = {1,4,2,5,3};
+            int[] arr2 = {1,2};
+            int[] arr3 = {10,11,12};
+
+            int result1 = LeetCode.SumofAllOddLengthSubarrays.Solution.SumOddLengthSubarrays(arr1);
+            int result2 = LeetCode.SumofAllOddLengthSubarrays.Solution.SumOddLengthSubarrays(arr2);
+            int result3 = LeetCode.SumofAllOddLengthSubarrays.Solution.SumOddLengthSubarrays(arr3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void NextGreaterElementIFunc()
+        {
+            Program.Space();
+            Program.Title("Next Greater Element I");
+
+            int[] case1nums1 = {4,1,2};
+            int[] case1nums2 = {1,3,4,2};
+            int[] case2nums1 = {2,4};
+            int[] case2nums2 = {1,2,3,4};
+
+            int[] result1 = LeetCode.NextGreaterElementI.Solution.NextGreaterElement(case1nums1, case1nums2);
+            int[] result2 = LeetCode.NextGreaterElementI.Solution.NextGreaterElement(case2nums1, case2nums2);
+
+            Program.PrintArray(result1);
+            Program.PrintArray(result2);
+        }
+
+
+        private static void SquaresofaSortedArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Squares of a Sorted Array");
+
+            int[] nums1 = {-4,-1,0,3,10};
+            int[] nums2 = {-7,-3,2,3,11};
+
+            int[] result1 = LeetCode.SquaresofaSortedArray.Solution.SortedSquares(nums1);
+            int[] result2 = LeetCode.SquaresofaSortedArray.Solution.SortedSquares(nums2);
+
+            Program.PrintArray(result1);
+            Program.PrintArray(result2);
+        }
+
+
+        private static void RotateArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Rotate Array");
+
+            int[] nums1 = {1,2,3,4,5,6,7};
+            int k1 = 3;
+            int[] nums2 = {-1,-100,3,99};
+            int k2 = 2;
+
+            Console.WriteLine("Result 1 :");
+            LeetCode.RotateArray.Solution.Rotate(nums1, k1);
+            Console.WriteLine("Result 2 :");
+            LeetCode.RotateArray.Solution.Rotate(nums2, k2);
+        }
+
+
+        private static void FibonacciNumberFunc()
+        {
+            Program.Space();
+            Program.Title("Fibonacci Number");
+
+            int result1 = LeetCode.FibonacciNumber.Solution.Fib(2);
+            int result2 = LeetCode.FibonacciNumber.Solution.Fib(3);
+            int result3 = LeetCode.FibonacciNumber.Solution.Fib(4);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void FindNearestPointThatHastheSameXorYCoordinateFunc()
+        {
+            Program.Space();
+            Program.Title("Find Nearest Point That Has the Same X or Y Coordinate");
+
+            int[][] points1 = new int[][]
+            {
+                new int[] { 1,2 },
+                new int[] { 3,1 },
+                new int[] { 2,4 },
+                new int[] { 2,3 },
+                new int[] { 4,4 }
+            };
+
+            int[][] points2 = new int[][]
+            {
+                new int[] { 3,4 }
+            };
+
+            int[][] points3 = new int[][]
+            {
+                new int[] { 2,3 }
+            };
+
+            int result1 = LeetCode.FindNearestPointThatHastheSameXorYCoordinate.Solution.NearestValidPoint(3, 4, points1);
+            int result2 = LeetCode.FindNearestPointThatHastheSameXorYCoordinate.Solution.NearestValidPoint(3, 4, points2);
+            int result3 = LeetCode.FindNearestPointThatHastheSameXorYCoordinate.Solution.NearestValidPoint(3, 4, points3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void Numberof1BitsFunc()
+        {
+            Program.Space();
+            Program.Title("Number of 1 Bits");
+
+            uint test1 = 00000000000000000000000000001011;
+            uint test2 = 00000000000000000000000010000000;
+
+            int result1 = LeetCode.Numberof1Bits.Solution.HammingWeight(test1);
+            int result2 = LeetCode.Numberof1Bits.Solution.HammingWeight(test2);
+            int result1Linq = LeetCode.Numberof1Bits.Solution.HammingWeight2(test1);
+            int result2Linq = LeetCode.Numberof1Bits.Solution.HammingWeight2(test2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 1 Linq : {0}", result1Linq);
+            Console.WriteLine("Result 2 Linq : {0}", result2Linq);
+        }
+
+
+        private static void SimpleArraySumFunc()
+        {
+            Program.Space();
+            Program.Title("Simple Array Sum");
+
+            List<int> ar = new List<int> {1, 2, 3, 4, 10, 11};
+            int case1 = HackerRank.SimpleArraySum.Result.simpleArraySum(ar);
+            Console.WriteLine("Result 1 : {0}", case1);
+        }
+
+
+        private static void SolveMeFirstFunc()
+        {
+            Program.Space();
+            Program.Title("Solve Me First");
+
+            int result = HackerRank.SolveMeFirst.Solution.solveMeFirst(2, 3);
+            Console.WriteLine("Result 1 : {0}", result);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
@@ -6205,6 +6671,29 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CheckifOneStringSwapCanMakeStringsEqualFunc(); // Easy LC
             ThreeSumFunc(); // Medium LC
             PeakIndexinaMountainArrayFunc(); // Medium LC
+            SubtracttheProductandSumofDigitsofanIntegerFunc(); // Easy LC
+            DeleteandEarnFunc(); // Medium LC
+            SpecialArrayWithXElementsGreaterThanorEqualXFunc(); // Easy LC
+            TwoSumIIInputArrayIsSortedFunc(); // Medium LC
+            FindFirstandLastPositionofElementinSortedArrayFunc(); // Medium LC
+            SqrtxFunc(); // Easy LC
+            FindtheDistanceValueBetweenTwoArraysFunc(); // Easy LC
+            MergeIntervalsFunc(); // Medium LC
+            SortColorsFunc(); // Easy LC
+            TimeNeededtoInformAllEmployeesFunc(); // Medium LC
+            SumofSquareNumbersFunc(); // Medium LC
+            DecodeWaysFunc(); // Medium LC
+            ArithmeticSlicesFunc(); // Medium LC
+            SumofAllOddLengthSubarraysFunc(); // Easy LC
+            NextGreaterElementIFunc(); // Easy LC
+            SquaresofaSortedArrayFunc(); // Easy LC
+            RotateArrayFunc(); // Medium LC
+            FibonacciNumberFunc(); // Easy LC
+            FindNearestPointThatHastheSameXorYCoordinateFunc(); // Easy LC
+            Numberof1BitsFunc(); // Easy LC
+
+            SimpleArraySumFunc(); // Easy HR
+            SolveMeFirstFunc(); // Easy HR
         }
     }
 }
