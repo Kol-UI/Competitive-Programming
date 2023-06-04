@@ -268,6 +268,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             FibonacciNumberFunc();
             FindNearestPointThatHastheSameXorYCoordinateFunc();
             Numberof1BitsFunc();
+            SortIntegersbyTheNumberof1BitsFunc();
+            SearchinRotatedSortedArrayFunc();
         }
 
 
@@ -366,6 +368,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             DecodeWaysFunc();
             ArithmeticSlicesFunc();
             RotateArrayFunc();
+            UglyNumberIIFunc();
+            UniqueBinarySearchTreesFunc();
+            MaximumDistanceBetweenaPairofValuesFunc();
         }
 
 
@@ -6659,41 +6664,99 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void UglyNumberIIFunc()
+        {
+            Program.Space();
+            Program.Title("Ugly Number II");
+
+            int result1 = LeetCode.UglyNumberII.Solution.NthUglyNumber(10);
+            int result2 = LeetCode.UglyNumberII.Solution.NthUglyNumber(1);
+            
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void UniqueBinarySearchTreesFunc()
+        {
+            Program.Space();
+            Program.Title("Unique Binary Search Trees");
+
+            int result1 = LeetCode.UniqueBinarySearchTrees.Solution.NumTrees(3);
+            int result2 = LeetCode.UniqueBinarySearchTrees.Solution.NumTrees(1);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void SortIntegersbyTheNumberof1BitsFunc()
+        {
+            Program.Space();
+            Program.Title("Sort Integers by The Number of 1 Bits");
+
+            int[] arr1356_1 = {0,1,2,3,4,5,6,7,8};
+            int[] arr1356_2 = {1024,512,256,128,64,32,16,8,4,2,1};
+
+            int[] result1 = LeetCode.SortIntegersbyTheNumberof1Bits.Solution.SortByBits(arr1356_1);
+            int[] result2 = LeetCode.SortIntegersbyTheNumberof1Bits.Solution.SortByBits(arr1356_2);
+
+            Program.PrintArray(arr1356_1);
+            Program.PrintArray(arr1356_2);
+        }
+
+
+        private static void SearchinRotatedSortedArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Search in Rotated Sorted Array");
+
+            int[] arr33_1 = {0,1,2,3,4,5,6,7,8};
+            int[] arr33_2 = {1024,512,256,128,64,32,16,8,4,2,1};
+            int target33_1 = 0;
+            int target33_2 = 3;
+
+            int result1 = LeetCode.SearchinRotatedSortedArray.Solution.Search(arr33_1, target33_1);
+            int result2 = LeetCode.SearchinRotatedSortedArray.Solution.Search(arr33_2, target33_2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void MaximumDistanceBetweenaPairofValuesFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Distance Between a Pair of Values");
+
+            int[] nums1_1855_1 = {55,30,5,4,2};
+            int[] nums2_1855_1 = {100,20,10,10,5};
+
+            int[] nums1_1855_2 = {2,2,2};
+            int[] nums2_1855_2 = {10,10,1};
+
+            int[] nums1_1855_3 = {30,29,19,5};
+            int[] nums2_1855_3 = {25,25,25,25,25};
+
+            int result1 = LeetCode.MaximumDistanceBetweenaPairofValues.Solution.MaxDistance(nums1_1855_1, nums2_1855_1);
+            int result2 = LeetCode.MaximumDistanceBetweenaPairofValues.Solution.MaxDistance(nums1_1855_2, nums2_1855_2);
+            int result3 = LeetCode.MaximumDistanceBetweenaPairofValues.Solution.MaxDistance(nums1_1855_3, nums2_1855_3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            GoalParserInterpretationFunc(); // Easy LC
-            FloodFillFunc(); // Easy LC
-            HappyNumberFunc(); // Easy LC
-            DecryptStringfromAlphabettoIntegerMappingFunc(); // Easy LC
-            TheKWeakestRowsinaMatrixFunc(); // Easy LC
-            CheckifOneStringSwapCanMakeStringsEqualFunc(); // Easy LC
-            ThreeSumFunc(); // Medium LC
-            PeakIndexinaMountainArrayFunc(); // Medium LC
-            SubtracttheProductandSumofDigitsofanIntegerFunc(); // Easy LC
-            DeleteandEarnFunc(); // Medium LC
-            SpecialArrayWithXElementsGreaterThanorEqualXFunc(); // Easy LC
-            TwoSumIIInputArrayIsSortedFunc(); // Medium LC
-            FindFirstandLastPositionofElementinSortedArrayFunc(); // Medium LC
-            SqrtxFunc(); // Easy LC
-            FindtheDistanceValueBetweenTwoArraysFunc(); // Easy LC
-            MergeIntervalsFunc(); // Medium LC
-            SortColorsFunc(); // Easy LC
-            TimeNeededtoInformAllEmployeesFunc(); // Medium LC
-            SumofSquareNumbersFunc(); // Medium LC
-            DecodeWaysFunc(); // Medium LC
-            ArithmeticSlicesFunc(); // Medium LC
-            SumofAllOddLengthSubarraysFunc(); // Easy LC
-            NextGreaterElementIFunc(); // Easy LC
-            SquaresofaSortedArrayFunc(); // Easy LC
-            RotateArrayFunc(); // Medium LC
-            FibonacciNumberFunc(); // Easy LC
-            FindNearestPointThatHastheSameXorYCoordinateFunc(); // Easy LC
-            Numberof1BitsFunc(); // Easy LC
-
-            SimpleArraySumFunc(); // Easy HR
-            SolveMeFirstFunc(); // Easy HR
+            UglyNumberIIFunc(); // Medium LC
+            UniqueBinarySearchTreesFunc(); // Medium LC
+            SortIntegersbyTheNumberof1BitsFunc(); // Easy LC
+            SearchinRotatedSortedArrayFunc(); // Easy LC
+            MaximumDistanceBetweenaPairofValuesFunc(); // Medium LC
         }
     }
 }
