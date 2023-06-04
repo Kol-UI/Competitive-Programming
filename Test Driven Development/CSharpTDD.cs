@@ -372,6 +372,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             UniqueBinarySearchTreesFunc();
             MaximumDistanceBetweenaPairofValuesFunc();
             WordBreakFunc();
+            ZeroOneMatrixFunc();
+            MaxAreaofIslandFunc();
         }
 
 
@@ -6788,12 +6790,69 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void ZeroOneMatrixFunc()
+        {
+            Program.Space();
+            Program.Title("01 Matrix");
+
+            int[][] mat1 = new int[][]
+            {
+                new int[] { 0,0,0 },
+                new int[] { 0,1,0 },
+                new int[] { 0,0,0 }
+            };
+
+            int[][] mat2 = new int[][]
+            {
+                new int[] { 0,0,0 },
+                new int[] { 0,1,0 },
+                new int[] { 1,1,1 }
+            };
+
+            int[][] result1 = LeetCode.ZeroOneMatrix.Solution.UpdateMatrix(mat1);
+            int[][] result2 = LeetCode.ZeroOneMatrix.Solution.UpdateMatrix(mat2);
+
+            Program.Print2DIntArray(result1);
+            Program.Space();
+            Program.Print2DIntArray(result2);
+        }
+
+
+        private static void MaxAreaofIslandFunc()
+        {
+            Program.Space();
+            Program.Title("Max Area of Island");
+
+            int[][] grid695_1 = new int[][]
+            {
+                new int[] { 0,0,1,0,0,0,0,1,0,0,0,0,0 },
+                new int[] { 0,0,0,0,0,0,0,1,1,1,0,0,0 },
+                new int[] { 0,1,1,0,1,0,0,0,0,0,0,0,0 },
+                new int[] { 0,1,0,0,1,1,0,0,1,0,1,0,0 },
+                new int[] { 0,1,0,0,1,1,0,0,1,1,1,0,0 },
+                new int[] { 0,0,0,0,0,0,0,0,0,0,1,0,0 },
+                new int[] { 0,0,0,0,0,0,0,1,1,0,0,0,0 }
+            };
+
+            int[][] grid695_2 = new int[][]
+            {
+                new int[] { 0,0,0,0,0,0,0,0 }
+            };
+
+            int result1 = LeetCode.MaxAreaofIsland.Solution.MaxAreaOfIsland(grid695_1);
+            int result2 = LeetCode.MaxAreaofIsland.Solution.MaxAreaOfIsland(grid695_2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            TrappingRainWaterFunc(); // Hard LC
-            WordBreakFunc(); // Medium LC
+            ZeroOneMatrixFunc(); // Medium LC
+            MaxAreaofIslandFunc(); // Medium LC
         }
     }
 }
