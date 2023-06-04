@@ -371,6 +371,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             UglyNumberIIFunc();
             UniqueBinarySearchTreesFunc();
             MaximumDistanceBetweenaPairofValuesFunc();
+            WordBreakFunc();
         }
 
 
@@ -400,6 +401,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MaximizeScoreAfterNOperationsFunc();
             StoneGameIIIFunc();
             MinimumCosttoCutaStickFunc();
+            TrappingRainWaterFunc();
         }
 
 
@@ -6748,15 +6750,50 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void TrappingRainWaterFunc()
+        {
+            Program.Space();
+            Program.Title("Trapping Rain Water");
+
+            int[] height1 = {0,1,0,2,1,0,1,3,2,1,2,1};
+            int[] height2 = {4,2,0,3,2,5};
+
+            int result1 = LeetCode.TrappingRainWater.Solution.Trap(height1);
+            int result2 = LeetCode.TrappingRainWater.Solution.Trap(height2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void WordBreakFunc()
+        {
+            Program.Space();
+            Program.Title("Word Break");
+
+            string s1 = "leetcode";
+            string[] wordDict1 = {"leet","code"};
+            string s2 = "applepenapple";
+            string[] wordDict2 = {"apple","pen"};
+            string s3 = "catsandog";
+            string[] wordDict3 = {"cats","dog","sand","and","cat"};
+
+            bool result1 = LeetCode.WordBreak.Solution.WordBreak(s1, wordDict1);
+            bool result2 = LeetCode.WordBreak.Solution.WordBreak(s2, wordDict2);
+            bool result3 = LeetCode.WordBreak.Solution.WordBreak(s3, wordDict3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            UglyNumberIIFunc(); // Medium LC
-            UniqueBinarySearchTreesFunc(); // Medium LC
-            SortIntegersbyTheNumberof1BitsFunc(); // Easy LC
-            SearchinRotatedSortedArrayFunc(); // Easy LC
-            MaximumDistanceBetweenaPairofValuesFunc(); // Medium LC
+            TrappingRainWaterFunc(); // Hard LC
+            WordBreakFunc(); // Medium LC
         }
     }
 }
