@@ -173,6 +173,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             SimpleArraySumFunc();
             SolveMeFirstFunc();
+            AVeryBigSumFunc();
         }
 
 
@@ -270,6 +271,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Numberof1BitsFunc();
             SortIntegersbyTheNumberof1BitsFunc();
             SearchinRotatedSortedArrayFunc();
+            PowerofTwoFunc();
+            ReverseWordsinaStringIIIFunc();
         }
 
 
@@ -374,6 +377,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             WordBreakFunc();
             ZeroOneMatrixFunc();
             MaxAreaofIslandFunc();
+            TriangleFunc();
+            LongestSubstringWithoutRepeatingCharactersFunc();
         }
 
 
@@ -6847,12 +6852,106 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void PowerofTwoFunc()
+        {
+            Program.Space();
+            Program.Title("Power of Two");
+
+            int case1_231 = 1;
+            int case2_231 = 16;
+            int case3_231 = 3;
+
+            bool result1 = LeetCode.PowerofTwo.Solution.IsPowerOfTwo(case1_231);
+            bool result2 = LeetCode.PowerofTwo.Solution.IsPowerOfTwo(case2_231);
+            bool result3 = LeetCode.PowerofTwo.Solution.IsPowerOfTwo(case3_231);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void ReverseWordsinaStringIIIFunc()
+        {
+            Program.Space();
+            Program.Title("Power of Two");
+
+            string case1_557 = "Let's take LeetCode contest";
+            string case2_557 = "God Ding";
+
+            string result1 = LeetCode.ReverseWordsinaStringIII.Solution.ReverseWords(case1_557);
+            string result2 = LeetCode.ReverseWordsinaStringIII.Solution.ReverseWords(case2_557);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void TriangleFunc()
+        {
+            Program.Space();
+            Program.Title("Tringle");
+
+            int[][] case1_120 = new int[][]
+            {
+                new int[] { 2 },
+                new int[] { 3,4 },
+                new int[] { 6,5,7 },
+                new int[] { 4,1,8,3 }
+            };
+
+            int[][] case2_120 = new int[][]
+            {
+                new int[] { -10 }
+            };
+
+            int result1 = LeetCode.Triangle.Solution.MinimumTotal(case1_120);
+            int result2 = LeetCode.Triangle.Solution.MinimumTotal(case2_120);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
+        private static void LongestSubstringWithoutRepeatingCharactersFunc()
+        {
+            Program.Space();
+            Program.Title("Longest Substring Without Repeating Characters");
+
+            string case1_3 = "abcabcbb";
+            string case2_3 = "bbbbb";
+            string case3_3 = "pwwkew";
+
+            int result1 = LeetCode.LongestSubstringWithoutRepeatingCharacters.Solution.LengthOfLongestSubstring(case1_3);
+            int result2 = LeetCode.LongestSubstringWithoutRepeatingCharacters.Solution.LengthOfLongestSubstring(case2_3);
+            int result3 = LeetCode.LongestSubstringWithoutRepeatingCharacters.Solution.LengthOfLongestSubstring(case3_3);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+            Console.WriteLine("Result 3 : {0}", result3);
+        }
+
+
+        private static void AVeryBigSumFunc()
+        {
+            Program.Space();
+            Program.Title("A Very Big Sum");
+
+            List<long> ar = new List<long> { 1000000001, 1000000002, 1000000003, 1000000004, 1000000005 };
+            long result = HackerRank.AVeryBigSum.Result.aVeryBigSum(ar);
+            Console.WriteLine("Result : {0}", result);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            ZeroOneMatrixFunc(); // Medium LC
-            MaxAreaofIslandFunc(); // Medium LC
+            PowerofTwoFunc(); // Easy LC
+            ReverseWordsinaStringIIIFunc(); // Easy LC
+            TriangleFunc(); // Medium LC
+            LongestSubstringWithoutRepeatingCharactersFunc(); // Medium LC
+            AVeryBigSumFunc(); // Easy HR
         }
     }
 }
