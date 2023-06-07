@@ -273,6 +273,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SearchinRotatedSortedArrayFunc();
             PowerofTwoFunc();
             ReverseWordsinaStringIIIFunc();
+            ReverseBitsFunc();
         }
 
 
@@ -6943,15 +6944,27 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void ReverseBitsFunc()
+        {
+            Program.Space();
+            Program.Title("Reverse Bits");
+
+            uint n1 = 0b0000_0010_1001_0100_0001_1110_1001_1100;
+            uint n2 = 0b11111111111111111111111111111101;
+
+            uint result1 = LeetCode.ReverseBits.Solution.ReverseBits(n1);
+            uint result2 = LeetCode.ReverseBits.Solution.ReverseBits(n2);
+
+            Console.WriteLine("Result 1 : {0}", result1);
+            Console.WriteLine("Result 2 : {0}", result2);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            PowerofTwoFunc(); // Easy LC
-            ReverseWordsinaStringIIIFunc(); // Easy LC
-            TriangleFunc(); // Medium LC
-            LongestSubstringWithoutRepeatingCharactersFunc(); // Medium LC
-            AVeryBigSumFunc(); // Easy HR
+            ReverseBitsFunc(); // Easy LC
         }
     }
 }
