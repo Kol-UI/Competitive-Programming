@@ -6918,10 +6918,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Longest Substring Without Repeating Characters");
+            string source = "LC";
 
             string case1_3 = "abcabcbb";
             string case2_3 = "bbbbb";
             string case3_3 = "pwwkew";
+            int output1 = 1;
+            int output2 = 3;
+            int output3 = 1;
 
             int result1 = LeetCode.LongestSubstringWithoutRepeatingCharacters.Solution.LengthOfLongestSubstring(case1_3);
             int result2 = LeetCode.LongestSubstringWithoutRepeatingCharacters.Solution.LengthOfLongestSubstring(case2_3);
@@ -6930,6 +6934,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 1 : {0}", result1);
             Console.WriteLine("Result 2 : {0}", result2);
             Console.WriteLine("Result 3 : {0}", result3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1),
+                ResultTester.CheckResult<int>(result2, output2),
+                ResultTester.CheckResult<int>(result3, output3)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -6937,10 +6949,18 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("A Very Big Sum");
+            string source = "HR";
 
             List<long> ar = new List<long> { 1000000001, 1000000002, 1000000003, 1000000004, 1000000005 };
+            long output = 5000000015;
             long result = HackerRank.AVeryBigSum.Result.aVeryBigSum(ar);
             Console.WriteLine("Result : {0}", result);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(result, output),
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -6948,15 +6968,25 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Reverse Bits");
+            string source = "LC";
 
             uint n1 = 0b0000_0010_1001_0100_0001_1110_1001_1100;
+            uint output1 = 964176192;
             uint n2 = 0b11111111111111111111111111111101;
+            uint output2 = 3221225471;
 
             uint result1 = LeetCode.ReverseBits.Solution.ReverseBits(n1);
             uint result2 = LeetCode.ReverseBits.Solution.ReverseBits(n2);
 
             Console.WriteLine("Result 1 : {0}", result1);
             Console.WriteLine("Result 2 : {0}", result2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<uint>(result1, output1),
+                ResultTester.CheckResult<uint>(result2, output2)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 

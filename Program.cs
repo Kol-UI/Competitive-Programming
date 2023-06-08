@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming
@@ -13,10 +14,17 @@ namespace CompetitiveProgramming
             sw.Start();
 
             Console.WriteLine("Hello World!");
+            // Tests
             CSharpTDD.StartAllTDD();
 
+            // ResultTester Stats
+            ResultTester.GetAllStats();
+
+            // StopWatch
             sw.Stop();
-            Console.WriteLine("\nTime Elapsed: {0} ms", sw.ElapsedMilliseconds);
+            string stopWatchResult = "Time Elapsed : [" + sw.ElapsedMilliseconds.ToString() + "] ms";
+            HightLight(stopWatchResult, ConsoleColor.Red);
+            Space();
         }
 
         // Helpers
@@ -30,13 +38,17 @@ namespace CompetitiveProgramming
         public static void Title(string StringTitle)
         {
             Space();
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("--- {0} ---", StringTitle);
+            Console.ResetColor();
         }
 
         public static void SubTitle(string StringTitle)
         {
             Space();
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("- {0} -", StringTitle);
+            Console.ResetColor();
         }
 
         // Console Print Helpers
@@ -88,7 +100,30 @@ namespace CompetitiveProgramming
                 Console.WriteLine();
             }
         }
+        
+        public static void HightLight(string message, ConsoleColor color)
+        {
+            // "Highlight a specific [value] in a sentence"
+            var pieces = Regex.Split(message, @"(\[[^\]]*\])");
 
+            for(int i = 0; i < pieces.Length; i++)
+            {
+                string piece = pieces[i];
+                
+                if (piece.StartsWith("[") && piece.EndsWith("]"))
+                {
+                    Console.ForegroundColor = color;
+                    piece = piece.Substring(1, piece.Length - 2);          
+                }
+                
+                Console.Write(piece);
+                Console.ResetColor();
+            }
+            
+            Console.WriteLine();
+        }
+
+        // Generate Randoms
         public static int[] GenerateRandomNumber(int maxNum, int size)
 		{
 			var array = new int[size];
