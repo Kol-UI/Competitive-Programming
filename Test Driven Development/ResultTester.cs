@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Text;
 
 namespace CompetitiveProgramming.TestDrivenDevelopment
@@ -33,24 +34,99 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         // Check each cases
         public static bool CheckResult<T>(T result, T expected)
         {
-            if (result!.Equals(expected))
+            if (result != null && expected != null)
             {
-                lock (_lock)
+                // If Collection => .SequenceEqual()
+                if (result is IEnumerable<object> resultCollection && expected is IEnumerable<object> expectedCollection)
                 {
-                    ValidateTest();
-                    TestDone();
-                    return true;
+                    if (resultCollection.Cast<object>().SequenceEqual(expectedCollection.Cast<object>()))
+                    {
+                        CheckResultRight();
+                        return true;
+                    }
                 }
-            }
-            else
-            {
-                lock (_lock)
+                // If Array => .SequenceEqual();
+                else if (result is Array resultArray && expected is Array expectedArray)
                 {
-                    InvalidateTest();
-                    TestDone();
+                    // If int[]
+                    if (resultArray is int[] && expectedArray is int[])
+                    {
+                        if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
+                        {
+                            CheckResultRight();
+                            return true;
+                        }
+                    }
+
+                    // If bool[]
+                    else if (resultArray is bool[] && expectedArray is bool[])
+                    {
+                        if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
+                        {
+                            CheckResultRight();
+                            return true;
+                        }
+                    }
+
+                    // If char[]
+                    else if (resultArray is char[] && expectedArray is char[])
+                    {
+                        if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
+                        {
+                            CheckResultRight();
+                            return true;
+                        }
+                    }
+                    // Handle other array types here
+
+                    // If no matching array type found
+                    CheckResultWrong();
                     return false;
                 }
+
+                // If char int string long uint Enum => .Equals()
+                else if (result is bool || result is char || result is int || result is string || result is long || result is uint || result is Enum)
+                {
+                    if (result.Equals(expected))
+                    {
+                        CheckResultRight();
+                        return true;
+                    }
+                }
+
+                // If float double
+                else if (result is float || result is double)
+                {
+                    double tolerance = 0.0001;
+                    double diff = Math.Abs(Convert.ToDouble(result) - Convert.ToDouble(expected));
+                    if (diff > tolerance)
+                    {
+                        CheckResultRight();
+                        return true;
+                    }
+                }
             }
+
+            // If null or not equal
+            lock (_lock)
+            {
+                CheckResultWrong();
+                return false;
+            }
+        }
+
+        private static void CheckResultRight()
+        {
+            ValidateTest();
+            TestDone();
+            Console.WriteLine("Validated");
+        }
+
+        private static void CheckResultWrong()
+        {
+            InvalidateTest();
+            TestDone();
+            Console.WriteLine("Invalidated");
         }
 
         // To call in each Solution
@@ -67,7 +143,19 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             {
                 InvalidateSolution();
             }
+            SourceManager(source);
+        }
 
+        public static void SpecialTestCase(string source)
+        {
+            Console.WriteLine("See Solution Directly");
+            ValidateSolution();
+            TestSolution();
+            SourceManager(source);
+        }
+
+        private static void SourceManager(string source)
+        {
             switch(source)
             {
                 case "LC":
@@ -97,7 +185,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             }
         }
 
-        public static void TestSolution()
+        private static void TestSolution()
         {
             lock (_lock)
             {
@@ -105,7 +193,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             }
         }
 
-        public static void ValidateSolution()
+        private static void ValidateSolution()
         {
             lock (_lock)
             {
@@ -113,7 +201,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             }
         }
 
-        public static void InvalidateSolution()
+        private static void InvalidateSolution()
         {
             lock (_lock)
             {
@@ -121,7 +209,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             }
         }
 
-        public static void TestDone()
+        private static void TestDone()
         {
             lock (_lock)
             {
@@ -129,7 +217,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             }
         }
 
-        public static void ValidateTest()
+        private static void ValidateTest()
         {
             lock (_lock)
             {
@@ -137,7 +225,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             }
         }
 
-        public static void InvalidateTest()
+        private static void InvalidateTest()
         {
             lock (_lock)
             {
@@ -150,9 +238,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             if(_counterTotalTestCaseDone != 0)
             {
-                double percentageTest = (_counterTestCaseValidated / _counterTotalTestCaseDone) * 100;
+                double percentageTest = ((double)_counterTestCaseValidated / _counterTotalTestCaseDone) * 100;
+                double roundedPercentage = Math.Round(percentageTest, 2);
                 string numbers = " (Tests Validated : [" + _counterTestCaseValidated.ToString() + "]" + " | Tests Invalidated : [" + _counterTestCaseNotValidated.ToString() + "])";
-                string result = "Percentage of Tests Done : [" + percentageTest.ToString() + "%]"+ numbers;
+                string result = "Percentage of Tests Done : [" + roundedPercentage.ToString("0.##") + "%]"+ numbers;
                 return result;
             }
             else
@@ -166,9 +255,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             if(_counterTotalSolutions != 0)
             {
-                double percentageSolution = (_counterValidatedSolutions / _counterTotalSolutions) * 100;
+                double percentageSolution = ((double)_counterValidatedSolutions / _counterTotalSolutions) * 100;
+                double roundedPercentage = Math.Round(percentageSolution, 2);
                 string numbers = " (Solutions Validated : [" + _counterValidatedSolutions.ToString() + "]" + " | Solutions Invalidated : [" + _counterNotValidatedSolutions.ToString() + "])";
-                string result = "Percentage of Solutions Done : [" + percentageSolution.ToString() + "%]" + numbers;
+                string result = "Percentage of Solutions Done : [" + roundedPercentage.ToString("0.##") + "%]" + numbers;
                 return result;
             }
             else
