@@ -274,6 +274,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             PowerofTwoFunc();
             ReverseWordsinaStringIIIFunc();
             ReverseBitsFunc();
+            MaximumValueofaStringinanArrayFunc();
         }
 
 
@@ -384,6 +385,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MaximalSquareFunc();
             JumpGameFunc();
             PathSumIIFunc();
+            MaximumValueataGivenIndexinaBoundedArrayFunc();
+            BinarySearchTreeIteratorFunc();
+            KthSmallestElementinaBSTFunc();
+            ConstructBinaryTreefromPreorderandInorderTraversalFunc();
+            SmallestNumberinInfiniteSetFunc();
         }
 
 
@@ -414,6 +420,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             StoneGameIIIFunc();
             MinimumCosttoCutaStickFunc();
             TrappingRainWaterFunc();
+            NumberofGoodPathsFunc();
         }
 
 
@@ -1036,6 +1043,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Check if Point Is Reachable");
+            string source = "LC";
 
             // Case 1
             int case1_targetX = 6;
@@ -1048,6 +1056,16 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int case2_targetY = 7;
             bool Case2_2543_Result = LeetCode.CheckifPointIsReachable.Solution.IsReachable(case2_targetX, case2_targetY);
             Console.WriteLine(Case2_2543_Result);
+
+            bool output1 = false;
+            bool output2 = true;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Case1_2543_Result, output1),
+                ResultTester.CheckResult<bool>(Case2_2543_Result, output2),
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -1084,6 +1102,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Find Closest Node to Given Two Nodes");
+            string source = "LC";
 
             // Case 1
             int[] edgesCase1_2359 = { 2, 2, 3, -1 };
@@ -1098,6 +1117,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int node2Case2_2359 = 2;
             int Case2_2359_Result = LeetCode.FindClosestNodetoGivenTwoNodes.Solution.ClosestMeetingNode(edgesCase2_2359, node1Case2_2359, node2Case2_2359);
             Console.WriteLine(Case2_2359_Result);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_2359_Result, 2),
+                ResultTester.CheckResult<int>(Case2_2359_Result, 2)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -1355,6 +1381,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Minimum Fuel Cost to Report to the Capital");
+            string source = "LC";
 
             // Case 1
             int[][] roadsCase1_2477 = new int[][]
@@ -1386,6 +1413,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int seatsCase3_2477 = 1;
             long Case3_2477_Result = LeetCode.MinimumFuelCosttoReporttotheCapital.Solution.MinimumFuelCost(roadsCase3_2477, seatsCase3_2477);
             Console.WriteLine(Case3_2477_Result);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(Case1_2477_Result, 3),
+                ResultTester.CheckResult<long>(Case2_2477_Result, 7),
+                ResultTester.CheckResult<long>(Case3_2477_Result, 0)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -2160,6 +2195,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Count Subarrays With Fixed Bounds");
+            string source = "LC";
 
             // Case 1
             int[] numsCase1_2444 = {1, 3, 5, 2, 7, 5};
@@ -2174,6 +2210,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int maxKCase2_2444 = 1;
             long resultCase2_2444 = LeetCode.CountSubarraysWithFixedBounds.Solution.CountSubarrays(numsCase2_2444, minKCase2_2444, maxKCase2_2444);
             Console.WriteLine(resultCase2_2444);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(resultCase1_2444, 2),
+                ResultTester.CheckResult<long>(resultCase2_2444, 10),
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -2892,6 +2935,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Number of Zero-Filled Subarrays");
+            string source = "LC";
 
             // Case 1
             int[] arrayCase1_2348 = { 1, 3, 0, 0, 2, 0, 0, 4 };
@@ -2908,6 +2952,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             long case2_2348Result = LeetCode.NumberofZeroFilledSubarrays.Solution.ZeroFilledSubarray(arrayCase2_2348);
             Console.WriteLine("Output: {0}", case2_2348Result);
             Program.Space();
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(case1_2348Result, 6),
+                ResultTester.CheckResult<long>(case2_2348Result, 9)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -2915,6 +2966,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Minimum Score of a Path Between Two Cities");
+            string source = "LC";
 
             // Case 1
             int[][] roads2492Case1 = new int[][]
@@ -2937,6 +2989,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int n2492Case2 = 4;
             int result2492Case2 = LeetCode.MinimumScoreofaPathBetweenTwoCities.Solution.MinScore(n2492Case2, roads2492Case2);
             Console.WriteLine("Output: {0}", result2492Case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result2492Case1, 6),
+                ResultTester.CheckResult<int>(result2492Case2, 2)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -3143,6 +3202,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Longest Cycle in a Graph");
+            string source = "LC";
 
             // Case 1
             int[] edges2360Case1 = { 3, 3, 4, 2, 3 };
@@ -3153,6 +3213,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int[] edges2360Case2 = { 2, -1, 3, 1 };
             int result2360Case2 = LeetCode.LongestCycleinaGraph.Solution.LongestCycle(edges2360Case2);
             Console.WriteLine("Result Case 2: {0}", result2360Case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result2360Case1, 3),
+                ResultTester.CheckResult<int>(result2360Case2, -1),
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -3187,6 +3254,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Prime Subtraction Operation");
+            string source = "LC";
 
             // Case 1
             Program.Space();
@@ -3211,6 +3279,18 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.PrintArray(nums2601Case3);
             bool result2601Case3 = LeetCode.PrimeSubtractionOperation.Solution.PrimeSubOperation(nums2601Case3);
             Console.WriteLine("Result Case 3: {0}", result2601Case3);
+
+            bool output1_2601 = true;
+            bool output2_2601 = true;
+            bool output3_2601 = false;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result2601Case1, output1_2601),
+                ResultTester.CheckResult<bool>(result2601Case2, output2_2601),
+                ResultTester.CheckResult<bool>(result2601Case3, output3_2601)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -3246,6 +3326,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("K Items With the Maximum Sums");
+            string source = "LC";
 
             // Case 1
             int numOnes2600Case1 = 3;
@@ -3262,6 +3343,16 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int k2600Case2 = 4;
             int result2600Case2 = LeetCode.KItemsWiththeMaximumSum.Solution.KItemsWithMaximumSum(numOnes2600Case2, numZeros2600Case2, numNegOnes2600Case2, k2600Case2);
             Console.WriteLine("numOnes = {0}, numZeros = {1}, numNegOnes = {2}, k = {3}, Result = {4}", numOnes2600Case2, numZeros2600Case2, numNegOnes2600Case2, k2600Case2, result2600Case2);
+
+            int output1 = 2;
+            int output2 = 3;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result2600Case1, output1),
+                ResultTester.CheckResult<int>(result2600Case2, output2)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -3530,6 +3621,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Optimal Partition of String");
+            string source = "LC";
 
             // Case 1
             int Case1Result2405 = LeetCode.OptimalPartitionofString.Solution.PartitionString("abacaba");
@@ -3538,6 +3630,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             // Case 2
             int Case2Result2405 = LeetCode.OptimalPartitionofString.Solution.PartitionString("ssssss");
             Console.WriteLine("Result 2 : {0}", Case2Result2405);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1Result2405, 4),
+                ResultTester.CheckResult<int>(Case2Result2405, 6)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -3560,6 +3659,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Minimize Maximum of Array");
+            string source = "LC";
 
             // Case 1
             int[] nums2439_1 = {3,7,1,6};
@@ -3570,6 +3670,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int[] nums2439_2 = {10,1};
             int result2439_2 = LeetCode.MinimizeMaximumofArray.Solution.MinimizeArrayValue(nums2439_2);
             Console.WriteLine("Result 2 : {0}", result2439_2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result2439_1, result2439_1),
+                ResultTester.CheckResult<int>(result2439_2, result2439_2)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -3607,6 +3714,15 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void NumberofGoodPathsFunc()
+        {
+            Program.Space();
+            Program.Title("Add Minimum Characters");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
         private static void NumberofEnclavesFunc()
         {
             Program.Space();
@@ -3640,6 +3756,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Removing Stars From a String");
+            string source = "LC";
 
             // Case 1
             string output2390_1 = LeetCode.RemovingStarsFromaString.Solution.RemoveStars("leet**cod*e");
@@ -3648,6 +3765,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             // Case 2
             string output2390_2 = LeetCode.RemovingStarsFromaString.Solution.RemoveStars("erase*****");
             Console.WriteLine("Result 2 : {0}", output2390_2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(output2390_1, "lecoe"),
+                ResultTester.CheckResult<string>(output2390_2, "")
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -3715,6 +3839,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Minimum Reverse Operations");
+            string source = "LC";
 
             // Case 1
             int n_2612_1 = 4;
@@ -3742,6 +3867,18 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int[] result2612_3 = LeetCode.MinimumReverseOperations.Solution.MinReverseOperations(n_2612_3, p_2612_3, banned_2612_3, k_2612_3);
             Console.WriteLine("Result 3 :");
             Program.PrintArray(result2612_3);
+
+            int[] output1_2612 = {0,-1,-1,1};
+            int[] output2_2612 = {0,-1,-1,-1,-1};
+            int[] output3_2612 = {-1,-1,0,-1};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result2612_1, output1_2612),
+                ResultTester.CheckResult<int[]>(result2612_2, output2_2612),
+                ResultTester.CheckResult<int[]>(result2612_3, output3_2612)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -4071,6 +4208,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Best Poker Hand");
+            string source = "LC";
 
             // Case 1
             int[] ranks1 = {13,2,3,1,9};
@@ -4089,6 +4227,24 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             char[] suits3 = {'a','b','c','a','d'};
             string Case3_2347 = LeetCode.BestPokerHand.Solution.BestHand(ranks3, suits3);
             Console.WriteLine("Result 3 : {0}", Case3_2347);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(Case1_2347, "Flush"),
+                ResultTester.CheckResult<string>(Case2_2347, "Three of a Kind"),
+                ResultTester.CheckResult<string>(Case3_2347, "Pair")
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void SmallestNumberinInfiniteSetFunc()
+        {
+            Program.Space();
+            Program.Title("Best Poker Hand");
+            string source = "LC";
+
+            ResultTester.SpecialTestCase(source);
         }
 
 
@@ -5584,6 +5740,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Count Ways To Build Good Strings");
+            string source = "LC";
 
             int low1 = 3;
             int high1 = 3;
@@ -5600,6 +5757,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
             int result2 = LeetCode.CountWaysToBuildGoodStrings.Solution.CountGoodStrings(low2, high2, zero2, one2);
             Console.WriteLine("Result 2 : {0}", result2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 8),
+                ResultTester.CheckResult<int>(result2, 8)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -5607,6 +5771,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Total Cost to Hire K Workers");
+            string source = "LC";
 
             int[] costs1 = {17,12,10,2,7,2,11,20,8};
             int k1 = 3;
@@ -5621,6 +5786,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
             Console.WriteLine("Result 1 : {0}", result1);
             Console.WriteLine("Result 2 : {0}", result2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(result1, 11),
+                ResultTester.CheckResult<long>(result2, 4)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -5628,6 +5800,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Maximum Subsequence Score");
+            string source = "LC";
 
             int[] nums1_1 = {1,3,3,2};
             int[] nums2_1 = {2,1,3,4};
@@ -5642,6 +5815,16 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
             Console.WriteLine("Result 1 : {0}", result1);
             Console.WriteLine("Result 2 : {0}", result2);
+
+            long output1 = 12;
+            long output2 = 30;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(result1, output1),
+                ResultTester.CheckResult<long>(result2, output2)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -5667,6 +5850,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Equal Row and Column Pairs");
+            string source = "LC";
 
             int[][] case1 = new int[][]
             {
@@ -5687,6 +5871,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int result2 = LeetCode.EqualRowandColumnPairs.Solution.EqualPairs(case2);
             Console.WriteLine("Result 1 : {0}", result1);
             Console.WriteLine("Result 2 : {0}", result2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 3)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -7325,17 +7516,102 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void MaximumValueataGivenIndexinaBoundedArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Value at a Given Index in a Bounded Array");
+            string source = "LC";
+
+            int n1 = 4;
+            int index1 = 2;
+            int maxSum1 = 6;
+            int output1_1802 = 2;
+
+            int n2 = 6;
+            int index2 = 1;
+            int maxSum2 = 10;
+            int output2_1802 = 3;
+
+            int result1 = LeetCode.MaximumValueataGivenIndexinaBoundedArray.Solution.MaxValue(n1, index1, maxSum1);
+            int result2 = LeetCode.MaximumValueataGivenIndexinaBoundedArray.Solution.MaxValue(n2, index2, maxSum2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1_1802),
+                ResultTester.CheckResult<int>(result2, output2_1802)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void BinarySearchTreeIteratorFunc()
+        {
+            Program.Space();
+            Program.Title("Binary Search Tree Iterator");
+            string source = "LC";
+
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void KthSmallestElementinaBSTFunc()
+        {
+            Program.Space();
+            Program.Title("Kth Smallest Element in a BST");
+            string source = "LC";
+
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void ConstructBinaryTreefromPreorderandInorderTraversalFunc()
+        {
+            Program.Space();
+            Program.Title("Construct Binary Tree from Preorder and Inorder Traversal");
+            string source = "LC";
+
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void MaximumValueofaStringinanArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Value of a String in an Array");
+            string source = "LC";
+
+            string[] strs1 = {"alic3","bob","3","4","00000"};
+            string[] strs2 = {"1","01","001","0001"};
+
+            int result1_2496 = LeetCode.MaximumValueofaStringinanArray.Solution.MaximumValue(strs1);
+            int result2_2496 = LeetCode.MaximumValueofaStringinanArray.Solution.MaximumValue(strs2);
+            int result1_2496Linq = LeetCode.MaximumValueofaStringinanArray.Solution.MaximumValueLinq(strs1);
+            int result2_2496Linq = LeetCode.MaximumValueofaStringinanArray.Solution.MaximumValueLinq(strs2);
+
+            int output1 = 5;
+            int output2 = 1;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_2496, output1),
+                ResultTester.CheckResult<int>(result2_2496, output2),
+                ResultTester.CheckResult<int>(result1_2496Linq, output1),
+                ResultTester.CheckResult<int>(result2_2496Linq, output2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            UniquePathsIIFunc(); // Medium LC
-            MaximalSquareFunc(); // Medium LC
-            JumpGameFunc(); // Medium LC
-            PathSumIIFunc(); // Medium LC
-
-            SortIntegersbyTheNumberof1BitsFunc();
-            Numberof1BitsFunc();
+            MaximumValueataGivenIndexinaBoundedArrayFunc(); // Medium LC
+            BinarySearchTreeIteratorFunc(); // Medium LC
+            KthSmallestElementinaBSTFunc(); // Medium LC
+            ConstructBinaryTreefromPreorderandInorderTraversalFunc(); // Medium LC
+            MinimumScoreofaPathBetweenTwoCitiesFunc();
+            CountWaysToBuildGoodStringsFunc();
         }
     }
 }
