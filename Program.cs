@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Text.RegularExpressions;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
@@ -123,6 +124,12 @@ namespace CompetitiveProgramming
             Console.WriteLine();
         }
 
+        public static void PrintTestResult(string result, string expected)
+        {
+            Console.WriteLine("Expected : " + expected);
+            Console.WriteLine("Result : " + result);
+        }
+
         // Generate Randoms
         public static int[] GenerateRandomNumber(int maxNum, int size)
 		{
@@ -174,6 +181,61 @@ namespace CompetitiveProgramming
         {
             return (c == 'a') || (c == 'e') || (c == 'i') || (c == 'o') || (c == 'u');
         }
+
+        public static string ArrayToString<T>(T array)
+        {
+            if (array == null)
+            {
+                return string.Empty;
+            }
+            if (array is Array)
+            {
+                // Convert array to string
+                StringBuilder sb = new StringBuilder();
+                foreach (var item in (array as Array)!)
+                {
+                    sb.Append(ArrayToString(item));
+                    sb.Append(", ");
+                }
+                if (sb.Length > 0)
+                {
+                    sb.Length -= 2;
+                }
+                sb.Insert(0, "{ ");
+                sb.Append(" }");
+                return sb.ToString();
+            }
+            else
+            {
+                // Convert non-array type to string
+                return array.ToString()!;
+            }
+        }
+
+        public static string JaggedArrayToString(Array? array)
+        {
+            if (array == null)
+            {
+                return string.Empty;
+            }
+            StringBuilder sb = new StringBuilder();
+            void ProcessArray(Array array)
+            {
+                foreach (var item in array)
+                {
+                    if (item is Array innerArray)
+                    {
+                        ProcessArray(innerArray);
+                    }
+                    else
+                    {
+                        sb.Append(item).Append(", ");
+                    }
+                }
+            }
+            ProcessArray(array);
+            return sb.ToString().TrimEnd(' ', ',');
+        }
     }
 }
 
@@ -191,3 +253,7 @@ namespace CompetitiveProgramming
             };
             ResultTester.CheckSolution(source, results);
             */
+
+
+// TODO : Print expected & result for other types
+// TODO : 2316 Tests

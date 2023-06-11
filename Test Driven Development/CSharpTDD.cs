@@ -397,6 +397,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             RangeSumQuery2DImmutableFunc();
             BestTimetoBuyandSellStockIIFunc();
             BestSightseeingPairFunc();
+            MatrixBlockSumFunc();
         }
 
 
@@ -428,6 +429,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumCosttoCutaStickFunc();
             TrappingRainWaterFunc();
             NumberofGoodPathsFunc();
+            SerializeandDeserializeBinaryTreeFunc();
         }
 
 
@@ -7740,6 +7742,67 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void SerializeandDeserializeBinaryTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Serialize and Deserialize Binary Tree");
+            string source = "LC";
+
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void MatrixBlockSumFunc()
+        {
+            Program.Space();
+            Program.Title("Matrix Block Sum");
+            string source = "LC";
+
+            int[][] matrix1_1314 = new int[][]
+            {
+                new int[] { 1,2,3 },
+                new int[] { 4,5,6 },
+                new int[] { 7,8,9 }
+            };
+            int k1_1314 = 1;
+            int[][] matrix2_1314 = new int[][]
+            {
+                new int[] { 1,2,3 },
+                new int[] { 4,5,6 },
+                new int[] { 7,8,9 }
+            };
+            int k2_1314 = 2;
+
+            int[][] result1 = LeetCode.MatrixBlockSum.Solution.MatrixBlockSum(matrix1_1314, k1_1314);
+            int[][] result2 = LeetCode.MatrixBlockSum.Solution.MatrixBlockSum(matrix2_1314, k2_1314);
+
+            Program.Print2DIntArray(result1);
+            Program.Space();
+            Program.Print2DIntArray(result2);
+
+            int[][] matrixOutput1 = new int[][]
+            {
+                new int[] { 12,21,16 },
+                new int[] { 27,45,33 },
+                new int[] { 24,39,28 }
+            };
+
+            int[][] matrixOutput2 = new int[][]
+            {
+                new int[] { 45,45,45 },
+                new int[] { 45,45,45 },
+                new int[] { 45,45,45 }
+            };
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[][]>(result1, matrixOutput1),
+                ResultTester.CheckResult<int[][]>(result2, matrixOutput2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
@@ -7757,6 +7820,52 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             RangeSumQuery2DImmutableFunc(); // Medium LC
             BestTimetoBuyandSellStockIIFunc(); // Medium LC
             BestSightseeingPairFunc(); // Medium LC
+            SerializeandDeserializeBinaryTreeFunc(); // Hard LC
+            MatrixBlockSumFunc(); // Medium LC
+
+
+            Program.Space();
+            Program.Title("Minimum Reverse Operations");
+            string source = "LC";
+
+            // Case 1
+            int n_2612_1 = 4;
+            int p_2612_1 = 0;
+            int[] banned_2612_1 = {1,2};
+            int k_2612_1 = 4;
+            int[] result2612_1 = LeetCode.MinimumReverseOperations.Solution.MinReverseOperations(n_2612_1, p_2612_1, banned_2612_1, k_2612_1);
+            Console.WriteLine("Result 1 :");
+            Program.PrintArray(result2612_1);
+
+            // Case 2
+            int n_2612_2 = 5;
+            int p_2612_2 = 0;
+            int[] banned_2612_2 = {2,4};
+            int k_2612_2 = 3;
+            int[] result2612_2 = LeetCode.MinimumReverseOperations.Solution.MinReverseOperations(n_2612_2, p_2612_2, banned_2612_2, k_2612_2);
+            Console.WriteLine("Result 2 :");
+            Program.PrintArray(result2612_2);
+
+            // Case 3
+            int n_2612_3 = 4;
+            int p_2612_3 = 2;
+            int[] banned_2612_3 = {0,1,3};
+            int k_2612_3 = 1;
+            int[] result2612_3 = LeetCode.MinimumReverseOperations.Solution.MinReverseOperations(n_2612_3, p_2612_3, banned_2612_3, k_2612_3);
+            Console.WriteLine("Result 3 :");
+            Program.PrintArray(result2612_3);
+
+            int[] output1_2612 = {0,-1,-1,1};
+            int[] output2_2612 = {0,-1,-1,-1,-1};
+            int[] output3_2612 = {-1,-1,0,-1};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result2612_1, output1_2612),
+                ResultTester.CheckResult<int[]>(result2612_2, output2_2612),
+                ResultTester.CheckResult<int[]>(result2612_3, output3_2612)
+            };
+            ResultTester.CheckSolution(source, results);
         }
     }
 }

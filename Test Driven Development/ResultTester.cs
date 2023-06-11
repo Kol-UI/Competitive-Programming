@@ -36,52 +36,98 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             if (result != null && expected != null)
             {
+                // if Array / Jagged Array
+                if (result.GetType().IsArray)
+                {
+                    // Get the element type of the array
+                    Type arrayType = result.GetType().GetElementType()!;
+                    
+                    // Check if it's a jagged array
+                    if (arrayType.IsArray) 
+                    {
+                        // Compare the Jagged Arrays of the same type
+                        // Convert jagged arrays to strings and compare
+                        string resultString = Program.JaggedArrayToString(result as Array);
+                        string expectedString = Program.JaggedArrayToString(expected as Array);
+                        Program.PrintTestResult(resultString, expectedString);
+                        if (resultString.Equals(expectedString))
+                        {
+                            CheckResultRight();
+                            return true;
+                        }
+                        else
+                        {
+                            CheckResultWrong();
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        string resultString = Program.ArrayToString(result as Array);
+                        string expectedString = Program.ArrayToString(expected as Array);
+                        Program.PrintTestResult(resultString, expectedString);
+
+                        // Compare the Single-Dimensional Arrays of the same type => .SequenceEqual();
+                        if (result is Array resultArray && expected is Array expectedArray)
+                        {
+                            // If int[]
+                            if (resultArray is int[] && expectedArray is int[])
+                            {
+                                if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
+                                {
+                                    CheckResultRight();
+                                    return true;
+                                }
+                            }
+
+                            // If bool[]
+                            else if (resultArray is bool[] && expectedArray is bool[])
+                            {
+                                if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
+                                {
+                                    CheckResultRight();
+                                    return true;
+                                }
+                            }
+
+                            // If char[]
+                            else if (resultArray is char[] && expectedArray is char[])
+                            {
+                                if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
+                                {
+                                    CheckResultRight();
+                                    return true;
+                                }
+                            }
+
+                            // If double[]
+                            else if (resultArray is double[] && expectedArray is double[])
+                            {
+                                if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
+                                {
+                                    CheckResultRight();
+                                    return true;
+                                }
+                            }
+
+                            // Handle other array types here...
+
+                            // If no matching array type found
+                            CheckResultWrong();
+                            return false;
+                        }
+
+                    }
+                }
+
                 // If Collection => .SequenceEqual()
-                if (result is IEnumerable<object> resultCollection && expected is IEnumerable<object> expectedCollection)
+                else if (result is IEnumerable<object> resultCollection && expected is IEnumerable<object> expectedCollection)
                 {
                     if (resultCollection.Cast<object>().SequenceEqual(expectedCollection.Cast<object>()))
                     {
                         CheckResultRight();
                         return true;
                     }
-                }
-                // If Array => .SequenceEqual();
-                else if (result is Array resultArray && expected is Array expectedArray)
-                {
-                    // If int[]
-                    if (resultArray is int[] && expectedArray is int[])
-                    {
-                        if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
-                        {
-                            CheckResultRight();
-                            return true;
-                        }
-                    }
-
-                    // If bool[]
-                    else if (resultArray is bool[] && expectedArray is bool[])
-                    {
-                        if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
-                        {
-                            CheckResultRight();
-                            return true;
-                        }
-                    }
-
-                    // If char[]
-                    else if (resultArray is char[] && expectedArray is char[])
-                    {
-                        if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
-                        {
-                            CheckResultRight();
-                            return true;
-                        }
-                    }
-                    // Handle other array types here
-
-                    // If no matching array type found
-                    CheckResultWrong();
-                    return false;
                 }
 
                 // If char int string long uint Enum => .Equals()
