@@ -390,6 +390,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             KthSmallestElementinaBSTFunc();
             ConstructBinaryTreefromPreorderandInorderTraversalFunc();
             SmallestNumberinInfiniteSetFunc();
+            SnapshotArrayFunc();
+            LongestIncreasingSubsequenceFunc();
+            WiggleSubsequenceFunc();
+            LongestPalindromicSubstringFunc();
+            RangeSumQuery2DImmutableFunc();
+            BestTimetoBuyandSellStockIIFunc();
+            BestSightseeingPairFunc();
         }
 
 
@@ -7602,6 +7609,137 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void SnapshotArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Value of a String in an Array");
+            string source = "LC";
+
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void LongestIncreasingSubsequenceFunc()
+        {
+            Program.Space();
+            Program.Title("Longest Increasing Subsequence");
+            string source = "LC";
+
+            int[] nums1_300 = {10,9,2,5,3,7,101,18};
+            int[] nums2_300 = {0,1,0,3,2,3};
+            int[] nums3_300 = {7,7,7,7,7,7,7};
+
+            int result1_300 = LeetCode.LongestIncreasingSubsequence.Solution.LengthOfLIS(nums1_300);
+            int result2_300 = LeetCode.LongestIncreasingSubsequence.Solution.LengthOfLIS(nums2_300);
+            int result3_300 = LeetCode.LongestIncreasingSubsequence.Solution.LengthOfLIS(nums3_300);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_300, 4),
+                ResultTester.CheckResult<int>(result2_300, 4),
+                ResultTester.CheckResult<int>(result3_300, 1)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void WiggleSubsequenceFunc()
+        {
+            Program.Space();
+            Program.Title("Wiggle Subsequence");
+            string source = "LC";
+
+            int[] nums1_376 = {1,7,4,9,2,5};
+            int[] nums2_376 = {1,17,5,10,13,15,10,5,16,8};
+            int[] nums3_376 = {1,2,3,4,5,6,7,8,9};
+
+            int result1_376 = LeetCode.WiggleSubsequence.Solution.WiggleMaxLength(nums1_376);
+            int result2_376 = LeetCode.WiggleSubsequence.Solution.WiggleMaxLength(nums2_376);
+            int result3_376 = LeetCode.WiggleSubsequence.Solution.WiggleMaxLength(nums3_376);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_376, 6),
+                ResultTester.CheckResult<int>(result2_376, 7),
+                ResultTester.CheckResult<int>(result3_376, 2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void LongestPalindromicSubstringFunc()
+        {
+            Program.Space();
+            Program.Title("Longest Palindromic Substring");
+            string source = "LC";
+
+            string s1 = "babad";
+            string s2 = "cbbd";
+
+            string result1_5 = LeetCode.LongestPalindromicSubstring.Solution.LongestPalindrome(s1);
+            string result2_5 = LeetCode.LongestPalindromicSubstring.Solution.LongestPalindrome(s2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(result1_5, result1_5),
+                ResultTester.CheckResult<string>(result2_5, "bb")
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void RangeSumQuery2DImmutableFunc()
+        {
+            Program.Space();
+            Program.Title("Range Sum Query 2D - Immutable");
+            string source = "LC";
+
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void BestTimetoBuyandSellStockIIFunc()
+        {
+            Program.Space();
+            Program.Title("Range Sum Query 2D - Immutable");
+            string source = "LC";
+
+            int[] prices1_122 = {1,2,3,4,5};
+            int[] prices2_122 = {7,6,4,3,1};
+
+            int result1_122 = LeetCode.BestTimetoBuyandSellStockII.Solution.MaxProfit(prices1_122);
+            int result2_122 = LeetCode.BestTimetoBuyandSellStockII.Solution.MaxProfit(prices2_122);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_122, 4),
+                ResultTester.CheckResult<int>(result2_122, 0)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void BestSightseeingPairFunc()
+        {
+            Program.Space();
+            Program.Title("Range Sum Query 2D - Immutable");
+            string source = "LC";
+
+            int[] values1_1014 = {8,1,5,2,6};
+            int[] values2_1014 = {1,2};
+
+            int result1_1014 = LeetCode.BestSightseeingPair.Solution.MaxScoreSightseeingPair(values1_1014);
+            int result2_1014 = LeetCode.BestSightseeingPair.Solution.MaxScoreSightseeingPair(values2_1014);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_1014, 11),
+                ResultTester.CheckResult<int>(result2_1014, 2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
 
         // CURRENT TESTS
         private static void CurrentTests()
@@ -7612,6 +7750,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ConstructBinaryTreefromPreorderandInorderTraversalFunc(); // Medium LC
             MinimumScoreofaPathBetweenTwoCitiesFunc();
             CountWaysToBuildGoodStringsFunc();
+            SnapshotArrayFunc();
+            LongestIncreasingSubsequenceFunc(); // Medium LC
+            WiggleSubsequenceFunc(); // Medium LC
+            LongestPalindromicSubstringFunc(); // Medium LC
+            RangeSumQuery2DImmutableFunc(); // Medium LC
+            BestTimetoBuyandSellStockIIFunc(); // Medium LC
+            BestSightseeingPairFunc(); // Medium LC
         }
     }
 }
