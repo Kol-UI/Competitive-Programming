@@ -123,6 +123,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 // If Collection => .SequenceEqual()
                 else if (result is IEnumerable<object> resultCollection && expected is IEnumerable<object> expectedCollection)
                 {
+                    string resultString = string.Join(" ", resultCollection);
+                    string expectedString = string.Join(" ", expectedCollection);
+                    Program.PrintTestResult(resultString, expectedString);
+                    
                     if (resultCollection.Cast<object>().SequenceEqual(expectedCollection.Cast<object>()))
                     {
                         CheckResultRight();
@@ -133,6 +137,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 // If char int string long uint Enum => .Equals()
                 else if (result is bool || result is char || result is int || result is string || result is long || result is uint || result is Enum)
                 {
+                    string resultString = result.ToString()!;
+                    string expectedString = result.ToString()!;
+                    Program.PrintTestResult(resultString, expectedString);
+
                     if (result.Equals(expected))
                     {
                         CheckResultRight();
@@ -143,9 +151,26 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 // If float double
                 else if (result is float || result is double)
                 {
+                    string resultString = result.ToString()!;
+                    string expectedString = result.ToString()!;
+                    Program.PrintTestResult(resultString, expectedString);
                     double tolerance = 0.0001;
                     double diff = Math.Abs(Convert.ToDouble(result) - Convert.ToDouble(expected));
                     if (diff > tolerance)
+                    {
+                        CheckResultRight();
+                        return true;
+                    }
+                }
+
+                // If IList
+                else if (result is IList<string> || result is IList<bool> || result is IList<int> || result is IList<char> || result is IList<long> || result is IList<uint> || result is IList<long>)
+                {
+                    string resultString = string.Join(", ", result);
+                    string expectedString = string.Join(", ", expected);
+                    Program.PrintTestResult(resultString, expectedString);
+
+                    if (result.Equals(expected))
                     {
                         CheckResultRight();
                         return true;

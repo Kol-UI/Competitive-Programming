@@ -241,19 +241,17 @@ namespace CompetitiveProgramming
 
 
 /*
-            int[] output1 = {0,-1,-1,1};
-            int[] output2 = {0,-1,-1,-1,-1};
-            int[] output3 = {-1,-1,0,-1};
+int[] output1 = {0,-1,-1,1};
+int[] output2 = {0,-1,-1,-1,-1};
+int[] output3 = {-1,-1,0,-1};
 
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int[]>(result2612_1, output1),
-                ResultTester.CheckResult<int[]>(result2612_2, output2),
-                ResultTester.CheckResult<int[]>(result2612_3, output3)
-            };
-            ResultTester.CheckSolution(source, results);
-            */
+bool[] results = new bool[]
+{
+    ResultTester.CheckResult<int[]>(result2612_1, output1),
+    ResultTester.CheckResult<int[]>(result2612_2, output2),
+    ResultTester.CheckResult<int[]>(result2612_3, output3)
+};
+ResultTester.CheckSolution(source, results);
+*/
 
-
-// TODO : Print expected & result for other types
 // TODO : 2316 Tests
