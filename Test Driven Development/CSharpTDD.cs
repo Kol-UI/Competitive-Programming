@@ -399,6 +399,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             BestTimetoBuyandSellStockIIFunc();
             BestSightseeingPairFunc();
             MatrixBlockSumFunc();
+            MaximumProductSubarrayFunc();
+            MaximumLengthofSubarrayWithPositiveProductFunc();
         }
 
 
@@ -7828,10 +7830,57 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void MaximumProductSubarrayFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Product Subarray");
+            string source = "LC";
+
+            int[] nums1_152 = {2,3,-2,4};
+            int[] nums2_152 = {-2,0,-1};
+
+            int result1_152 = LeetCode.MaximumProductSubarray.Solution.MaxProduct(nums1_152);
+            int result2_152 = LeetCode.MaximumProductSubarray.Solution.MaxProduct(nums2_152);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_152, 6),
+                ResultTester.CheckResult<int>(result2_152, 0)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void MaximumLengthofSubarrayWithPositiveProductFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Length of Subarray With Positive Product");
+            string source = "LC";
+
+            int[] nums1_1567 = {1,-2,-3,4};
+            int[] nums2_1567 = {0,1,-2,-3,-4};
+            int[] nums3_1567 = {-1,-2,-3,0,1};
+
+            int result1_1567 = LeetCode.MaximumLengthofSubarrayWithPositiveProduct.Solution.GetMaxLen(nums1_1567);
+            int result2_1567 = LeetCode.MaximumLengthofSubarrayWithPositiveProduct.Solution.GetMaxLen(nums2_1567);
+            int result3_1567 = LeetCode.MaximumLengthofSubarrayWithPositiveProduct.Solution.GetMaxLen(nums3_1567);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_1567, 4),
+                ResultTester.CheckResult<int>(result2_1567, 3),
+                ResultTester.CheckResult<int>(result3_1567, 2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
             SummaryRangesFunc(); // Easy LC
+            MaximumProductSubarrayFunc(); // Medium LC
+            MaximumLengthofSubarrayWithPositiveProductFunc(); // Medium LC
         }
     }
 }

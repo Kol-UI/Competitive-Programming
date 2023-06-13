@@ -1,0 +1,60 @@
+// Maximum Product Subarray
+
+/*
+Given an integer array nums, find a subarray that has the largest product, and return the product.
+
+The test cases are generated so that the answer will fit in a 32-bit integer.
+
+ 
+
+Example 1:
+
+Input: nums = [2,3,-2,4]
+Output: 6
+Explanation: [2,3] has the largest product 6.
+
+Example 2:
+
+Input: nums = [-2,0,-1]
+Output: 0
+Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
+*/
+
+using System;
+namespace CompetitiveProgramming.LeetCode.MaximumProductSubarray
+{
+    public class Solution
+    {
+        public static int MaxProduct(int[] nums)
+        {
+            int n = nums.Length;
+            int pos = nums[0] > 0 ? nums[0] : 0; 
+            int neg = nums[0] < 0 ? nums[0] : 0; 
+            int res = nums[0];
+
+            for(int i = 1; i < n; i++)
+            {
+                if(nums[i] < 0)
+                {
+                    if(neg < 0)
+                    {
+                        (pos, neg) = (nums[i]*neg, pos > 0 ? nums[i]*pos : nums[i]);
+                    }
+                    else
+                    {
+                        (pos, neg) = (0, pos > 0 ? nums[i]*pos : nums[i]);
+                    }
+                    
+                }
+                else
+                {
+                    pos = pos > 0 ? pos*nums[i] : nums[i];
+                    neg = neg*nums[i];
+                }
+
+                res = Math.Max(pos, res);
+            }
+            return res;
+        }
+    }
+}
