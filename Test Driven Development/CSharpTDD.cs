@@ -401,6 +401,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MatrixBlockSumFunc();
             MaximumProductSubarrayFunc();
             MaximumLengthofSubarrayWithPositiveProductFunc();
+            FindtheWinneroftheCircularGameFunc();
+            RemoveDuplicatesfromSortedListIIFunc();
+            DesignLinkedListFunc();
+            MinStackFunc();
         }
 
 
@@ -433,6 +437,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             TrappingRainWaterFunc();
             NumberofGoodPathsFunc();
             SerializeandDeserializeBinaryTreeFunc();
+            ReverseNodesinkGroupFunc();
         }
 
 
@@ -7875,12 +7880,72 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void FindtheWinneroftheCircularGameFunc()
+        {
+            Program.Space();
+            Program.Title("Find the Winner of the Circular Game");
+            string source = "LC";
+
+            int case1_1823 = LeetCode.FindtheWinneroftheCircularGame.Solution.FindTheWinner(5, 2);
+            int case2_1823 = LeetCode.FindtheWinneroftheCircularGame.Solution.FindTheWinner(6, 5);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(case1_1823, 3),
+                ResultTester.CheckResult<int>(case2_1823, 1)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void RemoveDuplicatesfromSortedListIIFunc()
+        {
+            Program.Space();
+            Program.Title("Remove Duplicates from Sorted List II");
+            string source = "LC";
+
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void DesignLinkedListFunc()
+        {
+            Program.Space();
+            Program.Title("Design Linked List");
+            string source = "LC";
+
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void ReverseNodesinkGroupFunc()
+        {
+            Program.Space();
+            Program.Title("Reverse Nodes in k-Group");
+            string source = "LC";
+
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void MinStackFunc()
+        {
+            Program.Space();
+            Program.Title("Min Stack");
+            string source = "LC";
+
+            ResultTester.SpecialTestCase(source);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            SummaryRangesFunc(); // Easy LC
-            MaximumProductSubarrayFunc(); // Medium LC
-            MaximumLengthofSubarrayWithPositiveProductFunc(); // Medium LC
+            FindtheWinneroftheCircularGameFunc(); // Medium LC
+            RemoveDuplicatesfromSortedListIIFunc(); // Medium LC
+            DesignLinkedListFunc(); // Medium LC
+            ReverseNodesinkGroupFunc(); // Hard LC
+            MinStackFunc(); // Medium LC
         }
     }
 }
