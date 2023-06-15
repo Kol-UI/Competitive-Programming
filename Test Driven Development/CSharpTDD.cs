@@ -405,6 +405,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             RemoveDuplicatesfromSortedListIIFunc();
             DesignLinkedListFunc();
             MinStackFunc();
+            CoinChangeFunc();
+            CoinChangeIIFunc();
         }
 
 
@@ -7938,14 +7940,65 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void CoinChangeFunc()
+        {
+            Program.Space();
+            Program.Title("Coin Change");
+            string source = "LC";
+
+            int[] coins1 = {1,2,5};
+            int amount1 = 11;
+            int[] coins2 = {2};
+            int amount2 = 3;
+            int[] coins3 = {1};
+            int amount3 = 0;
+
+            int result1_322 = LeetCode.CoinChange.Solution.GetCoinChange(coins1, amount1);
+            int result2_322 = LeetCode.CoinChange.Solution.GetCoinChange(coins2, amount2);
+            int result3_322 = LeetCode.CoinChange.Solution.GetCoinChange(coins3, amount3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_322, 3),
+                ResultTester.CheckResult<int>(result2_322, 2),
+                ResultTester.CheckResult<int>(result3_322, -1)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void CoinChangeIIFunc()
+        {
+            Program.Space();
+            Program.Title("Coin Change");
+            string source = "LC";
+
+            int amount1 = 5;
+            int[] coins1 = {1,2,5};
+            int amount2 = 3;
+            int[] coins2 = {2};
+            int amount3 = 10;
+            int[] coins3 = {10};
+
+            int result1_518 = LeetCode.CoinChangeII.Solution.Change(amount1, coins1);
+            int result2_518 = LeetCode.CoinChangeII.Solution.Change(amount2, coins2);
+            int result3_518 = LeetCode.CoinChangeII.Solution.Change(amount3, coins3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_518, 4),
+                ResultTester.CheckResult<int>(result2_518, 0),
+                ResultTester.CheckResult<int>(result3_518, 1)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            FindtheWinneroftheCircularGameFunc(); // Medium LC
-            RemoveDuplicatesfromSortedListIIFunc(); // Medium LC
-            DesignLinkedListFunc(); // Medium LC
-            ReverseNodesinkGroupFunc(); // Hard LC
-            MinStackFunc(); // Medium LC
+            CoinChangeFunc(); // Medium LC
+            CoinChangeIIFunc(); // Medium LC
         }
     }
 }
