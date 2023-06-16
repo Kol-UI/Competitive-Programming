@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using System.Text;
 
@@ -120,14 +121,16 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                     }
                 }
 
-                // If Collection => .SequenceEqual()
+                // If Collection or IList<IList<...>> or IEnum
                 else if (result is IEnumerable<object> resultCollection && expected is IEnumerable<object> expectedCollection)
                 {
-                    string resultString = string.Join(" ", resultCollection);
-                    string expectedString = string.Join(" ", expectedCollection);
+                    object objResult = (object)result;
+                    object objExpected = (object)expected;
+                    string resultString = ConvertResultToString(objResult);
+                    string expectedString = ConvertResultToString(objExpected);
                     Program.PrintTestResult(resultString, expectedString);
-                    
-                    if (resultCollection.Cast<object>().SequenceEqual(expectedCollection.Cast<object>()))
+
+                    if(string.Equals(resultString, expectedString))
                     {
                         CheckResultRight();
                         return true;
@@ -138,7 +141,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 else if (result is bool || result is char || result is int || result is string || result is long || result is uint || result is Enum)
                 {
                     string resultString = result.ToString()!;
-                    string expectedString = result.ToString()!;
+                    string expectedString = expected.ToString()!;
                     Program.PrintTestResult(resultString, expectedString);
 
                     if (result.Equals(expected))
@@ -152,7 +155,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 else if (result is float || result is double)
                 {
                     string resultString = result.ToString()!;
-                    string expectedString = result.ToString()!;
+                    string expectedString = expected.ToString()!;
                     Program.PrintTestResult(resultString, expectedString);
                     double tolerance = 0.0001;
                     double diff = Math.Abs(Convert.ToDouble(result) - Convert.ToDouble(expected));
@@ -164,7 +167,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 }
 
                 // If IList
-                else if (result is IList<string> || result is IList<bool> || result is IList<int> || result is IList<char> || result is IList<long> || result is IList<uint> || result is IList<long>)
+                else if (result is IList)
                 {
                     string resultString = string.Join(", ", result);
                     string expectedString = string.Join(", ", expected);
@@ -186,18 +189,40 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             }
         }
 
+        private static string ConvertResultToString(object toConvert)
+        {
+            if (toConvert is IList<IList<int>> nestedList)
+            {
+                List<string> stringList = nestedList.Select(innerList => string.Join(", ", innerList)).ToList();
+                return string.Join("; ", stringList);
+            }
+            // Needs to Handle other IList<IList<...>> types
+
+            if (toConvert is IEnumerable<object> objectEnumerable)
+            {
+                List<string> stringList = objectEnumerable.Select(obj => obj.ToString()).ToList()!;
+                return string.Join(", ", stringList);
+            }
+
+            return string.Empty;
+        }
+
         private static void CheckResultRight()
         {
             ValidateTest();
             TestDone();
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Validated");
+            Console.ResetColor();
         }
 
         private static void CheckResultWrong()
         {
             InvalidateTest();
             TestDone();
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Invalidated");
+            Console.ResetColor();
         }
 
         // To call in each Solution

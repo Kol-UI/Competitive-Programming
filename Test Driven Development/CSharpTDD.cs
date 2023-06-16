@@ -8,6 +8,123 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 {
     public class CSharpTDD
     {
+        private static Delegate[] codeWarsEightList = new Delegate[]
+        {
+            GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, MakeNegativeFunc, RemoveExclamationMarksFunc,
+            FindMinAndMaxOfListFunc, StringRepeatFunc, SumOfPositiveFunc, ConvertbooleanvaluestostringsYesorNoFunc, ConvertaNumbertoaStringFunc,
+            EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc,
+        };
+
+        private static Delegate[] codeWarsSevenKyuList = new Delegate[]
+        {
+            ItIsIsogramFunc,
+        };
+
+        private static Delegate[] codeWarsSixKyuList = new Delegate[]
+        {
+            ReplaceWithAlphabetPositionFunc,
+        };
+
+        private static Delegate[] leetCodeEasyList = new Delegate[]
+        {
+            ClimbingStairsFunc, AddTwoIntegersFunc, NumberOfStepsFunc, ContainsDuplicateFunc, BestTimetoBuyandSellStockFunc,
+            FirstUniqueCharacterinaStringFunc, SingleNumberFunc, FindJudgeFunc, ShuffleTheArrayFunc, CountOddNumbersInAnIntervalRangeFunc,
+            AddBinaryFunc, DefanginganIPAddressFunc, FindLuckyIntegerinanArrayFunc, SearchInsertPositionFunc, FindtheIndexoftheFirstOccurrenceinaStringFunc,
+            KthMissingPositiveNumberFunc, ConvertSortedArraytoBinarySearchTree, CanPlaceFlowersFunc, KItemsWiththeMaximumSumFunc, BinarySearchFunc,
+            CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc,
+            BestPokerHandFunc, LastStoneWeightFunc, AddDigitsFunc, BulbSwitcherFunc, FindtheDifferenceFunc, RepeatedSubstringPatternFunc,
+            MoveZeroesFunc, PlusOneFunc, AverageSalaryExcludingtheMinimumandMaximumSalaryFunc, FindifPathExistsinGraphFunc,
+            SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, LengthofLastWordFunc, ToLowerCaseFunc,
+            FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ValidPerfectSquareFunc, ArrangingCoinsFunc, BaseballGameFunc,
+            RobotReturntoOriginFunc, FindWinneronaTicTacToeGameFunc, LemonadeChangeFunc, LargestPerimeterTriangleFunc, CheckIfItIsaStraightLineFunc,
+            ReverseVowelsofaStringFunc, CountingBitsFunc, IsSubsequenceFunc, MinCostClimbingStairsFunc, MaximumAverageSubarrayIFunc,
+            FindtheHighestAltitudeFunc, FindPivotIndexFunc, UniqueNumberofOccurrencesFunc, MajorityElementFunc, GoalParserInterpretationFunc,
+            FloodFillFunc, HappyNumberFunc, DecryptStringfromAlphabettoIntegerMappingFunc, TheKWeakestRowsinaMatrixFunc, CheckifOneStringSwapCanMakeStringsEqualFunc,
+            SubtracttheProductandSumofDigitsofanIntegerFunc, SpecialArrayWithXElementsGreaterThanorEqualXFunc, SqrtxFunc, FindtheDistanceValueBetweenTwoArraysFunc, SortColorsFunc,
+            SumofAllOddLengthSubarraysFunc, NextGreaterElementIFunc, SquaresofaSortedArrayFunc, FibonacciNumberFunc, FindNearestPointThatHastheSameXorYCoordinateFunc,
+            Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc,
+            ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc,
+        };
+
+        private static Delegate[] leetCodeMediumList = new Delegate[]
+        {
+            RestoreIpAddressesFunc, SnakesAndLaddersFunc, FindClosestNodetoGivenTwoNodesFunc, FruitIntoBasketsFunc, JumpGameIIFunc,
+            AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc,
+            SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc,
+            NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc,
+            MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc,
+            OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc,
+            SimplifyPathFunc, ValidateStackSequencesFunc, LongestPalindromicSubsequenceFunc, NonoverlappingIntervalsFunc, RobotBoundedInCircleFunc,
+            MatrixDiagonalSumFunc, MultiplyStringsFunc, PowxnFunc, ReverseWordsinaStringFunc, ProductofArrayExceptSelfFunc,
+            Dota2SenateFunc, MinimumFlipstoMakeaORbEqualtocFunc, BestTimetoBuyandSellStockwithTransactionFeeFunc, IncreasingTripletSubsequenceFunc, MaximumNumberofVowelsinaSubstringofGivenLengthFunc,
+            DominoandTrominoTilingFunc, ContainerWithMostWaterFunc, MaxNumberofKSumPairsFunc, UniquePathsFunc, NearestExitfromEntranceinMazeFunc,
+            LongestCommonSubsequenceFunc, MaxIceCreamFunc, TopKFrequentFunc, LexicographicallySmallestEquivalentStringFunc, FlipStringtoMonotoneIncreasingFunc, SearchA2DMatrixFunc, InsertIntervalFunc, MaxSubarraySumCircularFunc, SubarraySumFunc, SubarraysDivByKFunc,
+            LongestSubstringWithoutRepeatingCharactersFunc, UniquePathsIIFunc, MaximalSquareFunc, JumpGameFunc, PathSumIIFunc, MaximumValueataGivenIndexinaBoundedArrayFunc, BinarySearchTreeIteratorFunc, KthSmallestElementinaBSTFunc, ConstructBinaryTreefromPreorderandInorderTraversalFunc, SmallestNumberinInfiniteSetFunc,
+            SnapshotArrayFunc, LongestIncreasingSubsequenceFunc, WiggleSubsequenceFunc, LongestPalindromicSubstringFunc, RangeSumQuery2DImmutableFunc, BestTimetoBuyandSellStockIIFunc, BestSightseeingPairFunc, MatrixBlockSumFunc, MaximumProductSubarrayFunc, MaximumLengthofSubarrayWithPositiveProductFunc,
+            FindtheWinneroftheCircularGameFunc, RemoveDuplicatesfromSortedListIIFunc, DesignLinkedListFunc, MinStackFunc, CoinChangeFunc, CoinChangeIIFunc, MinimumRoundstoCompleteAllTasksFunc, SolvingQuestionsWithBrainpowerFunc, MaximumTwinSumofaLinkedListFunc, DeletetheMiddleNodeofaLinkedListFunc,
+            MaxConsecutiveOnesIIIFunc, LongestSubarrayof1sAfterDeletingOneElementFunc, NumberofProvincesFunc, NumberofSubsequencesThatSatisfytheGivenSumConditionFunc, AsteroidCollisionFunc,
+            FindPeakElementFunc, WateringPlantsIIFunc, CarPoolingFunc, CountWaysToBuildGoodStringsFunc, TotalCosttoHireKWorkersFunc,
+            MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc,
+            NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc,
+            StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc,
+            TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc,
+            DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc,
+            MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc,
+        };
+
+        private static Delegate[] leetCodeHardList = new Delegate[]
+        {
+            CountDigitOneFunc, LongestPathWithDifferentAdjacentCharactersFunc, CheckifPointIsReachableFunc, NamingaCompanyFunc, IPOFunc, EditDistanceFunc, CountSubarraysWithFixedBoundsFunc, JumpGameIVFunc, LongestCycleinaGraphFunc, NumberofWaysofCuttingaPizzaFunc,
+            ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
+            MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc
+        };
+
+        private static Delegate[] hackerRankEasyList = new Delegate[]
+        {
+            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc,
+        };
+
+        private static Delegate[] hackerRankMediumList = new Delegate[]
+        {
+            
+        };
+
+        private static Delegate[] hackerRankHardList = new Delegate[]
+        {
+            
+        };
+
+        private static Delegate[] geeksForGeeksSchoolList = new Delegate[]
+        {
+            SumofSeriesFunc, PrintSecondLargestFunc,
+        };
+
+        private static Delegate[] geeksForGeeksBasicList = new Delegate[]
+        {
+            
+        };
+
+        private static Delegate[] geeksForGeeksEasyList = new Delegate[]
+        {
+            CounttheSubstringsFunc, MinimumIntegerFunc, Remainderondividingby11Func, MakeArrayElementsEqualFunc, EqualLeftandRightSubarraySumFunc,
+        };
+
+        private static Delegate[] geeksForGeeksMediumList = new Delegate[]
+        {
+            StringrporprFunc, EvenSwapFunc, MinimumStepsRequiredFunc, AddMinimumCharactersFunc, MaximumLengthFunc,
+        };
+
+        private static Delegate[] geeksForGeeksHardList = new Delegate[]
+        {
+            
+        };
+
+        private static Delegate[] coderByteList = new Delegate[]
+        {
+            FirstFactorialFunc, FirstReverseFunc
+        };
+
+
         public static void StartAllTDD()
         {
             // All CoderByte Solutions
@@ -29,425 +146,81 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CurrentTests();
         }
 
+
+        private static void InvokeDelegateIfNotNull(Delegate[] delegatesToInvoke)
+        {
+            if (delegatesToInvoke != null && delegatesToInvoke.Length > 0)
+            {
+                foreach (Delegate del in delegatesToInvoke)
+                {
+                    del.DynamicInvoke();
+                }
+            }
+        }
+
         
         private static void CodeWarsTests()
         {
             // 8 Kyu
-            EightKyuTests();
+            InvokeDelegateIfNotNull(codeWarsEightList);
 
             // 7 Kyu
-            SevenKyuTests();
+            InvokeDelegateIfNotNull(codeWarsSevenKyuList);
 
             // 6 Kyu
-            SixKyuTests();
+            InvokeDelegateIfNotNull(codeWarsSixKyuList);
         }
 
 
         private static void LeetCodeTests()
         {
             // Easy 
-            EasyLeetCodeTests();
+            InvokeDelegateIfNotNull(leetCodeEasyList);
 
             // Medium
-            MediumLeetCodeTests();
+            InvokeDelegateIfNotNull(leetCodeMediumList);
 
             // Hard
-            HardLeetCodeTests();
+            InvokeDelegateIfNotNull(leetCodeHardList);
         }
 
 
         private static void HackerRankTests()
         {
             // Easy
-            EasyHackerRankTests();
+            InvokeDelegateIfNotNull(hackerRankEasyList);
 
             // Medium
-            MediumHackerRankTests();
+            InvokeDelegateIfNotNull(hackerRankMediumList);
 
             // Hard
-            HardHackerRankTests();
+            InvokeDelegateIfNotNull(hackerRankHardList);
         }
 
 
         private static void GeeksForGeeksTests()
         {
             // School 
-            SchoolGeeksForGeeksTests();
+            InvokeDelegateIfNotNull(geeksForGeeksSchoolList);
 
             // Basic
-            BasicGeeksForGeeksTests();
+            InvokeDelegateIfNotNull(geeksForGeeksBasicList);
 
             // Easy
-            EasyGeeksForGeeksTests();
+            InvokeDelegateIfNotNull(geeksForGeeksEasyList);
 
             // Medium
-            MediumGeeksForGeeksTests();
+            InvokeDelegateIfNotNull(geeksForGeeksMediumList);
 
             // Hard
-            HardGeeksForGeeksTests();
-        }
-
-
-        // 8 KYU
-        private static void EightKyuTests()
-        {
-            GrasshopperSummationFunc();
-            SumArrayFunc();
-            RemoveFirstandLastCharacterFunc();
-            MakeNegativeFunc();
-            RemoveExclamationMarksFunc();
-            FindMinAndMaxOfListFunc();
-            StringRepeatFunc();
-            SumOfPositiveFunc();
-            ConvertbooleanvaluestostringsYesorNoFunc();
-            ConvertaNumbertoaStringFunc();
-            EvenOrOddFunc();
-            SquareNSumFunc();
-            FindthesmallestintegerinthearrayFunc();
-            RemoveStringSpacesFunc();
-            CountingsheepFunc();
-            ConvertaStringtoaNumberFunc();
-        }
-
-
-        // 7 KYU
-        private static void SevenKyuTests()
-        {
-            ItIsIsogramFunc();
-        }
-
-
-        // 6 KYU
-        private static void SixKyuTests()
-        {
-            ReplaceWithAlphabetPositionFunc();
-        }
-
-
-        // SCHOOL GEEKSFORGEEKS
-        private static void SchoolGeeksForGeeksTests()
-        {
-            SumofSeriesFunc();
-            PrintSecondLargestFunc();
-        }
-
-
-        // BASIC GEEKSFORGEEKS
-        private static void BasicGeeksForGeeksTests()
-        {
-
-        }
-
-
-        // EASY GEEKSFORGEEKS
-        private static void EasyGeeksForGeeksTests()
-        {
-            CounttheSubstringsFunc();
-            MinimumIntegerFunc();
-            Remainderondividingby11Func();
-            MakeArrayElementsEqualFunc();
-            EqualLeftandRightSubarraySumFunc();
-        }
-
-
-        // MEDIUM GEEKSFORGEEKS
-        private static void MediumGeeksForGeeksTests()
-        {
-            StringrporprFunc();
-            EvenSwapFunc();
-            MinimumStepsRequiredFunc();
-            AddMinimumCharactersFunc();
-            MaximumLengthFunc();
-        }
-
-
-        // HARD GEEKSFORGEEKS
-        private static void HardGeeksForGeeksTests()
-        {
-
-        }
-
-
-        // EASY HACKERRANK
-        private static void EasyHackerRankTests()
-        {
-            SimpleArraySumFunc();
-            SolveMeFirstFunc();
-            AVeryBigSumFunc();
-        }
-
-
-        // MEDIUM HACKERRANK
-        private static void MediumHackerRankTests()
-        {
-
-        }
-
-
-        // HARD HACKERRANK
-        private static void HardHackerRankTests()
-        {
-
-        }
-
-
-        // EASY LEETCODE
-        private static void EasyLeetCodeTests()
-        {
-            ClimbingStairsFunc();
-            AddTwoIntegersFunc();
-            NumberOfStepsFunc();
-            ContainsDuplicateFunc();
-            BestTimetoBuyandSellStockFunc();
-            FirstUniqueCharacterinaStringFunc();
-            SingleNumberFunc();
-            FindJudgeFunc();
-            ShuffleTheArrayFunc();
-            CountOddNumbersInAnIntervalRangeFunc();
-            AddBinaryFunc();
-            DefanginganIPAddressFunc();
-            FindLuckyIntegerinanArrayFunc();
-            SearchInsertPositionFunc();
-            FindtheIndexoftheFirstOccurrenceinaStringFunc();
-            KthMissingPositiveNumberFunc();
-            ConvertSortedArraytoBinarySearchTree();
-            CanPlaceFlowersFunc();
-            KItemsWiththeMaximumSumFunc();
-            BinarySearchFunc();
-            CheckIfNandItsDoubleExistFunc();
-            ConcatenationofArrayFunc();
-            KidsWiththeGreatestNumberofCandiesFunc();
-            MergeStringsAlternatelyFunc();
-            RomantoIntegerFunc();
-            BestPokerHandFunc();
-            LastStoneWeightFunc();
-            AddDigitsFunc();
-            BulbSwitcherFunc();
-            FindtheDifferenceFunc();
-            RepeatedSubstringPatternFunc();
-            MoveZeroesFunc();
-            PlusOneFunc();
-            AverageSalaryExcludingtheMinimumandMaximumSalaryFunc();
-            SignoftheProductofanArrayFunc();
-            CanMakeArithmeticProgressionFunc();
-            MonotonicArrayFunc();
-            LengthofLastWordFunc();
-            ToLowerCaseFunc();
-            FindSmallestLetterGreaterThanTargetFunc();
-            CountNegativeNumbersinaSortedMatrixFunc();
-            ValidPerfectSquareFunc();
-            ArrangingCoinsFunc();
-            BaseballGameFunc();
-            RobotReturntoOriginFunc();
-            FindWinneronaTicTacToeGameFunc();
-            LemonadeChangeFunc();
-            LargestPerimeterTriangleFunc();
-            CheckIfItIsaStraightLineFunc();
-            ReverseVowelsofaStringFunc();
-            CountingBitsFunc();
-            IsSubsequenceFunc();
-            MinCostClimbingStairsFunc();
-            MaximumAverageSubarrayIFunc();
-            FindtheHighestAltitudeFunc();
-            FindPivotIndexFunc();
-            UniqueNumberofOccurrencesFunc();
-            MajorityElementFunc();
-            GoalParserInterpretationFunc();
-            FloodFillFunc();
-            HappyNumberFunc();
-            DecryptStringfromAlphabettoIntegerMappingFunc();
-            TheKWeakestRowsinaMatrixFunc();
-            CheckifOneStringSwapCanMakeStringsEqualFunc();
-            SubtracttheProductandSumofDigitsofanIntegerFunc();
-            SpecialArrayWithXElementsGreaterThanorEqualXFunc();
-            SqrtxFunc();
-            FindtheDistanceValueBetweenTwoArraysFunc();
-            SortColorsFunc();
-            SumofAllOddLengthSubarraysFunc();
-            NextGreaterElementIFunc();
-            SquaresofaSortedArrayFunc();
-            FibonacciNumberFunc();
-            FindNearestPointThatHastheSameXorYCoordinateFunc();
-            Numberof1BitsFunc();
-            SortIntegersbyTheNumberof1BitsFunc();
-            SearchinRotatedSortedArrayFunc();
-            PowerofTwoFunc();
-            ReverseWordsinaStringIIIFunc();
-            ReverseBitsFunc();
-            MaximumValueofaStringinanArrayFunc();
-            SummaryRangesFunc();
-        }
-
-
-        // MEDIUM LEETCODE
-        private static void MediumLeetCodeTests()
-        {
-            LongestCommonSubsequenceFunc();
-            MaxIceCreamFunc();
-            TopKFrequentFunc();
-            LexicographicallySmallestEquivalentStringFunc();
-            FlipStringtoMonotoneIncreasingFunc();
-            SearchA2DMatrixFunc();
-            InsertIntervalFunc();
-            MaxSubarraySumCircularFunc();
-            SubarraySumFunc();
-            SubarraysDivByKFunc();
-            RestoreIpAddressesFunc();
-            SnakesAndLaddersFunc();
-            FindClosestNodetoGivenTwoNodesFunc();
-            FruitIntoBasketsFunc();
-            JumpGameIIFunc();
-            AsFarfromLandasPossibleFunc();
-            ShortestPathWithAlternatingColorsFunc();
-            MinimumFuelCosttoReporttotheCapitalFunc();
-            SingleElementinaSortedArrayFunc();
-            CapacityToShipPackagesWithinDDaysFunc();
-            SortanArrayFunc();
-            StringCompressionFunc();
-            MinimumTimetoCompleteTripsFunc();
-            KokoEatingBananasFunc();
-            ImplementTriePrefixTreeFunc();
-            NumberofZeroFilledSubarraysFunc();
-            MinimumScoreofaPathBetweenTwoCitiesFunc();
-            NumberofOperationstoMakeNetworkConnectedFunc();
-            ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc();
-            CountUnreachablePairsofNodesinanUndirectedGraphFunc();
-            MinimumPathSumFunc();
-            PrimeSubtractionOperationFunc();
-            MinimumCostForTicketsFunc();
-            SuccessfulPairsofSpellsandPotionsFunc();
-            BoatstoSavePeopleFunc();
-            OptimalPartitionofStringFunc();
-            MinimizeMaximumofArrayFunc();
-            NumberofEnclavesFunc();
-            RemoveStarsFunc();
-            NumberofClosedIslandsFunc();
-            SimplifyPathFunc();
-            ValidateStackSequencesFunc();
-            LongestPalindromicSubsequenceFunc();
-            NonoverlappingIntervalsFunc();
-            RobotBoundedInCircleFunc();
-            MatrixDiagonalSumFunc();
-            MultiplyStringsFunc();
-            PowxnFunc();
-            ReverseWordsinaStringFunc();
-            ProductofArrayExceptSelfFunc();
-            Dota2SenateFunc();
-            MinimumFlipstoMakeaORbEqualtocFunc();
-            BestTimetoBuyandSellStockwithTransactionFeeFunc();
-            IncreasingTripletSubsequenceFunc();
-            MaximumNumberofVowelsinaSubstringofGivenLengthFunc();
-            DominoandTrominoTilingFunc();
-            ContainerWithMostWaterFunc();
-            MaxNumberofKSumPairsFunc();
-            UniquePathsFunc();
-            MaxConsecutiveOnesIIIFunc();
-            LongestSubarrayof1sAfterDeletingOneElementFunc();
-            NumberofProvincesFunc();
-            NumberofSubsequencesThatSatisfytheGivenSumConditionFunc();
-            AsteroidCollisionFunc();
-            FindPeakElementFunc();
-            WateringPlantsIIFunc();
-            CarPoolingFunc();
-            CountWaysToBuildGoodStringsFunc();
-            TotalCosttoHireKWorkersFunc();
-            MaximumSubsequenceScoreFunc();
-            KthLargestElementinanArrayFunc();
-            EqualRowandColumnPairsFunc();
-            DetermineifTwoStringsAreCloseFunc();
-            IsGraphBipartiteFunc();
-            NextPermutationFunc();
-            ShortestBridgeFunc();
-            FindtheDuplicateNumberFunc();
-            New21GameFunc();
-            FindMinimuminRotatedSortedArrayFunc();
-            StoneGameIIFunc();
-            CourseScheduleFunc();
-            ThreeSumFunc();
-            PeakIndexinaMountainArrayFunc();
-            DeleteandEarnFunc();
-            TwoSumIIInputArrayIsSortedFunc();
-            FindFirstandLastPositionofElementinSortedArrayFunc();
-            MergeIntervalsFunc();
-            TimeNeededtoInformAllEmployeesFunc();
-            SumofSquareNumbersFunc();
-            DecodeWaysFunc();
-            ArithmeticSlicesFunc();
-            RotateArrayFunc();
-            UglyNumberIIFunc();
-            UniqueBinarySearchTreesFunc();
-            MaximumDistanceBetweenaPairofValuesFunc();
-            WordBreakFunc();
-            ZeroOneMatrixFunc();
-            MaxAreaofIslandFunc();
-            TriangleFunc();
-            LongestSubstringWithoutRepeatingCharactersFunc();
-            UniquePathsIIFunc();
-            MaximalSquareFunc();
-            JumpGameFunc();
-            PathSumIIFunc();
-            MaximumValueataGivenIndexinaBoundedArrayFunc();
-            BinarySearchTreeIteratorFunc();
-            KthSmallestElementinaBSTFunc();
-            ConstructBinaryTreefromPreorderandInorderTraversalFunc();
-            SmallestNumberinInfiniteSetFunc();
-            SnapshotArrayFunc();
-            LongestIncreasingSubsequenceFunc();
-            WiggleSubsequenceFunc();
-            LongestPalindromicSubstringFunc();
-            RangeSumQuery2DImmutableFunc();
-            BestTimetoBuyandSellStockIIFunc();
-            BestSightseeingPairFunc();
-            MatrixBlockSumFunc();
-            MaximumProductSubarrayFunc();
-            MaximumLengthofSubarrayWithPositiveProductFunc();
-            FindtheWinneroftheCircularGameFunc();
-            RemoveDuplicatesfromSortedListIIFunc();
-            DesignLinkedListFunc();
-            MinStackFunc();
-            CoinChangeFunc();
-            CoinChangeIIFunc();
-        }
-
-
-        // HARD LEETCODE
-        private static void HardLeetCodeTests()
-        {
-            CountDigitOneFunc();
-            LongestPathWithDifferentAdjacentCharactersFunc();
-            CheckifPointIsReachableFunc();
-            NamingaCompanyFunc();
-            IPOFunc();
-            EditDistanceFunc();
-            CountSubarraysWithFixedBoundsFunc();
-            JumpGameIVFunc();
-            LongestCycleinaGraphFunc();
-            NumberofWaysofCuttingaPizzaFunc();
-            ReducingDishesFunc();
-            ScrambleStringFunc();
-            MinimumReverseOperationsFunc();
-            LargestColorValueinaDirectedGraphFunc();
-            MaximumValueofKCoinsFromPilesFunc();
-            NumberofWaystoFormaTargetStringGivenaDictionaryFunc();
-            ProfitableSchemesFunc();
-            MinimumInsertionStepstoMakeaStringPalindromeFunc();
-            RestoreTheArrayFunc();
-            FindtheLongestValidObstacleCourseatEachPositionFunc();
-            MaximizeScoreAfterNOperationsFunc();
-            StoneGameIIIFunc();
-            MinimumCosttoCutaStickFunc();
-            TrappingRainWaterFunc();
-            NumberofGoodPathsFunc();
-            SerializeandDeserializeBinaryTreeFunc();
-            ReverseNodesinkGroupFunc();
+            InvokeDelegateIfNotNull(geeksForGeeksHardList);
         }
 
 
         // CODERBYTE
         private static void CoderByteTests()
         {
-            FirstFactorialFunc();
-            FirstReverseFunc();
+            InvokeDelegateIfNotNull(coderByteList);
         }
 
 
@@ -475,15 +248,21 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("2235. Add Two Integers");
+            string source = "LC";
             // Add Two Intergers
 
             // Case 1
             int Case1_2235 = LeetCode.AddTwoIntegers.Solution.Sum(12, 5);
-            Console.WriteLine(Case1_2235);
 
             // Case 2
             int Case2_2235 = LeetCode.AddTwoIntegers.Solution.Sum(-10, 4);
-            Console.WriteLine(Case2_2235);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_2235, 17),
+                ResultTester.CheckResult<int>(Case2_2235, -6)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -699,24 +478,30 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Max Ice Cream");
+            string source = "LC";
 
             // Case 1
             int[] Case1_1833 = { 1, 2, 3, 1 };
             int CoinsCase1 = 7;
             int Case1_1833_Result = LeetCode.MaximumIceCreamBars.Solution.MaxIceCream(Case1_1833, CoinsCase1);
-            Console.WriteLine(Case1_1833_Result);
 
             // Case 2
             int[] Case2_1833 = { 10, 6, 8, 7, 7, 8 };
             int CoinsCase2 = 5;
             int Case2_1833_Result = LeetCode.MaximumIceCreamBars.Solution.MaxIceCream(Case2_1833, CoinsCase2);
-            Console.WriteLine(Case2_1833_Result);
 
             // Case 3
             int[] Case3_1833 = { 1, 6, 3, 1, 2, 5 };
             int CoinsCase3 = 20;
             int Case3_1833_Result = LeetCode.MaximumIceCreamBars.Solution.MaxIceCream(Case3_1833, CoinsCase3);
-            Console.WriteLine(Case3_1833_Result);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_1833_Result, 4),
+                ResultTester.CheckResult<int>(Case2_1833_Result, 0),
+                ResultTester.CheckResult<int>(Case3_1833_Result, 6)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -749,18 +534,24 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Longest Path With Different Adjacent Characters");
+            string source = "LC";
 
             // Case 1
             int[] Case1_2246 = { -1, 0, 0, 0 };
             string s1 = "abacbe";
             int Case1_2246_Result = LeetCode.LongestPathWithDifferentAdjacentCharacters.Solution.LongestPath(Case1_2246, s1);
-            Console.WriteLine(Case1_2246_Result);
 
             // Case 2
             int[] Case2_2246 = { 1, 1, 1, 2, 2, 3 };
             string s2 = "aabc";
             int Case2_2246_Result = LeetCode.LongestPathWithDifferentAdjacentCharacters.Solution.LongestPath(Case2_2246, s2);
-            Console.WriteLine(Case2_2246_Result);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_2246_Result, 3),
+                ResultTester.CheckResult<int>(Case2_2246_Result, 1)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -1306,16 +1097,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Naming a Company");
+            string source = "LC";
 
             // Case 1
             string[] arrayCase1_2306 = { "coffee", "donuts", "time", "toffee"};
             long Case1_2306_Result = LeetCode.NamingaCompany.Solution.DistinctNames(arrayCase1_2306);
-            Console.WriteLine(Case1_2306_Result);
 
             // Case 2
             string[] arrayCase2_2306 = { "lack", "back"};
             long Case2_2306_Result = LeetCode.NamingaCompany.Solution.DistinctNames(arrayCase2_2306);
-            Console.WriteLine(Case2_2306_Result);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(Case1_2306_Result, 6),
+                ResultTester.CheckResult<long>(Case2_2306_Result, 0)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -2397,18 +2194,24 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Minimum Time to Complete Trips");
+            string source = "LC";
 
             // Case 1
             int[] time1_1287 = {1, 2, 3};
             int totalTrips1_1287 = 5;
             long result1_1287 = LeetCode.MinimumTimetoCompleteTrips.Solution.MinimumTime(time1_1287, totalTrips1_1287);
-            Console.WriteLine(result1_1287);
 
             // Case 2
             int[] time2_1287 = { 2 };
             int totalTrips2_1287 = 1;
             long result2_1287 = LeetCode.MinimumTimetoCompleteTrips.Solution.MinimumTime(time2_1287, totalTrips2_1287);
-            Console.WriteLine(result2_1287);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(result1_1287, 3),
+                ResultTester.CheckResult<long>(result2_1287, 2)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -3190,6 +2993,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Count Unreachable Pairs of Nodes in an Undirected Graph");
+            string source = "LC";
             
             // Case 1
             int[][] edges2316Case1 = new int[][]
@@ -3214,6 +3018,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int n2316Case2 = 7;
             long Result2316Case2 = LeetCode.CountUnreachablePairsofNodesinanUndirectedGraph.Solution.CountPairs(n2316Case2, edges2316Case2);
             Console.WriteLine("Result Case 2: {0}", Result2316Case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(Result2316Case1, 0),
+                ResultTester.CheckResult<long>(Result2316Case2, 14),
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -3541,23 +3352,29 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Successful Pairs of Spells and Potions");
+            string source = "LC";
 
             // Case 1
             int[] spells2300_1 = {5,1,3};
             int[] potions2300_1 = {1,2,3,4,5};
             long success2300_1 = 7;
             int[] result2300_1 = LeetCode.SuccessfulPairsofSpellsandPotions.Solution.SuccessfulPairs(spells2300_1, potions2300_1, success2300_1);
-            Console.WriteLine("Case 1 :");
-            Program.PrintArray(result2300_1);
 
             // Case 2
-            Program.Space();
             int[] spells2300_2 = {3,1,2};
             int[] potions2300_2 = {8,5,8};
             long success2300_2 = 16;
             int[] result2300_2 = LeetCode.SuccessfulPairsofSpellsandPotions.Solution.SuccessfulPairs(spells2300_2, potions2300_2, success2300_2);
-            Console.WriteLine("Case 2 :");
-            Program.PrintArray(result2300_2);
+
+            int[] output1_2300 = {4,0,3};
+            int[] output2_2300 = {2,0,2};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result2300_1, output1_2300),
+                ResultTester.CheckResult<int[]>(result2300_2, output2_2300)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -3905,6 +3722,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Largest Color Value in a Directed Graph");
+            string source = "LC";
 
             // Case 1
             string colors1857_1 = "abaca";
@@ -3916,7 +3734,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 new int[]{3,4}
             };
             int result1857_1 = LeetCode.LargestColorValueinaDirectedGraph.Solution.LargestPathValue(colors1857_1, edges1857_1);
-            Console.WriteLine("Result 1 : {0}", result1857_1);
 
             // Case 2
             string colors1857_2 = "a";
@@ -3925,7 +3742,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 new int[]{0,0}
             };
             int result1857_2 = LeetCode.LargestColorValueinaDirectedGraph.Solution.LargestPathValue(colors1857_2, edges1857_2);
-            Console.WriteLine("Result 2 : {0}", result1857_2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1857_1, 3),
+                ResultTester.CheckResult<int>(result1857_2, -1)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -4052,6 +3875,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Maximum Value of K Coins From Piles");
+            string source = "LC";
 
             // Case 1
             int[][] piles1_2218 = new int[][]
@@ -4061,8 +3885,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             };
             int k1_2218 = 2;
             int output1_2218 = LeetCode.MaximumValueofKCoinsFromPiles.Solution.MaxValueOfCoins(piles1_2218, k1_2218);
-            Console.WriteLine("Result 1 : {0}", output1_2218);
-            Program.Space();
+
 
             // Case 2
             int[][] piles2_2218 = new int[][]
@@ -4077,8 +3900,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             };
             int k2_2218 = 7;
             int output2_2218 = LeetCode.MaximumValueofKCoinsFromPiles.Solution.MaxValueOfCoins(piles2_2218, k2_2218);
-            Console.WriteLine("Result 2 : {0}", output2_2218);
-            Program.Space();
+
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(output1_2218, 101),
+                ResultTester.CheckResult<int>(output2_2218, 706)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -4086,20 +3915,24 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Concatenation of Array");
+            string source = "LC";
 
             // Case 1
             int[] nums1_1929 = {1,2,1};
             int[] output1_1929 = LeetCode.ConcatenationofArray.Solution.GetConcatenation(nums1_1929);
-            Console.WriteLine("Result 1 :");
-            Program.PrintArray(output1_1929);
-            Program.Space();
 
             // Case 2
             int[] nums2_1929 = {1,3,2,1};
             int[] output2_1929 = LeetCode.ConcatenationofArray.Solution.GetConcatenation(nums2_1929);
-            Console.WriteLine("Result 2 :");
-            Program.PrintArray(output2_1929);
-            Program.Space();
+
+            int[] expected1 = {1,2,1,1,2,1};
+            int[] expected2 = {1,3,2,1,1,3,2,1};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(output1_1929, expected1),
+                ResultTester.CheckResult<int[]>(output2_1929, expected2)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -4479,21 +4312,27 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Sign of the Product of an Array");
+            string source = "LC";
 
             // Case 1
             int[] Case1_1822 = {-1,-2,-3,-4,3,2,1};
             int Result1_1822 = LeetCode.SignoftheProductofanArray.Solution.ArraySign(Case1_1822);
-            Console.WriteLine("Result 1 : {0}", Result1_1822);
 
             // Case 2
             int[] Case2_1822 = {1,5,0,2,-3};
             int Result2_1822 = LeetCode.SignoftheProductofanArray.Solution.ArraySign(Case2_1822);
-            Console.WriteLine("Result 2 : {0}", Result2_1822);
 
             // Case 3
             int[] Case3_1822 = {-1,1,-1,1,-1};
             int Result3_1822 = LeetCode.SignoftheProductofanArray.Solution.ArraySign(Case3_1822);
-            Console.WriteLine("Result 3 : {0}", Result3_1822);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Result1_1822, 1),
+                ResultTester.CheckResult<int>(Result2_1822, 0),
+                ResultTester.CheckResult<int>(Result3_1822, -1)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -5640,6 +5479,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Number of Subsequences That Satisfy the Given Sum Condition");
+            string source = "LC";
 
             int[] obstacles1 = {1,2,3,2};
             int[] obstacles2 = {2,2,1};
@@ -5647,9 +5487,17 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int[] result1 = LeetCode.FindtheLongestValidObstacleCourseatEachPosition.Solution.LongestObstacleCourseAtEachPosition(obstacles1);
             int[] result2 = LeetCode.FindtheLongestValidObstacleCourseatEachPosition.Solution.LongestObstacleCourseAtEachPosition(obstacles2);
             int[] result3 = LeetCode.FindtheLongestValidObstacleCourseatEachPosition.Solution.LongestObstacleCourseAtEachPosition(obstacles3);
-            Program.PrintArray(result1);
-            Program.PrintArray(result2);
-            Program.PrintArray(result3);
+            int[] output1 = {1,2,3,3};
+            int[] output2 = {1,2,1};
+            int[] output3 = {1,1,2,3,2,2};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, output1),
+                ResultTester.CheckResult<int[]>(result2, output2),
+                ResultTester.CheckResult<int[]>(result3, output3)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -5711,6 +5559,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Watering Plants II");
+            string source = "LC";
 
             int[] plants1 = {2,2,3,3};
             int capacityA1 = 5;
@@ -5728,9 +5577,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int result2 = LeetCode.WateringPlantsII.Solution.MinimumRefill(plants2, capacityA2, capacityB2);
             int result3 = LeetCode.WateringPlantsII.Solution.MinimumRefill(plants3, capacityA3, capacityB3);
 
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-            Console.WriteLine("Result 3 : {0}", result3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -7994,11 +7847,166 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void MinimumRoundstoCompleteAllTasksFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Rounds to Complete All Tasks");
+            string source = "LC";
+
+            int[] tasks1_2244 = {2, 2, 3, 3, 2, 4, 4, 4, 4, 4};
+            int[] tasks2_2244 = {2, 3, 3};
+
+            int result1_2244 = LeetCode.MinimumRoundstoCompleteAllTasks.Solution.MinimumRounds(tasks1_2244);
+            int result2_2244 = LeetCode.MinimumRoundstoCompleteAllTasks.Solution.MinimumRounds(tasks2_2244);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_2244, 4),
+                ResultTester.CheckResult<int>(result2_2244, -1)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void FindtheDifferenceofTwoArraysFunc()
+        {
+            Program.Space();
+            Program.Title("Find the Difference of Two Arrays");
+            string source = "LC";
+
+            int[] nums1_Case1 = {1,2,3};
+            int[] nums2_Case1 = {2,4,6};
+
+            int[] nums1_Case2 = {1,2,3,3};
+            int[] nums2_Case2 = {1,1,2,2};
+
+            IList<IList<int>> listOfLists1 = LeetCode.FindtheDifferenceofTwoArrays.Solution.FindDifference(nums1_Case1, nums2_Case1);
+            IList<IList<int>> listOfLists2 = LeetCode.FindtheDifferenceofTwoArrays.Solution.FindDifference(nums1_Case2, nums2_Case2);
+
+            IList<IList<int>> output1_2215 = new List<IList<int>>();
+            IList<IList<int>> output2_2215 = new List<IList<int>>();
+            IList<int> innerList1 = new List<int> { 1, 3 };
+            IList<int> innerList2 = new List<int> { 4, 6 };
+            output1_2215.Add(innerList1);
+            output1_2215.Add(innerList2);
+            IList<int> innerList3 = new List<int> { 3 };
+            IList<int> innerList4 = new List<int> {  };
+            output2_2215.Add(innerList3);
+            output2_2215.Add(innerList4);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<IList<int>>>(listOfLists1, output1_2215),
+                ResultTester.CheckResult<IList<IList<int>>>(listOfLists2, output2_2215)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void SolvingQuestionsWithBrainpowerFunc()
+        {
+            Program.Space();
+            Program.Title("Solving Questions With Brainpower");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void MaximumTwinSumofaLinkedListFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Twin Sum of a Linked List");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void DeletetheMiddleNodeofaLinkedListFunc()
+        {
+            Program.Space();
+            Program.Title("Delete the Middle Node of a Linked List");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void FindifPathExistsinGraphFunc()
+        {
+            Program.Space();
+            Program.Title("Find if Path Exists in Graph");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void NearestExitfromEntranceinMazeFunc()
+        {
+            Program.Space();
+            Program.Title("Nearest Exit from Entrance in Maze");
+            string source = "LC";
+
+            char[][] maze1 = new char[][]
+            {
+                new char[] { '+', '+', '.', '+' },
+                new char[] { '.', '.', '.', '+' },
+                new char[] { '+', '+', '+', '.' }
+            };
+
+            int[] entrance1 = new int[] { 1, 2 };
+
+            char[][] maze2 = new char[][]
+            {
+                new char[] { '+', '+', '+' },
+                new char[] { '.', '.', '.' },
+                new char[] { '+', '+', '+' }
+            };
+
+            int[] entrance2 = new int[] { 1, 0 };
+
+            char[][] maze3 = new char[][]
+            {
+                new char[] { '.', '+' }
+            };
+
+            int[] entrance3 = new int[] { 0, 0 };
+
+            int result1 = LeetCode.NearestExitfromEntranceinMaze.Solution.NearestExit(maze1, entrance1);
+            int result2 = LeetCode.NearestExitfromEntranceinMaze.Solution.NearestExit(maze2, entrance2);
+            int result3 = LeetCode.NearestExitfromEntranceinMaze.Solution.NearestExit(maze3, entrance3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(result3, -1)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
             CoinChangeFunc(); // Medium LC
             CoinChangeIIFunc(); // Medium LC
+            SuccessfulPairsofSpellsandPotionsFunc();
+            LongestPathWithDifferentAdjacentCharactersFunc();
+            MinimumRoundstoCompleteAllTasksFunc(); // Medium LC
+            AddTwoIntegersFunc();
+
+            FindtheDifferenceofTwoArraysFunc(); // Easy LC
+            MinimumTimetoCompleteTripsFunc();
+            SolvingQuestionsWithBrainpowerFunc();
+            MaximumTwinSumofaLinkedListFunc(); // Medium LC
+            WateringPlantsIIFunc();
+            DeletetheMiddleNodeofaLinkedListFunc();
+            FindifPathExistsinGraphFunc(); // Easy LC
+
+            FindtheLongestValidObstacleCourseatEachPositionFunc();
+            ConcatenationofArrayFunc();
+
+            NearestExitfromEntranceinMazeFunc(); // Medium LC
+            LargestColorValueinaDirectedGraphFunc();
+            MaxIceCreamFunc();
         }
     }
 }
