@@ -169,11 +169,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 // If IList
                 else if (result is IList)
                 {
-                    string resultString = string.Join(", ", result);
-                    string expectedString = string.Join(", ", expected);
+                    string resultString = ConvertResultToString(result);
+                    string expectedString = ConvertResultToString(expected);
                     Program.PrintTestResult(resultString, expectedString);
 
-                    if (result.Equals(expected))
+                    if (resultString.Equals(expectedString))
                     {
                         CheckResultRight();
                         return true;
@@ -202,6 +202,16 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             {
                 List<string> stringList = objectEnumerable.Select(obj => obj.ToString()).ToList()!;
                 return string.Join(", ", stringList);
+            }
+
+            if (toConvert is IList<int> list)
+            {
+                return string.Join(", ", list.Cast<object>().Select(item => item.ToString()));            
+            }
+
+            if (toConvert is List<int> genericList)
+            {
+                return string.Join(", ", genericList.Select(item => item.ToString()));
             }
 
             return string.Empty;

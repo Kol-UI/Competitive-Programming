@@ -13,6 +13,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, MakeNegativeFunc, RemoveExclamationMarksFunc,
             FindMinAndMaxOfListFunc, StringRepeatFunc, SumOfPositiveFunc, ConvertbooleanvaluestostringsYesorNoFunc, ConvertaNumbertoaStringFunc,
             EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc,
+            YouCantCodeUnderPressure1Func
         };
 
         private static Delegate[] codeWarsSevenKyuList = new Delegate[]
@@ -81,7 +82,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
         {
-            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc,
+            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc,
         };
 
         private static Delegate[] hackerRankMediumList = new Delegate[]
@@ -7983,30 +7984,59 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void YouCantCodeUnderPressure1Func()
+        {
+            Program.Space();
+            Program.Title("You Can't Code Under Pressure #1");
+            string source = "CW";
+
+            int result1 = CodeWars.EightKyu.YouCantCodeUnderPressure1.Solution.DoubleInteger(2);
+            int result2 = CodeWars.EightKyu.YouCantCodeUnderPressure1.Solution.DoubleInteger(4);
+            int result3 = CodeWars.EightKyu.YouCantCodeUnderPressure1.Solution.DoubleInteger(-10);
+            int result4 = CodeWars.EightKyu.YouCantCodeUnderPressure1.Solution.DoubleInteger(0);
+            int result5 = CodeWars.EightKyu.YouCantCodeUnderPressure1.Solution.DoubleInteger(100);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 4),
+                ResultTester.CheckResult<int>(result2, 8),
+                ResultTester.CheckResult<int>(result3, -20),
+                ResultTester.CheckResult<int>(result4, 0),
+                ResultTester.CheckResult<int>(result5, 200)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void CompareTheTripletsFunc()
+        {
+            Program.Space();
+            Program.Title("Compare The Triplets");
+            string source = "HR";
+
+            List<int> list1_Case1 = new List<int> { 5, 6, 7 };
+            List<int> list2_Case1 = new List<int> { 3, 6, 10 };
+            List<int> listOutput1 = new List<int> { 1, 1 };
+            List<int> result1 = HackerRank.CompareTheTriplets.Result.compareTriplets(list1_Case1, list2_Case1);
+            List<int> list1_Case2 = new List<int> { 17, 28, 30 };
+            List<int> list2_Case2 = new List<int> { 99, 16, 8 };
+            List<int> listOutput2 = new List<int> { 2, 1 };
+            List<int> result2 = HackerRank.CompareTheTriplets.Result.compareTriplets(list1_Case2, list2_Case2);
+
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<List<int>>(result1, listOutput1),
+                ResultTester.CheckResult<List<int>>(result2, listOutput2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            CoinChangeFunc(); // Medium LC
-            CoinChangeIIFunc(); // Medium LC
-            SuccessfulPairsofSpellsandPotionsFunc();
-            LongestPathWithDifferentAdjacentCharactersFunc();
-            MinimumRoundstoCompleteAllTasksFunc(); // Medium LC
-            AddTwoIntegersFunc();
-
-            FindtheDifferenceofTwoArraysFunc(); // Easy LC
-            MinimumTimetoCompleteTripsFunc();
-            SolvingQuestionsWithBrainpowerFunc();
-            MaximumTwinSumofaLinkedListFunc(); // Medium LC
-            WateringPlantsIIFunc();
-            DeletetheMiddleNodeofaLinkedListFunc();
-            FindifPathExistsinGraphFunc(); // Easy LC
-
-            FindtheLongestValidObstacleCourseatEachPositionFunc();
-            ConcatenationofArrayFunc();
-
-            NearestExitfromEntranceinMazeFunc(); // Medium LC
-            LargestColorValueinaDirectedGraphFunc();
-            MaxIceCreamFunc();
+            YouCantCodeUnderPressure1Func(); // 8 CW
+            CompareTheTripletsFunc();
         }
     }
 }
