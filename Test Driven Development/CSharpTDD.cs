@@ -28,7 +28,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] leetCodeEasyList = new Delegate[]
         {
-            ClimbingStairsFunc, AddTwoIntegersFunc, NumberOfStepsFunc, ContainsDuplicateFunc, BestTimetoBuyandSellStockFunc,
+            ClimbingStairsFunc, AddTwoIntegersFunc, NumberOfStepsFunc, ContainsDuplicateFunc, BestTimetoBuyandSellStockFunc, RangeSumQueryImmutableFunc,
             FirstUniqueCharacterinaStringFunc, SingleNumberFunc, FindJudgeFunc, ShuffleTheArrayFunc, CountOddNumbersInAnIntervalRangeFunc,
             AddBinaryFunc, DefanginganIPAddressFunc, FindLuckyIntegerinanArrayFunc, SearchInsertPositionFunc, FindtheIndexoftheFirstOccurrenceinaStringFunc,
             KthMissingPositiveNumberFunc, ConvertSortedArraytoBinarySearchTree, CanPlaceFlowersFunc, KItemsWiththeMaximumSumFunc, BinarySearchFunc,
@@ -49,14 +49,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
         {
-            RestoreIpAddressesFunc, SnakesAndLaddersFunc, FindClosestNodetoGivenTwoNodesFunc, FruitIntoBasketsFunc, JumpGameIIFunc,
+            RestoreIpAddressesFunc, SnakesAndLaddersFunc, FindClosestNodetoGivenTwoNodesFunc, FruitIntoBasketsFunc, JumpGameIIFunc, AllPathsFromSourcetoTargetFunc,
             AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc,
             SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc,
             NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc,
             MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc,
             OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc,
             SimplifyPathFunc, ValidateStackSequencesFunc, LongestPalindromicSubsequenceFunc, NonoverlappingIntervalsFunc, RobotBoundedInCircleFunc,
-            MatrixDiagonalSumFunc, MultiplyStringsFunc, PowxnFunc, ReverseWordsinaStringFunc, ProductofArrayExceptSelfFunc,
+            MatrixDiagonalSumFunc, MultiplyStringsFunc, PowxnFunc, ReverseWordsinaStringFunc, ProductofArrayExceptSelfFunc, WaystoSplitArrayIntoThreeSubarraysFunc,
             Dota2SenateFunc, MinimumFlipstoMakeaORbEqualtocFunc, BestTimetoBuyandSellStockwithTransactionFeeFunc, IncreasingTripletSubsequenceFunc, MaximumNumberofVowelsinaSubstringofGivenLengthFunc,
             DominoandTrominoTilingFunc, ContainerWithMostWaterFunc, MaxNumberofKSumPairsFunc, UniquePathsFunc, NearestExitfromEntranceinMazeFunc,
             LongestCommonSubsequenceFunc, MaxIceCreamFunc, TopKFrequentFunc, LexicographicallySmallestEquivalentStringFunc, FlipStringtoMonotoneIncreasingFunc, SearchA2DMatrixFunc, InsertIntervalFunc, MaxSubarraySumCircularFunc, SubarraySumFunc, SubarraysDivByKFunc,
@@ -66,18 +66,18 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MaxConsecutiveOnesIIIFunc, LongestSubarrayof1sAfterDeletingOneElementFunc, NumberofProvincesFunc, NumberofSubsequencesThatSatisfytheGivenSumConditionFunc, AsteroidCollisionFunc,
             FindPeakElementFunc, WateringPlantsIIFunc, CarPoolingFunc, CountWaysToBuildGoodStringsFunc, TotalCosttoHireKWorkersFunc,
             MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc,
-            NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc,
-            StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc,
+            NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc,
+            StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc,
             TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc,
-            DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc,
-            MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc,
+            DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc,
+            MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
         {
             CountDigitOneFunc, LongestPathWithDifferentAdjacentCharactersFunc, CheckifPointIsReachableFunc, NamingaCompanyFunc, IPOFunc, EditDistanceFunc, CountSubarraysWithFixedBoundsFunc, JumpGameIVFunc, LongestCycleinaGraphFunc, NumberofWaysofCuttingaPizzaFunc,
             ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
-            MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc
+            MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -8032,11 +8032,230 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void RangeSumQueryImmutableFunc()
+        {
+            Program.Space();
+            Program.Title("Range Sum Query - Immutable");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void MakeArrayStrictlyIncreasingFunc()
+        {
+            Program.Space();
+            Program.Title("Make Array Strictly Increasing");
+            string source = "LC";
+
+            int[] arr1 = {1,5,3,6,7};
+            int[] arr2_Case1 = {1,3,2,4};
+            int[] arr2_Case2 = {4,3,1};
+            int[] arr2_Case3 = {1,6,3,3};
+
+            int result1_1187 = LeetCode.MakeArrayStrictlyIncreasing.Solution.MakeArrayIncreasing(arr1, arr2_Case1);
+            int result2_1187 = LeetCode.MakeArrayStrictlyIncreasing.Solution.MakeArrayIncreasing(arr1, arr2_Case2);
+            int result3_1187 = LeetCode.MakeArrayStrictlyIncreasing.Solution.MakeArrayIncreasing(arr1, arr2_Case3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_1187, 1),
+                ResultTester.CheckResult<int>(result2_1187, 2),
+                ResultTester.CheckResult<int>(result3_1187, -1)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+        
+        private static void SearchinRotatedSortedArrayIIFunc()
+        {
+            Program.Space();
+            Program.Title("Search in Rotated Sorted Array II");
+            string source = "LC";
+
+            int[] nums1 = {2,5,6,0,0,1,2};
+            int target1 = 0;
+            int[] nums2 = {2,5,6,0,0,1,2};
+            int target2 = 3;
+
+            bool result1 = LeetCode.SearchinRotatedSortedArrayII.Solution.Search(nums1, target1);
+            bool result2 = LeetCode.SearchinRotatedSortedArrayII.Solution.Search(nums2, target2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void FindRightIntervalFunc()
+        {
+            Program.Space();
+            Program.Title("Find Right Interval");
+            string source = "LC";
+
+            int[][] intervals1 = new int[][]
+            {
+                new int[] { 1, 2 }
+            };
+            int[][] intervals2 = new int[][]
+            {
+                new int[] { 3, 4 },
+                new int[] { 2, 3 },
+                new int[] { 1, 2 }
+            };
+            int[][] intervals3 = new int[][]
+            {
+                new int[] { 1, 4 },
+                new int[] { 2, 3 },
+                new int[] { 3, 4 }
+            };
+
+            int[] result1 = LeetCode.FindRightInterval.Solution.FindRightInterval(intervals1);
+            int[] result2 = LeetCode.FindRightInterval.Solution.FindRightInterval(intervals2);
+            int[] result3 = LeetCode.FindRightInterval.Solution.FindRightInterval(intervals3);
+
+            int[] expected1 = {-1};
+            int[] expected2 = {-1,0,1};
+            int[] expected3 = {-1,2,-1};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2),
+                ResultTester.CheckResult<int[]>(result3, expected3)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void MostProfitAssigningWorkFunc()
+        {
+            Program.Space();
+            Program.Title("Most Profit Assigning Work");
+            string source = "LC";
+
+            int[] difficulty1 = {2,4,6,8,10};
+            int[] profit1 = {10,20,30,40,50};
+            int[] worker1 = {4,5,6,7};
+
+            int[] difficulty2 = {85,47,57};
+            int[] profit2 = {24,66,99};
+            int[] worker2 = {40,25,25};
+
+            int result1 = LeetCode.MostProfitAssigningWork.Solution.MaxProfitAssignment(difficulty1, profit1, worker1);
+            int result2 = LeetCode.MostProfitAssigningWork.Solution.MaxProfitAssignment(difficulty2, profit2, worker2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 100),
+                ResultTester.CheckResult<int>(result2, 0)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void WaystoSplitArrayIntoThreeSubarraysFunc()
+        {
+            Program.Space();
+            Program.Title("Ways to Split Array Into Three Subarrays");
+            string source = "LC";
+
+            int[] nums1_1712 = {1,1,1};
+            int[] nums2_1712 = {1,2,2,2,5,0};
+            int[] nums3_1712 = {3,2,1};
+
+            int result1_1712 = LeetCode.WaystoSplitArrayIntoThreeSubarrays.Solution.WaysToSplit(nums1_1712);
+            int result2_1712 = LeetCode.WaystoSplitArrayIntoThreeSubarrays.Solution.WaysToSplit(nums2_1712);
+            int result3_1712 = LeetCode.WaystoSplitArrayIntoThreeSubarrays.Solution.WaysToSplit(nums3_1712);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_1712, 1),
+                ResultTester.CheckResult<int>(result2_1712, 3),
+                ResultTester.CheckResult<int>(result3_1712, 0)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void NumberofIslandsFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Islands");
+            string source = "LC";
+
+            char[][] grid1 = new char[][]
+            {
+                new char[] { '1', '1', '1', '1', '0' },
+                new char[] { '1', '1', '0', '1', '0' },
+                new char[] { '1', '1', '0', '0', '0' },
+                new char[] { '0', '0', '0', '0', '0' }
+            };
+            char[][] grid2 = new char[][]
+            {
+                new char[] { '1', '1', '0', '0', '0' },
+                new char[] { '1', '1', '0', '0', '0' },
+                new char[] { '0', '0', '1', '0', '0' },
+                new char[] { '0', '0', '0', '1', '1' }
+            };
+
+            int result1 = LeetCode.NumberofIslands.Solution.NumIslands(grid1);
+            int result2 = LeetCode.NumberofIslands.Solution.NumIslands(grid2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 3)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void AllPathsFromSourcetoTargetFunc()
+        {
+            Program.Space();
+            Program.Title("All Paths From Source to Target");
+            string source = "LC";
+
+            int[][] graph1 = new int[][]
+            {
+                new int[] { 1, 2 },
+                new int[] { 3 },
+                new int[] { 3 },
+                new int[] { }
+            };
+            int[][] graph2 = new int[][]
+            {
+                new int[] { 4, 3, 1 },
+                new int[] { 3, 2, 4 },
+                new int[] { 3 },
+                new int[] { 4 },
+                new int[] { }
+            };
+
+            IList<IList<int>> result1_797 = LeetCode.AllPathsFromSourcetoTarget.Solution.AllPathsSourceTarget(graph1);
+            IList<IList<int>> result2_797 = LeetCode.AllPathsFromSourcetoTarget.Solution.AllPathsSourceTarget(graph2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<IList<int>>>(result1_797, result1_797),
+                ResultTester.CheckResult<IList<IList<int>>>(result2_797, result2_797)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            YouCantCodeUnderPressure1Func(); // 8 CW
-            CompareTheTripletsFunc();
+            RangeSumQueryImmutableFunc(); // Easy LC
+            MakeArrayStrictlyIncreasingFunc(); // Hard LC
+            SearchinRotatedSortedArrayIIFunc(); // Medium LC
+            FindRightIntervalFunc(); // Medium LC
+            MostProfitAssigningWorkFunc(); // Medium LC
+            WaystoSplitArrayIntoThreeSubarraysFunc(); // Medium LC
+            NumberofIslandsFunc(); // Medium LC
+            AllPathsFromSourcetoTargetFunc(); // Medium LC
         }
     }
 }
