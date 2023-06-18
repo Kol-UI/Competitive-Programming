@@ -13,7 +13,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, MakeNegativeFunc, RemoveExclamationMarksFunc,
             FindMinAndMaxOfListFunc, StringRepeatFunc, SumOfPositiveFunc, ConvertbooleanvaluestostringsYesorNoFunc, ConvertaNumbertoaStringFunc,
             EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc,
-            YouCantCodeUnderPressure1Func
+            YouCantCodeUnderPressure1Func, CenturyFromYearFunc
         };
 
         private static Delegate[] codeWarsSevenKyuList = new Delegate[]
@@ -64,7 +64,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SnapshotArrayFunc, LongestIncreasingSubsequenceFunc, WiggleSubsequenceFunc, LongestPalindromicSubstringFunc, RangeSumQuery2DImmutableFunc, BestTimetoBuyandSellStockIIFunc, BestSightseeingPairFunc, MatrixBlockSumFunc, MaximumProductSubarrayFunc, MaximumLengthofSubarrayWithPositiveProductFunc,
             FindtheWinneroftheCircularGameFunc, RemoveDuplicatesfromSortedListIIFunc, DesignLinkedListFunc, MinStackFunc, CoinChangeFunc, CoinChangeIIFunc, MinimumRoundstoCompleteAllTasksFunc, SolvingQuestionsWithBrainpowerFunc, MaximumTwinSumofaLinkedListFunc, DeletetheMiddleNodeofaLinkedListFunc,
             MaxConsecutiveOnesIIIFunc, LongestSubarrayof1sAfterDeletingOneElementFunc, NumberofProvincesFunc, NumberofSubsequencesThatSatisfytheGivenSumConditionFunc, AsteroidCollisionFunc,
-            FindPeakElementFunc, WateringPlantsIIFunc, CarPoolingFunc, CountWaysToBuildGoodStringsFunc, TotalCosttoHireKWorkersFunc,
+            FindPeakElementFunc, WateringPlantsIIFunc, CarPoolingFunc, CountWaysToBuildGoodStringsFunc, TotalCosttoHireKWorkersFunc, PacificAtlanticWaterFlowFunc,
             MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc,
             NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc,
             StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc,
@@ -77,7 +77,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             CountDigitOneFunc, LongestPathWithDifferentAdjacentCharactersFunc, CheckifPointIsReachableFunc, NamingaCompanyFunc, IPOFunc, EditDistanceFunc, CountSubarraysWithFixedBoundsFunc, JumpGameIVFunc, LongestCycleinaGraphFunc, NumberofWaysofCuttingaPizzaFunc,
             ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
-            MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc,
+            MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -8245,17 +8245,114 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void NumberofIncreasingPathsinaGridFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Increasing Paths in a Grid");
+            string source = "LC";
+
+            int[][] grid1 = new int[][]
+            {
+                new int[] { 1, 1 },
+                new int[] { 3, 4 }
+            };
+            int[][] grid2 = new int[][]
+            {
+                new int[] { 1 },
+                new int[] { 2 }
+            };
+
+            int result1 = LeetCode.NumberofIncreasingPathsinaGrid.Solution.CountPaths(grid1);
+            int result2 = LeetCode.NumberofIncreasingPathsinaGrid.Solution.CountPaths(grid2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 8),
+                ResultTester.CheckResult<int>(result2, 3)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void PacificAtlanticWaterFlowFunc()
+        {
+            Program.Space();
+            Program.Title("Pacific Atlantic Water Flow");
+            string source = "LC";
+
+            int[][] heights1 = new int[][]
+            {
+                new int[] { 1, 2, 2, 3, 5 },
+                new int[] { 3, 2, 3, 4, 4 },
+                new int[] { 2, 4, 5, 3, 1 },
+                new int[] { 6, 7, 1, 4, 5 },
+                new int[] { 5, 1, 1, 2, 4 }
+            };
+
+            int[][] heights2 = new int[][]
+            {
+                new int[] { 1 }
+            };
+
+            IList<IList<int>> result1_417 = LeetCode.PacificAtlanticWaterFlow.Solution.PacificAtlantic(heights1);
+            IList<IList<int>> result2_417 = LeetCode.PacificAtlanticWaterFlow.Solution.PacificAtlantic(heights2);
+
+            IList<IList<int>> expected1_417 = new List<IList<int>>
+            {
+                new List<int> { 0, 4 },
+                new List<int> { 1, 3 },
+                new List<int> { 1, 4 },
+                new List<int> { 2, 2 },
+                new List<int> { 3, 0 },
+                new List<int> { 3, 1 },
+                new List<int> { 4, 0 }
+            };
+            IList<IList<int>> expected2_417 = new List<IList<int>>
+            {
+                new List<int> { 0, 0 }
+            };
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<IList<int>>>(result1_417, result1_417),
+                ResultTester.CheckResult<IList<IList<int>>>(result2_417, expected2_417)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void CenturyFromYearFunc()
+        {
+            Program.Space();
+            Program.Title("Century From Year");
+            string source = "CW";
+
+            int case1 = 18;
+            int case2 = 19;
+            int case3 = 17;
+            int case4 = 20;
+            
+            int result1 = CodeWars.EightKyu.CenturyFromYear.Solution.СenturyFromYear(1705);
+            int result2 = CodeWars.EightKyu.CenturyFromYear.Solution.СenturyFromYear(1900);
+            int result3 = CodeWars.EightKyu.CenturyFromYear.Solution.СenturyFromYear(1601);
+            int result4 = CodeWars.EightKyu.CenturyFromYear.Solution.СenturyFromYear(2000);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, case1),
+                ResultTester.CheckResult<int>(result2, case2),
+                ResultTester.CheckResult<int>(result3, case3),
+                ResultTester.CheckResult<int>(result4, case4)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            RangeSumQueryImmutableFunc(); // Easy LC
-            MakeArrayStrictlyIncreasingFunc(); // Hard LC
-            SearchinRotatedSortedArrayIIFunc(); // Medium LC
-            FindRightIntervalFunc(); // Medium LC
-            MostProfitAssigningWorkFunc(); // Medium LC
-            WaystoSplitArrayIntoThreeSubarraysFunc(); // Medium LC
-            NumberofIslandsFunc(); // Medium LC
-            AllPathsFromSourcetoTargetFunc(); // Medium LC
+            NumberofIncreasingPathsinaGridFunc(); // Hard LC
+            PacificAtlanticWaterFlowFunc(); // Medium LC
+            CenturyFromYearFunc(); // 8 CodeWars
         }
     }
 }
