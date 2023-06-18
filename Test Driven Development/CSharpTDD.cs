@@ -13,7 +13,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, MakeNegativeFunc, RemoveExclamationMarksFunc,
             FindMinAndMaxOfListFunc, StringRepeatFunc, SumOfPositiveFunc, ConvertbooleanvaluestostringsYesorNoFunc, ConvertaNumbertoaStringFunc,
             EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc,
-            YouCantCodeUnderPressure1Func, CenturyFromYearFunc
+            YouCantCodeUnderPressure1Func, CenturyFromYearFunc, BasicMathematicalOperationsFunc
         };
 
         private static Delegate[] codeWarsSevenKyuList = new Delegate[]
@@ -51,7 +51,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             RestoreIpAddressesFunc, SnakesAndLaddersFunc, FindClosestNodetoGivenTwoNodesFunc, FruitIntoBasketsFunc, JumpGameIIFunc, AllPathsFromSourcetoTargetFunc,
             AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc,
-            SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc,
+            SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc, CountSubIslandsFunc,
             NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc,
             MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc,
             OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc,
@@ -82,7 +82,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
         {
-            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc,
+            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc,
         };
 
         private static Delegate[] hackerRankMediumList = new Delegate[]
@@ -8347,12 +8347,103 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void BasicMathematicalOperationsFunc()
+        {
+            Program.Space();
+            Program.Title("Basic Mathematical Operations");
+            string source = "CW";
+
+            double result1 = CodeWars.EightKyu.BasicMathematicalOperations.Solution.basicOp('+', 4, 7);
+            double result2 = CodeWars.EightKyu.BasicMathematicalOperations.Solution.basicOp('-', 15, 18);
+            double result3 = CodeWars.EightKyu.BasicMathematicalOperations.Solution.basicOp('*', 5, 5);
+            double result4 = CodeWars.EightKyu.BasicMathematicalOperations.Solution.basicOp('/', 49, 7);
+
+            double expected1 = 11;
+            double expected2 = -3;
+            double expected3 = 25;
+            double expected4 = 7;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<double>(result1, expected1),
+                ResultTester.CheckResult<double>(result2, expected2),
+                ResultTester.CheckResult<double>(result3, expected3),
+                ResultTester.CheckResult<double>(result4, expected4)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void DiagonalDifferenceFunc()
+        {
+            Program.Space();
+            Program.Title("Diagonal Difference");
+            string source = "HR";
+
+            ResultTester.SpecialTestCase(source);
+        }
+
+        
+        private static void CountSubIslandsFunc()
+        {
+            Program.Space();
+            Program.Title("Diagonal Difference");
+            string source = "LC";
+
+            int[][] grid1_Case1 = new int[][]
+            {
+                new int[] { 1, 1, 1, 0, 0 },
+                new int[] { 0, 1, 1, 1, 1 },
+                new int[] { 0, 0, 0, 0, 0 },
+                new int[] { 1, 0, 0, 0, 0 },
+                new int[] { 1, 1, 0, 1, 1 }
+            };
+
+            int[][] grid2_Case1 = new int[][]
+            {
+                new int[] { 1, 1, 1, 0, 0 },
+                new int[] { 0, 0, 1, 1, 1 },
+                new int[] { 0, 1, 0, 0, 0 },
+                new int[] { 1, 0, 1, 1, 0 },
+                new int[] { 0, 1, 0, 1, 0 }
+            };
+
+            int[][] grid1_Case2 = new int[][]
+            {
+                new int[] { 1, 0, 1, 0, 1 },
+                new int[] { 1, 1, 1, 1, 1 },
+                new int[] { 0, 0, 0, 0, 0 },
+                new int[] { 1, 1, 1, 1, 1 },
+                new int[] { 1, 0, 1, 0, 1 }
+            };
+
+            int[][] grid2_Case2 = new int[][]
+            {
+                new int[] { 0, 0, 0, 0, 0 },
+                new int[] { 1, 1, 1, 1, 1 },
+                new int[] { 0, 1, 0, 1, 0 },
+                new int[] { 0, 1, 0, 1, 0 },
+                new int[] { 1, 0, 0, 0, 1 }
+            };
+
+            int result1 = LeetCode.CountSubIslands.Solution.CountSubIslands(grid1_Case1, grid2_Case1);
+            int result2 = LeetCode.CountSubIslands.Solution.CountSubIslands(grid1_Case2, grid2_Case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            NumberofIncreasingPathsinaGridFunc(); // Hard LC
-            PacificAtlanticWaterFlowFunc(); // Medium LC
-            CenturyFromYearFunc(); // 8 CodeWars
+            BasicMathematicalOperationsFunc(); // 8 CodeWars
+            DiagonalDifferenceFunc(); // Easy HR
+            CountSubIslandsFunc(); // Medium LC
         }
     }
 }

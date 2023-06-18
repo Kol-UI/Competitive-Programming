@@ -157,6 +157,12 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                     string resultString = result.ToString()!;
                     string expectedString = expected.ToString()!;
                     Program.PrintTestResult(resultString, expectedString);
+                    if (result.Equals(expected))
+                    {
+                        CheckResultRight();
+                        return true;
+                    }
+                    /*
                     double tolerance = 0.0001;
                     double diff = Math.Abs(Convert.ToDouble(result) - Convert.ToDouble(expected));
                     if (diff > tolerance)
@@ -164,6 +170,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                         CheckResultRight();
                         return true;
                     }
+                    */
                 }
 
                 // If IList
