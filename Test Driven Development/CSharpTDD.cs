@@ -53,12 +53,12 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc,
             SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc, CountSubIslandsFunc,
             NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc,
-            MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc,
-            OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc,
-            SimplifyPathFunc, ValidateStackSequencesFunc, LongestPalindromicSubsequenceFunc, NonoverlappingIntervalsFunc, RobotBoundedInCircleFunc,
+            MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc, HIndexIIFunc,
+            OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc, RangeSumofSortedSubarraySumsFunc,
+            SimplifyPathFunc, ValidateStackSequencesFunc, LongestPalindromicSubsequenceFunc, NonoverlappingIntervalsFunc, RobotBoundedInCircleFunc, MinimumSizeSubarraySumFunc,
             MatrixDiagonalSumFunc, MultiplyStringsFunc, PowxnFunc, ReverseWordsinaStringFunc, ProductofArrayExceptSelfFunc, WaystoSplitArrayIntoThreeSubarraysFunc,
             Dota2SenateFunc, MinimumFlipstoMakeaORbEqualtocFunc, BestTimetoBuyandSellStockwithTransactionFeeFunc, IncreasingTripletSubsequenceFunc, MaximumNumberofVowelsinaSubstringofGivenLengthFunc,
-            DominoandTrominoTilingFunc, ContainerWithMostWaterFunc, MaxNumberofKSumPairsFunc, UniquePathsFunc, NearestExitfromEntranceinMazeFunc,
+            DominoandTrominoTilingFunc, ContainerWithMostWaterFunc, MaxNumberofKSumPairsFunc, UniquePathsFunc, NearestExitfromEntranceinMazeFunc, FrequencyoftheMostFrequentElementFunc,
             LongestCommonSubsequenceFunc, MaxIceCreamFunc, TopKFrequentFunc, LexicographicallySmallestEquivalentStringFunc, FlipStringtoMonotoneIncreasingFunc, SearchA2DMatrixFunc, InsertIntervalFunc, MaxSubarraySumCircularFunc, SubarraySumFunc, SubarraysDivByKFunc,
             LongestSubstringWithoutRepeatingCharactersFunc, UniquePathsIIFunc, MaximalSquareFunc, JumpGameFunc, PathSumIIFunc, MaximumValueataGivenIndexinaBoundedArrayFunc, BinarySearchTreeIteratorFunc, KthSmallestElementinaBSTFunc, ConstructBinaryTreefromPreorderandInorderTraversalFunc, SmallestNumberinInfiniteSetFunc,
             SnapshotArrayFunc, LongestIncreasingSubsequenceFunc, WiggleSubsequenceFunc, LongestPalindromicSubstringFunc, RangeSumQuery2DImmutableFunc, BestTimetoBuyandSellStockIIFunc, BestSightseeingPairFunc, MatrixBlockSumFunc, MaximumProductSubarrayFunc, MaximumLengthofSubarrayWithPositiveProductFunc,
@@ -67,10 +67,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             FindPeakElementFunc, WateringPlantsIIFunc, CarPoolingFunc, CountWaysToBuildGoodStringsFunc, TotalCosttoHireKWorkersFunc, PacificAtlanticWaterFlowFunc,
             MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc,
             NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc,
-            StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc,
+            StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc, ValidTriangleNumberFunc,
             TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc,
-            DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc,
-            MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc,
+            DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc,
+            MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -8438,12 +8438,174 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void ShortestSubarraytobeRemovedtoMakeArraySortedFunc()
+        {
+            Program.Space();
+            Program.Title("Shortest Subarray to be Removed to Make Array Sorted");
+            string source = "LC";
+
+            int[] arr1 = {1,2,3,10,4,2,3,5};
+            int[] arr2 = {5,4,3,2,1};
+            int[] arr3 = {1,2,3};
+            int result1 = LeetCode.ShortestSubarraytobeRemovedtoMakeArraySorted.Solution.FindLengthOfShortestSubarray(arr1);
+            int result2 = LeetCode.ShortestSubarraytobeRemovedtoMakeArraySorted.Solution.FindLengthOfShortestSubarray(arr2);
+            int result3 = LeetCode.ShortestSubarraytobeRemovedtoMakeArraySorted.Solution.FindLengthOfShortestSubarray(arr3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 4),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void RangeSumofSortedSubarraySumsFunc()
+        {
+            Program.Space();
+            Program.Title("Range Sum of Sorted Subarray Sums");
+            string source = "LC";
+
+            int[] nums1 = {1,2,3,4};
+            int n1 = 4;
+            int left1 = 1;
+            int right1 = 5;
+
+            int[] nums2 = {1,2,3,4};
+            int n2 = 4;
+            int left2 = 3;
+            int right2 = 4;
+
+            int[] nums3 = {1,2,3,4};
+            int n3 = 4;
+            int left3 = 1;
+            int right3 = 10;
+
+            int result1 = LeetCode.RangeSumofSortedSubarraySums.Solution.RangeSum(nums1, n1, left1, right1);
+            int result2 = LeetCode.RangeSumofSortedSubarraySums.Solution.RangeSum(nums2, n2, left2, right2);
+            int result3 = LeetCode.RangeSumofSortedSubarraySums.Solution.RangeSum(nums3, n3, left3, right3);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 13),
+                ResultTester.CheckResult<int>(result2, 6),
+                ResultTester.CheckResult<int>(result3, 50)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void MinimumSizeSubarraySumFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Size Subarray Sum");
+            string source = "LC";
+
+            int target1 = 7;
+            int[] nums1 = {2,3,1,2,4,3};
+            int target2 = 4;
+            int[] nums2 = {1,4,4};
+            int target3 = 11;
+            int[] nums3 = {1,1,1,1,1,1,1,1};
+
+            int result1 = LeetCode.MinimumSizeSubarraySum.Solution.MinSubArrayLen(target1, nums1);
+            int result2 = LeetCode.MinimumSizeSubarraySum.Solution.MinSubArrayLen(target2, nums2);
+            int result3 = LeetCode.MinimumSizeSubarraySum.Solution.MinSubArrayLen(target3, nums3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, 1),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void ValidTriangleNumberFunc()
+        {
+            Program.Space();
+            Program.Title("Valid Triangle Number");
+            string source = "LC";
+
+            int[] nums1 = {2,2,3,4};
+            int[] nums2 = {4,2,3,4};
+            int result1 = LeetCode.ValidTriangleNumber.Solution.TriangleNumber(nums1);
+            int result2 = LeetCode.ValidTriangleNumber.Solution.TriangleNumber(nums2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 4)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void CountCompleteTreeNodesFunc()
+        {
+            Program.Space();
+            Program.Title("Count Complete Tree Nodes");
+            string source = "LC";
+
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void FrequencyoftheMostFrequentElementFunc()
+        {
+            Program.Space();
+            Program.Title("Frequency of the Most Frequent Element");
+            string source = "LC";
+
+            int[] nums1 = {1,2,4};
+            int k1 = 5;
+            int[] nums2 = {1,4,8,13};
+            int k2 = 5;
+            int[] nums3 = {3,9,6};
+            int k3 = 2;
+
+            int result1 = LeetCode.FrequencyoftheMostFrequentElement.Solution.MaxFrequency(nums1, k1);
+            int result2 = LeetCode.FrequencyoftheMostFrequentElement.Solution.MaxFrequency(nums2, k2);
+            int result3 = LeetCode.FrequencyoftheMostFrequentElement.Solution.MaxFrequency(nums3, k3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(result3, 1)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void HIndexIIFunc()
+        {
+            Program.Space();
+            Program.Title("H-Index II");
+            string source = "LC";
+
+            int[] citations1 = {0,1,3,5,6};
+            int[] citations2 = {1,2,100};
+            int result1 = LeetCode.HIndexII.Solution.HIndex(citations1);
+            int result2 = LeetCode.HIndexII.Solution.HIndex(citations2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            BasicMathematicalOperationsFunc(); // 8 CodeWars
-            DiagonalDifferenceFunc(); // Easy HR
-            CountSubIslandsFunc(); // Medium LC
+            ShortestSubarraytobeRemovedtoMakeArraySortedFunc(); // Medium LC
+            RangeSumofSortedSubarraySumsFunc(); // Medium LC
+            MinimumSizeSubarraySumFunc(); // Medium LC
+            ValidTriangleNumberFunc(); // Medium LC
+            CountCompleteTreeNodesFunc(); // Medium LC
+            FrequencyoftheMostFrequentElementFunc(); // Medium LC
+            HIndexIIFunc(); // Medium LC
         }
     }
 }
