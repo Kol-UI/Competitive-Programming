@@ -51,7 +51,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             RestoreIpAddressesFunc, SnakesAndLaddersFunc, FindClosestNodetoGivenTwoNodesFunc, FruitIntoBasketsFunc, JumpGameIIFunc, AllPathsFromSourcetoTargetFunc,
             AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc,
-            SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc, CountSubIslandsFunc,
+            SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc, CountSubIslandsFunc, KRadiusSubarrayAveragesFunc,
             NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc,
             MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc, HIndexIIFunc,
             OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc, RangeSumofSortedSubarraySumsFunc,
@@ -75,7 +75,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] leetCodeHardList = new Delegate[]
         {
-            CountDigitOneFunc, LongestPathWithDifferentAdjacentCharactersFunc, CheckifPointIsReachableFunc, NamingaCompanyFunc, IPOFunc, EditDistanceFunc, CountSubarraysWithFixedBoundsFunc, JumpGameIVFunc, LongestCycleinaGraphFunc, NumberofWaysofCuttingaPizzaFunc,
+            CountDigitOneFunc, LongestPathWithDifferentAdjacentCharactersFunc, CheckifPointIsReachableFunc, NamingaCompanyFunc, IPOFunc, EditDistanceFunc, CountSubarraysWithFixedBoundsFunc, JumpGameIVFunc, LongestCycleinaGraphFunc, NumberofWaysofCuttingaPizzaFunc, FindMinimuminRotatedSortedArrayIIFunc,
             ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
             MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc,
         };
@@ -8596,16 +8596,59 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void KRadiusSubarrayAveragesFunc()
+        {
+            Program.Space();
+            Program.Title("K Radius Subarray Averages");
+            string source = "LC";
+
+            int[] nums1 = {7,4,3,9,1,8,5,2,6};
+            int k1 = 3;
+            int[] nums2 = {100000};
+            int k2 = 0;
+            int[] nums3 = {8};
+            int k3 = 100000;
+
+            int[] result1 = LeetCode.KRadiusSubarrayAverages.Solution.GetAverages(nums1, k1);
+            int[] result2 = LeetCode.KRadiusSubarrayAverages.Solution.GetAverages(nums2, k2);
+            int[] result3 = LeetCode.KRadiusSubarrayAverages.Solution.GetAverages(nums3, k3);
+            int[] case1 = {-1,-1,-1,5,4,4,-1,-1,-1};
+            int[] case2 = {100000};
+            int[] case3 = {-1};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, case1),
+                ResultTester.CheckResult<int[]>(result2, case2),
+                ResultTester.CheckResult<int[]>(result3, case3)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void FindMinimuminRotatedSortedArrayIIFunc()
+        {
+            Program.Space();
+            Program.Title("Find Minimum in Rotated Sorted Array II");
+            string source = "LC";
+
+            int[] nums1 = {1,3,5};
+            int[] nums2 = {2,2,2,0,1};
+            int result1 = LeetCode.FindMinimuminRotatedSortedArrayII.Solution.FindMin(nums1);
+            int result2 = LeetCode.FindMinimuminRotatedSortedArrayII.Solution.FindMin(nums2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 0)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            ShortestSubarraytobeRemovedtoMakeArraySortedFunc(); // Medium LC
-            RangeSumofSortedSubarraySumsFunc(); // Medium LC
-            MinimumSizeSubarraySumFunc(); // Medium LC
-            ValidTriangleNumberFunc(); // Medium LC
-            CountCompleteTreeNodesFunc(); // Medium LC
-            FrequencyoftheMostFrequentElementFunc(); // Medium LC
-            HIndexIIFunc(); // Medium LC
+            KRadiusSubarrayAveragesFunc(); // Medium LC
+            FindMinimuminRotatedSortedArrayIIFunc(); // Hard LC
         }
     }
 }
