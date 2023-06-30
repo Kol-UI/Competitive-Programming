@@ -46,7 +46,7 @@ namespace CompetitiveProgramming.LeetCode.CheckingExistenceofEdgeLengthLimitedPa
     {
         // Union Find
         
-        public bool[] DistanceLimitedPathsExist(int n, int[][] edgeList, int[][] queries)
+        public static bool[] DistanceLimitedPathsExist(int n, int[][] edgeList, int[][] queries)
         {
             int edgesCount = edgeList.Length;
             int queriesCount = queries.Length;

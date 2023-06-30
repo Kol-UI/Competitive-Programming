@@ -34,7 +34,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             KthMissingPositiveNumberFunc, ConvertSortedArraytoBinarySearchTree, CanPlaceFlowersFunc, KItemsWiththeMaximumSumFunc, BinarySearchFunc,
             CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc,
             BestPokerHandFunc, LastStoneWeightFunc, AddDigitsFunc, BulbSwitcherFunc, FindtheDifferenceFunc, RepeatedSubstringPatternFunc,
-            MoveZeroesFunc, PlusOneFunc, AverageSalaryExcludingtheMinimumandMaximumSalaryFunc, FindifPathExistsinGraphFunc,
+            MoveZeroesFunc, PlusOneFunc, AverageSalaryExcludingtheMinimumandMaximumSalaryFunc, FindifPathExistsinGraphFunc, RichestCustomerWealthFunc,
             SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, LengthofLastWordFunc, ToLowerCaseFunc,
             FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ValidPerfectSquareFunc, ArrangingCoinsFunc, BaseballGameFunc,
             RobotReturntoOriginFunc, FindWinneronaTicTacToeGameFunc, LemonadeChangeFunc, LargestPerimeterTriangleFunc, CheckIfItIsaStraightLineFunc,
@@ -69,7 +69,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc, LongestArithmeticSubsequenceFunc,
             StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc, ValidTriangleNumberFunc, RandomPickwithWeightFunc,
             TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc,
-            DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc,
+            DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc,
             MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc, LongestRepeatingCharacterReplacementFunc,
         };
 
@@ -78,7 +78,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CountDigitOneFunc, LongestPathWithDifferentAdjacentCharactersFunc, CheckifPointIsReachableFunc, NamingaCompanyFunc, IPOFunc, EditDistanceFunc, CountSubarraysWithFixedBoundsFunc, JumpGameIVFunc, LongestCycleinaGraphFunc, NumberofWaysofCuttingaPizzaFunc, FindMinimuminRotatedSortedArrayIIFunc,
             ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
             MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc,
-            NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc,
+            NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -3982,6 +3982,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Merge Strings Alternately");
+            string source = "LC";
 
             // Case 1
             string Case1_1768 = LeetCode.MergeStringsAlternately.Solution.MergeAlternately("abc", "pqr");
@@ -3994,6 +3995,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             // Case 3
             string Case3_1768 = LeetCode.MergeStringsAlternately.Solution.MergeAlternately("abcd", "pq");
             Console.WriteLine("Result 3 : {0}", Case3_1768);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(Case1_1768, "apbqcr"),
+                ResultTester.CheckResult<string>(Case2_1768, "apbqrs"),
+                ResultTester.CheckResult<string>(Case3_1768, "apbqcd")
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -5312,6 +5321,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Max Number of K-Sum Pairs");
+            string source = "LC";
 
             // Case 1
             int[] nums1 = {1,2,3,4};
@@ -5324,6 +5334,15 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int k2 = 6;
             int result2 = LeetCode.MaxNumberofKSumPairs.Solution.MaxOperations(nums2, k2);
             Console.WriteLine("Result 2 : {0}", result2);
+
+            int output1 = 2;
+            int output2 = 1;
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1),
+                ResultTester.CheckResult<int>(result2, output2)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -5397,6 +5416,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Find the Highest Altitude");
+            string source = "LC";
 
             int[] gain1 = {-5,1,5,0,-7};
             int[] gain2 = {-4,-3,-2,-1,4,3,2};
@@ -5404,8 +5424,12 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int result1 = LeetCode.FindtheHighestAltitude.Solution.LargestAltitude(gain1);
             int result2 = LeetCode.FindtheHighestAltitude.Solution.LargestAltitude(gain2);
 
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 0)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -5542,6 +5566,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Maximize Score After N Operations");
+            string source = "LC";
 
             int[] case1_1799 = {1,2};
             int[] case2_1799 = {3,4,6,8};
@@ -5551,9 +5576,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int result2 = LeetCode.MaximizeScoreAfterNOperations.Solution.MaxScore(case2_1799);
             int result3 = LeetCode.MaximizeScoreAfterNOperations.Solution.MaxScore(case3_1799);
 
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-            Console.WriteLine("Result 3 : {0}", result3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 11),
+                ResultTester.CheckResult<int>(result3, 14)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -5912,6 +5941,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Determine if Two Strings Are Close");
+            string source = "LC";
 
             string word1_1 = "abc";
             string word2_1 = "bca";
@@ -5924,9 +5954,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             bool result2 = LeetCode.DetermineifTwoStringsAreClose.Solution.CloseStrings(word1_2, word2_2);
             bool result3 = LeetCode.DetermineifTwoStringsAreClose.Solution.CloseStrings(word1_3, word2_3);
 
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-            Console.WriteLine("Result 3 : {0}", result3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false),
+                ResultTester.CheckResult<bool>(result3, true)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -6169,6 +6203,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Goal Parser Interpretation");
+            string source = "LC";
 
             string command1 = "G()(al)";
             string command2 = "G()()()()(al)";
@@ -6178,9 +6213,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             string result2 = LeetCode.GoalParserInterpretation.Solution.Interpret(command2);
             string result3 = LeetCode.GoalParserInterpretation.Solution.Interpret(command3);
 
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-            Console.WriteLine("Result 3 : {0}", result3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(result1, "Goal"),
+                ResultTester.CheckResult<string>(result2, "Gooooal"),
+                ResultTester.CheckResult<string>(result3, "alGalooG")
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -6285,6 +6324,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Check if One String Swap Can Make Strings Equal");
+            string source = "LC";
 
             string case1s1 = "bank";
             string case1s2 = "kanb";
@@ -6297,9 +6337,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             bool result2 = LeetCode.CheckifOneStringSwapCanMakeStringsEqual.Solution.AreAlmostEqual(case2s1, case2s2);
             bool result3 = LeetCode.CheckifOneStringSwapCanMakeStringsEqual.Solution.AreAlmostEqual(case3s1, case3s2);
 
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-            Console.WriteLine("Result 3 : {0}", result3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false),
+                ResultTester.CheckResult<bool>(result3, true)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -8934,22 +8978,112 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void SwappingNodesinaLinkedListFunc()
+        {
+            Program.Space();
+            Program.Title("Swapping Nodes in a Linked List");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void CheckingExistenceofEdgeLengthLimitedPathsFunc()
+        {
+            Program.Space();
+            Program.Title("Checking Existence of Edge Length Limited Paths");
+            string source = "LC";
+            int n1 = 3;
+            int[][] edgeList1 = new int[][]
+            {
+                new int[] { 0,1,2 },
+                new int[] { 1,2,4 },
+                new int[] { 2,0,8 },
+                new int[] { 1,0,16 }
+            };
+
+            int[][] queries1 = new int[][]
+            {
+                new int[] { 0, 1, 2 },
+                new int[] { 0, 2, 5 }
+            };
+
+            int n2 = 5;
+            int[][] edgeList2 = new int[][]
+            {
+                new int[] {0,1,10},
+                new int[] {1,2,5},
+                new int[] {2,3,9},
+                new int[] {3,4,13}
+            };
+
+            int[][] queries2 = new int[][]
+            {
+                new int[] {0,4,14},
+                new int[] {1,4,13}
+            };
+
+            bool[] result1 = LeetCode.CheckingExistenceofEdgeLengthLimitedPaths.Solution.DistanceLimitedPathsExist(n1, edgeList1, queries1);
+            bool[] expected1 = {false, true};
+            bool[] result2 = LeetCode.CheckingExistenceofEdgeLengthLimitedPaths.Solution.DistanceLimitedPathsExist(n2, edgeList2, queries2);
+            bool[] expected2 = {true, false};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool[]>(result1, expected1),
+                ResultTester.CheckResult<bool[]>(result2, expected2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void MinimizeDeviationinArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Minimize Deviation in Array");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void RichestCustomerWealthFunc()
+        {
+            Program.Space();
+            Program.Title("Richest Customer Wealth");
+            string source = "LC";
+            int[][] accounts1 = new int[][]
+            {
+                new int[]{1, 2, 3},
+                new int[]{3,2,1}
+            };
+            int[][] accounts2 = new int[][]
+            {
+                new int[]{1,5},
+                new int[]{7,3},
+                new int[]{3,5}
+            };
+            int[][] accounts3 = new int[][]
+            {
+                new int[]{2,8,7},
+                new int[]{7,1,3},
+                new int[]{1,9,5}
+            };
+            int result1 = LeetCode.RichestCustomerWealth.Solution.MaximumWealth(accounts1);
+            int result2 = LeetCode.RichestCustomerWealth.Solution.MaximumWealth(accounts2);
+            int result3 = LeetCode.RichestCustomerWealth.Solution.MaximumWealth(accounts3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 6),
+                ResultTester.CheckResult<int>(result2, 10),
+                ResultTester.CheckResult<int>(result3, 17)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            NumberofWaystoReorderArraytoGetSameBSTFunc(); // Hard LC
-            LongestArithmeticSubsequenceFunc(); // Medium LC
-            TallestBillboardFunc(); // Hard LC
-            MinimumLimitofBallsinaBagFunc(); // Medium LC
-            MagneticForceBetweenTwoBallsFunc(); // Medium LC
-            FindaPeakElementIIFunc(); // Medium LC
-            FindtheStudentthatWillReplacetheChalkFunc(); // Medium LC
-            FindKClosestElementsFunc(); // Medium LC
-            RandomPickwithWeightFunc(); // Medium LC
-            SellDiminishingValuedColoredBallsFunc(); // Medium LC
-            AvoidFloodinTheCityFunc(); // Medium LC
-            OpentheLockFunc(); // Medium LC
-            LongestRepeatingCharacterReplacementFunc(); // Medium LC
+            
         }
     }
 }
