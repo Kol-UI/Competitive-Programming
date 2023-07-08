@@ -44,7 +44,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SubtracttheProductandSumofDigitsofanIntegerFunc, SpecialArrayWithXElementsGreaterThanorEqualXFunc, SqrtxFunc, FindtheDistanceValueBetweenTwoArraysFunc, SortColorsFunc,
             SumofAllOddLengthSubarraysFunc, NextGreaterElementIFunc, SquaresofaSortedArrayFunc, FibonacciNumberFunc, FindNearestPointThatHastheSameXorYCoordinateFunc,
             Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc,
-            ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc,
+            ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -9080,10 +9080,26 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void IntegerBreakFunc()
+        {
+            Program.Space();
+            Program.Title("Integer Break");
+            string source = "LC";
+            int result1 = LeetCode.IntegerBreak.Solution.IntegerBreak(2);
+            int result2 = LeetCode.IntegerBreak.Solution.IntegerBreak(10);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 36)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            
+            IntegerBreakFunc(); // Easy LC
         }
     }
 }
