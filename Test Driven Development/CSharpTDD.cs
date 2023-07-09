@@ -78,7 +78,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CountDigitOneFunc, LongestPathWithDifferentAdjacentCharactersFunc, CheckifPointIsReachableFunc, NamingaCompanyFunc, IPOFunc, EditDistanceFunc, CountSubarraysWithFixedBoundsFunc, JumpGameIVFunc, LongestCycleinaGraphFunc, NumberofWaysofCuttingaPizzaFunc, FindMinimuminRotatedSortedArrayIIFunc,
             ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
             MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc,
-            NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc,
+            NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -9096,10 +9096,29 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void SubstringWithLargestVarianceFunc()
+        {
+            Program.Space();
+            Program.Title("Substring With Largest Variance");
+            string source = "LC";
+
+            string string1 = "aababbb";
+            string string2 = "abcde";
+            int result1 = LeetCode.SubstringWithLargestVariance.Solution.LargestVariance(string1);
+            int result2 = LeetCode.SubstringWithLargestVariance.Solution.LargestVariance(string2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 0)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            IntegerBreakFunc(); // Easy LC
+            SubstringWithLargestVarianceFunc(); // Hard LC
         }
     }
 }
