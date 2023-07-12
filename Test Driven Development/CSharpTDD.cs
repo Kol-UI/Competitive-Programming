@@ -66,11 +66,12 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MaxConsecutiveOnesIIIFunc, LongestSubarrayof1sAfterDeletingOneElementFunc, NumberofProvincesFunc, NumberofSubsequencesThatSatisfytheGivenSumConditionFunc, AsteroidCollisionFunc,
             FindPeakElementFunc, WateringPlantsIIFunc, CarPoolingFunc, CountWaysToBuildGoodStringsFunc, TotalCosttoHireKWorkersFunc, PacificAtlanticWaterFlowFunc, FindtheStudentthatWillReplacetheChalkFunc,
             MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc, MinimumLimitofBallsinaBagFunc,
-            NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc, LongestArithmeticSubsequenceFunc,
+            NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc, LongestArithmeticSubsequenceFunc, MaximalNetworkRankFunc,
             StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc, ValidTriangleNumberFunc, RandomPickwithWeightFunc,
             TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc,
             DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc,
             MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc, LongestRepeatingCharacterReplacementFunc,
+            NextGreaterElementIIIFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -79,6 +80,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
             MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc,
             NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc,
+            CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -9115,10 +9117,118 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void MaximalNetworkRankFunc()
+        {
+            Program.Space();
+            Program.Title("Maximal Network Rank");
+            string source = "LC";
+
+            int n1 = 4;
+            int[][] roads1 = new int[][]
+            {
+                new int[] {0,1},
+                new int[] {0,3},
+                new int[] {1,2},
+                new int[] {1,3}
+            };
+            int n2 = 5;
+            int[][] roads2 = new int[][]
+            {
+                new int[] {0,1},
+                new int[] {0,3},
+                new int[] {1,2},
+                new int[] {1,3},
+                new int[] {2,3},
+                new int[] {2,4}
+            };
+            int n3 = 8;
+            int[][] roads3 = new int[][]
+            {
+                new int[] {0,1},
+                new int[] {1,2},
+                new int[] {2,3},
+                new int[] {2,4},
+                new int[] {5,6},
+                new int[] {5,7}
+            };
+            int result1 = LeetCode.MaximalNetworkRank.Solution.MaximalNetworkRank(n1, roads1);
+            int result2 = LeetCode.MaximalNetworkRank.Solution.MaximalNetworkRank(n2, roads2);
+            int result3 = LeetCode.MaximalNetworkRank.Solution.MaximalNetworkRank(n3, roads3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 4),
+                ResultTester.CheckResult<int>(result2, 5),
+                ResultTester.CheckResult<int>(result3, 5)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void CountAllPossibleRoutesFunc()
+        {
+            Program.Space();
+            Program.Title("Count All Possible Routes");
+            string source = "LC";
+            int[] locations1 = {2,3,6,8,4}; int start1 = 1; int finish1 = 3; int fuel1 = 5;
+            int[] locations2 = {4,3,1}; int start2 = 1; int finish2 = 0; int fuel2 = 6;
+            int[] locations3 = {5,2,1}; int start3 = 0; int finish3 = 2; int fuel3 = 3;
+            int result1 = LeetCode.CountAllPossibleRoutes.Solution.CountRoutes(locations1, start1, finish1, fuel1);
+            int result2 = LeetCode.CountAllPossibleRoutes.Solution.CountRoutes(locations2, start2, finish2, fuel2);
+            int result3 = LeetCode.CountAllPossibleRoutes.Solution.CountRoutes(locations3, start3, finish3, fuel3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 4),
+                ResultTester.CheckResult<int>(result2, 5),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void MinimumJumpstoReachHomeFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Jumps to Reach Home");
+            string source = "LC";
+            int[] forbidden1 = {14,4,18,1,15}; int a1 = 3; int b1 = 15; int x1 = 9;
+            int[] forbidden2 = {8,3,16,6,12,20}; int a2 = 15; int b2 = 13; int x2 = 11;
+            int[] forbidden3 = {1,6,2,14,5,17,4}; int a3 = 16; int b3 = 9; int x3 = 7;
+            int result1 = LeetCode.MinimumJumpstoReachHome.Solution.MinimumJumps(forbidden1, a1, b1, x1);
+            int result2 = LeetCode.MinimumJumpstoReachHome.Solution.MinimumJumps(forbidden2, a2, b2, x2);
+            int result3 = LeetCode.MinimumJumpstoReachHome.Solution.MinimumJumps(forbidden3, a3, b3, x3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, -1),
+                ResultTester.CheckResult<int>(result3, 2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void NextGreaterElementIIIFunc()
+        {
+            Program.Space();
+            Program.Title("Next Greater Element III");
+            string source = "LC";
+            int result1 = LeetCode.NextGreaterElementIII.Solution.NextGreaterElement(12);
+            int result2 = LeetCode.NextGreaterElementIII.Solution.NextGreaterElement(21);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 21),
+                ResultTester.CheckResult<int>(result2, -1)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            SubstringWithLargestVarianceFunc(); // Hard LC
+            MaximalNetworkRankFunc(); // Medium LC
+            CountAllPossibleRoutesFunc(); // Hard LC
+            MinimumJumpstoReachHomeFunc(); // Hard LC
+            NextGreaterElementIIIFunc(); // Medium LC
         }
     }
 }
