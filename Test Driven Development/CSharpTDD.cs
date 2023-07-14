@@ -71,7 +71,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc,
             DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc,
             MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc, LongestRepeatingCharacterReplacementFunc,
-            NextGreaterElementIIIFunc,
+            NextGreaterElementIIIFunc, SubsetsIIFunc,
+            SmallestRangeIIFunc,
+            LongestArithmeticSubsequenceofGivenDifferenceFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -81,6 +83,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc,
             NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc,
             CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc,
+            MinimumCosttoMakeArrayEqualFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -9222,6 +9225,79 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void SmallestRangeIIFunc()
+        {
+            Program.Space();
+            Program.Title("Smallest Range II");
+            string source = "LC";
+            int[] nums1 = {1}; int k1 = 0;
+            int[] nums2 = {0, 10}; int k2 = 2;
+            int[] nums3 = {1, 3, 6}; int k3 = 3;
+            int result1 = LeetCode.SmallestRangeII.Solution.SmallestRangeII(nums1, k1);
+            int result2 = LeetCode.SmallestRangeII.Solution.SmallestRangeII(nums2, k2);
+            int result3 = LeetCode.SmallestRangeII.Solution.SmallestRangeII(nums3, k3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 0),
+                ResultTester.CheckResult<int>(result2, 6),
+                ResultTester.CheckResult<int>(result3, 3)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void LongestArithmeticSubsequenceofGivenDifferenceFunc()
+        {
+            Program.Space();
+            Program.Title("Longest Arithmetic Subsequence of Given Difference");
+            string source = "LC";
+            int[] arr1 = {1,2,3,4}; int difference1 = 1;
+            int[] arr2 = {1,3,5,7}; int difference2 = 1;
+            int[] arr3 = {1,5,7,8,5,3,4,2,1}; int difference3 = -2;
+            int result1 = LeetCode.LongestArithmeticSubsequenceofGivenDifference.Solution.LongestSubsequence(arr1, difference1);
+            int result2 = LeetCode.LongestArithmeticSubsequenceofGivenDifference.Solution.LongestSubsequence(arr2, difference2);
+            int result3 = LeetCode.LongestArithmeticSubsequenceofGivenDifference.Solution.LongestSubsequence(arr3, difference3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 4),
+                ResultTester.CheckResult<int>(result2, 1),
+                ResultTester.CheckResult<int>(result3, 4)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void MinimumCosttoMakeArrayEqualFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Cost to Make Array Equal");
+            string source = "LC";
+            int[] nums1 = {1,3,5,2}; int[] cost1 = {2,3,1,14};
+            int[] nums2 = {2,2,2,2,2}; int[] cost2 = {4,2,8,1,3};
+            double result1 = LeetCode.MinimumCosttoMakeArrayEqual.Solution.MinCost(nums1, cost1);
+            double result2 = LeetCode.MinimumCosttoMakeArrayEqual.Solution.MinCost(nums2, cost2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<double>(result1, 8),
+                ResultTester.CheckResult<double>(result2, 0)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void SubsetsIIFunc()
+        {
+            Program.Space();
+            Program.Title("Subsets II");
+            string source = "LC";
+            int[] nums1 = {1,2,2};
+            int[] nums2 = {0};
+            IList<IList<int>>? result1 = LeetCode.SubsetsII.Solution.SubsetsWithDup(nums1);
+            IList<IList<int>>? result2 = LeetCode.SubsetsII.Solution.SubsetsWithDup(nums2);
+            ResultTester.SpecialTestCase(source);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
@@ -9229,6 +9305,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CountAllPossibleRoutesFunc(); // Hard LC
             MinimumJumpstoReachHomeFunc(); // Hard LC
             NextGreaterElementIIIFunc(); // Medium LC
+            SmallestRangeIIFunc(); // Medium LC
+            LongestArithmeticSubsequenceofGivenDifferenceFunc(); // Medium LC
+            MinimumCosttoMakeArrayEqualFunc(); // Hard LC
+            SubsetsIIFunc(); // Medium LC
         }
     }
 }
