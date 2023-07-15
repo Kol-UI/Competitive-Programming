@@ -26,28 +26,35 @@ namespace CompetitiveProgramming.LeetCode.BestTeamWithNoConflicts
         // Output: 6
         // Explanation: It is best to choose the first 3 players. 
 
-        public int BestTeamScore(int[] scores, int[] ages)
+        public static int BestTeamScore(int[] scores, int[] ages)
         {
             int n = ages.Length;
             int[][] candidate = new int[n][];
 
-            for(int k = 0; k < n; k++){
+            for(int k = 0; k < n; k++)
+            {
                 candidate[k] = new int[2];
             }
             
-            for(int i=0; i<n; i++) {
+            for(int i = 0; i < n; i++)
+            {
                 candidate[i][0] = ages[i];
                 candidate[i][1] = scores[i];
             }
+
             Array.Sort(candidate, (a,b) => a[0] == b[0] ? a[1]-b[1] : a[0]-b[0]);
             int[] dp = new int[n];
             dp[0] = candidate[0][1];
-            int max = dp[0];             
-            for(int i=1; i<n; i++) {      
+            int max = dp[0];  
+
+            for(int i = 1; i < n; i++)
+            {      
                 dp[i] = candidate[i][1];  
-                for(int j=0; j<i; j++) {
-                    if(candidate[j][1] <= candidate[i][1]) {
-                        dp[i] = Math.Max(dp[i], candidate[i][1]+dp[j]);
+                for(int j = 0; j < i; j++)
+                {
+                    if(candidate[j][1] <= candidate[i][1])
+                    {
+                        dp[i] = Math.Max(dp[i], candidate[i][1] + dp[j]);
                     }  
                 }
                 max = Math.Max(dp[i], max);

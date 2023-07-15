@@ -254,4 +254,14 @@ bool[] results = new bool[]
 ResultTester.CheckSolution(source, results);
 */
 
-// TODO : 1657 Tests
+/*
+bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 5),
+                ResultTester.CheckResult<int>(result3, 2)
+            };
+            ResultTester.CheckSolution(source, results);
+*/
+
+// TODO : 1480 Tests
