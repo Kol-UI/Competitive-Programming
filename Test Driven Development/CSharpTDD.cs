@@ -84,6 +84,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc,
             CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc,
             MinimumCosttoMakeArrayEqualFunc,
+            MaximumNumberofEventsThatCanBeAttendedIIFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -9298,6 +9299,46 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void MaximumNumberofEventsThatCanBeAttendedIIFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Number of Events That Can Be Attended II");
+            string source = "LC";
+            int[][] events1 = new int[][]
+            {
+                new int[] { 1, 2, 4 },
+                new int[] { 3, 4, 3 },
+                new int[] { 2, 3, 1 }
+            };
+            int k1 = 2;
+            int[][] events2 = new int[][]
+            {
+                new int[] { 1, 2, 4 },
+                new int[] { 3, 4, 3 },
+                new int[] { 2, 3, 10 }
+            };
+            int k2 = 2;
+            int[][] events3 = new int[][]
+            {
+                new int[] { 1, 1, 1, },
+                new int[] { 2, 2, 2 },
+                new int[] { 3, 3, 3 },
+                new int[] { 4, 4, 4 }
+            };
+            int k3 = 3;
+            int result1 = LeetCode.MaximumNumberofEventsThatCanBeAttendedII.Solution.MaxValue(events1, k1);
+            int result2 = LeetCode.MaximumNumberofEventsThatCanBeAttendedII.Solution.MaxValue(events2, k2);
+            int result3 = LeetCode.MaximumNumberofEventsThatCanBeAttendedII.Solution.MaxValue(events3, k3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 7),
+                ResultTester.CheckResult<int>(result2, 10),
+                ResultTester.CheckResult<int>(result3, 9)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
@@ -9309,6 +9350,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             LongestArithmeticSubsequenceofGivenDifferenceFunc(); // Medium LC
             MinimumCosttoMakeArrayEqualFunc(); // Hard LC
             SubsetsIIFunc(); // Medium LC
+            MaximumNumberofEventsThatCanBeAttendedIIFunc(); // Hard LC
         }
     }
 }
