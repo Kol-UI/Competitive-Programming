@@ -72,8 +72,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc,
             MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc, LongestRepeatingCharacterReplacementFunc,
             NextGreaterElementIIIFunc, SubsetsIIFunc, MinimumNumberofVerticestoReachAllNodesFunc,
-            SmallestRangeIIFunc, BestTeamWithNoConflictsFunc,
-            LongestArithmeticSubsequenceofGivenDifferenceFunc,
+            SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc,
+            LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -82,9 +82,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
             MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc,
             NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc,
-            CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc,
+            CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc, BusRoutesFunc,
             MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc,
-            MaximumNumberofEventsThatCanBeAttendedIIFunc,
+            MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc,
+            CourseScheduleIIFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -9473,18 +9474,157 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void SmallestSufficientTeamFunc()
+        {
+            Program.Space();
+            Program.Title("Smallest Sufficient Team");
+            string source = "LC";
+            string[] req_skills1 = { "java", "nodejs", "reactjs" };
+            IList<IList<string>> people1 = new List<IList<string>>
+            {
+                new List<string> { "java" },
+                new List<string> { "nodejs" },
+                new List<string> { "nodejs", "reactjs" }
+            };
+            string[] req_skills2 = { "algorithms", "math", "java", "reactjs", "csharp", "aws" };
+            IList<IList<string>> people2 = new List<IList<string>>
+            {
+                new List<string> { "algorithms", "math", "java" },
+                new List<string> { "algorithms", "math", "reactjs" },
+                new List<string> { "java", "csharp", "aws" },
+                new List<string> { "reactjs", "csharp" },
+                new List<string> { "csharp", "math" },
+                new List<string> { "aws", "java" }
+            };
+            int[] result1 = LeetCode.SmallestSufficientTeam.Solution.SmallestSufficientTeam(req_skills1, people1);
+            int[] result2 = LeetCode.SmallestSufficientTeam.Solution.SmallestSufficientTeam(req_skills2, people2);
+            int[] expected1 = {0,2};
+            int[] expected2 = {1,2};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void ThreeSumClosestFunc()
+        {
+            Program.Space();
+            Program.Title("3Sum Closest");
+            string source = "LC";
+            int[] nums1 = {-1,2,1,-4};
+            int target1 = 1;
+            int[] nums2 = {0,0,0};
+            int target2 = 1;
+            int result1 = LeetCode.ThreeSumClosest.Solution.ThreeSumClosest(nums1, target1);
+            int result2 = LeetCode.ThreeSumClosest.Solution.ThreeSumClosest(nums2, target2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, 0)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void PartitionEqualSubsetSumFunc()
+        {
+            Program.Space();
+            Program.Title("Partition Equal Subset Sum");
+            string source = "LC";
+            int[] nums1 = {1,5,11,5};
+            int[] nums2 = {1,2,3,5};
+            bool result1 = LeetCode.PartitionEqualSubsetSum.Solution.CanPartition(nums1);
+            bool result2 = LeetCode.PartitionEqualSubsetSum.Solution.CanPartition(nums2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void BusRoutesFunc()
+        {
+            Program.Space();
+            Program.Title("Bus Routes");
+            string source = "LC";
+            int[][] routes1 = new int[][]
+            {
+                new int[] { 1, 2, 7 },
+                new int[] { 3, 6, 7 },
+                new int[] { 23, 30, 34, 60 }
+            };
+            int source1 = 1;
+            int target1 = 6;
+            int[][] routes2 = new int[][]
+            {
+                new int[] { 7,12 },
+                new int[] { 4,5,15 },
+                new int[] { 6 },
+                new int[] { 15,19 },
+                new int[] { 9,12,13 }
+            };
+            int source2 = 1;
+            int target2 = 6;
+            int result1 = LeetCode.BusRoutes.Solution.NumBusesToDestination(routes1, source1, target1);
+            int result2 = LeetCode.BusRoutes.Solution.NumBusesToDestination(routes2, source2, target2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, -1)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void CourseScheduleIIFunc()
+        {
+            Program.Space();
+            Program.Title("Course Schedule II");
+            string source = "LC";
+            int numCourses1 = 2;
+            int[][] prerequisites1 = new int[][]
+            {
+                new int[] { 1, 0 }
+            };
+            int numCourses2 = 4;
+            int[][] prerequisites2 = new int[][]
+            {
+                new int[] { 1, 0 },
+                new int[] { 2, 0 },
+                new int[] { 3, 1 },
+                new int[] { 3, 2 }
+            };
+            int numCourses3 = 1;
+            int[][] prerequisites3 = new int[][] {};
+            int[] result1 = LeetCode.CourseScheduleII.Solution.FindOrder(numCourses1, prerequisites1);
+            int[] result2 = LeetCode.CourseScheduleII.Solution.FindOrder(numCourses2, prerequisites2);
+            int[] result3 = LeetCode.CourseScheduleII.Solution.FindOrder(numCourses3, prerequisites3);
+            int[] expected1 = {0,1};
+            int[] expected2 = {0,2,1,3};
+            int[] expected3 = {0};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, result2),
+                ResultTester.CheckResult<int[]>(result3, expected3)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            MaximalNetworkRankFunc(); // Medium LC
-            CountAllPossibleRoutesFunc(); // Hard LC
-            MinimumJumpstoReachHomeFunc(); // Hard LC
-            NextGreaterElementIIIFunc(); // Medium LC
-            SmallestRangeIIFunc(); // Medium LC
-            LongestArithmeticSubsequenceofGivenDifferenceFunc(); // Medium LC
-            MinimumCosttoMakeArrayEqualFunc(); // Hard LC
-            SubsetsIIFunc(); // Medium LC
-            MaximumNumberofEventsThatCanBeAttendedIIFunc(); // Hard LC
+            SmallestSufficientTeamFunc(); // Hard LC
+            ThreeSumClosestFunc(); // Medium LC
+            PartitionEqualSubsetSumFunc(); // Medium LC
+            BusRoutesFunc(); // Hard LC
+            CourseScheduleIIFunc(); // Medium LC
         }
     }
 }
