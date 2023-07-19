@@ -51,7 +51,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             RestoreIpAddressesFunc, SnakesAndLaddersFunc, FindClosestNodetoGivenTwoNodesFunc, FruitIntoBasketsFunc, JumpGameIIFunc, AllPathsFromSourcetoTargetFunc, MagneticForceBetweenTwoBallsFunc,
             AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc,
-            SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc, CountSubIslandsFunc, KRadiusSubarrayAveragesFunc,
+            SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc, CountSubIslandsFunc, KRadiusSubarrayAveragesFunc, SeatReservationManagerFunc,
             NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc,
             MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc, HIndexIIFunc, FindaPeakElementIIFunc,
             OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc, RangeSumofSortedSubarraySumsFunc, SellDiminishingValuedColoredBallsFunc,
@@ -63,7 +63,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             LongestSubstringWithoutRepeatingCharactersFunc, UniquePathsIIFunc, MaximalSquareFunc, JumpGameFunc, PathSumIIFunc, MaximumValueataGivenIndexinaBoundedArrayFunc, BinarySearchTreeIteratorFunc, KthSmallestElementinaBSTFunc, ConstructBinaryTreefromPreorderandInorderTraversalFunc, SmallestNumberinInfiniteSetFunc,
             SnapshotArrayFunc, LongestIncreasingSubsequenceFunc, WiggleSubsequenceFunc, LongestPalindromicSubstringFunc, RangeSumQuery2DImmutableFunc, BestTimetoBuyandSellStockIIFunc, BestSightseeingPairFunc, MatrixBlockSumFunc, MaximumProductSubarrayFunc, MaximumLengthofSubarrayWithPositiveProductFunc,
             FindtheWinneroftheCircularGameFunc, RemoveDuplicatesfromSortedListIIFunc, DesignLinkedListFunc, MinStackFunc, CoinChangeFunc, CoinChangeIIFunc, MinimumRoundstoCompleteAllTasksFunc, SolvingQuestionsWithBrainpowerFunc, MaximumTwinSumofaLinkedListFunc, DeletetheMiddleNodeofaLinkedListFunc,
-            MaxConsecutiveOnesIIIFunc, LongestSubarrayof1sAfterDeletingOneElementFunc, NumberofProvincesFunc, NumberofSubsequencesThatSatisfytheGivenSumConditionFunc, AsteroidCollisionFunc,
+            MaxConsecutiveOnesIIIFunc, LongestSubarrayof1sAfterDeletingOneElementFunc, NumberofProvincesFunc, NumberofSubsequencesThatSatisfytheGivenSumConditionFunc, AsteroidCollisionFunc, IntervalListIntersectionsFunc,
             FindPeakElementFunc, WateringPlantsIIFunc, CarPoolingFunc, CountWaysToBuildGoodStringsFunc, TotalCosttoHireKWorkersFunc, PacificAtlanticWaterFlowFunc, FindtheStudentthatWillReplacetheChalkFunc,
             MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc, MinimumLimitofBallsinaBagFunc,
             NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc, LongestArithmeticSubsequenceFunc, MaximalNetworkRankFunc,
@@ -71,9 +71,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc,
             DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc,
             MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc, LongestRepeatingCharacterReplacementFunc,
-            NextGreaterElementIIIFunc, SubsetsIIFunc, MinimumNumberofVerticestoReachAllNodesFunc,
-            SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc,
-            LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc,
+            NextGreaterElementIIIFunc, SubsetsIIFunc, MinimumNumberofVerticestoReachAllNodesFunc, BasicCalculatorIIFunc, TopKFrequentWordsFunc, NextGreaterElementIIFunc, LinkedListinBinaryTreeFunc,
+            SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc, CombinationSumFunc, CopyListwithRandomPointerFunc, MinimumGeneticMutationFunc,
+            LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -85,7 +85,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc, BusRoutesFunc,
             MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc,
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc,
-            CourseScheduleIIFunc,
+            CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -9617,14 +9617,275 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void BasicCalculatorIIFunc()
+        {
+            Program.Space();
+            Program.Title("Basic Calculator II");
+            string source = "LC";
+            string s1 = "3+2*2";
+            string s2 = " 3/2 ";
+            string s3 = " 3+5 / 2 ";
+            int result1 = LeetCode.BasicCalculatorII.Solution.Calculate(s1);
+            int result2 = LeetCode.BasicCalculatorII.Solution.Calculate(s2);
+            int result3 = LeetCode.BasicCalculatorII.Solution.Calculate(s3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 7),
+                ResultTester.CheckResult<int>(result2, 1),
+                ResultTester.CheckResult<int>(result3, 5)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void CombinationSumFunc()
+        {
+            Program.Space();
+            Program.Title("Combination Sum");
+            string source = "LC";
+            int[] candidates1 = {2,3,6,7};
+            int target1 = 7;
+            int[] candidates2 = {2,3,5};
+            int target2 = 8;
+            int[] candidates3 = {2};
+            int target3 = 1;
+            IList<IList<int>> expected1 = new List<IList<int>>
+            {
+                new List<int> { 2, 2, 3 },
+                new List<int> { 7 }
+            };
+            IList<IList<int>> expected2 = new List<IList<int>>
+            {
+                new List<int> { 2, 2, 2, 2 },
+                new List<int> { 2, 3, 3 },
+                new List<int> { 3, 5 }
+            };
+            IList<IList<int>> expected3 = new List<IList<int>>
+            {
+                new List<int> { }
+            };
+            IList<IList<int>> result1 = LeetCode.CombinationSum.Solution.CombinationSum(candidates1, target1);
+            IList<IList<int>> result2 = LeetCode.CombinationSum.Solution.CombinationSum(candidates2, target2);
+            IList<IList<int>> result3 = LeetCode.CombinationSum.Solution.CombinationSum(candidates3, target3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<IList<int>>>(result1, expected1),
+                ResultTester.CheckResult<IList<IList<int>>>(result2, expected2),
+                ResultTester.CheckResult<IList<IList<int>>>(result3, expected3)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void RotateListFunc()
+        {
+            Program.Space();
+            Program.Title("Rotate List");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void CopyListwithRandomPointerFunc()
+        {
+            Program.Space();
+            Program.Title("Copy List with Random Pointer");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void ArithmeticSubarraysFunc()
+        {
+            Program.Space();
+            Program.Title("Arithmetic Subarrays");
+            string source = "LC";
+            int[] nums1 = {4,6,5,9,3,7};
+            int[] l1 = {0,0,2};
+            int[] r1 = {2,3,5};
+            int[] nums2 = {-12,-9,-3,-12,-6,15,20,-25,-20,-15,-10};
+            int[] l2 = {0,1,6,4,8,7};
+            int[] r2 = {4,4,9,7,9,10};
+            IList<bool> result1 = LeetCode.ArithmeticSubarrays.Solution.CheckArithmeticSubarrays(nums1, l1, r1);
+            IList<bool> result2 = LeetCode.ArithmeticSubarrays.Solution.CheckArithmeticSubarrays(nums2, l2, r2);
+            IList<bool> expected1 = new List<bool> { true, false, true };
+            IList<bool> expected2 = new List<bool> { false,true,false,false,true,true };
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<bool>>(result1, expected1),
+                ResultTester.CheckResult<IList<bool>>(result2, expected2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void SeatReservationManagerFunc()
+        {
+            Program.Space();
+            Program.Title("Seat Reservation Manager");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void LastDayWhereYouCanStillCrossFunc()
+        {
+            Program.Space();
+            Program.Title("Last Day Where You Can Still Cross");
+            string source = "LC";
+            int row1 = 2;
+            int col1 = 2;
+            int[][] cells1 = new int[][]
+            {
+                new int[] { 1, 1 },
+                new int[] { 2, 1 },
+                new int[] { 2, 1 },
+                new int[] { 1, 2 },
+                new int[] { 2, 2 }
+            };
+            int row2 = 2;
+            int col2 = 2;
+            int[][] cells2 = new int[][]
+            {
+                new int[] { 1, 1 },
+                new int[] { 1, 2 },
+                new int[] { 1, 2 },
+                new int[] { 2, 2 }
+            };
+            int row3 = 3;
+            int col3 = 3;
+            int[][] cells3 = new int[][]
+            {
+                new int[] { 1, 2 },
+                new int[] { 2, 2 },
+                new int[] { 3, 3 },
+                new int[] { 2, 2 },
+                new int[] { 1, 1 },
+                new int[] { 1, 3 },
+                new int[] { 2, 3 },
+                new int[] { 3, 2 },
+                new int[] { 3, 1 }
+            };
+            int result1 = LeetCode.LastDayWhereYouCanStillCross.Solution.LatestDayToCross(row1, col1, cells1);
+            int result2 = LeetCode.LastDayWhereYouCanStillCross.Solution.LatestDayToCross(row2, col2, cells2);
+            int result3 = LeetCode.LastDayWhereYouCanStillCross.Solution.LatestDayToCross(row3, col3, cells3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 1),
+                ResultTester.CheckResult<int>(result3, 4)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void TopKFrequentWordsFunc()
+        {
+            Program.Space();
+            Program.Title("Top K Frequent Words");
+            string source = "LC";
+            string[] words1 = {"i","love","leetcode","i","love","coding"};
+            int k1 = 2;
+            string[] words2 = {"the","day","is","sunny","the","the","the","sunny","is","is"};
+            int k2 = 4;
+            IList<string> result1 = LeetCode.TopKFrequentWords.Solution.TopKFrequent(words1, k1);
+            IList<string> result2 = LeetCode.TopKFrequentWords.Solution.TopKFrequent(words2, k2);
+            IList<string> expected1 = new List<string> { "i", "love" };
+            IList<string> expected2 = new List<string> { "the", "is", "sunny", "day" };
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<string>>(result1, expected1),
+                ResultTester.CheckResult<IList<string>>(result2, expected2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void NextGreaterElementIIFunc()
+        {
+            Program.Space();
+            Program.Title("Next Greater Element II");
+            string source = "LC";
+            int[] nums1 = {1,2,1};
+            int[] nums2 = {1,2,3,4,3};
+            int[] result1 = LeetCode.NextGreaterElementII.Solution.NextGreaterElements(nums1);
+            int[] result2 = LeetCode.NextGreaterElementII.Solution.NextGreaterElements(nums2);
+            int[] expected1 = {2,-1,2};
+            int[] expected2 = {2,3,4,-1,4};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void OnlineElectionFunc()
+        {
+            Program.Space();
+            Program.Title("Online Election");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void MinimumGeneticMutationFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Genetic Mutation");
+            string source = "LC";
+            string startGene1 = "AACCGGTT";
+            string endGene1 = "AACCGGTA";
+            string[] bank1 = {"AACCGGTA"};
+            string startGene2 = "AACCGGTT";
+            string endGene2 = "AAACGGTA";
+            string[] bank2 = {"AACCGGTA","AACCGCTA","AAACGGTA"};
+            int result1 = LeetCode.MinimumGeneticMutation.Solution.MinMutation(startGene1, endGene1, bank1);
+            int result2 = LeetCode.MinimumGeneticMutation.Solution.MinMutation(startGene2, endGene2, bank2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 2)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void IntervalListIntersectionsFunc()
+        {
+            Program.Space();
+            Program.Title("Interval List Intersections");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void LinkedListinBinaryTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Genetic Mutation");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            SmallestSufficientTeamFunc(); // Hard LC
-            ThreeSumClosestFunc(); // Medium LC
-            PartitionEqualSubsetSumFunc(); // Medium LC
-            BusRoutesFunc(); // Hard LC
-            CourseScheduleIIFunc(); // Medium LC
+            BasicCalculatorIIFunc(); // Medium LC
+            CombinationSumFunc(); // Medium LC
+            RotateListFunc(); // Medium LC
+            CopyListwithRandomPointerFunc(); // Medium LC
+            ArithmeticSubarraysFunc(); // Medium LC
+            SeatReservationManagerFunc(); // Medium LC
+            LastDayWhereYouCanStillCrossFunc(); // Hard LC
+            TopKFrequentWordsFunc(); // Medium LC
+            NextGreaterElementIIFunc(); // Medium LC
+            OnlineElectionFunc(); // Medium LC
+            MinimumGeneticMutationFunc(); // Medium LC
+            IntervalListIntersectionsFunc(); // Medium LC
+            LinkedListinBinaryTreeFunc(); // Medium LC
         }
     }
 }
