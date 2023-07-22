@@ -68,7 +68,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc, MinimumLimitofBallsinaBagFunc,
             NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc, LongestArithmeticSubsequenceFunc, MaximalNetworkRankFunc,
             StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc, ValidTriangleNumberFunc, RandomPickwithWeightFunc,
-            TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc,
+            TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc, KnightProbabilityinChessboardFunc,
             DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc,
             MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc, LongestRepeatingCharacterReplacementFunc,
             NextGreaterElementIIIFunc, SubsetsIIFunc, MinimumNumberofVerticestoReachAllNodesFunc, BasicCalculatorIIFunc, TopKFrequentWordsFunc, NextGreaterElementIIFunc, LinkedListinBinaryTreeFunc,
@@ -9870,6 +9870,31 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void KnightProbabilityinChessboardFunc()
+        {
+            Program.Space();
+            Program.Title("Knight Probability in Chessboard");
+            string source = "LC";
+
+            int n1 = 3;
+            int k1 = 2;
+            int row1 = 0;
+            int column1 = 0;
+            int n2 = 1;
+            int k2 = 0;
+            int row2 = 0;
+            int column2 = 0;
+            double result1 = LeetCode.KnightProbabilityinChessboard.Solution.KnightProbability(n1, k1, row1, column1);
+            double result2 = LeetCode.KnightProbabilityinChessboard.Solution.KnightProbability(n2, k2, row2, column2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<double>(result1, 0.06250),
+                ResultTester.CheckResult<double>(result2, 1.00000)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
@@ -9886,6 +9911,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumGeneticMutationFunc(); // Medium LC
             IntervalListIntersectionsFunc(); // Medium LC
             LinkedListinBinaryTreeFunc(); // Medium LC
+            KnightProbabilityinChessboardFunc(); // Medium LC
         }
     }
 }
