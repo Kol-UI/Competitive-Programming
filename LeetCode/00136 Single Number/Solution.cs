@@ -24,7 +24,7 @@ namespace CompetitiveProgramming.LeetCode.SingleNumber
 
         public static int SingleNumber(int[] nums)
         {
-            return nums.GroupBy(x => x).Where(x => x.Count() == 1).FirstOrDefault().Key;
+            return nums.GroupBy(x => x).Where(x => x.Count() == 1).FirstOrDefault()!.Key;
         }
     }
 }

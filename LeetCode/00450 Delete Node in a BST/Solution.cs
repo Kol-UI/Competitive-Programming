@@ -59,11 +59,11 @@ namespace CompetitiveProgramming.LeetCode.DeleteNodeinaBST
 
                 if (value < node.val)
                 {
-                    node.left = Delete(node.left, value);
+                    node.left = Delete(node.left, value)!;
                 }
                 else if (value > node.val)
                 {
-                    node.right = Delete(node.right, value);
+                    node.right = Delete(node.right, value)!;
                 }
                 else
                 {
@@ -83,7 +83,7 @@ namespace CompetitiveProgramming.LeetCode.DeleteNodeinaBST
                         newRoot = newRoot.left;
                     }
 
-                    newRoot.right = Delete(node.right, newRoot.val);
+                    newRoot.right = Delete(node.right, newRoot.val)!;
                     newRoot.left = node.left;
                     node = newRoot;
                 }
@@ -91,7 +91,7 @@ namespace CompetitiveProgramming.LeetCode.DeleteNodeinaBST
                 return node;
             }
 
-            return Delete(root, key);
+            return Delete(root, key)!;
         }
     }
 }

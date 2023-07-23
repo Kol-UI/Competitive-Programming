@@ -53,10 +53,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc,
             SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc, CountSubIslandsFunc, KRadiusSubarrayAveragesFunc, SeatReservationManagerFunc,
             NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc,
-            MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc, HIndexIIFunc, FindaPeakElementIIFunc,
+            MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc, HIndexIIFunc, FindaPeakElementIIFunc, WaterandJugProblemFunc,
             OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc, RangeSumofSortedSubarraySumsFunc, SellDiminishingValuedColoredBallsFunc,
             SimplifyPathFunc, ValidateStackSequencesFunc, LongestPalindromicSubsequenceFunc, NonoverlappingIntervalsFunc, RobotBoundedInCircleFunc, MinimumSizeSubarraySumFunc, OpentheLockFunc,
-            MatrixDiagonalSumFunc, MultiplyStringsFunc, PowxnFunc, ReverseWordsinaStringFunc, ProductofArrayExceptSelfFunc, WaystoSplitArrayIntoThreeSubarraysFunc, FindKClosestElementsFunc,
+            MatrixDiagonalSumFunc, MultiplyStringsFunc, PowxnFunc, ReverseWordsinaStringFunc, ProductofArrayExceptSelfFunc, WaystoSplitArrayIntoThreeSubarraysFunc, FindKClosestElementsFunc, PopulatingNextRightPointersinEachNodeIIFunc,
             Dota2SenateFunc, MinimumFlipstoMakeaORbEqualtocFunc, BestTimetoBuyandSellStockwithTransactionFeeFunc, IncreasingTripletSubsequenceFunc, MaximumNumberofVowelsinaSubstringofGivenLengthFunc,
             DominoandTrominoTilingFunc, ContainerWithMostWaterFunc, MaxNumberofKSumPairsFunc, UniquePathsFunc, NearestExitfromEntranceinMazeFunc, FrequencyoftheMostFrequentElementFunc, NumberofNodesintheSubTreeWiththeSameLabelFunc,
             LongestCommonSubsequenceFunc, MaxIceCreamFunc, TopKFrequentFunc, LexicographicallySmallestEquivalentStringFunc, FlipStringtoMonotoneIncreasingFunc, SearchA2DMatrixFunc, InsertIntervalFunc, MaxSubarraySumCircularFunc, SubarraySumFunc, SubarraysDivByKFunc,
@@ -65,7 +65,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             FindtheWinneroftheCircularGameFunc, RemoveDuplicatesfromSortedListIIFunc, DesignLinkedListFunc, MinStackFunc, CoinChangeFunc, CoinChangeIIFunc, MinimumRoundstoCompleteAllTasksFunc, SolvingQuestionsWithBrainpowerFunc, MaximumTwinSumofaLinkedListFunc, DeletetheMiddleNodeofaLinkedListFunc,
             MaxConsecutiveOnesIIIFunc, LongestSubarrayof1sAfterDeletingOneElementFunc, NumberofProvincesFunc, NumberofSubsequencesThatSatisfytheGivenSumConditionFunc, AsteroidCollisionFunc, IntervalListIntersectionsFunc,
             FindPeakElementFunc, WateringPlantsIIFunc, CarPoolingFunc, CountWaysToBuildGoodStringsFunc, TotalCosttoHireKWorkersFunc, PacificAtlanticWaterFlowFunc, FindtheStudentthatWillReplacetheChalkFunc,
-            MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc, MinimumLimitofBallsinaBagFunc,
+            MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc, MinimumLimitofBallsinaBagFunc, AllPossibleFullBinaryTreesFunc,
             NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc, LongestArithmeticSubsequenceFunc, MaximalNetworkRankFunc,
             StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc, ValidTriangleNumberFunc, RandomPickwithWeightFunc,
             TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc, KnightProbabilityinChessboardFunc,
@@ -85,7 +85,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc, BusRoutesFunc,
             MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc,
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc,
-            CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc,
+            CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -9864,7 +9864,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static void LinkedListinBinaryTreeFunc()
         {
             Program.Space();
-            Program.Title("Minimum Genetic Mutation");
+            Program.Title("Linked List in Binary Tree");
             string source = "LC";
             ResultTester.SpecialTestCase(source);
         }
@@ -9895,23 +9895,73 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void AllPossibleFullBinaryTreesFunc()
+        {
+            Program.Space();
+            Program.Title("All Possible Full Binary Trees");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void PopulatingNextRightPointersinEachNodeIIFunc()
+        {
+            Program.Space();
+            Program.Title("Populating Next Right Pointers in Each Node II");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void ShortestPathtoGetAllKeysFunc()
+        {
+            Program.Space();
+            Program.Title("Shortest Path to Get All Keys");
+            string source = "LC";
+            string[] grid1 = {"@.a..","###.#","b.A.B"};
+            string[] grid2 = {"@..aA","..B#.","....b"};
+            string[] grid3 = {"@Aa"};
+            int result1 = LeetCode.ShortestPathtoGetAllKeys.Solution.ShortestPathAllKeys(grid1);
+            int result2 = LeetCode.ShortestPathtoGetAllKeys.Solution.ShortestPathAllKeys(grid1);
+            int result3 = LeetCode.ShortestPathtoGetAllKeys.Solution.ShortestPathAllKeys(grid3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 8),
+                ResultTester.CheckResult<int>(result2, 8),
+                ResultTester.CheckResult<int>(result3, -1)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void WaterandJugProblemFunc()
+        {
+            Program.Space();
+            Program.Title("Water and Jug Problem");
+            string source = "LC";
+            int jug1Capacity1 = 3; int jug2Capacity1 = 5; int targetCapacity1 = 4;
+            int jug1Capacity2 = 2; int jug2Capacity2 = 6; int targetCapacity2 = 5;
+            int jug1Capacity3 = 1; int jug2Capacity3 = 2; int targetCapacity3 = 3;
+            bool result1 = LeetCode.WaterandJugProblem.Solution.CanMeasureWater(jug1Capacity1, jug2Capacity1, targetCapacity1);
+            bool result2 = LeetCode.WaterandJugProblem.Solution.CanMeasureWater(jug1Capacity2, jug2Capacity2, targetCapacity2);
+            bool result3 = LeetCode.WaterandJugProblem.Solution.CanMeasureWater(jug1Capacity3, jug2Capacity3, targetCapacity3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false),
+                ResultTester.CheckResult<bool>(result3, true)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            BasicCalculatorIIFunc(); // Medium LC
-            CombinationSumFunc(); // Medium LC
-            RotateListFunc(); // Medium LC
-            CopyListwithRandomPointerFunc(); // Medium LC
-            ArithmeticSubarraysFunc(); // Medium LC
-            SeatReservationManagerFunc(); // Medium LC
-            LastDayWhereYouCanStillCrossFunc(); // Hard LC
-            TopKFrequentWordsFunc(); // Medium LC
-            NextGreaterElementIIFunc(); // Medium LC
-            OnlineElectionFunc(); // Medium LC
-            MinimumGeneticMutationFunc(); // Medium LC
-            IntervalListIntersectionsFunc(); // Medium LC
-            LinkedListinBinaryTreeFunc(); // Medium LC
-            KnightProbabilityinChessboardFunc(); // Medium LC
+            AllPossibleFullBinaryTreesFunc(); // Medium LC
+            PopulatingNextRightPointersinEachNodeIIFunc(); // Medium LC
+            ShortestPathtoGetAllKeysFunc(); // Hard LC
+            WaterandJugProblemFunc(); // Medium LC
         }
     }
 }
