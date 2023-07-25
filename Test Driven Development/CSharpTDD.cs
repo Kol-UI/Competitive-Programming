@@ -55,7 +55,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc,
             MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc, HIndexIIFunc, FindaPeakElementIIFunc, WaterandJugProblemFunc,
             OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc, RangeSumofSortedSubarraySumsFunc, SellDiminishingValuedColoredBallsFunc,
-            SimplifyPathFunc, ValidateStackSequencesFunc, LongestPalindromicSubsequenceFunc, NonoverlappingIntervalsFunc, RobotBoundedInCircleFunc, MinimumSizeSubarraySumFunc, OpentheLockFunc,
+            SimplifyPathFunc, ValidateStackSequencesFunc, LongestPalindromicSubsequenceFunc, NonoverlappingIntervalsFunc, RobotBoundedInCircleFunc, MinimumSizeSubarraySumFunc, OpentheLockFunc, DesignBrowserHistoryFunc,
             MatrixDiagonalSumFunc, MultiplyStringsFunc, PowxnFunc, ReverseWordsinaStringFunc, ProductofArrayExceptSelfFunc, WaystoSplitArrayIntoThreeSubarraysFunc, FindKClosestElementsFunc, PopulatingNextRightPointersinEachNodeIIFunc,
             Dota2SenateFunc, MinimumFlipstoMakeaORbEqualtocFunc, BestTimetoBuyandSellStockwithTransactionFeeFunc, IncreasingTripletSubsequenceFunc, MaximumNumberofVowelsinaSubstringofGivenLengthFunc,
             DominoandTrominoTilingFunc, ContainerWithMostWaterFunc, MaxNumberofKSumPairsFunc, UniquePathsFunc, NearestExitfromEntranceinMazeFunc, FrequencyoftheMostFrequentElementFunc, NumberofNodesintheSubTreeWiththeSameLabelFunc,
@@ -84,7 +84,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc,
             CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc, BusRoutesFunc,
             MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc,
-            MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc,
+            MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc,
             CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc,
         };
 
@@ -950,24 +950,33 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Shuffle The Array");
+            string source = "LC";
 
             // Case 1
             int[] arrayCase1_1470 = { 2, 5, 1, 3, 4, 7 };
             int nCase1_1470 = 3;
             int[] Case1_1470_Result = LeetCode.ShuffletheArray.Solution.Shuffle(arrayCase1_1470, nCase1_1470);
-            Program.PrintArray(Case1_1470_Result);
 
             // Case 2
             int[] arrayCase2_1470 = { 1, 2, 3, 4, 4, 3, 2, 1 };
             int nCase2_1470 = 4;
             int[] Case2_1470_Result = LeetCode.ShuffletheArray.Solution.Shuffle(arrayCase2_1470, nCase2_1470);
-            Program.PrintArray(Case2_1470_Result);
             
             // Case 3
             int[] arrayCase3_1470 = { 1, 1, 2, 2 };
             int nCase3_1470 = 2;
             int[] Case3_1470_Result = LeetCode.ShuffletheArray.Solution.Shuffle(arrayCase3_1470, nCase3_1470);
-            Program.PrintArray(Case3_1470_Result);
+
+            int[] expected1 = {2,3,5,4,1,7};
+            int[] expected2 = {1,4,2,3,3,2,4,1};
+            int[] expected3 = {1,2,1,2};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(Case1_1470_Result, expected1),
+                ResultTester.CheckResult<int[]>(Case2_1470_Result, expected2),
+                ResultTester.CheckResult<int[]>(Case3_1470_Result, expected3)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -2987,6 +2996,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Reorder Routes to Make All Paths Lead to the City Zero");
+            string source = "LC";
             
             // Case 1
             int[][] connections1466Case1 = new int[][]
@@ -2999,7 +3009,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             };
             int n1466Case1 = 6;
             int result1466Case1 = LeetCode.ReorderRoutestoMakeAllPathsLeadtotheCityZero.Solution.MinReorder(n1466Case1, connections1466Case1);
-            Console.WriteLine("Output: {0}", result1466Case1);
 
             // Case 2
             int[][] connections1466Case2 = new int[][]
@@ -3011,7 +3020,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             };
             int n1466Case2 = 5;
             int result1466Case2 = LeetCode.ReorderRoutestoMakeAllPathsLeadtotheCityZero.Solution.MinReorder(n1466Case2, connections1466Case2);
-            Console.WriteLine("Output: {0}", result1466Case2);
 
             // Case 3
             int[][] connections1466Case3 = new int[][]
@@ -3021,7 +3029,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             };
             int n1466Case3 = 3;
             int result1466Case3 = LeetCode.ReorderRoutestoMakeAllPathsLeadtotheCityZero.Solution.MinReorder(n1466Case3, connections1466Case3);
-            Console.WriteLine("Output: {0}", result1466Case3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1466Case1, 3),
+                ResultTester.CheckResult<int>(result1466Case2, 3),
+                ResultTester.CheckResult<int>(result1466Case3, 3)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -9955,13 +9969,66 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void MaximumNumberofAchievableTransferRequestsFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Number of Achievable Transfer Requests");
+            string source = "LC";
+            int n1 = 5;
+            int[][] requests1 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 1, 0 },
+                new int[] { 0, 1 },
+                new int[] { 1, 2 },
+                new int[] { 2, 0 },
+                new int[] { 3, 4 }
+            };
+
+            int n2 = 3;
+            int[][] requests2 = new int[][]
+            {
+                new int[] { 0, 0 },
+                new int[] { 1, 2 },
+                new int[] { 2, 1 }
+            };
+
+            int n3 = 4;
+            int[][] requests3 = new int[][]
+            {
+                new int[] { 0, 3 },
+                new int[] { 3, 1 },
+                new int[] { 1, 2 },
+                new int[] { 2, 0 }
+            };
+            int result1 = LeetCode.MaximumNumberofAchievableTransferRequests.Solution.MaximumRequests(n1, requests1);
+            int result2 = LeetCode.MaximumNumberofAchievableTransferRequests.Solution.MaximumRequests(n2, requests2);
+            int result3 = LeetCode.MaximumNumberofAchievableTransferRequests.Solution.MaximumRequests(n3, requests3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 5),
+                ResultTester.CheckResult<int>(result2, 3),
+                ResultTester.CheckResult<int>(result3, 4)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void DesignBrowserHistoryFunc()
+        {
+            Program.Space();
+            Program.Title("Design Browser History");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            AllPossibleFullBinaryTreesFunc(); // Medium LC
-            PopulatingNextRightPointersinEachNodeIIFunc(); // Medium LC
-            ShortestPathtoGetAllKeysFunc(); // Hard LC
-            WaterandJugProblemFunc(); // Medium LC
+            MaximumNumberofAchievableTransferRequestsFunc(); // Hard LC
+            DesignBrowserHistoryFunc(); // Medium LC
+            ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc();
         }
     }
 }

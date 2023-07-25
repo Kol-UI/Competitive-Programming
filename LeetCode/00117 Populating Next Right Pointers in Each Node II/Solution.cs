@@ -55,8 +55,8 @@ namespace CompetitiveProgramming.LeetCode.PopulatingNextRightPointersinEachNodeI
                 dict[level] = node;
             }
 
-            Build(node.left, level + 1);
-            Build(node.right, level + 1);
+            Build(node.left!, level + 1);
+            Build(node.right!, level + 1);
         }
     }
 }

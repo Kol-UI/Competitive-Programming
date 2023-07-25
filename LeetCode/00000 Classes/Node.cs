@@ -4,9 +4,9 @@ namespace CompetitiveProgramming.LeetCode
     // Definition for a Node.
     public class Node {
         public int val;
-        public Node left;
-        public Node right;
-        public Node next;
+        public Node? left;
+        public Node? right;
+        public Node? next;
 
         public Node() {}
 
