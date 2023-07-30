@@ -10,10 +10,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
     {
         private static Delegate[] codeWarsEightList = new Delegate[]
         {
-            GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, MakeNegativeFunc, RemoveExclamationMarksFunc,
+            GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, MakeNegativeFunc, RemoveExclamationMarksFunc, BeginnerLostWithoutaMapFunc,
             FindMinAndMaxOfListFunc, StringRepeatFunc, SumOfPositiveFunc, ConvertbooleanvaluestostringsYesorNoFunc, ConvertaNumbertoaStringFunc,
             EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc,
-            YouCantCodeUnderPressure1Func, CenturyFromYearFunc, BasicMathematicalOperationsFunc
+            YouCantCodeUnderPressure1Func, CenturyFromYearFunc, BasicMathematicalOperationsFunc, ConvertNumberToReversedArrayOfDigitsFunc
         };
 
         private static Delegate[] codeWarsSevenKyuList = new Delegate[]
@@ -35,7 +35,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc,
             BestPokerHandFunc, LastStoneWeightFunc, AddDigitsFunc, BulbSwitcherFunc, FindtheDifferenceFunc, RepeatedSubstringPatternFunc,
             MoveZeroesFunc, PlusOneFunc, AverageSalaryExcludingtheMinimumandMaximumSalaryFunc, FindifPathExistsinGraphFunc, RichestCustomerWealthFunc,
-            SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, LengthofLastWordFunc, ToLowerCaseFunc,
+            SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, LengthofLastWordFunc, ToLowerCaseFunc, ConvertBinaryNumberinaLinkedListtoIntegerFunc,
             FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ValidPerfectSquareFunc, ArrangingCoinsFunc, BaseballGameFunc,
             RobotReturntoOriginFunc, FindWinneronaTicTacToeGameFunc, LemonadeChangeFunc, LargestPerimeterTriangleFunc, CheckIfItIsaStraightLineFunc,
             ReverseVowelsofaStringFunc, CountingBitsFunc, IsSubsequenceFunc, MinCostClimbingStairsFunc, MaximumAverageSubarrayIFunc, DesignParkingSystemFunc,
@@ -50,7 +50,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] leetCodeMediumList = new Delegate[]
         {
             RestoreIpAddressesFunc, SnakesAndLaddersFunc, FindClosestNodetoGivenTwoNodesFunc, FruitIntoBasketsFunc, JumpGameIIFunc, AllPathsFromSourcetoTargetFunc, MagneticForceBetweenTwoBallsFunc,
-            AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc,
+            AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc, DesignUndergroundSystemFunc,
             SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc, CountSubIslandsFunc, KRadiusSubarrayAveragesFunc, SeatReservationManagerFunc,
             NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc,
             MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc, HIndexIIFunc, FindaPeakElementIIFunc, WaterandJugProblemFunc,
@@ -67,13 +67,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             FindPeakElementFunc, WateringPlantsIIFunc, CarPoolingFunc, CountWaysToBuildGoodStringsFunc, TotalCosttoHireKWorkersFunc, PacificAtlanticWaterFlowFunc, FindtheStudentthatWillReplacetheChalkFunc,
             MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc, MinimumLimitofBallsinaBagFunc, AllPossibleFullBinaryTreesFunc,
             NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc, LongestArithmeticSubsequenceFunc, MaximalNetworkRankFunc,
-            StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc, ValidTriangleNumberFunc, RandomPickwithWeightFunc,
+            StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc, ValidTriangleNumberFunc, RandomPickwithWeightFunc, CountGoodNodesinBinaryTreeFunc,
             TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc, KnightProbabilityinChessboardFunc,
             DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc,
             MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc, LongestRepeatingCharacterReplacementFunc,
             NextGreaterElementIIIFunc, SubsetsIIFunc, MinimumNumberofVerticestoReachAllNodesFunc, BasicCalculatorIIFunc, TopKFrequentWordsFunc, NextGreaterElementIIFunc, LinkedListinBinaryTreeFunc,
-            SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc, CombinationSumFunc, CopyListwithRandomPointerFunc, MinimumGeneticMutationFunc,
-            LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc,
+            SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc, CombinationSumFunc, CopyListwithRandomPointerFunc, MinimumGeneticMutationFunc, LongestZigZagPathinaBinaryTreeFunc,
+            LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc, MinimumTimetoCollectAllApplesinaTreeFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -82,7 +82,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
             MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc,
             NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc,
-            CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc, BusRoutesFunc,
+            CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc, BusRoutesFunc, StrangePrinterFunc,
             MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc,
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc,
             CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc,
@@ -344,15 +344,20 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
             // Case 1
             int Case1_NumberOfSteps = LeetCode.NumberofStepstoReduceaNumbertoZero.Solution.NumberOfSteps(14);
-            Console.WriteLine(Case1_NumberOfSteps);
 
             // Case 2
             int Case2_NumberOfSteps = LeetCode.NumberofStepstoReduceaNumbertoZero.Solution.NumberOfSteps(8);
-            Console.WriteLine(Case2_NumberOfSteps);
 
             // Case 3
             int Case3_NumberOfSteps = LeetCode.NumberofStepstoReduceaNumbertoZero.Solution.NumberOfSteps(123);
-            Console.WriteLine(Case3_NumberOfSteps);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_NumberOfSteps, 6),
+                ResultTester.CheckResult<int>(Case2_NumberOfSteps, Case2_NumberOfSteps),
+                ResultTester.CheckResult<int>(Case3_NumberOfSteps, Case3_NumberOfSteps)
+            };
+            ResultTester.CheckSolution("LC", results);
         }
 
 
@@ -1399,6 +1404,16 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int[] arrCase4_1394 = { value1, value2, value3, value4 };
             int Case4_1394_Result = LeetCode.FindLuckyIntegerinanArray.Solution.FindLucky(arrCase4_1394);
             Console.WriteLine(Case4_1394_Result);
+
+            string source = "LC";
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_1394_Result, 2),
+                ResultTester.CheckResult<int>(Case2_1394_Result, 3),
+                ResultTester.CheckResult<int>(Case3_1394_Result, -1),
+                ResultTester.CheckResult<int>(Case4_1394_Result, Case4_1394_Result)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -2076,97 +2091,59 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Jump Game IV");
+            string source = "LC";
 
             // Case 1
             int[] arrCase1_1345 = { 100, -23, -23, 404, 100, 23, 23, 23, 3, 404 };
-            Console.WriteLine("Array Case 1 :");
-            Program.PrintArray(arrCase1_1345);
             int resultCase1_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase1_1345);
-            Console.WriteLine(resultCase1_1345);
 
             // Case 2
             int[] arrCase2_1345 = { 7 };
-            Console.WriteLine("Array Case 2 :");
-            Program.PrintArray(arrCase2_1345);
             int resultCase2_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase2_1345);
-            Console.WriteLine(resultCase2_1345);
 
             // Case 3
             int[] arrCase3_1345 = { 7, 6, 9, 6, 9, 6, 9, 7 };
-            Console.WriteLine("Array Case 3 :");
-            Program.PrintArray(arrCase3_1345);
             int resultCase3_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase3_1345);
-            Console.WriteLine(resultCase3_1345);
 
             // Case 4
             int[] arrCase4_1345 = { -1, 100, 100, 100, 100, 100, 100, -1, };
-            Console.WriteLine("Array Case 4 :");
-            Program.PrintArray(arrCase4_1345);
             int resultCase4_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase4_1345);
-            Console.WriteLine(resultCase4_1345);
 
             // Case 5
             int[] arrCase5_1345 = Program.GenerateRandomNumber(100, 5);
-            Console.WriteLine("Array Case 5 :");
-            Program.PrintArray(arrCase5_1345);
             int resultCase5_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase5_1345);
-            Console.WriteLine(resultCase5_1345);
 
             // Case 6
             int[] arrCase6_1345 = Program.GenerateRandomNumber(1000, 5);
-            Console.WriteLine("Array Case 6 :");
-            Program.PrintArray(arrCase6_1345);
             int resultCase6_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase6_1345);
-            Console.WriteLine(resultCase6_1345);
 
             // Case 7
             int[] arrCase7_1345 = Program.GenerateRandomNumber(100, 10);
-            Console.WriteLine("Array Case 7 :");
-            Program.PrintArray(arrCase7_1345);
             int resultCase7_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase7_1345);
-            Console.WriteLine(resultCase7_1345);
 
             // Case 8
             int[] arrCase8_1345 = Program.GenerateRandomNumber(1000, 10);
-            Console.WriteLine("Array Case 8 :");
-            Program.PrintArray(arrCase8_1345);
             int resultCase8_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase8_1345);
-            Console.WriteLine(resultCase8_1345);
 
             // Case 9
             int[] arrCase9_1345 = Program.GenerateRandomNumber(10, 100);
-            Console.WriteLine("Array Case 9 :");
-            Program.PrintArray(arrCase9_1345);
             int resultCase9_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase9_1345);
-            Console.WriteLine(resultCase9_1345);
 
             // Case 10
             int[] arrCase10_1345 = Program.GenerateRandomNegativeNumber(5);
-            Console.WriteLine("Array Case 10 :");
-            Program.PrintArray(arrCase10_1345);
             int resultCase10_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase10_1345);
-            Console.WriteLine(resultCase10_1345);
 
             // Case 11
             int[] arrCase11_1345 = Program.GenerateRandomNegativeNumber(10);
-            Console.WriteLine("Array Case 11 :");
-            Program.PrintArray(arrCase11_1345);
             int resultCase11_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase11_1345);
-            Console.WriteLine(resultCase11_1345);
 
             // Case 12
             int[] arrCase12_1345 = Program.GenerateRandomNegativePositiveNumber(5);
-            Console.WriteLine("Array Case 12 :");
-            Program.PrintArray(arrCase12_1345);
             int resultCase12_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase12_1345);
-            Console.WriteLine(resultCase12_1345);
 
             // Case 13
             int[] arrCase13_1345 = Program.GenerateRandomNegativePositiveNumber(10);
-            Console.WriteLine("Array Case 13 :");
-            Program.PrintArray(arrCase13_1345);
             int resultCase13_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase13_1345);
-            Console.WriteLine(resultCase13_1345);
 
             // Case 14
             int[] arrCase14_1345 = arrCase1_1345.Concat(arrCase2_1345).Concat(arrCase3_1345).Concat(arrCase4_1345)
@@ -2174,18 +2151,33 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                                                 .Concat(arrCase8_1345).Concat(arrCase9_1345).Concat(arrCase10_1345)
                                                 .Concat(arrCase11_1345).Concat(arrCase12_1345)
                                                 .Concat(arrCase13_1345).ToArray();
-            Console.WriteLine("Array Case 14 :");
-            Program.PrintArray(arrCase14_1345);
+
             int resultCase14_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase14_1345);
-            Console.WriteLine(resultCase14_1345);
 
             // Case 15
             int[] arrCase15_1345 = arrCase14_1345;
             Program.ShuffleArray(arrCase15_1345);
-            Console.WriteLine("Array Case 15 :");
-            Program.PrintArray(arrCase15_1345);
             int resultCase15_1345 = LeetCode.JumpGameIV.Solution.MinJumps(arrCase15_1345);
-            Console.WriteLine(resultCase15_1345);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(resultCase1_1345, 3),
+                ResultTester.CheckResult<int>(resultCase2_1345, 0),
+                ResultTester.CheckResult<int>(resultCase3_1345, 1),
+                ResultTester.CheckResult<int>(resultCase4_1345, resultCase4_1345),
+                ResultTester.CheckResult<int>(resultCase5_1345, resultCase5_1345),
+                ResultTester.CheckResult<int>(resultCase6_1345, resultCase6_1345),
+                ResultTester.CheckResult<int>(resultCase7_1345, resultCase7_1345),
+                ResultTester.CheckResult<int>(resultCase8_1345, resultCase8_1345),
+                ResultTester.CheckResult<int>(resultCase9_1345, resultCase9_1345),
+                ResultTester.CheckResult<int>(resultCase10_1345, resultCase10_1345),
+                ResultTester.CheckResult<int>(resultCase11_1345, resultCase11_1345),
+                ResultTester.CheckResult<int>(resultCase12_1345, resultCase12_1345),
+                ResultTester.CheckResult<int>(resultCase13_1345, resultCase13_1345),
+                ResultTester.CheckResult<int>(resultCase14_1345, resultCase14_1345),
+                ResultTester.CheckResult<int>(resultCase15_1345, resultCase15_1345),
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -2880,7 +2872,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             };
             int n1319Case1 = 4;
             int result1319Case1 = LeetCode.NumberofOperationstoMakeNetworkConnected.Solution.MakeConnected(n1319Case1, connections1319Case1);
-            Console.WriteLine("Output: {0}", result1319Case1);
 
             // Case 2
             int[][] connections1319Case2 = new int[][]
@@ -2893,7 +2884,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             };
             int n1319Case2 = 6;
             int result1319Case2 = LeetCode.NumberofOperationstoMakeNetworkConnected.Solution.MakeConnected(n1319Case2, connections1319Case2);
-            Console.WriteLine("Output: {0}", result1319Case2);
 
             // Case 3
             int[][] connections1319Case3 = new int[][]
@@ -2905,7 +2895,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             };
             int n1319Case3 = 6;
             int result1319Case3 = LeetCode.NumberofOperationstoMakeNetworkConnected.Solution.MakeConnected(n1319Case3, connections1319Case3);
-            Console.WriteLine("Output: {0}", result1319Case3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1319Case1, 1),
+                ResultTester.CheckResult<int>(result1319Case2, 2),
+                ResultTester.CheckResult<int>(result1319Case3, -1)
+            };
+            ResultTester.CheckSolution("LC", results);
         }
 
 
@@ -3292,6 +3289,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Number of Ways of Cutting a Pizza");
+            string source = "LC";
             
             // Case 1
             string[] pizza1444_1 = { "A..","AAA","..." };
@@ -3316,6 +3314,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.PrintStringArray(pizza1444_3);
             int result1444_3 = LeetCode.NumberofWaysofCuttingaPizza.Solution.Ways(pizza1444_3, k1444_3);
             Console.WriteLine("Result : {0}", result1444_3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1444_1, 3),
+                ResultTester.CheckResult<int>(result1444_2, 1),
+                ResultTester.CheckResult<int>(result1444_3, 1)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -3344,6 +3350,24 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.PrintArray(satisfaction1402_3);
             int result1402_3 = LeetCode.ReducingDishes.Solution.MaxSatisfaction(satisfaction1402_3);
             Console.WriteLine("Result : {0}", result1402_3);
+
+            string source = "LC";
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1402_1, 14),
+                ResultTester.CheckResult<int>(result1402_2, 20),
+                ResultTester.CheckResult<int>(result1402_3, 0)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void DesignUndergroundSystemFunc()
+        {
+            Program.Space();
+            Program.Title("Design Underground System");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
         }
 
 
@@ -3708,16 +3732,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Check If N and Its Double Exist");
+            string source = "LC";
 
             // Case 1
             int[] arr2346_1 = {10,2,5,3};
             bool result2346_1 = LeetCode.CheckIfNandItsDoubleExist.Solution.CheckIfExist(arr2346_1);
-            Console.WriteLine("Result 1 : {0}", result2346_1);
             
             // Case 2
             int[] arr2346_2 = {3,1,7,11};
             bool result2346_2 = LeetCode.CheckIfNandItsDoubleExist.Solution.CheckIfExist(arr2346_2);
-            Console.WriteLine("Result 2 : {0}", result2346_2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result2346_1, true),
+                ResultTester.CheckResult<bool>(result2346_2, false)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -4035,6 +4065,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Kids With the Greatest Number of Candies");
+            string source = "LC";
 
             // Case 1
             int[] candies1 = {2,3,5,1,3};
@@ -4047,6 +4078,15 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int extraCandies2 = 1;
             IList<bool> result2 = LeetCode.KidsWiththeGreatestNumberofCandies.Solution.KidsWithCandies(candies2, extraCandies2);
             Console.WriteLine("[{0}]", string.Join(", ", result2));
+
+            IList<bool> firstList = new List<bool> { true, false, false, false, false };
+            IList<bool> secondList = new List<bool> { true, false, true };
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<bool>>(result1, firstList),
+                ResultTester.CheckResult<IList<bool>>(result2, secondList)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -4127,15 +4167,19 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
             // Case 1
             int Case1_1312 = LeetCode.MinimumInsertionStepstoMakeaStringPalindrome.Solution.MinInsertions("zzazz");
-            Console.WriteLine("Result 1 : {0}", Case1_1312);
 
             // Case 2
             int Case2_1312 = LeetCode.MinimumInsertionStepstoMakeaStringPalindrome.Solution.MinInsertions("mbadm");
-            Console.WriteLine("Result 2 : {0}", Case2_1312);
 
             // Case 3
             int Case3_1312 = LeetCode.MinimumInsertionStepstoMakeaStringPalindrome.Solution.MinInsertions("leetcode");
-            Console.WriteLine("Result 3 : {0}", Case3_1312);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_1312, 0),
+                ResultTester.CheckResult<int>(Case2_1312, 2),
+                ResultTester.CheckResult<int>(Case3_1312, 5)
+            };
+            ResultTester.CheckSolution("LC", results);
         }
 
 
@@ -4187,6 +4231,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Restore The Array");
+            string source = "LC";
 
             // Case 1
             int Case1_1416 = LeetCode.RestoreTheArray.Solution.NumberOfArrays("1000", 10000);
@@ -4199,6 +4244,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             // Case 3
             int Case3_1416 = LeetCode.RestoreTheArray.Solution.NumberOfArrays("1317", 200);
             Console.WriteLine("Result 3 : {0}", Case3_1416);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_1416, 1),
+                ResultTester.CheckResult<int>(Case2_1416, 0),
+                ResultTester.CheckResult<int>(Case3_1416, 6)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -4650,6 +4703,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Count Negative Numbers in a Sorted Matrix");
+            string source = "LC";
 
             // Case 1
             int[][] grid1_1351 = new int[][]
@@ -4660,7 +4714,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 new int[] { -1,-1,-2,-3 }
             };
             int result1_1351 = LeetCode.CountNegativeNumbersinaSortedMatrix.Solution.CountNegatives(grid1_1351);
-            Console.WriteLine("Result 1 : {0}", result1_1351);
 
             // Case 2
             int[][] grid2_1351 = new int[][]
@@ -4669,7 +4722,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 new int[] { 1,0 }
             };
             int result2_1351 = LeetCode.CountNegativeNumbersinaSortedMatrix.Solution.CountNegatives(grid2_1351);
-            Console.WriteLine("Result 2 : {0}", result2_1351);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_1351, 8),
+                ResultTester.CheckResult<int>(result2_1351, 0)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -5156,9 +5215,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int result1 = LeetCode.MinimumFlipstoMakeaORbEqualtoc.Solution.MinFlips(2,6,5);
             int result2 = LeetCode.MinimumFlipstoMakeaORbEqualtoc.Solution.MinFlips(4,2,7);
             int result3 = LeetCode.MinimumFlipstoMakeaORbEqualtoc.Solution.MinFlips(1,2,3);
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-            Console.WriteLine("Result 3 : {0}", result3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 1),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+            ResultTester.CheckSolution("LC", results);
         }
 
 
@@ -5349,14 +5412,19 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Maximum Number of Vowels in a Substring of Given Length");
+            string source = "LC";
 
             int result1 = LeetCode.MaximumNumberofVowelsinaSubstringofGivenLength.Solution.MaxVowels("abciiidef", 3);
             int result2 = LeetCode.MaximumNumberofVowelsinaSubstringofGivenLength.Solution.MaxVowels("aeiou", 2);
             int result3 = LeetCode.MaximumNumberofVowelsinaSubstringofGivenLength.Solution.MaxVowels("leetcode", 3);
 
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-            Console.WriteLine("Result 3 : {0}", result3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(result3, 2)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -6249,6 +6317,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Stone Game III");
+            string source = "LC";
 
             int[] nums1 = {1,2,3,7};
             int[] nums2 = {1,2,3,-9};
@@ -6258,9 +6327,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             string result2 = LeetCode.StoneGameIII.Solution.StoneGameIII(nums2);
             string result3 = LeetCode.StoneGameIII.Solution.StoneGameIII(nums3);
 
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-            Console.WriteLine("Result 3 : {0}", result3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(result1, "Bob"),
+                ResultTester.CheckResult<string>(result2, "Alice"),
+                ResultTester.CheckResult<string>(result3, "Tie")
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -6386,8 +6459,20 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             string result1 = LeetCode.DecryptStringfromAlphabettoIntegerMapping.Solution.FreqAlphabets(s1);
             string result2 = LeetCode.DecryptStringfromAlphabettoIntegerMapping.Solution.FreqAlphabets(s2);
 
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(result1, "jkab"),
+                ResultTester.CheckResult<string>(result2, "acz")
+            };
+            ResultTester.CheckSolution("LC", results);
+        }
+
+
+        private static void ConvertBinaryNumberinaLinkedListtoIntegerFunc()
+        {
+            Program.Space();
+            Program.Title("Convert Binary Number in a Linked List to Integer");
+            ResultTester.SpecialTestCase("LC");
         }
 
 
@@ -6419,8 +6504,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int[] result1 = LeetCode.TheKWeakestRowsinaMatrix.Solution.KWeakestRows(mat1, k1);
             int[] result2 = LeetCode.TheKWeakestRowsinaMatrix.Solution.KWeakestRows(mat2, k2);
 
-            Program.PrintArray(result1);
-            Program.PrintArray(result2);
+            int[] expected1 = {3,0,2};
+            int[] expected2 = {0,2};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2)
+            };
+            ResultTester.CheckSolution("LC", results);
         }
 
 
@@ -6603,6 +6694,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Find the Distance Value Between Two Arrays");
+            string source = "LC";
 
             int[] arr1case1 = {4,5,8};
             int[] arr2case1 = {10,9,1,8};
@@ -6623,6 +6715,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Console.WriteLine("Result 1 : {0}", result1);
             Console.WriteLine("Result 2 : {0}", result2);
             Console.WriteLine("Result 3 : {0}", result3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(result3, 1)
+            };
+            ResultTester.CheckSolution(source, results);
         }
 
 
@@ -6673,6 +6773,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Time Needed to Inform All Employees");
+            string source = "LC";
 
             int n1 = 1;
             int headID1 = 0;
@@ -6687,8 +6788,21 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             int result1 = LeetCode.TimeNeededtoInformAllEmployees.Solution.NumOfMinutes(n1, headID1, manager1, informTime1);
             int result2 = LeetCode.TimeNeededtoInformAllEmployees.Solution.NumOfMinutes(n2, headID2, manager2, informTime2);
 
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 0),
+                ResultTester.CheckResult<int>(result2, 1)
+            };
+            ResultTester.CheckSolution(source, results);
+        }
+
+
+        private static void LongestZigZagPathinaBinaryTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Longest ZigZag Path in a Binary Tree");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
         }
 
 
@@ -10023,12 +10137,112 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void CountGoodNodesinBinaryTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Count Good Nodes in Binary Tree");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void MinimumTimetoCollectAllApplesinaTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Time to Collect All Apples in a Tree");
+            string source = "LC";
+            ResultTester.SpecialTestCase(source);
+        }
+
+
+        private static void StrangePrinterFunc()
+        {
+            Program.Space();
+            Program.Title("Strange Printer");
+            int result1 = LeetCode.StrangePrinter.Solution.StrangePrinter("aaabbb");
+            int result2 = LeetCode.StrangePrinter.Solution.StrangePrinter("aba");
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, 2)
+            };
+            ResultTester.CheckSolution("LC", results);
+        }
+
+
+        private static void ConvertNumberToReversedArrayOfDigitsFunc()
+        {
+            Program.Space();
+            Program.Title("Convert number to reversed array of digits");
+
+            long[] expected1 = { 1, 3, 2, 5, 3 };
+            long[] expected2 = { 0 };
+            long[] result1 = CodeWars.EightKyu.ConvertNumberToReversedArrayOfDigits.Solution.Digitize(35231);
+            long[] result2 = CodeWars.EightKyu.ConvertNumberToReversedArrayOfDigits.Solution.Digitize(0);
+            long[] result3 = CodeWars.EightKyu.ConvertNumberToReversedArrayOfDigits.Solution.DigitizeLinq(35231);
+            long[] result4 = CodeWars.EightKyu.ConvertNumberToReversedArrayOfDigits.Solution.DigitizeLinq(0);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long[]>(result1, expected1),
+                ResultTester.CheckResult<long[]>(result2, expected2),
+                ResultTester.CheckResult<long[]>(result3, expected1),
+                ResultTester.CheckResult<long[]>(result4, expected2)
+            };
+            ResultTester.CheckSolution("CW", results);
+        }
+
+
+        private static void BeginnerLostWithoutaMapFunc()
+        {
+            Program.Space();
+            Program.Title("Beginner - Lost Without a Map");
+            int[] case1 = {1, 2, 3};
+            int[] case2 = {1, 2, 3};
+            int[] case3 = {4, 1, 1, 1, 4};
+            int[] case4 = {2, 2, 2, 2, 2, 2};
+            int[] expected1 = {2, 4, 6};
+            int[] expected2 = {2, 4, 6};
+            int[] expected3 = {8, 2, 2, 2, 8};
+            int[] expected4 = {4, 4, 4, 4, 4, 4};
+
+            int[] result1 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.Maps(case1);
+            int[] result2 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.Maps(case2);
+            int[] result3 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.Maps(case3);
+            int[] result4 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.Maps(case4);
+            int[] result5 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.MapsConvertAll(case1);
+            int[] result6 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.MapsConvertAll(case2);
+            int[] result7 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.MapsConvertAll(case3);
+            int[] result8 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.MapsConvertAll(case4);
+
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2),
+                ResultTester.CheckResult<int[]>(result3, expected3),
+                ResultTester.CheckResult<int[]>(result4, expected4),
+                ResultTester.CheckResult<int[]>(result5, expected1),
+                ResultTester.CheckResult<int[]>(result6, expected2),
+                ResultTester.CheckResult<int[]>(result7, expected3),
+                ResultTester.CheckResult<int[]>(result8, expected4)
+            };
+            ResultTester.CheckSolution("CW", results);
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
             MaximumNumberofAchievableTransferRequestsFunc(); // Hard LC
             DesignBrowserHistoryFunc(); // Medium LC
             ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc();
+            RestoreTheArrayFunc();
+            DesignUndergroundSystemFunc();
+            TheKWeakestRowsinaMatrixFunc();
+            StrangePrinterFunc(); // Hard LC
+            ConvertNumberToReversedArrayOfDigitsFunc(); // 8 CW
+            BeginnerLostWithoutaMapFunc(); // 8 CW
         }
     }
 }

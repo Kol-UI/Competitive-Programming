@@ -111,6 +111,16 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                                 }
                             }
 
+                            // If long[]
+                            else if (resultArray is long[] && expectedArray is long[])
+                            {
+                                if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
+                                {
+                                    CheckResultRight();
+                                    return true;
+                                }
+                            }
+
                             // Handle other array types here...
 
                             // If no matching array type found
