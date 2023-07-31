@@ -102,7 +102,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
         {
-            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc,
+            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc, PlusMinusFunc,
         };
 
         private static Delegate[] hackerRankMediumList = new Delegate[]
@@ -127,7 +127,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] geeksForGeeksEasyList = new Delegate[]
         {
-            CounttheSubstringsFunc, MinimumIntegerFunc, Remainderondividingby11Func, MakeArrayElementsEqualFunc, EqualLeftandRightSubarraySumFunc,
+            CounttheSubstringsFunc, MinimumIntegerFunc, Remainderondividingby11Func, MakeArrayElementsEqualFunc, EqualLeftandRightSubarraySumFunc, BFSofgraphFunc,
         };
 
         private static Delegate[] geeksForGeeksMediumList = new Delegate[]
@@ -9754,6 +9754,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Nth Tribonacci Number");
             ResultTester.CheckSolution("LC", LeetCode.NthTribonacciNumber.Test.TestNthTribonacciNumber());
+        }
+
+
+        private static void BFSofgraphFunc()
+        {
+            Program.Space();
+            Program.Title("BFS of graph");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
+        private static void PlusMinusFunc()
+        {
+            Program.Space();
+            Program.Title("Plus Minus");
+            ResultTester.CheckSolution("HR", HackerRank.PlusMinus.Test.TestPlusMinus());
         }
 
 
