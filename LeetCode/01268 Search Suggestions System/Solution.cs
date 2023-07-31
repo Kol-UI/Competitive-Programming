@@ -29,7 +29,7 @@ namespace CompetitiveProgramming.LeetCode.SearchSuggestionsSystem
 {
     public class Solution
     {
-        public IList<IList<string>> SuggestedProducts(string[] products, string searchWord)
+        public static IList<IList<string>> SuggestedProducts(string[] products, string searchWord)
         {
             var result = new List<IList<string>>();
             for(int i = 1; i <= searchWord.Length; i++)

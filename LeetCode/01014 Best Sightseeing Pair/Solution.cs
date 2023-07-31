@@ -21,6 +21,8 @@ Output: 2
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BestSightseeingPair
 {
     public class Solution
@@ -38,6 +40,26 @@ namespace CompetitiveProgramming.LeetCode.BestSightseeingPair
                 if (rs < prev) rs = prev;
             }
             return rs;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestBestSightseeingPair()
+        {
+            int[] values1_1014 = {8,1,5,2,6};
+            int[] values2_1014 = {1,2};
+
+            int result1_1014 = LeetCode.BestSightseeingPair.Solution.MaxScoreSightseeingPair(values1_1014);
+            int result2_1014 = LeetCode.BestSightseeingPair.Solution.MaxScoreSightseeingPair(values2_1014);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_1014, 11),
+                ResultTester.CheckResult<int>(result2_1014, 2)
+            };
+
+            return results;
         }
     }
 }

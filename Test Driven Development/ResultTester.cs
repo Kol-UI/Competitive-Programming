@@ -214,6 +214,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 var stringList = nestedList.Select(innerList => string.Join(", ", innerList)).ToList();
                 return string.Join("; ", stringList);
             }
+
+            if (toConvert is IList<IList<string>> nestedStringList)
+            {
+                //List<string> stringList = nestedList.Select(innerList => string.Join(", ", innerList)).ToList();
+                var stringList = nestedStringList.Select(innerList => string.Join(", ", innerList)).ToList();
+                return string.Join("; ", stringList);
+            }
             // Needs to Handle other IList<IList<...>> types
 
             if (toConvert is IEnumerable<object> objectEnumerable)

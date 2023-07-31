@@ -60,6 +60,8 @@ Based on that, we return true.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.RobotBoundedInCircle
 {
     public class Solution
@@ -85,6 +87,29 @@ namespace CompetitiveProgramming.LeetCode.RobotBoundedInCircle
             }
             
             return (x == 0 && y == 0) || idx > 0;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestRobotBoundedInCircle()
+        {
+            string instructions1 = "GGLLGG";
+            string instructions2 = "GG";
+            string instructions3 = "GL";
+
+            bool result1 = Solution.IsRobotBounded(instructions1);
+            bool result2 = Solution.IsRobotBounded(instructions2);
+            bool result3 = Solution.IsRobotBounded(instructions3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false),
+                ResultTester.CheckResult<bool>(result3, true)
+            };
+
+            return results;
         }
     }
 }

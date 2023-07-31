@@ -28,6 +28,8 @@ Output: -1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ShortestPathinBinaryMatrix
 {
     public class Solution
@@ -75,6 +77,46 @@ namespace CompetitiveProgramming.LeetCode.ShortestPathinBinaryMatrix
             }
 
             return -1;
+        }
+    }
+
+
+    public class Test
+    {
+        public static bool[] TestShortestPathinBinaryMatrix()
+        {
+            int[][] grid1 = new int[][]
+            {
+                new int[] {0, 1},
+                new int[] {1, 0}
+            };
+
+            int[][] grid2 = new int[][]
+            {
+                new int[] {0, 0, 0},
+                new int[] {1, 1, 0},
+                new int[] {1, 1, 0}
+            };
+
+            int[][] grid3 = new int[][]
+            {
+                new int[] {1, 0, 0},
+                new int[] {1, 1, 0},
+                new int[] {1, 1, 0}
+            };
+
+            int expected1 = 2;
+            int expected2 = 4;
+            int expected3 = -1;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.ShortestPathBinaryMatrix(grid1), expected1),
+                ResultTester.CheckResult<int>(Solution.ShortestPathBinaryMatrix(grid2), expected2),
+                ResultTester.CheckResult<int>(Solution.ShortestPathBinaryMatrix(grid3), expected3)
+            };
+
+            return results;
         }
     }
 }

@@ -30,6 +30,8 @@ Output: true
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.WaterandJugProblem
 {
     public class Solution
@@ -92,6 +94,26 @@ namespace CompetitiveProgramming.LeetCode.WaterandJugProblem
             }
 
             return false;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestWaterandJugProblem()
+        {
+            int jug1Capacity1 = 3; int jug2Capacity1 = 5; int targetCapacity1 = 4;
+            int jug1Capacity2 = 2; int jug2Capacity2 = 6; int targetCapacity2 = 5;
+            int jug1Capacity3 = 1; int jug2Capacity3 = 2; int targetCapacity3 = 3;
+            bool result1 = Solution.CanMeasureWater(jug1Capacity1, jug2Capacity1, targetCapacity1);
+            bool result2 = Solution.CanMeasureWater(jug1Capacity2, jug2Capacity2, targetCapacity2);
+            bool result3 = Solution.CanMeasureWater(jug1Capacity3, jug2Capacity3, targetCapacity3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false),
+                ResultTester.CheckResult<bool>(result3, true)
+            };
+            return results;
         }
     }
 }

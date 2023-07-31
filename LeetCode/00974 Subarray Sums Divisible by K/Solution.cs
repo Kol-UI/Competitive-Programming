@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SubarraySumsDivisiblebyK
 {
@@ -49,6 +50,28 @@ namespace CompetitiveProgramming.LeetCode.SubarraySumsDivisiblebyK
         }
 
 
+    }
+
+    public class Test
+    {
+        public static bool[] TestSubarraySumsDivisiblebyK()
+        {
+            int[] nums1 = new int[] {4, 5, 0, -2, -3, 1};
+            int k1 = 5;
+            int output1 = 7;
+
+            int[] nums2 = new int[] {5};
+            int k2 = 9;
+            int output2 = 0;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.SubarraysDivByK(nums1, k1), output1),
+                ResultTester.CheckResult<int>(Solution.SubarraysDivByK(nums2, k2), output2)
+            };
+
+            return results;
+        }
     }
 }
 

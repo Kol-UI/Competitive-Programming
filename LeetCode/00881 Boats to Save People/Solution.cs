@@ -1,6 +1,8 @@
 // Boats to Save People
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BoatstoSavePeople
 {
     /*
@@ -64,6 +66,49 @@ namespace CompetitiveProgramming.LeetCode.BoatstoSavePeople
                 boats++;
             }
             return boats;
+        }
+    }
+
+
+    public class Test
+    {
+        public static bool[] TestBoatstoSavePeople()
+        {
+            // Case 1
+            int[] people881_1 = {1,2};
+            int limit881_1 = 3;
+            int result881_1 = Solution.NumRescueBoats(people881_1, limit881_1);
+
+            // Case 2
+            int[] people881_2 = {3,2,2,1};
+            int limit881_2 = 3;
+            int result881_2 = Solution.NumRescueBoats(people881_2, limit881_2);
+
+            // Case 3
+            int[] people881_3 = {3,5,3,4};
+            int limit881_3 = 5;
+            int result881_3 = Solution.NumRescueBoats(people881_3, limit881_3);
+
+            // Case 1
+            int result881_1_2 = Solution.NumRescueBoats2(people881_1, limit881_1);
+
+            // Case 2
+            int result881_2_2 = Solution.NumRescueBoats2(people881_2, limit881_2);
+
+            // Case 3
+            int result881_3_2 = Solution.NumRescueBoats(people881_3, limit881_3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result881_1, 1),
+                ResultTester.CheckResult<int>(result881_2, 3),
+                ResultTester.CheckResult<int>(result881_3, 4),
+                ResultTester.CheckResult<int>(result881_1_2, 1),
+                ResultTester.CheckResult<int>(result881_2_2, 3),
+                ResultTester.CheckResult<int>(result881_3_2, 4)
+            };
+
+            return results;
         }
     }
 

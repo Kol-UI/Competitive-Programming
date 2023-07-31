@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumCostForTickets
 {
 
@@ -26,6 +28,8 @@ On day 1, you bought a 1-day pass for costs[0] = $2, which covered day 1.
 On day 3, you bought a 7-day pass for costs[1] = $7, which covered days 3, 4, ..., 9.
 On day 20, you bought a 1-day pass for costs[0] = $2, which covered day 20.
 In total, you spent $11 and covered all the days of your travel.
+
+
 Example 2:
 
 Input: days = [1,2,3,4,5,6,7,8,9,10,30,31], costs = [2,7,15]
@@ -74,6 +78,30 @@ In total, you spent $17 and covered all the days of your travel.
             dp[currentDayIdx] = Math.Min(costs[2] + GetMinCost(days, costs, dp, movingDayIndex), dp[currentDayIdx]);
 
             return dp[currentDayIdx];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMinimumCostForTickets()
+        {
+            // Case 1
+            int[] days983Case1 = { 1, 4, 6, 7, 8, 20 };
+            int[] costs983Case1 = { 2, 7, 15 };
+            int result983Case1 = Solution.MincostTickets(days983Case1, costs983Case1);
+
+            // Case 2
+            int[] days983Case2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 31 };
+            int[] costs983Case2 = { 2, 7, 15 };
+            int result983Case2 = Solution.MincostTickets(days983Case2, costs983Case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result983Case1, 11),
+                ResultTester.CheckResult<int>(result983Case2, 17)
+            };
+
+            return results;
         }
     }
 

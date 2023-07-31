@@ -36,6 +36,8 @@ Constraints:
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LastStoneWeight
 {
     public class Solution
@@ -56,6 +58,27 @@ namespace CompetitiveProgramming.LeetCode.LastStoneWeight
             }
             
             return pq.Peek();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestLastStoneWeight()
+        {
+            // Case 1
+            int[] stones1 = {2,7,4,1,8,1};
+            int result1_1046 = LeetCode.LastStoneWeight.Solution.LastStoneWeight(stones1);
+
+            // Case 2
+            int[] stones2 = {1};
+            int result2_1046 = LeetCode.LastStoneWeight.Solution.LastStoneWeight(stones2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_1046, 1),
+                ResultTester.CheckResult<int>(result2_1046, 1)
+            };
+            return results;
         }
     }
 }

@@ -23,6 +23,8 @@ As we cannot use any three side lengths to form a triangle of non-zero area, we 
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LargestPerimeterTriangle
 {
     public class Solution
@@ -38,6 +40,25 @@ namespace CompetitiveProgramming.LeetCode.LargestPerimeterTriangle
                 }
             }
             return 0;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestLargestPerimeterTriangle()
+        {
+            int[] case1_976 = {2,1,2};
+            int[] case2_976 = {1,2,1,10};
+            int result1_976 = Solution.LargestPerimeter(case1_976);
+            int result2_976 = Solution.LargestPerimeter(case2_976);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_976, 5),
+                ResultTester.CheckResult<int>(result2_976, 0)
+            };
+
+            return results;
         }
     }
 }

@@ -21,6 +21,8 @@ Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaxConsecutiveOnesIII
 {
     public class Solution
@@ -46,5 +48,24 @@ namespace CompetitiveProgramming.LeetCode.MaxConsecutiveOnesIII
             }
             return maxCons;
         }
-    }   
+    }  
+
+    public class Test
+    {
+        public static bool[] TestMaxConsecutiveOnesIII()
+        {
+            int[] nums1 = {1,1,1,0,0,0,1,1,1,1,0};
+            int k1 = 2;
+            int[] nums2 = {0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1};
+            int k2 = 3;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.LongestOnes(nums1, k1), 6),
+                ResultTester.CheckResult<int>(Solution.LongestOnes(nums2, k2), 10)
+            };
+
+            return results;
+        }
+    } 
 }

@@ -33,6 +33,8 @@ Explanation: The above image depicts how the matrix changes each day starting fr
 The last day where it is possible to cross from top to bottom is on day 3.
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LastDayWhereYouCanStillCross
 {
     public class Solution
@@ -117,6 +119,57 @@ namespace CompetitiveProgramming.LeetCode.LastDayWhereYouCanStillCross
             }
             
             return left;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestLastDayWhereYouCanStillCroww()
+        {
+            int row1 = 2;
+            int col1 = 2;
+            int[][] cells1 = new int[][]
+            {
+                new int[] { 1, 1 },
+                new int[] { 2, 1 },
+                new int[] { 2, 1 },
+                new int[] { 1, 2 },
+                new int[] { 2, 2 }
+            };
+            int row2 = 2;
+            int col2 = 2;
+            int[][] cells2 = new int[][]
+            {
+                new int[] { 1, 1 },
+                new int[] { 1, 2 },
+                new int[] { 1, 2 },
+                new int[] { 2, 2 }
+            };
+            int row3 = 3;
+            int col3 = 3;
+            int[][] cells3 = new int[][]
+            {
+                new int[] { 1, 2 },
+                new int[] { 2, 2 },
+                new int[] { 3, 3 },
+                new int[] { 2, 2 },
+                new int[] { 1, 1 },
+                new int[] { 1, 3 },
+                new int[] { 2, 3 },
+                new int[] { 3, 2 },
+                new int[] { 3, 1 }
+            };
+            int result1 = Solution.LatestDayToCross(row1, col1, cells1);
+            int result2 = Solution.LatestDayToCross(row2, col2, cells2);
+            int result3 = Solution.LatestDayToCross(row3, col3, cells3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 1),
+                ResultTester.CheckResult<int>(result3, 4)
+            };
+
+            return results;
         }
     }
 }

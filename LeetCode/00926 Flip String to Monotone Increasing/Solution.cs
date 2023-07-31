@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FlipStringtoMonotoneIncreasing
 {
@@ -60,6 +61,34 @@ namespace CompetitiveProgramming.LeetCode.FlipStringtoMonotoneIncreasing
         }
 
 
+    }
+
+
+    public class Test
+    {
+        public static bool[] TestFlipStringtoMonotoneIncreasing()
+        {
+            // Case 1
+            string Case1_926 = "00110";
+            int Case1_926_Result = Solution.MinFlipsMonoIncr(Case1_926);
+
+            // Case 2
+            string Case2_926 = "010110";
+            int Case2_926_Result = Solution.MinFlipsMonoIncr(Case2_926);
+
+            // Case 3
+            string Case3_926 = "00011000";
+            int Case3_926_Result = Solution.MinFlipsMonoIncr(Case3_926);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_926_Result, 1),
+                ResultTester.CheckResult<int>(Case2_926_Result, 2),
+                ResultTester.CheckResult<int>(Case3_926_Result, 2)
+            };
+
+            return results;
+        }
     }
 }
 

@@ -25,6 +25,8 @@ Input: startGene = "AACCGGTT", endGene = "AAACGGTA", bank = ["AACCGGTA","AACCGCT
 Output: 2
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumGeneticMutation
 {
     public class Solution
@@ -75,6 +77,27 @@ namespace CompetitiveProgramming.LeetCode.MinimumGeneticMutation
                 }
             }
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMinimumGeneticMutation()
+        {
+            string startGene1 = "AACCGGTT";
+            string endGene1 = "AACCGGTA";
+            string[] bank1 = {"AACCGGTA"};
+            string startGene2 = "AACCGGTT";
+            string endGene2 = "AAACGGTA";
+            string[] bank2 = {"AACCGGTA","AACCGCTA","AAACGGTA"};
+            int result1 = Solution.MinMutation(startGene1, endGene1, bank1);
+            int result2 = Solution.MinMutation(startGene2, endGene2, bank2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 2)
+            };
+            return results;
         }
     }
 }

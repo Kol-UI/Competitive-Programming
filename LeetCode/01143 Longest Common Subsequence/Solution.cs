@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 using Microsoft.VisualBasic;
 
 namespace CompetitiveProgramming.LeetCode.LongestCommonSubsequence
@@ -55,6 +56,20 @@ namespace CompetitiveProgramming.LeetCode.LongestCommonSubsequence
                 }
             }
             return memo[a, b];
+        }
+
+        public static bool[] TestLongestCommonSubsequence()
+        {
+            // Case 1
+            string Case1Text1 = "test"; string Case1Text2 = "tesabcde";
+            int Case1Result = LeetCode.LongestCommonSubsequence.Solution.LongestCommonSubsequence(Case1Text1, Case1Text2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1Result, 3)
+            };
+            
+            return results;
         }
     }
 }

@@ -31,6 +31,8 @@ Output: 2
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.UncrossedLines
 {
     public class Solution
@@ -75,6 +77,25 @@ namespace CompetitiveProgramming.LeetCode.UncrossedLines
             }
 
             return Traverse(0, 0, nums1, nums2, MemoArray);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestUncrossedLines()
+        {
+            int[] nums1_1 = {1,4,2}; int[] nums2_1 = {1,2,4};
+            int[] nums1_2 = {2,5,1,2,5}; int[] nums2_2 = {10,5,2,1,5,2};
+            int[] nums1_3 = {1,3,7,1,7,5}; int[] nums2_3 = {1,9,2,5,1};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.MaxUncrossedLines(nums1_1, nums2_1), 2),
+                ResultTester.CheckResult<int>(Solution.MaxUncrossedLines(nums1_2, nums2_2), 3),
+                ResultTester.CheckResult<int>(Solution.MaxUncrossedLines(nums1_3, nums2_3), 2)
+            };
+
+            return results;
         }
     }
 }

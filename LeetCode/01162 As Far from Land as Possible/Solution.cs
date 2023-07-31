@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.AsFarfromLandasPossible
 {
 	public class Solution
@@ -25,9 +27,9 @@ namespace CompetitiveProgramming.LeetCode.AsFarfromLandasPossible
                 new int[]{-1,0}, new int[]{1,0}};
             int[,] visited = new int[rows,cols];
             Queue<((int,int),int)> q = new();
-            for(int i=0;i<rows;i++)
+            for(int i = 0; i < rows; i++)
             {
-                for(int j=0;j<cols;j++)
+                for(int j = 0; j < cols; j++)
                 {
                     visited[i,j] = grid[i][j];
                     if (grid[i][j] == 1)
@@ -46,14 +48,43 @@ namespace CompetitiveProgramming.LeetCode.AsFarfromLandasPossible
                     if(nr >= 0 && nr < rows
                         && nc >=0 && nc < cols && visited[nr,nc] == 0)
                     {
-                        visited[nr,nc]=1;
-                        q.Enqueue(((nr,nc),count+1));
+                        visited[nr,nc] = 1;
+                        q.Enqueue(((nr, nc), count + 1));
                     }
                 }
             }
-            if(maxD==0)
+            if(maxD == 0)
                 return -1;
             return maxD;
+        }
+
+        public static bool[] TestAsFarfromLandasPossible()
+        {
+            // Case 1
+            int[][] gridCase1_1162 = new int[][]
+            {
+                new int[] {1, 0, 1},
+                new int[] {0, 0, 0},
+                new int[] {1, 0, 1}
+            };
+            int Case1_1162_Result = LeetCode.AsFarfromLandasPossible.Solution.MaxDistance(gridCase1_1162);
+
+            // Case 2
+            int[][] gridCase2_1162 = new int[][]
+            {
+                new int[] {1, 0, 0},
+                new int[] {0, 0, 0},
+                new int[] {0, 0, 0}
+            };
+            int Case2_1162_Result = LeetCode.AsFarfromLandasPossible.Solution.MaxDistance(gridCase2_1162);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_1162_Result, 2),
+                ResultTester.CheckResult<int>(Case2_1162_Result, 4)
+            };
+
+            return results;
         }
     }
 }

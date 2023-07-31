@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CapacityToShipPackagesWithinDDays
 {
@@ -88,6 +89,60 @@ namespace CompetitiveProgramming.LeetCode.CapacityToShipPackagesWithinDDays
             }
 
             return count <= days;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCapacityToShipPackagesWithinDDays()
+        {
+            System.Random random = new System.Random();
+
+            // Case 1
+            int[] weightsCase1_1011 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int daysCase1_1011 = 5;
+            int resultCase1_1011 = Solution.ShipWithinDays(weightsCase1_1011, daysCase1_1011);
+
+            // Case 2
+            int[] weightsCase2_1011 = { 3, 2, 2, 4, 1, 4 };
+            int daysCase2_1011 = 3;
+            int resultCase2_1011 = Solution.ShipWithinDays(weightsCase2_1011, daysCase2_1011);
+
+            // Case 3
+            int[] weightsCase3_1011 = { 1, 2, 3, 1, 1 };
+            int daysCase3_1011 = 4;
+            int resultCase3_1011 = Solution.ShipWithinDays(weightsCase3_1011, daysCase3_1011);
+
+            // Case 4
+            int value1_1011 = random.Next(1, 10);
+            int value2_1011 = random.Next(1, 10);
+            int value3_1011 = random.Next(1, 10);
+            int value4_1011 = random.Next(1, 10);
+            int value5_1011 = random.Next(1, 10);
+            int[] weightsCase4_1011 = { value1_1011, value2_1011, value3_1011, value4_1011, value5_1011 };
+            int daysCase4_1011 = random.Next(1, 10);
+            int resultCase4_1011 = Solution.ShipWithinDays(weightsCase4_1011, daysCase4_1011);
+
+            // Case 5
+            int value6_1011 = random.Next(1, 10);
+            int value7_1011 = random.Next(1, 10);
+            int value8_1011 = random.Next(1, 10);
+            int value9_1011 = random.Next(1, 10);
+            int value10_1011 = random.Next(1, 10);
+            int[] weightsCase5_1011 = { value6_1011, value7_1011, value8_1011, value9_1011, value10_1011 };
+            int daysCase5_1011 = random.Next(1, 10);
+            int resultCase5_1011 = Solution.ShipWithinDays(weightsCase5_1011, daysCase5_1011);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(resultCase1_1011, 15),
+                ResultTester.CheckResult<int>(resultCase2_1011, 6),
+                ResultTester.CheckResult<int>(resultCase3_1011, 3),
+                ResultTester.CheckResult<int>(resultCase4_1011, resultCase4_1011),
+                ResultTester.CheckResult<int>(resultCase5_1011, resultCase5_1011),
+            };
+
+            return results;
         }
     }
 }

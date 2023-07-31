@@ -18,8 +18,8 @@ namespace CompetitiveProgramming.CodeChef.NumberMirror
         /*
         public static void Main()
         {
-            int N = Convert.ToInt32(Console.ReadLine(N));
-            Console.WriteLine(N);
+            int num = Convert.ToInt32(Console.ReadLine());
+		    Console.WriteLine(num);
         }
         */
     }

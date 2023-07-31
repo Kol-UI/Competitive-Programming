@@ -30,6 +30,8 @@ Explanation: The billboard cannot be supported, so we return 0.
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.TallestBillboard
 {
     public class Solution
@@ -80,5 +82,29 @@ namespace CompetitiveProgramming.LeetCode.TallestBillboard
             }
         }
 
+    }
+
+
+    public class Test
+    {
+        public static bool[] TestTallestBillboard()
+        {
+            int[] rods1 = {1,2,3,6};
+            int[] rods2 = {1,2,3,4,5,6};
+            int[] rods3 = {1,2};
+
+            int result1 = Solution.TallestBillboard(rods1);
+            int result2 = Solution.TallestBillboard(rods2);
+            int result3 = Solution.TallestBillboard(rods3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 6),
+                ResultTester.CheckResult<int>(result2, 10),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+
+            return results;
+        }
     }
 }

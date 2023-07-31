@@ -22,6 +22,8 @@ Input: firstList = [[1,3],[5,9]], secondList = []
 Output: []
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.IntervalListIntersections
 {
     public class Solution
@@ -56,5 +58,55 @@ namespace CompetitiveProgramming.LeetCode.IntervalListIntersections
 
             return result.ToArray();
         }
-    } 
+    }
+
+    public class Test
+    {
+        public static bool[] TestIntervalListIntersections()
+        {
+            int[][] firstList = new int[][]
+            {
+                new int[] {0, 2},
+                new int[] {5, 10},
+                new int[] {13, 23},
+                new int[] {24, 25}
+            };
+
+            int[][] secondList = new int[][]
+            {
+                new int[] {1, 5},
+                new int[] {8, 12},
+                new int[] {15, 24},
+                new int[] {25, 26}
+            };
+
+            int[][] expectedOutput = new int[][]
+            {
+                new int[] {1, 2},
+                new int[] {5, 5},
+                new int[] {8, 10},
+                new int[] {15, 23},
+                new int[] {24, 24},
+                new int[] {25, 25}
+            };
+
+            int[][] firstList2 = new int[][]
+            {
+                new int[] {1, 3},
+                new int[] {5, 9}
+            };
+
+            int[][] secondList2 = new int[][] { };
+
+            int[][] expectedOutput2 = new int[][] { };
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[][]>(Solution.IntervalIntersection(firstList, secondList), expectedOutput),
+                ResultTester.CheckResult<int[][]>(Solution.IntervalIntersection(firstList2, secondList2), expectedOutput2)
+            };
+
+            return results;
+        }
+    }
 }

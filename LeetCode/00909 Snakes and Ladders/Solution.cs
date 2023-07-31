@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SnakesandLadders
 {
     public class Solution
@@ -71,6 +73,40 @@ namespace CompetitiveProgramming.LeetCode.SnakesandLadders
                 }
             }
             return dist[n * n];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSnakesandLadders()
+        {
+            // Case 1
+            int[][] boardCase1_909 = new int[][]
+            {
+                new int[] { -1,-1,-1,-1,-1,-1 },
+                new int[] { -1, -1, -1, -1, -1, -1 },
+                new int[] { -1,-1,-1,-1,-1,-1 },
+                new int[] { -1,35,-1,-1,13,-1 },
+                new int[] { -1,-1,-1,-1,-1,-1 },
+                new int[] { -1,15,-1,-1,-1,-1 }
+            };
+            int Case1_909_Result = Solution.SnakesAndLadders(boardCase1_909);
+
+            // Case 2
+            int[][] boardCase2_909 = new int[][]
+            {
+                new int[] { -1,-1 },
+                new int[] { -1, 3 },
+            };
+            int Case2_909_Result = Solution.SnakesAndLadders(boardCase2_909);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_909_Result, 4),
+                ResultTester.CheckResult<int>(Case2_909_Result, 1)
+            };
+
+            return results;
         }
     }
 }

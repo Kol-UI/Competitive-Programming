@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LexicographicallySmallestEquivalentString
 {
@@ -58,6 +59,44 @@ namespace CompetitiveProgramming.LeetCode.LexicographicallySmallestEquivalentStr
                 }
             }
             return new string(baseStr.Select(x => arr[x - 'a']).ToArray());
+        }
+    }
+
+
+    public class Test
+    {
+        public static bool[] TestLexicographicallySmallestEquivalentString()
+        {
+            // Case 1
+            string Case1_s1 = "parker";
+            string Case1_s2 = "morris";
+            string Case1_baseStr = "parser";
+            string Case1_1061_Result = Solution.SmallestEquivalentString(Case1_s1, Case1_s2, Case1_baseStr);
+
+            // Case 2
+            string Case2_s1 = "hello";
+            string Case2_s2 = "world";
+            string Case2_baseStr = "hold";
+            string Case2_1061_Result = Solution.SmallestEquivalentString(Case2_s1, Case2_s2, Case2_baseStr);
+
+            // Case 3
+            string Case3_s1 = "leetcode";
+            string Case3_s2 = "programs";
+            string Case3_baseStr = "sourcecode";
+            string Case3_1061_Result = Solution.SmallestEquivalentString(Case3_s1, Case3_s2, Case3_baseStr);
+
+            string expected1 = "makkek";
+            string expected2 = "hdld";
+            string expected3 = "aauaaaaada";
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(Case1_1061_Result, expected1),
+                ResultTester.CheckResult<string>(Case2_1061_Result, expected2),
+                ResultTester.CheckResult<string>(Case3_1061_Result, expected3)
+            };
+
+            return results;
         }
     }
 }

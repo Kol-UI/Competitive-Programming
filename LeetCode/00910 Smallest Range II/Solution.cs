@@ -31,6 +31,8 @@ Explanation: Change nums to be [4, 6, 3]. The score is max(nums) - min(nums) = 6
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SmallestRangeII
 {
     public class Solution
@@ -49,6 +51,26 @@ namespace CompetitiveProgramming.LeetCode.SmallestRangeII
                 result = Math.Min(result, high - low);
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSmallestRangeII()
+        {
+            int[] nums1 = {1}; int k1 = 0;
+            int[] nums2 = {0, 10}; int k2 = 2;
+            int[] nums3 = {1, 3, 6}; int k3 = 3;
+            int result1 = Solution.SmallestRangeII(nums1, k1);
+            int result2 = Solution.SmallestRangeII(nums2, k2);
+            int result3 = Solution.SmallestRangeII(nums3, k3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 0),
+                ResultTester.CheckResult<int>(result2, 6),
+                ResultTester.CheckResult<int>(result3, 3)
+            };
+            return results;
         }
     }
 }

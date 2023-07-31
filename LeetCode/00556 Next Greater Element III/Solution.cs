@@ -20,6 +20,8 @@ Output: -1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NextGreaterElementIII
 {
     public class Solution
@@ -45,6 +47,21 @@ namespace CompetitiveProgramming.LeetCode.NextGreaterElementIII
                 }
             }
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestNextGreaterElementIII()
+        {
+            int result1 = Solution.NextGreaterElement(12);
+            int result2 = Solution.NextGreaterElement(21);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 21),
+                ResultTester.CheckResult<int>(result2, -1)
+            };
+            return results;
         }
     }
 }

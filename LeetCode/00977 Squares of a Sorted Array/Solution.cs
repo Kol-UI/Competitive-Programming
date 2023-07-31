@@ -19,6 +19,8 @@ Output: [4,9,9,49,121]
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SquaresofaSortedArray
 {
     public class Solution
@@ -74,6 +76,26 @@ namespace CompetitiveProgramming.LeetCode.SquaresofaSortedArray
             }
 
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSquaresofaSortedArray()
+        {
+            int[] nums1 = {-4, -1, 0, 3, 10};
+            int[] output1 = {0, 1, 9, 16, 100};
+
+            int[] nums2 = {-7, -3, 2, 3, 11};
+            int[] output2 = {4, 9, 9, 49, 121};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(Solution.SortedSquares(nums1), output1),
+                ResultTester.CheckResult<int[]>(Solution.SortedSquares(nums2), output2)
+            };
+
+            return results;
         }
     }
 }

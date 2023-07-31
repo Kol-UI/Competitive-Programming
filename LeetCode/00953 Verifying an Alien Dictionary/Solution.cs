@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.VerifyinganAlienDictionary
 {
@@ -24,7 +25,7 @@ namespace CompetitiveProgramming.LeetCode.VerifyinganAlienDictionary
         // Input: words = ["apple","app"], order = "abcdefghijklmnopqrstuvwxyz"
         // Output: false
         // Explanation: The first three characters "app" match, and the second string is shorter (in size.) According to lexicographical rules "apple" > "app", because 'l' > '∅', where '∅' is defined as the blank character which is less than any other character
-        public bool IsAlienSorted(string[] words, string order)
+        public static bool IsAlienSorted(string[] words, string order)
         {
             var dict = new Dictionary<char, int>();
 
@@ -67,6 +68,34 @@ namespace CompetitiveProgramming.LeetCode.VerifyinganAlienDictionary
                 }
             }
             return true;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestVerifyinganAlienDictionary()
+        {
+            string[] words1 = new string[] {"hello", "leetcode"};
+            string order1 = "hlabcdefgijkmnopqrstuvwxyz";
+            bool output1 = true;
+
+            string[] words2 = new string[] {"word", "world", "row"};
+            string order2 = "worldabcefghijkmnpqstuvxyz";
+            bool output2 = false;
+
+            string[] words3 = new string[] {"apple", "app"};
+            string order3 = "abcdefghijklmnopqrstuvwxyz";
+            bool output3 = false;
+
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Solution.IsAlienSorted(words1, order1), output1),
+                ResultTester.CheckResult<bool>(Solution.IsAlienSorted(words2, order2), output2),
+                ResultTester.CheckResult<bool>(Solution.IsAlienSorted(words3, order3), output3)
+            };
+
+            return results;
         }
     }
 }

@@ -21,6 +21,8 @@ Output: 104
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.StoneGameII
 {
     public class Solution
@@ -66,6 +68,23 @@ namespace CompetitiveProgramming.LeetCode.StoneGameII
             }
 
             return dp[i, M] = sums[i] - min;
+        }
+
+        public static bool[] TestStoneGameII()
+        {
+            int[] nums1 = {2,7,9,4,4};
+            int[] nums2 = {1,2,3,4,5,100};
+
+            int result1 = StoneGameII(nums1);
+            int result2 = StoneGameII(nums2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 10),
+                ResultTester.CheckResult<int>(result2, 104)
+            };
+
+            return results;
         }
     }
 }

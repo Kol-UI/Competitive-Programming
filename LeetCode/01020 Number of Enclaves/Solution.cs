@@ -23,6 +23,8 @@ Explanation: All 1s are either on the boundary or can reach the boundary.
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NumberofEnclaves
 {
     public class Solution
@@ -55,6 +57,40 @@ namespace CompetitiveProgramming.LeetCode.NumberofEnclaves
             VisitLands(grid, i-1, j);
             VisitLands(grid, i, j+1);
             VisitLands(grid, i, j-1);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestNumberofEnclaves()
+        {
+            // Case 1
+            int[][] Grid1020_1 = new int[][]
+            {
+                new int[]{0,0,0,0},
+                new int[]{1,0,1,0},
+                new int[]{0,1,1,0},
+                new int[]{0,0,0,0}
+            };
+            int Result1020_1 = Solution.NumEnclaves(Grid1020_1);
+
+            // Case 2
+            int[][] Grid1020_2 = new int[][]
+            {
+                new int[]{0,1,1,0},
+                new int[]{0,0,1,0},
+                new int[]{0,0,1,0},
+                new int[]{0,0,0,0}
+            };
+            int Result1020_2 = Solution.NumEnclaves(Grid1020_2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Result1020_1, 3),
+                ResultTester.CheckResult<int>(Result1020_2, 0)
+            };
+
+            return results;
         }
     }
 }

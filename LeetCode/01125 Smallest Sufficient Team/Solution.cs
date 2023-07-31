@@ -23,6 +23,8 @@ Input: req_skills = ["algorithms","math","java","reactjs","csharp","aws"], peopl
 Output: [1,2]
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SmallestSufficientTeam
 {
     public class Solution
@@ -73,6 +75,41 @@ namespace CompetitiveProgramming.LeetCode.SmallestSufficientTeam
                 bitmask += bitMaskKey[skill];
             }
             return bitmask;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSmallestSufficientTeam()
+        {
+            string[] req_skills1 = { "java", "nodejs", "reactjs" };
+            IList<IList<string>> people1 = new List<IList<string>>
+            {
+                new List<string> { "java" },
+                new List<string> { "nodejs" },
+                new List<string> { "nodejs", "reactjs" }
+            };
+            string[] req_skills2 = { "algorithms", "math", "java", "reactjs", "csharp", "aws" };
+            IList<IList<string>> people2 = new List<IList<string>>
+            {
+                new List<string> { "algorithms", "math", "java" },
+                new List<string> { "algorithms", "math", "reactjs" },
+                new List<string> { "java", "csharp", "aws" },
+                new List<string> { "reactjs", "csharp" },
+                new List<string> { "csharp", "math" },
+                new List<string> { "aws", "java" }
+            };
+            int[] result1 = LeetCode.SmallestSufficientTeam.Solution.SmallestSufficientTeam(req_skills1, people1);
+            int[] result2 = LeetCode.SmallestSufficientTeam.Solution.SmallestSufficientTeam(req_skills2, people2);
+            int[] expected1 = {0,2};
+            int[] expected2 = {1,2};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2)
+            };
+
+            return results;
         }
     }
 }

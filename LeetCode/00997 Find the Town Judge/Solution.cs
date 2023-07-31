@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindtheTownJudge
 {
 	public class Solution
@@ -44,6 +46,49 @@ namespace CompetitiveProgramming.LeetCode.FindtheTownJudge
                 }
             }
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindtheTownJudge()
+        {
+
+            // Case 1
+            int[][] trustCase1_997 = new int[][]
+            {
+                new int[] { 1, 2 }
+            };
+            int Case1_997 = 2;
+            int Case1_997_Result = Solution.FindJudge(Case1_997, trustCase1_997);
+
+            // Case 2
+            int[][] trustCase2_997 = new int[][]
+            {
+                new int[] { 1, 3 },
+                new int[] { 2, 3 }
+            };
+            int Case2_997 = 3;
+            int Case2_997_Result = Solution.FindJudge(Case2_997, trustCase2_997);
+
+            // Case 3
+            int[][] trustCase3_997 = new int[][]
+            {
+                new int[] { 1, 3 },
+                new int[] { 2, 3 },
+                new int[] { 3, 1 }
+            };
+            int Case3_997 = 3;
+            int Case3_997_Result = Solution.FindJudge(Case3_997, trustCase3_997);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_997_Result, 2),
+                ResultTester.CheckResult<int>(Case2_997_Result, 3),
+                ResultTester.CheckResult<int>(Case3_997_Result, -1)
+            };
+
+            return results;
         }
     }
 }

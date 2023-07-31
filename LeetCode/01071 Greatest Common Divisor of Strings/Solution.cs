@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.GreatestCommonDivisorofStrings
 {
@@ -24,7 +25,7 @@ namespace CompetitiveProgramming.LeetCode.GreatestCommonDivisorofStrings
         // Output: ""
 
 
-        public int gcd(int n1,int n2)
+        public static int gcd(int n1,int n2)
         {
             if (n2 == 0)
             {
@@ -36,19 +37,38 @@ namespace CompetitiveProgramming.LeetCode.GreatestCommonDivisorofStrings
             }   
         }
         
-        public string GcdOfStrings(string str1, string str2)
+        public static string GcdOfStrings(string str1, string str2)
         {
             int len1 = str1.Length;
             int len2 = str2.Length;
-            if((str1+str2).Equals(str2+str1))
+            if((str1 + str2).Equals(str2 + str1))
             {
-                int index=gcd(len1,len2);
-                return str1.Substring(0,index);
+                int index = gcd(len1, len2);
+                return str1.Substring(0, index);
             }
             else
             {
                 return "";
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestGreatestCommonDivisorofStrings()
+        {
+            string str1_1 = "ABCABC"; string str2_1 = "ABC";
+            string str1_2 = "ABABAB"; string str2_2 = "ABAB";
+            string str1_3 = "LEET"; string str2_3 = "CODE";
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(Solution.GcdOfStrings(str1_1, str2_1), "ABC"),
+                ResultTester.CheckResult<string>(Solution.GcdOfStrings(str1_2, str2_2), "AB"),
+                ResultTester.CheckResult<string>(Solution.GcdOfStrings(str1_3, str2_3), "")
+            };
+
+            return results;
         }
     }
 }

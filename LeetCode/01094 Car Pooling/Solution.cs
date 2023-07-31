@@ -21,6 +21,8 @@ Output: true
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CarPooling
 {
     public class Solution
@@ -38,6 +40,40 @@ namespace CompetitiveProgramming.LeetCode.CarPooling
                 .ThenBy(x => x.Item2)
                 .TakeWhile(x => (capacity -= x.Item2) >= 0)
                 .Count() == trips.Length * 2;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCarPooling()
+        {
+            bool expected1 = false;
+
+            bool expected2 = true;
+
+            int[][] trips1 = new int[][]
+            {
+                new int[] {2, 1, 5},
+                new int[] {3, 3, 7}
+            };
+
+            int capacity1 = 4;
+
+            int[][] trips2 = new int[][]
+            {
+                new int[] {2, 1, 5},
+                new int[] {3, 3, 7}
+            };
+
+            int capacity2 = 5;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Solution.CarPooling(trips1, capacity1), expected1),
+                ResultTester.CheckResult<bool>(Solution.CarPooling(trips2, capacity2), expected2)
+            };
+            
+            return results;
         }
     }
 }

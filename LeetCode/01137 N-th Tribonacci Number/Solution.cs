@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.NthTribonacciNumber
 {
@@ -21,7 +22,7 @@ namespace CompetitiveProgramming.LeetCode.NthTribonacciNumber
         // Input: n = 25
         // Output: 1389537
 
-        public int TribonacciMath(int n)
+        public static int TribonacciMath(int n)
         {
             var a = new int[Math.Max(n + 1, 3)];
             (a[0], a[1], a[2]) = (0, 1, 1);
@@ -32,7 +33,7 @@ namespace CompetitiveProgramming.LeetCode.NthTribonacciNumber
             return a[n];
         }
 
-        public int TribonacciFor(int n)
+        public static int TribonacciFor(int n)
         {
             int[] result = new int[] {0, 1, 1};
             
@@ -50,7 +51,7 @@ namespace CompetitiveProgramming.LeetCode.NthTribonacciNumber
             return result[2];
         }
 
-        public int Tribonacci(int n)
+        public static int Tribonacci(int n)
         {
             if(n == 0) return 0;
             if(n == 1 || n == 2) return 1;
@@ -69,6 +70,29 @@ namespace CompetitiveProgramming.LeetCode.NthTribonacciNumber
             return dp[n];
         }
 
+    }
+
+    public class Test
+    {
+        public static bool[] TestNthTribonacciNumber()
+        {
+            int n1 = 4;
+            int expected1 = 4;
+            int n2 = 25;
+            int expected2 = 1389537;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.Tribonacci(n1), expected1),
+                ResultTester.CheckResult<int>(Solution.Tribonacci(n2), expected2),
+                ResultTester.CheckResult<int>(Solution.TribonacciFor(n1), expected1),
+                ResultTester.CheckResult<int>(Solution.TribonacciFor(n2), expected2),
+                ResultTester.CheckResult<int>(Solution.TribonacciMath(n1), expected1),
+                ResultTester.CheckResult<int>(Solution.TribonacciMath(n2), expected2),
+            };
+
+            return results;
+        }
     }
 }
 

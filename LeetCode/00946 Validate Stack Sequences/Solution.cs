@@ -21,6 +21,8 @@ Explanation: 1 cannot be popped before 2.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ValidateStackSequences
 {
     public class Solution
@@ -51,6 +53,30 @@ namespace CompetitiveProgramming.LeetCode.ValidateStackSequences
             }
 
             return true;
+        }
+    }
+
+
+    public class Test
+    {
+        public static bool[] TestValidateStackSequences()
+        {
+            int[] pushed1 = new int[] {1, 2, 3, 4, 5};
+            int[] popped1 = new int[] {4, 5, 3, 2, 1};
+            bool output1 = true;
+
+            int[] pushed2 = new int[] {1, 2, 3, 4, 5};
+            int[] popped2 = new int[] {4, 3, 5, 1, 2};
+            bool output2 = false;
+
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Solution.ValidateStackSequences(pushed1, popped1), output1),
+                ResultTester.CheckResult<bool>(Solution.ValidateStackSequences(pushed2, popped2), output2)
+            };
+
+            return results;
         }
     }
 }

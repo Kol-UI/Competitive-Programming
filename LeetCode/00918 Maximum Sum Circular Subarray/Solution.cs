@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximumSumCircularSubarray
 {
@@ -83,6 +84,33 @@ namespace CompetitiveProgramming.LeetCode.MaximumSumCircularSubarray
             }
             return result;
             */
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMaximumSumCircularSubarray()
+        {
+            // Case 1
+            int[] numsCase1_918 = { 1, -2, 3, -2 };
+            int Case1_918_Result = Solution.MaxSubarraySumCircular(numsCase1_918);
+
+            // Case 2
+            int[] numsCase2_918 = { 5, -3, 5 };
+            int Case2_918_Result = Solution.MaxSubarraySumCircular(numsCase2_918);
+
+            // Case 3
+            int[] numsCase3_918 = { -3, -2, -3 };
+            int Case3_918_Result = Solution.MaxSubarraySumCircular(numsCase3_918);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_918_Result, 3),
+                ResultTester.CheckResult<int>(Case2_918_Result, 10),
+                ResultTester.CheckResult<int>(Case3_918_Result, -2)
+            };
+
+            return results;
         }
     }
 }

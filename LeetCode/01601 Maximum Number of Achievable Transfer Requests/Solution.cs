@@ -45,6 +45,8 @@ Output: 4
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximumNumberofAchievableTransferRequests
 {
     public class Solution
@@ -98,6 +100,50 @@ namespace CompetitiveProgramming.LeetCode.MaximumNumberofAchievableTransferReque
                 num >>= 1;
             }
             return count;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMaximumNumberofAchievableTransferRequests()
+        {
+            int n1 = 5;
+            int[][] requests1 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 1, 0 },
+                new int[] { 0, 1 },
+                new int[] { 1, 2 },
+                new int[] { 2, 0 },
+                new int[] { 3, 4 }
+            };
+
+            int n2 = 3;
+            int[][] requests2 = new int[][]
+            {
+                new int[] { 0, 0 },
+                new int[] { 1, 2 },
+                new int[] { 2, 1 }
+            };
+
+            int n3 = 4;
+            int[][] requests3 = new int[][]
+            {
+                new int[] { 0, 3 },
+                new int[] { 3, 1 },
+                new int[] { 1, 2 },
+                new int[] { 2, 0 }
+            };
+            int result1 = Solution.MaximumRequests(n1, requests1);
+            int result2 = Solution.MaximumRequests(n2, requests2);
+            int result3 = Solution.MaximumRequests(n3, requests3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 5),
+                ResultTester.CheckResult<int>(result2, 3),
+                ResultTester.CheckResult<int>(result3, 4)
+            };
+            return results;
         }
     }
 }

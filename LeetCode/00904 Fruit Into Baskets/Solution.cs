@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FruitIntoBaskets
 {
@@ -50,6 +51,33 @@ namespace CompetitiveProgramming.LeetCode.FruitIntoBaskets
                 result = Math.Max(result, right - left + 1);            
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFruitIntoBaskets()
+        {
+            // Case 1
+            int[] arrayCase1_904 = { 1, 2, 1 };
+            int Case1_904_Result = Solution.TotalFruit(arrayCase1_904);
+
+            // Case 2
+            int[] arrayCase2_904 = { 0, 1, 2, 2 };
+            int Case2_904_Result = Solution.TotalFruit(arrayCase2_904);
+
+            // Case 3
+            int[] arrayCase3_904 = { 1, 2, 3, 2, 2 };
+            int Case3_904_Result = Solution.TotalFruit(arrayCase3_904);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_904_Result, 3),
+                ResultTester.CheckResult<int>(Case2_904_Result, 3),
+                ResultTester.CheckResult<int>(Case3_904_Result, 4)
+            };
+
+            return results;
         }
     }
 }

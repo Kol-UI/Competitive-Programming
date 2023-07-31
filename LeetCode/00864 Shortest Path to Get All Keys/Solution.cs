@@ -43,6 +43,8 @@ Output: -1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ShortestPathtoGetAllKeys
 {
     public class Solution
@@ -132,6 +134,26 @@ namespace CompetitiveProgramming.LeetCode.ShortestPathtoGetAllKeys
             }
 
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestShortestPathtoGetAllKeys()
+        {
+            string[] grid1 = {"@.a..","###.#","b.A.B"};
+            string[] grid2 = {"@..aA","..B#.","....b"};
+            string[] grid3 = {"@Aa"};
+            int result1 = Solution.ShortestPathAllKeys(grid1);
+            int result2 = Solution.ShortestPathAllKeys(grid1);
+            int result3 = Solution.ShortestPathAllKeys(grid3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 8),
+                ResultTester.CheckResult<int>(result2, 8),
+                ResultTester.CheckResult<int>(result3, -1)
+            };
+            return results;
         }
     }
 }

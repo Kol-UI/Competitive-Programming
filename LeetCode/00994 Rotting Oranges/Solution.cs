@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RottingOranges
 {
@@ -13,7 +14,29 @@ namespace CompetitiveProgramming.LeetCode.RottingOranges
 
         //Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return -1.
 
-        public int OrangesRotting(int[][] grid)
+        /*
+        Example 1:
+
+
+        Input: grid = [[2,1,1],[1,1,0],[0,1,1]]
+        Output: 4
+
+
+        Example 2:
+
+        Input: grid = [[2,1,1],[0,1,1],[1,0,1]]
+        Output: -1
+        Explanation: The orange in the bottom left corner (row 2, column 0) is never rotten, because rotting only happens 4-directionally.
+        
+        
+        Example 3:
+
+        Input: grid = [[0,2]]
+        Output: 0
+        Explanation: Since there are already no fresh oranges at minute 0, the answer is just 0.
+        */
+
+        public static int OrangesRotting(int[][] grid)
         {
             var minutes = 0;
             var hashSet = new HashSet<string>();
@@ -64,7 +87,7 @@ namespace CompetitiveProgramming.LeetCode.RottingOranges
             return minutes;
         }
 
-        public bool HasFreshOranges(int[][] grid)
+        public static bool HasFreshOranges(int[][] grid)
         {
 
             for (int i = 0; i < grid.Length; i++)
@@ -78,6 +101,44 @@ namespace CompetitiveProgramming.LeetCode.RottingOranges
             }
 
             return false;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestRottingOranges()
+        {
+            int[][] grid1 = new int[][]
+            {
+                new int[] {2, 1, 1},
+                new int[] {1, 1, 0},
+                new int[] {0, 1, 1}
+            };
+
+            int[][] grid2 = new int[][]
+            {
+                new int[] {2, 1, 1},
+                new int[] {0, 1, 1},
+                new int[] {1, 0, 1}
+            };
+
+            int[][] grid3 = new int[][]
+            {
+                new int[] {0, 2}
+            };
+
+            int expected1 = 4;
+            int expected2 = -1;
+            int expected3 = 0;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.OrangesRotting(grid1), expected1),
+                ResultTester.CheckResult<int>(Solution.OrangesRotting(grid2), expected2),
+                ResultTester.CheckResult<int>(Solution.OrangesRotting(grid3), expected3)
+            };
+
+            return results;
         }
     }
 }

@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.AddtoArrayFormofInteger
 {
 	public class Solution
@@ -25,7 +27,7 @@ namespace CompetitiveProgramming.LeetCode.AddtoArrayFormofInteger
         // Output: [1,0,2,1]
         // Explanation: 215 + 806 = 1021
 
-        public IList<int> AddToArrayForm(int[] num, int k)
+        public static IList<int> AddToArrayForm(int[] num, int k)
         {
             var list = new List<int>(num);
             int ext, i = list.Count - 1;
@@ -47,5 +49,35 @@ namespace CompetitiveProgramming.LeetCode.AddtoArrayFormofInteger
             return list;
         }
 
+    }
+
+
+    public class Test
+    {
+        public static bool[] TestAddtoArrayFormofInteger()
+        {
+            int[] num1 = new int[] {1, 2, 0, 0};
+            int k1 = 34;
+
+            int[] num2 = new int[] {2, 7, 4};
+            int k2 = 181;
+
+            int[] num3 = new int[] {2, 1, 5};
+            int k3 = 806;
+
+            IList<int> expected1 = new List<int> {1, 2, 3, 4};
+            IList<int> expected2 = new List<int> {4, 5, 5};
+            IList<int> expected3 = new List<int> {1, 0, 2, 1};
+
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<int>>(Solution.AddToArrayForm(num1, k1), expected1),
+                ResultTester.CheckResult<IList<int>>(Solution.AddToArrayForm(num2, k2), expected2),
+                ResultTester.CheckResult<IList<int>>(Solution.AddToArrayForm(num3, k3), expected3)
+            };
+
+            return results;
+        }
     }
 }

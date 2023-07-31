@@ -25,6 +25,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ShortestBridge
 {
     public class Solution
@@ -87,6 +89,46 @@ namespace CompetitiveProgramming.LeetCode.ShortestBridge
             if(j > 0 && grid[i][j-1] == 1) traverse(grid, i, j - 1, island);
 
             if(j < grid.Length-1 && grid[i][j+1] == 1) traverse(grid, i, j + 1, island);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestShortestBridge()
+        {
+            int[][] case1 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 1, 0 }
+            };
+
+            int[][] case2 = new int[][]
+            {
+                new int[] { 0,1,0 },
+                new int[] { 0,0,0 },
+                new int[] { 0,0,1 }
+            };
+
+            int[][] case3 = new int[][]
+            {
+                new int[] { 1,1,1,1,1 },
+                new int[] { 1,0,0,0,1 },
+                new int[] { 1,0,1,0,1 },
+                new int[] { 1,0,0,0,1 },
+                new int[] { 1,1,1,1,1 }
+            };
+
+            int result1 = LeetCode.ShortestBridge.Solution.ShortestBridge(case1);
+            int result2 = LeetCode.ShortestBridge.Solution.ShortestBridge(case2);
+            int result3 = LeetCode.ShortestBridge.Solution.ShortestBridge(case3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(result3, 1)
+            };
+            return results;
         }
     }
 }

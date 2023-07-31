@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.DeleteColumnstoMakeSorted
 {
@@ -56,6 +57,30 @@ namespace CompetitiveProgramming.LeetCode.DeleteColumnstoMakeSorted
                         break;
                     }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestDeleteColumnstoMakeSorted()
+        {
+            string[] strs1 = new string[] { "cba", "daf", "ghi" };
+            int output1 = 1;
+
+            string[] strs2 = new string[] { "a", "b" };
+            int output2 = 0;
+
+            string[] strs3 = new string[] { "zyx", "wvu", "tsr" };
+            int output3 = 3;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.MinDeletionSize(strs1), output1),
+                ResultTester.CheckResult<int>(Solution.MinDeletionSize(strs2), output2),
+                ResultTester.CheckResult<int>(Solution.MinDeletionSize(strs3), output3),
+            };
+
+            return results;
         }
     }
 }
