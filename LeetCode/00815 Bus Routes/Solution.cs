@@ -21,6 +21,8 @@ Input: routes = [[7,12],[4,5,15],[6],[15,19],[9,12,13]], source = 15, target = 1
 Output: -1
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BusRoutes
 {
     public class Solution
@@ -73,6 +75,40 @@ namespace CompetitiveProgramming.LeetCode.BusRoutes
                 }
             }
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestBusRoutes()
+        {
+            int[][] routes1 = new int[][]
+            {
+                new int[] { 1, 2, 7 },
+                new int[] { 3, 6, 7 },
+                new int[] { 23, 30, 34, 60 }
+            };
+            int source1 = 1;
+            int target1 = 6;
+            int[][] routes2 = new int[][]
+            {
+                new int[] { 7,12 },
+                new int[] { 4,5,15 },
+                new int[] { 6 },
+                new int[] { 15,19 },
+                new int[] { 9,12,13 }
+            };
+            int source2 = 1;
+            int target2 = 6;
+            int result1 = Solution.NumBusesToDestination(routes1, source1, target1);
+            int result2 = Solution.NumBusesToDestination(routes2, source2, target2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, -1)
+            };
+
+            return results;
         }
     }
 }

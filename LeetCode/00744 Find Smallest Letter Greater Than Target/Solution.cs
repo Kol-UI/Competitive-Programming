@@ -27,6 +27,8 @@ Explanation: There are no characters in letters that is lexicographically greate
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindSmallestLetterGreaterThanTarget
 {
     public class Solution
@@ -39,6 +41,35 @@ namespace CompetitiveProgramming.LeetCode.FindSmallestLetterGreaterThanTarget
                 return letters[0];
             }
             return res.Min();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindSmallestLetterGreaterThanTarget()
+        {
+            // Case 1
+            char[] letters = {'c','f','j'};
+            char target = 'a';
+            char result1 = Solution.NextGreatestLetter(letters, target);
+
+            // Case 2
+            target = 'c';
+            char result2 = Solution.NextGreatestLetter(letters, target);
+
+            // Case 3
+            char[] letters3 = {'x','x','y','y'};
+            target = 'a';
+            char result3 = Solution.NextGreatestLetter(letters3, target);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<char>(result1, 'c'),
+                ResultTester.CheckResult<char>(result2, 'f'),
+                ResultTester.CheckResult<char>(result3, 'x')
+            };
+
+            return results;
         }
     }
 }

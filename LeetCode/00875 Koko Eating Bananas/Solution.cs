@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.KokoEatingBananas
 {
     // Koko loves to eat bananas. There are n piles of bananas, the ith pile has piles[i] bananas. The guards have gone and will come back in h hours.
@@ -36,6 +38,50 @@ namespace CompetitiveProgramming.LeetCode.KokoEatingBananas
                 else r = m;
             }
             return l;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestKokoEatingBananas()
+        {
+            System.Random random = new System.Random();
+
+            // Case 1
+            int[] piles1_875 = { 3, 6, 7, 11 };
+            int h1_875 = 8;
+            int result1_875 = Solution.MinEatingSpeed(piles1_875, h1_875);
+
+            // Case 2
+            int[] piles2_875 = { 30, 11, 23, 4, 20 };
+            int h2_875 = 5;
+            int result2_875 = Solution.MinEatingSpeed(piles2_875, h2_875);
+
+            // Case 3
+            int[] piles3_875 = { 30, 11, 23, 4, 20 };
+            int h3_875 = 6;
+            int result3_875 = Solution.MinEatingSpeed(piles3_875, h3_875);
+
+            // Case 4
+            int[] piles4_875 = Program.GenerateRandomNumber(25, 10);
+            int h4_875 = random.Next(1, 10);
+            int result4_875 = Solution.MinEatingSpeed(piles4_875, h4_875);
+
+            // Case 5
+            int[] piles5_875 = Program.GenerateRandomNumber(25, 10);
+            int h5_875 = random.Next(1, 10);
+            int result5_875 = Solution.MinEatingSpeed(piles5_875, h5_875);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_875, 4),
+                ResultTester.CheckResult<int>(result2_875, 30),
+                ResultTester.CheckResult<int>(result3_875, 23),
+                ResultTester.CheckResult<int>(result4_875, result4_875),
+                ResultTester.CheckResult<int>(result5_875, result5_875)
+            };
+
+            return results;
         }
     }
 }

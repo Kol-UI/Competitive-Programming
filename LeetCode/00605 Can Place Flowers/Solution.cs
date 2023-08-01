@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CanPlaceFlowers
 {
     /*
@@ -34,6 +36,35 @@ namespace CompetitiveProgramming.LeetCode.CanPlaceFlowers
                 }
             }
             return n <= 0;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCanPlaceFlowers()
+        {
+            // Case 1
+            int[] arrayCase1_605 = { 1, 0, 0, 0, 1 };
+            int intCase1_605 = 1;
+            bool case1_605Result = LeetCode.CanPlaceFlowers.Solution.CanPlaceFlowers(arrayCase1_605, intCase1_605);
+
+            // Case 2
+            int[] arrayCase2_605 = { 1, 0, 0, 0, 1 };
+            int intCase2_605 = 2;
+            bool case2_605Result = LeetCode.CanPlaceFlowers.Solution.CanPlaceFlowers(arrayCase2_605, intCase2_605);
+
+            // Case 3
+            int[] arrayCase3_605 = { 1, 0, 0, 0, 0, 0, 1 };
+            int intCase3_605 = 2;
+            bool case3_605Result = LeetCode.CanPlaceFlowers.Solution.CanPlaceFlowers(arrayCase3_605, intCase3_605);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(case1_605Result, true),
+                ResultTester.CheckResult<bool>(case2_605Result, false),
+                ResultTester.CheckResult<bool>(case3_605Result, case3_605Result)
+            };
+            return results;
         }
     }
 }

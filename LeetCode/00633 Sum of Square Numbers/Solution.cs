@@ -18,6 +18,8 @@ Output: false
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SumofSquareNumbers
 {
     public class Solution
@@ -46,6 +48,25 @@ namespace CompetitiveProgramming.LeetCode.SumofSquareNumbers
             }
             
             return false;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSumofSquareNumbers()
+        {
+            int c1 = 5;
+            int c2 = 3;
+
+            bool result1 = Solution.JudgeSquareSum(c1);
+            bool result2 = Solution.JudgeSquareSum(c2);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false)
+            };
+            return results;
         }
     }
 }

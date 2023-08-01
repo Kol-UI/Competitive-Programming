@@ -29,6 +29,8 @@ Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FibonacciNumber
 {
     public class Solution
@@ -36,6 +38,27 @@ namespace CompetitiveProgramming.LeetCode.FibonacciNumber
         public static int Fib(int n)
         {
             return n <= 1 ? n : Fib(n-1) + Fib(n-2);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFibonacciNumber()
+        {
+            int result1 = Solution.Fib(2);
+            int result2 = Solution.Fib(3);
+            int result3 = Solution.Fib(4);
+            int output1_509 = 1;
+            int output2_509 = 2;
+            int output3_509 = 3;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1_509),
+                ResultTester.CheckResult<int>(result2, output2_509),
+                ResultTester.CheckResult<int>(result3, output3_509)
+            };
+            return results;
         }
     }
 }

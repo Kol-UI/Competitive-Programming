@@ -1,5 +1,6 @@
 using System;
 using System.Text;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FindAllAnagramsinaString
 {
@@ -25,7 +26,7 @@ namespace CompetitiveProgramming.LeetCode.FindAllAnagramsinaString
         // The substring with start index = 1 is "ba", which is an anagram of "ab".
         // The substring with start index = 2 is "ab", which is an anagram of "ab".
 
-        public IList<int> FindAnagrams(string s, string p)
+        public static IList<int> FindAnagrams(string s, string p)
         {
             int n = s.Length, m = p.Length;
             var res = new List<int>();
@@ -53,7 +54,7 @@ namespace CompetitiveProgramming.LeetCode.FindAllAnagramsinaString
             return res;
         }
 
-        private int[] CountCharacter(string s)
+        private static int[] CountCharacter(string s)
         {
             var count = new int[26];
             for(int i = 0; i < s.Length; i++)
@@ -63,13 +64,29 @@ namespace CompetitiveProgramming.LeetCode.FindAllAnagramsinaString
             return count;
         }
 
-        private bool IsAnagram(int[]a, int[] b)
+        private static bool IsAnagram(int[]a, int[] b)
         {
             for(int i = 0; i < 26; i++)
             {
                 if (a[i] != b[i]) return false;
             }
             return true;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindAllAnagramsinaString()
+        {
+            IList<int> list1 = new List<int> { 0, 6 };
+            IList<int> list2 = new List<int> { 0, 1, 2 };
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<int>>(Solution.FindAnagrams("cbaebabacd", "abc"), list1),
+                ResultTester.CheckResult<IList<int>>(Solution.FindAnagrams("abab", "ab"), list2)
+            };
+            return results;
         }
     }
 }

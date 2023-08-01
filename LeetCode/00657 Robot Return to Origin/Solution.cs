@@ -25,6 +25,8 @@ Explanation: The robot moves left twice. It ends up two "moves" to the left of t
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.RobotReturntoOrigin
 {
     public class Solution
@@ -33,6 +35,23 @@ namespace CompetitiveProgramming.LeetCode.RobotReturntoOrigin
         {
             return moves.Count(x => x == 'L') == moves.Count(x => x == 'R')
                 && moves.Count(x => x == 'U') == moves.Count(x => x == 'D');
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestRobotReturntoOrigin()
+        {
+            string moves1 = "UD";
+            string moves2 = "LL";
+            bool result1 = LeetCode.RobotReturntoOrigin.Solution.JudgeCircle(moves1);
+            bool result2 = LeetCode.RobotReturntoOrigin.Solution.JudgeCircle(moves2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false)
+            };
+            return results;
         }
     }
 }

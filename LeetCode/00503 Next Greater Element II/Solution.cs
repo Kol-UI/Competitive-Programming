@@ -21,6 +21,8 @@ Input: nums = [1,2,3,4,3]
 Output: [2,3,4,-1,4]
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NextGreaterElementII
 {
     public class Solution
@@ -44,6 +46,25 @@ namespace CompetitiveProgramming.LeetCode.NextGreaterElementII
             }
 
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestNextGreaterElementII()
+        {
+            int[] nums1 = {1,2,1};
+            int[] nums2 = {1,2,3,4,3};
+            int[] result1 = Solution.NextGreaterElements(nums1);
+            int[] result2 = Solution.NextGreaterElements(nums2);
+            int[] expected1 = {2,-1,2};
+            int[] expected2 = {2,3,4,-1,4};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2)
+            };
+            return results;
         }
     }
 }

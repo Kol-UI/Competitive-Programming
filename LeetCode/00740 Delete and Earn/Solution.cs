@@ -29,6 +29,8 @@ You earn a total of 9 points.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.DeleteandEarn
 {
     public class Solution
@@ -61,6 +63,26 @@ namespace CompetitiveProgramming.LeetCode.DeleteandEarn
             }
             
             return oneBack;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestDeleteandEarn()
+        {
+            int[] nums1 = {3,4,2};
+            int[] nums2 = {2,2,3,3,3,4};
+
+            int result1 = Solution.DeleteAndEarn(nums1);
+            int result2 = Solution.DeleteAndEarn(nums2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 6),
+                ResultTester.CheckResult<int>(result2, 9)
+            };
+
+            return results;
         }
     }
 }

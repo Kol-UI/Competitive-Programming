@@ -17,6 +17,8 @@ Output: "doG gniD"
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ReverseWordsinaStringIII
 {
     public class Solution
@@ -41,6 +43,27 @@ namespace CompetitiveProgramming.LeetCode.ReverseWordsinaStringIII
             }
 
             return String.Join(" ", words);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestReverseWordsinaStringIII()
+        {
+            string case1_557 = "Let's take LeetCode contest";
+            string case2_557 = "God Ding";
+            string output1_557 = "s'teL ekat edoCteeL tsetnoc";
+            string output2_557 = "doG gniD";
+
+            string result1 = Solution.ReverseWords(case1_557);
+            string result2 = Solution.ReverseWords(case2_557);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(result1, output1_557),
+                ResultTester.CheckResult<string>(result2, output2_557)
+            };
+            return results;
         }
     }
 }

@@ -22,6 +22,8 @@ Output: [[0,0,0],[0,1,0],[1,2,1]]
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ZeroOneMatrix
 {
     public class Solution
@@ -67,6 +69,40 @@ namespace CompetitiveProgramming.LeetCode.ZeroOneMatrix
             }
 
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestZeroOneMatrix()
+        {
+            int[][] mat1 = new int[][]
+            {
+                new int[] { 0,0,0 },
+                new int[] { 0,1,0 },
+                new int[] { 0,0,0 }
+            };
+
+            int[][] mat2 = new int[][]
+            {
+                new int[] { 0,0,0 },
+                new int[] { 0,1,0 },
+                new int[] { 1,1,1 }
+            };
+
+            int[][] result1 = Solution.UpdateMatrix(mat1);
+            int[][] result2 = Solution.UpdateMatrix(mat2);
+
+            int[][] expected1 = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 1, 0 }, new int[] { 0, 0, 0 } };
+            int[][] expected2 = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 1, 0 }, new int[] { 1, 2, 1 } };
+
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[][]>(result1, expected1),
+                ResultTester.CheckResult<int[][]>(result2, expected2)
+            };
+            return results;
         }
     }
 }

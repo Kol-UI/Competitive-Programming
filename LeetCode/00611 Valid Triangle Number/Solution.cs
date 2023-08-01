@@ -21,6 +21,8 @@ Output: 4
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ValidTriangleNumber
 {
     public class Solution
@@ -56,6 +58,23 @@ namespace CompetitiveProgramming.LeetCode.ValidTriangleNumber
             }
 
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestValidTriangleNumber()
+        {
+            int[] nums1 = {2,2,3,4};
+            int[] nums2 = {4,2,3,4};
+            int result1 = Solution.TriangleNumber(nums1);
+            int result2 = Solution.TriangleNumber(nums2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 4)
+            };
+            return results;
         }
     }
 }

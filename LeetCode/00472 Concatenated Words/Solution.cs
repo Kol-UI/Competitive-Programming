@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ConcatenatedWords
 {
@@ -22,7 +23,7 @@ namespace CompetitiveProgramming.LeetCode.ConcatenatedWords
 
 
 
-        public IList<string> FindAllConcatenatedWordsInADict(string[] words)
+        public static IList<string> FindAllConcatenatedWordsInADict(string[] words)
         {
             var res = new List<string>();
             var set = new HashSet<string>();
@@ -41,7 +42,7 @@ namespace CompetitiveProgramming.LeetCode.ConcatenatedWords
             return res;
         }
 
-        public bool DFS(string[] words, string word, HashSet<string> set, int start, int wordCount)
+        public static bool DFS(string[] words, string word, HashSet<string> set, int start, int wordCount)
         {
             if (start >= word.Length)
             {
@@ -57,7 +58,51 @@ namespace CompetitiveProgramming.LeetCode.ConcatenatedWords
 
             return false;
         }
+    }
 
+    public class Test
+    {
+        public static bool[] TestConcatenatedWords()
+        {
+            string[] inputArray1 = new string[]
+            {
+                "cat",
+                "cats",
+                "catsdogcats",
+                "dog",
+                "dogcatsdog",
+                "hippopotamuses",
+                "rat",
+                "ratcatdogcat"
+            };
 
+            string[] inputArray2 = new string[]
+            {
+                "cat",
+                "dog",
+                "catdog"
+            };
+
+            IList<string> expected1 = new List<string>
+            {
+                "catsdogcats",
+                "dogcatsdog",
+                "ratcatdogcat"
+            };
+
+            IList<string> expected2 = new List<string>
+            {
+                "catdog",
+            };
+            
+            IList<string> result1 = Solution.FindAllConcatenatedWordsInADict(inputArray1);
+            IList<string> result2 = Solution.FindAllConcatenatedWordsInADict(inputArray2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<string>>(result1, expected1),
+                ResultTester.CheckResult<IList<string>>(result2, expected2)
+            };
+            return results;
+        }
     }
 }

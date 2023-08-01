@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text.RegularExpressions;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.DetectCapital
 {
@@ -41,6 +42,26 @@ namespace CompetitiveProgramming.LeetCode.DetectCapital
                     lowerCount++;
             }
             return upperCount == n || lowerCount == n || (Char.IsUpper(word[0]) && lowerCount == n - 1);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestDetectCapital()
+        {
+            bool result1 = Solution.DetectCapitalUse("USA");
+            bool result2 = Solution.DetectCapitalUse("FlaG");
+            bool result3 = Solution.DetectCapitalUseFor("USA");
+            bool result4 = Solution.DetectCapitalUseFor("FlaG");
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false),
+                ResultTester.CheckResult<bool>(result3, true),
+                ResultTester.CheckResult<bool>(result4, false),
+            };
+            return results;
         }
     }
 }

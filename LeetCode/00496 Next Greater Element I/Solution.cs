@@ -30,6 +30,8 @@ Explanation: The next greater element for each value of nums1 is as follows:
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NextGreaterElementI
 {
     public class Solution
@@ -61,6 +63,30 @@ namespace CompetitiveProgramming.LeetCode.NextGreaterElementI
                 ans[o++] = greaterElement;
             }
             return ans;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestNextGreaterElementI()
+        {
+            int[] case1nums1 = {4,1,2};
+            int[] case1nums2 = {1,3,4,2};
+            int[] case2nums1 = {2,4};
+            int[] case2nums2 = {1,2,3,4};
+
+            int[] output1_496 = {-1,3,-1};
+            int[] output2_496 = {3,-1};
+
+            int[] result1 = Solution.NextGreaterElement(case1nums1, case1nums2);
+            int[] result2 = Solution.NextGreaterElement(case2nums1, case2nums2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, output1_496),
+                ResultTester.CheckResult<int[]>(result2, output2_496)
+            };
+            return results;
         }
     }
 }

@@ -29,6 +29,8 @@ Input: n = 1, k = 0, row = 0, column = 0
 Output: 1.00000
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.KnightProbabilityinChessboard
 {
     public class Solution
@@ -95,6 +97,31 @@ namespace CompetitiveProgramming.LeetCode.KnightProbabilityinChessboard
                 sum += num;
             }
             return sum;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestKnightProbabilityinChessboard()
+        {
+            int n1 = 3;
+            int k1 = 2;
+            int row1 = 0;
+            int column1 = 0;
+            int n2 = 1;
+            int k2 = 0;
+            int row2 = 0;
+            int column2 = 0;
+
+            double result1 = Solution.KnightProbability(n1, k1, row1, column1);
+            double result2 = Solution.KnightProbability(n2, k2, row2, column2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<double>(result1, 0.06250),
+                ResultTester.CheckResult<double>(result2, 1.00000)
+            };
+
+            return results;
         }
     }
 }

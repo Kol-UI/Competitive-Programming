@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumNumberofArrowstoBurstBalloons
 {
     public class Solution
@@ -49,6 +51,48 @@ namespace CompetitiveProgramming.LeetCode.MinimumNumberofArrowstoBurstBalloons
                 i = j - 1;
             }
             return count;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMinimumNumberofArrowstoBurstBalloons()
+        {
+            int[][] points1 = new int[][]
+            {
+                new int[] { 10, 16 },
+                new int[] { 2, 8 },
+                new int[] { 1, 6 },
+                new int[] { 7, 12 }
+            };
+
+            int[][] points2 = new int[][]
+            {
+                new int[] { 1, 2 },
+                new int[] { 3, 4 },
+                new int[] { 5, 6 },
+                new int[] { 7, 8 }
+            };
+
+            int[][] points3 = new int[][]
+            {
+                new int[] { 1, 2 },
+                new int[] { 2, 3 },
+                new int[] { 3, 4 },
+                new int[] { 4, 5 }
+            };
+
+            int result1 = Solution.FindMinArrowShots(points1);
+            int result2 = Solution.FindMinArrowShots(points2);
+            int result3 = Solution.FindMinArrowShots(points3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, 4),
+                ResultTester.CheckResult<int>(result3, 2)
+            };
+            return results;
         }
     }
 }

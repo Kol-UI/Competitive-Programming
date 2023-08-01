@@ -31,6 +31,8 @@ Since not every customer received the correct change, the answer is false.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LemonadeChange
 {
     public class Solution
@@ -59,6 +61,21 @@ namespace CompetitiveProgramming.LeetCode.LemonadeChange
             }
 
             return true;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestLemonadeChange()
+        {
+            int[] bills1 = {5,5,5,10,20};
+            int[] bills2 = {5,5,10,10,20};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Solution.LemonadeChange(bills1), true),
+                ResultTester.CheckResult<bool>(Solution.LemonadeChange(bills2), false),
+            };
+            return results;
         }
     }
 }

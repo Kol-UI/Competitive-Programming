@@ -27,6 +27,8 @@ Explanation: We can partition the nodes into two sets: {0, 2} and {1, 3}.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.IsGraphBipartite
 {
     public class Solution
@@ -62,6 +64,39 @@ namespace CompetitiveProgramming.LeetCode.IsGraphBipartite
             }
 
             return true;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestIsGraphBipartite()
+        {
+            int[][] case1 = new int[][]
+            {
+                new int[] { 1, 2, 3 },
+                new int[] { 0, 2 },
+                new int[] { 0, 1, 3 },
+                new int[] { 0, 2 }
+            };
+
+            int[][] case2 = new int[][]
+            {
+                new int[] { 1, 3 },
+                new int[] { 0, 2 },
+                new int[] { 1, 3 },
+                new int[] { 0, 2 }
+            };
+
+            bool result1 = Solution.IsBipartite(case1);
+            bool result2 = Solution.IsBipartite(case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, false),
+                ResultTester.CheckResult<bool>(result2, true)
+            };
+
+            return results;
         }
     }
 }

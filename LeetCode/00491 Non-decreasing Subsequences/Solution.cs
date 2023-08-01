@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NondecreasingSubsequences
 {
     public class Solution
@@ -13,12 +15,12 @@ namespace CompetitiveProgramming.LeetCode.NondecreasingSubsequences
         //Input: nums = [4,4,3,2,1]
         //Output: [[4,4]]
 
-        public IList<IList<int>> FindSubsequences(int[] nums)
+        public static IList<IList<int>> FindSubsequences(int[] nums)
         {
             return FindSubsequences(nums, new List<int>(), 0);
         }
 
-        public IList<IList<int>> FindSubsequences(int[] nums, List<int> current, int index)
+        public static IList<IList<int>> FindSubsequences(int[] nums, List<int> current, int index)
         {
             List<IList<int>> ires = new List<IList<int>>();
             HashSet<int> used = new HashSet<int>();
@@ -38,6 +40,41 @@ namespace CompetitiveProgramming.LeetCode.NondecreasingSubsequences
             }
             return ires;
 
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestNondecreasingSubsequences()
+        {
+
+            int[] nums1 = new int[] { 4, 6, 7, 7 };
+            int[] nums2 = new int[] { 4, 4, 3, 2, 1 };
+
+            IList<IList<int>> output1 = new List<IList<int>>()
+            {
+                new List<int> { 4, 6 },
+                new List<int> { 4, 6, 7 },
+                new List<int> { 4, 6, 7, 7 },
+                new List<int> { 4, 7 },
+                new List<int> { 4, 7, 7 },
+                new List<int> { 6, 7 },
+                new List<int> { 6, 7, 7 },
+                new List<int> { 7, 7 }
+            };
+
+            IList<IList<int>> output2 = new List<IList<int>>()
+            {
+                new List<int> { 4, 4 }
+            };
+
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<IList<int>>>(Solution.FindSubsequences(nums1), output1),
+                ResultTester.CheckResult<IList<IList<int>>>(Solution.FindSubsequences(nums2), output2)
+            };
+            return results;
         }
     }
 }

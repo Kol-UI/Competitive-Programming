@@ -35,6 +35,8 @@ Output: 1
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CoinChangeII
 {
     public class Solution
@@ -74,6 +76,31 @@ namespace CompetitiveProgramming.LeetCode.CoinChangeII
             include = FindWays(index, sum - coins[index], coins);
 
             return dp[index][sum] = include + exclude;        
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCoinChangeII()
+        {
+            int amount1 = 5;
+            int[] coins1 = {1,2,5};
+            int amount2 = 3;
+            int[] coins2 = {2};
+            int amount3 = 10;
+            int[] coins3 = {10};
+
+            int result1_518 = Solution.Change(amount1, coins1);
+            int result2_518 = Solution.Change(amount2, coins2);
+            int result3_518 = Solution.Change(amount3, coins3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_518, 4),
+                ResultTester.CheckResult<int>(result2_518, 0),
+                ResultTester.CheckResult<int>(result3_518, 1)
+            };
+            return results;
         }
     }
 }

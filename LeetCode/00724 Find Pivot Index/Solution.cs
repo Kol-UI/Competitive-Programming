@@ -39,6 +39,8 @@ Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindPivotIndex
 {
     public class Solution
@@ -72,6 +74,29 @@ namespace CompetitiveProgramming.LeetCode.FindPivotIndex
             }
 
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindPivotIndex()
+        {
+            int[] nums1 = {1,7,3,6,5,6};
+            int[] nums2 = {1,2,3};
+            int[] nums3 = {2,1,-1};
+
+            int result1 = Solution.PivotIndex(nums1);
+            int result2 = Solution.PivotIndex(nums2);
+            int result3 = Solution.PivotIndex(nums3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, -1),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+
+            return results;
         }
     }
 }

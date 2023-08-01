@@ -35,6 +35,8 @@ profit.length == group.length
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ProfitableSchemes
 {
     public class Solution
@@ -69,6 +71,32 @@ namespace CompetitiveProgramming.LeetCode.ProfitableSchemes
             }
 
             return res;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestProfitableSchemes()
+        {
+            // Case 1
+            int n1 = 5;
+            int minProfit1 = 3;
+            int[] group1 = {2,2};
+            int[] profit1 = {2,3};
+
+            // Case 2
+            int n2 = 10;
+            int minProfit2 = 5;
+            int[] group2 = {2,3,5};
+            int[] profit2 = {6,7,8};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.ProfitableSchemes(n2, minProfit2, group2, profit2), 7),
+                ResultTester.CheckResult<int>(Solution.ProfitableSchemes(n1, minProfit1, group1, profit1), 2)
+            };
+
+            return results;
         }
     }
 }

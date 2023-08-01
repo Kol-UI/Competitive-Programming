@@ -30,6 +30,8 @@ s consists of lowercase English letters.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.RepeatedSubstringPattern
 {
     public class Solution
@@ -53,6 +55,29 @@ namespace CompetitiveProgramming.LeetCode.RepeatedSubstringPattern
             }
             return false;
             bool IsDuplicated(string s, string sub) => s.Replace(sub, "") == "";
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestRepeatedSubstringPattern()
+        {
+            // Case 1
+            bool Case1_459 = Solution.RepeatedSubstringPattern("abab");
+
+            // Case 2
+            bool Case2_459 = Solution.RepeatedSubstringPattern("aba");
+
+            // Case 3
+            bool Case3_459 = Solution.RepeatedSubstringPattern("abcabcabcabc");
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Case1_459, true),
+                ResultTester.CheckResult<bool>(Case2_459, false),
+                ResultTester.CheckResult<bool>(Case3_459, true)
+            };
+            return results;
         }
     }
 }

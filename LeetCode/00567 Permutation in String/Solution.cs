@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.PermutationinString
 {
@@ -18,7 +19,7 @@ namespace CompetitiveProgramming.LeetCode.PermutationinString
         // Input: s1 = "ab", s2 = "eidboaoo"
         // Output: false
         
-        public bool CheckInclusion(string s1, string s2)
+        public static bool CheckInclusion(string s1, string s2)
         {
             if (s1.Length > s2.Length)
                 return false;
@@ -46,7 +47,7 @@ namespace CompetitiveProgramming.LeetCode.PermutationinString
             return false;
         }
 
-        public bool IsValid(int[] bucket)
+        public static bool IsValid(int[] bucket)
         {
             for(int i = 0; i < 26; i++)
             {
@@ -57,6 +58,22 @@ namespace CompetitiveProgramming.LeetCode.PermutationinString
             }
 
             return true;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestValidTriangleNumber()
+        {
+            bool result1 = Solution.CheckInclusion("ab", "eidbaooo");
+            bool result2 = Solution.CheckInclusion("ab", "eidboaoo");
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false)
+            };
+            return results;
         }
     }
 }

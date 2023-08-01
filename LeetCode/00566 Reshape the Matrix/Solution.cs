@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ReshapetheMatrix
 {
@@ -17,42 +18,68 @@ namespace CompetitiveProgramming.LeetCode.ReshapetheMatrix
     // Example 2:
     // Input: mat = [[1,2],[3,4]], r = 2, c = 4
     // Output: [[1,2],[3,4]]
-    public class Solution {
-    public int[][] MatrixReshape(int[][] mat, int r, int c)
+    public class Solution
     {
-        int col = mat.Length;
-        int row = mat[0].Length;
-
-        if (row * col != r * c) return mat;
-
-        int[][] res = new int[r][];
-
-        for (int i = 0; i < r; i++)
+        public static int[][] MatrixReshape(int[][] mat, int r, int c)
         {
-            res[i] = new int[c];
-        }
+            int col = mat.Length;
+            int row = mat[0].Length;
 
-        int outCol = 0;
-        int outRow = 0;
+            if (row * col != r * c) return mat;
 
-        for (int i = 0; i < col; i++)
-        {
-            for (int j = 0; j < row; j++)
+            int[][] res = new int[r][];
+
+            for (int i = 0; i < r; i++)
             {
-                if (outCol < r && outRow < c)
+                res[i] = new int[c];
+            }
+
+            int outCol = 0;
+            int outRow = 0;
+
+            for (int i = 0; i < col; i++)
+            {
+                for (int j = 0; j < row; j++)
                 {
-                    res[outCol][outRow++] = mat[i][j];
-                }
-                else
-                {
-                    outRow = 0;
-                    res[++outCol][outRow++] = mat[i][j];
+                    if (outCol < r && outRow < c)
+                    {
+                        res[outCol][outRow++] = mat[i][j];
+                    }
+                    else
+                    {
+                        outRow = 0;
+                        res[++outCol][outRow++] = mat[i][j];
+                    }
                 }
             }
+            return res;
         }
-        return res;
     }
-}
+
+    public class Test
+    {
+        public static bool[] TestReshapetheMatrix()
+        {
+            int[][] mat1 = new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 } };
+            int r1 = 1, c1 = 4;
+            int[][] mat2 = new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 } };
+            int r2 = 2, c2 = 4;
+
+            int[][] result1 = Solution.MatrixReshape(mat1, r1, c1);
+            int[][] result2 = Solution.MatrixReshape(mat2, r2, c2);
+
+            int[][] output1 = new int[][] { new int[] { 1, 2, 3, 4 } };
+            int[][] output2 = new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 } };
+
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[][]>(result1, output1),
+                ResultTester.CheckResult<int[][]>(result2, output2)
+            };
+            return results;
+        }
+    }
 }
 
 

@@ -18,6 +18,8 @@ Explanation: One possible longest palindromic subsequence is "bb".
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LongestPalindromicSubsequence
 {
     public class Solution
@@ -55,6 +57,52 @@ namespace CompetitiveProgramming.LeetCode.LongestPalindromicSubsequence
             int right = LongestSubsequence(i + 1, j, s, cache);
             cache[(i, j)] = Math.Max(left, right);
             return Math.Max(left, right);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestLongestPalindromicSubsequence()
+        {
+            // Case 1
+            string s516_1 = "bbbab";
+            int output516_1 = Solution.LongestPalindromeSubseq(s516_1);
+
+            // Case 2
+            string s516_2 = "cbbd";
+            int output516_2 = Solution.LongestPalindromeSubseq(s516_2);
+
+            // Case 3
+            string s516_3 = "noon";
+            int output516_3 = Solution.LongestPalindromeSubseq(s516_3);
+
+            // Case 4
+            string s516_4 = "civic";
+            int output516_4 = Solution.LongestPalindromeSubseq(s516_4);
+
+            // Case 5
+            string s516_5 = "racecar";
+            int output516_5 = Solution.LongestPalindromeSubseq(s516_5);
+
+            // Case 6
+            string s516_6 = "level";
+            int output516_6 = Solution.LongestPalindromeSubseq(s516_6);
+
+            // Case 7
+            string s516_7 = "mom";
+            int output516_7 = Solution.LongestPalindromeSubseq(s516_7);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(output516_1, 4),
+                ResultTester.CheckResult<int>(output516_2, 2),
+                ResultTester.CheckResult<int>(output516_3, output516_3),
+                ResultTester.CheckResult<int>(output516_4, output516_4),
+                ResultTester.CheckResult<int>(output516_5, output516_5),
+                ResultTester.CheckResult<int>(output516_6, output516_6),
+                ResultTester.CheckResult<int>(output516_7, output516_7),
+            };
+            return results;
         }
     }
 }

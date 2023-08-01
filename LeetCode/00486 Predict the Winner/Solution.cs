@@ -27,6 +27,8 @@ Explanation: Player 1 first chooses 1. Then player 2 has to choose between 5 and
 Finally, player 1 has more score (234) than player 2 (12), so you need to return True representing player1 can win.
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.PredicttheWinner
 {
     public class Solution
@@ -51,6 +53,22 @@ namespace CompetitiveProgramming.LeetCode.PredicttheWinner
             }
 
             return dp[0, n - 1] >= 0;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestPredicttheWinner()
+        {
+            int[] nums1 = {1,5,2}; int[] nums2 = {1,5,233,7};
+            bool result1 = Solution.PredictTheWinner(nums1);
+            bool result2 = Solution.PredictTheWinner(nums2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, false),
+                ResultTester.CheckResult<bool>(result2, true)
+            };
+            return results;
         }
     }
 }

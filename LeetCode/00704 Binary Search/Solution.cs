@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BinarySearch
 {
 
@@ -45,6 +47,31 @@ namespace CompetitiveProgramming.LeetCode.BinarySearch
             }
 
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestBinarySearch()
+        {
+            // Case 1
+            int[] nums704_1 = {-1,0,3,5,9,12};
+            int target704_1 = 9;
+            int result704_1 = Solution.Search(nums704_1, target704_1);
+
+            // Case 2
+            Program.Space();
+            int[] nums704_2 = {-1,0,3,5,9,12};
+            int target704_2 = 2;
+            int result704_2 = Solution.Search(nums704_2, target704_2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result704_1, 4),
+                ResultTester.CheckResult<int>(result704_2, -1)
+            };
+
+            return results;
         }
     }
 }

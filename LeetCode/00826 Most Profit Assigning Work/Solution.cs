@@ -25,6 +25,8 @@ Output: 0
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MostProfitAssigningWork
 {
     public class Solution 
@@ -53,5 +55,30 @@ namespace CompetitiveProgramming.LeetCode.MostProfitAssigningWork
                     
             return maxProfit;
         }  
+    }
+
+    public class Test
+    {
+        public static bool[] TestMostProfitAssigningWork()
+        {
+            int[] difficulty1 = {2,4,6,8,10};
+            int[] profit1 = {10,20,30,40,50};
+            int[] worker1 = {4,5,6,7};
+
+            int[] difficulty2 = {85,47,57};
+            int[] profit2 = {24,66,99};
+            int[] worker2 = {40,25,25};
+
+            int result1 = Solution.MaxProfitAssignment(difficulty1, profit1, worker1);
+            int result2 = Solution.MaxProfitAssignment(difficulty2, profit2, worker2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 100),
+                ResultTester.CheckResult<int>(result2, 0)
+            };
+
+            return results;
+        }
     }
 }

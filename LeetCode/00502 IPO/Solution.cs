@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.IPO
 {
@@ -66,6 +67,33 @@ namespace CompetitiveProgramming.LeetCode.IPO
                 }
             }
             return w;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestIPO()
+        {
+            // Case 1
+            int k_502 = 2;
+            int w_502 = 0;
+            int[] profits_502 = {1, 2, 3};
+            int[] capital_502 = {0, 1, 1};
+            int result_502 = Solution.FindMaximizedCapital(k_502, w_502, profits_502, capital_502);
+
+            // Case 2
+            int k2_502 = 3;
+            int w2_502 = 0;
+            int[] profits2_502 = {1, 2, 3};
+            int[] capital2_502 = {0, 1, 2};
+            int result2_502 = Solution.FindMaximizedCapital(k2_502, w2_502, profits2_502, capital2_502);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result_502, 4),
+                ResultTester.CheckResult<int>(result2_502, 6)
+            };
+            return results;
         }
     }
 }

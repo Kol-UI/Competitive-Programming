@@ -23,6 +23,8 @@ Output: 0
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaxAreaofIsland
 {
     public class Solution
@@ -80,6 +82,42 @@ namespace CompetitiveProgramming.LeetCode.MaxAreaofIsland
                 return true;
             }
             return false;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMaxAreaofIsland()
+        {
+            int[][] grid695_1 = new int[][]
+            {
+                new int[] { 0,0,1,0,0,0,0,1,0,0,0,0,0 },
+                new int[] { 0,0,0,0,0,0,0,1,1,1,0,0,0 },
+                new int[] { 0,1,1,0,1,0,0,0,0,0,0,0,0 },
+                new int[] { 0,1,0,0,1,1,0,0,1,0,1,0,0 },
+                new int[] { 0,1,0,0,1,1,0,0,1,1,1,0,0 },
+                new int[] { 0,0,0,0,0,0,0,0,0,0,1,0,0 },
+                new int[] { 0,0,0,0,0,0,0,1,1,0,0,0,0 }
+            };
+
+            int[][] grid695_2 = new int[][]
+            {
+                new int[] { 0,0,0,0,0,0,0,0 }
+            };
+
+            int output1_695 = 6;
+            int output2_695 = 0;
+
+            int result1 = Solution.MaxAreaOfIsland(grid695_1);
+            int result2 = Solution.MaxAreaOfIsland(grid695_2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1_695),
+                ResultTester.CheckResult<int>(result2, output2_695)
+            };
+
+            return results;
         }
     }
 }

@@ -21,6 +21,8 @@ Explanation: Because the 4th row is incomplete, we return 3.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ArrangingCoins
 {
     public class Solution
@@ -35,6 +37,23 @@ namespace CompetitiveProgramming.LeetCode.ArrangingCoins
                 res++;
             }
             return res - 1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestArrangingCoins()
+        {
+            int case1_441 = 5;
+            int case2_441 = 8;
+            int result1_441 = Solution.ArrangeCoins(case1_441);
+            int result2_441 = Solution.ArrangeCoins(case2_441);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_441, 2),
+                ResultTester.CheckResult<int>(result2_441, 3)
+            };
+            return results;
         }
     }
 }

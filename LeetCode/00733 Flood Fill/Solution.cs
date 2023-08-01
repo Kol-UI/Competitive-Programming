@@ -27,6 +27,8 @@ Explanation: The starting pixel is already colored 0, so no changes are made to 
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FloodFill
 {
     public class Solution
@@ -61,6 +63,56 @@ namespace CompetitiveProgramming.LeetCode.FloodFill
             {
                 Fill(image, sr, sc + 1, replacingColor, newColor);
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFloodFill()
+        {
+            int[][] image1 = new int[][]
+            {
+                new int[] { 1, 1, 1 },
+                new int[] { 1, 1, 0 },
+                new int[] { 1, 0, 1 }
+            };
+            int sr1 = 1;
+            int sc1 = 1;
+            int color1 = 2;
+
+            int[][] image2 = new int[][]
+            {
+                new int[] { 0, 0, 0 },
+                new int[] { 0, 0, 0 }
+            };
+            int sr2 = 0;
+            int sc2 = 0;
+            int color2 = 0;
+
+            int[][] result1 = Solution.FloodFill(image1, sr1, sc1, color1);
+            int[][] result2 = Solution.FloodFill(image2, sr2, sc2, color2);
+
+            int[][] array1 = new int[][]
+            {
+                new int[] {2, 2, 2},
+                new int[] {2, 2, 0},
+                new int[] {2, 0, 1}
+            };
+
+            int[][] array2 = new int[][]
+            {
+                new int[] {0, 0, 0},
+                new int[] {0, 0, 0}
+            };
+
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[][]>(result1, array1),
+                ResultTester.CheckResult<int[][]>(result2, array2)
+            };
+
+            return results;
         }
     }
 }

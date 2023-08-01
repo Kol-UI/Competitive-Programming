@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SubarraySumEqualsK
 {
 	public class Solution
@@ -46,6 +48,29 @@ namespace CompetitiveProgramming.LeetCode.SubarraySumEqualsK
             return count;
         }
 
+    }
+
+    public class Test
+    {
+        public static bool[] TestSubarraySumEqualsK()
+        {
+            // Case 1
+            int[] numsCase1_560 = { 1, 1, 1 };
+            int kCase1 = 2;
+            int Case1_560_Result = Solution.SubarraySum(numsCase1_560, kCase1);
+
+            // Case 2
+            int[] numsCase2_560 = { 1, 2, 3 };
+            int kCase2 = 3;
+            int Case2_560_Result = Solution.SubarraySum(numsCase2_560, kCase2);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_560_Result, 2),
+                ResultTester.CheckResult<int>(Case2_560_Result, 2)
+            };
+            return results;
+        }
     }
 }
 

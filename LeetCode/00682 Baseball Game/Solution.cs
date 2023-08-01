@@ -57,6 +57,8 @@ Since the record is empty, the total sum is 0.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BaseballGame
 {
     public class Solution
@@ -93,6 +95,23 @@ namespace CompetitiveProgramming.LeetCode.BaseballGame
                 result += stepResult;
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestBaseballGame()
+        {
+            string[] ops1 = {"5","-2","4","C","D","9","+","+"};
+            string[] ops2 = {"1","C"};
+            int result1_682 = Solution.CalPoints(ops1);
+            int result2_682 = Solution.CalPoints(ops2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_682, 27),
+                ResultTester.CheckResult<int>(result2_682, 0),
+            };
+            return results;
         }
     }
 }

@@ -33,6 +33,8 @@ Output: 0.73278
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.New21Game
 {
     public class Solution
@@ -59,6 +61,35 @@ namespace CompetitiveProgramming.LeetCode.New21Game
             }
 
             return probability;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestNew21Game()
+        {
+            int n1 = 10;
+            int k1 = 1;
+            int maxPts1 = 10;
+            int n2 = 6;
+            int k2 = 1;
+            int maxPts2 = 10;
+            int n3 = 21;
+            int k3 = 17;
+            int maxPts3 = 10;
+
+            double result1 = Solution.New21Game(n1, k1, maxPts1);
+            double result2 = Solution.New21Game(n2, k2, maxPts2);
+            double result3 = Solution.New21Game(n3, k3, maxPts3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<double>(result1, result1),
+                ResultTester.CheckResult<double>(result2, 0.60000),
+                ResultTester.CheckResult<double>(result3, result3)
+            };
+
+            return results;
         }
     }
 }

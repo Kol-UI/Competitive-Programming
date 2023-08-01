@@ -29,6 +29,8 @@ Explanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulti
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.AsteroidCollision
 {
     public class Solution
@@ -64,6 +66,33 @@ namespace CompetitiveProgramming.LeetCode.AsteroidCollision
             }
 
             return stack.ToArray();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestAsteroidCollision()
+        {
+            int[] asteroids1 = {5,10,-5};
+            int[] asteroids2 = {8,-8};
+            int[] asteroids3 = {10,2,-5};
+
+            int[] result1 = Solution.AsteroidCollision(asteroids1);
+            int[] result2 = Solution.AsteroidCollision(asteroids2);
+            int[] result3 = Solution.AsteroidCollision(asteroids3);
+
+            int[] expected1 = {5,10};
+            int[] expected2 = {};
+            int[] expected3 = {10};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2),
+                ResultTester.CheckResult<int[]>(result3, expected3)
+            };
+
+            return results;
         }
     }
 }

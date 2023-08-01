@@ -33,6 +33,8 @@ The total cost is 6.
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinCostClimbingStairs
 {
     public class Solution
@@ -51,6 +53,28 @@ namespace CompetitiveProgramming.LeetCode.MinCostClimbingStairs
             }
             
             return Math.Min(b, a);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMinCostClimbingStairs()
+        {
+            // Case 1
+            int[] cost1 = {10,15,20};
+            int result1 = Solution.MinCostClimbingStairs(cost1);
+
+            // Case 2
+            int[] cost2 = {1,100,1,1,1,100,1,1,100,1};
+            int result2 = Solution.MinCostClimbingStairs(cost2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 15),
+                ResultTester.CheckResult<int>(result2, 6)
+            };
+
+            return results;
         }
     }
 }

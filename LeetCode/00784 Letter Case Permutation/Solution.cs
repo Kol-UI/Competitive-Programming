@@ -19,11 +19,13 @@ Output: ["3z4","3Z4"]
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LetterCasePermutation
 {
     public class Solution
     {
-        public IList<string> LetterCasePermutation(string s)
+        public static IList<string> LetterCasePermutation(string s)
         {
             int n = s.Length;
             char[] ch = new char[s.Length];
@@ -58,6 +60,25 @@ namespace CompetitiveProgramming.LeetCode.LetterCasePermutation
             }
 
             return map.ToList();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestLetterCasePermutation()
+        {
+            string[] array1 = new string[] { "a1b2", "a1B2", "A1b2", "A1B2" };
+            string[] array2 = new string[] { "3z4", "3Z4" };
+            IList<string> list1 = array1.ToList();
+            IList<string> list2 = array2.ToList();
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<string>>(Solution.LetterCasePermutation("a1b2"), list1),
+                ResultTester.CheckResult<IList<string>>(Solution.LetterCasePermutation("3z4"), list2)
+            };
+            
+            return results;
         }
     }
 }

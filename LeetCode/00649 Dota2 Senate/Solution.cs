@@ -36,6 +36,8 @@ And in round 2, the third senator can just announce the victory since he is the 
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.Dota2Senate
 {
     public class Solution
@@ -97,6 +99,25 @@ namespace CompetitiveProgramming.LeetCode.Dota2Senate
                 }
             }
             return (vote.Dequeue() == 'R') ? radian : dire;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestDota2Senate()
+        {
+            string senate1 = "RD";
+            string senate2 = "RDD";
+
+            string result1 = LeetCode.Dota2Senate.Solution.PredictPartyVictory(senate1);
+            string result2 = LeetCode.Dota2Senate.Solution.PredictPartyVictory(senate2);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(result1, "Radiant"),
+                ResultTester.CheckResult<string>(result2, "Dire")
+            };
+            return results;
         }
     }
 }

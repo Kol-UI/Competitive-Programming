@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SingleElementinaSortedArray
 {
@@ -17,6 +18,27 @@ namespace CompetitiveProgramming.LeetCode.SingleElementinaSortedArray
     public class Solution
     {
         public static int SingleNonDuplicate(int[] nums) => nums.Aggregate((x, y) => x ^ y);
+    }
+
+    public class Test
+    {
+        public static bool[] TestSingleElementinaSortedArray()
+        {
+            // Case 1
+            int[] Case1_540 = { 1, 1, 2, 3, 3, 4, 4, 8, 8 };
+            int resultCase1_540 = Solution.SingleNonDuplicate(Case1_540);
+
+            // Case 2
+            int[] Case2_540 = { 3, 3, 7, 7, 10, 11, 11 };
+            int resultCase2_540 = Solution.SingleNonDuplicate(Case2_540);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(resultCase1_540, 2),
+                ResultTester.CheckResult<int>(resultCase2_540, 10)
+            };
+            return results;
+        }
     }
 }
 

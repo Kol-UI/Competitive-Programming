@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.StringCompression
 {
     public class Solution
@@ -56,6 +58,37 @@ namespace CompetitiveProgramming.LeetCode.StringCompression
                 }
             }
             return j;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestStringCompression()
+        {
+            // Case 1
+            char[] case1_443 = { 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
+            int result1_443 = LeetCode.StringCompression.Solution.Compress(case1_443);
+
+            // Case 2
+            char[] case2_443 = { 'a' };
+            int result2_443 = LeetCode.StringCompression.Solution.Compress(case2_443);
+
+            // Case 3
+            char[] case3_443 = { 'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b' };
+            int result3_443 = LeetCode.StringCompression.Solution.Compress(case3_443);
+
+            // Case 4
+            char[] case4_443 = { '1', '1', '2' };
+            int result4_443 = LeetCode.StringCompression.Solution.Compress(case4_443);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_443, 6),
+                ResultTester.CheckResult<int>(result2_443, 1),
+                ResultTester.CheckResult<int>(result3_443, 4),
+                ResultTester.CheckResult<int>(result4_443, result4_443)
+            };
+            return results;
         }
     }
 }

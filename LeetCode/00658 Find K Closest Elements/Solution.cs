@@ -21,6 +21,8 @@ Output: [1,2,3,4]
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindKClosestElements
 {
     public class Solution 
@@ -45,6 +47,26 @@ namespace CompetitiveProgramming.LeetCode.FindKClosestElements
             Array.Copy(arr, start, ret, 0, k);
                 
             return ret.ToList();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindKClosestElements()
+        {
+            int[] arr = {1,2,3,4,5};
+            int k = 4;
+            int x1 = 3;
+            int x2 = -1;
+            IList<int> result1 = LeetCode.FindKClosestElements.Solution.FindClosestElements(arr, k, x1);
+            IList<int> result2 = LeetCode.FindKClosestElements.Solution.FindClosestElements(arr, k, x2);
+            int[] expected = {1,2,3,4};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<int>>(result1, expected),
+                ResultTester.CheckResult<IList<int>>(result2, expected)
+            };
+            return results;
         }
     }
 }

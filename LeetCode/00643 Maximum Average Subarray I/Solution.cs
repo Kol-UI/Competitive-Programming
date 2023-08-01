@@ -20,6 +20,8 @@ Output: 5.00000
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximumAverageSubarrayI
 {
     public class Solution
@@ -43,6 +45,29 @@ namespace CompetitiveProgramming.LeetCode.MaximumAverageSubarrayI
             }
 
             return max;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMaximumAverageSubarrayI()
+        {
+            // Case 1
+            int[] nums1 = {1,12,-5,-6,50,3};
+            int k1 = 4;
+            double result1 = Solution.FindMaxAverage(nums1, k1);
+
+            // Case 2
+            int[] nums2 = {5};
+            int k2 = 1;
+            double result2 = Solution.FindMaxAverage(nums2, k2);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<double>(result1, 12.75000),
+                ResultTester.CheckResult<double>(result2, 5.00000)
+            };
+            return results;
         }
     }
 }

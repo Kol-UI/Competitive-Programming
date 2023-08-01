@@ -26,6 +26,8 @@ Output: 3
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NumberofProvinces
 {
     public class Solution
@@ -58,6 +60,37 @@ namespace CompetitiveProgramming.LeetCode.NumberofProvinces
                     DFS(isConnected, visited, j, n);
                 }
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestNumberofProvinces()
+        {
+            // Case 1
+            int[][] case1_547 = new int[][]
+            {
+                new int[] { 1,1,0 },
+                new int[] { 1,1,0 },
+                new int[] { 0,0,1 }
+            };
+            int result1 = LeetCode.NumberofProvinces.Solution.FindCircleNum(case1_547);
+            
+            // Case 2
+            int[][] case2_547 = new int[][]
+            {
+                new int[] { 1,0,0 },
+                new int[] { 0,1,0 },
+                new int[] { 0,0,1 }
+            };
+            int result2 = LeetCode.NumberofProvinces.Solution.FindCircleNum(case2_547);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, 3)
+            };
+            return results;
         }
     }
 }

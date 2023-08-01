@@ -27,6 +27,8 @@ Output: 6
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BestTimetoBuyandSellStockwithTransactionFee
 {
     public class Solution
@@ -43,6 +45,28 @@ namespace CompetitiveProgramming.LeetCode.BestTimetoBuyandSellStockwithTransacti
             }
 
             return Math.Max(holding, notHolding);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestBestTimetoBuyandSellStockwithTransactionFee()
+        {
+            int[] prices1 = {1,3,2,8,4,9};
+            int fee1 = 2;
+            int[] prices2 = {1,3,7,5,10,3};
+            int fee2 = 3;
+
+            int result1 = Solution.MaxProfit(prices1, fee1);
+            int result2 = Solution.MaxProfit(prices2, fee2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 8),
+                ResultTester.CheckResult<int>(result2, 6),
+            };
+
+            return results;
         }
     }
 }

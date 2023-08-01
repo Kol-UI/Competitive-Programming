@@ -30,6 +30,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.PeakIndexinaMountainArray
 {
     public class Solution
@@ -49,6 +51,29 @@ namespace CompetitiveProgramming.LeetCode.PeakIndexinaMountainArray
             }
             
             return j;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestPeakIndexinaMountainArray()
+        {
+            int[] arr1 = { 0,1,0 };
+            int[] arr2 = { 0,2,1,0 };
+            int[] arr3 = { 0,10,5,2 };
+
+            int result1 = Solution.PeakIndexInMountainArray(arr1);
+            int result2 = Solution.PeakIndexInMountainArray(arr2);
+            int result3 = Solution.PeakIndexInMountainArray(arr3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 1),
+                ResultTester.CheckResult<int>(result3, 1)
+            };
+
+            return results;
         }
     }
 }

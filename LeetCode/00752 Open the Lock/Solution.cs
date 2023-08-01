@@ -34,6 +34,8 @@ Explanation: We cannot reach the target without getting stuck.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.OpentheLock
 {
     public class Solution
@@ -118,6 +120,29 @@ namespace CompetitiveProgramming.LeetCode.OpentheLock
             {
                 dest[i] = src[i];
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestOpentheLock()
+        {
+            string[] deadends1 = {"0201","0101","0102","1212","2002"};
+            string target1 = "0202";
+            string[] deadends2 = {"8888"};
+            string target2 = "0009";
+            string[] deadends3 = {"8887","8889","8878","8898","8788","8988","7888","9888"};
+            string target3 = "8888";
+            int result1 = Solution.OpenLock(deadends1, target1);
+            int result2 = Solution.OpenLock(deadends2, target2);
+            int result3 = Solution.OpenLock(deadends3, target3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 6),
+                ResultTester.CheckResult<int>(result2, 1),
+                ResultTester.CheckResult<int>(result3, -1)
+            };
+            return results;
         }
     }
 }

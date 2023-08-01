@@ -20,6 +20,8 @@ Output: [[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.AllPathsFromSourcetoTarget
 {
     public class Solution
@@ -51,6 +53,38 @@ namespace CompetitiveProgramming.LeetCode.AllPathsFromSourcetoTarget
                 FindAllPaths(graph, currentList, graph[index][i]);
                 currentList.RemoveAt(currentList.Count -1);
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestAllPathsFromSourcetoTarget()
+        {
+            int[][] graph1 = new int[][]
+            {
+                new int[] { 1, 2 },
+                new int[] { 3 },
+                new int[] { 3 },
+                new int[] { }
+            };
+            int[][] graph2 = new int[][]
+            {
+                new int[] { 4, 3, 1 },
+                new int[] { 3, 2, 4 },
+                new int[] { 3 },
+                new int[] { 4 },
+                new int[] { }
+            };
+
+            IList<IList<int>> result1_797 = LeetCode.AllPathsFromSourcetoTarget.Solution.AllPathsSourceTarget(graph1);
+            IList<IList<int>> result2_797 = LeetCode.AllPathsFromSourcetoTarget.Solution.AllPathsSourceTarget(graph2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<IList<int>>>(result1_797, result1_797),
+                ResultTester.CheckResult<IList<IList<int>>>(result2_797, result2_797)
+            };
+
+            return results;
         }
     }
 }

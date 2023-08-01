@@ -23,6 +23,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.DominoandTrominoTiling
 {
     public class Solution
@@ -46,6 +48,23 @@ namespace CompetitiveProgramming.LeetCode.DominoandTrominoTiling
                 i++;
             }
             return (int)result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestDominoandTrominoTiling()
+        {
+            int result1 = Solution.NumTilings(3);
+            int result2 = Solution.NumTilings(1);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 5),
+                ResultTester.CheckResult<int>(result2, 1)
+            };
+
+            return results;
         }
     }
 }
