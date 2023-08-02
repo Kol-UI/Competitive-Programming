@@ -29,6 +29,8 @@ Output: false
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.HappyNumber
 {
     public class Solution
@@ -55,6 +57,25 @@ namespace CompetitiveProgramming.LeetCode.HappyNumber
             }
 
             return true;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestHappyNumber()
+        {
+            int n1 = 19;
+            int n2 = 2;
+
+            bool result1 = Solution.IsHappy(n1);
+            bool result2 = Solution.IsHappy(n2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false),
+            };
+            return results;
         }
     }
 }

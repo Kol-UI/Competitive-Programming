@@ -23,6 +23,8 @@ Output: 2
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.HIndexII
 {
     public class Solution
@@ -53,6 +55,21 @@ namespace CompetitiveProgramming.LeetCode.HIndexII
                 }
             }
             return n - value1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestHIndexII()
+        {
+            int[] citations1 = {0,1,3,5,6};
+            int[] citations2 = {1,2,100};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.HIndex(citations1), 3),
+                ResultTester.CheckResult<int>(Solution.HIndex(citations2), 2)
+            };
+            return results;
         }
     }
 }

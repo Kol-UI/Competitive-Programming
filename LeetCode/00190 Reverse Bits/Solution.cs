@@ -23,6 +23,8 @@ Explanation: The input binary string 11111111111111111111111111111101 represents
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ReverseBits
 {
     public class Solution 
@@ -43,6 +45,27 @@ namespace CompetitiveProgramming.LeetCode.ReverseBits
             }
             
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestReverseBits()
+        {
+            uint n1 = 0b0000_0010_1001_0100_0001_1110_1001_1100;
+            uint output1 = 964176192;
+            uint n2 = 0b11111111111111111111111111111101;
+            uint output2 = 3221225471;
+
+            uint result1 = Solution.ReverseBits(n1);
+            uint result2 = Solution.ReverseBits(n2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<uint>(result1, output1),
+                ResultTester.CheckResult<uint>(result2, output2)
+            };
+            return results;
         }
     }
 }

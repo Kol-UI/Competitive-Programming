@@ -33,6 +33,8 @@ Constraints:
 0 <= n <= 109
 */
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BulbSwitcher
 {
     public class Solution
@@ -40,6 +42,29 @@ namespace CompetitiveProgramming.LeetCode.BulbSwitcher
         public static int BulbSwitch(int n)
         {
             return (int)Math.Sqrt(n);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestBulbSwitcher()
+        {
+            // Case 1
+            int Case1_319 = Solution.BulbSwitch(3);
+
+            // Case 2
+            int Case2_319 = Solution.BulbSwitch(0);
+
+            // Case 3
+            int Case3_319 = Solution.BulbSwitch(1);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_319, 1),
+                ResultTester.CheckResult<int>(Case2_319, 0),
+                ResultTester.CheckResult<int>(Case3_319, 1)
+            };
+            return results;
         }
     }
 }

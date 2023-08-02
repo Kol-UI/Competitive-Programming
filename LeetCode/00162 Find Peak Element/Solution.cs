@@ -24,6 +24,8 @@ Explanation: Your function can return either index number 1 where the peak eleme
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindPeakElement
 {
     public class Solution
@@ -49,6 +51,25 @@ namespace CompetitiveProgramming.LeetCode.FindPeakElement
             }
 
             return nums[left] > nums[right] ? left : right;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindPeakElement()
+        {
+            int[] nums1 = {1,2,3,1};
+            int[] nums2 = {1,2,1,3,5,6,4};
+
+            int result1 = Solution.FindPeakElement(nums1);
+            int result2 = Solution.FindPeakElement(nums2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, 5)
+            };
+            return results;
         }
     }
 }

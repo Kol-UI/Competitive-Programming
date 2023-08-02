@@ -25,6 +25,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LongestIncreasingSubsequence
 {
     public class Solution
@@ -52,6 +54,28 @@ namespace CompetitiveProgramming.LeetCode.LongestIncreasingSubsequence
             }
 
             return solve(0,n);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestLongestIncreasingSubsequence()
+        {
+            int[] nums1_300 = {10,9,2,5,3,7,101,18};
+            int[] nums2_300 = {0,1,0,3,2,3};
+            int[] nums3_300 = {7,7,7,7,7,7,7};
+
+            int result1_300 = Solution.LengthOfLIS(nums1_300);
+            int result2_300 = Solution.LengthOfLIS(nums2_300);
+            int result3_300 = Solution.LengthOfLIS(nums3_300);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_300, 4),
+                ResultTester.CheckResult<int>(result2_300, 4),
+                ResultTester.CheckResult<int>(result3_300, 1)
+            };
+            return results;
         }
     }
 }

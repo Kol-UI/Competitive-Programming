@@ -25,6 +25,8 @@ Output: 0
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindMinimuminRotatedSortedArrayII
 {
     public class Solution
@@ -53,6 +55,23 @@ namespace CompetitiveProgramming.LeetCode.FindMinimuminRotatedSortedArrayII
             }
             
             return nums[left];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindMinimuminRotatedSortedArrayII()
+        {
+            int[] nums1 = {1,3,5};
+            int[] nums2 = {2,2,2,0,1};
+            int result1 = Solution.FindMin(nums1);
+            int result2 = Solution.FindMin(nums2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 0)
+            };
+            return results;
         }
     }
 }

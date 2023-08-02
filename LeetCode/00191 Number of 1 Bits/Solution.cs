@@ -29,6 +29,8 @@ Explanation: The input binary string 11111111111111111111111111111101 has a tota
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.Numberof1Bits
 {
     public class Solution
@@ -47,5 +49,28 @@ namespace CompetitiveProgramming.LeetCode.Numberof1Bits
         }
         // LINQ
         public static int HammingWeight2(uint n) => Convert.ToString(n, 2).Count(x => x == '1');
+    }
+
+    public class Test
+    {
+        public static bool[] TestNumberof1Bits()
+        {
+            uint test1 = 00000000000000000000000000001011;
+            uint test2 = 00000000000000000000000010000000;
+
+            int result1 = LeetCode.Numberof1Bits.Solution.HammingWeight(test1);
+            int result2 = LeetCode.Numberof1Bits.Solution.HammingWeight(test2);
+            int result1Linq = LeetCode.Numberof1Bits.Solution.HammingWeight2(test1);
+            int result2Linq = LeetCode.Numberof1Bits.Solution.HammingWeight2(test2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 8),
+                ResultTester.CheckResult<int>(result2, 8),
+                ResultTester.CheckResult<int>(result1Linq, 8),
+                ResultTester.CheckResult<int>(result2Linq, 8)
+            };
+            return results;
+        }
     }
 }

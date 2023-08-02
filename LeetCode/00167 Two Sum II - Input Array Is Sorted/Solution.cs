@@ -31,6 +31,8 @@ Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We ret
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.TwoSumIIInputArrayIsSorted
 {
     // Binary Search
@@ -63,6 +65,35 @@ namespace CompetitiveProgramming.LeetCode.TwoSumIIInputArrayIsSorted
             }
 
             return new[] {0, 0};
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestTwoSumIIInputArrayIsSorted()
+        {
+            int[] nums1 = {2,7,11,15};
+            int target1 = 9;
+            int[] nums2 = {2,3,4};
+            int target2 = 6;
+            int[] nums3 = {-1,0};
+            int target3 = -1;
+
+            int[] result1 = Solution.TwoSum(nums1, target1);
+            int[] result2 = Solution.TwoSum(nums2, target2);
+            int[] result3 = Solution.TwoSum(nums3, target3);
+
+            int[] expected1 = {1,2};
+            int[] expected2 = {1,3};
+            int[] expected3 = {1,2};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2),
+                ResultTester.CheckResult<int[]>(result3, expected3)
+            };
+            return results;
         }
     }
 }

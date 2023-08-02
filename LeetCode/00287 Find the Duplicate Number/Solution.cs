@@ -21,6 +21,8 @@ Output: 3
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindtheDuplicateNumber
 {
     public class Solution 
@@ -36,6 +38,21 @@ namespace CompetitiveProgramming.LeetCode.FindtheDuplicateNumber
             }
             
             return 0;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindtheDuplicateNumber()
+        {
+            int[] nums1 = {1,3,4,2,2};
+            int[] nums2 = {3,1,3,4,2};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.FindDuplicate(nums1), 2),
+                ResultTester.CheckResult<int>(Solution.FindDuplicate(nums2), 3)
+            };
+            return results;
         }
     }
 }

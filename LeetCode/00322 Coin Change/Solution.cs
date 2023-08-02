@@ -27,6 +27,8 @@ Output: -1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CoinChange
 {
     public class Solution
@@ -63,6 +65,31 @@ namespace CompetitiveProgramming.LeetCode.CoinChange
             }
             dp.Add(amount, minCoins != -1 ? minCoins + 1 : -1);
             return dp[amount];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCoinChange()
+        {
+            int[] coins1 = {1,2,5};
+            int amount1 = 11;
+            int[] coins2 = {2};
+            int amount2 = 3;
+            int[] coins3 = {1};
+            int amount3 = 0;
+
+            int result1_322 = Solution.GetCoinChange(coins1, amount1);
+            int result2_322 = Solution.GetCoinChange(coins2, amount2);
+            int result3_322 = Solution.GetCoinChange(coins3, amount3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_322, 3),
+                ResultTester.CheckResult<int>(result2_322, 2),
+                ResultTester.CheckResult<int>(result3_322, -1)
+            };
+            return results;
         }
     }
 }

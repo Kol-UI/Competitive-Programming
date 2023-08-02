@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.EvaluateReversePolishNotation
 {
@@ -72,6 +73,24 @@ namespace CompetitiveProgramming.LeetCode.EvaluateReversePolishNotation
                 }
             }
             return stack.Pop();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestEvaluateReversePolishNotation()
+        {
+            string[] tokens1 = {"2", "1", "+", "3", "*"};
+            string[] tokens2 = {"4","13","5","/","+"};
+            string[] tokens3 = {"10","6","9","3","+","-11","*","/","*","17","+","5","+"};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.EvalRPN(tokens1), 9),
+                ResultTester.CheckResult<int>(Solution.EvalRPN(tokens2), 6),
+                ResultTester.CheckResult<int>(Solution.EvalRPN(tokens3), 22)
+            };
+            return results;
         }
     }
 }

@@ -18,6 +18,8 @@ Output: false
 Explanation: The array cannot be partitioned into equal sum subsets.
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.PartitionEqualSubsetSum
 {
     public class Solution
@@ -47,6 +49,23 @@ namespace CompetitiveProgramming.LeetCode.PartitionEqualSubsetSum
             }
 
             return dp[needsum];    
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestPartitionEqualSubsetSum()
+        {
+            int[] nums1 = {1,5,11,5};
+            int[] nums2 = {1,2,3,5};
+            bool result1 = Solution.CanPartition(nums1);
+            bool result2 = Solution.CanPartition(nums2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false)
+            };
+            return results;
         }
     }
 }

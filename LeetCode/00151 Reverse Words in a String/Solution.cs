@@ -30,6 +30,8 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ReverseWordsinaString
 {
     public class Solution
@@ -58,5 +60,38 @@ namespace CompetitiveProgramming.LeetCode.ReverseWordsinaString
         // 'Where' filters out any substrings that are null, empty, or only contain white space
         // Reverses the order of the filtered substrings
         // Joins the reversed substrings using space character as separator using 'Join'
+    }
+
+    public class Test
+    {
+        public static bool[] TestReverseWordsinaString()
+        {
+            string s1 = "the sky is blue";
+            string s2 = "  hello world  ";
+            string s3 = "a good   example";
+            string expected1 = "blue is sky the";
+            string expected2 = "world hello";
+            string expected3 = "example good a";
+
+            string solution1Case1 = Solution.ReverseWords(s1);
+            string solution2Case1 = Solution.ReverseWordsSecond(s1);
+
+            string solution1Case2 = Solution.ReverseWords(s2);
+            string solution2Case2 = Solution.ReverseWordsSecond(s2);
+
+            string solution1Case3 = Solution.ReverseWords(s3);
+            string solution2Case3 = Solution.ReverseWordsSecond(s3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(solution1Case1, expected1),
+                ResultTester.CheckResult<string>(solution2Case1, expected1),
+                ResultTester.CheckResult<string>(solution1Case2, expected2),
+                ResultTester.CheckResult<string>(solution2Case2, expected2),
+                ResultTester.CheckResult<string>(solution1Case3, expected3),
+                ResultTester.CheckResult<string>(solution2Case3, expected3)
+            };
+            return results;
+        }
     }
 }

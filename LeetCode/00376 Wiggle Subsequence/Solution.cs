@@ -28,6 +28,8 @@ Output: 2
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.WiggleSubsequence
 {
     public class Solution
@@ -60,6 +62,28 @@ namespace CompetitiveProgramming.LeetCode.WiggleSubsequence
             }
 
             return Math.Max(dpUp[^1].len, dpDn[^1].len);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestWiggleSubsequence()
+        {
+            int[] nums1_376 = {1,7,4,9,2,5};
+            int[] nums2_376 = {1,17,5,10,13,15,10,5,16,8};
+            int[] nums3_376 = {1,2,3,4,5,6,7,8,9};
+
+            int result1_376 = Solution.WiggleMaxLength(nums1_376);
+            int result2_376 = Solution.WiggleMaxLength(nums2_376);
+            int result3_376 = Solution.WiggleMaxLength(nums3_376);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_376, 6),
+                ResultTester.CheckResult<int>(result2_376, 7),
+                ResultTester.CheckResult<int>(result3_376, 2)
+            };
+            return results;
         }
     }
 }

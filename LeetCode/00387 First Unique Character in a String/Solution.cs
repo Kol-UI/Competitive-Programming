@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FirstUniqueCharacterinaString
 {
     public class Solution
@@ -30,6 +32,32 @@ namespace CompetitiveProgramming.LeetCode.FirstUniqueCharacterinaString
             }
             else
                 return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFirstUniqueCharacterinaString()
+        {
+            // Case 1
+            string stringCase1_387 = "leetcode";
+            int Case1_387_Result = Solution.FirstUniqChar(stringCase1_387);
+
+            // Case 2
+            string stringCase2_387 = "loveleetcode";
+            int Case2_387_Result = Solution.FirstUniqChar(stringCase2_387);
+
+            // Case 3
+            string stringCase3_387 = "aabb";
+            int Case3_387_Result = Solution.FirstUniqChar(stringCase3_387);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_387_Result, 0),
+                ResultTester.CheckResult<int>(Case2_387_Result, 2),
+                ResultTester.CheckResult<int>(Case3_387_Result, -1)
+            };
+            return results;
         }
     }
 }

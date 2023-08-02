@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BestTimetoBuyandSellStockwithCooldown
 {
@@ -47,6 +48,22 @@ namespace CompetitiveProgramming.LeetCode.BestTimetoBuyandSellStockwithCooldown
             }
 
             return Math.Max(buy[prices.Length - 1], sell[prices.Length - 1]);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestBestTimetoBuyandSellStockwithCooldown()
+        {
+            int[] prices1 = {1,2,3,0,2};
+            int[] prices2 = {1};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.MaxProfit(prices1), 3),
+                ResultTester.CheckResult<int>(Solution.MaxProfit(prices2), 0)
+            };
+            return results;
         }
     }
 }

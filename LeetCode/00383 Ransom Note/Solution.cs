@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RansomNote
 {
@@ -36,6 +37,20 @@ namespace CompetitiveProgramming.LeetCode.RansomNote
             }
 
             return true;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestRansomNote()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Solution.CanConstruct("a", "b"), false),
+                ResultTester.CheckResult<bool>(Solution.CanConstruct("aa", "ab"), false),
+                ResultTester.CheckResult<bool>(Solution.CanConstruct("aa", "aab"), true)
+            };
+            return results;
         }
     }
 }

@@ -24,6 +24,8 @@ Constraints:
 0 <= num <= 231 - 1
 */
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.AddDigits
 {
     public class Solution
@@ -42,6 +44,25 @@ namespace CompetitiveProgramming.LeetCode.AddDigits
             }
             
             return num;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestAddDigits()
+        {
+            // Case 1
+            int Case1_258 = LeetCode.AddDigits.Solution.AddDigits(38);
+
+            // Case 2
+            int Case2_258 = LeetCode.AddDigits.Solution.AddDigits(0);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_258, 2),
+                ResultTester.CheckResult<int>(Case2_258, 0)
+            };
+            return results;
         }
     }
 }

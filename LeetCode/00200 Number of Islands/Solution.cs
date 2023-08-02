@@ -29,6 +29,8 @@ Output: 3
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NumberofIslands
 {
     public class Solution
@@ -70,6 +72,36 @@ namespace CompetitiveProgramming.LeetCode.NumberofIslands
             }
 
             return islands;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestHappyNumber()
+        {
+            char[][] grid1 = new char[][]
+            {
+                new char[] { '1', '1', '1', '1', '0' },
+                new char[] { '1', '1', '0', '1', '0' },
+                new char[] { '1', '1', '0', '0', '0' },
+                new char[] { '0', '0', '0', '0', '0' }
+            };
+            char[][] grid2 = new char[][]
+            {
+                new char[] { '1', '1', '0', '0', '0' },
+                new char[] { '1', '1', '0', '0', '0' },
+                new char[] { '0', '0', '1', '0', '0' },
+                new char[] { '0', '0', '0', '1', '1' }
+            };
+
+            int result1 = Solution.NumIslands(grid1);
+            int result2 = Solution.NumIslands(grid2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 3)
+            };
+            return results;
         }
     }
 }

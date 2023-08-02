@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.WordPattern
 {
 	public class Solution
@@ -46,6 +48,20 @@ namespace CompetitiveProgramming.LeetCode.WordPattern
                 }
             }
             return b;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestWordPattern()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Solution.WordPattern("abba", "dog cat cat dog"), true),
+                ResultTester.CheckResult<bool>(Solution.WordPattern("abba", "dog cat cat fish"), false),
+                ResultTester.CheckResult<bool>(Solution.WordPattern("aaaa", "dog cat cat dog"), false)
+            };
+            return results;
         }
     }
 }

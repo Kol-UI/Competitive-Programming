@@ -20,6 +20,8 @@ Explanation: 1 has no prime factors, therefore all of its prime factors are limi
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.UglyNumberII
 {
     public class Solution
@@ -43,6 +45,22 @@ namespace CompetitiveProgramming.LeetCode.UglyNumberII
             var min3 = (long)(3 * list.Where(p => (long)p * 3 > last).Min());
             var min5 = (long)(5 * list.Where(p => (long)p * 5 > last).Min());
             return (int)Math.Min(Math.Min(min2, min3), min5);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestUglyNumberII()
+        {
+            int result1 = Solution.NthUglyNumber(10);
+            int result2 = Solution.NthUglyNumber(1);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 12),
+                ResultTester.CheckResult<int>(result2, 1)
+            };
+            return results;
         }
     }
 }

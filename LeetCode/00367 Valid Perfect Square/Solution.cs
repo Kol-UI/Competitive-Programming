@@ -24,6 +24,8 @@ Explanation: We return false because 3.742 * 3.742 = 14 and 3.742 is not an inte
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ValidPerfectSquare
 {
     public class Solution
@@ -53,6 +55,25 @@ namespace CompetitiveProgramming.LeetCode.ValidPerfectSquare
             }
 
             return false;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestValidPerfectSquare()
+        {
+            int case1_367 = 16;
+            int case2_367 = 14;
+
+            bool result1_367 = Solution.IsPerfectSquare(case1_367);
+            bool result2_367 = Solution.IsPerfectSquare(case2_367);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1_367, true),
+                ResultTester.CheckResult<bool>(result2_367, false)
+            };
+            return results;
         }
     }
 }

@@ -40,6 +40,8 @@ Explanation: The water can flow from the only cell to the Pacific and Atlantic o
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.PacificAtlanticWaterFlow
 {
     public class Solution
@@ -76,6 +78,50 @@ namespace CompetitiveProgramming.LeetCode.PacificAtlanticWaterFlow
                 dfs(row, col - 1, hashset, heights[row][col]);
                 
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestPacificAtlanticWaterFlow()
+        {
+            int[][] heights1 = new int[][]
+            {
+                new int[] { 1, 2, 2, 3, 5 },
+                new int[] { 3, 2, 3, 4, 4 },
+                new int[] { 2, 4, 5, 3, 1 },
+                new int[] { 6, 7, 1, 4, 5 },
+                new int[] { 5, 1, 1, 2, 4 }
+            };
+
+            int[][] heights2 = new int[][]
+            {
+                new int[] { 1 }
+            };
+
+            IList<IList<int>> result1_417 = Solution.PacificAtlantic(heights1);
+            IList<IList<int>> result2_417 = Solution.PacificAtlantic(heights2);
+
+            IList<IList<int>> expected1_417 = new List<IList<int>>
+            {
+                new List<int> { 0, 4 },
+                new List<int> { 1, 3 },
+                new List<int> { 1, 4 },
+                new List<int> { 2, 2 },
+                new List<int> { 3, 0 },
+                new List<int> { 3, 1 },
+                new List<int> { 4, 0 }
+            };
+            IList<IList<int>> expected2_417 = new List<IList<int>>
+            {
+                new List<int> { 0, 0 }
+            };
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<IList<int>>>(result1_417, result1_417),
+                ResultTester.CheckResult<IList<IList<int>>>(result2_417, expected2_417)
+            };
+            return results;
         }
     }
 }

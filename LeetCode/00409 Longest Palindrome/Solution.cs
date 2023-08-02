@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LongestPalindrome
 {
     public class Solution
@@ -50,6 +52,25 @@ namespace CompetitiveProgramming.LeetCode.LongestPalindrome
             }
 
             return length;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestLongestPalindrome()
+        {
+            string s1 = "abccccdd";
+            string s2 = "a";
+
+            int result1_5 = Solution.LongestPalindrome(s1);
+            int result2_5 = Solution.LongestPalindrome(s2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_5, 7),
+                ResultTester.CheckResult<int>(result2_5, 1)
+            };
+            return results;
         }
     }
 }

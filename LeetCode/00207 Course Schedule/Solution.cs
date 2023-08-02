@@ -24,6 +24,8 @@ To take course 1 you should have finished course 0, and to take course 0 you sho
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CourseSchedule
 {
     public class Solution
@@ -58,6 +60,35 @@ namespace CompetitiveProgramming.LeetCode.CourseSchedule
             if (dic.Any()) return false;
 
             return true;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCourseSchedule()
+        {
+            int numCourses1 = 2;
+            int[][] prerequisites1 = new int[][]
+            {
+                new int[] { 1, 0 }
+            };
+
+            int numCourses2 = 2;
+            int[][] prerequisites2 = new int[][]
+            {
+                new int[] { 1, 0 },
+                new int[] { 0, 1 }
+            };
+
+            bool result1 = Solution.CanFinish(numCourses1, prerequisites1);
+            bool result2 = Solution.CanFinish(numCourses2, prerequisites2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false),
+            };
+            return results;
         }
     }
 }

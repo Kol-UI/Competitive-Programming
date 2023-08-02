@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ContainsDuplicate
 {
     public class Solution
@@ -31,6 +33,32 @@ namespace CompetitiveProgramming.LeetCode.ContainsDuplicate
             {
                 return false;
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestContainsDuplicate()
+        {
+            // Case 1
+            int[] Case1_217 = {1, 2, 3, 1};
+            bool Case1_217_Result = Solution.ContainsDuplicate(Case1_217);
+
+            // Case 2
+            int[] Case2_217 = { 1, 2, 3, 4 };
+            bool Case2_217_Result = Solution.ContainsDuplicate(Case2_217);
+
+            // Case 2
+            int[] Case3_217 = { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 };
+            bool Case3_217_Result = Solution.ContainsDuplicate(Case3_217);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Case1_217_Result, true),
+                ResultTester.CheckResult<bool>(Case2_217_Result, false),
+                ResultTester.CheckResult<bool>(Case3_217_Result, true)
+            };
+            return results;
         }
     }
 }

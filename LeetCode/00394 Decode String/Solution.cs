@@ -29,6 +29,7 @@ Output: "abcabccdcdcdef"
 
 using System;
 using System.Text;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.DecodeString
 {
@@ -78,6 +79,27 @@ namespace CompetitiveProgramming.LeetCode.DecodeString
                 return result.ToString();
             }
             else return s;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestDecodeString()
+        {
+            string s1 = "3[a]2[bc]";
+            string output1 = "aaabcbc";
+            string s2 = "3[a2[c]]";
+            string output2 = "accaccacc";
+            string s3 = "2[abc]3[cd]ef";
+            string output3 = "abcabccdcdcdef";
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(Solution.DecodeString(s1), output1),
+                ResultTester.CheckResult<string>(Solution.DecodeString(s2), output2),
+                ResultTester.CheckResult<string>(Solution.DecodeString(s3), output3),
+            };
+            return results;
         }
     }
 }

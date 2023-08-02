@@ -34,6 +34,8 @@ Explanation: The ranges are:
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SummaryRanges
 {
     public class Solution
@@ -64,6 +66,28 @@ namespace CompetitiveProgramming.LeetCode.SummaryRanges
             
             return result;
 
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSummaryRanges()
+        {
+            int[] test1 = {0,1,2,4,5,7};
+            int[] test2 = {0,2,3,4,6,8,9};
+
+            IList<string> result1 = LeetCode.SummaryRanges.Solution.SummaryRanges(test1);
+            IList<string> result2 = LeetCode.SummaryRanges.Solution.SummaryRanges(test2);
+
+            IList<string> expected1 = new List<string> { "0->2", "4->5", "7" };
+            IList<string> expected2 = new List<string> { "0", "2->4", "6", "8->9" };
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<string>>(result1, expected1),
+                ResultTester.CheckResult<IList<string>>(result2, expected2)
+            };
+            return results;
         }
     }
 }

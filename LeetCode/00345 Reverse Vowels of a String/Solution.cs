@@ -18,6 +18,8 @@ Output: "leotcede"
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ReverseVowelsofaString
 {
     public class Solution
@@ -38,6 +40,22 @@ namespace CompetitiveProgramming.LeetCode.ReverseVowelsofaString
             }
 
             return new string(res);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestReverseVowelsofaString()
+        {
+            string Case1_345 = Solution.ReverseVowels("hello");
+            string Case2_345 = Solution.ReverseVowels("leetcode");
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(Case1_345, "holle"),
+                ResultTester.CheckResult<string>(Case2_345, "leotcede")
+            };
+            return results;
         }
     }
 }

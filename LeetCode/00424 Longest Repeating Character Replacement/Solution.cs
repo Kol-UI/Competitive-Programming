@@ -23,6 +23,8 @@ There may exists other ways to achive this answer too.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LongestRepeatingCharacterReplacement
 {
     public class Solution
@@ -49,6 +51,23 @@ namespace CompetitiveProgramming.LeetCode.LongestRepeatingCharacterReplacement
             return maxLength;
         }
     }
-
+    public class Test
+    {
+        public static bool[] TestLongestRepeatingCharacterReplacement()
+        {
+            string s1 = "ABAB";
+            int k1 = 2;
+            string s2 = "AABABBA";
+            int k2 = 1;
+            int result1 = Solution.CharacterReplacement(s1, k1);
+            int result2 = Solution.CharacterReplacement(s2, k2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 4),
+                ResultTester.CheckResult<int>(result2, 4)
+            };
+            return results;
+        }
+    }
 
 }

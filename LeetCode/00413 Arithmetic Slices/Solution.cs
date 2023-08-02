@@ -23,6 +23,8 @@ Output: 0
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ArithmeticSlices
 {
     public class Solution
@@ -74,6 +76,23 @@ namespace CompetitiveProgramming.LeetCode.ArithmeticSlices
             }
             
             return sum;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestArithmeticSlices()
+        {
+            int[] nums1 = {1,2,3,4};
+            int[] nums2 = {1};
+            int result1 = Solution.NumberOfArithmeticSlices(nums1);
+            int result2 = Solution.NumberOfArithmeticSlices(nums2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 0)
+            };
+            return results;
         }
     }
 }

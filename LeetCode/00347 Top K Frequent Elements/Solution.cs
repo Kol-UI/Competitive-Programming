@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.TopKFrequentElements
 {
@@ -19,6 +20,30 @@ namespace CompetitiveProgramming.LeetCode.TopKFrequentElements
         public static int[] TopKFrequent(int[] nums, int k)
         {
             return nums.GroupBy(g => g).OrderByDescending(g => g.Count()).Select(g => g.Key).Take(k).ToArray();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestTopKFrequentElements()
+        {
+            int[] nums1 = {1, 1, 1, 2, 2, 3};
+            int k1 = 2;
+            int[] nums2 = {1};
+            int k2 = 1;
+
+            int[] expected1 = {1, 2};
+            int[] expected2 = {1};
+
+            int[] result1 = Solution.TopKFrequent(nums1, k1);
+            int[] result2 = Solution.TopKFrequent(nums2, k2); 
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2)
+            };
+            return results;
         }
     }
 }

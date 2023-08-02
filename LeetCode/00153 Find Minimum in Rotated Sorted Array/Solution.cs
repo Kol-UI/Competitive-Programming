@@ -32,6 +32,8 @@ Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindMinimuminRotatedSortedArray
 {
     public class Solution
@@ -49,6 +51,27 @@ namespace CompetitiveProgramming.LeetCode.FindMinimuminRotatedSortedArray
             }
             
             return nums[left];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindMinimuminRotatedSortedArray()
+        {
+            int[] nums1 = {3,4,5,1,2};
+            int[] nums2 = {4,5,6,7,0,1,2};
+            int[] nums3 = {11,13,15,17};
+
+            int result1 = Solution.FindMin(nums1);
+            int result2 = Solution.FindMin(nums2);
+            int result3 = Solution.FindMin(nums3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 0),
+                ResultTester.CheckResult<int>(result3, 11)
+            };
+            return results;
         }
     }
 }

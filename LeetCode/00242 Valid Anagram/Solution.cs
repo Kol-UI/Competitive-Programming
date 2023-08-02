@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ValidAnagram
 {
@@ -17,11 +18,24 @@ namespace CompetitiveProgramming.LeetCode.ValidAnagram
         // Input: s = "rat", t = "car"
         // Output: false
 
-        public bool IsAnagram(string s, string t)
+        public static bool IsAnagram(string s, string t)
         {
             var so = s.OrderBy(c => c);
             var to = t.OrderBy(c => c);
             return so.SequenceEqual(to);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestValidAnagram()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Solution.IsAnagram("anagram", "nagaram"), true),
+                ResultTester.CheckResult<bool>(Solution.IsAnagram("rat", "car"), false)
+            };
+            return results;
         }
     }
 }

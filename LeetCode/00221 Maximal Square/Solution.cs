@@ -24,6 +24,8 @@ Output: 0
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximalSquare
 {
     public class Solution
@@ -70,6 +72,35 @@ namespace CompetitiveProgramming.LeetCode.MaximalSquare
                 maxResult = Math.Max(maxResult, localRes);
                 return dp[i][j] = localRes;
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMaximalSquare()
+        {
+            char[][] matrix1_221 = new char[][]
+            {
+                new char[] { '0','1' },
+                new char[] { '1','0' }
+            };
+
+            char[][] matrix2_221 = new char[][]
+            {
+                new char[] { '0' }
+            };
+
+            int output1_221 = 1;
+            int output2_221 = 0;
+            int result1_221 = Solution.MaximalSquare(matrix1_221);
+            int result2_221 = Solution.MaximalSquare(matrix2_221);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_221, output1_221),
+                ResultTester.CheckResult<int>(result2_221, output2_221)
+            };
+            return results;
         }
     }
 }

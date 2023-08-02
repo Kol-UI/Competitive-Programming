@@ -28,6 +28,8 @@ Output: [0]
 */
 
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CourseScheduleII
 {
     public class Solution
@@ -53,6 +55,41 @@ namespace CompetitiveProgramming.LeetCode.CourseScheduleII
             }
 
             return bfs.Count == numCourses ? bfs.ToArray() : new int[0];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCourseScheduleII()
+        {
+            int numCourses1 = 2;
+            int[][] prerequisites1 = new int[][]
+            {
+                new int[] { 1, 0 }
+            };
+            int numCourses2 = 4;
+            int[][] prerequisites2 = new int[][]
+            {
+                new int[] { 1, 0 },
+                new int[] { 2, 0 },
+                new int[] { 3, 1 },
+                new int[] { 3, 2 }
+            };
+            int numCourses3 = 1;
+            int[][] prerequisites3 = new int[][] {};
+            int[] result1 = Solution.FindOrder(numCourses1, prerequisites1);
+            int[] result2 = Solution.FindOrder(numCourses2, prerequisites2);
+            int[] result3 = Solution.FindOrder(numCourses3, prerequisites3);
+            int[] expected1 = {0,1};
+            int[] expected2 = {0,2,1,3};
+            int[] expected3 = {0};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, result2),
+                ResultTester.CheckResult<int[]>(result3, expected3)
+            };
+            return results;
         }
     }
 }

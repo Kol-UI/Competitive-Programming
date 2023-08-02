@@ -25,6 +25,8 @@ Output: 0
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumSizeSubarraySum
 {
     public class Solution 
@@ -46,6 +48,30 @@ namespace CompetitiveProgramming.LeetCode.MinimumSizeSubarraySum
                 }
             }
             return (result != int.MaxValue) ? result : 0;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMinimumSizeSubarraySum()
+        {
+            int target1 = 7;
+            int[] nums1 = {2,3,1,2,4,3};
+            int target2 = 4;
+            int[] nums2 = {1,4,4};
+            int target3 = 11;
+            int[] nums3 = {1,1,1,1,1,1,1,1};
+
+            int result1 = Solution.MinSubArrayLen(target1, nums1);
+            int result2 = Solution.MinSubArrayLen(target2, nums2);
+            int result3 = Solution.MinSubArrayLen(target3, nums3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, 1),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+            return results;
         }
     }
 }

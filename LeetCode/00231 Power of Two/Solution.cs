@@ -26,6 +26,8 @@ Output: false
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.PowerofTwo
 {
     public class Solution
@@ -36,6 +38,31 @@ namespace CompetitiveProgramming.LeetCode.PowerofTwo
                 return false;
             
             return ((n & (n-1)) == 0);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestPowerofTwo()
+        {
+            int case1_231 = 1;
+            int case2_231 = 16;
+            int case3_231 = 3;
+            bool output1_231 = true;
+            bool output2_231 = true;
+            bool output3_231 = false;
+
+            bool result1 = Solution.IsPowerOfTwo(case1_231);
+            bool result2 = Solution.IsPowerOfTwo(case2_231);
+            bool result3 = Solution.IsPowerOfTwo(case3_231);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, output1_231),
+                ResultTester.CheckResult<bool>(result2, output2_231),
+                ResultTester.CheckResult<bool>(result3, output3_231)
+            };
+            return results;
         }
     }
 }

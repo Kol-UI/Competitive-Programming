@@ -32,6 +32,8 @@ The right interval for [2,3] is [3,4] since start2 = 3 is the smallest start tha
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindRightInterval
 {
     public class Solution 
@@ -73,6 +75,45 @@ namespace CompetitiveProgramming.LeetCode.FindRightInterval
             }
 
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindRightInterval()
+        {
+            int[][] intervals1 = new int[][]
+            {
+                new int[] { 1, 2 }
+            };
+            int[][] intervals2 = new int[][]
+            {
+                new int[] { 3, 4 },
+                new int[] { 2, 3 },
+                new int[] { 1, 2 }
+            };
+            int[][] intervals3 = new int[][]
+            {
+                new int[] { 1, 4 },
+                new int[] { 2, 3 },
+                new int[] { 3, 4 }
+            };
+
+            int[] result1 = Solution.FindRightInterval(intervals1);
+            int[] result2 = Solution.FindRightInterval(intervals2);
+            int[] result3 = Solution.FindRightInterval(intervals3);
+
+            int[] expected1 = {-1};
+            int[] expected2 = {-1,0,1};
+            int[] expected3 = {-1,2,-1};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2),
+                ResultTester.CheckResult<int[]>(result3, expected3)
+            };
+            return results;
         }
     }
 }

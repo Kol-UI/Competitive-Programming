@@ -30,6 +30,8 @@ Output: 5
 namespace CompetitiveProgramming.LeetCode.BasicCalculatorII
 {
     using System.Text.RegularExpressions;
+    using CompetitiveProgramming.TestDrivenDevelopment;
+
     public class Solution
     {
         public static int Calculate(string s)
@@ -74,6 +76,26 @@ namespace CompetitiveProgramming.LeetCode.BasicCalculatorII
             while(st.Count > 0)
                 curNumber+= st.Pop();
             return curNumber;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestBasicCalculatorII()
+        {
+            string s1 = "3+2*2";
+            string s2 = " 3/2 ";
+            string s3 = " 3+5 / 2 ";
+            int result1 = Solution.Calculate(s1);
+            int result2 = Solution.Calculate(s2);
+            int result3 = Solution.Calculate(s3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 7),
+                ResultTester.CheckResult<int>(result2, 1),
+                ResultTester.CheckResult<int>(result3, 5)
+            };
+            return results;
         }
     }
 }

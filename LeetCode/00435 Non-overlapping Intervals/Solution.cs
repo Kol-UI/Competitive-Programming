@@ -25,6 +25,8 @@ Explanation: You don't need to remove any of the intervals since they're already
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NonoverlappingIntervals
 {
     public class Solution
@@ -52,6 +54,47 @@ namespace CompetitiveProgramming.LeetCode.NonoverlappingIntervals
             }
 
             return res;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestNonoverlappingIntervals()
+        {
+            // Case 1
+            int[][] intervals1_435 = new int[][]
+            {
+                new int[] { 1, 2 },
+                new int[] { 2, 3 },
+                new int[] { 3, 4 },
+                new int[] { 1, 3 }
+            };
+            int result1_435 = Solution.EraseOverlapIntervals(intervals1_435);
+
+            // Case 2
+            int[][] intervals2_435 = new int[][]
+            {
+                new int[] { 1, 2 },
+                new int[] { 1, 2 },
+                new int[] { 1, 2 }
+            };
+            int result2_435 = Solution.EraseOverlapIntervals(intervals2_435);
+
+            // Case 3
+            int[][] intervals3_435 = new int[][]
+            {
+                new int[] { 1, 2 },
+                new int[] { 2, 3 }
+            };
+            int result3_435 = Solution.EraseOverlapIntervals(intervals3_435);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_435, 1),
+                ResultTester.CheckResult<int>(result2_435, 2),
+                ResultTester.CheckResult<int>(result3_435, 0)
+            };
+            return results;
         }
     }
 }

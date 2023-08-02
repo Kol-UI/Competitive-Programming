@@ -29,6 +29,8 @@ Explanation:
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CountingBits
 {
     public class Solution
@@ -61,6 +63,24 @@ namespace CompetitiveProgramming.LeetCode.CountingBits
                 result[i] = numberOfOnes;
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCountingBits()
+        {
+            int[] result1 = Solution.CountBits(2);
+            int[] result2 = Solution.CountBits(5);
+            int[] expected1 = {0,1,1};
+            int[] expected2 = {0,1,1,2,1,2};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2)
+            };
+            return results;
         }
     }
 }

@@ -33,11 +33,13 @@ Output: [0.50000,2.00000,-1.00000,-1.00000]
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.EvaluateDivision
 {
     public class Solution
     {
-        public double[] CalcEquation(IList<IList<string>> eq, double[] vals, IList<IList<string>> q)
+        public static double[] CalcEquation(IList<IList<string>> eq, double[] vals, IList<IList<string>> q)
         {
             Dictionary<string, Dictionary<string, double>> map = new();
             HashSet<string> visited = new();
@@ -75,6 +77,75 @@ namespace CompetitiveProgramming.LeetCode.EvaluateDivision
                 visited.Remove(s);
                 return cur;
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestEvaluateDivision()
+        {
+            IList<IList<string>> equations1 = new List<IList<string>>
+            {
+                new List<string> { "a", "b" },
+                new List<string> { "b", "c" }
+            };
+
+            double[] values1 = new double[] { 2.0, 3.0 };
+
+            IList<IList<string>> queries1 = new List<IList<string>>
+            {
+                new List<string> { "a", "c" },
+                new List<string> { "b", "a" },
+                new List<string> { "a", "e" },
+                new List<string> { "a", "a" },
+                new List<string> { "x", "x" }
+            };
+
+            double[] output1 = new double[] { 6.00000, 0.50000, -1.00000, 1.00000, -1.00000 };
+
+            IList<IList<string>> equations2 = new List<IList<string>>
+            {
+                new List<string> { "a", "b" },
+                new List<string> { "b", "c" },
+                new List<string> { "bc", "cd" }
+            };
+
+            double[] values2 = new double[] { 1.5, 2.5, 5.0 };
+
+            IList<IList<string>> queries2 = new List<IList<string>>
+            {
+                new List<string> { "a", "c" },
+                new List<string> { "c", "b" },
+                new List<string> { "bc", "cd" },
+                new List<string> { "cd", "bc" }
+            };
+
+            double[] output2 = new double[] { 3.75000, 0.40000, 5.00000, 0.20000 };
+
+            IList<IList<string>> equations3 = new List<IList<string>>
+            {
+                new List<string> { "a", "b" }
+            };
+
+            double[] values3 = new double[] { 0.5 };
+
+            IList<IList<string>> queries3 = new List<IList<string>>
+            {
+                new List<string> { "a", "b" },
+                new List<string> { "b", "a" },
+                new List<string> { "a", "c" },
+                new List<string> { "x", "y" }
+            };
+
+            double[] output3 = new double[] { 0.50000, 2.00000, -1.00000, -1.00000 };
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<double[]>(Solution.CalcEquation(equations1, values1, queries1), output1),
+                ResultTester.CheckResult<double[]>(Solution.CalcEquation(equations2, values2, queries2), output2),
+                ResultTester.CheckResult<double[]>(Solution.CalcEquation(equations3, values3, queries3), output3)
+            };
+            return results;
         }
     }
 }

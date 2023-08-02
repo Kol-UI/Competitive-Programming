@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.IntersectionofTwoArraysII
 {
     //Given two integer arrays nums1 and nums2, return an array of their intersection.Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.
@@ -46,6 +48,29 @@ namespace CompetitiveProgramming.LeetCode.IntersectionofTwoArraysII
             }
 
             return n;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestIntersectionofTwoArraysII()
+        {
+            int[] nums1_1 = {1, 2, 2, 1}; 
+            int[] nums2_1 = {2, 2};
+            int[] nums1_2 = {4, 9, 5}; 
+            int[] nums2_2 = {9, 4, 9, 8, 4};
+            int[] expected1 = {2,2}; 
+            int[] expected2 = {9,4};
+
+            int[] result1 = Solution.Intersect(nums1_1, nums2_1);
+            int[] result2 = Solution.Intersect(nums1_2, nums2_2); 
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2)
+            };
+            return results;
         }
     }
 }
