@@ -19,6 +19,8 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SpiralMatrix
 {
     public class Solution
@@ -63,6 +65,41 @@ namespace CompetitiveProgramming.LeetCode.SpiralMatrix
             }
 
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSpiralMatrix()
+        {
+            // Example 1 - Input Matrix
+            int[][] matrix1 = new int[][]
+            {
+                new int[] {1, 2, 3},
+                new int[] {4, 5, 6},
+                new int[] {7, 8, 9}
+            };
+
+            // Example 1 - Output List
+            IList<int> output1 = new List<int> {1, 2, 3, 6, 9, 8, 7, 4, 5};
+
+            // Example 2 - Input Matrix
+            int[][] matrix2 = new int[][]
+            {
+                new int[] {1, 2, 3, 4},
+                new int[] {5, 6, 7, 8},
+                new int[] {9, 10, 11, 12}
+            };
+
+            // Example 2 - Output List
+            IList<int> output2 = new List<int> {1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<int>>(Solution.SpiralOrder(matrix1), output1),
+                ResultTester.CheckResult<IList<int>>(Solution.SpiralOrder(matrix2), output2),
+            };
+            return results;
         }
     }
 }

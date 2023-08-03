@@ -21,6 +21,8 @@ Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SetMatrixZeroes
 {
     public class Solution
@@ -50,6 +52,51 @@ namespace CompetitiveProgramming.LeetCode.SetMatrixZeroes
                         matrix[i][j] = 0;
                 }
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSetMatrixZeroes()
+        {
+            // Input Matrix 1
+            int[][] matrix1 = new int[][]
+            {
+                new int[] {1, 1, 1},
+                new int[] {1, 0, 1},
+                new int[] {1, 1, 1}
+            };
+
+            // Output Matrix 1
+            int[][] output1 = new int[][]
+            {
+                new int[] {1, 0, 1},
+                new int[] {0, 0, 0},
+                new int[] {1, 0, 1}
+            };
+
+            // Input Matrix 2
+            int[][] matrix2 = new int[][]
+            {
+                new int[] {0, 1, 2, 0},
+                new int[] {3, 4, 5, 2},
+                new int[] {1, 3, 1, 5}
+            };
+
+            // Output Matrix 2
+            int[][] output2 = new int[][]
+            {
+                new int[] {0, 0, 0, 0},
+                new int[] {0, 4, 5, 0},
+                new int[] {0, 3, 1, 0}
+            };
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[][]>(matrix1, matrix1),
+                ResultTester.CheckResult<int[][]>(matrix2, matrix2),
+            };
+            return results;
         }
     }
 }

@@ -25,6 +25,8 @@ Output: [1,1]
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.PascalsTriangleII
 {
     public class Solution
@@ -64,6 +66,29 @@ namespace CompetitiveProgramming.LeetCode.PascalsTriangleII
                 }
                 rowIndex--;
             }   
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestPascalsTriangleII()
+        {
+            List<int> listExpected1 = new List<int> { 1, 3, 3, 1 };
+            IList<int> expected1 = listExpected1;
+
+            List<int> listExpected2 = new List<int> { 1 };
+            IList<int> expected2 = listExpected2;
+
+            List<int> listExpected3 = new List<int> { 1, 1 };
+            IList<int> expected3 = listExpected3;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<int>>(Solution.GetRow(3), expected1),
+                ResultTester.CheckResult<IList<int>>(Solution.GetRow(0), Solution.GetRow(0)),
+                ResultTester.CheckResult<IList<int>>(Solution.GetRow(1), Solution.GetRow(1))
+            };
+            return results;
         }
     }
 }

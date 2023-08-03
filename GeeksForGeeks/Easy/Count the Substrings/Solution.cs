@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Text;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.CounttheSubstrings
 {
@@ -25,6 +26,19 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.CounttheSubstrings
                 }
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCounttheSubstrings()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.CountSubstring("gEEk"), 3),
+                ResultTester.CheckResult<int>(Solution.CountSubstring("WomensDAY"), 4)
+            };
+            return results;
         }
     }
 }

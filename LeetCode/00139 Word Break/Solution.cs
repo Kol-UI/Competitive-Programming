@@ -27,6 +27,8 @@ Output: false
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.WordBreak
 {
     public class Solution
@@ -70,6 +72,35 @@ namespace CompetitiveProgramming.LeetCode.WordBreak
 
             dp[start] = matchFound ? 1 : 0;
             return matchFound;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestWordBreak()
+        {
+            string s1 = "leetcode";
+            string[] wordDict1 = {"leet","code"};
+            string s2 = "applepenapple";
+            string[] wordDict2 = {"apple","pen"};
+            string s3 = "catsandog";
+            string[] wordDict3 = {"cats","dog","sand","and","cat"};
+
+            bool output1_139 = true;
+            bool output2_139 = true;
+            bool output3_139 = false;
+
+            bool result1 = Solution.WordBreak(s1, wordDict1);
+            bool result2 = Solution.WordBreak(s2, wordDict2);
+            bool result3 = Solution.WordBreak(s3, wordDict3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, output1_139),
+                ResultTester.CheckResult<bool>(result2, output2_139),
+                ResultTester.CheckResult<bool>(result3, output3_139)
+            };
+            return results;
         }
     }
 }

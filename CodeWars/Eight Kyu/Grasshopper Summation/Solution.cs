@@ -1,6 +1,7 @@
 ﻿using System;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.ComponentModel;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.GrasshopperSummation
 {
@@ -16,6 +17,20 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.GrasshopperSummation
         public static int summation(int num)
         {
             return Enumerable.Range(1, num).Sum();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestGrasshopperSummation()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(GrasshopperSummation.Solution.summation(3), 6),
+                ResultTester.CheckResult<int>(GrasshopperSummation.Solution.summation(2), 3),
+                ResultTester.CheckResult<int>(GrasshopperSummation.Solution.summation(8), 36),
+            };
+            return results;
         }
     }
 }

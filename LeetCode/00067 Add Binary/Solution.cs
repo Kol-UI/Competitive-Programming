@@ -11,6 +11,7 @@
 // Output: "10101"
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.AddBinary
 {
@@ -52,6 +53,29 @@ namespace CompetitiveProgramming.LeetCode.AddBinary
             if (ovr) result.Add('1');
             result.Reverse();
             return new string(result.ToArray());
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestAddBinary()
+        {
+            // Case 1
+            string aCase1_67 = "11";
+            string bCase1_67 = "1";
+            string Case1_67_Result = Solution.AddBinary(aCase1_67, bCase1_67);
+
+            // Case 2
+            string aCase2_67 = "1010";
+            string bCase2_67 = "1011";
+            string Case2_67_Result = Solution.AddBinary(aCase2_67, bCase2_67);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(Case1_67_Result, "100"),
+                ResultTester.CheckResult<string>(Case2_67_Result, "10101")
+            };
+            return results;
         }
     }
 }

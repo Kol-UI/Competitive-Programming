@@ -32,6 +32,7 @@ Explanation: In the canonical path, multiple consecutive slashes are replaced by
 
 using System;
 using System.Text;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SimplifyPath
 {
@@ -72,6 +73,29 @@ namespace CompetitiveProgramming.LeetCode.SimplifyPath
             }
 
             return sb.ToString();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSimplifyPath()
+        {
+            // Case 1
+            string result71_1 = Solution.SimplifyPath("/home/");
+
+            // Case 2
+            string result71_2 = Solution.SimplifyPath("/../");
+
+            // Case 3
+            string result71_3 = Solution.SimplifyPath("/home//foo/");
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(result71_1, "/home"),
+                ResultTester.CheckResult<string>(result71_2, "/"),
+                ResultTester.CheckResult<string>(result71_3, "/home/foo"),
+            };
+            return results;
         }
     }
 }

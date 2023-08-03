@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximumSubarray
 {
 	public class Solution
@@ -28,6 +30,24 @@ namespace CompetitiveProgramming.LeetCode.MaximumSubarray
             }
 
             return bestSum;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMaximumSubarray()
+        {
+            int[] nums1 = new int[] {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+            int[] nums2 = new int[] {1};
+            int[] nums3 = new int[] {5, 4, -1, 7, 8};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.MaxSubArray(nums1), 6),
+                ResultTester.CheckResult<int>(Solution.MaxSubArray(nums2), 1),
+                ResultTester.CheckResult<int>(Solution.MaxSubArray(nums3), 23)
+            };
+            return results;
         }
     }
 }

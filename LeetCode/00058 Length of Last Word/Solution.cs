@@ -26,6 +26,8 @@ Explanation: The last word is "joyboy" with length 6.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LengthofLastWord
 {
     public class Solution
@@ -59,6 +61,32 @@ namespace CompetitiveProgramming.LeetCode.LengthofLastWord
             }
         
             return len;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestLengthofLastWord()
+        {
+            // Case 1
+            string s1 = "Hello World";
+            int result1 = Solution.LengthOfLastWord(s1);
+
+            // Case 2
+            string s2 = "   fly me   to   the moon  ";
+            int result2 = Solution.LengthOfLastWord(s2);
+
+            // Case 3
+            string s3 = "luffy is still joyboy";
+            int result3 = Solution.LengthOfLastWord(s3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 5),
+                ResultTester.CheckResult<int>(result2, 4),
+                ResultTester.CheckResult<int>(result3, 6)
+            };
+            return results;
         }
     }
 }

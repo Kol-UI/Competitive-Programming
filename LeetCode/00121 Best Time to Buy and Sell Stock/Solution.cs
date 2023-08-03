@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BestTimetoBuyandSellStock
 {
 	public class Solution
@@ -34,6 +36,27 @@ namespace CompetitiveProgramming.LeetCode.BestTimetoBuyandSellStock
                 min = Math.Min(min, day);
             }
             return profit;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestBestTimetoBuyandSellStock()
+        {
+            // Case 1
+            int[] pricesCase1_121 = { 7, 1, 5, 3, 6, 4 };
+            int Case1_121_Result = Solution.MaxProfit(pricesCase1_121);
+
+            // Case 2
+            int[] pricesCase2_121 = { 7, 6, 4, 3, 1 };
+            int Case2_121_Result = Solution.MaxProfit(pricesCase2_121);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_121_Result, 5),
+                ResultTester.CheckResult<int>(Case2_121_Result, 0)
+            };
+            return results;
         }
     }
 }

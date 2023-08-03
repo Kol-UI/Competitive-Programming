@@ -22,11 +22,13 @@ Output: [[1]]
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.Permutations
 {
     public class Solution 
     {
-        public void Combination(int[] nums, int currentIndex, IList<IList<int>> list, IList<int> contains)
+        public static void Combination(int[] nums, int currentIndex, IList<IList<int>> list, IList<int> contains)
         {
             contains.Add(nums[currentIndex]);
 
@@ -43,7 +45,7 @@ namespace CompetitiveProgramming.LeetCode.Permutations
             } 
         }
 
-        public IList<IList<int>> Permute(int[] nums) 
+        public static IList<IList<int>> Permute(int[] nums) 
         {
             IList<IList<int>> permutations = new List<IList<int>>();
 
@@ -53,6 +55,44 @@ namespace CompetitiveProgramming.LeetCode.Permutations
             }
 
             return permutations;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestPermutations()
+        {
+            int[] nums1 = new int[] {1, 2, 3};
+            IList<IList<int>> output1 = new List<IList<int>>
+            {
+                new List<int> {1, 2, 3},
+                new List<int> {1, 3, 2},
+                new List<int> {2, 1, 3},
+                new List<int> {2, 3, 1},
+                new List<int> {3, 1, 2},
+                new List<int> {3, 2, 1}
+            };
+
+            int[] nums2 = new int[] {0, 1};
+            IList<IList<int>> output2 = new List<IList<int>>
+            {
+                new List<int> {0, 1},
+                new List<int> {1, 0}
+            };
+
+            int[] nums3 = new int[] {1};
+            IList<IList<int>> output3 = new List<IList<int>>
+            {
+                new List<int> {1}
+            };
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<IList<int>>>(Solution.Permute(nums1), output1),
+                ResultTester.CheckResult<IList<IList<int>>>(Solution.Permute(nums2), output2),
+                ResultTester.CheckResult<IList<IList<int>>>(Solution.Permute(nums3), output3),
+            };
+            return results;
         }
     }
 }

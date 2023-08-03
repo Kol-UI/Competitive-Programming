@@ -26,6 +26,8 @@ You don't need to read input or print anything. Your task is to complete the fun
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.AddMinimumCharacters
 {
     public class Solution
@@ -51,6 +53,19 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.AddMinimumCharacters
                 }
             }
             return len - cnt - 1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestAddMinimumCharacters()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.AddMinChar("ABCD"), 3),
+                ResultTester.CheckResult<int>(Solution.AddMinChar("ABA"), 0)
+            };
+            return results;
         }
     }
 }

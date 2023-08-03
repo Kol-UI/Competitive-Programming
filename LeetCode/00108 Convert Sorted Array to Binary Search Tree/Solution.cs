@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ConvertSortedArraytoBinarySearchTree
 {
     // Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree.
@@ -60,6 +62,30 @@ namespace CompetitiveProgramming.LeetCode.ConvertSortedArraytoBinarySearchTree
             // Print
             Program.PrintArray(nums);
             return node;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestConvertSortedArraytoBinarySearchTree()
+        {
+            
+            // Case 1
+            Program.SubTitle("Case 1");
+            int[] numsCase1_108 = { -10, -3, 0, 5, 9 };
+            TreeNode resultCase1_108 = Solution.SortedArrayToBST(numsCase1_108);
+            
+            // Case 2
+            Program.SubTitle("Case 2");
+            int[] numsCase2_108 = { 1, 3 };
+            TreeNode resultCase2_108 = Solution.SortedArrayToBST(numsCase2_108);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(true, true),
+                ResultTester.CheckResult<bool>(false, false)
+            };
+            return results;
         }
     }
 }

@@ -52,6 +52,8 @@ Sample Output 0
 1 1
 */
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.HackerRank.CompareTheTriplets
 {
     public class Result
@@ -106,5 +108,27 @@ namespace CompetitiveProgramming.HackerRank.CompareTheTriplets
         }
         */
 
+    }
+
+    public class Test
+    {
+        public static bool[] TestCompareTriplets()
+        {
+            List<int> list1_Case1 = new List<int> { 5, 6, 7 };
+            List<int> list2_Case1 = new List<int> { 3, 6, 10 };
+            List<int> listOutput1 = new List<int> { 1, 1 };
+            List<int> result1 = Result.compareTriplets(list1_Case1, list2_Case1);
+            List<int> list1_Case2 = new List<int> { 17, 28, 30 };
+            List<int> list2_Case2 = new List<int> { 99, 16, 8 };
+            List<int> listOutput2 = new List<int> { 2, 1 };
+            List<int> result2 = Result.compareTriplets(list1_Case2, list2_Case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<List<int>>(result1, listOutput1),
+                ResultTester.CheckResult<List<int>>(result2, listOutput2)
+            };
+            return results;
+        }
     }
 }

@@ -27,6 +27,8 @@ Output: [-1,-1]
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindFirstandLastPositionofElementinSortedArray
 {
     public class Solution
@@ -84,6 +86,34 @@ namespace CompetitiveProgramming.LeetCode.FindFirstandLastPositionofElementinSor
                     st = mid + 1;
             }
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindFirstandLastPositionofElementinSortedArray()
+        {
+            int[] nums1 = {5,7,7,8,8,10};
+            int target1 = 8;
+            int[] nums2 = {5,7,7,8,8,10};
+            int target2 = 6;
+            int[] nums3 = {};
+            int target3 = 0;
+
+            int[] result1 = Solution.SearchRange(nums1, target1);
+            int[] result2 = Solution.SearchRange(nums2, target2);
+            int[] result3 = Solution.SearchRange(nums3, target3);
+            int[] output1 = {3,4};
+            int[] output2 = {-1,-1};
+            int[] output3 = {-1,-1};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, output1),
+                ResultTester.CheckResult<int[]>(result2, output2),
+                ResultTester.CheckResult<int[]>(result3, output3)
+            };
+            return results;
         }
     }
 }

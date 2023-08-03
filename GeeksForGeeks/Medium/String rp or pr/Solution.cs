@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Text;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.Stringrporpr
 {
@@ -19,7 +20,7 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.Stringrporpr
             long ans = 0;
             
             Stack<char> st = new Stack<char>();
-            for(int i = S.Length-1; i>=0; i--)
+            for(int i = S.Length-1; i >= 0; i--)
             {
                 char curr= S[i], first=s1[0], second = s1[1];
                 if(st.Count > 0 && curr == first && st.Peek() == second)
@@ -53,6 +54,31 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.Stringrporpr
                 }
             }
             return ans;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestStringrporpr()
+        {
+            // Case 1
+            int X_Case1 = 5;
+            int Y_Case1 = 4;
+	        string S_Case1 = "abppprrr";
+            long case1_Result = Stringrporpr.Solution.Solve(X_Case1, Y_Case1, S_Case1);
+
+            // Case 1
+            int X_Case2 = 7;
+            int Y_Case2 = 7;
+	        string S_Case2 = "prpptppr";
+            long case2_Result = Stringrporpr.Solution.Solve(X_Case2, Y_Case2, S_Case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(case1_Result, 15),
+                ResultTester.CheckResult<long>(case2_Result, 14)
+            };
+            return results;
         }
     }
 }

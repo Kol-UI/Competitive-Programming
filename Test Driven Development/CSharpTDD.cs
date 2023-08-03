@@ -11,10 +11,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
     {
         private static Delegate[] codeWarsEightList = new Delegate[]
         {
-            GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, MakeNegativeFunc, RemoveExclamationMarksFunc, BeginnerLostWithoutaMapFunc,
+            GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, ReturnNegativeFunc, RemoveExclamationMarksFunc, BeginnerLostWithoutaMapFunc,
             FindMinAndMaxOfListFunc, StringRepeatFunc, SumOfPositiveFunc, ConvertbooleanvaluestostringsYesorNoFunc, ConvertaNumbertoaStringFunc,
             EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc,
-            BeginnerSeries2ClockFunc, OppositesAttractFunc,
+            BeginnerSeries2ClockFunc, OppositesAttractFunc, SquaringAnArgumentFunc, ReturningStringsFunc, ReturnToSanityFunc, ReturnHelloWorldFunc,
             YouCantCodeUnderPressure1Func, CenturyFromYearFunc, BasicMathematicalOperationsFunc, ConvertNumberToReversedArrayOfDigitsFunc, AbbreviateaTwoWordNameFunc
         };
 
@@ -30,7 +30,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] codeChefLearn = new Delegate[]
         {
-            StringOperationsFunc, IndexingFunc, AccessingcharactersofaStringFunc,
+            StringOperationsFunc, IndexingFunc, AccessingcharactersofaStringFunc, StringOperationsSTRS7Func,
         };
 
         private static Delegate[] codeChefBeginner = new Delegate[]
@@ -40,53 +40,53 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] leetCodeEasyList = new Delegate[]
         {
-            ClimbingStairsFunc, AddTwoIntegersFunc, NumberOfStepsFunc, ContainsDuplicateFunc, BestTimetoBuyandSellStockFunc, RangeSumQueryImmutableFunc, DesignHashSetFunc, SearchintoaBinarySearchTreeFunc,
-            FirstUniqueCharacterinaStringFunc, SingleNumberFunc, FindJudgeFunc, ShuffleTheArrayFunc, CountOddNumbersInAnIntervalRangeFunc, RunningSumof1dArrayFunc, TwoSumIVInputisaBSTFunc, WordPatternFunc,
-            AddBinaryFunc, DefanginganIPAddressFunc, FindLuckyIntegerinanArrayFunc, SearchInsertPositionFunc, FindtheIndexoftheFirstOccurrenceinaStringFunc, MinimumDistanceBetweenBSTNodesFunc,
-            KthMissingPositiveNumberFunc, ConvertSortedArraytoBinarySearchTree, CanPlaceFlowersFunc, KItemsWiththeMaximumSumFunc, BinarySearchFunc, MiddleoftheLinkedListFunc, ReshapetheMatrixFunc,
-            CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc, DesignHashMapFunc, AlternatingDigitSumFunc,
+            ClimbingStairsFunc, AddTwoIntegersFunc, NumberOfStepsFunc, ContainsDuplicateFunc, BestTimetoBuyandSellStockFunc, RangeSumQueryImmutableFunc, DesignHashSetFunc, SearchintoaBinarySearchTreeFunc, SameTreeFunc,
+            FirstUniqueCharacterinaStringFunc, SingleNumberFunc, FindJudgeFunc, ShuffleTheArrayFunc, CountOddNumbersInAnIntervalRangeFunc, RunningSumof1dArrayFunc, TwoSumIVInputisaBSTFunc, WordPatternFunc, SymmetricTreeFunc,
+            AddBinaryFunc, DefanginganIPAddressFunc, FindLuckyIntegerinanArrayFunc, SearchInsertPositionFunc, FindtheIndexoftheFirstOccurrenceinaStringFunc, MinimumDistanceBetweenBSTNodesFunc, PascalsTriangleIIFunc,
+            KthMissingPositiveNumberFunc, ConvertSortedArraytoBinarySearchTreeFunc, CanPlaceFlowersFunc, KItemsWiththeMaximumSumFunc, BinarySearchFunc, MiddleoftheLinkedListFunc, ReshapetheMatrixFunc, MergeSortedArrayFunc,
+            CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc, DesignHashMapFunc, AlternatingDigitSumFunc, TwoSumFunc,
             BestPokerHandFunc, LastStoneWeightFunc, AddDigitsFunc, BulbSwitcherFunc, FindtheDifferenceFunc, RepeatedSubstringPatternFunc, VerifyinganAlienDictionaryFunc, MinimumAbsoluteDifferenceinBSTFunc,
             MoveZeroesFunc, PlusOneFunc, AverageSalaryExcludingtheMinimumandMaximumSalaryFunc, FindifPathExistsinGraphFunc, RichestCustomerWealthFunc, NumberofRecentCallsFunc, LongestPalindromeFunc,
             SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, LengthofLastWordFunc, ToLowerCaseFunc, ConvertBinaryNumberinaLinkedListtoIntegerFunc, FirstBadVersionFunc,
-            FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ValidPerfectSquareFunc, ArrangingCoinsFunc, BaseballGameFunc, KeysandRoomsFunc, SumofLeftLeavesFunc,
+            FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ValidPerfectSquareFunc, ArrangingCoinsFunc, BaseballGameFunc, KeysandRoomsFunc, SumofLeftLeavesFunc, BinaryTreeInorderTraversalFunc,
             RobotReturntoOriginFunc, FindWinneronaTicTacToeGameFunc, LemonadeChangeFunc, LargestPerimeterTriangleFunc, CheckIfItIsaStraightLineFunc, DeleteColumnstoMakeSortedFunc, GuessNumberHigherorLowerFunc,
             ReverseVowelsofaStringFunc, CountingBitsFunc, IsSubsequenceFunc, MinCostClimbingStairsFunc, MaximumAverageSubarrayIFunc, DesignParkingSystemFunc, LeafSimilarTreesFunc, IntersectionofTwoArraysIIFunc,
             FindtheHighestAltitudeFunc, FindPivotIndexFunc, UniqueNumberofOccurrencesFunc, MajorityElementFunc, GoalParserInterpretationFunc, AddtoArrayFormofIntegerFunc, DetectCapitalFunc, ValidAnagramFunc,
-            FloodFillFunc, HappyNumberFunc, DecryptStringfromAlphabettoIntegerMappingFunc, TheKWeakestRowsinaMatrixFunc, CheckifOneStringSwapCanMakeStringsEqualFunc, MergeTwoBinaryTreesFunc,
+            FloodFillFunc, HappyNumberFunc, DecryptStringfromAlphabettoIntegerMappingFunc, TheKWeakestRowsinaMatrixFunc, CheckifOneStringSwapCanMakeStringsEqualFunc, MergeTwoBinaryTreesFunc, BinaryTreePreorderTraversalFunc,
             SubtracttheProductandSumofDigitsofanIntegerFunc, SpecialArrayWithXElementsGreaterThanorEqualXFunc, SqrtxFunc, FindtheDistanceValueBetweenTwoArraysFunc, SortColorsFunc, ReverseStringFunc,
             SumofAllOddLengthSubarraysFunc, NextGreaterElementIFunc, SquaresofaSortedArrayFunc, FibonacciNumberFunc, FindNearestPointThatHastheSameXorYCoordinateFunc, NaryTreePreorderTraversalFunc,
-            Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc,
-            ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc,
-            InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc,
+            Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc,
+            ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc,
+            InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
         {
-            RestoreIpAddressesFunc, SnakesAndLaddersFunc, FindClosestNodetoGivenTwoNodesFunc, FruitIntoBasketsFunc, JumpGameIIFunc, AllPathsFromSourcetoTargetFunc, MagneticForceBetweenTwoBallsFunc, PredicttheWinnerFunc, SubarraySumsDivisiblebyKFunc, ImplementQueueusingStacksFunc,
-            AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc, DesignUndergroundSystemFunc, CheckCompletenessofaBinaryTreeFunc, BinaryTreeRightSideViewFunc,
-            SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc, CountSubIslandsFunc, KRadiusSubarrayAveragesFunc, SeatReservationManagerFunc, MaximumLevelSumofaBinaryTreeFunc, LowestCommonAncestorofaBinaryTreeFunc,
-            NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc, NondecreasingSubsequencesFunc, HouseRobberFunc,
-            MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc, HIndexIIFunc, FindaPeakElementIIFunc, WaterandJugProblemFunc, ShortestPathinBinaryMatrixFunc, OddEvenLinkedListFunc,
+            RestoreIpAddressesFunc, SnakesAndLaddersFunc, FindClosestNodetoGivenTwoNodesFunc, FruitIntoBasketsFunc, JumpGameIIFunc, AllPathsFromSourcetoTargetFunc, MagneticForceBetweenTwoBallsFunc, PredicttheWinnerFunc, SubarraySumsDivisiblebyKFunc, ImplementQueueusingStacksFunc, SwapNodesinPairsFunc,
+            AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc, DesignUndergroundSystemFunc, CheckCompletenessofaBinaryTreeFunc, BinaryTreeRightSideViewFunc, GenerateParenthesesFunc,
+            SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc, CountSubIslandsFunc, KRadiusSubarrayAveragesFunc, SeatReservationManagerFunc, MaximumLevelSumofaBinaryTreeFunc, LowestCommonAncestorofaBinaryTreeFunc, RemoveNthNodeFromEndofListFunc,
+            NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc, NondecreasingSubsequencesFunc, HouseRobberFunc, ValidSudokuFunc, AddTwoNumbersFunc,
+            MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc, HIndexIIFunc, FindaPeakElementIIFunc, WaterandJugProblemFunc, ShortestPathinBinaryMatrixFunc, OddEvenLinkedListFunc, GasStationFunc, PermutationsFunc,
             OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc, RangeSumofSortedSubarraySumsFunc, SellDiminishingValuedColoredBallsFunc, PermutationsIIFunc, CheapestFlightsWithinKStopsFunc, LowestCommonAncestorofaBinarySearchTreeFunc,
             SimplifyPathFunc, ValidateStackSequencesFunc, LongestPalindromicSubsequenceFunc, NonoverlappingIntervalsFunc, RobotBoundedInCircleFunc, MinimumSizeSubarraySumFunc, OpentheLockFunc, DesignBrowserHistoryFunc, RottingOrangesFunc, ConstructQuadTreeFunc, BinaryTreePostorderTraversalFunc,
-            MatrixDiagonalSumFunc, MultiplyStringsFunc, PowxnFunc, ReverseWordsinaStringFunc, ProductofArrayExceptSelfFunc, WaystoSplitArrayIntoThreeSubarraysFunc, FindKClosestElementsFunc, PopulatingNextRightPointersinEachNodeIIFunc, AddTwoNumbersIIFunc, PeekingIteratorFunc,
-            Dota2SenateFunc, MinimumFlipstoMakeaORbEqualtocFunc, BestTimetoBuyandSellStockwithTransactionFeeFunc, IncreasingTripletSubsequenceFunc, MaximumNumberofVowelsinaSubstringofGivenLengthFunc, SearchSuggestionsSystemFunc, MaximumWidthofBinaryTreeFunc, ReverseLinkedListFunc,
-            DominoandTrominoTilingFunc, ContainerWithMostWaterFunc, MaxNumberofKSumPairsFunc, UniquePathsFunc, NearestExitfromEntranceinMazeFunc, FrequencyoftheMostFrequentElementFunc, NumberofNodesintheSubTreeWiththeSameLabelFunc, DeleteNodeinaBSTFunc, HouseRobberIIIFunc,
-            LongestCommonSubsequenceFunc, MaxIceCreamFunc, TopKFrequentFunc, LexicographicallySmallestEquivalentStringFunc, FlipStringtoMonotoneIncreasingFunc, SearchA2DMatrixFunc, InsertIntervalFunc, MaxSubarraySumCircularFunc, SubarraySumFunc, SubarraysDivByKFunc,
+            MatrixDiagonalSumFunc, MultiplyStringsFunc, PowxnFunc, ReverseWordsinaStringFunc, ProductofArrayExceptSelfFunc, WaystoSplitArrayIntoThreeSubarraysFunc, FindKClosestElementsFunc, PopulatingNextRightPointersinEachNodeIIFunc, AddTwoNumbersIIFunc, PeekingIteratorFunc, SpiralMatrixFunc, ZigzagConversionFunc,
+            Dota2SenateFunc, MinimumFlipstoMakeaORbEqualtocFunc, BestTimetoBuyandSellStockwithTransactionFeeFunc, IncreasingTripletSubsequenceFunc, MaximumNumberofVowelsinaSubstringofGivenLengthFunc, SearchSuggestionsSystemFunc, MaximumWidthofBinaryTreeFunc, ReverseLinkedListFunc, SpiralMatrixIIFunc,
+            DominoandTrominoTilingFunc, ContainerWithMostWaterFunc, MaxNumberofKSumPairsFunc, UniquePathsFunc, NearestExitfromEntranceinMazeFunc, FrequencyoftheMostFrequentElementFunc, NumberofNodesintheSubTreeWiththeSameLabelFunc, DeleteNodeinaBSTFunc, HouseRobberIIIFunc, PopulatingNextRightPointersinEachNodeIFunc,
+            LongestCommonSubsequenceFunc, MaxIceCreamFunc, TopKFrequentFunc, LexicographicallySmallestEquivalentStringFunc, FlipStringtoMonotoneIncreasingFunc, SearchA2DMatrixFunc, InsertIntervalFunc, MaxSubarraySumCircularFunc, SubarraySumFunc, SubarraysDivByKFunc, LinkedListCycleIIFunc, LetterCombinationsofaPhoneNumberFunc,
             LongestSubstringWithoutRepeatingCharactersFunc, UniquePathsIIFunc, MaximalSquareFunc, JumpGameFunc, PathSumIIFunc, MaximumValueataGivenIndexinaBoundedArrayFunc, BinarySearchTreeIteratorFunc, KthSmallestElementinaBSTFunc, ConstructBinaryTreefromPreorderandInorderTraversalFunc, SmallestNumberinInfiniteSetFunc,
             SnapshotArrayFunc, LongestIncreasingSubsequenceFunc, WiggleSubsequenceFunc, LongestPalindromicSubstringFunc, RangeSumQuery2DImmutableFunc, BestTimetoBuyandSellStockIIFunc, BestSightseeingPairFunc, MatrixBlockSumFunc, MaximumProductSubarrayFunc, MaximumLengthofSubarrayWithPositiveProductFunc,
             FindtheWinneroftheCircularGameFunc, RemoveDuplicatesfromSortedListIIFunc, DesignLinkedListFunc, MinStackFunc, CoinChangeFunc, CoinChangeIIFunc, MinimumRoundstoCompleteAllTasksFunc, SolvingQuestionsWithBrainpowerFunc, MaximumTwinSumofaLinkedListFunc, DeletetheMiddleNodeofaLinkedListFunc,
             MaxConsecutiveOnesIIIFunc, LongestSubarrayof1sAfterDeletingOneElementFunc, NumberofProvincesFunc, NumberofSubsequencesThatSatisfytheGivenSumConditionFunc, AsteroidCollisionFunc, IntervalListIntersectionsFunc, OnlineStockSpanFunc, EvaluateDivisionFunc, DesignAddandSearchWordsDataStructureFunc,
             FindPeakElementFunc, WateringPlantsIIFunc, CarPoolingFunc, CountWaysToBuildGoodStringsFunc, TotalCosttoHireKWorkersFunc, PacificAtlanticWaterFlowFunc, FindtheStudentthatWillReplacetheChalkFunc, JumpGameIIIFunc, DailyTemperaturesFunc, DecodeStringFunc, EvaluateReversePolishNotationFunc,
-            MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc, MinimumLimitofBallsinaBagFunc, AllPossibleFullBinaryTreesFunc, LetterCasePermutationFunc, TopKFrequentElementsFunc,
-            NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc, LongestArithmeticSubsequenceFunc, MaximalNetworkRankFunc, UncrossedLinesFunc, MinimumNumberofArrowstoBurstBalloonsFunc,
-            StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc, ValidTriangleNumberFunc, RandomPickwithWeightFunc, CountGoodNodesinBinaryTreeFunc, DesignCircularQueueFunc, CombinationSumIIIFunc,
-            TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc, KnightProbabilityinChessboardFunc, FindAllAnagramsinaStringFunc,
-            DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc, PossibleBipartitionFunc, LinkedListRandomNodeFunc,
-            MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc, LongestRepeatingCharacterReplacementFunc, InsertintoaBinarySearchTreeFunc, HouseRobberIIFunc,
-            NextGreaterElementIIIFunc, SubsetsIIFunc, MinimumNumberofVerticestoReachAllNodesFunc, BasicCalculatorIIFunc, TopKFrequentWordsFunc, NextGreaterElementIIFunc, LinkedListinBinaryTreeFunc, MaximumSideLengthofaSquarewithSumLessthanorEqualtoThresholdFunc,
-            SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc, CombinationSumFunc, CopyListwithRandomPointerFunc, MinimumGeneticMutationFunc, LongestZigZagPathinaBinaryTreeFunc, SubarrayProductLessThanKFunc, PermutationinStringFunc, BestTimetoBuyandSellStockwithCooldownFunc,
-            LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc, MinimumTimetoCollectAllApplesinaTreeFunc, PathwithMaximumProbabilityFunc, FindDuplicateSubtreesFunc, PathSumIIIFunc,
+            MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc, MinimumLimitofBallsinaBagFunc, AllPossibleFullBinaryTreesFunc, LetterCasePermutationFunc, TopKFrequentElementsFunc, ConvertSortedListtoBinarySearchTreeFunc,
+            NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc, LongestArithmeticSubsequenceFunc, MaximalNetworkRankFunc, UncrossedLinesFunc, MinimumNumberofArrowstoBurstBalloonsFunc, BinaryTreeLevelOrderTraversalFunc,
+            StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc, ValidTriangleNumberFunc, RandomPickwithWeightFunc, CountGoodNodesinBinaryTreeFunc, DesignCircularQueueFunc, CombinationSumIIIFunc, ValidateBinarySearchTreeFunc,
+            TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc, KnightProbabilityinChessboardFunc, FindAllAnagramsinaStringFunc, PalindromePartitioningFunc, MaximumSubarrayFunc,
+            DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc, PossibleBipartitionFunc, LinkedListRandomNodeFunc, SumRoottoLeafNumbersFunc,
+            MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc, LongestRepeatingCharacterReplacementFunc, InsertintoaBinarySearchTreeFunc, HouseRobberIIFunc, BinaryTreeZigzagLevelOrderTraversalFunc,
+            NextGreaterElementIIIFunc, SubsetsIIFunc, MinimumNumberofVerticestoReachAllNodesFunc, BasicCalculatorIIFunc, TopKFrequentWordsFunc, NextGreaterElementIIFunc, LinkedListinBinaryTreeFunc, MaximumSideLengthofaSquarewithSumLessthanorEqualtoThresholdFunc, CloneGraphFunc, CombinationsFunc,
+            SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc, CombinationSumFunc, CopyListwithRandomPointerFunc, MinimumGeneticMutationFunc, LongestZigZagPathinaBinaryTreeFunc, SubarrayProductLessThanKFunc, PermutationinStringFunc, BestTimetoBuyandSellStockwithCooldownFunc, SetMatrixZeroesFunc,
+            LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc, MinimumTimetoCollectAllApplesinaTreeFunc, PathwithMaximumProbabilityFunc, FindDuplicateSubtreesFunc, PathSumIIIFunc, ConstructBinaryTreefromInorderandPostorderTraversalFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -94,9 +94,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CountDigitOneFunc, LongestPathWithDifferentAdjacentCharactersFunc, CheckifPointIsReachableFunc, NamingaCompanyFunc, IPOFunc, EditDistanceFunc, CountSubarraysWithFixedBoundsFunc, JumpGameIVFunc, LongestCycleinaGraphFunc, NumberofWaysofCuttingaPizzaFunc, FindMinimuminRotatedSortedArrayIIFunc,
             ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
             MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc,
-            NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc,
+            NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc, MergekSortedListsFunc,
             CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc, BusRoutesFunc, StrangePrinterFunc, SumofDistancesinTreeFunc, DataStreamasDisjointIntervalsFunc,
-            MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc, FirstMissingPositiveFunc, LFUCacheFunc,
+            MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc, FirstMissingPositiveFunc, LFUCacheFunc, BinaryTreeMaximumPathSumFunc,
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc, MaxPointsonaLineFunc,
             CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc,
         };
@@ -128,22 +128,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] geeksForGeeksEasyList = new Delegate[]
         {
-            CounttheSubstringsFunc, MinimumIntegerFunc, Remainderondividingby11Func, MakeArrayElementsEqualFunc, EqualLeftandRightSubarraySumFunc, BFSofgraphFunc, DFSofGraphFunc,
+            CounttheSubstringsFunc, MinimumIntegerFunc, Remainderondividingby11Func, MakeArrayElementsEqualFunc, EqualLeftandRightSubarraySumFunc, BFSofgraphFunc, MakeTheArrayBeautifulFunc, FrogsAndJumpFunc, DominantPairsFunc, DFSofGraphFunc,
         };
 
         private static Delegate[] geeksForGeeksMediumList = new Delegate[]
         {
-            StringrporprFunc, EvenSwapFunc, MinimumStepsRequiredFunc, AddMinimumCharactersFunc, MaximumLengthFunc,
+            StringrporprFunc, EvenSwapFunc, MinimumStepsRequiredFunc, AddMinimumCharactersFunc, MaximumLengthFunc, RemoveandReverseFunc, ShyGeek, MaximumIntersectingLinesFunc, KnightInGeeklandFunc, CountSpecialNumbersFunc, BTSMaximumDifferenceFunc,
         };
 
         private static Delegate[] geeksForGeeksHardList = new Delegate[]
         {
-            
+            SpecialDigitsFunc, DivideInIncrementialGroupsFunc,
         };
 
         private static Delegate[] codeForces800List = new Delegate[]
         {
-            TeamFunc,
+            TeamFunc, WayTooLongWordsFunc, WatermelonFunc,
         };
 
         private static Delegate[] coderByteList = new Delegate[]
@@ -277,20 +277,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static void ClimbingStairsFunc()
         {
             Program.Space();
-            Program.Title("70 Climbing Stairs");
-            // Climbing Stairs
-
-            // Case 1
-            int Case1_70 = LeetCode.ClimbingStairs.Solution.ClimbStairs(2);
-            Console.WriteLine(Case1_70);
-
-            // Case 2
-            int Case2_70 = LeetCode.ClimbingStairs.Solution.ClimbStairs(3);
-            Console.WriteLine(Case2_70);
-
-            // Case 3
-            int Case3_70 = LeetCode.ClimbingStairs.Solution.ClimbStairs(40);
-            Console.WriteLine(Case3_70);
+            Program.Title("Climbing Stairs");
+            ResultTester.CheckSolution("LC", LeetCode.ClimbingStairs.Test.TestClimbingStairs());
         }
 
 
@@ -320,15 +308,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("First Factorial");
-            // First Factorial
-
-            // Case 1
-            int Case1_FirstFactorial = CoderByte.FirstFactorial.Solution.FirstFactorial(4);
-            Console.WriteLine(Case1_FirstFactorial);
-
-            // Case 2
-            int Case2_FirstFactorial = CoderByte.FirstFactorial.Solution.FirstFactorial(8);
-            Console.WriteLine(Case2_FirstFactorial);
+            ResultTester.CheckSolution("CB", CoderByte.FirstFactorial.Test.TestFirstFactorial());
         }
 
 
@@ -336,15 +316,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("First Reverse");
-            // First Reverse
-
-            // Case 1
-            string Case1_FirstReverse = CoderByte.FirstReverse.Solution.FirstReverseFunc("Test");
-            Console.WriteLine(Case1_FirstReverse);
-
-            // Case 2
-            string Case2_FirstReverse = CoderByte.FirstReverse.Solution.FirstReverseFunc("Code");
-            Console.WriteLine(Case2_FirstReverse);
+            ResultTester.CheckSolution("CB", CoderByte.FirstReverse.Test.TestFirstReverse());
         }
 
 
@@ -352,10 +324,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Replace With Alphabet Position");
-
-            // Case 1
-            string Case1_ReplaceWithAlphabetPosition = CodeWars.SixKyu.ReplaceWithAlphabetPosition.Solution.AlphabetPosition("Test");
-            Console.WriteLine(Case1_ReplaceWithAlphabetPosition);
+            ResultTester.CheckSolution("CW", CodeWars.SixKyu.ReplaceWithAlphabetPosition.Test.TestReplaceWithAlphabetPosition());
         }
 
 
@@ -363,18 +332,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Grasshopper Summation");
-
-            // Case 1
-            int Case1_Grasshopper_Summation = CodeWars.EightKyu.GrasshopperSummation.Solution.summation(3);
-            Console.WriteLine(Case1_Grasshopper_Summation);
-
-            // Case 2
-            int Case2_Grasshopper_Summation = CodeWars.EightKyu.GrasshopperSummation.Solution.summation(2);
-            Console.WriteLine(Case2_Grasshopper_Summation);
-
-            // Case 3
-            int Case3_Grasshopper_Summation = CodeWars.EightKyu.GrasshopperSummation.Solution.summation(8);
-            Console.WriteLine(Case3_Grasshopper_Summation);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.GrasshopperSummation.Test.TestGrasshopperSummation());
         }
 
 
@@ -406,26 +364,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Sum Array");
-
-            // Case 1
-            double[] sumArrayCase1 = { 10, 20, 30, 40 };
-            double sumArrayResultCase1 = CodeWars.EightKyu.SumArray.Solution.SumArray(sumArrayCase1);
-            Console.WriteLine(sumArrayResultCase1);
-
-            // Case 2
-            double[] sumArrayCase2 = Array.Empty<double>();
-            double sumArrayResultCase2 = CodeWars.EightKyu.SumArray.Solution.SumArray(sumArrayCase2);
-            Console.WriteLine(sumArrayResultCase2);
-
-            // Case 3
-            double[] sumArrayCase3 = { 0 };
-            double sumArrayResultCase3 = CodeWars.EightKyu.SumArray.Solution.SumArray(sumArrayCase3);
-            Console.WriteLine(sumArrayResultCase3);
-
-            // Case 4
-            double[] sumArrayCase4 = { 1, 5.2, 4, 0, -1 };
-            double sumArrayResultCase4 = CodeWars.EightKyu.SumArray.Solution.SumArray(sumArrayCase4);
-            Console.WriteLine(sumArrayResultCase4);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.SumArray.Test.TestSumArray());
         }
 
 
@@ -441,11 +380,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Remove First and Last Character");
-
-            // Case 1
-            string Case1 = "test";
-            string Case1Result = CodeWars.EightKyu.RemoveFirstandLastCharacter.Solution.Remove_char(Case1);
-            Console.WriteLine(Case1Result);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.RemoveFirstandLastCharacter.Test.TestRemoveFirstandLastCharacter());
         }
 
 
@@ -453,31 +388,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("It is an Isogram");
-
-            // Case 1
-            string Case1_Isogram = "test";
-            bool Case1_IsogramResult = CodeWars.SevenKyu.Isograms.Solution.IsIsogram(Case1_Isogram);
-            Console.WriteLine(Case1_IsogramResult);
-
-            // Case 2
-            string Case2_Isogram = "machine";
-            bool Case2_IsogramResult = CodeWars.SevenKyu.Isograms.Solution.IsIsogram(Case2_Isogram);
-            Console.WriteLine(Case2_IsogramResult);
-
-            // Case 3
-            string Case3_Isogram = "moose";
-            bool Case3_IsogramResult = CodeWars.SevenKyu.Isograms.Solution.IsIsogram(Case3_Isogram);
-            Console.WriteLine(Case3_IsogramResult);
-
-            // Case 4
-            string Case4_Isogram = "aba";
-            bool Case4_IsogramResult = CodeWars.SevenKyu.Isograms.Solution.IsIsogram(Case4_Isogram);
-            Console.WriteLine(Case4_IsogramResult);
-
-            // Case 5
-            string Case5_Isogram = "csharp";
-            bool Case5_IsogramResult = CodeWars.SevenKyu.Isograms.Solution.IsIsogram(Case5_Isogram);
-            Console.WriteLine(Case5_IsogramResult);
+            ResultTester.CheckSolution("CW", CodeWars.SevenKyu.Isograms.Test.TestIsograms());
         }
 
 
@@ -598,23 +509,15 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Search a Matrix");
+            ResultTester.CheckSolution("LC", LeetCode.Searcha2DMatrix.Test.TestSearcha2DMatrix());
+        }
 
-            int[][] Matrix74 = new int[][]
-            {
-                new int[] { 1, 3, 5, 7 },
-                new int[] { 10, 11, 16, 20 },
-                new int[] { 23, 30, 34, 60 }
-            };
 
-            // Case 1
-            int Case1_74_Target = 3;
-            bool Case1_74_Result = LeetCode.Searcha2DMatrix.Solution.SearchMatrix(Matrix74, Case1_74_Target);
-            Console.WriteLine(Case1_74_Result);
-
-            // Case 2
-            int Case2_74_Target = 13;
-            bool Case2_74_Result = LeetCode.Searcha2DMatrix.Solution.SearchMatrix(Matrix74, Case2_74_Target);
-            Console.WriteLine(Case2_74_Result);
+        private static void SetMatrixZeroesFunc()
+        {
+            Program.Space();
+            Program.Title("Set Matrix Zeroes");
+            ResultTester.CheckSolution("LC", LeetCode.SetMatrixZeroes.Test.TestSetMatrixZeroes());
         }
 
 
@@ -622,27 +525,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Insert Interval");
-
-            // Case 1
-            int[][] intervalsCase1_57 = new int[][]
-            {
-                new int[] { 1, 3 },
-                new int[] { 6, 9 }
-            };
-            int[] newIntervalsCase1_57 = { 2, 5 };
-            int[][] Case1_57_Result = LeetCode.InsertInterval.Solution.Insert(intervalsCase1_57, newIntervalsCase1_57);
-
-            // Case 2
-            int[][] intervalsCase2_57 = new int[][]
-            {
-                new int[] { 1, 2 },
-                new int[] { 3, 5 },
-                new int[] { 6, 7 },
-                new int[] { 8, 10 },
-                new int[] { 12, 16 }
-            };
-            int[] newIntervalsCase2_57 = { 4, 8 };
-            int[][] Case2_57_Result = LeetCode.InsertInterval.Solution.Insert(intervalsCase2_57, newIntervalsCase2_57);
+            ResultTester.CheckSolution("LC", LeetCode.InsertInterval.Test.TestInsertInterval());
         }
 
 
@@ -650,16 +533,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Best Time to Buy and Sell Stock");
-
-            // Case 1
-            int[] pricesCase1_121 = { 7, 1, 5, 3, 6, 4 };
-            int Case1_121_Result = LeetCode.BestTimetoBuyandSellStock.Solution.MaxProfit(pricesCase1_121);
-            Console.WriteLine(Case1_121_Result);
-
-            // Case 2
-            int[] pricesCase2_121 = { 7, 6, 4, 3, 1 };
-            int Case2_121_Result = LeetCode.BestTimetoBuyandSellStock.Solution.MaxProfit(pricesCase2_121);
-            Console.WriteLine(Case2_121_Result);
+            ResultTester.CheckSolution("LC", LeetCode.BestTimetoBuyandSellStock.Test.TestBestTimetoBuyandSellStock());
         }
 
 
@@ -685,6 +559,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Title("Linked List Random Node");
             ResultTester.SpecialTestCase("LC");
         }
+
+
+        private static void BinaryTreePreorderTraversalFunc()
+        {
+            Program.Space();
+            Program.Title("Binary Tree Preorder Traversal");
+            ResultTester.SpecialTestCase("LC");
+        }
         
 
         private static void CombinationSumIIIFunc()
@@ -695,25 +577,67 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void ValidSudokuFunc()
+        {
+            Program.Space();
+            Program.Title("Valid Sudoku");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void LinkedListCycleIIFunc()
+        {
+            Program.Space();
+            Program.Title("Linked List Cycle II");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void LinkedListCycleFunc()
+        {
+            Program.Space();
+            Program.Title("Linked List Cycle");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void CloneGraphFunc()
+        {
+            Program.Space();
+            Program.Title("Clone Graph");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void PalindromePartitioningFunc()
+        {
+            Program.Space();
+            Program.Title("Palindrome Partitioning");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void SumRoottoLeafNumbersFunc()
+        {
+            Program.Space();
+            Program.Title("Sum Root to Leaf Numbers");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
         private static void SingleNumberFunc()
         {
             Program.Space();
             Program.Title("Single Number");
+            ResultTester.CheckSolution("LC", LeetCode.SingleNumber.Test.TestSingleNumber());
+        }
 
-            // Case 1
-            int[] numsCase1_136 = { 2, 2, 1 };
-            int Case1_136_Result = LeetCode.SingleNumber.Solution.SingleNumber(numsCase1_136);
-            Console.WriteLine(Case1_136_Result);
 
-            // Case 2
-            int[] numsCase2_136 = { 4, 1, 2, 1, 2 };
-            int Case2_136_Result = LeetCode.SingleNumber.Solution.SingleNumber(numsCase2_136);
-            Console.WriteLine(Case2_136_Result);
-
-            // Case 3
-            int[] numsCase3_136 = { 1 };
-            int Case3_136_Result = LeetCode.SingleNumber.Solution.SingleNumber(numsCase3_136);
-            Console.WriteLine(Case3_136_Result);
+        private static void BinaryTreeMaximumPathSumFunc()
+        {
+            Program.Space();
+            Program.Title("Binary Tree Maximum Path Sum");
+            ResultTester.SpecialTestCase("LC");
         }
 
 
@@ -722,6 +646,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Max Subarray Sum Circular");
             ResultTester.CheckSolution("LC", LeetCode.MaximumSumCircularSubarray.Test.TestMaximumSumCircularSubarray());
+        }
+
+
+        private static void GasStationFunc()
+        {
+            Program.Space();
+            Program.Title("Gas Station");
+            ResultTester.CheckSolution("LC", LeetCode.GasStation.Test.TestGasStation());
         }
 
 
@@ -772,7 +704,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Add to Array Form of Integer");
-            ResultTester.CheckSolution("LC", LeetCode.AddtoArrayFormofInteger.Test.TestAddtoArrayFormofInteger());                
+            ResultTester.CheckSolution("LC", LeetCode.AddtoArrayFormofInteger.Test.TestAddtoArrayFormofInteger());
         }
 
 
@@ -780,33 +712,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Restore Ip Addresses");
-
-            // Case 1
-            string Case1_93 = "25525511135";
-            IList<string> Case1_93_Result = LeetCode.RestoreIPAddresses.Solution.RestoreIpAddresses(Case1_93);
-            foreach (var s in Case1_93_Result)
-            {
-                Console.Write("{0} ", s);
-            }
-            Program.Space();
-
-            // Case 2
-            string Case2_93 = "0000";
-            IList<string> Case2_93_Result = LeetCode.RestoreIPAddresses.Solution.RestoreIpAddresses(Case2_93);
-            foreach (var s in Case2_93_Result)
-            {
-                Console.Write("{0} ", s);
-            }
-            Program.Space();
-
-            // Case 3
-            string Case3_93 = "101023";
-            IList<string> Case3_93_Result = LeetCode.RestoreIPAddresses.Solution.RestoreIpAddresses(Case3_93);
-            foreach (var s in Case3_93_Result)
-            {
-                Console.Write("{0} ", s);
-            }
-            Program.Space();
+            ResultTester.CheckSolution("LC", LeetCode.RestoreIPAddresses.Test.TestRestoreIPAddresses());
         }
 
 
@@ -974,16 +880,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Jump Game II");
-
-            // Case 1
-            int[] arrayCase1_45 = { 2, 3, 1, 1, 4};
-            int Case1_45_Result = LeetCode.JumpGameII.Solution.Jump(arrayCase1_45);
-            Console.WriteLine(Case1_45_Result);
-
-            // Case 2
-            int[] arrayCase2_45 = { 2, 3, 0, 1, 4};
-            int Case2_45_Result = LeetCode.JumpGameII.Solution.Jump(arrayCase2_45);
-            Console.WriteLine(Case2_45_Result);
+            ResultTester.CheckSolution("LC", LeetCode.JumpGameII.Test.TestJumpGameII());
         }
 
 
@@ -991,68 +888,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Even or Odd");
-            System.Random random = new System.Random();
-
-            // Case 1
-            int case1IntEvenOrOdd = 2;
-            string Case1_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case1IntEvenOrOdd);
-
-            // Case 2
-            int case2IntEvenOrOdd = 0;
-            string Case2_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case2IntEvenOrOdd);
-
-            // Case 3
-            int case3IntEvenOrOdd = 1;
-            string Case3_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case3IntEvenOrOdd);
-
-            // Case 4
-            int case4IntEvenOrOdd = 7;
-            string Case4_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case4IntEvenOrOdd);
-
-            // Case 5
-            int case5IntEvenOrOdd = -1;
-            string Case5_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case5IntEvenOrOdd);
-
-            // Case 6
-            int case6IntEvenOrOdd = 1545452;
-            string Case6_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case6IntEvenOrOdd);
-
-            // Case 7
-            int case7IntEvenOrOdd = 17;
-            string Case7_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case7IntEvenOrOdd);
-
-            // Case 8
-            int case8IntEvenOrOdd = 78;
-            string Case8_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case8IntEvenOrOdd);
-
-            // Case 9
-            int case9IntEvenOrOdd = -123;
-            string Case9_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case9IntEvenOrOdd);
-
-            // Case 10
-            int case10IntEvenOrOdd = -456;
-            string Case10_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case10IntEvenOrOdd);
-
-            // Case 11
-            int case11IntEvenOrOdd = 74156741;
-            string Case11_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case11IntEvenOrOdd);
-
-            // Case 12
-            int case12IntEvenOrOdd = random.Next(1, 10);
-            string Case12_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case12IntEvenOrOdd);
-
-            // Case 13
-            int case13IntEvenOrOdd = random.Next(1, 100);
-            string Case13_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case13IntEvenOrOdd);
-
-            // Case 14
-            int case14IntEvenOrOdd = random.Next();
-            string Case14_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case14IntEvenOrOdd);
-
-            // Case 15
-            int case15IntEvenOrOdd = random.Next();
-            string Case15_EvenOrOdd_Result = CodeWars.EightKyu.EvenorOdd.Solution.EvenOrOdd(case15IntEvenOrOdd);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.EvenorOdd.Test.TestEvenorOdd());
         }
+
 
         private static void NamingaCompanyFunc()
         {
@@ -1152,18 +990,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Add Binary");
-
-            // Case 1
-            string aCase1_67 = "11";
-            string bCase1_67 = "1";
-            string Case1_67_Result = LeetCode.AddBinary.Solution.AddBinary(aCase1_67, bCase1_67);
-            Console.WriteLine(Case1_67_Result);
-
-            // Case 2
-            string aCase2_67 = "1010";
-            string bCase2_67 = "1011";
-            string Case2_67_Result = LeetCode.AddBinary.Solution.AddBinary(aCase2_67, bCase2_67);
-            Console.WriteLine(Case2_67_Result);
+            ResultTester.CheckSolution("LC", LeetCode.AddBinary.Test.TestAddBinary());
         }
 
 
@@ -1171,57 +998,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Convert a Number to a String");
-            System.Random random = new System.Random();
-
-            // Case 1
-            int case1IntToString = 123;
-            string Case1_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case1IntToString);
-            Console.WriteLine(Case1_IntToString_Result);
-
-            // Case 2
-            int case2IntToString = 999;
-            string Case2_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case2IntToString);
-            Console.WriteLine(Case2_IntToString_Result);
-
-            // Case 3
-            int case3IntToString = -100;
-            string Case3_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case3IntToString);
-            Console.WriteLine(Case3_IntToString_Result);
-
-            // Case 4
-            int case4IntToString = 67;
-            string Case4_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case4IntToString);
-            Console.WriteLine(Case4_IntToString_Result);
-
-            // Case 5
-            int case5IntToString = 79585;
-            string Case5_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case5IntToString);
-            Console.WriteLine(Case5_IntToString_Result);
-
-            // Case 6
-            int case6IntToString = 1 + 2;
-            string Case6_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case6IntToString);
-            Console.WriteLine(Case6_IntToString_Result);
-
-            // Case 7
-            int case7IntToString = 1 - 2;
-            string Case7_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case7IntToString);
-            Console.WriteLine(Case7_IntToString_Result);
-
-            // Case 8
-            int case8IntToString = random.Next();
-            string Case8_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case8IntToString);
-            Console.WriteLine(Case8_IntToString_Result);
-
-            // Case 9
-            int case9IntToString = random.Next();
-            string Case9_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case9IntToString);
-            Console.WriteLine(Case9_IntToString_Result);
-
-            // Case 10
-            int case10IntToString = random.Next();
-            string Case10_IntToString_Result = CodeWars.EightKyu.ConvertaNumbertoaString.Solution.NumberToString(case10IntToString);
-            Console.WriteLine(Case10_IntToString_Result);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.ConvertaNumbertoaString.Test.TestConvertaNumbertoaString());
         }
 
 
@@ -1279,24 +1056,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Convert boolean values to strings Yes or No");
-
-            // Case 1
-            bool boolCase1 = false;
-            string Case1_Result = CodeWars.EightKyu.ConvertbooleanvaluestostringsYesorNo.Solution.boolToWord(boolCase1);
-            Console.WriteLine(Case1_Result);
-
-            // Case 1
-            bool boolCase2 = true;
-            string Case2_Result = CodeWars.EightKyu.ConvertbooleanvaluestostringsYesorNo.Solution.boolToWord(boolCase2);
-            Console.WriteLine(Case2_Result);
-
-            // Case 3
-            string Case3_Result = CodeWars.EightKyu.ConvertbooleanvaluestostringsYesorNo.Solution.boolToWordClever(boolCase1);
-            Console.WriteLine(Case1_Result);
-
-            // Case 4
-            string Case4_Result = CodeWars.EightKyu.ConvertbooleanvaluestostringsYesorNo.Solution.boolToWordClever(boolCase2);
-            Console.WriteLine(Case4_Result);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.ConvertbooleanvaluestostringsYesorNo.Test.TestConvertbooleanvaluestostringsYesorNo());  
         }
 
 
@@ -1304,67 +1064,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Sum Of Positive");
-            System.Random random = new System.Random();
-
-            // Case 1
-            int[] arrCase1 = { 1, 2, 3, 4, 5};
-            int Case1_Result = CodeWars.EightKyu.Sumofpositive.Solution.PositiveSum(arrCase1);
-            Console.WriteLine(Case1_Result);
-
-            // Case 2
-            int[] arrCase2 = { 1, -2, 3, 4, 5};
-            int Case2_Result = CodeWars.EightKyu.Sumofpositive.Solution.PositiveSum(arrCase2);
-            Console.WriteLine(Case2_Result);
-
-            // Case 3
-            int[] arrCase3 = { -1, 2, 3, 4, -5};
-            int Case3_Result = CodeWars.EightKyu.Sumofpositive.Solution.PositiveSum(arrCase3);
-            Console.WriteLine(Case3_Result);
-
-            // Case 4
-            int[] arrCase4 = {};
-            int Case4_Result = CodeWars.EightKyu.Sumofpositive.Solution.PositiveSum(arrCase4);
-            Console.WriteLine(Case4_Result);
-
-            // Case 5
-            int value1 = random.Next(-5, 5);
-            int value2 = random.Next(-5, 5);
-            int value3 = random.Next(-5, 5);
-            int value4 = random.Next(-5, 5);
-            int value5 = random.Next(-5, 5);
-            int[] arrCase5 = { value1, value2, value3, value4, value5};
-            int Case5_Result = CodeWars.EightKyu.Sumofpositive.Solution.PositiveSum(arrCase5);
-            Console.WriteLine(Case5_Result);
-
-            // Case 6
-            int[] arrCase6 = { 1, -4, 7, 12};
-            int Case6_Result = CodeWars.EightKyu.Sumofpositive.Solution.PositiveSum(arrCase6);
-            Console.WriteLine(Case6_Result);
-
-            // Clever
-            // Case 1
-            int Case1_CleverResult = CodeWars.EightKyu.Sumofpositive.Solution.CleverPositiveSum(arrCase1);
-            Console.WriteLine(Case1_CleverResult);
-
-            // Case 2
-            int Case2_CleverResult = CodeWars.EightKyu.Sumofpositive.Solution.CleverPositiveSum(arrCase2);
-            Console.WriteLine(Case2_CleverResult);
-
-            // Case 3
-            int Case3_CleverResult = CodeWars.EightKyu.Sumofpositive.Solution.CleverPositiveSum(arrCase3);
-            Console.WriteLine(Case3_CleverResult);
-
-            // Case 4
-            int Case4_CleverResult = CodeWars.EightKyu.Sumofpositive.Solution.CleverPositiveSum(arrCase4);
-            Console.WriteLine(Case4_CleverResult);
-
-            // Case 5
-            int Case5_CleverResult = CodeWars.EightKyu.Sumofpositive.Solution.CleverPositiveSum(arrCase5);
-            Console.WriteLine(Case5_CleverResult);
-
-            // Case 6
-            int Case6_CleverResult = CodeWars.EightKyu.Sumofpositive.Solution.CleverPositiveSum(arrCase6);
-            Console.WriteLine(Case6_CleverResult);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.Sumofpositive.Test.TestYouCantCodeUnderPressure1());
         }
 
 
@@ -1372,69 +1072,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("String Repeat");
-            System.Random random = new System.Random();
-
-            // Case 1
-            int numberCase1 = 6;
-            string stringCase1 = "I";
-            string Case1_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase1, stringCase1);
-            string Case1_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase1, stringCase1);
-            string Case1_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase1, stringCase1);
-            StringRepeatPrint(Case1_Result, Case1_ResultConcat, Case1_ResultStringBuilder);
-
-            // Case 2
-            int numberCase2 = 5;
-            string stringCase2 = "Hello";
-            string Case2_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase2, stringCase2);
-            string Case2_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase2, stringCase2);
-            string Case2_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase2, stringCase2);
-            StringRepeatPrint(Case2_Result, Case2_ResultConcat, Case2_ResultStringBuilder);
-
-            // Case 3
-            int numberCase3 = 3;
-            string stringCase3 = "*";
-            string Case3_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase3, stringCase3);
-            string Case3_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase3, stringCase3);
-            string Case3_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase3, stringCase3);
-            StringRepeatPrint(Case3_Result, Case3_ResultConcat, Case3_ResultStringBuilder);
-
-            // Case 4
-            int numberCase4 = 5;
-            string stringCase4 = "#";
-            string Case4_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase4, stringCase4);
-            string Case4_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase4, stringCase4);
-            string Case4_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase4, stringCase4);
-            StringRepeatPrint(Case4_Result, Case4_ResultConcat, Case4_ResultStringBuilder);
-
-            // Case 5
-            int numberCase5 = 2;
-            string stringCase5 = "ha ";
-            string Case5_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase5, stringCase5);
-            string Case5_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase5, stringCase5);
-            string Case5_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase5, stringCase5);
-            StringRepeatPrint(Case5_Result, Case5_ResultConcat, Case5_ResultStringBuilder);
-
-            // Case 6
-            int numberCase6 = random.Next(1, 10);
-            string stringCase6 = "random ";
-            string Case6_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase6, stringCase6);
-            string Case6_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase6, stringCase6);
-            string Case6_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase6, stringCase6);
-            StringRepeatPrint(Case6_Result, Case6_ResultConcat, Case6_ResultStringBuilder);
-
-            // Case 7
-            int numberCase7 = 0;
-            string stringCase7 = "nothing";
-            string Case7_Result = CodeWars.EightKyu.Stringrepeat.Solution.RepeatStr(numberCase7, stringCase7);
-            string Case7_ResultConcat = CodeWars.EightKyu.Stringrepeat.Solution.ConcatRepeatStr(numberCase7, stringCase7);
-            string Case7_ResultStringBuilder = CodeWars.EightKyu.Stringrepeat.Solution.StringBuilderRepeatStr(numberCase7, stringCase7);
-            StringRepeatPrint(Case7_Result, Case7_ResultConcat, Case7_ResultStringBuilder);
-        }
-
-        private static void StringRepeatPrint(string Case_Result, string Case_ResultConcat, string Case_ResultStringBuilder)
-        {
-            Console.WriteLine("For Loop : '{0}' \nConcat : '{1}' \nStringBuilder : '{2}'", Case_Result, Case_ResultConcat, Case_ResultStringBuilder);
-            Program.Space();
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.Stringrepeat.Test.TestStringrepeat());
         }
 
 
@@ -1442,73 +1080,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Find Min And Max Of List");
-            System.Random random = new System.Random();
-
-            // Case 1
-            int[] Case1 = { 1, -4, 7, 12};
-            int minCase1 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case1);
-            int maxCase1 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case1);
-            FindMinAndMaxOfListPrint(Case1, minCase1, maxCase1);
-
-            // Case 2
-            int[] Case2 = { 26, 7, 7, 8, 7, 30};
-            int minCase2 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case2);
-            int maxCase2 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case2);
-            FindMinAndMaxOfListPrint(Case2, minCase2, maxCase2);
-
-            // Case 3
-            int[] Case3 = { -2, -6, -17, -3, -8, -9, -10};
-            int minCase3 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case3);
-            int maxCase3 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case3);
-            FindMinAndMaxOfListPrint(Case3, minCase3, maxCase3);
-
-            // Case 4
-            int value1 = random.Next();
-            int value2 = random.Next();
-            int value3 = random.Next();
-            int value4 = random.Next();
-            int value5 = random.Next();
-            int[] Case4 = { value1, value2, value3, value4, value5 };
-            int minCase4 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case4);
-            int maxCase4 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case4);
-            FindMinAndMaxOfListPrint(Case4, minCase4, maxCase4);
-
-            // Case 5
-            int value6 = random.Next(-100, -1);
-            int value7 = random.Next(-100, -1);
-            int value8 = random.Next(-100, -1);
-            int value9 = random.Next(-100, -1);
-            int value10 = random.Next(-100, -1);
-            int[] Case5 = { value6, value7, value8, value9, value10 };
-            int minCase5 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case5);
-            int maxCase5 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case5);
-            FindMinAndMaxOfListPrint(Case5, minCase5, maxCase5);
-
-            // Case 6
-            int[] Case6 = { 1, 2, 3, 4, 5 };
-            int minCase6 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case6);
-            int maxCase6 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case6);
-            FindMinAndMaxOfListPrint(Case6, minCase6, maxCase6);
-
-            // Case 7
-            int[] Case7 = { 6, 7, 8, 9, 0 };
-            int minCase7 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case7);
-            int maxCase7 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case7);
-            FindMinAndMaxOfListPrint(Case7, minCase7, maxCase7);
-            
-            // Case 8
-            int[] Case8 = Case1.Union(Case2).Union(Case3).Union(Case4).Union(Case5).Union(Case6).Union(Case7).ToArray();
-            int minCase8 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Min(Case8);
-            int maxCase8 = CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Solution.Max(Case8);
-            FindMinAndMaxOfListPrint(Case8, minCase8, maxCase8);
-        }
-
-        private static void FindMinAndMaxOfListPrint(int[] list, int min, int max)
-        {
-            Console.WriteLine("The List : {0}", string.Join(", ", list));
-            Console.WriteLine("The Min : {0}", min);
-            Console.WriteLine("The Max : {0}", max);
-            Program.Space();
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.FindMaximumandMinimumValuesofaList.Test.TestFindMaximumandMinimumValuesofaList());
         }
 
 
@@ -1516,80 +1088,15 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Remove Exclamation Marks");
-
-            // Case 1
-            string case1ToRemove = "Test!";
-            string case1ToRemove_Result = CodeWars.EightKyu.RemoveExclamationMarks.Solution.RemoveExclamationMarks(case1ToRemove);
-            Program.PrintBeforeAfterStringToString(case1ToRemove, case1ToRemove_Result);
-
-            // Case 2
-            string case2ToRemove = "! Test!!";
-            string case2ToRemove_Result = CodeWars.EightKyu.RemoveExclamationMarks.Solution.RemoveExclamationMarks(case2ToRemove);
-            Program.PrintBeforeAfterStringToString(case2ToRemove, case2ToRemove_Result);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.RemoveExclamationMarks.Test.TestRemoveExclamationMarks());
         }
 
 
-        private static void MakeNegativeFunc()
+        private static void ReturnNegativeFunc()
         {
             Program.Space();
-            Program.Title("Make Negative");
-            System.Random random = new System.Random();
-
-            // Case 1
-            int valueCase1 = random.Next();
-            int resultCase1 = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegative(valueCase1);
-            Program.PrintBeforeAfterIntToInt(valueCase1, resultCase1);
-
-            // Case 2
-            int valueCase2 = 1;
-            int resultCase2 = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegative(valueCase2);
-            Program.PrintBeforeAfterIntToInt(valueCase2, resultCase2);
-
-            // Case 3
-            int valueCase3 = -5;
-            int resultCase3 = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegative(valueCase3);
-            Program.PrintBeforeAfterIntToInt(valueCase3, resultCase3);
-
-            // Case 4
-            int valueCase4 = 0;
-            int resultCase4 = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegative(valueCase4);
-            Program.PrintBeforeAfterIntToInt(valueCase4, resultCase4);
-
-            // Using Math
-            Program.SubTitle("Math");
-            // Case 1
-            int resultCase1Math = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeMath(valueCase1);
-            Program.PrintBeforeAfterIntToInt(valueCase1, resultCase1Math);
-
-            // Case 2
-            int resultCase2Math = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeMath(valueCase2);
-            Program.PrintBeforeAfterIntToInt(valueCase2, resultCase2Math);
-
-            // Case 3
-            int resultCase3Math = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeMath(valueCase3);
-            Program.PrintBeforeAfterIntToInt(valueCase3, resultCase3Math);
-
-            // Case 4
-            int resultCase4Math = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeMath(valueCase4);
-            Program.PrintBeforeAfterIntToInt(valueCase4, resultCase4Math);
-
-            // One Line
-            Program.SubTitle("One Line");
-            // Case 1
-            int resultCase1OneLine = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeOneLine(valueCase1);
-            Program.PrintBeforeAfterIntToInt(valueCase1, resultCase1OneLine);
-
-            // Case 2
-            int resultCase2OneLine = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeOneLine(valueCase2);
-            Program.PrintBeforeAfterIntToInt(valueCase2, resultCase2OneLine);
-
-            // Case 3
-            int resultCase3OneLine = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeOneLine(valueCase3);
-            Program.PrintBeforeAfterIntToInt(valueCase3, resultCase3OneLine);
-
-            // Case 4
-            int resultCase4OneLine = CodeWars.EightKyu.ReturnNegative.Solution.MakeNegativeOneLine(valueCase4);
-            Program.PrintBeforeAfterIntToInt(valueCase4, resultCase4OneLine);
+            Program.Title("Return Negative");
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.ReturnNegative.Test.TestReturnNegative());
         }
 
 
@@ -1597,31 +1104,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Search Insert Position");
-            System.Random random = new System.Random();
-
-            // Case 1
-            int[] Case1_35 = { 1, 3, 5, 6 };
-            int targetCase1_35 = 5;
-            int resultCase1_35 = LeetCode.SearchInsertPosition.Solution.SearchInsert(Case1_35, targetCase1_35);
-            Console.WriteLine(resultCase1_35);
-
-            // Case 2
-            int[] Case2_35 = { 1, 3, 5, 6 };
-            int targetCase2_35 = 2;
-            int resultCase2_35 = LeetCode.SearchInsertPosition.Solution.SearchInsert(Case2_35, targetCase2_35);
-            Console.WriteLine(resultCase2_35);
-
-            // Case 3
-            int[] Case3_35 = { 1, 3, 5, 6 };
-            int targetCase3_35 = 7;
-            int resultCase3_35 = LeetCode.SearchInsertPosition.Solution.SearchInsert(Case3_35, targetCase3_35);
-            Console.WriteLine(resultCase3_35);
-
-            // Case 4
-            int[] Case4_35 = { 1, 3, 5, 6 };
-            int targetCase4_35 = random.Next(1, 10);
-            int resultCase4_35 = LeetCode.SearchInsertPosition.Solution.SearchInsert(Case4_35, targetCase4_35);
-            Console.WriteLine(resultCase4_35);
+            ResultTester.CheckSolution("LC", LeetCode.SearchInsertPosition.Test.TestSearchInsertPosition());
         }
 
 
@@ -1630,6 +1113,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("String Operations");
             ResultTester.CheckSolution("CC", CodeChef.StringOperations.Test.TestStringOperations());
+        }
+
+
+        private static void StringOperationsSTRS7Func()
+        {
+            Program.Space();
+            Program.Title("String Operations 7");
+            ResultTester.CheckSolution("CC", CodeChef.StringOperationsStrs7.Test.TestStringOperationsStrs7());
         }
 
 
@@ -1685,16 +1176,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Edit Distance");
-
-            // Case 1
-            string word1 = "horse", word2 = "ros";
-            int result1_72 = LeetCode.EditDistance.Solution.MinDistance(word1, word2);
-            Console.WriteLine(result1_72);
-
-            // Case 2
-            string word3 = "intention", word4 = "execution";
-            int result2_72 = LeetCode.EditDistance.Solution.MinDistance(word3, word4);
-            Console.WriteLine(result2_72);
+            ResultTester.CheckSolution("LC", LeetCode.EditDistance.Test.TestEditDistance());
         }
 
 
@@ -1734,36 +1216,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Find the Index of the First Occurrence in a String");
-
-            // Case 1
-            string haystackCase1_28 = "sadbutsad";
-            string needleCase1_28 = "sad";
-            int result_Case1_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase1_28, needleCase1_28);
-            Console.WriteLine(result_Case1_28);
-
-            // Case 2
-            string haystackCase2_28 = "leetcode";
-            string needleCase2_28 = "leeto";
-            int result_Case2_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase2_28, needleCase2_28);
-            Console.WriteLine(result_Case2_28);
-
-            // Case 3
-            string haystackCase3_28 = "mississippi";
-            string needleCase3_28 = "issip";
-            int result_Case3_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase3_28, needleCase3_28);
-            Console.WriteLine(result_Case3_28);
-
-            // Case 4
-            string haystackCase4_28 = "a";
-            string needleCase4_28 = "a";
-            int result_Case4_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase4_28, needleCase4_28);
-            Console.WriteLine(result_Case4_28);
-
-            // Case 5
-            string haystackCase5_28 = "hello";
-            string needleCase5_28 = "ll";
-            int result_Case5_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase5_28, needleCase5_28);
-            Console.WriteLine(result_Case5_28);
+            ResultTester.CheckSolution("LC", LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Test.TestFindtheIndexoftheFirstOccurrenceinaString());
         }
 
 
@@ -1977,20 +1430,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
-        private static void ConvertSortedArraytoBinarySearchTree()
+        private static void ConvertSortedArraytoBinarySearchTreeFunc()
         {
             Program.Space();
             Program.Title("Convert Sorted Array to Binary Search Tree");
-
-            // Case 1
-            Program.SubTitle("Case 1");
-            int[] numsCase1_108 = { -10, -3, 0, 5, 9 };
-            TreeNode resultCase1_108 = LeetCode.ConvertSortedArraytoBinarySearchTree.Solution.SortedArrayToBST(numsCase1_108);
-            
-            // Case 2
-            Program.SubTitle("Case 2");
-            int[] numsCase2_108 = { 1, 3 };
-            TreeNode resultCase2_108 = LeetCode.ConvertSortedArraytoBinarySearchTree.Solution.SortedArrayToBST(numsCase2_108);
+            ResultTester.CheckSolution("LC", LeetCode.ConvertSortedArraytoBinarySearchTree.Test.TestConvertSortedArraytoBinarySearchTree());
         }
 
 
@@ -2006,126 +1450,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Square(n) Sum");
-            
-            // Case 1
-            int[] case1_SquareNSum = {};
-            int case1_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(case1_SquareNSum);
-            Console.WriteLine(case1_SquareNSumResult);
-
-            // Case 2
-            int[] case2_SquareNSum = { 1, 2, 2 };
-            int case2_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(case2_SquareNSum);
-            Console.WriteLine(case2_SquareNSumResult);
-
-            // Case 3
-            int[] case3_SquareNSum = { 1, 2 };
-            int case3_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(case3_SquareNSum);
-            Console.WriteLine(case3_SquareNSumResult);
-
-            // Case 4
-            int[] case4_SquareNSum = { 5, 3, 4 };
-            int case4_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(case4_SquareNSum);
-            Console.WriteLine(case4_SquareNSumResult);
-
-            // Case 5
-            int[] case5_SquareNSum = Program.GenerateRandomNumber(10, 100);
-            int case5_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(case5_SquareNSum);
-            Console.WriteLine(case5_SquareNSumResult);
-
-            // Case 6
-            int[] Case6_SquareNSum = Program.GenerateRandomNumber(10, 100);
-            int Case6_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case6_SquareNSum);
-            Console.WriteLine(Case6_SquareNSumResult);
-
-            // Case 7
-            int[] Case7_SquareNSum = Program.GenerateRandomNumber(10, 100);
-            int Case7_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case7_SquareNSum);
-            Console.WriteLine(Case7_SquareNSumResult);
-
-            // Case 8
-            int[] Case8_SquareNSum = Program.GenerateRandomNumber(10, 100);
-            int Case8_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case8_SquareNSum);
-            Console.WriteLine(Case8_SquareNSumResult);
-
-            // Case 9
-            int[] Case9_SquareNSum = Program.GenerateRandomNegativeNumber(100);
-            int Case9_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case9_SquareNSum);
-            Console.WriteLine(Case9_SquareNSumResult);
-
-            // Case 10
-            int[] Case10_SquareNSum = Program.GenerateRandomNegativeNumber(100);
-            int Case10_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case10_SquareNSum);
-            Console.WriteLine(Case10_SquareNSumResult);
-
-            // Case 11
-            int[] Case11_SquareNSum = Program.GenerateRandomNegativeNumber(100);
-            int Case11_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case11_SquareNSum);
-            Console.WriteLine(Case11_SquareNSumResult);
-
-            // Case 12
-            int[] Case12_SquareNSum = Program.GenerateRandomNegativeNumber(100);
-            int Case12_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case12_SquareNSum);
-            Console.WriteLine(Case12_SquareNSumResult);
-
-            // Case 1 Clever
-            int[] case1_SquareNSumClever = {};
-            int case1_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(case1_SquareNSumClever);
-            Console.WriteLine(case1_SquareNSumResultClever);
-
-            // Case 2 Clever
-            int[] case2_SquareNSumClever = { 1, 2, 2 };
-            int case2_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(case2_SquareNSumClever);
-            Console.WriteLine(case2_SquareNSumResultClever);
-
-            // Case 3 Clever
-            int[] case3_SquareNSumClever = { 1, 2 };
-            int case3_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(case3_SquareNSumClever);
-            Console.WriteLine(case3_SquareNSumResultClever);
-
-            // Case 4 Clever
-            int[] case4_SquareNSumClever = { 5, 3, 4 };
-            int case4_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(case4_SquareNSumClever);
-            Console.WriteLine(case4_SquareNSumResultClever);
-
-            // Case 5 Clever
-            int[] case5_SquareNSumClever = Program.GenerateRandomNumber(10, 100);
-            int case5_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(case5_SquareNSumClever);
-            Console.WriteLine(case5_SquareNSumResultClever);
-
-            // Case 6 Clever
-            int[] Case6_SquareNSumClever = Program.GenerateRandomNumber(10, 100);
-            int Case6_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case6_SquareNSumClever);
-            Console.WriteLine(Case6_SquareNSumResultClever);
-
-            // Case 7 Clever
-            int[] Case7_SquareNSumClever = Program.GenerateRandomNumber(10, 100);
-            int Case7_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case7_SquareNSumClever);
-            Console.WriteLine(Case7_SquareNSumResultClever);
-
-            // Case 8 Clever
-            int[] Case8_SquareNSumClever = Program.GenerateRandomNumber(10, 100);
-            int Case8_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case8_SquareNSumClever);
-            Console.WriteLine(Case8_SquareNSumResultClever);
-
-            // Case 9 Clever
-            int[] Case9_SquareNSumClever = Program.GenerateRandomNegativeNumber(100);
-            int Case9_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case9_SquareNSumClever);
-            Console.WriteLine(Case9_SquareNSumResultClever);
-
-            // Case 10 Clever
-            int[] Case10_SquareNSumClever = Program.GenerateRandomNegativeNumber(100);
-            int Case10_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case10_SquareNSumClever);
-            Console.WriteLine(Case10_SquareNSumResultClever);
-
-            // Case 11 Clever
-            int[] Case11_SquareNSumClever = Program.GenerateRandomNegativeNumber(100);
-            int Case11_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case11_SquareNSumClever);
-            Console.WriteLine(Case11_SquareNSumResultClever);
-
-            // Case 12 Clever
-            int[] Case12_SquareNSumClever = Program.GenerateRandomNegativeNumber(100);
-            int Case12_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case12_SquareNSumClever);
-            Console.WriteLine(Case12_SquareNSumResultClever);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.SquareNSum.Test.TestStringrepeat());
         }
 
 
@@ -2133,151 +1458,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Find the smallest integer in the array");
-
-            // Case 1
-            int[] case1_Findthesmallestintegerinthearray = { -1, -2 };
-            int case1_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case1_Findthesmallestintegerinthearray);
-            Console.WriteLine(case1_FindthesmallestintegerinthearrayResult);
-
-            // Case 2
-            int[] case2_Findthesmallestintegerinthearray = { 1, 2, 2 };
-            int case2_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case2_Findthesmallestintegerinthearray);
-            Console.WriteLine(case2_FindthesmallestintegerinthearrayResult);
-
-            // Case 3
-            int[] case3_Findthesmallestintegerinthearray = { 1, 2 };
-            int case3_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case3_Findthesmallestintegerinthearray);
-            Console.WriteLine(case3_FindthesmallestintegerinthearrayResult);
-
-            // Case 4
-            int[] case4_Findthesmallestintegerinthearray = { 5, 3, 4 };
-            int case4_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case4_Findthesmallestintegerinthearray);
-            Console.WriteLine(case4_FindthesmallestintegerinthearrayResult);
-
-            // Case 5
-            int[] case5_Findthesmallestintegerinthearray = Program.GenerateRandomNumber(10, 100);
-            int case5_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case5_Findthesmallestintegerinthearray);
-            Console.WriteLine(case5_FindthesmallestintegerinthearrayResult);
-
-            // Case 6
-            int[] Case6_Findthesmallestintegerinthearray = Program.GenerateRandomNumber(10, 100);
-            int Case6_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case6_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case6_FindthesmallestintegerinthearrayResult);
-
-            // Case 7
-            int[] Case7_Findthesmallestintegerinthearray = Program.GenerateRandomNumber(10, 100);
-            int Case7_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case7_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case7_FindthesmallestintegerinthearrayResult);
-
-            // Case 8
-            int[] Case8_Findthesmallestintegerinthearray = Program.GenerateRandomNumber(10, 100);
-            int Case8_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case8_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case8_FindthesmallestintegerinthearrayResult);
-
-            // Case 9
-            int[] Case9_Findthesmallestintegerinthearray = Program.GenerateRandomNegativeNumber(100);
-            int Case9_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case9_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case9_FindthesmallestintegerinthearrayResult);
-
-            // Case 10
-            int[] Case10_Findthesmallestintegerinthearray = Program.GenerateRandomNegativeNumber(100);
-            int Case10_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case10_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case10_FindthesmallestintegerinthearrayResult);
-
-            // Case 11
-            int[] Case11_Findthesmallestintegerinthearray = Program.GenerateRandomNegativeNumber(100);
-            int Case11_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case11_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case11_FindthesmallestintegerinthearrayResult);
-
-            // Case 12
-            int[] Case12_Findthesmallestintegerinthearray = Program.GenerateRandomNegativeNumber(100);
-            int Case12_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case12_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case12_FindthesmallestintegerinthearrayResult);
-
-            // Case 13
-            int[] case13_Findthesmallestintegerinthearray = { 78, 56, 232, 12, 11, 43 };
-            int case13_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case13_Findthesmallestintegerinthearray);
-            Console.WriteLine(case13_FindthesmallestintegerinthearrayResult);
-
-            // Case 14
-            int[] case14_Findthesmallestintegerinthearray = { 78, 56, -2, 12, 8, -33 };
-            int case14_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case14_Findthesmallestintegerinthearray);
-            Console.WriteLine(case14_FindthesmallestintegerinthearrayResult);
-
-            // Case 15
-            int[] case15_Findthesmallestintegerinthearray = { 34, 15, 88, 2 };
-            int case15_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case15_Findthesmallestintegerinthearray);
-            Console.WriteLine(case15_FindthesmallestintegerinthearrayResult);
-
-            // Case 16
-            int[] case16_Findthesmallestintegerinthearray = { 34, -345, -1, 100 };
-            int case16_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case16_Findthesmallestintegerinthearray);
-            Console.WriteLine(case16_FindthesmallestintegerinthearrayResult);
-
-            
-            // Case 1 Clever Linq
-            int case1_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case1_Findthesmallestintegerinthearray);
-            Console.WriteLine(case1_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 2 Clever Linq
-            int case2_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case2_Findthesmallestintegerinthearray);
-            Console.WriteLine(case2_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 3 Clever Linq
-            int case3_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case3_Findthesmallestintegerinthearray);
-            Console.WriteLine(case3_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 4 Clever Linq
-            int case4_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case4_Findthesmallestintegerinthearray);
-            Console.WriteLine(case4_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 5 Clever Linq
-            int case5_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case5_Findthesmallestintegerinthearray);
-            Console.WriteLine(case5_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 6 Clever Linq
-            int Case6_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case6_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case6_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 7 Clever Linq
-            int Case7_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case7_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case7_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 8 Clever Linq
-            int Case8_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case8_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case8_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 9 Clever Linq
-            int Case9_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case9_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case9_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 10 Clever Linq
-            int Case10_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case10_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case10_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 11 Clever Linq
-            int Case11_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case11_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case11_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 12 Clever Linq
-            int Case12_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(Case12_Findthesmallestintegerinthearray);
-            Console.WriteLine(Case12_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 13 Clever Linq
-            int case13_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case13_Findthesmallestintegerinthearray);
-            Console.WriteLine(case13_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 14 Clever Linq
-            int case14_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case14_Findthesmallestintegerinthearray);
-            Console.WriteLine(case14_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 15 Clever Linq
-            int case15_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case15_Findthesmallestintegerinthearray);
-            Console.WriteLine(case15_FindthesmallestintegerinthearrayResultCleverLinq);
-
-            // Case 16 Clever Linq
-            int case16_FindthesmallestintegerinthearrayResultCleverLinq = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestIntCleverLinq(case16_Findthesmallestintegerinthearray);
-            Console.WriteLine(case16_FindthesmallestintegerinthearrayResultCleverLinq);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.Findthesmallestintegerinthearray.Test.TestFindthesmallestintegerinthearray());
         }
 
 
@@ -2285,18 +1466,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Sum of Series");
-
-            // Case 1
-            int NCase1 = 1;
-            Console.WriteLine("Input: {0}", NCase1);
-            long Output1 = GeeksForGeeks.School.SumofSeries.Solution.SeriesSum(NCase1);
-            Console.WriteLine("Output: {0}", Output1);
-
-            // Case 2
-            int NCase2 = 5;
-            Console.WriteLine("Input: {0}", NCase2);
-            long Output2 = GeeksForGeeks.School.SumofSeries.Solution.SeriesSum(NCase2);
-            Console.WriteLine("Output: {0}", Output2);
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.School.SumofSeries.Test.TestSumofSeries());
         }
 
 
@@ -2304,24 +1474,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Print Second Largest");
-
-            // Case 1
-            int[] case1_PrintSecondLargest = { 12, 35, 1, 10, 34, 1 };
-            int NCase1_PrintSecondLargest = 6;
-            int case1_PrintSecondLargestResult = GeeksForGeeks.School.SecondLargest.Solution.PrintSecondLargest(case1_PrintSecondLargest, NCase1_PrintSecondLargest);
-            Console.WriteLine("Input: {0}", case1_PrintSecondLargestResult);
-            Program.PrintArray(case1_PrintSecondLargest);
-            Console.WriteLine("Output: {0}", case1_PrintSecondLargestResult);
-            Program.Space();
-
-            // Case 2
-            int[] case2_PrintSecondLargest = { 10, 5, 10 };
-            int NCase2_PrintSecondLargest = 3;
-            int case2_PrintSecondLargestResult = GeeksForGeeks.School.SecondLargest.Solution.PrintSecondLargest(case2_PrintSecondLargest, NCase2_PrintSecondLargest);
-            Console.WriteLine("Input: {0}", case2_PrintSecondLargestResult);
-            Program.PrintArray(case2_PrintSecondLargest);
-            Console.WriteLine("Output: {0}", case2_PrintSecondLargestResult);
-            Program.Space();
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.School.SecondLargest.Test.TestSecondLargest());
         }
 
 
@@ -2329,24 +1482,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("String rp or pr");
-
-            // Case 1
-            int X_Case1 = 5;
-            int Y_Case1 = 4;
-	        string S_Case1 = "abppprrr";
-            long case1_Result = GeeksForGeeks.Medium.Stringrporpr.Solution.Solve(X_Case1, Y_Case1, S_Case1);
-            Console.WriteLine("Input X Y S: {0} - {1} - {2}", X_Case1, Y_Case1, S_Case1);
-            Console.WriteLine("Output: {0}", case1_Result);
-            Program.Space();
-
-            // Case 1
-            int X_Case2 = 7;
-            int Y_Case2 = 7;
-	        string S_Case2 = "prpptppr";
-            long Case2_Result = GeeksForGeeks.Medium.Stringrporpr.Solution.Solve(X_Case2, Y_Case2, S_Case2);
-            Console.WriteLine("Input X Y S: {0} - {1} - {2}", X_Case2, Y_Case2, S_Case2);
-            Console.WriteLine("Output: {0}", Case2_Result);
-            Program.Space();
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Medium.Stringrporpr.Test.TestStringrporpr());
         }
 
 
@@ -2478,27 +1614,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Remove String Spaces");
-
-            // Case 1
-            string Case1 = "8 j 8   mBliB8g  imjB8B8  jl  B";
-            Console.WriteLine("Input: {0}", Case1);
-            string Case1_Result = CodeWars.EightKyu.RemoveStringSpaces.Solution.NoSpace(Case1);
-            Console.WriteLine("Output: {0}", Case1_Result);
-            Program.Space();
-
-            // Case 2
-            string Case2 = "8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd";
-            Console.WriteLine("Input: {0}", Case2);
-            string Case2_Result = CodeWars.EightKyu.RemoveStringSpaces.Solution.NoSpace(Case2);
-            Console.WriteLine("Output: {0}", Case2_Result);
-            Program.Space();
-
-            // Case 3
-            string Case3 = "8aaaaa dddd r     ";
-            Console.WriteLine("Input: {0}", Case3);
-            string Case3_Result = CodeWars.EightKyu.RemoveStringSpaces.Solution.NoSpace(Case3);
-            Console.WriteLine("Output: {0}", Case3_Result);
-            Program.Space();
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.RemoveStringSpaces.Test.TestRemoveStringSpaces());       
         }
 
         
@@ -2506,30 +1622,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Counting Sheep");
-
-            // Case 1
-            bool[] sheepsCase1 =
-            {
-                true,  true,  true,  false,
-                true,  true,  true,  true ,
-                true,  false, true,  false,
-                true,  false, false, true ,
-                true,  true,  true,  true ,
-                false, false, true,  true
-            };
-            Console.WriteLine("Input:");
-            Program.PrintBoolArray(sheepsCase1);
-            int Case1_Sheeps = CodeWars.EightKyu.Countingsheep.Kata.CountSheeps(sheepsCase1);
-            Console.WriteLine("Output: {0}", Case1_Sheeps);
-            Program.Space();
-
-            // Case 2
-            bool[] sheepsCase2 = { true,  false,  true };
-            Console.WriteLine("Input:");
-            Program.PrintBoolArray(sheepsCase2);
-            int Case2_Sheeps = CodeWars.EightKyu.Countingsheep.Kata.CountSheeps(sheepsCase2);
-            Console.WriteLine("Output: {0}", Case2_Sheeps);
-            Program.Space();
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.Countingsheep.Test.TestCountingsheep());       
         }
 
 
@@ -2537,23 +1630,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Convert a String to a Number");
-
-            string case1ConvertaStringtoaNumber = "1234";
-            Console.WriteLine("Input: {0}", case1ConvertaStringtoaNumber);
-            int resultcase1ConvertaStringtoaNumber = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumber(case1ConvertaStringtoaNumber);
-            int resultcase1ConvertaStringtoaNumberClever = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumberClever(case1ConvertaStringtoaNumber);
-            string case2ConvertaStringtoaNumber = "605";
-            Console.WriteLine("Input: {0}", case2ConvertaStringtoaNumber);
-            int resultcase2ConvertaStringtoaNumber = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumber(case2ConvertaStringtoaNumber);
-            int resultcase2ConvertaStringtoaNumberClever = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumberClever(case2ConvertaStringtoaNumber);
-            string case3ConvertaStringtoaNumber = "1405";
-            Console.WriteLine("Input: {0}", case3ConvertaStringtoaNumber);
-            int resultcase3ConvertaStringtoaNumber = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumber(case3ConvertaStringtoaNumber);
-            int resultcase3ConvertaStringtoaNumberClever = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumberClever(case3ConvertaStringtoaNumber);
-            string case4ConvertaStringtoaNumber = "-7";
-            Console.WriteLine("Input: {0}", case4ConvertaStringtoaNumber);
-            int resultcase4ConvertaStringtoaNumber = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumber(case4ConvertaStringtoaNumber);
-            int resultcase4ConvertaStringtoaNumberClever = CodeWars.EightKyu.ConvertaStringtoaNumber.Solution.StringToNumberClever(case4ConvertaStringtoaNumber);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.ConvertaStringtoaNumber.Test.TestConvertaStringtoaNumber());       
         }
 
 
@@ -2672,26 +1749,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Minimum Path Sum");
-            
-            // Case 1
-            int[][] grid64Case1 = new int[][]
-            {
-                new int[] { 1, 3, 1 },
-                new int[] { 1, 5, 1 },
-                new int[] { 4, 2, 1 }
-            };
-            int result64Case1 = LeetCode.MinimumPathSum.Solution.MinPathSum(grid64Case1);
-            Console.WriteLine("Result Case 1: {0}", result64Case1);
-
-            // Case 2
-            int[][] grid64Case2 = new int[][]
-            {
-                new int[] { 1, 3, 1 },
-                new int[] { 1, 5, 1 },
-                new int[] { 4, 2, 1 }
-            };
-            int result64Case2 = LeetCode.MinimumPathSum.Solution.MinPathSum(grid64Case2);
-            Console.WriteLine("Result Case 2: {0}", result64Case2);
+            ResultTester.CheckSolution("LC", LeetCode.MinimumPathSum.Test.TestMinimumPathSum());
         }
 
 
@@ -2785,18 +1843,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Count the Substrings");
-
-            // Case 1
-            string Case1S = "gEEk";
-            Console.WriteLine("Case 1 {0}", Case1S);
-            int resultCase1 = GeeksForGeeks.Easy.CounttheSubstrings.Solution.CountSubstring(Case1S);
-            Console.WriteLine("Result {0}", resultCase1);
-
-            // Case 2
-            string Case2S = "WomensDAY";
-            Console.WriteLine("Case 2 {0}", Case2S);
-            int resultCase2 = GeeksForGeeks.Easy.CounttheSubstrings.Solution.CountSubstring(Case2S);
-            Console.WriteLine("Result {0}", resultCase2);
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Easy.CounttheSubstrings.Test.TestCounttheSubstrings());
         }
 
 
@@ -2804,18 +1851,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Minimum Integer");
-
-            // Case 1
-            int N = 3;
-            int[] A = { 1, 3, 2 };
-            int resultCase1 = GeeksForGeeks.Easy.MinimumInteger.Solution.MinimumInteger(N, A);
-            Console.WriteLine("Result {0}", resultCase1);
-            
-            // Case 2
-            int N2 = 1;
-            int[] A2 = { 3 };
-            int resultCase2 = GeeksForGeeks.Easy.MinimumInteger.Solution.MinimumInteger(N2, A2);
-            Console.WriteLine("Result {0}", resultCase2);
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Easy.MinimumInteger.Test.TestMinimumInteger());
         }
 
 
@@ -2823,13 +1859,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Even Swap");
-
-            // Case 1
-            int N1 = 3;
-            int[] a1 = { 1, 3, 5 };
-            int[] result1 = GeeksForGeeks.Medium.EvenSwap.Solution.LexicographicallyLargest(a1, N1);
-            Program.PrintArray(result1);
-            Program.Space();
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Medium.EvenSwap.Test.TestEvenSwap());
         }
 
 
@@ -2918,6 +1948,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void RemoveandReverseFunc()
+        {
+            Program.Space();
+            Program.Title("Remove and Reverse");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
+        private static void ShyGeek()
+        {
+            Program.Space();
+            Program.Title("Shy Geek");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
         private static void NaryTreePreorderTraversalFunc()
         {
             Program.Space();
@@ -2938,7 +1984,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Reshape the Matrix");
-            ResultTester.CheckSolution ("LC", LeetCode.ReshapetheMatrix.Test.TestReshapetheMatrix());
+            ResultTester.CheckSolution("LC", LeetCode.ReshapetheMatrix.Test.TestReshapetheMatrix());
         }
 
 
@@ -2946,24 +1992,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Scramble String");
-
-            // Case 1
-            string s1_87_1 = "great";
-            string s2_87_1 = "rgeat";
-            bool result87_1 = LeetCode.ScrambleString.Solution.IsScramble(s1_87_1, s2_87_1);
-            Console.WriteLine("Result : {0}", result87_1);
-
-            // Case 2
-            string s1_87_2 = "great";
-            string s2_87_2 = "rgeat";
-            bool result87_2 = LeetCode.ScrambleString.Solution.IsScramble(s1_87_2, s2_87_2);
-            Console.WriteLine("Result : {0}", result87_2);
-
-            // Case 3
-            string s1_87_3 = "great";
-            string s2_87_3 = "rgeat";
-            bool result87_3 = LeetCode.ScrambleString.Solution.IsScramble(s1_87_3, s2_87_3);
-            Console.WriteLine("Result : {0}", result87_3);
+            ResultTester.CheckSolution("LC", LeetCode.ScrambleString.Test.TestScrambleString());
         }
 
 
@@ -3041,16 +2070,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Remainder on dividing by 11");
-
-            // Case 1
-            string RemainderCase1 = "1345";
-            int RemainderCase1_Result = GeeksForGeeks.Easy.Remainderondividingby11.Solution.xmod11(RemainderCase1);
-            Console.WriteLine("Result : {0}", RemainderCase1_Result);
-            
-            // Case 2
-            string RemainderCase2 = "231456786543567898765";
-            int RemainderCase2_Result = GeeksForGeeks.Easy.Remainderondividingby11.Solution.xmod11(RemainderCase2);
-            Console.WriteLine("Result : {0}", RemainderCase2_Result);
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Easy.Remainderondividingby11.Test.TestRemainderondividingby11());
         }
 
 
@@ -3058,18 +2078,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Make Array Elements Equal");
-
-            // Case 1
-            long MakeArrayElementsEqual1 = GeeksForGeeks.Easy.MakeArrayElementsEqual.Solution.MinOperations(12);
-            Console.WriteLine(MakeArrayElementsEqual1);
-
-            // Case 2
-            long MakeArrayElementsEqual2 = GeeksForGeeks.Easy.MakeArrayElementsEqual.Solution.MinOperations(3);
-            Console.WriteLine(MakeArrayElementsEqual2);
-
-            // Case 3
-            long MakeArrayElementsEqual3 = GeeksForGeeks.Easy.MakeArrayElementsEqual.Solution.MinOperations(2);
-            Console.WriteLine(MakeArrayElementsEqual3);
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Easy.MakeArrayElementsEqual.Test.TestMakeArrayElementsEqual());
         }
 
 
@@ -3100,14 +2109,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Minimum Steps Required");
-
-            // Case 1
-            int case1_MinimumSteps = GeeksForGeeks.Medium.MinimumStepsRequired.Solution.minSteps("bbaaabb");
-            Console.WriteLine("Result 1 : {0}", case1_MinimumSteps);
-
-            // Case 2
-            int case2_MinimumSteps = GeeksForGeeks.Medium.MinimumStepsRequired.Solution.minSteps("aababaa");
-            Console.WriteLine("Result 2 : {0}", case2_MinimumSteps);
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Medium.MinimumStepsRequired.Test.TestMinimumStepsRequired());
         }
 
 
@@ -3140,18 +2142,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Equal Left and Right Subarray Sum");
-
-            // Case 1
-            int[] ACase1 = {1,3,5,2,2};
-            int n1 = 5;
-            int Output1 = GeeksForGeeks.Easy.EqualLeftandRightSubarraySum.Solution.EqualSum(ACase1 , n1);
-            Console.WriteLine("Result 1 : {0}", Output1);
-
-            // Case2
-            int[] ACase2 = {1};
-            int n2 = 1;
-            int Output2 = GeeksForGeeks.Easy.EqualLeftandRightSubarraySum.Solution.EqualSum(ACase1 , n2);
-            Console.WriteLine("Result 2 : {0}", Output2);
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Easy.EqualLeftandRightSubarraySum.Test.TestEqualLeftandRightSubarraySum());
         }
 
 
@@ -3159,23 +2150,39 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Add Minimum Characters");
-
-            // Case 1
-            int Output1 = GeeksForGeeks.Medium.AddMinimumCharacters.Solution.AddMinChar("ABCD");
-            Console.WriteLine("Result 1 : {0}", Output1);
-
-            // Case 2
-            int Output2 = GeeksForGeeks.Medium.AddMinimumCharacters.Solution.AddMinChar("ABA");
-            Console.WriteLine("Result 2 : {0}", Output2);
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Medium.AddMinimumCharacters.Test.TestAddMinimumCharacters());
         }
 
 
         private static void NumberofGoodPathsFunc()
         {
             Program.Space();
-            Program.Title("Add Minimum Characters");
-            string source = "LC";
-            ResultTester.SpecialTestCase(source);
+            Program.Title("Number of Good Paths");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void DominantPairsFunc()
+        {
+            Program.Space();
+            Program.Title("Dominant Pairs");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
+        private static void SpecialDigitsFunc()
+        {
+            Program.Space();
+            Program.Title("Special Digits");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
+        private static void DivideInIncrementialGroupsFunc()
+        {
+            Program.Space();
+            Program.Title("Divide In Incremential Groups");
+            ResultTester.SpecialTestCase("GFG");
         }
 
 
@@ -3366,18 +2373,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Simplify Path");
-
-            // Case 1
-            string result71_1 = LeetCode.SimplifyPath.Solution.SimplifyPath("/home/");
-            Console.WriteLine("Result 1 : {0}", result71_1);
-
-            // Case 2
-            string result71_2 = LeetCode.SimplifyPath.Solution.SimplifyPath("/../");
-            Console.WriteLine("Result 2 : {0}", result71_2);
-
-            // Case 3
-            string result71_3 = LeetCode.SimplifyPath.Solution.SimplifyPath("/home//foo/");
-            Console.WriteLine("Result 3 : {0}", result71_3);
+            ResultTester.CheckSolution("LC", LeetCode.SimplifyPath.Test.TestSimplifyPath());
         }
 
 
@@ -3385,14 +2381,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Maximum Length");
-
-            // Case 1
-            int result_testML_1 = GeeksForGeeks.Medium.MaximumLength.Solution.Solve(3, 3, 3);
-            Console.WriteLine("Result 1 : {0}", result_testML_1);
-
-            // Case 2
-            int result_testML_2 = GeeksForGeeks.Medium.MaximumLength.Solution.Solve(11, 2, 2);
-            Console.WriteLine("Result 2 : {0}", result_testML_2);
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Medium.MaximumLength.Test.TestMaximumLength());
         }
 
 
@@ -3591,18 +2580,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Roman to Integer");
-
-            // Case 1
-            int Case1_13 = LeetCode.RomantoInteger.Solution.RomanToInt("III");
-            Console.WriteLine("Result 1 : {0}", Case1_13);
-
-            // Case 2
-            int Case2_13 = LeetCode.RomantoInteger.Solution.RomanToInt("LVIII");            
-            Console.WriteLine("Result 2 : {0}", Case2_13);
-
-            // Case 3
-            int Case3_13 = LeetCode.RomantoInteger.Solution.RomanToInt("MCMXCIV");
-            Console.WriteLine("Result 3 : {0}", Case3_13);
+            ResultTester.CheckSolution("LC", LeetCode.RomantoInteger.Test.TestRomantoInteger());
         }
 
 
@@ -3799,24 +2777,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Plus One");
-
-            // Case 1
-            int[] digits1_66 = {1,2,3};
-            int[] result1_66 = LeetCode.PlusOne.Solution.PlusOne(digits1_66);
-            Console.WriteLine("Case 1 :");
-            Program.PrintBeforeAfterIntArray(digits1_66, result1_66); 
-
-            // Case 2
-            int[] digits2_66 = {4,3,2,1};
-            int[] result2_66 = LeetCode.PlusOne.Solution.PlusOne(digits2_66);
-            Console.WriteLine("Case 2 :");
-            Program.PrintBeforeAfterIntArray(digits2_66, result2_66);
-
-            // Case 3
-            int[] digits3_66 = {9};
-            int[] result3_66 = LeetCode.PlusOne.Solution.PlusOne(digits3_66);
-            Console.WriteLine("Case 3 :");
-            Program.PrintBeforeAfterIntArray(digits3_66, result3_66);
+            ResultTester.CheckSolution("LC", LeetCode.PlusOne.Test.TestPlusOne());
         }
 
 
@@ -3927,21 +2888,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Length of Last Word");
-
-            // Case 1
-            string s1 = "Hello World";
-            int result1 = LeetCode.LengthofLastWord.Solution.LengthOfLastWord(s1);
-            Console.WriteLine("Result 1 : {0}", result1);
-
-            // Case 2
-            string s2 = "   fly me   to   the moon  ";
-            int result2 = LeetCode.LengthofLastWord.Solution.LengthOfLastWord(s2);
-            Console.WriteLine("Result 2 : {0}", result2);
-
-            // Case 3
-            string s3 = "luffy is still joyboy";
-            int result3 = LeetCode.LengthofLastWord.Solution.LengthOfLastWord(s3);
-            Console.WriteLine("Result 3 : {0}", result3);
+            ResultTester.CheckSolution("LC", LeetCode.LengthofLastWord.Test.TestLengthofLastWord());
         }
 
 
@@ -4046,6 +2993,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Two Sum IV - Input is a BST");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void TwoSumFunc()
+        {
+            Program.Space();
+            Program.Title("Two Sum");
             ResultTester.SpecialTestCase("LC");
         }
 
@@ -4239,15 +3194,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Multiply Strings");
-
-            string num1 = "2";
-            string num2 = "3";
-            string num3 = "123";
-            string num4 = "456";
-            string result1 = LeetCode.MultiplyStrings.Solution.Multiply(num1, num2);
-            string result2 = LeetCode.MultiplyStrings.Solution.Multiply(num3, num4);
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
+            ResultTester.CheckSolution("LC", LeetCode.MultiplyStrings.Test.TestMultiplyStrings());
         }
 
 
@@ -4255,24 +3202,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Pow(x, n)");
-
-            // Case 1
-            double x1 = 2.00000;
-            int n1 = 10;
-            double result1 = LeetCode.Powxn.Solution.MyPow(x1,n1);
-            Console.WriteLine("Result 1 : {0}", result1);
-
-            // Case 2
-            double x2 = 2.10000;
-            int n2 = 3;
-            double result2 = LeetCode.Powxn.Solution.MyPow(x2,n2);
-            Console.WriteLine("Result 2 : {0}", result2);
-
-            // Case 3
-            double x3 = 2.00000;
-            int n3 = -2;
-            double result3 = LeetCode.Powxn.Solution.MyPow(x3,n3);
-            Console.WriteLine("Result 3 : {0}", result3);
+            ResultTester.CheckSolution("LC", LeetCode.Powxn.Test.TestPowxn());
         }
 
 
@@ -4414,15 +3344,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Container With Most Water");
-
-            int[] height1 = {1,8,6,2,5,4,8,3,7};
-            int[] height2 = {1,1};
-
-            int result1 = LeetCode.ContainerWithMostWater.Solution.MaxArea(height1);
-            int result2 = LeetCode.ContainerWithMostWater.Solution.MaxArea(height2);
-
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
+            ResultTester.CheckSolution("LC", LeetCode.ContainerWithMostWater.Test.TestContainerWithMostWater());    
         }
 
 
@@ -4467,12 +3389,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Unique Paths");
-
-            int result1 = LeetCode.UniquePaths.Solution.UniquePaths(3, 7);
-            int result2 = LeetCode.UniquePaths.Solution.UniquePaths(3, 2);
-
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
+            ResultTester.CheckSolution("LC", LeetCode.UniquePaths.Test.TestUniquePaths());
         }
 
 
@@ -5123,14 +4040,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Next Permutation");
-
-            int[] case1 = { 1, 2, 3 };
-            int[] case2 = { 3, 2, 1 };
-            int[] case3 = { 1, 1, 5 };
-
-            LeetCode.NextPermutation.Solution.NextPermutation(case1);
-            LeetCode.NextPermutation.Solution.NextPermutation(case2);
-            LeetCode.NextPermutation.Solution.NextPermutation(case3);
+            ResultTester.CheckSolution("LC", LeetCode.NextPermutation.Test.TestNextPermutation());
         }
 
 
@@ -5187,6 +4097,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Stone Game II");
             ResultTester.CheckSolution("LC", LeetCode.StoneGameII.Solution.TestStoneGameII());
+        }
+
+
+        private static void PermutationsFunc()
+        {
+            Program.Space();
+            Program.Title("Permutations");
+            ResultTester.CheckSolution("LC", LeetCode.Permutations.Test.TestPermutations());
         }
 
 
@@ -5423,12 +4341,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("3Sum");
-
-            int[] nums1 = { 0,1,1 };
-            int[] nums2 = { 0,0,0 };
-
-            IList<IList<int>> result1 = LeetCode.ThreeSum.Solution.ThreeSum(nums1);
-            IList<IList<int>> result2 = LeetCode.ThreeSum.Solution.ThreeSum(nums2);
+            ResultTester.CheckSolution("LC", LeetCode.ThreeSum.Test.TestThreeSum());
         }
 
 
@@ -5528,21 +4441,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Find First and Last Position of Element in Sorted Array");
-
-            int[] nums1 = {5,7,7,8,8,10};
-            int target1 = 8;
-            int[] nums2 = {5,7,7,8,8,10};
-            int target2 = 6;
-            int[] nums3 = {};
-            int target3 = 0;
-
-            int[] result1 = LeetCode.FindFirstandLastPositionofElementinSortedArray.Solution.SearchRange(nums1, target1);
-            int[] result2 = LeetCode.FindFirstandLastPositionofElementinSortedArray.Solution.SearchRange(nums2, target2);
-            int[] result3 = LeetCode.FindFirstandLastPositionofElementinSortedArray.Solution.SearchRange(nums3, target3);
-
-            Program.PrintArray(result1);
-            Program.PrintArray(result2);
-            Program.PrintArray(result3);
+            ResultTester.CheckSolution("LC", LeetCode.FindFirstandLastPositionofElementinSortedArray.Test.TestFindFirstandLastPositionofElementinSortedArray());
         }
 
 
@@ -5550,15 +4449,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Sqrt(x)");
-
-            int case1 = 4;
-            int case2 = 8;
-
-            int result1 = LeetCode.Sqrtx.Solution.MySqrt(case1);
-            int result2 = LeetCode.Sqrtx.Solution.MySqrt(case2);
-
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
+            ResultTester.CheckSolution("LC", LeetCode.Sqrtx.Test.TestSqrtx());
         }
 
 
@@ -5602,27 +4493,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Merge Intervals");
-
-            int[][] intervals1 = new int[][]
-            {
-                new int[] { 1,3 },
-                new int[] { 2,6 },
-                new int[] { 8,10 },
-                new int[] { 15,18 }
-            };
-
-            int[][] intervals2 = new int[][]
-            {
-                new int[] { 1,4 },
-                new int[] { 4,5 }
-            };
-
-            int[][] result1 = LeetCode.MergeIntervals.Solution.Merge(intervals1);
-            int[][] result2 = LeetCode.MergeIntervals.Solution.Merge(intervals2);
-
-            Program.Print2DIntArray(result1);
-            Program.Space();
-            Program.Print2DIntArray(result2);
+            ResultTester.CheckSolution("LC", LeetCode.MergeIntervals.Test.TestInsertInterval());
         }
 
 
@@ -5630,14 +4501,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Sort Colors");
-
             int[] case1 = {2,0,2,1,1,0};
             int[] case2 = {2,0,1};
-
-            Console.WriteLine("Result 1 :");
             LeetCode.SortColors.Solution.SortColors(case1);
-            Console.WriteLine("Result 2 :");
             LeetCode.SortColors.Solution.SortColors(case2);
+            ResultTester.SpecialTestCase("LC");
         }
 
 
@@ -5705,14 +4573,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Decode Ways");
-
-            int result1 = LeetCode.DecodeWays.Solution.NumDecodings("12");
-            int result2 = LeetCode.DecodeWays.Solution.NumDecodings("226");
-            int result3 = LeetCode.DecodeWays.Solution.NumDecodings("06");
-
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-            Console.WriteLine("Result 3 : {0}", result3);
+            ResultTester.CheckSolution("LC", LeetCode.DecodeWays.Test.TestDecodeWays());
         }
 
 
@@ -5856,16 +4717,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Simple Array Sum");
-            string source = "HR";
-
-            List<int> ar = new List<int> {1, 2, 3, 4, 10, 11};
-            int case1 = HackerRank.SimpleArraySum.Result.simpleArraySum(ar);
-            Console.WriteLine("Result 1 : {0}", case1);
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(case1, 31)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("HR", HackerRank.SimpleArraySum.Test.TestSimpleArraySum());
         }
 
 
@@ -5873,15 +4725,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Solve Me First");
-            string source = "HR";
-
-            int result = HackerRank.SolveMeFirst.Solution.solveMeFirst(2, 3);
-            Console.WriteLine("Result 1 : {0}", result);
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(result, 5)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("HR", HackerRank.SolveMeFirst.Test.TestSolveMeFirst());
         }
 
 
@@ -5897,20 +4741,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Unique Binary Search Trees");
-            string source = "LC";
-
-            int result1 = LeetCode.UniqueBinarySearchTrees.Solution.NumTrees(3);
-            int result2 = LeetCode.UniqueBinarySearchTrees.Solution.NumTrees(1);
-
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(result1, 5),
-                ResultTester.CheckResult<int>(result2, 1)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("LC", LeetCode.UniqueBinarySearchTrees.Test.TestUniqueBinarySearchTrees());
         }
 
 
@@ -5945,28 +4776,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Search in Rotated Sorted Array");
-            string source = "LC";
-
-            int[] arr33_1 = {4,5,6,7,0,1,2};
-            int[] arr33_2 = {4,5,6,7,0,1,2};
-            int target33_1 = 0;
-            int target33_2 = 3;
-
-            int output1_33 = 4;
-            int output2_33 = -1;
-
-            int result1 = LeetCode.SearchinRotatedSortedArray.Solution.Search(arr33_1, target33_1);
-            int result2 = LeetCode.SearchinRotatedSortedArray.Solution.Search(arr33_2, target33_2);
-
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(result1, output1_33),
-                ResultTester.CheckResult<int>(result2, output2_33)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("LC", LeetCode.SearchinRotatedSortedArray.Test.TestSearchinRotatedSortedArray());
         }
 
 
@@ -6011,26 +4821,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Trapping Rain Water");
-            string source = "LC";
-
-            int[] height1 = {0,1,0,2,1,0,1,3,2,1,2,1};
-            int[] height2 = {4,2,0,3,2,5};
-
-            int output1_42 = 6;
-            int output2_42 = 9;
-
-            int result1 = LeetCode.TrappingRainWater.Solution.Trap(height1);
-            int result2 = LeetCode.TrappingRainWater.Solution.Trap(height2);
-
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(result1, output1_42),
-                ResultTester.CheckResult<int>(result2, output2_42)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("LC", LeetCode.TrappingRainWater.Test.TestTrappingRainWater());
         }
 
 
@@ -6038,34 +4829,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Word Break");
-            string source = "LC";
-
-            string s1 = "leetcode";
-            string[] wordDict1 = {"leet","code"};
-            string s2 = "applepenapple";
-            string[] wordDict2 = {"apple","pen"};
-            string s3 = "catsandog";
-            string[] wordDict3 = {"cats","dog","sand","and","cat"};
-
-            bool output1_139 = true;
-            bool output2_139 = true;
-            bool output3_139 = false;
-
-            bool result1 = LeetCode.WordBreak.Solution.WordBreak(s1, wordDict1);
-            bool result2 = LeetCode.WordBreak.Solution.WordBreak(s2, wordDict2);
-            bool result3 = LeetCode.WordBreak.Solution.WordBreak(s3, wordDict3);
-
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-            Console.WriteLine("Result 3 : {0}", result3);
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<bool>(result1, output1_139),
-                ResultTester.CheckResult<bool>(result2, output2_139),
-                ResultTester.CheckResult<bool>(result3, output3_139)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("LC", LeetCode.WordBreak.Test.TestWordBreak());
         }
 
 
@@ -6105,35 +4869,15 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Tringle");
-            string source = "LC";
+            ResultTester.CheckSolution("LC", LeetCode.Triangle.Test.TestTriangle());
+        }
 
-            int[][] case1_120 = new int[][]
-            {
-                new int[] { 2 },
-                new int[] { 3,4 },
-                new int[] { 6,5,7 },
-                new int[] { 4,1,8,3 }
-            };
 
-            int[][] case2_120 = new int[][]
-            {
-                new int[] { -10 }
-            };
-            int output1_120 = 11;
-            int output2_120 = -10;
-
-            int result1 = LeetCode.Triangle.Solution.MinimumTotal(case1_120);
-            int result2 = LeetCode.Triangle.Solution.MinimumTotal(case2_120);
-
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(result1, output1_120),
-                ResultTester.CheckResult<int>(result2, output2_120)
-            };
-            ResultTester.CheckSolution(source, results);
+        private static void PascalsTriangleIIFunc()
+        {
+            Program.Space();
+            Program.Title("Pascals Triangle II");
+            ResultTester.CheckSolution("LC", LeetCode.PascalsTriangleII.Test.TestPascalsTriangleII());
         }
 
 
@@ -6141,30 +4885,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Longest Substring Without Repeating Characters");
-            string source = "LC";
-
-            string case1_3 = "abcabcbb";
-            string case2_3 = "bbbbb";
-            string case3_3 = "pwwkew";
-            int output1 = 3;
-            int output2 = 1;
-            int output3 = 3;
-
-            int result1 = LeetCode.LongestSubstringWithoutRepeatingCharacters.Solution.LengthOfLongestSubstring(case1_3);
-            int result2 = LeetCode.LongestSubstringWithoutRepeatingCharacters.Solution.LengthOfLongestSubstring(case2_3);
-            int result3 = LeetCode.LongestSubstringWithoutRepeatingCharacters.Solution.LengthOfLongestSubstring(case3_3);
-
-            Console.WriteLine("Result 1 : {0}", result1);
-            Console.WriteLine("Result 2 : {0}", result2);
-            Console.WriteLine("Result 3 : {0}", result3);
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(result1, output1),
-                ResultTester.CheckResult<int>(result2, output2),
-                ResultTester.CheckResult<int>(result3, output3)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("LC", LeetCode.LongestSubstringWithoutRepeatingCharacters.Test.TestLongestSubstringWithoutRepeatingCharacters());
         }
 
 
@@ -6199,36 +4920,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Unique Paths II");
-            string source = "LC";
-
-            int[][] obstacleGrid1 = new int[][]
-            {
-                new int[] { 0,0,0 },
-                new int[] { 0,1,0 },
-                new int[] { 0,0,0 }
-            };
-
-            int[][] obstacleGrid2 = new int[][]
-            {
-                new int[] { 0,1 },
-                new int[] { 0,0 }
-            };
-
-            int output1_63 = 2;
-            int output2_63 = 1;
-
-            int result1_63 = LeetCode.UniquePathsII.Solution.UniquePathsWithObstacles(obstacleGrid1);
-            int result2_63 = LeetCode.UniquePathsII.Solution.UniquePathsWithObstacles(obstacleGrid2);
-
-            Console.WriteLine("Result 1 : {0}", result1_63);
-            Console.WriteLine("Result 2 : {0}", result2_63);
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(result1_63, output1_63),
-                ResultTester.CheckResult<int>(result2_63, output2_63)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("LC", LeetCode.UniquePathsII.Test.TestUniquePathsII());
         }
 
 
@@ -6244,25 +4936,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Jump Game");
-            string source = "LC";
-
-            int[] nums1_55 = { 2,3,1,1,4 };
-            int[] nums2_55 = { 3,2,1,0,4 };
-            bool output1_55 = true;
-            bool output2_55 = false;
-
-            bool result1_55 = LeetCode.JumpGame.Solution.CanJump(nums1_55);
-            bool result2_55 = LeetCode.JumpGame.Solution.CanJump(nums2_55);
-
-            Console.WriteLine("Result 1 : {0}", result1_55);
-            Console.WriteLine("Result 2 : {0}", result2_55);
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<bool>(result1_55, output1_55),
-                ResultTester.CheckResult<bool>(result2_55, output2_55)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("LC", LeetCode.JumpGame.Test.TestJumpGame());
         }
 
 
@@ -6270,9 +4944,15 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Path Sum II");
-            string source = "LC";
+            ResultTester.SpecialTestCase("LC");
+        }
 
-            ResultTester.SpecialTestCase(source);
+        
+        private static void BinaryTreeInorderTraversalFunc()
+        {
+            Program.Space();
+            Program.Title("Binary Tree Inorder Traversal");
+            ResultTester.SpecialTestCase("LC");
         }
 
 
@@ -6312,6 +4992,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void PathSumFuncFunc()
+        {
+            Program.Space();
+            Program.Title("Path Sum Func");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void ConvertSortedListtoBinarySearchTreeFunc()
+        {
+            Program.Space();
+            Program.Title("ConvertSorted List to Binary Search Tree");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
         private static void KthSmallestElementinaBSTFunc()
         {
             Program.Space();
@@ -6324,9 +5020,55 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Construct Binary Tree from Preorder and Inorder Traversal");
-            string source = "LC";
+            ResultTester.SpecialTestCase("LC");
+        }
 
-            ResultTester.SpecialTestCase(source);
+
+        private static void MaximumDepthofBinaryTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Depth of Binary Tree");
+            ResultTester.SpecialTestCase("LC");
+        }
+        
+
+        private static void BinaryTreeZigzagLevelOrderTraversalFunc()
+        {
+            Program.Space();
+            Program.Title("Binary Tree Zigzag Level Order Traversal");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void BinaryTreeLevelOrderTraversalFunc()
+        {
+            Program.Space();
+            Program.Title("Binary Tree Level Order Traversal");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void SymmetricTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Symmetric Tree");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void SameTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Same Tree");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void ValidateBinarySearchTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Validate Binary Search Tree");
+            ResultTester.SpecialTestCase("LC");
         }
 
 
@@ -6388,20 +5130,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Longest Palindromic Substring");
-            string source = "LC";
-
-            string s1 = "babad";
-            string s2 = "cbbd";
-
-            string result1_5 = LeetCode.LongestPalindromicSubstring.Solution.LongestPalindrome(s1);
-            string result2_5 = LeetCode.LongestPalindromicSubstring.Solution.LongestPalindrome(s2);
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<string>(result1_5, result1_5),
-                ResultTester.CheckResult<string>(result2_5, "bb")
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("LC", LeetCode.LongestPalindromicSubstring.Test.TestLongestPalindromicSubstring());
         }
 
 
@@ -6464,21 +5193,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static void BestTimetoBuyandSellStockIIFunc()
         {
             Program.Space();
-            Program.Title("Range Sum Query 2D - Immutable");
-            string source = "LC";
-
-            int[] prices1_122 = {1,2,3,4,5};
-            int[] prices2_122 = {7,6,4,3,1};
-
-            int result1_122 = LeetCode.BestTimetoBuyandSellStockII.Solution.MaxProfit(prices1_122);
-            int result2_122 = LeetCode.BestTimetoBuyandSellStockII.Solution.MaxProfit(prices2_122);
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(result1_122, 4),
-                ResultTester.CheckResult<int>(result2_122, 0)
-            };
-            ResultTester.CheckSolution(source, results);
+            Program.Title("Best Time to Buy and Sell Stock II");
+            ResultTester.CheckSolution("LC", LeetCode.BestTimetoBuyandSellStockII.Test.TestBestTimetoBuyandSellStockII());
         }
 
 
@@ -6624,13 +5340,19 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void RemoveDuplicatesfromSortedListFunc()
+        {
+            Program.Space();
+            Program.Title("Remove Duplicates from Sorted List");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
         private static void RemoveDuplicatesfromSortedListIIFunc()
         {
             Program.Space();
             Program.Title("Remove Duplicates from Sorted List II");
-            string source = "LC";
-
-            ResultTester.SpecialTestCase(source);
+            ResultTester.SpecialTestCase("LC");
         }
 
 
@@ -6662,9 +5384,23 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Reverse Nodes in k-Group");
-            string source = "LC";
+            ResultTester.SpecialTestCase("LC");
+        }
 
-            ResultTester.SpecialTestCase(source);
+
+        private static void SwapNodesinPairsFunc()
+        {
+            Program.Space();
+            Program.Title("Swap Nodes in Pairs");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void MergekSortedListsFunc()
+        {
+            Program.Space();
+            Program.Title("Merge k Sorted Lists");
+            ResultTester.SpecialTestCase("LC");
         }
 
 
@@ -6672,6 +5408,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Min Stack");
+            ResultTester.SpecialTestCase("LC");
+        } 
+
+
+        private static void GenerateParenthesesFunc()
+        {
+            Program.Space();
+            Program.Title("Generate Parentheses");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void MergeTwoSortedListsFunc()
+        {
+            Program.Space();
+            Program.Title("Merge Two Sorted Lists");
             ResultTester.SpecialTestCase("LC");
         }
 
@@ -6681,6 +5433,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Coin Change");
             ResultTester.CheckSolution("LC", LeetCode.CoinChange.Test.TestCoinChange());
+        }
+
+
+        private static void ValidParenthesesFunc()
+        {
+            Program.Space();
+            Program.Title("Valid Parentheses");
+            ResultTester.CheckSolution("LC", LeetCode.ValidParentheses.Test.TestValidParentheses());
         }
 
 
@@ -6832,22 +5592,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("You Can't Code Under Pressure #1");
-            string source = "CW";
-
-            int result1 = CodeWars.EightKyu.YouCantCodeUnderPressure1.Solution.DoubleInteger(2);
-            int result2 = CodeWars.EightKyu.YouCantCodeUnderPressure1.Solution.DoubleInteger(4);
-            int result3 = CodeWars.EightKyu.YouCantCodeUnderPressure1.Solution.DoubleInteger(-10);
-            int result4 = CodeWars.EightKyu.YouCantCodeUnderPressure1.Solution.DoubleInteger(0);
-            int result5 = CodeWars.EightKyu.YouCantCodeUnderPressure1.Solution.DoubleInteger(100);
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(result1, 4),
-                ResultTester.CheckResult<int>(result2, 8),
-                ResultTester.CheckResult<int>(result3, -20),
-                ResultTester.CheckResult<int>(result4, 0),
-                ResultTester.CheckResult<int>(result5, 200)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.YouCantCodeUnderPressure1.Test.TestYouCantCodeUnderPressure1());
         }
 
 
@@ -6855,24 +5600,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Compare The Triplets");
-            string source = "HR";
-
-            List<int> list1_Case1 = new List<int> { 5, 6, 7 };
-            List<int> list2_Case1 = new List<int> { 3, 6, 10 };
-            List<int> listOutput1 = new List<int> { 1, 1 };
-            List<int> result1 = HackerRank.CompareTheTriplets.Result.compareTriplets(list1_Case1, list2_Case1);
-            List<int> list1_Case2 = new List<int> { 17, 28, 30 };
-            List<int> list2_Case2 = new List<int> { 99, 16, 8 };
-            List<int> listOutput2 = new List<int> { 2, 1 };
-            List<int> result2 = HackerRank.CompareTheTriplets.Result.compareTriplets(list1_Case2, list2_Case2);
-
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<List<int>>(result1, listOutput1),
-                ResultTester.CheckResult<List<int>>(result2, listOutput2)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("HR", HackerRank.CompareTheTriplets.Test.TestCompareTriplets());
         }
 
 
@@ -6913,22 +5641,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Search in Rotated Sorted Array II");
-            string source = "LC";
-
-            int[] nums1 = {2,5,6,0,0,1,2};
-            int target1 = 0;
-            int[] nums2 = {2,5,6,0,0,1,2};
-            int target2 = 3;
-
-            bool result1 = LeetCode.SearchinRotatedSortedArrayII.Solution.Search(nums1, target1);
-            bool result2 = LeetCode.SearchinRotatedSortedArrayII.Solution.Search(nums2, target2);
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<bool>(result1, true),
-                ResultTester.CheckResult<bool>(result2, false)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("LC", LeetCode.SearchinRotatedSortedArrayII.Test.TestSearchinRotatedSortedArrayII());
         }
 
 
@@ -7029,26 +5742,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Century From Year");
-            string source = "CW";
-
-            int case1 = 18;
-            int case2 = 19;
-            int case3 = 17;
-            int case4 = 20;
-            
-            int result1 = CodeWars.EightKyu.CenturyFromYear.Solution.СenturyFromYear(1705);
-            int result2 = CodeWars.EightKyu.CenturyFromYear.Solution.СenturyFromYear(1900);
-            int result3 = CodeWars.EightKyu.CenturyFromYear.Solution.СenturyFromYear(1601);
-            int result4 = CodeWars.EightKyu.CenturyFromYear.Solution.СenturyFromYear(2000);
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(result1, case1),
-                ResultTester.CheckResult<int>(result2, case2),
-                ResultTester.CheckResult<int>(result3, case3),
-                ResultTester.CheckResult<int>(result4, case4)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.CenturyFromYear.Test.TestCenturyFromYear());
         }
 
 
@@ -7056,26 +5750,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Basic Mathematical Operations");
-            string source = "CW";
-
-            double result1 = CodeWars.EightKyu.BasicMathematicalOperations.Solution.basicOp('+', 4, 7);
-            double result2 = CodeWars.EightKyu.BasicMathematicalOperations.Solution.basicOp('-', 15, 18);
-            double result3 = CodeWars.EightKyu.BasicMathematicalOperations.Solution.basicOp('*', 5, 5);
-            double result4 = CodeWars.EightKyu.BasicMathematicalOperations.Solution.basicOp('/', 49, 7);
-
-            double expected1 = 11;
-            double expected2 = -3;
-            double expected3 = 25;
-            double expected4 = 7;
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<double>(result1, expected1),
-                ResultTester.CheckResult<double>(result2, expected2),
-                ResultTester.CheckResult<double>(result3, expected3),
-                ResultTester.CheckResult<double>(result4, expected4)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.BasicMathematicalOperations.Test.TestBasicMathematicalOperations());
         }
 
 
@@ -7884,8 +6559,23 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Design Parking System");
-            string source = "LC";
-            ResultTester.SpecialTestCase(source);
+            ResultTester.SpecialTestCase("LC");
+        }
+
+        
+        private static void MergeSortedArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Merge Sorted Array");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void CombinationsFunc()
+        {
+            Program.Space();
+            Program.Title("Combinations");
+            ResultTester.SpecialTestCase("LC");
         }
 
 
@@ -7902,19 +6592,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("3Sum Closest");
-            string source = "LC";
-            int[] nums1 = {-1,2,1,-4};
-            int target1 = 1;
-            int[] nums2 = {0,0,0};
-            int target2 = 1;
-            int result1 = LeetCode.ThreeSumClosest.Solution.ThreeSumClosest(nums1, target1);
-            int result2 = LeetCode.ThreeSumClosest.Solution.ThreeSumClosest(nums2, target2);
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(result1, 2),
-                ResultTester.CheckResult<int>(result2, 0)
-            };
-            ResultTester.CheckSolution(source, results);
+            ResultTester.CheckSolution("LC", LeetCode.ThreeSumClosest.Test.TestThreeSumClosest());
         }
 
 
@@ -7993,8 +6671,23 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Rotate List");
-            string source = "LC";
-            ResultTester.SpecialTestCase(source);
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void SpiralMatrixFunc()
+        {
+            Program.Space();
+            Program.Title("Spiral Matrix");
+            ResultTester.CheckSolution("LC", LeetCode.SpiralMatrix.Test.TestSpiralMatrix());
+        }
+
+
+        private static void SpiralMatrixIIFunc()
+        {
+            Program.Space();
+            Program.Title("Spiral Matrix II");
+            ResultTester.CheckSolution("LC", LeetCode.SpiralMatrixII.Test.TestSpiralMatrixII());
         }
 
 
@@ -8002,8 +6695,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Copy List with Random Pointer");
-            string source = "LC";
-            ResultTester.SpecialTestCase(source);
+            ResultTester.SpecialTestCase("LC");
         }
 
 
@@ -8131,12 +6823,19 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void PopulatingNextRightPointersinEachNodeIFunc()
+        {
+            Program.Space();
+            Program.Title("Populating Next Right Pointers in Each Node I");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
         private static void PopulatingNextRightPointersinEachNodeIIFunc()
         {
             Program.Space();
             Program.Title("Populating Next Right Pointers in Each Node II");
-            string source = "LC";
-            ResultTester.SpecialTestCase(source);
+            ResultTester.SpecialTestCase("LC");
         }
 
 
@@ -8235,22 +6934,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Convert number to reversed array of digits");
-
-            long[] expected1 = { 1, 3, 2, 5, 3 };
-            long[] expected2 = { 0 };
-            long[] result1 = CodeWars.EightKyu.ConvertNumberToReversedArrayOfDigits.Solution.Digitize(35231);
-            long[] result2 = CodeWars.EightKyu.ConvertNumberToReversedArrayOfDigits.Solution.Digitize(0);
-            long[] result3 = CodeWars.EightKyu.ConvertNumberToReversedArrayOfDigits.Solution.DigitizeLinq(35231);
-            long[] result4 = CodeWars.EightKyu.ConvertNumberToReversedArrayOfDigits.Solution.DigitizeLinq(0);
-            
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<long[]>(result1, expected1),
-                ResultTester.CheckResult<long[]>(result2, expected2),
-                ResultTester.CheckResult<long[]>(result3, expected1),
-                ResultTester.CheckResult<long[]>(result4, expected2)
-            };
-            ResultTester.CheckSolution("CW", results);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.ConvertNumberToReversedArrayOfDigits.Test.TestConvertNumberToReversedArrayOfDigits());
         }
 
 
@@ -8258,37 +6942,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Beginner - Lost Without a Map");
-            int[] case1 = {1, 2, 3};
-            int[] case2 = {1, 2, 3};
-            int[] case3 = {4, 1, 1, 1, 4};
-            int[] case4 = {2, 2, 2, 2, 2, 2};
-            int[] expected1 = {2, 4, 6};
-            int[] expected2 = {2, 4, 6};
-            int[] expected3 = {8, 2, 2, 2, 8};
-            int[] expected4 = {4, 4, 4, 4, 4, 4};
-
-            int[] result1 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.Maps(case1);
-            int[] result2 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.Maps(case2);
-            int[] result3 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.Maps(case3);
-            int[] result4 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.Maps(case4);
-            int[] result5 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.MapsConvertAll(case1);
-            int[] result6 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.MapsConvertAll(case2);
-            int[] result7 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.MapsConvertAll(case3);
-            int[] result8 = CodeWars.EightKyu.BeginnerLostWithoutaMap.Solution.MapsConvertAll(case4);
-
-
-            bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int[]>(result1, expected1),
-                ResultTester.CheckResult<int[]>(result2, expected2),
-                ResultTester.CheckResult<int[]>(result3, expected3),
-                ResultTester.CheckResult<int[]>(result4, expected4),
-                ResultTester.CheckResult<int[]>(result5, expected1),
-                ResultTester.CheckResult<int[]>(result6, expected2),
-                ResultTester.CheckResult<int[]>(result7, expected3),
-                ResultTester.CheckResult<int[]>(result8, expected4)
-            };
-            ResultTester.CheckSolution("CW", results);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.BeginnerLostWithoutaMap.Test.TestBeginnerLostWithoutaMap());
         }
 
 
@@ -8331,101 +6985,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("First Missing Positive");
-            int[] nums64 = {1,2,0};
-            int[] nums65 = {3,4,-1,1};
-            int[] nums66 = {7,8,9,11,12};
-            int[] case1 = {-1, -2, -3, -4, 3, 2, 1};
-            int[] case2 = {1, 5, 0, 2, -3};
-            int[] case3 = {-1, 1, -1, 1, -1};
-            int[] case4 = {1000, 2000, 3000};
-            int[] case5 = {4000, 3000, 1000, 2000};
-            int[] case6 = {3, 5, 1};
-            int[] case7 = {1, 2, 4};
-            int[] case8 = {1, 2, 2, 3};
-            int[] case9 = {6, 5, 4, 4};
-            int[] case10 = {1, 3, 2};
-            int[] case11 = {30, 11, 23, 4, 20};
-            int[] case12 = {3, 6, 7, 11};
-            int[] case13 = {-30, -11, 23, 4, 20};
-            int[] case14 = {-10, -3, 0, 5, 9};
-            int[] case15 = {1, 3};
-            int[] case16 = {1, 2, 2};
-            int[] case17 = {1, 2};
-            int[] case18 = {5, 3, 4};
-            int[] case19 = Program.GenerateRandomNumber(10, 100);
-            int[] case20 = Program.GenerateRandomNumber(10, 100);
-            int[] case21 = Program.GenerateRandomNumber(10, 100);
-            int[] case22 = Program.GenerateRandomNumber(10, 100);
-            int[] case23 = Program.GenerateRandomNegativeNumber(100);
-            int[] case24 = Program.GenerateRandomNegativeNumber(100);
-            int[] case25 = Program.GenerateRandomNegativeNumber(100);
-            int[] case26 = Program.GenerateRandomNegativeNumber(100);
-            int[] case27 = {-1, -2};
-            int[] case28 = {78, 56, 232, 12, 11, 43};
-            int[] case29 = {78, 56, -2, 12, 8, -33};
-            int[] case30 = {34, 15, 88, 2};
-            int[] case31 = {34, -345, -1, 100};
-            int[] case32 = {12, 35, 1, 10, 34, 1};
-            int[] case33 = {10, 5, 10};
-            int[] case34 = {1, 0, 0, 0, 1};
-            int[] case35 = {1, 0, 0, 0, 0, 0, 1};
-            int[] case36 = {1, 3, 0, 0, 2, 0, 0, 4};
-            int[] case37 = {0, 0, 0, 2, 0, 0};
-            int[] case38 = {1, 2, 3, 4};
-            int[] case39 = {-1, 1, 0, -3, 3};
-            int[] case40 = {1, 2, 3, 4, 5};
-            int[] case41 = {5, 4, 3, 2, 1};
-            int[] case42 = {2, 1, 5, 0, 4, 6};
-            int[] case43 = {3, 2, 1, 5, 6, 4};
-            int[] case44 = {3, 2, 3, 1, 2, 4, 5, 5, 6};
-            int[] case45 = {1, 3, 3, 2};
-            int[] case46 = {2, 1, 3, 4};
-            int[] case47 = {4, 2, 3, 1, 1};
-            int[] case48 = {7, 5, 10, 9, 6};
-            int[] case49 = {1, 2, 3};
-            int[] case50 = {4, 1, 1, 1, 4};
-            int[] case51 = {2, 2, 2, 2, 2, 2};
-            int[] case52 = {2, 4, 6};
-            int[] case53 = {2, 4, 6};
-            int[] case54 = {8, 2, 2, 2, 8};
-            int[] case55 = {4, 4, 4, 4, 4, 4};
-            int[] case56 = {4, 6, 5, 9, 3, 7};
-            int[] case57 = {0, 0, 2};
-            int[] case58 = {2, 3, 5};
-            int[] case59 = {-12, -9, -3, -12, -6, 15, 20, -25, -20, -15, -10};
-            int[] case60 = {0, 1, 6, 4, 8, 7};
-            int[] case61 = {4, 4, 9, 7, 9, 10};
-            int[] case62 = {1, 5, 11, 5};
-            int[] case63 = {1, 2, 3, 5};
-
-            int[][] allCases = new int[][]
-            {
-                case1, case2, case3, case4, case5, case6, case7, case8, case9, case10,
-                case11, case12, case13, case14, case15, case16, case17, case18, case19, case20,
-                case21, case22, case23, case24, case25, case26, case27, case28, case29, case30,
-                case31, case32, case33, case34, case35, case36, case37, case38, case39, case40,
-                case41, case42, case43, case44, case45, case46, case47, case48, case49, case50,
-                case51, case52, case53, case54, case55, case56, case57, case58, case59, case60,
-                case61, case62, case63, nums64, nums65, nums66
-            };
-
-            int[] results = new int[allCases.Length];
-
-            for (int i = 0; i < allCases.Length; i++)
-            {
-                int[] currentCase = allCases[i];
-                int currentResult = LeetCode.FirstMissingPositive.Solution.FirstMissingPositive(currentCase);
-                results[i] = currentResult;
-            }
-
-            bool[] resultBooleans = new bool[results.Length];
-
-            for (int i = 0; i < results.Length; i++)
-            {
-                resultBooleans[i] = ResultTester.CheckResult<int>(results[i], results[i]);
-            }
-
-            ResultTester.CheckSolution("LC", resultBooleans);
+            ResultTester.CheckSolution("LC", LeetCode.FirstMissingPositive.Test.TestFirstMissingPositive());
         }
 
 
@@ -8457,8 +7017,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Abbreviate a Two Word Name");
-            bool[] results = CodeWars.EightKyu.AbbreviateaTwoWordName.Solution.TestAbbreviateaTwoWordName();
-            ResultTester.CheckSolution("CW", results);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.AbbreviateaTwoWordName.Solution.TestAbbreviateaTwoWordName());
         }
 
 
@@ -8466,8 +7025,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Beginner Series #2 Clock");
-            bool[] results = CodeWars.EightKyu.BeginnerSeries2Clock.Solution.TestBeginnerSeries2Clock();
-            ResultTester.CheckSolution("CW", results);
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.BeginnerSeries2Clock.Solution.TestBeginnerSeries2Clock());
         }
 
         
@@ -8590,11 +7148,162 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void WayTooLongWordsFunc()
+        {
+            Program.Space();
+            Program.Title("Way Too Long Words");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void PascalsTriangleFunc()
+        {
+            Program.Space();
+            Program.Title("Pascals Triangle");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void WatermelonFunc()
+        {
+            Program.Space();
+            Program.Title("Watermelon");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void ConstructBinaryTreefromInorderandPostorderTraversalFunc()
+        {
+            Program.Space();
+            Program.Title("Construct Binary Tree from In order and Post order Traversal");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void MaximumSubarrayFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Subarray");
+            ResultTester.CheckSolution("LC", LeetCode.MaximumSubarray.Test.TestMaximumSubarray());
+        }
+
+
+        private static void RemoveNthNodeFromEndofListFunc()
+        {
+            Program.Space();
+            Program.Title("Remove Nth Node From End of List");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void LetterCombinationsofaPhoneNumberFunc()
+        {
+            Program.Space();
+            Program.Title("Letter Combinations of a Phone Number");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void ZigzagConversionFunc()
+        {
+            Program.Space();
+            Program.Title("Zigzag Conversion");
+            ResultTester.CheckSolution("LC", LeetCode.ZigzagConversion.Test.TestZigzagConversion());
+        }
+
+
+        private static void AddTwoNumbersFunc()
+        {
+            Program.Space();
+            Program.Title("Add Two Numbers");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void MaximumIntersectingLinesFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Intersecting Lines");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
+        private static void CountSpecialNumbersFunc()
+        {
+            Program.Space();
+            Program.Title("Count Special Numbers");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
+        private static void KnightInGeeklandFunc()
+        {
+            Program.Space();
+            Program.Title("Knight In Geekland");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
+        private static void BTSMaximumDifferenceFunc()
+        {
+            Program.Space();
+            Program.Title("BTS Maximum Difference");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
+        private static void MakeTheArrayBeautifulFunc()
+        {
+            Program.Space();
+            Program.Title("Make The Array Beautiful");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
+        private static void FrogsAndJumpFunc()
+        {
+            Program.Space();
+            Program.Title("Frogs And Jump");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
+        private static void SquaringAnArgumentFunc()
+        {
+            Program.Space();
+            Program.Title("Squaring An Argument");
+            ResultTester.SpecialTestCase("CW");
+        }
+
+
+        private static void ReturningStringsFunc()
+        {
+            Program.Space();
+            Program.Title("Returning Strings");
+            ResultTester.SpecialTestCase("CW");
+        }
+
+
+        private static void ReturnToSanityFunc()
+        {
+            Program.Space();
+            Program.Title("Return To Sanity");
+            ResultTester.SpecialTestCase("CW");
+        }
+
+
+        private static void ReturnHelloWorldFunc()
+        {
+            Program.Space();
+            Program.Title("Return Hello World");
+            ResultTester.SpecialTestCase("CW");
+        }
+
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            CountDigitOneFunc();
+            
         }
     }
 }

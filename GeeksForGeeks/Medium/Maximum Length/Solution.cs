@@ -28,6 +28,7 @@ You don't need to read input or print anything. Your task is to complete the fun
 */
 
 using System.Text;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.MaximumLength
 {
@@ -77,4 +78,17 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.MaximumLength
             return n;
         }
     };
+
+    public class Test
+    {
+        public static bool[] TestMaximumLength()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(MaximumLength.Solution.Solve(3, 3, 3), 9),
+                ResultTester.CheckResult<int>(MaximumLength.Solution.Solve(11, 2, 2), -1)
+            };
+            return results;
+        }
+    }
 }

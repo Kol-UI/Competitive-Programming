@@ -18,6 +18,8 @@ Output: 9
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.TrappingRainWater
 {
     public class Solution
@@ -49,6 +51,28 @@ namespace CompetitiveProgramming.LeetCode.TrappingRainWater
             }
 
             return amount;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestTrappingRainWater()
+        {
+            int[] height1 = {0,1,0,2,1,0,1,3,2,1,2,1};
+            int[] height2 = {4,2,0,3,2,5};
+
+            int output1_42 = 6;
+            int output2_42 = 9;
+
+            int result1 = Solution.Trap(height1);
+            int result2 = Solution.Trap(height2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1_42),
+                ResultTester.CheckResult<int>(result2, output2_42)
+            };
+            return results;
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.CodeWars.EightKyu.SumArray
 {
     public class Solution
@@ -27,6 +29,37 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.SumArray
             {
                 return array.Sum();
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSumArray()
+        {
+            // Case 1
+            double[] sumArrayCase1 = { 10, 20, 30, 40 };
+            double sumArrayResultCase1 = Solution.SumArray(sumArrayCase1);
+
+            // Case 2
+            double[] sumArrayCase2 = Array.Empty<double>();
+            double sumArrayResultCase2 = Solution.SumArray(sumArrayCase2);
+
+            // Case 3
+            double[] sumArrayCase3 = { 0 };
+            double sumArrayResultCase3 = Solution.SumArray(sumArrayCase3);
+
+            // Case 4
+            double[] sumArrayCase4 = { 1, 5.2, 4, 0, -1 };
+            double sumArrayResultCase4 = Solution.SumArray(sumArrayCase4);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<double>(sumArrayResultCase1, 100),
+                ResultTester.CheckResult<double>(sumArrayResultCase2, 0),
+                ResultTester.CheckResult<double>(sumArrayResultCase3, 0),
+                ResultTester.CheckResult<double>(sumArrayResultCase4, 9.2)
+            };
+            return results;
         }
     }
 }

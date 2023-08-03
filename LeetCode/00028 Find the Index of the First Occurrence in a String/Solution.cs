@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindtheIndexoftheFirstOccurrenceinaString
 {
     public class Solution
@@ -32,6 +34,48 @@ namespace CompetitiveProgramming.LeetCode.FindtheIndexoftheFirstOccurrenceinaStr
             }
 
             return -1;
+        }
+    }
+
+
+    public class Test
+    {
+        public static bool[] TestFindtheIndexoftheFirstOccurrenceinaString()
+        {
+            // Case 1
+            string haystackCase1_28 = "sadbutsad";
+            string needleCase1_28 = "sad";
+            int result_Case1_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase1_28, needleCase1_28);
+
+            // Case 2
+            string haystackCase2_28 = "leetcode";
+            string needleCase2_28 = "leeto";
+            int result_Case2_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase2_28, needleCase2_28);
+
+            // Case 3
+            string haystackCase3_28 = "mississippi";
+            string needleCase3_28 = "issip";
+            int result_Case3_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase3_28, needleCase3_28);
+
+            // Case 4
+            string haystackCase4_28 = "a";
+            string needleCase4_28 = "a";
+            int result_Case4_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase4_28, needleCase4_28);
+
+            // Case 5
+            string haystackCase5_28 = "hello";
+            string needleCase5_28 = "ll";
+            int result_Case5_28 = LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Solution.StrStr(haystackCase5_28, needleCase5_28);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result_Case1_28, 0),
+                ResultTester.CheckResult<int>(result_Case2_28, -1),
+                ResultTester.CheckResult<int>(result_Case3_28, 4),
+                ResultTester.CheckResult<int>(result_Case4_28, 0),
+                ResultTester.CheckResult<int>(result_Case5_28, 2)
+            };
+            return results;
         }
     }
 }

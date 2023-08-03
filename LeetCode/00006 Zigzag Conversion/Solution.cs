@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ZigzagConversion
 {
@@ -32,7 +33,7 @@ namespace CompetitiveProgramming.LeetCode.ZigzagConversion
         // Input: s = "A", numRows = 1
         // Output: "A"
 
-        public string Convert(string s, int numRows)
+        public static string Convert(string s, int numRows)
         {
             var n = s.Length;
             if (n <= numRows)
@@ -65,6 +66,20 @@ namespace CompetitiveProgramming.LeetCode.ZigzagConversion
             }
 
             return string.Join("", arr);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestZigzagConversion()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(Solution.Convert("PAYPALISHIRING", 3), "PAHNAPLSIIGYIR"),
+                ResultTester.CheckResult<string>(Solution.Convert("PAYPALISHIRING", 4), "PINALSIGYAHRPI"),
+                ResultTester.CheckResult<string>(Solution.Convert("A", 1), "A"),
+            };
+            return results;
         }
     }
 }

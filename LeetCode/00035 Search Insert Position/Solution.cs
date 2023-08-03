@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SearchInsertPosition
 {
@@ -45,6 +46,43 @@ namespace CompetitiveProgramming.LeetCode.SearchInsertPosition
             }
 
             return left;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSearchInsertPosition()
+        {
+            System.Random random = new System.Random();
+
+            // Case 1
+            int[] Case1_35 = { 1, 3, 5, 6 };
+            int targetCase1_35 = 5;
+            int resultCase1_35 = Solution.SearchInsert(Case1_35, targetCase1_35);
+
+            // Case 2
+            int[] Case2_35 = { 1, 3, 5, 6 };
+            int targetCase2_35 = 2;
+            int resultCase2_35 = Solution.SearchInsert(Case2_35, targetCase2_35);
+
+            // Case 3
+            int[] Case3_35 = { 1, 3, 5, 6 };
+            int targetCase3_35 = 7;
+            int resultCase3_35 = Solution.SearchInsert(Case3_35, targetCase3_35);
+
+            // Case 4
+            int[] Case4_35 = { 1, 3, 5, 6 };
+            int targetCase4_35 = random.Next(1, 10);
+            int resultCase4_35 = Solution.SearchInsert(Case4_35, targetCase4_35);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(resultCase1_35, 2),
+                ResultTester.CheckResult<int>(resultCase2_35, 1),
+                ResultTester.CheckResult<int>(resultCase3_35, 4),
+                ResultTester.CheckResult<int>(resultCase4_35, resultCase4_35)
+            };
+            return results;
         }
     }
 }

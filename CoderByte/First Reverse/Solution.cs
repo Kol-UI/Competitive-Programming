@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.CoderByte.FirstReverse
 {
     public class Solution
@@ -14,6 +16,19 @@ namespace CompetitiveProgramming.CoderByte.FirstReverse
 
             return new string(toReverseArray);
 
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFirstReverse()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(Solution.FirstReverseFunc("Test"), "tseT"),
+                ResultTester.CheckResult<string>(Solution.FirstReverseFunc("Code"), "edoC"),
+            };
+            return results;
         }
     }
 }

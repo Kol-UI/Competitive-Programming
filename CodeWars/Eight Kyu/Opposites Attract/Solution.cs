@@ -53,6 +53,9 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.OppositesAttract
             };
 
             Random rnd = new Random();
+
+            // Loop Tests
+
             for (int i = 0; i < 100; i++)
             {
                 int flower1 = rnd.Next(100);

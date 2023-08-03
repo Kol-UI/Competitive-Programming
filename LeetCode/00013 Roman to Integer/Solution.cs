@@ -1,5 +1,7 @@
 // Roman to Integer
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.RomantoInteger
 {
     public class Solution
@@ -30,6 +32,28 @@ namespace CompetitiveProgramming.LeetCode.RomantoInteger
                 }
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestRomantoInteger()
+        {
+            // Case 1
+            int Case1_13 = LeetCode.RomantoInteger.Solution.RomanToInt("III");
+
+            // Case 2
+            int Case2_13 = LeetCode.RomantoInteger.Solution.RomanToInt("LVIII");            
+
+            // Case 3
+            int Case3_13 = LeetCode.RomantoInteger.Solution.RomanToInt("MCMXCIV");
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_13, 3),
+                ResultTester.CheckResult<int>(Case2_13, 58),
+                ResultTester.CheckResult<int>(Case3_13, 1994)
+            };
+            return results;
         }
     }
 }

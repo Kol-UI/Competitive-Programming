@@ -26,6 +26,7 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 
 using System;
 using System.Text;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LongestSubstringWithoutRepeatingCharacters
 {
@@ -64,6 +65,31 @@ namespace CompetitiveProgramming.LeetCode.LongestSubstringWithoutRepeatingCharac
             }
 
             return maxLength;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestLongestSubstringWithoutRepeatingCharacters()
+        {
+            string case1_3 = "abcabcbb";
+            string case2_3 = "bbbbb";
+            string case3_3 = "pwwkew";
+            int output1 = 3;
+            int output2 = 1;
+            int output3 = 3;
+
+            int result1 = LeetCode.LongestSubstringWithoutRepeatingCharacters.Solution.LengthOfLongestSubstring(case1_3);
+            int result2 = LeetCode.LongestSubstringWithoutRepeatingCharacters.Solution.LengthOfLongestSubstring(case2_3);
+            int result3 = LeetCode.LongestSubstringWithoutRepeatingCharacters.Solution.LengthOfLongestSubstring(case3_3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1),
+                ResultTester.CheckResult<int>(result2, output2),
+                ResultTester.CheckResult<int>(result3, output3)
+            };
+            return results;
         }
     }
 }

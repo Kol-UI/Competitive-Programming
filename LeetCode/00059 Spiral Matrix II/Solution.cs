@@ -17,6 +17,8 @@ Output: [[1]]
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SpiralMatrixII
 {
     public class Solution
@@ -36,6 +38,32 @@ namespace CompetitiveProgramming.LeetCode.SpiralMatrixII
                 for (int k = j - 1; k > i; k--) result[k][i] = num++;
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSpiralMatrixII()
+        {
+            int[][] expected1 = new int[][]
+            {
+                new int[] {1, 2, 3},
+                new int[] {8, 9, 4},
+                new int[] {7, 6, 5}
+            };
+            int[][] expected2 = new int[][]
+            {
+                new int[] {1},
+            };
+            int[][] result1 = Solution.GenerateMatrix(3);
+            int[][] result2 = Solution.GenerateMatrix(1);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[][]>(result1, expected1),
+                ResultTester.CheckResult<int[][]>(result2, expected2)
+            };
+            return results;
         }
     }
 }

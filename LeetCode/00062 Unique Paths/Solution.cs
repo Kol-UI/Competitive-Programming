@@ -25,6 +25,8 @@ Explanation: From the top-left corner, there are a total of 3 ways to reach the 
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.UniquePaths
 {
     public class Solution
@@ -42,6 +44,22 @@ namespace CompetitiveProgramming.LeetCode.UniquePaths
                 }
             }
             return dp[m,n];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestUniquePaths()
+        {
+            int result1 = Solution.UniquePaths(3, 7);
+            int result2 = Solution.UniquePaths(3, 2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 28),
+                ResultTester.CheckResult<int>(result2, 3)
+            };
+            return results;
         }
     }
 }

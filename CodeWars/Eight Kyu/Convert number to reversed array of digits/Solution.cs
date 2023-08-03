@@ -9,6 +9,8 @@ Example(Input => Output):
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.CodeWars.EightKyu.ConvertNumberToReversedArrayOfDigits
 {
     public class Solution
@@ -29,6 +31,28 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.ConvertNumberToReversedArrayO
         public static long[] DigitizeLinq(long n)
         {
             return n.ToString().Reverse().Select(t => Convert.ToInt64(t.ToString())).ToArray();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestConvertNumberToReversedArrayOfDigits()
+        {
+            long[] expected1 = { 1, 3, 2, 5, 3 };
+            long[] expected2 = { 0 };
+            long[] result1 = Solution.Digitize(35231);
+            long[] result2 = Solution.Digitize(0);
+            long[] result3 = Solution.DigitizeLinq(35231);
+            long[] result4 = Solution.DigitizeLinq(0);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long[]>(result1, expected1),
+                ResultTester.CheckResult<long[]>(result2, expected2),
+                ResultTester.CheckResult<long[]>(result3, expected1),
+                ResultTester.CheckResult<long[]>(result4, expected2)
+            };
+            return results;
         }
     }
 }

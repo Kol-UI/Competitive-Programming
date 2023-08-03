@@ -40,8 +40,8 @@ namespace CompetitiveProgramming.LeetCode.JumpGameIII
 {
     public class Solution
     {
-        static HashSet<int> seen = new();
-        static Queue<int> queue = new();
+        public static HashSet<int> seen = new();
+        public static Queue<int> queue = new();
         public static bool CanReach(int[] arr, int start)
         {
             queue.Enqueue(start);
@@ -88,6 +88,9 @@ namespace CompetitiveProgramming.LeetCode.JumpGameIII
                 ResultTester.CheckResult<bool>(Solution.CanReach(arr2, start2), false),
                 ResultTester.CheckResult<bool>(Solution.CanReach(arr3, start3), false)
             };
+            
+            Solution.seen.Clear();
+            Solution.queue.Clear();
             return results;
         }
     }

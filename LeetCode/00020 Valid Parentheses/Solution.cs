@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ValidParentheses
 {
@@ -24,36 +25,42 @@ namespace CompetitiveProgramming.LeetCode.ValidParentheses
     // Output: false
     public class Solution
     {
-        public bool IsValid(string s)
-            {
+        public static bool IsValid(string s)
+        {
             Stack<char> st = new Stack<char>();
             char[] arr = new char[s.Length];
-            arr= s.ToCharArray();
-            if(s.Length%2 !=0)
+            arr = s.ToCharArray();
+
+            if(s.Length % 2 != 0)
                 return false;
 
-            for(int i=0; i<arr.Length; i++)
+            for(int i = 0; i < arr.Length; i++)
             {
                 char ch = arr[i];
 
-                if(ch == '(' || ch == '[' || ch =='{'){
+                if(ch == '(' || ch == '[' || ch =='{')
+                {
                     st.Push(ch);
                     Console.WriteLine("for "+i+" pushed " + ch);
 
                 }
-                if(st.Count<=0){
+                if(st.Count <= 0)
+                {
                     return false;
                 }
                 
-                else if(ch ==')' ){
-                    if(st.Peek() == '('){
+                else if(ch ==')' )
+                {
+                    if(st.Peek() == '(')
+                    {
                         st.Pop();
                     }
                     else
                     return false; 
                     
                 }
-                else if(ch =='}' ){
+                else if(ch == '}' )
+                {
                     if(st.Peek() == '{')
                     {
                         st.Pop();
@@ -62,7 +69,8 @@ namespace CompetitiveProgramming.LeetCode.ValidParentheses
                     else
                     return false;
                 }
-                else if(ch ==']'){
+                else if(ch == ']')
+                {
                     if(st.Peek() == '[')
                     {
                         st.Pop();
@@ -71,9 +79,25 @@ namespace CompetitiveProgramming.LeetCode.ValidParentheses
                     return false;
                 }
             }
-            if(st.Count>0)
+
+            if(st.Count > 0)
                 return false;
-            return true; 
+
+            return true;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestValidParentheses()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Solution.IsValid("()"), true),
+                ResultTester.CheckResult<bool>(Solution.IsValid("()[]{}"), true),
+                ResultTester.CheckResult<bool>(Solution.IsValid("(]"), false),
+            };
+            return results;
         }
     }
 }

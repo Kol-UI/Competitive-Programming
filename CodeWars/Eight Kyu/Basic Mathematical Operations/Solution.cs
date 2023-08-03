@@ -14,6 +14,8 @@ Examples(Operator, value1, value2) --> output
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.CodeWars.EightKyu.BasicMathematicalOperations
 {
     public class Solution
@@ -34,6 +36,31 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.BasicMathematicalOperations
                     break;
             }
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestBasicMathematicalOperations()
+        {
+            double result1 = Solution.basicOp('+', 4, 7);
+            double result2 = Solution.basicOp('-', 15, 18);
+            double result3 = Solution.basicOp('*', 5, 5);
+            double result4 = Solution.basicOp('/', 49, 7);
+
+            double expected1 = 11;
+            double expected2 = -3;
+            double expected3 = 25;
+            double expected4 = 7;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<double>(result1, expected1),
+                ResultTester.CheckResult<double>(result2, expected2),
+                ResultTester.CheckResult<double>(result3, expected3),
+                ResultTester.CheckResult<double>(result4, expected4)
+            };
+            return results;
         }
     }
 }

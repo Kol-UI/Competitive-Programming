@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.EvenSwap
 {
@@ -29,6 +30,21 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.EvenSwap
                 arr[j] = temp;
                 i++; 
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestEvenSwap()
+        {
+            int N1 = 3;
+            int[] a1 = { 1, 3, 5 };
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(Solution.LexicographicallyLargest(a1, N1), a1)
+            };
+            return results;
         }
     }
 }

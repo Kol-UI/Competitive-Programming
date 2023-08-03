@@ -22,6 +22,8 @@ Output: 0
 Explanation: The sum that is closest to the target is 0. (0 + 0 + 0 = 0).
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ThreeSumClosest
 {
     public class Solution
@@ -51,6 +53,25 @@ namespace CompetitiveProgramming.LeetCode.ThreeSumClosest
                     }
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestThreeSumClosest()
+        {
+            int[] nums1 = {-1,2,1,-4};
+            int target1 = 1;
+            int[] nums2 = {0,0,0};
+            int target2 = 1;
+            int result1 = Solution.ThreeSumClosest(nums1, target1);
+            int result2 = Solution.ThreeSumClosest(nums2, target2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, 0)
+            };
+            return results;
         }
     }
 

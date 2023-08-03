@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ScrambleString
 {
     /*
@@ -80,6 +82,35 @@ namespace CompetitiveProgramming.LeetCode.ScrambleString
             }
 
             return _memo[key] = false;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestScrambleString()
+        {
+            // Case 1
+            string s1_87_1 = "great";
+            string s2_87_1 = "rgeat";
+            bool result87_1 = Solution.IsScramble(s1_87_1, s2_87_1);
+
+            // Case 2
+            string s1_87_2 = "great";
+            string s2_87_2 = "rgeat";
+            bool result87_2 = Solution.IsScramble(s1_87_2, s2_87_2);
+
+            // Case 3
+            string s1_87_3 = "great";
+            string s2_87_3 = "rgeat";
+            bool result87_3 = Solution.IsScramble(s1_87_3, s2_87_3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result87_1, true),
+                ResultTester.CheckResult<bool>(result87_2, true),
+                ResultTester.CheckResult<bool>(result87_3, true),
+            };
+            return results;
         }
     }
 }

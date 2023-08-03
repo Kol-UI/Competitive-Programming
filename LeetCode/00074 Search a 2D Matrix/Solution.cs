@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.Searcha2DMatrix
 {
 	public class Solution
@@ -49,6 +51,34 @@ namespace CompetitiveProgramming.LeetCode.Searcha2DMatrix
             }
 
             return false;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSearcha2DMatrix()
+        {
+            int[][] Matrix74 = new int[][]
+            {
+                new int[] { 1, 3, 5, 7 },
+                new int[] { 10, 11, 16, 20 },
+                new int[] { 23, 30, 34, 60 }
+            };
+
+            // Case 1
+            int Case1_74_Target = 3;
+            bool Case1_74_Result = Solution.SearchMatrix(Matrix74, Case1_74_Target);
+
+            // Case 2
+            int Case2_74_Target = 13;
+            bool Case2_74_Result = Solution.SearchMatrix(Matrix74, Case2_74_Target);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Case1_74_Result, true),
+                ResultTester.CheckResult<bool>(Case2_74_Result, false),
+            };
+            return results;
         }
     }
 }

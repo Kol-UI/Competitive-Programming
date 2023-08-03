@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ClimbingStairs
 {
@@ -32,5 +33,28 @@ namespace CompetitiveProgramming.LeetCode.ClimbingStairs
             return c;
         }
 	}
+
+    public class Test
+    {
+        public static bool[] TestClimbingStairs()
+        {
+            // Case 1
+            int Case1_70 = Solution.ClimbStairs(2);
+
+            // Case 2
+            int Case2_70 = Solution.ClimbStairs(3);
+
+            // Case 3
+            int Case3_70 = Solution.ClimbStairs(40);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_70, 2),
+                ResultTester.CheckResult<int>(Case2_70, 3),
+                ResultTester.CheckResult<int>(Case3_70, 165580141),
+            };
+            return results;
+        }
+    }
 }
 

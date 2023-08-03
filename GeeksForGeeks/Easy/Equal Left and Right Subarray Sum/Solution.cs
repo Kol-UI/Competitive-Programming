@@ -29,6 +29,8 @@
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.EqualLeftandRightSubarraySum
 {
     public class Solution
@@ -55,6 +57,29 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.EqualLeftandRightSubarraySum
                 }
             }
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestEqualLeftandRightSubarraySum()
+        {
+            // Case 1
+            int[] ACase1 = {1,3,5,2,2};
+            int n1 = 5;
+            int Output1 = GeeksForGeeks.Easy.EqualLeftandRightSubarraySum.Solution.EqualSum(ACase1 , n1);
+
+            // Case2
+            int[] ACase2 = {1};
+            int n2 = 1;
+            int Output2 = GeeksForGeeks.Easy.EqualLeftandRightSubarraySum.Solution.EqualSum(ACase1 , n2);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Output1, 3),
+                ResultTester.CheckResult<int>(Output2, 1)
+            };
+            return results;
         }
     }
 }

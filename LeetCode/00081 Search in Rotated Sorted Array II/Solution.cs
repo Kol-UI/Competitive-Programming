@@ -23,6 +23,8 @@ Output: false
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SearchinRotatedSortedArrayII
 {
     public class Solution
@@ -58,6 +60,27 @@ namespace CompetitiveProgramming.LeetCode.SearchinRotatedSortedArrayII
                     l++;
             }
             return false;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSearchinRotatedSortedArrayII()
+        {
+            int[] nums1 = {2,5,6,0,0,1,2};
+            int target1 = 0;
+            int[] nums2 = {2,5,6,0,0,1,2};
+            int target2 = 3;
+
+            bool result1 = Solution.Search(nums1, target1);
+            bool result2 = Solution.Search(nums2, target2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false)
+            };
+            return results;
         }
     }
 }

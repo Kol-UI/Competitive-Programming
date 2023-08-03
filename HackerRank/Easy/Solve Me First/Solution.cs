@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.HackerRank.SolveMeFirst
 {
     public class Solution 
@@ -20,5 +22,18 @@ namespace CompetitiveProgramming.HackerRank.SolveMeFirst
             Console.WriteLine(sum);
         }
         */
+    }
+
+    public class Test
+    {
+        public static bool[] TestSolveMeFirst()
+        {
+            int result = Solution.solveMeFirst(2, 3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result, 5)
+            };
+            return results;
+        }
     }
 }

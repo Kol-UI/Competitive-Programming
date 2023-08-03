@@ -39,6 +39,8 @@ Explanation: "06" cannot be mapped to "F" because of the leading zero ("6" is di
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.DecodeWays
 {
     public class Solution
@@ -66,6 +68,24 @@ namespace CompetitiveProgramming.LeetCode.DecodeWays
                 way +=  NumDecodingsRec(s, pos+2, dp);
             }
             return dp[pos]= way;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestDecodeWays()
+        {
+            int result1 = Solution.NumDecodings("12");
+            int result2 = Solution.NumDecodings("226");
+            int result3 = Solution.NumDecodings("06");
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, 3),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+            return results;
         }
     }
 }

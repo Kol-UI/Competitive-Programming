@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.RestoreIPAddresses
 {
 	public class Solution
@@ -70,6 +72,37 @@ namespace CompetitiveProgramming.LeetCode.RestoreIPAddresses
             return true;
         }
 
+    }
+
+
+    public class Test
+    {
+        public static bool[] TestRestoreIPAddresses()
+        {
+            // Case 1
+            string Case1_93 = "25525511135";
+            IList<string> Case1_93_Result = Solution.RestoreIpAddresses(Case1_93);
+            IList<string> ipAddressList1 = new List<string> { "255.255.11.135", "255.255.111.35" };
+
+            // Case 2
+            string Case2_93 = "0000";
+            IList<string> Case2_93_Result = Solution.RestoreIpAddresses(Case2_93);
+            IList<string> ipAddressList2 = new List<string> { "0.0.0.0" };
+
+            // Case 3
+            string Case3_93 = "101023";
+            IList<string> Case3_93_Result = Solution.RestoreIpAddresses(Case3_93);
+            IList<string> ipAddressList3 = new List<string> { "1.0.10.23", "1.0.102.3", "10.1.0.23", "10.10.2.3", "101.0.2.3" };
+
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<string>>(Case1_93_Result, ipAddressList1),
+                ResultTester.CheckResult<IList<string>>(Case2_93_Result, ipAddressList2),
+                ResultTester.CheckResult<IList<string>>(Case3_93_Result, ipAddressList3)
+            };
+            return results;
+        }
     }
 }
 

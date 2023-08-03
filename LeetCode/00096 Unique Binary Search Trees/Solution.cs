@@ -17,6 +17,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.UniqueBinarySearchTrees
 {
     public class Solution
@@ -46,6 +48,22 @@ namespace CompetitiveProgramming.LeetCode.UniqueBinarySearchTrees
             }
             
             return counter;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestUniqueBinarySearchTrees()
+        {
+            int result1 = Solution.NumTrees(3);
+            int result2 = Solution.NumTrees(1);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 5),
+                ResultTester.CheckResult<int>(result2, 1)
+            };
+            return results;
         }
     }
 }

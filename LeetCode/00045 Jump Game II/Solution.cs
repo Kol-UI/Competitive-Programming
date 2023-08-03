@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.JumpGameII
 {
@@ -35,6 +36,27 @@ namespace CompetitiveProgramming.LeetCode.JumpGameII
                 }
             }
             return dp[^1];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestJumpGameII()
+        {
+            // Case 1
+            int[] arrayCase1_45 = { 2, 3, 1, 1, 4};
+            int Case1_45_Result = Solution.Jump(arrayCase1_45);
+
+            // Case 2
+            int[] arrayCase2_45 = { 2, 3, 0, 1, 4};
+            int Case2_45_Result = Solution.Jump(arrayCase2_45);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_45_Result, 2),
+                ResultTester.CheckResult<int>(Case2_45_Result, 2)
+            };
+            return results;
         }
     }
 }

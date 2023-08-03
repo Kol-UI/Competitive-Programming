@@ -39,6 +39,8 @@ Complete the function minOperations() which takes the integer N as the input par
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.MakeArrayElementsEqual
 {
     public class Solution
@@ -49,6 +51,20 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.MakeArrayElementsEqual
             result = N/2;
             result *= (N + 1) /2;
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMakeArrayElementsEqual()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(Solution.MinOperations(12), 36),
+                ResultTester.CheckResult<long>(Solution.MinOperations(3), 2),
+                ResultTester.CheckResult<long>(Solution.MinOperations(2), 1)
+            };
+            return results;
         }
     }
 }

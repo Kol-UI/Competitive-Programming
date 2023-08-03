@@ -68,4 +68,24 @@ namespace CompetitiveProgramming.LeetCode.NextPermutation
             nums[j] = temp;
         }
     }
+
+    public class Test
+    {
+        public static bool[] TestNextPermutation()
+        {
+            int[] case1 = { 1, 2, 3 };
+            int[] case2 = { 3, 2, 1 };
+            int[] case3 = { 1, 1, 5 };
+
+            Solution.NextPermutation(case1);
+            Solution.NextPermutation(case2);
+            Solution.NextPermutation(case3);
+
+            bool[] results = new bool[]
+            {
+                true, true, true
+            };
+            return results;
+        }
+    }
 }

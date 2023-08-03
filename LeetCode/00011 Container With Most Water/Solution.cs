@@ -25,6 +25,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ContainerWithMostWater
 {
     public class Solution
@@ -47,6 +49,25 @@ namespace CompetitiveProgramming.LeetCode.ContainerWithMostWater
             } while (p2 - p1 != 1);
 
             return max;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestContainerWithMostWater()
+        {
+            int[] height1 = {1,8,6,2,5,4,8,3,7};
+            int[] height2 = {1,1};
+
+            int result1 = LeetCode.ContainerWithMostWater.Solution.MaxArea(height1);
+            int result2 = LeetCode.ContainerWithMostWater.Solution.MaxArea(height2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 49),
+                ResultTester.CheckResult<int>(result2, 1)
+            };
+            return results;
         }
     }
 }

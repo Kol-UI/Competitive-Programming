@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.MinimumStepsRequired
 {
     /*
@@ -52,6 +54,19 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.MinimumStepsRequired
                 return (Count+1)/2 +1;
             }
             return Count/2 +1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMinimumStepsRequired()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(MinimumStepsRequired.Solution.minSteps("bbaaabb"), 2),
+                ResultTester.CheckResult<int>(MinimumStepsRequired.Solution.minSteps("aababaa"), 3)
+            };
+            return results;
         }
     }
 }

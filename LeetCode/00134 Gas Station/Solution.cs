@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.GasStation
 {
@@ -35,21 +36,39 @@ namespace CompetitiveProgramming.LeetCode.GasStation
         Travel to station 1. Your tank = 3 - 3 + 3 = 3
         You cannot travel back to station 2, as it requires 4 unit of gas but you only have 3.
         Therefore, you can't travel around the circuit once no matter where you start. */
-        public static int CanCompleteCircuit(int[] gas, int[] cost) {
-        int result = 0;
-        if (gas.Sum() - cost.Sum() < 0)
+        public static int CanCompleteCircuit(int[] gas, int[] cost)
         {
-            return -1;
-        }
-        for (int i = 0, tank = 0; i < gas.Length; ++i)
-        {
-            if ((tank += gas[i] - cost[i]) < 0)
+            int result = 0;
+
+            if (gas.Sum() - cost.Sum() < 0)
             {
-                result = i + 1;
-                tank = 0;
+                return -1;
             }
-        }    
-        return result; 
+            for (int i = 0, tank = 0; i < gas.Length; ++i)
+            {
+                if ((tank += gas[i] - cost[i]) < 0)
+                {
+                    result = i + 1;
+                    tank = 0;
+                }
+            }    
+            return result; 
+        }
     }
+
+    public class Test
+    {
+        public static bool[] TestGasStation()
+        {
+            int[] gas1 = {1,2,3,4,5}; int[] cost1 = {3,4,5,1,2};
+            int[] gas2 = {2,3,4}; int[] cost2 = {3,4,3};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.CanCompleteCircuit(gas1, cost1), 3),
+                ResultTester.CheckResult<int>(Solution.CanCompleteCircuit(gas2, cost2), -1)
+            };
+            return results;
+        }
     }
 }

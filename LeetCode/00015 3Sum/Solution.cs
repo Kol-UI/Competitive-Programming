@@ -32,6 +32,8 @@ Explanation: The only possible triplet sums up to 0.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ThreeSum
 {
     public class Solution
@@ -73,6 +75,31 @@ namespace CompetitiveProgramming.LeetCode.ThreeSum
             }
 
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestThreeSum()
+        {
+            int[] nums1 = { 0,1,1 };
+            int[] nums2 = { 0,0,0 };
+            IList<IList<int>> output1 = new List<IList<int>>
+            {
+                new List<int> {0, 0, 0}
+            };
+
+            IList<IList<int>> output2 = new List<IList<int>>{};
+
+
+            IList<IList<int>> result1 = LeetCode.ThreeSum.Solution.ThreeSum(nums1);
+            IList<IList<int>> result2 = LeetCode.ThreeSum.Solution.ThreeSum(nums2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<IList<int>>>(result1, output2),
+                ResultTester.CheckResult<IList<IList<int>>>(result2, output1)
+            };
+            return results;
         }
     }
 }

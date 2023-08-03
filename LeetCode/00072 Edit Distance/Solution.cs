@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.EditDistance
 {
     // Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.
@@ -70,6 +72,27 @@ namespace CompetitiveProgramming.LeetCode.EditDistance
             }
             
             return Dfs(word1, word2, 0, 0, dp);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestEditDistance()
+        {
+            // Case 1
+            string word1 = "horse", word2 = "ros";
+            int result1_72 = Solution.MinDistance(word1, word2);
+
+            // Case 2
+            string word3 = "intention", word4 = "execution";
+            int result2_72 = Solution.MinDistance(word3, word4);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_72, 3),
+                ResultTester.CheckResult<int>(result2_72, 5),
+            };
+            return results;
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.InsertInterval
 {
     public class Solution
@@ -48,6 +50,55 @@ namespace CompetitiveProgramming.LeetCode.InsertInterval
             }
         }
 
+    }
+
+    public class Test
+    {
+        public static bool[] TestInsertInterval()
+        {
+            // Case 1
+            int[][] intervalsCase1_57 = new int[][]
+            {
+                new int[] { 1, 3 },
+                new int[] { 6, 9 }
+            };
+            int[] newIntervalsCase1_57 = { 2, 5 };
+            int[][] Case1_57_Result = Solution.Insert(intervalsCase1_57, newIntervalsCase1_57);
+
+            // Case 2
+            int[][] intervalsCase2_57 = new int[][]
+            {
+                new int[] { 1, 2 },
+                new int[] { 3, 5 },
+                new int[] { 6, 7 },
+                new int[] { 8, 10 },
+                new int[] { 12, 16 }
+            };
+            int[] newIntervalsCase2_57 = { 4, 8 };
+            int[][] Case2_57_Result = Solution.Insert(intervalsCase2_57, newIntervalsCase2_57);
+
+            // Expected Matrix 1
+            int[][] expected1 = new int[][]
+            {
+                new int[] {1, 5},
+                new int[] {6, 9}
+            };
+
+            // Expected Matrix 2
+            int[][] expected2 = new int[][]
+            {
+                new int[] {1, 2},
+                new int[] {3, 10},
+                new int[] {12, 16}
+            };
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[][]>(Case1_57_Result, expected1),
+                ResultTester.CheckResult<int[][]>(Case2_57_Result, expected2),
+            };
+            return results;
+        }
     }
 }
 

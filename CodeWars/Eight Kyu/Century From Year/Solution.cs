@@ -14,6 +14,8 @@ Examples
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.CodeWars.EightKyu.CenturyFromYear
 {
     public class Solution
@@ -21,6 +23,31 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.CenturyFromYear
         public static int СenturyFromYear(int year)
         {
             return (year + 99) / 100;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCenturyFromYear()
+        {
+            int case1 = 18;
+            int case2 = 19;
+            int case3 = 17;
+            int case4 = 20;
+            
+            int result1 = Solution.СenturyFromYear(1705);
+            int result2 = Solution.СenturyFromYear(1900);
+            int result3 = Solution.СenturyFromYear(1601);
+            int result4 = Solution.СenturyFromYear(2000);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, case1),
+                ResultTester.CheckResult<int>(result2, case2),
+                ResultTester.CheckResult<int>(result3, case3),
+                ResultTester.CheckResult<int>(result4, case4)
+            };
+            return results;
         }
     }
 }

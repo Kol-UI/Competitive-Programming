@@ -33,6 +33,8 @@ Thus, the result should be [1,0].
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.PlusOne
 {
     public class Solution
@@ -67,6 +69,36 @@ namespace CompetitiveProgramming.LeetCode.PlusOne
             result[0] = 1;
 
             return result; 
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestPlusOne()
+        {
+            // Case 1
+            int[] digits1_66 = {1,2,3};
+            int[] result1_66 = LeetCode.PlusOne.Solution.PlusOne(digits1_66);
+
+            // Case 2
+            int[] digits2_66 = {4,3,2,1};
+            int[] result2_66 = LeetCode.PlusOne.Solution.PlusOne(digits2_66);
+
+            // Case 3
+            int[] digits3_66 = {9};
+            int[] result3_66 = LeetCode.PlusOne.Solution.PlusOne(digits3_66);
+
+            int[] expected1 = {1,2,4};
+            int[] expected2 = {4,3,2,2};
+            int[] expected3 = {1,0};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1_66, expected1),
+                ResultTester.CheckResult<int[]>(result2_66, expected2),
+                ResultTester.CheckResult<int[]>(result3_66, expected3)
+            };
+            return results;
         }
     }
 }

@@ -18,7 +18,8 @@ namespace CompetitiveProgramming.LeetCode.BinaryTreeInorderTraversal
     
     public class Solution
     {
-        public IList<int> InorderTraversal(TreeNode root) {
+        public IList<int> InorderTraversal(TreeNode root)
+        {
 
             var result = new List<int>();
 

@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumPathSum
 {
     /*
@@ -44,6 +46,36 @@ namespace CompetitiveProgramming.LeetCode.MinimumPathSum
             }
 
             return grid[grid.Length - 1][grid[0].Length - 1];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMinimumPathSum()
+        {
+            // Case 1
+            int[][] grid64Case1 = new int[][]
+            {
+                new int[] { 1, 3, 1 },
+                new int[] { 1, 5, 1 },
+                new int[] { 4, 2, 1 }
+            };
+            int result64Case1 = Solution.MinPathSum(grid64Case1);
+
+            // Case 2
+            int[][] grid64Case2 = new int[][]
+            {
+                new int[] { 1, 2, 3 },
+                new int[] { 4, 5, 6 }
+            };
+            int result64Case2 = Solution.MinPathSum(grid64Case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result64Case1, 7),
+                ResultTester.CheckResult<int>(result64Case2, 12)
+            };
+            return results;
         }
     }
 }

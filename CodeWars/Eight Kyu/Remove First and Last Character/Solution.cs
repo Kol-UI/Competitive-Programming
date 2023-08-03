@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.CodeWars.EightKyu.RemoveFirstandLastCharacter
 {
 	public class Solution
@@ -16,6 +18,18 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.RemoveFirstandLastCharacter
                 // return string starting at position 1 to length -2
                 // result => first and last characters are removed
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestRemoveFirstandLastCharacter()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(Solution.Remove_char("test"), "es")
+            };
+            return results;
         }
     }
 }

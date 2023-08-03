@@ -24,6 +24,8 @@ Constraints:
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.Remainderondividingby11
 {
     public class Solution
@@ -38,6 +40,19 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.Remainderondividingby11
                 rem = cur%11;
             }
             return rem;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestRemainderondividingby11()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.xmod11("1345"), 3),
+                ResultTester.CheckResult<int>(Solution.xmod11("231456786543567898765"), 1)
+            };
+            return results;
         }
     }
 }

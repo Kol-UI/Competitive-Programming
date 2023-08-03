@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.HackerRank.SimpleArraySum
 {
     public class Result
@@ -50,4 +52,17 @@ namespace CompetitiveProgramming.HackerRank.SimpleArraySum
     }
     */
 
+    public class Test
+    {
+        public static bool[] TestSimpleArraySum()
+        {
+            List<int> ar = new List<int> {1, 2, 3, 4, 10, 11};
+            int case1 = Result.simpleArraySum(ar);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(case1, 31)
+            };
+            return results;
+        }
+    }
 }

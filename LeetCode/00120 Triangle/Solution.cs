@@ -25,6 +25,8 @@ Output: -10
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.Triangle
 {
     public class Solution
@@ -60,6 +62,37 @@ namespace CompetitiveProgramming.LeetCode.Triangle
             }
 
             return dp.Min();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestTriangle()
+        {
+            int[][] case1_120 = new int[][]
+            {
+                new int[] { 2 },
+                new int[] { 3,4 },
+                new int[] { 6,5,7 },
+                new int[] { 4,1,8,3 }
+            };
+
+            int[][] case2_120 = new int[][]
+            {
+                new int[] { -10 }
+            };
+            int output1_120 = 11;
+            int output2_120 = -10;
+
+            int result1 = Solution.MinimumTotal(case1_120);
+            int result2 = Solution.MinimumTotal(case2_120);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1_120),
+                ResultTester.CheckResult<int>(result2, output2_120)
+            };
+            return results;
         }
     }
 }

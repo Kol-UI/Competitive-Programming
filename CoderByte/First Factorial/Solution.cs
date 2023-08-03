@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.CoderByte.FirstFactorial
 {
     public class Solution
@@ -18,6 +20,19 @@ namespace CompetitiveProgramming.CoderByte.FirstFactorial
             if (num == 1)
                 return 1;
             return num * FirstFactorial(--num);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFirstFactorial()
+        {
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.FirstFactorial(4), 24),
+                ResultTester.CheckResult<int>(Solution.FirstFactorial(8), 40320),
+            };
+            return results;
         }
     }
 }

@@ -32,6 +32,8 @@ Explanation: There is no way to make a positive profit, so we never buy the stoc
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BestTimetoBuyandSellStockII
 {
     public class Solution
@@ -56,6 +58,25 @@ namespace CompetitiveProgramming.LeetCode.BestTimetoBuyandSellStockII
             }
 
             return maxProfit;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestBestTimetoBuyandSellStockII()
+        {
+            int[] prices1_122 = {1,2,3,4,5};
+            int[] prices2_122 = {7,6,4,3,1};
+
+            int result1_122 = Solution.MaxProfit(prices1_122);
+            int result2_122 = Solution.MaxProfit(prices2_122);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_122, 4),
+                ResultTester.CheckResult<int>(result2_122, 0)
+            };
+            return results;
         }
     }
 }
