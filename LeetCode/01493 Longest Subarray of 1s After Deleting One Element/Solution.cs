@@ -28,6 +28,8 @@ Explanation: You must delete one element.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LongestSubarrayof1sAfterDeletingOneElement
 {
     public class Solution
@@ -64,6 +66,28 @@ namespace CompetitiveProgramming.LeetCode.LongestSubarrayof1sAfterDeletingOneEle
             }
 
             return maxLength;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1 = {1,1,0,1};
+            int[] nums2 = {0,1,1,1,0,1,1,0,1};
+            int[] nums3 = {1,1,1};
+
+            int result1 = Solution.LongestSubarray(nums1);
+            int result2 = Solution.LongestSubarray(nums2);
+            int result3 = Solution.LongestSubarray(nums3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 5),
+                ResultTester.CheckResult<int>(result3, 2)
+            };
+            return results;
         }
     }
 }

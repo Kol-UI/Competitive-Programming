@@ -40,6 +40,8 @@ There may be multiple edges between two nodes.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CheckingExistenceofEdgeLengthLimitedPaths
 {
     public class Solution
@@ -103,6 +105,54 @@ namespace CompetitiveProgramming.LeetCode.CheckingExistenceofEdgeLengthLimitedPa
             {
                 parent[find(x)] = parent[find(y)];
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int n1 = 3;
+            int[][] edgeList1 = new int[][]
+            {
+                new int[] { 0,1,2 },
+                new int[] { 1,2,4 },
+                new int[] { 2,0,8 },
+                new int[] { 1,0,16 }
+            };
+
+            int[][] queries1 = new int[][]
+            {
+                new int[] { 0, 1, 2 },
+                new int[] { 0, 2, 5 }
+            };
+
+            int n2 = 5;
+            int[][] edgeList2 = new int[][]
+            {
+                new int[] {0,1,10},
+                new int[] {1,2,5},
+                new int[] {2,3,9},
+                new int[] {3,4,13}
+            };
+
+            int[][] queries2 = new int[][]
+            {
+                new int[] {0,4,14},
+                new int[] {1,4,13}
+            };
+
+            bool[] result1 = Solution.DistanceLimitedPathsExist(n1, edgeList1, queries1);
+            bool[] expected1 = {false, true};
+            bool[] result2 = Solution.DistanceLimitedPathsExist(n2, edgeList2, queries2);
+            bool[] expected2 = {true, false};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool[]>(result1, expected1),
+                ResultTester.CheckResult<bool[]>(result2, expected2)
+            };
+            return results;
         }
     }
 }

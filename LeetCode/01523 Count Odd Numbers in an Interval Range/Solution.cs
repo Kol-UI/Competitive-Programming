@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CountOddNumbersinanIntervalRange
 {
@@ -34,6 +35,35 @@ namespace CompetitiveProgramming.LeetCode.CountOddNumbersinanIntervalRange
                     return (num + 1) / 2;
                 }
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int lowCase1_1523 = 3;
+            int highCase1_1523 = 7;
+            int Case1_1523_Result = Solution.CountOdds(lowCase1_1523, highCase1_1523);
+
+            // Case 2
+            int lowCase2_1523 = 8;
+            int highCase2_1523 = 10;
+            int Case2_1523_Result = Solution.CountOdds(lowCase2_1523, highCase2_1523);
+
+            // Case 3
+            int lowCase3_1523 = 21;
+            int highCase3_1523 = 22;
+            int Case3_1523_Result = Solution.CountOdds(lowCase3_1523, highCase3_1523);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_1523_Result, 3),
+                ResultTester.CheckResult<int>(Case2_1523_Result, 1),
+                ResultTester.CheckResult<int>(Case3_1523_Result, Case3_1523_Result)
+            };
+            return results;
         }
     }
 }

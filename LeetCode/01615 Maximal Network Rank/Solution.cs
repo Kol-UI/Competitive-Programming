@@ -33,6 +33,8 @@ Explanation: The network rank of 2 and 5 is 5. Notice that all the cities do not
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximalNetworkRank
 {
     public class Solution
@@ -70,6 +72,51 @@ namespace CompetitiveProgramming.LeetCode.MaximalNetworkRank
                 }
             }
             return max;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int n1 = 4;
+            int[][] roads1 = new int[][]
+            {
+                new int[] {0,1},
+                new int[] {0,3},
+                new int[] {1,2},
+                new int[] {1,3}
+            };
+            int n2 = 5;
+            int[][] roads2 = new int[][]
+            {
+                new int[] {0,1},
+                new int[] {0,3},
+                new int[] {1,2},
+                new int[] {1,3},
+                new int[] {2,3},
+                new int[] {2,4}
+            };
+            int n3 = 8;
+            int[][] roads3 = new int[][]
+            {
+                new int[] {0,1},
+                new int[] {1,2},
+                new int[] {2,3},
+                new int[] {2,4},
+                new int[] {5,6},
+                new int[] {5,7}
+            };
+            int result1 = Solution.MaximalNetworkRank(n1, roads1);
+            int result2 = Solution.MaximalNetworkRank(n2, roads2);
+            int result3 = Solution.MaximalNetworkRank(n3, roads3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 4),
+                ResultTester.CheckResult<int>(result2, 5),
+                ResultTester.CheckResult<int>(result3, 5)
+            };
+            return results;
         }
     }
 }

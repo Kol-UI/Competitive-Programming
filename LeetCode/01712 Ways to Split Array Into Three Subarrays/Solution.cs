@@ -32,6 +32,8 @@ Explanation: There is no good way to split nums.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.WaystoSplitArrayIntoThreeSubarrays
 {
     public class Solution
@@ -88,6 +90,28 @@ namespace CompetitiveProgramming.LeetCode.WaystoSplitArrayIntoThreeSubarrays
             }        
 
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1_1712 = {1,1,1};
+            int[] nums2_1712 = {1,2,2,2,5,0};
+            int[] nums3_1712 = {3,2,1};
+
+            int result1_1712 = Solution.WaysToSplit(nums1_1712);
+            int result2_1712 = Solution.WaysToSplit(nums2_1712);
+            int result3_1712 = Solution.WaysToSplit(nums3_1712);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_1712, 1),
+                ResultTester.CheckResult<int>(result2_1712, 3),
+                ResultTester.CheckResult<int>(result3_1712, 0)
+            };
+            return results;
         }
     }
 }

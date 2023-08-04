@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CountUnreachablePairsofNodesinanUndirectedGraph
 {
     /*
@@ -74,6 +76,41 @@ namespace CompetitiveProgramming.LeetCode.CountUnreachablePairsofNodesinanUndire
             }
 
             return v;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[][] edges2316Case1 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 0, 2 },
+                new int[] { 1, 2 }
+            };
+            int n2316Case1 = 3;
+            long Result2316Case1 = Solution.CountPairs(n2316Case1, edges2316Case1);
+
+            // Case 2
+            int[][] edges2316Case2 = new int[][]
+            {
+                new int[] { 0, 2 },
+                new int[] { 0, 5 },
+                new int[] { 2, 4 },
+                new int[] { 1, 6 },
+                new int[] { 5, 4 }
+            };
+            int n2316Case2 = 7;
+            long Result2316Case2 = Solution.CountPairs(n2316Case2, edges2316Case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(Result2316Case1, 0),
+                ResultTester.CheckResult<long>(Result2316Case2, 14),
+            };
+            return results;
         }
     }
 }

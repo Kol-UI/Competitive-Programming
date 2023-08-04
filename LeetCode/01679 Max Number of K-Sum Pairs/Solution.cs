@@ -28,6 +28,8 @@ There are no more pairs that sum up to 6, hence a total of 1 operation.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaxNumberofKSumPairs
 {
     public class Solution
@@ -54,6 +56,31 @@ namespace CompetitiveProgramming.LeetCode.MaxNumberofKSumPairs
             }
 
             return count;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] nums1 = {1,2,3,4};
+            int k1 = 5;
+            int result1 = Solution.MaxOperations(nums1, k1);
+
+            // Case 2
+            int[] nums2 = {3,1,3,4,3};
+            int k2 = 6;
+            int result2 = Solution.MaxOperations(nums2, k2);
+
+            int output1 = 2;
+            int output2 = 1;
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1),
+                ResultTester.CheckResult<int>(result2, output2)
+            };
+            return results;
         }
     }
 }

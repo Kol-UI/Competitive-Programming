@@ -37,6 +37,8 @@ Explanation: The optimal choice of operations is:
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximizeScoreAfterNOperations
 {
     public class Solution
@@ -98,6 +100,28 @@ namespace CompetitiveProgramming.LeetCode.MaximizeScoreAfterNOperations
                 n &= n - 1;
             }
             return count;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] case1_1799 = {1,2};
+            int[] case2_1799 = {3,4,6,8};
+            int[] case3_1799 = {1,2,3,4,5,6};
+
+            int result1 = Solution.MaxScore(case1_1799);
+            int result2 = Solution.MaxScore(case2_1799);
+            int result3 = Solution.MaxScore(case3_1799);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 11),
+                ResultTester.CheckResult<int>(result3, 14)
+            };
+            return results;
         }
     }
 }

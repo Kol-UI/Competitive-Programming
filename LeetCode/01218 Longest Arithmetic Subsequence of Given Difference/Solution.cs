@@ -27,6 +27,8 @@ Explanation: The longest arithmetic subsequence is [7,5,3,1].
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LongestArithmeticSubsequenceofGivenDifference
 {
     public class Solution
@@ -63,6 +65,26 @@ namespace CompetitiveProgramming.LeetCode.LongestArithmeticSubsequenceofGivenDif
             }
 
             return res;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestLongestArithmeticSubsequenceofGivenDifference()
+        {
+            int[] arr1 = {1,2,3,4}; int difference1 = 1;
+            int[] arr2 = {1,3,5,7}; int difference2 = 1;
+            int[] arr3 = {1,5,7,8,5,3,4,2,1}; int difference3 = -2;
+            int result1 = Solution.LongestSubsequence(arr1, difference1);
+            int result2 = Solution.LongestSubsequence(arr2, difference2);
+            int result3 = Solution.LongestSubsequence(arr3, difference3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 4),
+                ResultTester.CheckResult<int>(result2, 1),
+                ResultTester.CheckResult<int>(result3, 4)
+            };
+            return results;
         }
     }
 }

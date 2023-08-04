@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumScoreofaPathBetweenTwoCities
 {
     /*
@@ -72,6 +74,39 @@ namespace CompetitiveProgramming.LeetCode.MinimumScoreofaPathBetweenTwoCities
             BFS();
 
             return ans;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[][] roads2492Case1 = new int[][]
+            {
+                new int[] { 1, 2, 9 },
+                new int[] { 2, 3, 6 },
+                new int[] { 1, 4, 7 }
+            };
+            int n2492Case1 = 4;
+            int result2492Case1 = Solution.MinScore(n2492Case1, roads2492Case1);
+
+            // Case 2
+            int[][] roads2492Case2 = new int[][]
+            {
+                new int[] { 1, 2, 2 },
+                new int[] { 1, 3, 4 },
+                new int[] { 3, 4, 7 }
+            };
+            int n2492Case2 = 4;
+            int result2492Case2 = Solution.MinScore(n2492Case2, roads2492Case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result2492Case1, 6),
+                ResultTester.CheckResult<int>(result2492Case2, 2)
+            };
+            return results;
         }
     }
 }

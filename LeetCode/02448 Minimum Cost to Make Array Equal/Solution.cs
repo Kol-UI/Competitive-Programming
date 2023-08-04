@@ -31,6 +31,8 @@ Explanation: All the elements are already equal, so no operations are needed.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumCosttoMakeArrayEqual
 {
     public class Solution 
@@ -71,6 +73,23 @@ namespace CompetitiveProgramming.LeetCode.MinimumCosttoMakeArrayEqual
             }
             
             return sum;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1 = {1,3,5,2}; int[] cost1 = {2,3,1,14};
+            int[] nums2 = {2,2,2,2,2}; int[] cost2 = {4,2,8,1,3};
+            double result1 = Solution.MinCost(nums1, cost1);
+            double result2 = Solution.MinCost(nums2, cost2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<double>(result1, 8),
+                ResultTester.CheckResult<double>(result2, 0)
+            };
+            return results;
         }
     }
 }

@@ -32,6 +32,8 @@ Explanation: The product of all values in the array is -1, and signFunc(-1) = -1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SignoftheProductofanArray
 {
     public class Solution
@@ -67,6 +69,32 @@ namespace CompetitiveProgramming.LeetCode.SignoftheProductofanArray
             {
                 return 0;
             } 
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] Case1_1822 = {-1,-2,-3,-4,3,2,1};
+            int Result1_1822 = Solution.ArraySign(Case1_1822);
+
+            // Case 2
+            int[] Case2_1822 = {1,5,0,2,-3};
+            int Result2_1822 = Solution.ArraySign(Case2_1822);
+
+            // Case 3
+            int[] Case3_1822 = {-1,1,-1,1,-1};
+            int Result3_1822 = Solution.ArraySign(Case3_1822);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Result1_1822, 1),
+                ResultTester.CheckResult<int>(Result2_1822, 0),
+                ResultTester.CheckResult<int>(Result3_1822, -1)
+            };
+            return results;
         }
     }
 }

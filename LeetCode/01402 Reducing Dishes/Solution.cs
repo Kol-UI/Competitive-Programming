@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ReducingDishes
 {
     /*
@@ -37,6 +39,32 @@ namespace CompetitiveProgramming.LeetCode.ReducingDishes
                 total += sum;
             }
             return total;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestReducingDishes()
+        {
+            // Case 1
+            int[] satisfaction1402_1 = { -1 , -8 , 0 , 5 , -9 };
+            int result1402_1 = Solution.MaxSatisfaction(satisfaction1402_1);
+
+            // Case 2
+            int[] satisfaction1402_2 = { 4, 3, 2 };
+            int result1402_2 = Solution.MaxSatisfaction(satisfaction1402_2);
+
+            // Case 3
+            int[] satisfaction1402_3 = { -1, -4 , -5 };
+            int result1402_3 = Solution.MaxSatisfaction(satisfaction1402_3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1402_1, 14),
+                ResultTester.CheckResult<int>(result1402_2, 20),
+                ResultTester.CheckResult<int>(result1402_3, 0)
+            };
+            return results;
         }
     }
 }

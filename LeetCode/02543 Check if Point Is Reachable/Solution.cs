@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Numerics;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CheckifPointIsReachable
 {
@@ -46,6 +47,32 @@ namespace CompetitiveProgramming.LeetCode.CheckifPointIsReachable
             {
                 return false;
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int case1_targetX = 6;
+            int case1_targetY = 9;
+            bool Case1_2543_Result = Solution.IsReachable(case1_targetX, case1_targetY);
+
+            // Case 2
+            int case2_targetX = 4;
+            int case2_targetY = 7;
+            bool Case2_2543_Result = Solution.IsReachable(case2_targetX, case2_targetY);
+
+            bool output1 = false;
+            bool output2 = true;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(Case1_2543_Result, output1),
+                ResultTester.CheckResult<bool>(Case2_2543_Result, output2),
+            };
+            return results;
         }
     }
 }

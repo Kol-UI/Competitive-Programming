@@ -34,6 +34,8 @@ Explanation: One jump forward (0 -> 16) then one jump backward (16 -> 7) will ge
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumJumpstoReachHome
 {
     public class Point
@@ -88,6 +90,26 @@ namespace CompetitiveProgramming.LeetCode.MinimumJumpstoReachHome
                 jumps++;
             }
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] forbidden1 = {14,4,18,1,15}; int a1 = 3; int b1 = 15; int x1 = 9;
+            int[] forbidden2 = {8,3,16,6,12,20}; int a2 = 15; int b2 = 13; int x2 = 11;
+            int[] forbidden3 = {1,6,2,14,5,17,4}; int a3 = 16; int b3 = 9; int x3 = 7;
+            int result1 = Solution.MinimumJumps(forbidden1, a1, b1, x1);
+            int result2 = Solution.MinimumJumps(forbidden2, a2, b2, x2);
+            int result3 = Solution.MinimumJumps(forbidden3, a3, b3, x3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, -1),
+                ResultTester.CheckResult<int>(result3, 2)
+            };
+            return results;
         }
     }
 }

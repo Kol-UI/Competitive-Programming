@@ -30,6 +30,8 @@ Explanation: Although the events do not overlap, you can only attend 3 events. P
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximumNumberofEventsThatCanBeAttendedII
 {
     public class Solution
@@ -67,6 +69,45 @@ namespace CompetitiveProgramming.LeetCode.MaximumNumberofEventsThatCanBeAttended
                 return result;
             }
             return DP(0, k);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[][] events1 = new int[][]
+            {
+                new int[] { 1, 2, 4 },
+                new int[] { 3, 4, 3 },
+                new int[] { 2, 3, 1 }
+            };
+            int k1 = 2;
+            int[][] events2 = new int[][]
+            {
+                new int[] { 1, 2, 4 },
+                new int[] { 3, 4, 3 },
+                new int[] { 2, 3, 10 }
+            };
+            int k2 = 2;
+            int[][] events3 = new int[][]
+            {
+                new int[] { 1, 1, 1, },
+                new int[] { 2, 2, 2 },
+                new int[] { 3, 3, 3 },
+                new int[] { 4, 4, 4 }
+            };
+            int k3 = 3;
+            int result1 = Solution.MaxValue(events1, k1);
+            int result2 = Solution.MaxValue(events2, k2);
+            int result3 = Solution.MaxValue(events3, k3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 7),
+                ResultTester.CheckResult<int>(result2, 10),
+                ResultTester.CheckResult<int>(result3, 9)
+            };
+            return results;
         }
     }
 }

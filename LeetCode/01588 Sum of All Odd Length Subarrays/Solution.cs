@@ -36,6 +36,8 @@ Output: 66
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SumofAllOddLengthSubarrays
 {
     public class Solution
@@ -57,6 +59,32 @@ namespace CompetitiveProgramming.LeetCode.SumofAllOddLengthSubarrays
                 }
             }
             return res;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] arr1 = {1,4,2,5,3};
+            int[] arr2 = {1,2};
+            int[] arr3 = {10,11,12};
+
+            int result1 = Solution.SumOddLengthSubarrays(arr1);
+            int result2 = Solution.SumOddLengthSubarrays(arr2);
+            int result3 = Solution.SumOddLengthSubarrays(arr3);
+
+            int output1_1588 = 58;
+            int output2_1588 = 3;
+            int output3_1588 = 66;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1_1588),
+                ResultTester.CheckResult<int>(result2, output2_1588),
+                ResultTester.CheckResult<int>(result3, output3_1588)
+            };
+            return results;
         }
     }
 }

@@ -32,6 +32,8 @@ Explanation: In this case we can only perform reverse operations of size 1. So t
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumReverseOperations
 {
     public class Solution
@@ -79,6 +81,46 @@ namespace CompetitiveProgramming.LeetCode.MinimumReverseOperations
                 result[pair.Key] = pair.Value;
             }
             return result;
+        }
+    }
+
+
+    public class Test
+    {
+        public static bool[] TestCase()
+        {
+            // Case 1
+            int n_2612_1 = 4;
+            int p_2612_1 = 0;
+            int[] banned_2612_1 = {1,2};
+            int k_2612_1 = 4;
+            int[] result2612_1 = Solution.MinReverseOperations(n_2612_1, p_2612_1, banned_2612_1, k_2612_1);
+
+            // Case 2
+            int n_2612_2 = 5;
+            int p_2612_2 = 0;
+            int[] banned_2612_2 = {2,4};
+            int k_2612_2 = 3;
+            int[] result2612_2 = Solution.MinReverseOperations(n_2612_2, p_2612_2, banned_2612_2, k_2612_2);
+
+            // Case 3
+            int n_2612_3 = 4;
+            int p_2612_3 = 2;
+            int[] banned_2612_3 = {0,1,3};
+            int k_2612_3 = 1;
+            int[] result2612_3 = Solution.MinReverseOperations(n_2612_3, p_2612_3, banned_2612_3, k_2612_3);
+
+            int[] output1_2612 = {0,-1,-1,1};
+            int[] output2_2612 = {0,-1,-1,-1,-1};
+            int[] output3_2612 = {-1,-1,0,-1};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result2612_1, output1_2612),
+                ResultTester.CheckResult<int[]>(result2612_2, output2_2612),
+                ResultTester.CheckResult<int[]>(result2612_3, output3_2612)
+            };
+            return results;
         }
     }
 }

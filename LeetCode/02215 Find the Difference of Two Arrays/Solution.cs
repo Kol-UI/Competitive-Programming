@@ -28,6 +28,8 @@ Every integer in nums2 is present in nums1. Therefore, answer[1] = [].
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindtheDifferenceofTwoArrays
 {
     public class Solution
@@ -41,6 +43,39 @@ namespace CompetitiveProgramming.LeetCode.FindtheDifferenceofTwoArrays
                 h1.Where(x => !h2.Contains(x)).ToList<int>(), 
                 h2.Where(x => !h1.Contains(x)).ToList<int>() 
             };
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1_Case1 = {1,2,3};
+            int[] nums2_Case1 = {2,4,6};
+
+            int[] nums1_Case2 = {1,2,3,3};
+            int[] nums2_Case2 = {1,1,2,2};
+
+            IList<IList<int>> listOfLists1 = Solution.FindDifference(nums1_Case1, nums2_Case1);
+            IList<IList<int>> listOfLists2 = Solution.FindDifference(nums1_Case2, nums2_Case2);
+
+            IList<IList<int>> output1_2215 = new List<IList<int>>();
+            IList<IList<int>> output2_2215 = new List<IList<int>>();
+            IList<int> innerList1 = new List<int> { 1, 3 };
+            IList<int> innerList2 = new List<int> { 4, 6 };
+            output1_2215.Add(innerList1);
+            output1_2215.Add(innerList2);
+            IList<int> innerList3 = new List<int> { 3 };
+            IList<int> innerList4 = new List<int> {  };
+            output2_2215.Add(innerList3);
+            output2_2215.Add(innerList4);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<IList<int>>>(listOfLists1, output1_2215),
+                ResultTester.CheckResult<IList<IList<int>>>(listOfLists2, output2_2215)
+            };
+            return results;
         }
     }
 }

@@ -23,6 +23,8 @@ Explanation: There are 3 equal row and column pairs:
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.EqualRowandColumnPairs
 {
     public class Solution
@@ -55,6 +57,37 @@ namespace CompetitiveProgramming.LeetCode.EqualRowandColumnPairs
             }
 
             return res;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[][] case1 = new int[][]
+            {
+                new int[] { 3, 2, 1 },
+                new int[] { 1, 7, 6 },
+                new int[] { 2, 7, 7 }
+            };
+
+            int[][] case2 = new int[][]
+            {
+                new int[] { 3,1,2,2 },
+                new int[] { 1,4,4,5 },
+                new int[] { 2,4,2,2 },
+                new int[] { 2,4,2,2 }
+            };
+
+            int result1 = Solution.EqualPairs(case1);
+            int result2 = Solution.EqualPairs(case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 3)
+            };
+            return results;
         }
     }
 }

@@ -49,6 +49,8 @@ After that, it will rain over lakes [1,2]. It's easy to prove that no matter whi
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.AvoidFloodinTheCity
 {
     public class Solution
@@ -87,6 +89,25 @@ namespace CompetitiveProgramming.LeetCode.AvoidFloodinTheCity
             }
             
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] rains1 = {1,2,3,4};
+            int[] rains2 = {1,2,0,0,2,1};
+            int[] expected1 = {-1,-1,-1,-1};
+            int[] expected2 = {-1,-1,2,1,-1,-1};
+            int[] result1 = Solution.AvoidFlood(rains1);
+            int[] result2 = Solution.AvoidFlood(rains2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2)
+            };
+            return results;
         }
     }
 }

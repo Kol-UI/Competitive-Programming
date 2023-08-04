@@ -28,6 +28,8 @@ Input: grid = [[1,1,1,1,1,1,1],
 Output: 2
 */
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NumberofClosedIslands
 {
     public class Solution
@@ -55,6 +57,53 @@ namespace CompetitiveProgramming.LeetCode.NumberofClosedIslands
             bool left = DFS(grid, i, j - 1);
             bool right = DFS(grid, i, j + 1);
             return up && down && left && right;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestNumberofClosedIslands()
+        {
+            // Case 1
+            int[][] Grid1254_1 = new int[][]
+            {
+                new int[]{1,1,1,1,1,1,1,0},
+                new int[]{1,0,0,0,0,1,1,0},
+                new int[]{1,0,1,0,1,1,1,0},
+                new int[]{1,0,0,0,0,1,0,1},
+                new int[]{1,1,1,1,1,1,1,0}
+            };
+            int result1254_1 = Solution.ClosedIsland(Grid1254_1);
+
+            // Case 2
+            int[][] Grid1254_2 = new int[][]
+            {
+                new int[]{1,1,1,1,1,1,1},
+                new int[]{1,0,0,0,0,0,1},
+                new int[]{1,0,1,1,1,0,1},
+                new int[]{1,0,1,0,1,0,1},
+                new int[]{1,0,1,1,1,0,1},
+                new int[]{1,0,0,0,0,0,1},
+                new int[]{1,1,1,1,1,1,1}
+            };
+            int result1254_2 = Solution.ClosedIsland(Grid1254_2);
+
+            // Case 3
+            int[][] Grid1254_3 = new int[][]
+            {
+                new int[]{0,0,1,0,0},
+                new int[]{0,1,0,1,0},
+                new int[]{0,1,1,1,0}
+            };
+            int result1254_3 = Solution.ClosedIsland(Grid1254_3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1254_1, 2),
+                ResultTester.CheckResult<int>(result1254_2, 2),
+                ResultTester.CheckResult<int>(result1254_3, 1)
+            };
+            return results;
         }
     }
 }

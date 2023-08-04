@@ -21,6 +21,8 @@ Explanation: The altitudes are [0,-4,-7,-9,-10,-6,-3,-1]. The highest is 0.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindtheHighestAltitude
 {
     public class Solution
@@ -37,6 +39,25 @@ namespace CompetitiveProgramming.LeetCode.FindtheHighestAltitude
             }
             
             return highestAltitude; 
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] gain1 = {-5,1,5,0,-7};
+            int[] gain2 = {-4,-3,-2,-1,4,3,2};
+
+            int result1 = Solution.LargestAltitude(gain1);
+            int result2 = Solution.LargestAltitude(gain2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 0)
+            };
+            return results;
         }
     }
 }

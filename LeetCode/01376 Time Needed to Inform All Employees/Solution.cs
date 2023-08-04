@@ -29,6 +29,8 @@ The tree structure of the employees in the company is shown.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.TimeNeededtoInformAllEmployees
 {
     public class Solution
@@ -62,6 +64,32 @@ namespace CompetitiveProgramming.LeetCode.TimeNeededtoInformAllEmployees
                 cache[i] = 0;
             
             return cache[i];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestTimeNeededtoInformAllEmployees()
+        {
+            int n1 = 1;
+            int headID1 = 0;
+            int[] manager1 = {-1};
+            int[] informTime1 = {0};
+
+            int n2 = 6;
+            int headID2 = 2;
+            int[] manager2 = {2,2,-1,2,2,2};
+            int[] informTime2 = {0,0,1,0,0,0};
+
+            int result1 = Solution.NumOfMinutes(n1, headID1, manager1, informTime1);
+            int result2 = Solution.NumOfMinutes(n2, headID2, manager2, informTime2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 0),
+                ResultTester.CheckResult<int>(result2, 1)
+            };
+            return results;
         }
     }
 }

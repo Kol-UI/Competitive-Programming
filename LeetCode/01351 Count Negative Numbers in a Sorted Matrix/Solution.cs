@@ -19,6 +19,8 @@ Output: 0
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CountNegativeNumbersinaSortedMatrix
 {
     public class Solution
@@ -31,6 +33,37 @@ namespace CompetitiveProgramming.LeetCode.CountNegativeNumbersinaSortedMatrix
                 count += grid[i].Count(n => n < 0);
             }
             return count;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCountNegativeNumbersinaSortedMatrix()
+        {
+            // Case 1
+            int[][] grid1_1351 = new int[][]
+            {
+                new int[] { 4,3,2,-1 },
+                new int[] { 3,2,1,-1 },
+                new int[] { 1,1,-1,-2 },
+                new int[] { -1,-1,-2,-3 }
+            };
+            int result1_1351 = Solution.CountNegatives(grid1_1351);
+
+            // Case 2
+            int[][] grid2_1351 = new int[][]
+            {
+                new int[] { 3,2 },
+                new int[] { 1,0 }
+            };
+            int result2_1351 = Solution.CountNegatives(grid2_1351);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_1351, 8),
+                ResultTester.CheckResult<int>(result2_1351, 0)
+            };
+            return results;
         }
     }
 }

@@ -28,6 +28,8 @@ Output: 3
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximumValueataGivenIndexinaBoundedArray
 {
     public class Solution
@@ -75,6 +77,32 @@ namespace CompetitiveProgramming.LeetCode.MaximumValueataGivenIndexinaBoundedArr
                 }
             }
             return (int)res;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int n1 = 4;
+            int index1 = 2;
+            int maxSum1 = 6;
+            int output1_1802 = 2;
+
+            int n2 = 6;
+            int index2 = 1;
+            int maxSum2 = 10;
+            int output2_1802 = 3;
+
+            int result1 = Solution.MaxValue(n1, index1, maxSum1);
+            int result2 = Solution.MaxValue(n2, index2, maxSum2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1_1802),
+                ResultTester.CheckResult<int>(result2, output2_1802)
+            };
+            return results;
         }
     }
 }

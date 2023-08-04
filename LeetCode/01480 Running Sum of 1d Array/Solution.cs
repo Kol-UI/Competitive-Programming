@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RunningSumof1dArray
 {
@@ -21,6 +22,21 @@ namespace CompetitiveProgramming.LeetCode.RunningSumof1dArray
             return nums;
         }
 
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums = {1,2,3,4};
+            int[] result1 = Solution.RunningSum(nums);
+            int[] expected1 = {1,3,6,10};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1)
+            };
+            return results;
+        }
     }
 }
 

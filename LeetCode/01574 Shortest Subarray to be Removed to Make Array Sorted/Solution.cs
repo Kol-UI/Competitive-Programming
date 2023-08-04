@@ -30,6 +30,8 @@ Explanation: The array is already non-decreasing. We do not need to remove any e
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ShortestSubarraytobeRemovedtoMakeArraySorted
 {
     public class Solution
@@ -60,6 +62,26 @@ namespace CompetitiveProgramming.LeetCode.ShortestSubarraytobeRemovedtoMakeArray
                 result = Math.Min(result, r-l-1);
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] arr1 = {1,2,3,10,4,2,3,5};
+            int[] arr2 = {5,4,3,2,1};
+            int[] arr3 = {1,2,3};
+            int result1 = Solution.FindLengthOfShortestSubarray(arr1);
+            int result2 = Solution.FindLengthOfShortestSubarray(arr2);
+            int result3 = Solution.FindLengthOfShortestSubarray(arr3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 4),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+            return results;
         }
     }
 }

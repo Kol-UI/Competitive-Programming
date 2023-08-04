@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BestTeamWithNoConflicts
 {
@@ -60,6 +61,26 @@ namespace CompetitiveProgramming.LeetCode.BestTeamWithNoConflicts
                 max = Math.Max(dp[i], max);
             }
             return max; 
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] scores1 = {1,3,5,10,15}; int[] ages1 = {1,2,3,4,5};
+            int[] scores2 = {4,5,6,5}; int[] ages2 = {2,1,2,1};
+            int[] scores3 = {1,2,3,5}; int[] ages3 = {8,9,10,1};
+            int result1 = Solution.BestTeamScore(scores1, ages1);
+            int result2 = Solution.BestTeamScore(scores1, ages1);
+            int result3 = Solution.BestTeamScore(scores1, ages1);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, result1),
+                ResultTester.CheckResult<int>(result2, result2),
+                ResultTester.CheckResult<int>(result3, result3)
+            };
+            return results;
         }
     }
 }

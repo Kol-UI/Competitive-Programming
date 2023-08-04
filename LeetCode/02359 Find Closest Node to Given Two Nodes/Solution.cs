@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindClosestNodetoGivenTwoNodes
 {
 	public class Solution
@@ -50,6 +52,31 @@ namespace CompetitiveProgramming.LeetCode.FindClosestNodetoGivenTwoNodes
             return answer;
         }
 
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] edgesCase1_2359 = { 2, 2, 3, -1 };
+            int node1Case1_2359 = 0;
+            int node2Case1_2359 = 1;
+            int Case1_2359_Result = Solution.ClosestMeetingNode(edgesCase1_2359, node1Case1_2359, node2Case1_2359);
+
+            // Case 2
+            int[] edgesCase2_2359 = { 1, 2, -1 };
+            int node1Case2_2359 = 0;
+            int node2Case2_2359 = 2;
+            int Case2_2359_Result = Solution.ClosestMeetingNode(edgesCase2_2359, node1Case2_2359, node2Case2_2359);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_2359_Result, 2),
+                ResultTester.CheckResult<int>(Case2_2359_Result, 2)
+            };
+            return results;
+        }
     }
 }
 

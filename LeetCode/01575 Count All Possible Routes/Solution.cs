@@ -40,6 +40,8 @@ Explanation: It is impossible to get from 0 to 2 using only 3 units of fuel sinc
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CountAllPossibleRoutes
 {
     public class Solution
@@ -95,6 +97,26 @@ namespace CompetitiveProgramming.LeetCode.CountAllPossibleRoutes
             }
 
             return _dp[i, fuel] = ans;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] locations1 = {2,3,6,8,4}; int start1 = 1; int finish1 = 3; int fuel1 = 5;
+            int[] locations2 = {4,3,1}; int start2 = 1; int finish2 = 0; int fuel2 = 6;
+            int[] locations3 = {5,2,1}; int start3 = 0; int finish3 = 2; int fuel3 = 3;
+            int result1 = Solution.CountRoutes(locations1, start1, finish1, fuel1);
+            int result2 = Solution.CountRoutes(locations2, start2, finish2, fuel2);
+            int result3 = Solution.CountRoutes(locations3, start3, finish3, fuel3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 4),
+                ResultTester.CheckResult<int>(result2, 5),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+            return results;
         }
     }
 }

@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NumberofWaysofCuttingaPizza
 {
     public class Solution
@@ -93,6 +95,35 @@ namespace CompetitiveProgramming.LeetCode.NumberofWaysofCuttingaPizza
         private static int GetCnt(string[] pizza, int x, int y, int PizzaLength, int PizzaSlice)
         {
             return presum[PizzaLength,PizzaSlice] + presum[x,y] - presum[PizzaLength,y] - presum[x,PizzaSlice];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            string[] pizza1444_1 = { "A..","AAA","..." };
+            int k1444_1 = 3;
+            int result1444_1 = Solution.Ways(pizza1444_1, k1444_1);
+
+            // Case 2
+            string[] pizza1444_2 = { "A..","AA.","..." };
+            int k1444_2 = 3;
+            int result1444_2 = Solution.Ways(pizza1444_2, k1444_2);
+
+            // Case 3
+            string[] pizza1444_3 = { "A..","A..","..." };
+            int k1444_3 = 1;
+            int result1444_3 = Solution.Ways(pizza1444_3, k1444_3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1444_1, 3),
+                ResultTester.CheckResult<int>(result1444_2, 1),
+                ResultTester.CheckResult<int>(result1444_3, 1)
+            };
+            return results;
         }
     }
 }

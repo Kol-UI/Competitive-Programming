@@ -23,6 +23,8 @@ Average salary excluding minimum and maximum salary is (2000) / 1 = 2000
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.AverageSalaryExcludingtheMinimumandMaximumSalary
 {
     public class Solution
@@ -38,5 +40,26 @@ namespace CompetitiveProgramming.LeetCode.AverageSalaryExcludingtheMinimumandMax
         The Skip method skips the first element of the remaining array, effectively excluding the smallest element.
         The Average method calculates the average of the remaining elements in the array.
         */
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] salary1_1491 = {4000,3000,1000,2000};
+            double result1_1491 = Solution.Average(salary1_1491);
+
+            // Case 2
+            int[] salary2_1491 = {1000,2000,3000};
+            double result2_1491 = Solution.Average(salary2_1491);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<double>(result1_1491, 2500.00000),
+                ResultTester.CheckResult<double>(result2_1491, 2000.00000),
+            };
+            return results;
+        }
     }
 }

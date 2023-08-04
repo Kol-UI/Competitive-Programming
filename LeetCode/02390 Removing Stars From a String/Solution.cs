@@ -32,6 +32,8 @@ Explanation: The entire string is removed, so we return an empty string.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.RemovingStarsFromaString
 {
     public class Solution
@@ -51,6 +53,25 @@ namespace CompetitiveProgramming.LeetCode.RemovingStarsFromaString
                 }
             }
             return string.Concat(stack.Reverse());
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            string output2390_1 = Solution.RemoveStars("leet**cod*e");
+
+            // Case 2
+            string output2390_2 = Solution.RemoveStars("erase*****");
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(output2390_1, "lecoe"),
+                ResultTester.CheckResult<string>(output2390_2, "")
+            };
+            return results;
         }
     }
 }

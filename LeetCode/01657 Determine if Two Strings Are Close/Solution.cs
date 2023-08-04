@@ -37,6 +37,8 @@ Apply Operation 2: "baaccc" -> "abbccc"
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.DetermineifTwoStringsAreClose
 {
     public class Solution
@@ -51,5 +53,30 @@ namespace CompetitiveProgramming.LeetCode.DetermineifTwoStringsAreClose
             return Enumerable.SequenceEqual(chars1.Distinct().OrderBy(c => c), chars2.Distinct().OrderBy(c => c)) && Enumerable.SequenceEqual(CharFrequencies(chars1), CharFrequencies(chars2));}
 
         private static IEnumerable<int> CharFrequencies(char[] chars) => chars.GroupBy(c => c, c => c, (c, cc) => cc.Count()).OrderBy(e => e);
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            string word1_1 = "abc";
+            string word2_1 = "bca";
+            string word1_2 = "a";
+            string word2_2 = "aa";
+            string word1_3 = "cabbba";
+            string word2_3 = "abbccc";
+
+            bool result1 = Solution.CloseStrings(word1_1, word2_1);
+            bool result2 = Solution.CloseStrings(word1_2, word2_2);
+            bool result3 = Solution.CloseStrings(word1_3, word2_3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false),
+                ResultTester.CheckResult<bool>(result3, true)
+            };
+            return results;
+        }
     }
 }

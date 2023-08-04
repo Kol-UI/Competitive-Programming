@@ -34,6 +34,8 @@ The maximum distance is 2 with pair (2,4).
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximumDistanceBetweenaPairofValues
 {
     public class Solution
@@ -59,6 +61,37 @@ namespace CompetitiveProgramming.LeetCode.MaximumDistanceBetweenaPairofValues
             }
 
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1_1855_1 = {55,30,5,4,2};
+            int[] nums2_1855_1 = {100,20,10,10,5};
+
+            int[] nums1_1855_2 = {2,2,2};
+            int[] nums2_1855_2 = {10,10,1};
+
+            int[] nums1_1855_3 = {30,29,19,5};
+            int[] nums2_1855_3 = {25,25,25,25,25};
+
+            int output1_1855 = 2;
+            int output2_1855 = 1;
+            int output3_1855 = 2;
+
+            int result1 = Solution.MaxDistance(nums1_1855_1, nums2_1855_1);
+            int result2 = Solution.MaxDistance(nums1_1855_2, nums2_1855_2);
+            int result3 = Solution.MaxDistance(nums1_1855_3, nums2_1855_3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1_1855),
+                ResultTester.CheckResult<int>(result2, output2_1855),
+                ResultTester.CheckResult<int>(result3, output3_1855)
+            };
+            return results;
         }
     }
 }

@@ -31,6 +31,8 @@ Explanation: The longest subarray with positive product is [-1,-2] or [-2,-3].
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximumLengthofSubarrayWithPositiveProduct
 {
     public class Solution
@@ -75,6 +77,28 @@ namespace CompetitiveProgramming.LeetCode.MaximumLengthofSubarrayWithPositivePro
             }
             
             return cm > 0 ? cm : 0;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1_1567 = {1,-2,-3,4};
+            int[] nums2_1567 = {0,1,-2,-3,-4};
+            int[] nums3_1567 = {-1,-2,-3,0,1};
+
+            int result1_1567 = Solution.GetMaxLen(nums1_1567);
+            int result2_1567 = Solution.GetMaxLen(nums2_1567);
+            int result3_1567 = Solution.GetMaxLen(nums3_1567);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_1567, 4),
+                ResultTester.CheckResult<int>(result2_1567, 3),
+                ResultTester.CheckResult<int>(result3_1567, 2)
+            };
+            return results;
         }
     }
 }

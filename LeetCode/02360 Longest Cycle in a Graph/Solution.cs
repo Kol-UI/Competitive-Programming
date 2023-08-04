@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LongestCycleinaGraph
 {
     /*
@@ -59,6 +61,27 @@ namespace CompetitiveProgramming.LeetCode.LongestCycleinaGraph
                 }
             }
             return max;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] edges2360Case1 = { 3, 3, 4, 2, 3 };
+            int result2360Case1 = Solution.LongestCycle(edges2360Case1);
+
+            // Case 2
+            int[] edges2360Case2 = { 2, -1, 3, 1 };
+            int result2360Case2 = Solution.LongestCycle(edges2360Case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result2360Case1, 3),
+                ResultTester.CheckResult<int>(result2360Case2, -1),
+            };
+            return results;
         }
     }
 }

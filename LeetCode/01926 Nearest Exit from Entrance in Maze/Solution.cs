@@ -39,6 +39,8 @@ Explanation: There are no exits in this maze.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NearestExitfromEntranceinMaze
 {
     public class Solution
@@ -99,6 +101,48 @@ namespace CompetitiveProgramming.LeetCode.NearestExitfromEntranceinMaze
             }
 
             return res == Int32.MaxValue ? -1: res;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            char[][] maze1 = new char[][]
+            {
+                new char[] { '+', '+', '.', '+' },
+                new char[] { '.', '.', '.', '+' },
+                new char[] { '+', '+', '+', '.' }
+            };
+
+            int[] entrance1 = new int[] { 1, 2 };
+
+            char[][] maze2 = new char[][]
+            {
+                new char[] { '+', '+', '+' },
+                new char[] { '.', '.', '.' },
+                new char[] { '+', '+', '+' }
+            };
+
+            int[] entrance2 = new int[] { 1, 0 };
+
+            char[][] maze3 = new char[][]
+            {
+                new char[] { '.', '+' }
+            };
+
+            int[] entrance3 = new int[] { 0, 0 };
+
+            int result1 = Solution.NearestExit(maze1, entrance1);
+            int result2 = Solution.NearestExit(maze2, entrance2);
+            int result3 = Solution.NearestExit(maze3, entrance3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(result3, -1)
+            };
+            return results;
         }
     }
 }

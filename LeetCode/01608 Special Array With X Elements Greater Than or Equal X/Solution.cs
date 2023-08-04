@@ -33,6 +33,8 @@ Explanation: There are 3 values that are greater than or equal to 3.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SpecialArrayWithXElementsGreaterThanorEqualX
 {
     // Binary Search
@@ -75,6 +77,28 @@ namespace CompetitiveProgramming.LeetCode.SpecialArrayWithXElementsGreaterThanor
             }
 
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1 = {3,5};
+            int[] nums2 = {0,0};
+            int[] nums3 = {0,4,3,0,4};
+
+            int result1 = Solution.SpecialArray(nums1);
+            int result2 = Solution.SpecialArray(nums2);
+            int result3 = Solution.SpecialArray(nums3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, -1),
+                ResultTester.CheckResult<int>(result3, 3)
+            };
+            return results;
         }
     }
 }

@@ -25,6 +25,8 @@ Explanation: The only word "havana" will be always suggested while typing the se
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SearchSuggestionsSystem
 {
     public class Solution
@@ -45,6 +47,41 @@ namespace CompetitiveProgramming.LeetCode.SearchSuggestionsSystem
                 );
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSearchSuggestionsSystem()
+        {
+            string[] products1 = {"mobile","mouse","moneypot","monitor","mousepad"}; string searchWord1 = "mouse";
+            string[] products2 = {"havana"}; string searchWord2 = "havana";
+            IList<IList<string>> result1 = LeetCode.SearchSuggestionsSystem.Solution.SuggestedProducts(products1, searchWord1);
+            IList<IList<string>> result2 = LeetCode.SearchSuggestionsSystem.Solution.SuggestedProducts(products2, searchWord2);
+            IList<IList<string>> input1 = new List<IList<string>>
+            {
+                new List<string> { "mobile", "moneypot", "monitor" },
+                new List<string> { "mobile", "moneypot", "monitor" },
+                new List<string> { "mouse", "mousepad" },
+                new List<string> { "mouse", "mousepad" },
+                new List<string> { "mouse", "mousepad" }
+            };
+            IList<IList<string>> input2 = new List<IList<string>>
+            {
+                new List<string> { "havana" },
+                new List<string> { "havana" },
+                new List<string> { "havana" },
+                new List<string> { "havana" },
+                new List<string> { "havana" },
+                new List<string> { "havana" }
+            };
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<IList<string>>>(result1, input1),
+                ResultTester.CheckResult<IList<IList<string>>>(result2, input2),
+            };
+            return results;
         }
     }
 }

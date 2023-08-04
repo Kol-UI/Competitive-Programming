@@ -28,6 +28,8 @@ Explanation: "lee", "eet" and "ode" contain 2 vowels.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximumNumberofVowelsinaSubstringofGivenLength
 {
     public class Solution
@@ -59,6 +61,24 @@ namespace CompetitiveProgramming.LeetCode.MaximumNumberofVowelsinaSubstringofGiv
         public static bool isVowel(char c)
         {
             return (c == 'a') || (c == 'e') || (c == 'i') || (c == 'o') || (c == 'u');
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int result1 = Solution.MaxVowels("abciiidef", 3);
+            int result2 = Solution.MaxVowels("aeiou", 2);
+            int result3 = Solution.MaxVowels("leetcode", 3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(result3, 2)
+            };
+            return results;
         }
     }
 }

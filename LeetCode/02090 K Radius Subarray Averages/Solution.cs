@@ -41,6 +41,8 @@ Explanation:
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.KRadiusSubarrayAverages
 {
     public class Solution
@@ -75,6 +77,33 @@ namespace CompetitiveProgramming.LeetCode.KRadiusSubarrayAverages
                 sum += (ulong)n;
             }
             return sum;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1 = {7,4,3,9,1,8,5,2,6};
+            int k1 = 3;
+            int[] nums2 = {100000};
+            int k2 = 0;
+            int[] nums3 = {8};
+            int k3 = 100000;
+
+            int[] result1 = Solution.GetAverages(nums1, k1);
+            int[] result2 = Solution.GetAverages(nums2, k2);
+            int[] result3 = Solution.GetAverages(nums3, k3);
+            int[] case1 = {-1,-1,-1,5,4,4,-1,-1,-1};
+            int[] case2 = {100000};
+            int[] case3 = {-1};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, case1),
+                ResultTester.CheckResult<int[]>(result2, case2),
+                ResultTester.CheckResult<int[]>(result3, case3)
+            };
+            return results;
         }
     }
 }

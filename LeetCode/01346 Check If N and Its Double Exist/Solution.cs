@@ -1,6 +1,8 @@
 // Check If N and Its Double Exist
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CheckIfNandItsDoubleExist
 {
     /*
@@ -35,6 +37,27 @@ namespace CompetitiveProgramming.LeetCode.CheckIfNandItsDoubleExist
                 hashSet.Add(n);
             }
             return false;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCheckIfNandItsDoubleExist()
+        {
+            // Case 1
+            int[] arr2346_1 = {10,2,5,3};
+            bool result2346_1 = Solution.CheckIfExist(arr2346_1);
+            
+            // Case 2
+            int[] arr2346_2 = {3,1,7,11};
+            bool result2346_2 = Solution.CheckIfExist(arr2346_2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result2346_1, true),
+                ResultTester.CheckResult<bool>(result2346_2, false)
+            };
+            return results;
         }
     }
 }

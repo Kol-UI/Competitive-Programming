@@ -45,6 +45,8 @@ Explanation: The longest valid obstacle course at each position is:
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindtheLongestValidObstacleCourseatEachPosition
 {
     public class Solution
@@ -90,6 +92,30 @@ namespace CompetitiveProgramming.LeetCode.FindtheLongestValidObstacleCourseatEac
         {
             if (index == list.Count) list.Add(x);
             else list[index] = x;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] obstacles1 = {1,2,3,2};
+            int[] obstacles2 = {2,2,1};
+            int[] obstacles3 = {3,1,5,6,4,2};
+            int[] result1 = Solution.LongestObstacleCourseAtEachPosition(obstacles1);
+            int[] result2 = Solution.LongestObstacleCourseAtEachPosition(obstacles2);
+            int[] result3 = Solution.LongestObstacleCourseAtEachPosition(obstacles3);
+            int[] output1 = {1,2,3,3};
+            int[] output2 = {1,2,1};
+            int[] output3 = {1,1,2,3,2,2};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, output1),
+                ResultTester.CheckResult<int[]>(result2, output2),
+                ResultTester.CheckResult<int[]>(result3, output3)
+            };
+            return results;
         }
     }
 }

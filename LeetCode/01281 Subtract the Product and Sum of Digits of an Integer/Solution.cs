@@ -24,6 +24,8 @@ Result = 32 - 11 = 21
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SubtracttheProductandSumofDigitsofanInteger
 {
     public class Solution
@@ -45,6 +47,25 @@ namespace CompetitiveProgramming.LeetCode.SubtracttheProductandSumofDigitsofanIn
 
 
             return product - sum;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSubtracttheProductandSumofDigitsofanInteger()
+        {
+            int case1 = 234;
+            int case2 = 4421;
+
+            int result1 = Solution.SubtractProductAndSum(case1);
+            int result2 = Solution.SubtractProductAndSum(case2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 15),
+                ResultTester.CheckResult<int>(result2, 21)
+            };
+            return results;
         }
     }
 }

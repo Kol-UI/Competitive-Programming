@@ -30,6 +30,8 @@ Explanation: The good strings are "00", "11", "000", "110", and "011".
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CountWaysToBuildGoodStrings
 {
     public class Solution
@@ -52,6 +54,33 @@ namespace CompetitiveProgramming.LeetCode.CountWaysToBuildGoodStrings
             dp[length] = (temp + Helper(length + zero, low, high, zero, one) + Helper(length + one, low, high, zero, one)) % mod;
 
             return dp[length];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int low1 = 3;
+            int high1 = 3;
+            int zero1 = 1;
+            int one1 = 1;
+
+            int result1 = Solution.CountGoodStrings(low1, high1, zero1, one1);
+
+            int low2 = 2;
+            int high2 = 3;
+            int zero2 = 1;
+            int one2 = 2;
+
+            int result2 = Solution.CountGoodStrings(low2, high2, zero2, one2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 8),
+                ResultTester.CheckResult<int>(result2, 8)
+            };
+            return results;
         }
     }
 }

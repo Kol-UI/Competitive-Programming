@@ -32,6 +32,8 @@ Input: nums = [-12,-9,-3,-12,-6,15,20,-25,-20,-15,-10], l = [0,1,6,4,8,7], r = [
 Output: [false,true,false,false,true,true]
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ArithmeticSubarrays
 {
     public class Solution
@@ -68,6 +70,29 @@ namespace CompetitiveProgramming.LeetCode.ArithmeticSubarrays
             }
         
             return true;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1 = {4,6,5,9,3,7};
+            int[] l1 = {0,0,2};
+            int[] r1 = {2,3,5};
+            int[] nums2 = {-12,-9,-3,-12,-6,15,20,-25,-20,-15,-10};
+            int[] l2 = {0,1,6,4,8,7};
+            int[] r2 = {4,4,9,7,9,10};
+            IList<bool> result1 = Solution.CheckArithmeticSubarrays(nums1, l1, r1);
+            IList<bool> result2 = Solution.CheckArithmeticSubarrays(nums2, l2, r2);
+            IList<bool> expected1 = new List<bool> { true, false, true };
+            IList<bool> expected2 = new List<bool> { false,true,false,false,true,true };
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<bool>>(result1, expected1),
+                ResultTester.CheckResult<IList<bool>>(result2, expected2)
+            };
+            return results;
         }
     }
 }

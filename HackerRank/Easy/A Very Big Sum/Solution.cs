@@ -32,6 +32,8 @@ Output
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.HackerRank.AVeryBigSum
 {
     public class Result
@@ -76,4 +78,20 @@ namespace CompetitiveProgramming.HackerRank.AVeryBigSum
         }
     }
     */
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            List<long> ar = new List<long> { 1000000001, 1000000002, 1000000003, 1000000004, 1000000005 };
+            long output = 5000000015;
+            long result = Result.aVeryBigSum(ar);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(result, output),
+            };
+            return results;
+        }
+    }
 }

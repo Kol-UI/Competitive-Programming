@@ -35,6 +35,8 @@ s consists of lowercase English letters.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumInsertionStepstoMakeaStringPalindrome
 {
     public class Solution
@@ -75,6 +77,28 @@ namespace CompetitiveProgramming.LeetCode.MinimumInsertionStepstoMakeaStringPali
 
             dp[i][k] = result;
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestDecryptStringfromAlphabettoIntegerMapping()
+        {
+            // Case 1
+            int Case1_1312 = Solution.MinInsertions("zzazz");
+
+            // Case 2
+            int Case2_1312 = Solution.MinInsertions("mbadm");
+
+            // Case 3
+            int Case3_1312 = Solution.MinInsertions("leetcode");
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_1312, 0),
+                ResultTester.CheckResult<int>(Case2_1312, 2),
+                ResultTester.CheckResult<int>(Case3_1312, 5)
+            };
+            return results;
         }
     }
 }

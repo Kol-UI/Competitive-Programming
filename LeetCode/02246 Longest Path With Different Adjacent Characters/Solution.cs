@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LongestPathWithDifferentAdjacentCharacters
 {
@@ -50,6 +51,29 @@ namespace CompetitiveProgramming.LeetCode.LongestPathWithDifferentAdjacentCharac
             return (Math.Max(next.Select(x => x.Item1).Max(), 1 + different.Sum()), (different.Any() ? different.Max() : 0) + 1, s[i]);
         }
 
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] Case1_2246 = { -1, 0, 0, 0 };
+            string s1 = "abacbe";
+            int Case1_2246_Result = Solution.LongestPath(Case1_2246, s1);
+
+            // Case 2
+            int[] Case2_2246 = { 1, 1, 1, 2, 2, 3 };
+            string s2 = "aabc";
+            int Case2_2246_Result = Solution.LongestPath(Case2_2246, s2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_2246_Result, 3),
+                ResultTester.CheckResult<int>(Case2_2246_Result, 1)
+            };
+            return results;
+        }
     }
 }
 

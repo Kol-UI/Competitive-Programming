@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimizeMaximumofArray
 {
     public class Solution
@@ -42,6 +44,27 @@ namespace CompetitiveProgramming.LeetCode.MinimizeMaximumofArray
                 }
             }
             return tempRem <= 0;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] nums2439_1 = {3,7,1,6};
+            int result2439_1 = Solution.MinimizeArrayValue(nums2439_1);
+
+            // Case 2
+            int[] nums2439_2 = {10,1};
+            int result2439_2 = Solution.MinimizeArrayValue(nums2439_2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result2439_1, result2439_1),
+                ResultTester.CheckResult<int>(result2439_2, result2439_2)
+            };
+            return results;
         }
     }
 }

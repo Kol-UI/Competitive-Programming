@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.JumpGameIV
 {
     // Given an array of integers arr, you are initially positioned at the first index of the array.
@@ -77,6 +79,97 @@ namespace CompetitiveProgramming.LeetCode.JumpGameIV
                 steps++;  
             }
             return -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestJumpGameIV()
+        {
+            // Case 1
+            int[] arrCase1_1345 = { 100, -23, -23, 404, 100, 23, 23, 23, 3, 404 };
+            int resultCase1_1345 = Solution.MinJumps(arrCase1_1345);
+
+            // Case 2
+            int[] arrCase2_1345 = { 7 };
+            int resultCase2_1345 = Solution.MinJumps(arrCase2_1345);
+
+            // Case 3
+            int[] arrCase3_1345 = { 7, 6, 9, 6, 9, 6, 9, 7 };
+            int resultCase3_1345 = Solution.MinJumps(arrCase3_1345);
+
+            // Case 4
+            int[] arrCase4_1345 = { -1, 100, 100, 100, 100, 100, 100, -1, };
+            int resultCase4_1345 = Solution.MinJumps(arrCase4_1345);
+
+            // Case 5
+            int[] arrCase5_1345 = Program.GenerateRandomNumber(100, 5);
+            int resultCase5_1345 = Solution.MinJumps(arrCase5_1345);
+
+            // Case 6
+            int[] arrCase6_1345 = Program.GenerateRandomNumber(1000, 5);
+            int resultCase6_1345 = Solution.MinJumps(arrCase6_1345);
+
+            // Case 7
+            int[] arrCase7_1345 = Program.GenerateRandomNumber(100, 10);
+            int resultCase7_1345 = Solution.MinJumps(arrCase7_1345);
+
+            // Case 8
+            int[] arrCase8_1345 = Program.GenerateRandomNumber(1000, 10);
+            int resultCase8_1345 = Solution.MinJumps(arrCase8_1345);
+
+            // Case 9
+            int[] arrCase9_1345 = Program.GenerateRandomNumber(10, 100);
+            int resultCase9_1345 = Solution.MinJumps(arrCase9_1345);
+
+            // Case 10
+            int[] arrCase10_1345 = Program.GenerateRandomNegativeNumber(5);
+            int resultCase10_1345 = Solution.MinJumps(arrCase10_1345);
+
+            // Case 11
+            int[] arrCase11_1345 = Program.GenerateRandomNegativeNumber(10);
+            int resultCase11_1345 = Solution.MinJumps(arrCase11_1345);
+
+            // Case 12
+            int[] arrCase12_1345 = Program.GenerateRandomNegativePositiveNumber(5);
+            int resultCase12_1345 = Solution.MinJumps(arrCase12_1345);
+
+            // Case 13
+            int[] arrCase13_1345 = Program.GenerateRandomNegativePositiveNumber(10);
+            int resultCase13_1345 = Solution.MinJumps(arrCase13_1345);
+
+            // Case 14
+            int[] arrCase14_1345 = arrCase1_1345.Concat(arrCase2_1345).Concat(arrCase3_1345).Concat(arrCase4_1345)
+                                                .Concat(arrCase5_1345).Concat(arrCase6_1345).Concat(arrCase7_1345)
+                                                .Concat(arrCase8_1345).Concat(arrCase9_1345).Concat(arrCase10_1345)
+                                                .Concat(arrCase11_1345).Concat(arrCase12_1345)
+                                                .Concat(arrCase13_1345).ToArray();
+
+            int resultCase14_1345 = Solution.MinJumps(arrCase14_1345);
+
+            // Case 15
+            int[] arrCase15_1345 = arrCase14_1345;
+            int resultCase15_1345 = Solution.MinJumps(arrCase15_1345);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(resultCase1_1345, 3),
+                ResultTester.CheckResult<int>(resultCase2_1345, 0),
+                ResultTester.CheckResult<int>(resultCase3_1345, 1),
+                ResultTester.CheckResult<int>(resultCase4_1345, resultCase4_1345),
+                ResultTester.CheckResult<int>(resultCase5_1345, resultCase5_1345),
+                ResultTester.CheckResult<int>(resultCase6_1345, resultCase6_1345),
+                ResultTester.CheckResult<int>(resultCase7_1345, resultCase7_1345),
+                ResultTester.CheckResult<int>(resultCase8_1345, resultCase8_1345),
+                ResultTester.CheckResult<int>(resultCase9_1345, resultCase9_1345),
+                ResultTester.CheckResult<int>(resultCase10_1345, resultCase10_1345),
+                ResultTester.CheckResult<int>(resultCase11_1345, resultCase11_1345),
+                ResultTester.CheckResult<int>(resultCase12_1345, resultCase12_1345),
+                ResultTester.CheckResult<int>(resultCase13_1345, resultCase13_1345),
+                ResultTester.CheckResult<int>(resultCase14_1345, resultCase14_1345),
+                ResultTester.CheckResult<int>(resultCase15_1345, resultCase15_1345),
+            };
+            return results;
         }
     }
 }

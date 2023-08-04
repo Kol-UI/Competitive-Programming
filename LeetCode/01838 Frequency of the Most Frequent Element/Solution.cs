@@ -32,6 +32,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FrequencyoftheMostFrequentElement
 {
     public class Solution
@@ -70,6 +72,31 @@ namespace CompetitiveProgramming.LeetCode.FrequencyoftheMostFrequentElement
                 else break;
             }
             return sum;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1 = {1,2,4};
+            int k1 = 5;
+            int[] nums2 = {1,4,8,13};
+            int k2 = 5;
+            int[] nums3 = {3,9,6};
+            int k3 = 2;
+
+            int result1 = Solution.MaxFrequency(nums1, k1);
+            int result2 = Solution.MaxFrequency(nums2, k2);
+            int result3 = Solution.MaxFrequency(nums3, k3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(result3, 1)
+            };
+            return results;
         }
     }
 }

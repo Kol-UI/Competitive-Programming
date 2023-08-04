@@ -31,6 +31,8 @@ Input: candidates = [2], target = 1
 Output: []
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CombinationSum
 {
     public class Solution
@@ -59,6 +61,44 @@ namespace CompetitiveProgramming.LeetCode.CombinationSum
                 temp.RemoveAt(temp.Count - 1);
                 index++;
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] candidates1 = {2,3,6,7};
+            int target1 = 7;
+            int[] candidates2 = {2,3,5};
+            int target2 = 8;
+            int[] candidates3 = {2};
+            int target3 = 1;
+            IList<IList<int>> expected1 = new List<IList<int>>
+            {
+                new List<int> { 2, 2, 3 },
+                new List<int> { 7 }
+            };
+            IList<IList<int>> expected2 = new List<IList<int>>
+            {
+                new List<int> { 2, 2, 2, 2 },
+                new List<int> { 2, 3, 3 },
+                new List<int> { 3, 5 }
+            };
+            IList<IList<int>> expected3 = new List<IList<int>>
+            {
+                new List<int> { }
+            };
+            IList<IList<int>> result1 = Solution.CombinationSum(candidates1, target1);
+            IList<IList<int>> result2 = Solution.CombinationSum(candidates2, target2);
+            IList<IList<int>> result3 = Solution.CombinationSum(candidates3, target3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<IList<int>>>(result1, expected1),
+                ResultTester.CheckResult<IList<IList<int>>>(result2, expected2),
+                ResultTester.CheckResult<IList<IList<int>>>(result3, expected3)
+            };
+            return results;
         }
     }
 }

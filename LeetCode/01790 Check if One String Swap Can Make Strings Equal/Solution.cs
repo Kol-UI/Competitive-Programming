@@ -27,6 +27,8 @@ Explanation: The two strings are already equal, so no string swap operation is r
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CheckifOneStringSwapCanMakeStringsEqual
 {
     public class Solution
@@ -53,6 +55,31 @@ namespace CompetitiveProgramming.LeetCode.CheckifOneStringSwapCanMakeStringsEqua
                 if(set2.Contains(element)) set2.Remove(element);
 
             return (changes == 2 && set2.Count == 0);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            string case1s1 = "bank";
+            string case1s2 = "kanb";
+            string case2s1 = "attack";
+            string case2s2 = "defend";
+            string case3s1 = "kelb";
+            string case3s2 = "kelb";
+
+            bool result1 = Solution.AreAlmostEqual(case1s1, case1s2);
+            bool result2 = Solution.AreAlmostEqual(case2s1, case2s2);
+            bool result3 = Solution.AreAlmostEqual(case3s1, case3s2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false),
+                ResultTester.CheckResult<bool>(result3, true)
+            };
+            return results;
         }
     }
 }

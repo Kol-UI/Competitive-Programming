@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NumberofStepstoReduceaNumbertoZero
 {
 	public class Solution
@@ -34,6 +36,29 @@ namespace CompetitiveProgramming.LeetCode.NumberofStepstoReduceaNumbertoZero
                 }
             }
             return numberOfSteps;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestNumberofStepstoReduceaNumbertoZero()
+        {
+            // Case 1
+            int Case1_NumberOfSteps = Solution.NumberOfSteps(14);
+
+            // Case 2
+            int Case2_NumberOfSteps = Solution.NumberOfSteps(8);
+
+            // Case 3
+            int Case3_NumberOfSteps = Solution.NumberOfSteps(123);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_NumberOfSteps, 6),
+                ResultTester.CheckResult<int>(Case2_NumberOfSteps, Case2_NumberOfSteps),
+                ResultTester.CheckResult<int>(Case3_NumberOfSteps, Case3_NumberOfSteps)
+            };
+            return results;
         }
     }
 }

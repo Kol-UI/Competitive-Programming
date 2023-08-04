@@ -38,6 +38,8 @@ Explanation: Alice cannot win this game. She can end the game in a draw if she d
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.StoneGameIII
 {
     public class Solution
@@ -69,6 +71,28 @@ namespace CompetitiveProgramming.LeetCode.StoneGameIII
             if (dp[0] > 0) return "Alice";
             else if (dp[0] < 0) return "Bob";
             else return "Tie";
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestStoneGameIII()
+        {
+            int[] nums1 = {1,2,3,7};
+            int[] nums2 = {1,2,3,-9};
+            int[] nums3 = {1,2,3,6};
+
+            string result1 = Solution.StoneGameIII(nums1);
+            string result2 = Solution.StoneGameIII(nums2);
+            string result3 = Solution.StoneGameIII(nums3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(result1, "Bob"),
+                ResultTester.CheckResult<string>(result2, "Alice"),
+                ResultTester.CheckResult<string>(result3, "Tie")
+            };
+            return results;
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumRoundstoCompleteAllTasks
 {
     public class Solution
@@ -42,6 +44,25 @@ namespace CompetitiveProgramming.LeetCode.MinimumRoundstoCompleteAllTasks
                 };
             }
             return rounds;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] tasks1_2244 = {2, 2, 3, 3, 2, 4, 4, 4, 4, 4};
+            int[] tasks2_2244 = {2, 3, 3};
+
+            int result1_2244 = Solution.MinimumRounds(tasks1_2244);
+            int result2_2244 = Solution.MinimumRounds(tasks2_2244);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_2244, 4),
+                ResultTester.CheckResult<int>(result2_2244, -1)
+            };
+            return results;
         }
     }
 }

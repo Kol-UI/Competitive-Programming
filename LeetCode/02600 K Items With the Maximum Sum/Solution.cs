@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.KItemsWiththeMaximumSum
 {
     /*
@@ -47,6 +49,36 @@ namespace CompetitiveProgramming.LeetCode.KItemsWiththeMaximumSum
             }       
 
             return result - k;   
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int numOnes2600Case1 = 3;
+            int numZeros2600Case1 = 2;
+            int numNegOnes2600Case1 = 0;
+            int k2600Case1 = 2;
+            int result2600Case1 = Solution.KItemsWithMaximumSum(numOnes2600Case1, numZeros2600Case1, numNegOnes2600Case1, k2600Case1);
+
+            // Case 2
+            int numOnes2600Case2 = 3;
+            int numZeros2600Case2 = 2;
+            int numNegOnes2600Case2 = 0;
+            int k2600Case2 = 4;
+            int result2600Case2 = Solution.KItemsWithMaximumSum(numOnes2600Case2, numZeros2600Case2, numNegOnes2600Case2, k2600Case2);
+
+            int output1 = 2;
+            int output2 = 3;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result2600Case1, output1),
+                ResultTester.CheckResult<int>(result2600Case2, output2)
+            };
+            return results;
         }
     }
 }

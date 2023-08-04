@@ -40,6 +40,8 @@ Explanation: There are no other orderings of nums that will yield the same BST.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NumberofWaystoReorderArraytoGetSameBST
 {
     public class Solution
@@ -95,6 +97,27 @@ namespace CompetitiveProgramming.LeetCode.NumberofWaystoReorderArraytoGetSameBST
         {
             List<List<long>> dp = GenerateComb(nums.Length);
             return (int)((int)CountBST(nums.ToList(), dp) - 1 + MOD) % MOD;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1 = {2,1,3};
+            int[] nums2 = {3,4,5,1,2};
+            int[] nums3 = {1,2,3};
+
+            int result1 = Solution.NumOfWays(nums1);
+            int result2 = Solution.NumOfWays(nums2);
+            int result3 = Solution.NumOfWays(nums3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 5),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+            return results;
         }
     }
 }

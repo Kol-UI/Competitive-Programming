@@ -18,6 +18,8 @@ Output: false
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CheckIfItIsaStraightLine
 {
     public class Solution
@@ -35,6 +37,40 @@ namespace CompetitiveProgramming.LeetCode.CheckIfItIsaStraightLine
                 }
             }
             return true;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCheckIfItIsaStraightLine()
+        {
+            int[][] coordinates1_1232 = new int[][]
+            {
+                new int[] { 1,2 },
+                new int[] { 2,3 },
+                new int[] { 3,4 },
+                new int[] { 4,5 },
+                new int[] { 5,6 },
+                new int[] { 6,7 }
+            };
+            int[][] coordinates2_1232 = new int[][]
+            {
+                new int[] { 1,1 },
+                new int[] { 2,2 },
+                new int[] { 3,4 },
+                new int[] { 4,5 },
+                new int[] { 5,6 },
+                new int[] { 7,7 }
+            };
+
+            bool result1 = Solution.CheckStraightLine(coordinates1_1232);
+            bool result2 = Solution.CheckStraightLine(coordinates2_1232);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result1, true),
+                ResultTester.CheckResult<bool>(result2, false)
+            };
+            return results;
         }
     }
 }

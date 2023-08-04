@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximumValueofaStringinanArray
 {
@@ -54,6 +55,33 @@ namespace CompetitiveProgramming.LeetCode.MaximumValueofaStringinanArray
         // Linq One Line
         public static int MaximumValueLinq(string[] strs) => strs
             .Max(item => int.TryParse(item, out int value) ? value : item.Length);
+    }
+
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            string[] strs1 = {"alic3","bob","3","4","00000"};
+            string[] strs2 = {"1","01","001","0001"};
+
+            int result1_2496 = Solution.MaximumValue(strs1);
+            int result2_2496 = Solution.MaximumValue(strs2);
+            int result1_2496Linq = Solution.MaximumValueLinq(strs1);
+            int result2_2496Linq = Solution.MaximumValueLinq(strs2);
+
+            int output1 = 5;
+            int output2 = 1;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_2496, output1),
+                ResultTester.CheckResult<int>(result2_2496, output2),
+                ResultTester.CheckResult<int>(result1_2496Linq, output1),
+                ResultTester.CheckResult<int>(result2_2496Linq, output2)
+            };
+            return results;
+        }
     }
 }
 

@@ -45,6 +45,8 @@ ranks.length == suits.length == 5
 No two cards have the same rank and suit.
 */
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BestPokerHand
 {
     public class Solution 
@@ -77,6 +79,35 @@ namespace CompetitiveProgramming.LeetCode.BestPokerHand
                 return "Pair";
             }
             return "High Card";        
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] ranks1 = {13,2,3,1,9};
+            char[] suits1 = {'a','a','a','a','a'};
+            string Case1_2347 = Solution.BestHand(ranks1, suits1);
+
+            // Case 2
+            int[] ranks2 = {4,4,2,4,4};
+            char[] suits2 = {'d','a','a','b','c'};
+            string Case2_2347 = Solution.BestHand(ranks2, suits2);
+
+            // Case 3
+            int[] ranks3 = {10,10,2,12,9};
+            char[] suits3 = {'a','b','c','a','d'};
+            string Case3_2347 = Solution.BestHand(ranks3, suits3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(Case1_2347, "Flush"),
+                ResultTester.CheckResult<string>(Case2_2347, "Three of a Kind"),
+                ResultTester.CheckResult<string>(Case3_2347, "Pair")
+            };
+            return results;
         }
     }
 }

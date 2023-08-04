@@ -54,7 +54,7 @@ namespace CompetitiveProgramming.LeetCode.AlternatingDigitSum
 
     public class Test
     {
-        public static bool[] TestAlternatingDigitSum()
+        public static bool[] TestCase()
         {
             int n1 = 521;
             int n2 = 111;

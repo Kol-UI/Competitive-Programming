@@ -26,6 +26,8 @@ Output: 50
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.RangeSumofSortedSubarraySums
 {
     public class Solution
@@ -63,6 +65,39 @@ namespace CompetitiveProgramming.LeetCode.RangeSumofSortedSubarraySums
             }
 
             return (int)(res % mod);
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1 = {1,2,3,4};
+            int n1 = 4;
+            int left1 = 1;
+            int right1 = 5;
+
+            int[] nums2 = {1,2,3,4};
+            int n2 = 4;
+            int left2 = 3;
+            int right2 = 4;
+
+            int[] nums3 = {1,2,3,4};
+            int n3 = 4;
+            int left3 = 1;
+            int right3 = 10;
+
+            int result1 = Solution.RangeSum(nums1, n1, left1, right1);
+            int result2 = Solution.RangeSum(nums2, n2, left2, right2);
+            int result3 = Solution.RangeSum(nums3, n3, left3, right3);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 13),
+                ResultTester.CheckResult<int>(result2, 6),
+                ResultTester.CheckResult<int>(result3, 50)
+            };
+            return results;
         }
     }
 }

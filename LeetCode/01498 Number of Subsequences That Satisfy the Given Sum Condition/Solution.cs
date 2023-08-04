@@ -31,6 +31,8 @@ Number of valid subsequences (63 - 2 = 61).
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NumberofSubsequencesThatSatisfytheGivenSumCondition
 {
     public class Solution
@@ -69,6 +71,31 @@ namespace CompetitiveProgramming.LeetCode.NumberofSubsequencesThatSatisfytheGive
             }
 
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1 = {3,5,6,7};
+            int target1 = 9;
+            int[] nums2 = {3,3,6,8};
+            int target2 = 10;
+            int[] nums3 = {2,3,3,4,6,7};
+            int target3 = 12;
+
+            int result1 = Solution.NumSubseq(nums1, target1);
+            int result2 = Solution.NumSubseq(nums2, target2);
+            int result3 = Solution.NumSubseq(nums3, target3);
+            
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 4),
+                ResultTester.CheckResult<int>(result2, 6),
+                ResultTester.CheckResult<int>(result3, 61)
+            };
+            return results;
         }
     }
 }

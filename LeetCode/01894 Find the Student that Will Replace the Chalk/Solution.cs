@@ -40,6 +40,8 @@ Student number 1 does not have enough chalk, so they will have to replace it.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindtheStudentthatWillReplacetheChalk
 {
     public class Solution
@@ -90,6 +92,25 @@ namespace CompetitiveProgramming.LeetCode.FindtheStudentthatWillReplacetheChalk
             }
 
             return chalk[mid] > num ? mid : mid + 1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] chalk1 = {5,1,5};
+            int k1 = 22;
+            int[] chalk2 = {3,4,1,2};
+            int k2 = 25;
+            int result1 = Solution.ChalkReplacer(chalk1, k1);
+            int result2 = Solution.ChalkReplacer(chalk2, k2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 0),
+                ResultTester.CheckResult<int>(result2, 1)
+            };
+            return results;
         }
     }
 }

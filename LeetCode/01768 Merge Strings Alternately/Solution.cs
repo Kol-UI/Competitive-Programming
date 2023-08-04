@@ -36,6 +36,7 @@ merged: a p b q c   d
 */
 using System;
 using System.Text;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MergeStringsAlternately
 {
@@ -60,6 +61,29 @@ namespace CompetitiveProgramming.LeetCode.MergeStringsAlternately
                 sb.Append(word2[j++]);
             }
             return sb.ToString();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            string Case1_1768 = Solution.MergeAlternately("abc", "pqr");
+
+            // Case 2
+            string Case2_1768 = Solution.MergeAlternately("ab", "pqrs");
+
+            // Case 3
+            string Case3_1768 = Solution.MergeAlternately("abcd", "pq");
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(Case1_1768, "apbqcr"),
+                ResultTester.CheckResult<string>(Case2_1768, "apbqrs"),
+                ResultTester.CheckResult<string>(Case3_1768, "apbqcd")
+            };
+            return results;
         }
     }
 }

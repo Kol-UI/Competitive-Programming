@@ -24,6 +24,8 @@ Output: 0
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumFlipstoMakeaORbEqualtoc
 {
     public class Solution
@@ -44,6 +46,23 @@ namespace CompetitiveProgramming.LeetCode.MinimumFlipstoMakeaORbEqualtoc
                 }
             }
             return flips;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMinimumFlipstoMakeaORbEqualtoc()
+        {
+            int result1 = Solution.MinFlips(2,6,5);
+            int result2 = Solution.MinFlips(4,2,7);
+            int result3 = Solution.MinFlips(1,2,3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 1),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+            return results;
         }
     }
 }

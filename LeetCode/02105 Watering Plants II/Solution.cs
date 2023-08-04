@@ -47,6 +47,8 @@ So, the total number of times they have to refill is 0.
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.WateringPlantsII
 {
     public class Solution
@@ -77,6 +79,36 @@ namespace CompetitiveProgramming.LeetCode.WateringPlantsII
             }
 
             return (left == right && Math.Max(a, b) < plants[left]) ? result + 1 : result; 
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] plants1 = {2,2,3,3};
+            int capacityA1 = 5;
+            int capacityB1 = 5;
+
+            int[] plants2 = {2,2,3,3};
+            int capacityA2 = 3;
+            int capacityB2 = 4;
+
+            int[] plants3 = {5};
+            int capacityA3 = 10;
+            int capacityB3 = 8;
+
+            int result1 = Solution.MinimumRefill(plants1, capacityA1, capacityB1);
+            int result2 = Solution.MinimumRefill(plants2, capacityA2, capacityB2);
+            int result3 = Solution.MinimumRefill(plants3, capacityA3, capacityB3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 1),
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(result3, 0)
+            };
+            return results;
         }
     }
 }

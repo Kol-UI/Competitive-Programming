@@ -25,6 +25,8 @@ Explanation: Both 30 and 32 are peak elements so [1,1] and [2,2] are both accept
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindaPeakElementII
 {
     public class Solution
@@ -48,5 +50,34 @@ namespace CompetitiveProgramming.LeetCode.FindaPeakElementII
             return new int[] {end, col};
         }
 
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[][] mat1 = new int[][]
+            {
+                new int[] { 1, 4 },
+                new int[] { 3, 2 }
+            };
+            int[][] mat2 = new int[][]
+            {
+                new int[] { 10, 20, 15 },
+                new int[] { 21, 30, 14 },
+                new int[] { 7, 16, 32 }
+            };
+
+            int[] result1 = Solution.FindPeakGrid(mat1);
+            int[] result2 = Solution.FindPeakGrid(mat2);
+            int[] expected1 = {0,1};
+            int[] expected2 = {1,1};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2)
+            };
+            return results;
+        }
     }
 }

@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumTimetoCompleteTrips
 {
     // You are given an array time where time[i] denotes the time taken by the ith bus to complete one trip.
@@ -61,6 +63,29 @@ namespace CompetitiveProgramming.LeetCode.MinimumTimetoCompleteTrips
             }
             
             return left; 
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] time1_1287 = {1, 2, 3};
+            int totalTrips1_1287 = 5;
+            long result1_1287 = Solution.MinimumTime(time1_1287, totalTrips1_1287);
+
+            // Case 2
+            int[] time2_1287 = { 2 };
+            int totalTrips2_1287 = 1;
+            long result2_1287 = Solution.MinimumTime(time2_1287, totalTrips2_1287);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(result1_1287, 3),
+                ResultTester.CheckResult<long>(result2_1287, 2)
+            };
+            return results;
         }
     }
 }

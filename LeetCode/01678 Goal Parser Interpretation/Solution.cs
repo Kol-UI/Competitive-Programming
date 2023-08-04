@@ -29,6 +29,7 @@ Output: "alGalooG"
 
 using System;
 using System.Text;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.GoalParserInterpretation
 {
@@ -59,6 +60,28 @@ namespace CompetitiveProgramming.LeetCode.GoalParserInterpretation
                 }
             }
             return s.ToString();  
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            string command1 = "G()(al)";
+            string command2 = "G()()()()(al)";
+            string command3 = "(al)G(al)()()G";
+
+            string result1 = Solution.Interpret(command1);
+            string result2 = Solution.Interpret(command2);
+            string result3 = Solution.Interpret(command3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(result1, "Goal"),
+                ResultTester.CheckResult<string>(result2, "Gooooal"),
+                ResultTester.CheckResult<string>(result3, "alGalooG")
+            };
+            return results;
         }
     }
 }

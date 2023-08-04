@@ -49,6 +49,8 @@ The rows ordered from weakest to strongest are [0,2,3,1].
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.TheKWeakestRowsinaMatrix
 {
     public class Solution 
@@ -60,6 +62,44 @@ namespace CompetitiveProgramming.LeetCode.TheKWeakestRowsinaMatrix
                 .Take(k)
                 .Select(a => a.Index)
                 .ToArray();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestTheKWeakestRowsinaMatrix()
+        {
+            int[][] mat1 = new int[][]
+            {
+                new int[] { 1,1,0,0,0 },
+                new int[] { 1,1,1,1,0 },
+                new int[] { 1,1,0,0,0 },
+                new int[] { 1,0,0,0,0 },
+                new int[] { 1,1,0,0,0 },
+                new int[] { 1,1,1,1,1 }
+            };
+            int k1 = 3;
+
+            int[][] mat2 = new int[][]
+            {
+                new int[] { 1,0,0,0 },
+                new int[] { 1,1,1,1 },
+                new int[] { 1,0,0,0 },
+                new int[] { 1,0,0,0 },
+            };
+            int k2 = 2;
+
+            int[] result1 = Solution.KWeakestRows(mat1, k1);
+            int[] result2 = Solution.KWeakestRows(mat2, k2);
+
+            int[] expected1 = {3,0,2};
+            int[] expected2 = {0,2};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, expected1),
+                ResultTester.CheckResult<int[]>(result2, expected2)
+            };
+            return results;
         }
     }
 }

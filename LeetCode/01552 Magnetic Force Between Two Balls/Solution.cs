@@ -24,6 +24,8 @@ Explanation: We can use baskets 1 and 1000000000.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MagneticForceBetweenTwoBalls
 {
     public class Solution
@@ -57,6 +59,27 @@ namespace CompetitiveProgramming.LeetCode.MagneticForceBetweenTwoBalls
                 }
             }
             return count;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] position1 = {1,2,3,4,7};
+            int m1 = 3;
+            int[] position2 = {5,4,3,2,1,1000000000};
+            int m2 = 2;
+
+            int result1 = Solution.MaxDistance(position1, m1);
+            int result2 = Solution.MaxDistance(position2, m2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 999999999)
+            };
+            return results;
         }
     }
 }

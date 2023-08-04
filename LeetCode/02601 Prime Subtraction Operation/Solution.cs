@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.PrimeSubtractionOperation
 {
     /*
@@ -87,6 +89,39 @@ namespace CompetitiveProgramming.LeetCode.PrimeSubtractionOperation
             }
             
             return true;         
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCase()
+        {
+            // Case 1
+            Program.Space();
+            int[] nums2601Case1 = { 4, 9, 6, 10 };
+            bool result2601Case1 = Solution.PrimeSubOperation(nums2601Case1);
+
+            // Case 2
+            Program.Space();
+            int[] nums2601Case2 = { 6, 8, 11, 12 };
+            bool result2601Case2 = Solution.PrimeSubOperation(nums2601Case2);
+
+            // Case 3
+            Program.Space();
+            int[] nums2601Case3 = { 5, 8, 3 };
+            bool result2601Case3 = Solution.PrimeSubOperation(nums2601Case3);
+
+            bool output1_2601 = true;
+            bool output2_2601 = true;
+            bool output3_2601 = false;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<bool>(result2601Case1, output1_2601),
+                ResultTester.CheckResult<bool>(result2601Case2, output2_2601),
+                ResultTester.CheckResult<bool>(result2601Case3, output3_2601)
+            };
+            return results;
         }
     }
 }

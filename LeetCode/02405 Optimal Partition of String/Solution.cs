@@ -1,5 +1,7 @@
 // Optimal Partition of String
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.OptimalPartitionofString
 {
     public class Solution
@@ -45,6 +47,25 @@ namespace CompetitiveProgramming.LeetCode.OptimalPartitionofString
                 }
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int Case1Result2405 = Solution.PartitionString("abacaba");
+
+            // Case 2
+            int Case2Result2405 = Solution.PartitionString("ssssss");
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1Result2405, 4),
+                ResultTester.CheckResult<int>(Case2Result2405, 6)
+            };
+            return results;
         }
     }
 }

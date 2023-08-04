@@ -25,6 +25,7 @@ Output: "acz"
 
 using System;
 using System.Text;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.DecryptStringfromAlphabettoIntegerMapping
 {
@@ -47,6 +48,25 @@ namespace CompetitiveProgramming.LeetCode.DecryptStringfromAlphabettoIntegerMapp
                     }
                 }
             return str.ToString();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestDecryptStringfromAlphabettoIntegerMapping()
+        {
+            string s1 = "10#11#12";
+            string s2 = "1326#";
+
+            string result1 = Solution.FreqAlphabets(s1);
+            string result2 = Solution.FreqAlphabets(s2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(result1, "jkab"),
+                ResultTester.CheckResult<string>(result2, "acz")
+            };
+            return results;
         }
     }
 }

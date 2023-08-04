@@ -37,6 +37,8 @@ Explanation: The friends leave in this order: 5, 4, 6, 2, 3. The winner is frien
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindtheWinneroftheCircularGame
 {
     public class Solution 
@@ -54,6 +56,22 @@ namespace CompetitiveProgramming.LeetCode.FindtheWinneroftheCircularGame
             }
             
             return num[0];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int case1_1823 = Solution.FindTheWinner(5, 2);
+            int case2_1823 = Solution.FindTheWinner(6, 5);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(case1_1823, 3),
+                ResultTester.CheckResult<int>(case2_1823, 1)
+            };
+            return results;
         }
     }
 }

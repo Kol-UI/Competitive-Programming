@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NumberofOperationstoMakeNetworkConnected
 {
     /*
@@ -58,6 +60,53 @@ namespace CompetitiveProgramming.LeetCode.NumberofOperationstoMakeNetworkConnect
                 }
                 return i;
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestNumberofOperationstoMakeNetworkConnected()
+        {
+            // Case 1
+            int[][] connections1319Case1 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 0, 2 },
+                new int[] { 1, 2 }
+            };
+            int n1319Case1 = 4;
+            int result1319Case1 = Solution.MakeConnected(n1319Case1, connections1319Case1);
+
+            // Case 2
+            int[][] connections1319Case2 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 0, 2 },
+                new int[] { 0, 3 },
+                new int[] { 1, 2 },
+                new int[] { 1, 3 }
+            };
+            int n1319Case2 = 6;
+            int result1319Case2 = Solution.MakeConnected(n1319Case2, connections1319Case2);
+
+            // Case 3
+            int[][] connections1319Case3 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 0, 2 },
+                new int[] { 0, 3 },
+                new int[] { 1, 2 }
+            };
+            int n1319Case3 = 6;
+            int result1319Case3 = Solution.MakeConnected(n1319Case3, connections1319Case3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1319Case1, 1),
+                ResultTester.CheckResult<int>(result1319Case2, 2),
+                ResultTester.CheckResult<int>(result1319Case3, -1)
+            };
+            return results;
         }
     }
 }

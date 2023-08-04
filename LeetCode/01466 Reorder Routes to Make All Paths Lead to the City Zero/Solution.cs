@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ReorderRoutestoMakeAllPathsLeadtotheCityZero
 {
@@ -63,6 +64,51 @@ namespace CompetitiveProgramming.LeetCode.ReorderRoutestoMakeAllPathsLeadtotheCi
 
                 dfs(node);
             }
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[][] connections1466Case1 = new int[][]
+            {
+                new int[] { 0, 1 },
+                new int[] { 1, 3 },
+                new int[] { 2, 3 },
+                new int[] { 4, 0 },
+                new int[] { 4, 5 }
+            };
+            int n1466Case1 = 6;
+            int result1466Case1 = Solution.MinReorder(n1466Case1, connections1466Case1);
+
+            // Case 2
+            int[][] connections1466Case2 = new int[][]
+            {
+                new int[] { 1, 0 },
+                new int[] { 1, 2 },
+                new int[] { 3, 2 },
+                new int[] { 3, 4 }
+            };
+            int n1466Case2 = 5;
+            int result1466Case2 = Solution.MinReorder(n1466Case2, connections1466Case2);
+
+            // Case 3
+            int[][] connections1466Case3 = new int[][]
+            {
+                new int[] { 1, 0 },
+                new int[] { 2, 0 }
+            };
+            int n1466Case3 = 3;
+            int result1466Case3 = Solution.MinReorder(n1466Case3, connections1466Case3);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1466Case1, 3),
+                ResultTester.CheckResult<int>(result1466Case2, 3),
+                ResultTester.CheckResult<int>(result1466Case3, 3)
+            };
+            return results;
         }
     }
 }

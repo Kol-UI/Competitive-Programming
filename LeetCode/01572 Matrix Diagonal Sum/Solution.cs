@@ -31,6 +31,8 @@ Output: 5
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MatrixDiagonalSum
 {
     public class Solution
@@ -51,6 +53,46 @@ namespace CompetitiveProgramming.LeetCode.MatrixDiagonalSum
                 }
             }
             return sum;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[][] grid1_1572 = new int[][]
+            {
+                new int[] { 1,2,3 },
+                new int[] { 4,5,6 },
+                new int[] { 7,8,9 }
+            };
+            int result1 = Solution.DiagonalSum(grid1_1572);
+
+            // Case 2
+            int[][] grid2_1572 = new int[][]
+            {
+                new int[] { 1,1,1,1 },
+                new int[] { 1,1,1,1 },
+                new int[] { 1,1,1,1 },
+                new int[] { 1,1,1,1 }
+            };
+            int result2 = Solution.DiagonalSum(grid2_1572);
+
+            // Case 3
+            int[][] grid3_1572 = new int[][]
+            {
+                new int[] { 5 }
+            };
+            int result3 = Solution.DiagonalSum(grid3_1572);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 25),
+                ResultTester.CheckResult<int>(result2, 8),
+                ResultTester.CheckResult<int>(result3, 5)
+            };
+            return results;
         }
     }
 }

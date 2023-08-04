@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NumberofZeroFilledSubarrays
 {
     /*
@@ -48,6 +50,27 @@ namespace CompetitiveProgramming.LeetCode.NumberofZeroFilledSubarrays
         private static long SequanceSum(int n)
         {
             return ((long)n*(long)(n+1))/(long)2;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] arrayCase1_2348 = { 1, 3, 0, 0, 2, 0, 0, 4 };
+            long case1_2348Result = Solution.ZeroFilledSubarray(arrayCase1_2348);
+
+            // Case 2
+            int[] arrayCase2_2348 = { 0, 0, 0, 2, 0, 0 };
+            long case2_2348Result = Solution.ZeroFilledSubarray(arrayCase2_2348);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(case1_2348Result, 6),
+                ResultTester.CheckResult<long>(case2_2348Result, 9)
+            };
+            return results;
         }
     }
 }

@@ -28,6 +28,8 @@ Explanation: Possible arrays are [1317],[131,7],[13,17],[1,317],[13,1,7],[1,31,7
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.RestoreTheArray
 {
     public class Solution
@@ -56,6 +58,29 @@ namespace CompetitiveProgramming.LeetCode.RestoreTheArray
                 }
             }
             return (int) dp[0];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestRestoreTheArray()
+        {
+            // Case 1
+            int Case1_1416 = Solution.NumberOfArrays("1000", 10000);
+
+            // Case 2
+            int Case2_1416 = Solution.NumberOfArrays("1000", 10);
+
+            // Case 3
+            int Case3_1416 = Solution.NumberOfArrays("1317", 200);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_1416, 1),
+                ResultTester.CheckResult<int>(Case2_1416, 0),
+                ResultTester.CheckResult<int>(Case3_1416, 6)
+            };
+            return results;
         }
     }
 }

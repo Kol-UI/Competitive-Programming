@@ -29,6 +29,8 @@ Explanation: There are no valid points.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindNearestPointThatHastheSameXorYCoordinate
 {
     public class Solution
@@ -52,6 +54,47 @@ namespace CompetitiveProgramming.LeetCode.FindNearestPointThatHastheSameXorYCoor
                 }
             }
             return shortestIndex;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[][] points1 = new int[][]
+            {
+                new int[] { 1,2 },
+                new int[] { 3,1 },
+                new int[] { 2,4 },
+                new int[] { 2,3 },
+                new int[] { 4,4 }
+            };
+
+            int[][] points2 = new int[][]
+            {
+                new int[] { 3,4 }
+            };
+
+            int[][] points3 = new int[][]
+            {
+                new int[] { 2,3 }
+            };
+
+            int result1 = Solution.NearestValidPoint(3, 4, points1);
+            int result2 = Solution.NearestValidPoint(3, 4, points2);
+            int result3 = Solution.NearestValidPoint(3, 4, points3);
+            
+            int output1 = 2;
+            int output2 = 0;
+            int output3 = -1;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, output1),
+                ResultTester.CheckResult<int>(result2, output2),
+                ResultTester.CheckResult<int>(result3, output3)
+            };
+            return results;
         }
     }
 }

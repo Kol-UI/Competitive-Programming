@@ -37,6 +37,8 @@ The total hiring cost is 4.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.TotalCosttoHireKWorkers
 {
     public class Solution
@@ -83,6 +85,30 @@ namespace CompetitiveProgramming.LeetCode.TotalCosttoHireKWorkers
             }
 
             return totalHireCost;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] costs1 = {17,12,10,2,7,2,11,20,8};
+            int k1 = 3;
+            int candidates1 = 4;
+
+            int[] costs2 = {1,2,4,1};
+            int k2 = 3;
+            int candidates2 = 3;
+
+            long result1 = Solution.TotalCost(costs1, k1, candidates1);
+            long result2 = Solution.TotalCost(costs2, k2, candidates2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(result1, 11),
+                ResultTester.CheckResult<long>(result2, 4)
+            };
+            return results;
         }
     }
 }

@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SuccessfulPairsofSpellsandPotions
 {
     // Successful Pairs of Spells and Potions
@@ -53,6 +55,34 @@ namespace CompetitiveProgramming.LeetCode.SuccessfulPairsofSpellsandPotions
                 result.Add(potions.Length - start);
             }
             return result.ToArray();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] spells2300_1 = {5,1,3};
+            int[] potions2300_1 = {1,2,3,4,5};
+            long success2300_1 = 7;
+            int[] result2300_1 = Solution.SuccessfulPairs(spells2300_1, potions2300_1, success2300_1);
+
+            // Case 2
+            int[] spells2300_2 = {3,1,2};
+            int[] potions2300_2 = {8,5,8};
+            long success2300_2 = 16;
+            int[] result2300_2 = Solution.SuccessfulPairs(spells2300_2, potions2300_2, success2300_2);
+
+            int[] output1_2300 = {4,0,3};
+            int[] output2_2300 = {2,0,2};
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result2300_1, output1_2300),
+                ResultTester.CheckResult<int[]>(result2300_2, output2_2300)
+            };
+            return results;
         }
     }
 }

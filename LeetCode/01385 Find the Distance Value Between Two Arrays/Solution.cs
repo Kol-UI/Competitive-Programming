@@ -40,6 +40,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindtheDistanceValueBetweenTwoArrays
 {
     public class Solution
@@ -74,6 +76,36 @@ namespace CompetitiveProgramming.LeetCode.FindtheDistanceValueBetweenTwoArrays
             }
 
             return count;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindtheDistanceValueBetweenTwoArrays()
+        {
+            int[] arr1case1 = {4,5,8};
+            int[] arr2case1 = {10,9,1,8};
+            int dcase1 = 2;
+
+            int[] arr1case2 = {1,4,2,3};
+            int[] arr2case2 = {-4,-3,6,10,20,30};
+            int dcase2 = 3;
+
+            int[] arr1case3 = {2,1,100,3};
+            int[] arr2case3 = {-5,-2,10,-3,7};
+            int dcase3 = 6;
+
+            int result1 = Solution.FindTheDistanceValue(arr1case1, arr2case1, dcase1);
+            int result2 = Solution.FindTheDistanceValue(arr1case2, arr2case2, dcase2);
+            int result3 = Solution.FindTheDistanceValue(arr1case3, arr2case3, dcase3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 2),
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(result3, 1)
+            };
+            return results;
         }
     }
 }

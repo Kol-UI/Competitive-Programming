@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NamingaCompany
 {
 	public class Solution
@@ -65,6 +67,27 @@ namespace CompetitiveProgramming.LeetCode.NamingaCompany
             }
             
             return answer;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            string[] arrayCase1_2306 = { "coffee", "donuts", "time", "toffee"};
+            long Case1_2306_Result = Solution.DistinctNames(arrayCase1_2306);
+
+            // Case 2
+            string[] arrayCase2_2306 = { "lack", "back"};
+            long Case2_2306_Result = Solution.DistinctNames(arrayCase2_2306);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(Case1_2306_Result, 6),
+                ResultTester.CheckResult<long>(Case2_2306_Result, 0)
+            };
+            return results;
         }
     }
 }

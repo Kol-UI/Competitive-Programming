@@ -39,6 +39,8 @@ Explanation: There are 4 ways to form target.
 */
 
 using System.Text;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NumberofWaystoFormaTargetStringGivenaDictionary
 {
     public class Solution
@@ -80,6 +82,29 @@ namespace CompetitiveProgramming.LeetCode.NumberofWaystoFormaTargetStringGivenaD
             }
 
             return (int)dp[m, n];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            string[] words1_1639 = {"acca","bbbb","caca"};
+            string target1_1639 = "aba";
+            int result1_1639 = Solution.NumWays(words1_1639, target1_1639);
+
+            // Case 2
+            string[] words2_1639 = {"abba","baab"};
+            string target2_1639 = "bab";
+            int result2_1639 = Solution.NumWays(words2_1639, target2_1639);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_1639, 6),
+                ResultTester.CheckResult<int>(result2_1639, 4)
+            };
+            return results;
         }
     }
 }

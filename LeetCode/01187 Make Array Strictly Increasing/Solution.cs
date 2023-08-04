@@ -29,6 +29,8 @@ Explanation: You can't make arr1 strictly increasing.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MakeArrayStrictlyIncreasing
 {
     public class Solution
@@ -80,6 +82,30 @@ namespace CompetitiveProgramming.LeetCode.MakeArrayStrictlyIncreasing
             }
             
             return dp[key];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMakeArrayStrictlyIncreasing()
+        {
+            int[] arr1 = {1,5,3,6,7};
+            int[] arr2_Case1 = {1,3,2,4};
+            int[] arr2_Case2 = {4,3,1};
+            int[] arr2_Case3 = {1,6,3,3};
+
+            int result1_1187 = Solution.MakeArrayIncreasing(arr1, arr2_Case1);
+            int result2_1187 = Solution.MakeArrayIncreasing(arr1, arr2_Case2);
+            int result3_1187 = Solution.MakeArrayIncreasing(arr1, arr2_Case3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1_1187, 1),
+                ResultTester.CheckResult<int>(result2_1187, 2),
+                ResultTester.CheckResult<int>(result3_1187, -1)
+            };
+
+            return results;
         }
     }
 }

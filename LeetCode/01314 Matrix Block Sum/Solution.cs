@@ -20,6 +20,8 @@ Output: [[45,45,45],[45,45,45],[45,45,45]]
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MatrixBlockSum
 {
     public class Solution
@@ -87,6 +89,51 @@ namespace CompetitiveProgramming.LeetCode.MatrixBlockSum
                 return arr[row][col];
             }
             return 0;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestMatrixBlockSum()
+        {
+            int[][] matrix1_1314 = new int[][]
+            {
+                new int[] { 1,2,3 },
+                new int[] { 4,5,6 },
+                new int[] { 7,8,9 }
+            };
+            int k1_1314 = 1;
+            int[][] matrix2_1314 = new int[][]
+            {
+                new int[] { 1,2,3 },
+                new int[] { 4,5,6 },
+                new int[] { 7,8,9 }
+            };
+            int k2_1314 = 2;
+
+            int[][] result1 = Solution.MatrixBlockSum(matrix1_1314, k1_1314);
+            int[][] result2 = Solution.MatrixBlockSum(matrix2_1314, k2_1314);
+
+            int[][] matrixOutput1 = new int[][]
+            {
+                new int[] { 12,21,16 },
+                new int[] { 27,45,33 },
+                new int[] { 24,39,28 }
+            };
+
+            int[][] matrixOutput2 = new int[][]
+            {
+                new int[] { 45,45,45 },
+                new int[] { 45,45,45 },
+                new int[] { 45,45,45 }
+            };
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[][]>(result1, matrixOutput1),
+                ResultTester.CheckResult<int[][]>(result2, matrixOutput2)
+            };
+            return results;
         }
     }
 }

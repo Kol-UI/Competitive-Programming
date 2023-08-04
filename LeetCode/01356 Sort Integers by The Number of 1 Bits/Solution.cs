@@ -26,6 +26,8 @@ Explantion: All integers have 1 bit in the binary representation, you should jus
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SortIntegersbyTheNumberof1Bits
 {
     public class Solution
@@ -75,6 +77,28 @@ namespace CompetitiveProgramming.LeetCode.SortIntegersbyTheNumberof1Bits
             }
 
             return arr;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestSortIntegersbyTheNumberof1Bits()
+        {
+            int[] arr1356_1 = {0,1,2,3,4,5,6,7,8};
+            int[] arr1356_2 = {1024,512,256,128,64,32,16,8,4,2,1};
+
+            int[] output1_1356 = {0,1,2,4,8,3,5,6,7};
+            int[] output2_1356 = {1,2,4,8,16,32,64,128,256,512,1024};
+
+            int[] result1 = Solution.SortByBits(arr1356_1);
+            int[] result2 = Solution.SortByBits(arr1356_2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(result1, output1_1356),
+                ResultTester.CheckResult<int[]>(result2, output2_1356)
+            };
+            return results;
         }
     }
 }

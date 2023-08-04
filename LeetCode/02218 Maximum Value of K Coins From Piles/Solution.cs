@@ -23,6 +23,8 @@ The maximum total can be obtained if we choose all coins from the last pile.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximumValueofKCoinsFromPiles
 {
     public class Solution
@@ -62,6 +64,44 @@ namespace CompetitiveProgramming.LeetCode.MaximumValueofKCoinsFromPiles
             }
             
             return memo[i][k] = res;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[][] piles1_2218 = new int[][]
+            {
+                new int[]{1,100,3},
+                new int[]{7,8,9}
+            };
+            int k1_2218 = 2;
+            int output1_2218 = Solution.MaxValueOfCoins(piles1_2218, k1_2218);
+
+
+            // Case 2
+            int[][] piles2_2218 = new int[][]
+            {
+                new int[]{100},
+                new int[]{100},
+                new int[]{100},
+                new int[]{100},
+                new int[]{100},
+                new int[]{100},
+                new int[]{1,1,1,1,1,1,700}
+            };
+            int k2_2218 = 7;
+            int output2_2218 = Solution.MaxValueOfCoins(piles2_2218, k2_2218);
+
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(output1_2218, 101),
+                ResultTester.CheckResult<int>(output2_2218, 706)
+            };
+            return results;
         }
     }
 }

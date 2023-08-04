@@ -27,6 +27,8 @@ The maximum total value is 3 + 2 + 5 + 4 + 3 + 2 = 19.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SellDiminishingValuedColoredBalls
 {
     public class Solution
@@ -62,6 +64,25 @@ namespace CompetitiveProgramming.LeetCode.SellDiminishingValuedColoredBalls
             }
             
             return (int)res;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] inventory1 = {2,5};
+            int orders1 = 4;
+            int[] inventory2 = {3,5};
+            int orders2 = 6;
+            int result1 = Solution.MaxProfit(inventory1, orders1);
+            int result2 = Solution.MaxProfit(inventory2, orders2);
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 14),
+                ResultTester.CheckResult<int>(result2, 19)
+            };
+            return results;
         }
     }
 }

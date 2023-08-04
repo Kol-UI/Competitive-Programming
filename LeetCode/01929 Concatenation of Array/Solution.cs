@@ -22,6 +22,8 @@ Explanation: The array ans is formed as follows:
 - ans = [1,3,2,1,1,3,2,1]
 */
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ConcatenationofArray
 {
     public class Solution
@@ -29,6 +31,29 @@ namespace CompetitiveProgramming.LeetCode.ConcatenationofArray
         public static int[] GetConcatenation(int[] nums)
         {
             return nums.Concat(nums).ToArray();
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] nums1_1929 = {1,2,1};
+            int[] output1_1929 = Solution.GetConcatenation(nums1_1929);
+
+            // Case 2
+            int[] nums2_1929 = {1,3,2,1};
+            int[] output2_1929 = Solution.GetConcatenation(nums2_1929);
+
+            int[] expected1 = {1,2,1,1,2,1};
+            int[] expected2 = {1,3,2,1,1,3,2,1};
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int[]>(output1_1929, expected1),
+                ResultTester.CheckResult<int[]>(output2_1929, expected2)
+            };
+            return results;
         }
     }
 }

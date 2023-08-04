@@ -33,6 +33,8 @@ Choosing index 2 is optimal: nums1[2] * nums2[2] = 3 * 10 = 30 is the maximum po
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MaximumSubsequenceScore
 {
     public class Solution
@@ -58,6 +60,33 @@ namespace CompetitiveProgramming.LeetCode.MaximumSubsequenceScore
                 if (pq.Count >= k) result = Math.Max(result, sum*mat[i][1]);
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1_1 = {1,3,3,2};
+            int[] nums2_1 = {2,1,3,4};
+            int k1 = 3;
+
+            int[] nums1_2 = {4,2,3,1,1};
+            int[] nums2_2 = {7,5,10,9,6};
+            int k2 = 1;
+
+            long result1 = Solution.MaxScore(nums1_1, nums2_1, k1);
+            long result2 = Solution.MaxScore(nums1_2, nums2_2, k2);
+
+            long output1 = 12;
+            long output2 = 30;
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(result1, output1),
+                ResultTester.CheckResult<long>(result2, output2)
+            };
+            return results;
         }
     }
 }

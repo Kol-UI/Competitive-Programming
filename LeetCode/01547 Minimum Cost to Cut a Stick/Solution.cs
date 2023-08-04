@@ -31,6 +31,8 @@ There are much ordering with total cost <= 25, for example, the order [4, 6, 5, 
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumCosttoCutaStick
 {
     public class Solution
@@ -59,6 +61,27 @@ namespace CompetitiveProgramming.LeetCode.MinimumCosttoCutaStick
             }
 
             return dp[0, m + 1];
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int n1 = 7;
+            int[] cuts1 = {1,3,4,5};
+            int n2 = 9;
+            int[] cuts2 = {5,6,1,4,2};
+
+            int result1 = Solution.MinCost(n1, cuts1);
+            int result2 = Solution.MinCost(n2, cuts2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 16),
+                ResultTester.CheckResult<int>(result2, 22),
+            };
+            return results;
         }
     }
 }

@@ -22,6 +22,8 @@ Explanation: There is a cycle from 0 to 0.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LargestColorValueinaDirectedGraph
 {
     public class Solution
@@ -83,6 +85,38 @@ namespace CompetitiveProgramming.LeetCode.LargestColorValueinaDirectedGraph
                 max_count = Math.Max(max_count, Enumerable.Range(0, k).Select(i => counts[u, i]).Max());
             }
             return visited == n ? max_count : -1;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            string colors1857_1 = "abaca";
+            int[][] edges1857_1 = new int[][]
+            {
+                new int[]{0,1},
+                new int[]{0,2},
+                new int[]{2,3},
+                new int[]{3,4}
+            };
+            int result1857_1 = Solution.LargestPathValue(colors1857_1, edges1857_1);
+
+            // Case 2
+            string colors1857_2 = "a";
+            int[][] edges1857_2 = new int[][]
+            {
+                new int[]{0,0}
+            };
+            int result1857_2 = Solution.LargestPathValue(colors1857_2, edges1857_2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1857_1, 3),
+                ResultTester.CheckResult<int>(result1857_2, -1)
+            };
+            return results;
         }
     }
 }

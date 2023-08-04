@@ -36,6 +36,8 @@ The bag with the most number of balls has 2 balls, so your penalty is 2, and you
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumLimitofBallsinaBag
 {
     public class Solution
@@ -59,6 +61,27 @@ namespace CompetitiveProgramming.LeetCode.MinimumLimitofBallsinaBag
                 }
             }
             return l;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            int[] nums1 = {9};
+            int maxOperations1 = 2;
+            int[] nums2 = {2,4,8,2};
+            int maxOperations2 = 4;
+
+            int result1 = Solution.MinimumSize(nums1, maxOperations1);
+            int result2 = Solution.MinimumSize(nums2, maxOperations2);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(result1, 3),
+                ResultTester.CheckResult<int>(result2, 2)
+            };
+            return results;
         }
     }
 }

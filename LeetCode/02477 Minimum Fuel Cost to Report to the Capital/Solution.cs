@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumFuelCosttoReporttotheCapital
 {
 	public class Solution
@@ -79,6 +81,48 @@ namespace CompetitiveProgramming.LeetCode.MinimumFuelCosttoReporttotheCapital
                 cost += (rep / seat) + (rep % seat > 0 ? 1 : 0);
             
             return rep;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[][] roadsCase1_2477 = new int[][]
+            {
+                new int[] {0, 1},
+                new int[] {0, 2},
+                new int[] {0, 3}
+            };
+            int seatsCase1_2477 = 5;
+            long Case1_2477_Result = Solution.MinimumFuelCost(roadsCase1_2477, seatsCase1_2477);
+
+            // Case 2
+            int[][] roadsCase2_2477 = new int[][]
+            {
+                new int[] {3, 1},
+                new int[] {3, 2},
+                new int[] {1, 0},
+                new int[] {0, 4},
+                new int[] {0, 5},
+                new int[] {4, 6}
+            };
+            int seatsCase2_2477 = 2;
+            long Case2_2477_Result = Solution.MinimumFuelCost(roadsCase2_2477, seatsCase2_2477);
+
+            // Case 3
+            int[][] roadsCase3_2477 = new int[][] { };
+            int seatsCase3_2477 = 1;
+            long Case3_2477_Result = Solution.MinimumFuelCost(roadsCase3_2477, seatsCase3_2477);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<long>(Case1_2477_Result, 3),
+                ResultTester.CheckResult<long>(Case2_2477_Result, 7),
+                ResultTester.CheckResult<long>(Case3_2477_Result, 0)
+            };
+            return results;
         }
     }
 }

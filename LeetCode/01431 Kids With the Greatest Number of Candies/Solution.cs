@@ -32,6 +32,8 @@ Output: [true,false,true]
 */
 
 using System.Text;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.KidsWiththeGreatestNumberofCandies
 {
     public class Solution
@@ -55,6 +57,31 @@ namespace CompetitiveProgramming.LeetCode.KidsWiththeGreatestNumberofCandies
                 }
             }
             return result;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestKidsWiththeGreatestNumberofCandies()
+        {
+            // Case 1
+            int[] candies1 = {2,3,5,1,3};
+            int extraCandies1 = 3;
+            IList<bool> result1 = Solution.KidsWithCandies(candies1, extraCandies1);
+
+            // Case 1
+            int[] candies2 = {4,2,1,1,2};
+            int extraCandies2 = 1;
+            IList<bool> result2 = Solution.KidsWithCandies(candies2, extraCandies2);
+
+            IList<bool> firstList = new List<bool> { true, false, false, false, false };
+            IList<bool> secondList = new List<bool> { true, false, true };
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<IList<bool>>(result1, firstList),
+                ResultTester.CheckResult<IList<bool>>(result2, secondList)
+            };
+            return results;
         }
     }
 }

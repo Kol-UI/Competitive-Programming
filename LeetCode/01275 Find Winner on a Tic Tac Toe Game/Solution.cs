@@ -35,6 +35,8 @@ Explanation: The game ends in a draw since there are no moves to make.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.FindWinneronaTicTacToeGame
 {
     public class Solution
@@ -67,6 +69,58 @@ namespace CompetitiveProgramming.LeetCode.FindWinneronaTicTacToeGame
             }
 
             return moves.Length == 9 ? "Draw" : "Pending";
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestFindWinneronaTicTacToeGame()
+        {
+            // Case 1
+            int[][] grid1_1275 = new int[][]
+            {
+                new int[] { 0,0 },
+                new int[] { 2,0 },
+                new int[] { 1,1 },
+                new int[] { 2,1 },
+                new int[] { 2,2 }
+            };
+            string result1_1275 = Solution.Tictactoe(grid1_1275);
+
+            // Case 2
+            int[][] grid2_1275 = new int[][]
+            {
+                new int[] { 0,0 },
+                new int[] { 1,1 },
+                new int[] { 0,1 },
+                new int[] { 0,2 },
+                new int[] { 1,0 },
+                new int[] { 2,0 }
+            };
+            string result2_1275 = Solution.Tictactoe(grid2_1275);
+
+            // Case 3
+            int[][] grid3_1275 = new int[][]
+            {
+                new int[] { 0,0 },
+                new int[] { 1,1 },
+                new int[] { 2,0 },
+                new int[] { 1,0 },
+                new int[] { 1,2 },
+                new int[] { 2,1 },
+                new int[] { 0,1 },
+                new int[] { 0,2 },
+                new int[] { 2,2 }
+            };
+            string result3_1275 = Solution.Tictactoe(grid3_1275);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<string>(result1_1275, "A"),
+                ResultTester.CheckResult<string>(result2_1275, "B"),
+                ResultTester.CheckResult<string>(result3_1275, "Draw")
+            };
+            return results;
         }
     }
 }

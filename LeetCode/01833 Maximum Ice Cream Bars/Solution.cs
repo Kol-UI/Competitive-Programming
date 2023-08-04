@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximumIceCreamBars
 {
@@ -40,6 +41,35 @@ namespace CompetitiveProgramming.LeetCode.MaximumIceCreamBars
                 else break;
             }
             return count;
+        }
+    }
+
+    public class Test
+    {
+        public static bool[] TestCases()
+        {
+            // Case 1
+            int[] Case1_1833 = { 1, 2, 3, 1 };
+            int CoinsCase1 = 7;
+            int Case1_1833_Result = Solution.MaxIceCream(Case1_1833, CoinsCase1);
+
+            // Case 2
+            int[] Case2_1833 = { 10, 6, 8, 7, 7, 8 };
+            int CoinsCase2 = 5;
+            int Case2_1833_Result = Solution.MaxIceCream(Case2_1833, CoinsCase2);
+
+            // Case 3
+            int[] Case3_1833 = { 1, 6, 3, 1, 2, 5 };
+            int CoinsCase3 = 20;
+            int Case3_1833_Result = Solution.MaxIceCream(Case3_1833, CoinsCase3);
+
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Case1_1833_Result, 4),
+                ResultTester.CheckResult<int>(Case2_1833_Result, 0),
+                ResultTester.CheckResult<int>(Case3_1833_Result, 6)
+            };
+            return results;
         }
     }
 }
