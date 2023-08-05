@@ -87,7 +87,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             NextGreaterElementIIIFunc, SubsetsIIFunc, MinimumNumberofVerticestoReachAllNodesFunc, BasicCalculatorIIFunc, TopKFrequentWordsFunc, NextGreaterElementIIFunc, LinkedListinBinaryTreeFunc, MaximumSideLengthofaSquarewithSumLessthanorEqualtoThresholdFunc, CloneGraphFunc, CombinationsFunc, SurroundedRegionsFunc,
             SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc, CombinationSumFunc, CopyListwithRandomPointerFunc, MinimumGeneticMutationFunc, LongestZigZagPathinaBinaryTreeFunc, SubarrayProductLessThanKFunc, PermutationinStringFunc, BestTimetoBuyandSellStockwithCooldownFunc, SetMatrixZeroesFunc,
             LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc, MinimumTimetoCollectAllApplesinaTreeFunc, PathwithMaximumProbabilityFunc, FindDuplicateSubtreesFunc, PathSumIIIFunc, ConstructBinaryTreefromInorderandPostorderTraversalFunc,
-            MinimumRemovetoMakeValidParenthesesFunc, FindEventualSafeStatesFunc, NaryTreeLevelOrderTraversalFunc, FlattenNestedListIteratorFunc,
+            MinimumRemovetoMakeValidParenthesesFunc, FindEventualSafeStatesFunc, NaryTreeLevelOrderTraversalFunc, FlattenNestedListIteratorFunc, UniqueBinarySearchTreesIIFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -4654,11 +4654,20 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ResultTester.SpecialTestCase("LC");
         }
 
+
         private static void SingleNumberIIFunc()
         {
             Program.Space();
             Program.Title("Single Number II");
             ResultTester.CheckSolution("LC", LeetCode.SingleNumberII.Test.TestCases());
+        }
+
+
+        private static void UniqueBinarySearchTreesIIFunc()
+        {
+            Program.Space();
+            Program.Title("Unique Binary Search Trees II");
+            ResultTester.SpecialTestCase("LC");
         }
 
 
