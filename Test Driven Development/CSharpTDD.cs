@@ -14,7 +14,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, ReturnNegativeFunc, RemoveExclamationMarksFunc, BeginnerLostWithoutaMapFunc,
             FindMinAndMaxOfListFunc, StringRepeatFunc, SumOfPositiveFunc, ConvertbooleanvaluestostringsYesorNoFunc, ConvertaNumbertoaStringFunc, ANeedleintheHaystackFunc,
             EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc,
-            BeginnerSeries2ClockFunc, OppositesAttractFunc, SquaringAnArgumentFunc, ReturningStringsFunc, ReturnToSanityFunc, ReturnHelloWorldFunc,
+            BeginnerSeries2ClockFunc, OppositesAttractFunc, SquaringAnArgumentFunc, ReturningStringsFunc, ReturnToSanityFunc, ReturnHelloWorldFunc, BeginnerSeries1SchoolPaperworkFunc,
             YouCantCodeUnderPressure1Func, CenturyFromYearFunc, BasicMathematicalOperationsFunc, ConvertNumberToReversedArrayOfDigitsFunc, AbbreviateaTwoWordNameFunc
         };
 
@@ -30,7 +30,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] codeChefLearn = new Delegate[]
         {
-            StringOperationsFunc, IndexingFunc, AccessingcharactersofaStringFunc, StringOperationsSTRS7Func, EnormousInputTestFunc, GoodTurnFunc, AddTwoNumbersCCFunc, UserInputUsrs1Func,
+            StringOperationsFunc, IndexingFunc, AccessingcharactersofaStringFunc, StringOperationsSTRS7Func, EnormousInputTestFunc, GoodTurnFunc, AddTwoNumbersCCFunc, UserInputUsrs1Func, USRS2IntegerInputFunc,
         };
 
         private static Delegate[] codeChefBeginner = new Delegate[]
@@ -92,7 +92,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] leetCodeHardList = new Delegate[]
         {
-            CountDigitOneFunc, LongestPathWithDifferentAdjacentCharactersFunc, CheckifPointIsReachableFunc, NamingaCompanyFunc, IPOFunc, EditDistanceFunc, CountSubarraysWithFixedBoundsFunc, JumpGameIVFunc, LongestCycleinaGraphFunc, NumberofWaysofCuttingaPizzaFunc, FindMinimuminRotatedSortedArrayIIFunc,
+            CountDigitOneFunc, LongestPathWithDifferentAdjacentCharactersFunc, CheckifPointIsReachableFunc, NamingaCompanyFunc, IPOFunc, EditDistanceFunc, CountSubarraysWithFixedBoundsFunc, JumpGameIVFunc, LongestCycleinaGraphFunc, NumberofWaysofCuttingaPizzaFunc, FindMinimuminRotatedSortedArrayIIFunc, NumberofMusicPlaylistsFunc,
             ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
             MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc,
             NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc, MergekSortedListsFunc,
@@ -104,7 +104,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
         {
-            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc, PlusMinusFunc,
+            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc, PlusMinusFunc, StaircaseFunc,
         };
 
         private static Delegate[] hackerRankMediumList = new Delegate[]
@@ -114,7 +114,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] hackerRankHardList = new Delegate[]
         {
-            
+            FormingaMagicSquareFunc, AshtonandStringFunc,
         };
 
         private static Delegate[] geeksForGeeksSchoolList = new Delegate[]
@@ -130,6 +130,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] geeksForGeeksEasyList = new Delegate[]
         {
             CounttheSubstringsFunc, MinimumIntegerFunc, Remainderondividingby11Func, MakeArrayElementsEqualFunc, EqualLeftandRightSubarraySumFunc, BFSofgraphFunc, MakeTheArrayBeautifulFunc, FrogsAndJumpFunc, DominantPairsFunc, DFSofGraphFunc,
+            StringPermutationsFunc,
         };
 
         private static Delegate[] geeksForGeeksMediumList = new Delegate[]
@@ -145,7 +146,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] codeForces800List = new Delegate[]
         {
-            TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc,
+            TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc,
         };
 
         private static Delegate[] coderByteList = new Delegate[]
@@ -4668,6 +4669,70 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Unique Binary Search Trees II");
             ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void NumberofMusicPlaylistsFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Music Playlists");
+            ResultTester.CheckSolution("LC", LeetCode.NumberofMusicPlaylists.Test.TestCases());
+        }
+
+
+        private static void BeginnerSeries1SchoolPaperworkFunc()
+        {
+            Program.Space();
+            Program.Title("Beginner Series #1 School Paperwork");
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.BeginnerSeries1SchoolPaperwork.Test.TestCases());
+        }
+
+
+        private static void USRS2IntegerInputFunc()
+        {
+            Program.Space();
+            Program.Title("USRS2 Integer Input");
+            ResultTester.CheckSolution("CC", CodeChef.USRS2IntegerInput.Test.TestCases());
+        }
+
+
+        private static void StringPermutationsFunc()
+        {
+            Program.Space();
+            Program.Title("String Permutations");
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Easy.StringPermutations.Test.TestCases());
+        }
+
+
+        private static void BeautifulMatrixFunc()
+        {
+            Program.Space();
+            Program.Title("Beautiful Matrix");
+            ResultTester.CheckSolution("CF", CodeForces.BeautifulMatrix.Test.TestCases());
+        }
+
+
+        private static void StaircaseFunc()
+        {
+            Program.Space();
+            Program.Title("Staircase");
+            ResultTester.CheckSolution("HR", HackerRank.Staircase.Test.TestCases());
+        }
+
+
+        private static void FormingaMagicSquareFunc()
+        {
+            Program.Space();
+            Program.Title("Forming a Magic Square");
+            ResultTester.CheckSolution("HR", HackerRank.FormingaMagicSquare.Test.TestCases());
+        }
+
+
+        private static void AshtonandStringFunc()
+        {
+            Program.Space();
+            Program.Title("Ashton and String");
+            ResultTester.CheckSolution("HR", HackerRank.AshtonandString.Test.TestCases());
         }
 
 
