@@ -30,7 +30,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] codeChefLearn = new Delegate[]
         {
-            StringOperationsFunc, IndexingFunc, AccessingcharactersofaStringFunc, StringOperationsSTRS7Func, EnormousInputTestFunc, GoodTurnFunc, AddTwoNumbersCCFunc, UserInputUsrs1Func, USRS2IntegerInputFunc,
+            StringOperationsFunc, IndexingFunc, AccessingcharactersofaStringFunc, StringOperationsSTRS7Func, EnormousInputTestFunc, GoodTurnFunc, AddTwoNumbersCCFunc, UserInputUsrs1Func, USRS2IntegerInputFunc, HelloUserFunc,
         };
 
         private static Delegate[] codeChefBeginner = new Delegate[]
@@ -87,7 +87,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             NextGreaterElementIIIFunc, SubsetsIIFunc, MinimumNumberofVerticestoReachAllNodesFunc, BasicCalculatorIIFunc, TopKFrequentWordsFunc, NextGreaterElementIIFunc, LinkedListinBinaryTreeFunc, MaximumSideLengthofaSquarewithSumLessthanorEqualtoThresholdFunc, CloneGraphFunc, CombinationsFunc, SurroundedRegionsFunc,
             SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc, CombinationSumFunc, CopyListwithRandomPointerFunc, MinimumGeneticMutationFunc, LongestZigZagPathinaBinaryTreeFunc, SubarrayProductLessThanKFunc, PermutationinStringFunc, BestTimetoBuyandSellStockwithCooldownFunc, SetMatrixZeroesFunc,
             LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc, MinimumTimetoCollectAllApplesinaTreeFunc, PathwithMaximumProbabilityFunc, FindDuplicateSubtreesFunc, PathSumIIIFunc, ConstructBinaryTreefromInorderandPostorderTraversalFunc,
-            MinimumRemovetoMakeValidParenthesesFunc, FindEventualSafeStatesFunc, NaryTreeLevelOrderTraversalFunc, FlattenNestedListIteratorFunc, UniqueBinarySearchTreesIIFunc,
+            MinimumRemovetoMakeValidParenthesesFunc, FindEventualSafeStatesFunc, NaryTreeLevelOrderTraversalFunc, FlattenNestedListIteratorFunc, UniqueBinarySearchTreesIIFunc, FindLatestGroupofSizeMFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -141,12 +141,12 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] geeksForGeeksHardList = new Delegate[]
         {
-            SpecialDigitsFunc, DivideInIncrementialGroupsFunc,
+            SpecialDigitsFunc, DivideInIncrementialGroupsFunc, SolvetheSudokuFunc,
         };
 
         private static Delegate[] codeForces800List = new Delegate[]
         {
-            TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc,
+            TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc,
         };
 
         private static Delegate[] coderByteList = new Delegate[]
@@ -4733,6 +4733,38 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Ashton and String");
             ResultTester.CheckSolution("HR", HackerRank.AshtonandString.Test.TestCases());
+        }
+
+
+        private static void FindLatestGroupofSizeMFunc()
+        {
+            Program.Space();
+            Program.Title("Find Latest Group of Size M");
+            ResultTester.CheckSolution("LC", LeetCode.FindLatestGroupofSizeM.Test.TestCases());
+        }
+
+
+        private static void HelloUserFunc()
+        {
+            Program.Space();
+            Program.Title("Hello User");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void PetyaandStringsFunc()
+        {
+            Program.Space();
+            Program.Title("Petya and Strings");
+            ResultTester.CheckSolution("CF", CodeForces.PetyaandStrings.Test.TestCases());
+        }
+
+
+        private static void SolvetheSudokuFunc()
+        {
+            Program.Space();
+            Program.Title("Solve the Sudoku");
+            ResultTester.SpecialTestCase("GFG");
         }
 
 
