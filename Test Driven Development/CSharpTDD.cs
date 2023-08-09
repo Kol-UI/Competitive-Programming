@@ -153,7 +153,12 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] coderByteList = new Delegate[]
         {
-            FirstFactorialFunc, FirstReverseFunc
+            FirstFactorialFunc, FirstReverseFunc,
+        };
+
+        private static Delegate[] atCoderList = new Delegate[]
+        {
+            ADisjointSetUnionFunc, BFenwickTreeFunc, CFloorSumFunc, DMaxflowFunc,
         };
 
 
@@ -161,6 +166,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             // All CoderByte Solutions
             CoderByteTests();
+
+            // All AtCoder Solutions
+            AtCoderTests();
 
             // All CodeWars Solutions
             CodeWarsTests();
@@ -276,6 +284,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static void CoderByteTests()
         {
             InvokeDelegateIfNotNull(coderByteList);
+        }
+
+
+        // ATCODER
+        private static void AtCoderTests()
+        {
+            InvokeDelegateIfNotNull(atCoderList);
         }
 
 
@@ -4898,10 +4913,41 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void ADisjointSetUnionFunc()
+        {
+            Program.Space();
+            Program.Title("Disjoint Set Union");
+            ResultTester.CheckSolution("AC", AtCoder.ADisjointSetUnion.Test.TestCases());
+        }
+
+
+        private static void BFenwickTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Fenwick Tree");
+            ResultTester.CheckSolution("AC", AtCoder.BFenwickTree.Test.TestCases());
+        }
+
+        
+        private static void CFloorSumFunc()
+        {
+            Program.Space();
+            Program.Title("Floor Sum");
+            ResultTester.SpecialTestCase("AC");
+        }
+
+
+        private static void DMaxflowFunc()
+        {
+            Program.Space();
+            Program.Title("Max flow");
+            ResultTester.SpecialTestCase("AC");
+        }
+
+ 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-
         }
     }
 }

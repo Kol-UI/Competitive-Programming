@@ -27,6 +27,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static int _counterCodeWarsProblem = 0;
         private static int _counterGeeksForGeeksProblem = 0;
         private static int _counterHackerRankProblem = 0;
+        private static int _counterAtCoderProblem = 0;
         private static int _counterOtherSourceProblem = 0;
         
         // Lock
@@ -280,6 +281,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         public static void SpecialTestCase(string source)
         {
             Console.WriteLine("See Solution Directly");
+            TestDone();
+            ValidateTest();
             ValidateSolution();
             TestSolution();
             SourceManager(source);
@@ -309,6 +312,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                     break;
                 case "CW":
                     _counterCodeWarsProblem++;
+                    break;
+                case "AC":
+                    _counterAtCoderProblem++;
                     break;
                 default:
                     _counterOtherSourceProblem++;
@@ -403,7 +409,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         public static string GetProblemsSourcesCounters()
         {
             string separator = " | ";
-            StringBuilder counters = new StringBuilder();
+            StringBuilder counters = new();
+            counters.Append("AtCoder Problems : [" + _counterAtCoderProblem.ToString() + "]" + separator);
             counters.Append("CodeChef Problems : [" + _counterCodeChefProblem.ToString() + "]" + separator);
             counters.Append("CodeForces Problems : [" + _counterCodeForcesProblem.ToString() + "]" + separator);
             counters.Append("CoderByte Problems : [" + _counterCoderByteProblem.ToString() + "]" + separator);
