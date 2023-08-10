@@ -15,7 +15,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             FindMinAndMaxOfListFunc, StringRepeatFunc, SumOfPositiveFunc, ConvertbooleanvaluestostringsYesorNoFunc, ConvertaNumbertoaStringFunc, ANeedleintheHaystackFunc,
             EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc, MakeUpperCaseFunc,
             BeginnerSeries2ClockFunc, OppositesAttractFunc, SquaringAnArgumentFunc, ReturningStringsFunc, ReturnToSanityFunc, ReturnHelloWorldFunc, BeginnerSeries1SchoolPaperworkFunc,
-            YouCantCodeUnderPressure1Func, CenturyFromYearFunc, BasicMathematicalOperationsFunc, ConvertNumberToReversedArrayOfDigitsFunc, AbbreviateaTwoWordNameFunc
+            YouCantCodeUnderPressure1Func, CenturyFromYearFunc, BasicMathematicalOperationsFunc, ConvertNumberToReversedArrayOfDigitsFunc, AbbreviateaTwoWordNameFunc, SimplemultiplicationFunc,
         };
 
         private static Delegate[] codeWarsSevenKyuList = new Delegate[]
@@ -31,7 +31,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeChefLearn = new Delegate[]
         {
             StringOperationsFunc, IndexingFunc, AccessingcharactersofaStringFunc, StringOperationsSTRS7Func, EnormousInputTestFunc, GoodTurnFunc, AddTwoNumbersCCFunc, UserInputUsrs1Func, USRS2IntegerInputFunc, HelloUserFunc,
-            CalculatorFunc,
+            CalculatorFunc, MiletoKilometerConvertorFunc,
         };
 
         private static Delegate[] codeChefBeginner = new Delegate[]
@@ -89,6 +89,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc, CombinationSumFunc, CopyListwithRandomPointerFunc, MinimumGeneticMutationFunc, LongestZigZagPathinaBinaryTreeFunc, SubarrayProductLessThanKFunc, PermutationinStringFunc, BestTimetoBuyandSellStockwithCooldownFunc, SetMatrixZeroesFunc,
             LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc, MinimumTimetoCollectAllApplesinaTreeFunc, PathwithMaximumProbabilityFunc, FindDuplicateSubtreesFunc, PathSumIIIFunc, ConstructBinaryTreefromInorderandPostorderTraversalFunc,
             MinimumRemovetoMakeValidParenthesesFunc, FindEventualSafeStatesFunc, NaryTreeLevelOrderTraversalFunc, FlattenNestedListIteratorFunc, UniqueBinarySearchTreesIIFunc, FindLatestGroupofSizeMFunc, ReorderListFunc, ShortestPathVisitingAllNodesFunc, SortCharactersByFrequencyFunc, SumofMutatedArrayClosesttoTargetFunc,
+            KClosestPointstoOriginFunc,
             MinimizetheMaximumDifferenceofPairsFunc,
         };
 
@@ -151,14 +152,24 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc,
         };
 
-        private static Delegate[] coderByteList = new Delegate[]
+        private static Delegate[] coderByteEasyList = new Delegate[]
         {
             FirstFactorialFunc, FirstReverseFunc,
         };
 
+        private static Delegate[] coderByteMediumList = new Delegate[]
+        {
+            MinWindowSubstringFunc,
+        };
+
+        private static Delegate[] coderByteHardList = new Delegate[]
+        {
+            BracketCombinationsFunc,
+        };
+
         private static Delegate[] atCoderList = new Delegate[]
         {
-            ADisjointSetUnionFunc, BFenwickTreeFunc, CFloorSumFunc, DMaxflowFunc,
+            ADisjointSetUnionFunc, BFenwickTreeFunc, CFloorSumFunc, DMaxflowFunc, EMinCostFlowFunc, FConvolutionFunc, GSCCFunc,
         };
 
 
@@ -283,7 +294,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         // CODERBYTE
         private static void CoderByteTests()
         {
-            InvokeDelegateIfNotNull(coderByteList);
+            // Easy
+            InvokeDelegateIfNotNull(coderByteEasyList);
+
+            // Medium
+            InvokeDelegateIfNotNull(coderByteMediumList);
+
+            // Hard
+            InvokeDelegateIfNotNull(coderByteHardList);
         }
 
 
@@ -4942,6 +4960,70 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Max flow");
             ResultTester.SpecialTestCase("AC");
+        }
+
+
+        private static void EMinCostFlowFunc()
+        {
+            Program.Space();
+            Program.Title("Min Cost Flow");
+            ResultTester.SpecialTestCase("AC");
+        }
+
+
+        private static void FConvolutionFunc()
+        {
+            Program.Space();
+            Program.Title("Convolution");
+            ResultTester.SpecialTestCase("AC");
+        }
+
+
+        private static void SimplemultiplicationFunc()
+        {
+            Program.Space();
+            Program.Title("Simple multiplication");
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.Simplemultiplication.Test.TestCases());
+        }
+
+
+        private static void GSCCFunc()
+        {
+            Program.Space();
+            Program.Title("SCC");
+            ResultTester.SpecialTestCase("AC");
+        }
+
+
+        private static void KClosestPointstoOriginFunc()
+        {
+            Program.Space();
+            Program.Title("K Closest Points to Origin");
+            ResultTester.CheckSolution("LC", LeetCode.KClosestPointstoOrigin.Test.TestCases());
+        }
+
+
+        private static void MiletoKilometerConvertorFunc()
+        {
+            Program.Space();
+            Program.Title("Mile to Kilometer Convertor");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void BracketCombinationsFunc()
+        {
+            Program.Space();
+            Program.Title("Bracket Combinations");
+            ResultTester.CheckSolution("CB", CoderByte.BracketCombinations.Test.TestCases());
+        }
+
+
+        private static void MinWindowSubstringFunc()
+        {
+            Program.Space();
+            Program.Title("Min Window Substring");
+            ResultTester.CheckSolution("CB", CoderByte.MinWindowSubstring.Test.TestCases());
         }
 
  
