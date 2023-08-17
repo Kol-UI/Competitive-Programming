@@ -102,7 +102,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc, BusRoutesFunc, StrangePrinterFunc, SumofDistancesinTreeFunc, DataStreamasDisjointIntervalsFunc,
             MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc, FirstMissingPositiveFunc, LFUCacheFunc, BinaryTreeMaximumPathSumFunc,
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc, MaxPointsonaLineFunc,
-            CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc,
+            CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc, SlidingWindowMaximumFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -5024,6 +5024,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Min Window Substring");
             ResultTester.CheckSolution("CB", CoderByte.MinWindowSubstring.Test.TestCases());
+        }
+
+
+        private static void SlidingWindowMaximumFunc()
+        {
+            Program.Space();
+            Program.Title("Sliding Window Maximum");
+            ResultTester.CheckSolution("LC", LeetCode.SlidingWindowMaximum.Test.TestCases());
         }
 
  
