@@ -68,7 +68,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc, CountSubIslandsFunc, KRadiusSubarrayAveragesFunc, SeatReservationManagerFunc, MaximumLevelSumofaBinaryTreeFunc, LowestCommonAncestorofaBinaryTreeFunc, RemoveNthNodeFromEndofListFunc,
             NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc, NondecreasingSubsequencesFunc, HouseRobberFunc, ValidSudokuFunc, AddTwoNumbersFunc,
             MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc, HIndexIIFunc, FindaPeakElementIIFunc, WaterandJugProblemFunc, ShortestPathinBinaryMatrixFunc, OddEvenLinkedListFunc, GasStationFunc, PermutationsFunc, RotateImageFunc,
-            OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc, RangeSumofSortedSubarraySumsFunc, SellDiminishingValuedColoredBallsFunc, PermutationsIIFunc, CheapestFlightsWithinKStopsFunc, LowestCommonAncestorofaBinarySearchTreeFunc,
+            OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc, RangeSumofSortedSubarraySumsFunc, SellDiminishingValuedColoredBallsFunc, PermutationsIIFunc, CheapestFlightsWithinKStopsFunc, LowestCommonAncestorofaBinarySearchTreeFunc, CombinationSumIVFunc,
             SimplifyPathFunc, ValidateStackSequencesFunc, LongestPalindromicSubsequenceFunc, NonoverlappingIntervalsFunc, RobotBoundedInCircleFunc, MinimumSizeSubarraySumFunc, OpentheLockFunc, DesignBrowserHistoryFunc, RottingOrangesFunc, ConstructQuadTreeFunc, BinaryTreePostorderTraversalFunc, BullsandCowsFunc,
             MatrixDiagonalSumFunc, MultiplyStringsFunc, PowxnFunc, ReverseWordsinaStringFunc, ProductofArrayExceptSelfFunc, WaystoSplitArrayIntoThreeSubarraysFunc, FindKClosestElementsFunc, PopulatingNextRightPointersinEachNodeIIFunc, AddTwoNumbersIIFunc, PeekingIteratorFunc, SpiralMatrixFunc, ZigzagConversionFunc,
             Dota2SenateFunc, MinimumFlipstoMakeaORbEqualtocFunc, BestTimetoBuyandSellStockwithTransactionFeeFunc, IncreasingTripletSubsequenceFunc, MaximumNumberofVowelsinaSubstringofGivenLengthFunc, SearchSuggestionsSystemFunc, MaximumWidthofBinaryTreeFunc, ReverseLinkedListFunc, SpiralMatrixIIFunc, SingleNumberIIFunc,
@@ -103,6 +103,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc, FirstMissingPositiveFunc, LFUCacheFunc, BinaryTreeMaximumPathSumFunc,
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc, MaxPointsonaLineFunc,
             CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc, SlidingWindowMaximumFunc,
+            FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -169,7 +170,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] atCoderList = new Delegate[]
         {
-            ADisjointSetUnionFunc, BFenwickTreeFunc, CFloorSumFunc, DMaxflowFunc, EMinCostFlowFunc, FConvolutionFunc, GSCCFunc,
+            ADisjointSetUnionFunc, BFenwickTreeFunc, CFloorSumFunc, DMaxflowFunc, EMinCostFlowFunc, FConvolutionFunc, GSCCFunc, TwoSATFunc,
         };
 
 
@@ -5056,6 +5057,30 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Perfect Squares");
             ResultTester.CheckSolution("LC", LeetCode.PerfectSquares.Test.TestCases());
+        }
+
+
+        private static void CombinationSumIVFunc()
+        {
+            Program.Space();
+            Program.Title("Combination Sum IV");
+            ResultTester.CheckSolution("LC", LeetCode.CombinationSumIV.Test.TestCases());
+        }
+
+
+        private static void FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void TwoSATFunc()
+        {
+            Program.Space();
+            Program.Title("Two SAT");
+            ResultTester.SpecialTestCase("AC");
         }
 
  
