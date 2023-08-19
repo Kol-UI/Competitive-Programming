@@ -90,7 +90,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc, MinimumTimetoCollectAllApplesinaTreeFunc, PathwithMaximumProbabilityFunc, FindDuplicateSubtreesFunc, PathSumIIIFunc, ConstructBinaryTreefromInorderandPostorderTraversalFunc,
             MinimumRemovetoMakeValidParenthesesFunc, FindEventualSafeStatesFunc, NaryTreeLevelOrderTraversalFunc, FlattenNestedListIteratorFunc, UniqueBinarySearchTreesIIFunc, FindLatestGroupofSizeMFunc, ReorderListFunc, ShortestPathVisitingAllNodesFunc, SortCharactersByFrequencyFunc, SumofMutatedArrayClosesttoTargetFunc,
             KClosestPointstoOriginFunc, CheckifThereisaValidPartitionForTheArrayFunc,
-            MinimizetheMaximumDifferenceofPairsFunc,
+            MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -170,7 +170,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] atCoderList = new Delegate[]
         {
-            ADisjointSetUnionFunc, BFenwickTreeFunc, CFloorSumFunc, DMaxflowFunc, EMinCostFlowFunc, FConvolutionFunc, GSCCFunc, TwoSATFunc,
+            ADisjointSetUnionFunc, BFenwickTreeFunc, CFloorSumFunc, DMaxflowFunc, EMinCostFlowFunc, FConvolutionFunc, GSCCFunc, TwoSATFunc, NumberofSubstringsFunc, SegmentTreeFunc,
         };
 
 
@@ -5080,6 +5080,30 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Two SAT");
+            ResultTester.SpecialTestCase("AC");
+        }
+
+
+        private static void NumberofSubstringsFunc()
+        {
+            Program.Space();
+            Program.Title("Number of Substrings");
+            ResultTester.SpecialTestCase("AC");
+        }
+
+
+        private static void TimeBasedKeyValueStoreFunc()
+        {
+            Program.Space();
+            Program.Title("Time Based Key-Value Store");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void SegmentTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Segment Tree");
             ResultTester.SpecialTestCase("AC");
         }
 
