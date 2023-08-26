@@ -3,7 +3,7 @@
 using System;
 using System.Linq;
 
-namespace CompetitiveProgramming.atcoder.LazySegmentTree
+namespace CompetitiveProgramming.AtCoder.LazySegmentTree
 {
     class Program
     {

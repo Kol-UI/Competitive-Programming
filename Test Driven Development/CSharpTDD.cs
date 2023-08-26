@@ -160,7 +160,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] coderByteMediumList = new Delegate[]
         {
-            MinWindowSubstringFunc,
+            MinWindowSubstringFunc, TreeConstructorFunc,
         };
 
         private static Delegate[] coderByteHardList = new Delegate[]
@@ -5129,6 +5129,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Range Affine Range Sum");
             ResultTester.SpecialTestCase("AC");
+        }
+
+
+        private static void TreeConstructorFunc()
+        {
+            Program.Space();
+            Program.Title("Tree Constructor");
+            ResultTester.CheckSolution("CB", CoderByte.TreeConstructor.Test.TestCases());
         }
 
  
