@@ -170,7 +170,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] atCoderList = new Delegate[]
         {
-            ADisjointSetUnionFunc, BFenwickTreeFunc, CFloorSumFunc, DMaxflowFunc, EMinCostFlowFunc, FConvolutionFunc, GSCCFunc, TwoSATFunc, NumberofSubstringsFunc, SegmentTreeFunc,
+            ADisjointSetUnionFunc, BFenwickTreeFunc, CFloorSumFunc, DMaxflowFunc, EMinCostFlowFunc, FConvolutionFunc, GSCCFunc, TwoSATFunc, NumberofSubstringsFunc, SegmentTreeFunc, RangeAffineRangeSumFunc,
         };
 
 
@@ -5113,6 +5113,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Maximum Length of Pair Chain");
             ResultTester.CheckSolution("LC", LeetCode.MaximumLengthofPairChain.Test.TestCases());
+        }
+
+
+        private static void RangeAffineRangeSumFunc()
+        {
+            Program.Space();
+            Program.Title("Range Affine Range Sum");
+            ResultTester.SpecialTestCase("AC");
         }
 
  
