@@ -2,7 +2,7 @@
 
 using System;
 
-namespace ProblemSolution
+namespace CompetitiveProgramming.AtCoder.RangeAffineRangeSum
 {
     class Program
     {
