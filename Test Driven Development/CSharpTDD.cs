@@ -59,6 +59,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc,
             ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc,
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc,
+            DetermineWhetherMatrixCanBeObtainedByRotationFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -90,7 +91,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc, MinimumTimetoCollectAllApplesinaTreeFunc, PathwithMaximumProbabilityFunc, FindDuplicateSubtreesFunc, PathSumIIIFunc, ConstructBinaryTreefromInorderandPostorderTraversalFunc,
             MinimumRemovetoMakeValidParenthesesFunc, FindEventualSafeStatesFunc, NaryTreeLevelOrderTraversalFunc, FlattenNestedListIteratorFunc, UniqueBinarySearchTreesIIFunc, FindLatestGroupofSizeMFunc, ReorderListFunc, ShortestPathVisitingAllNodesFunc, SortCharactersByFrequencyFunc, SumofMutatedArrayClosesttoTargetFunc,
             KClosestPointstoOriginFunc, CheckifThereisaValidPartitionForTheArrayFunc, MaximumLengthofPairChainFunc, MinimumPenaltyforaShopFunc, InterleavingStringFunc, MinimumSpeedtoArriveonTimeFunc, MinimumNumberofDaystoMakemBouquetsFunc, FairDistributionofCookiesFunc, RepeatedDNASequencesFunc, NumberofLongestIncreasingSubsequenceFunc,
-            MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc, DeleteOperationforTwoStringsFunc, BitwiseANDofNumbersRangeFunc, MaximumNumberofRemovableCharactersFunc, FindKPairswithSmallestSumsFunc, MinimumAbsoluteSumDifferenceFunc,
+            MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc, DeleteOperationforTwoStringsFunc, BitwiseANDofNumbersRangeFunc, MaximumNumberofRemovableCharactersFunc, FindKPairswithSmallestSumsFunc, MinimumAbsoluteSumDifferenceFunc, FindtheSmallestDivisorGivenaThresholdFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -5337,6 +5338,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Minimum Absolute Sum Difference");
             ResultTester.CheckSolution("LC", LeetCode.MinimumAbsoluteSumDifference.Test.TestCases());
+        }
+
+
+        private static void DetermineWhetherMatrixCanBeObtainedByRotationFunc()
+        {
+            Program.Space();
+            Program.Title("Determine Whether Matrix Can Be Obtained By Rotation");
+            ResultTester.CheckSolution("LC", LeetCode.DetermineWhetherMatrixCanBeObtainedByRotation.Test.TestCases());
+        }
+
+
+        private static void FindtheSmallestDivisorGivenaThresholdFunc()
+        {
+            Program.Space();
+            Program.Title("Find the Smallest Divisor Given a Threshold");
+            ResultTester.CheckSolution("LC", LeetCode.FindtheSmallestDivisorGivenaThreshold.Test.TestCases());
         }
 
  
