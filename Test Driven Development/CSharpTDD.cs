@@ -31,7 +31,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeChefLearn = new Delegate[]
         {
             StringOperationsFunc, IndexingFunc, AccessingcharactersofaStringFunc, StringOperationsSTRS7Func, EnormousInputTestFunc, GoodTurnFunc, AddTwoNumbersCCFunc, UserInputUsrs1Func, USRS2IntegerInputFunc, HelloUserFunc,
-            CalculatorFunc, MiletoKilometerConvertorFunc,
+            CalculatorFunc, MiletoKilometerConvertorFunc, CSB001IntroductionFunc, CSB002IntroductionFunc, CSB003IntroductionFunc,
         };
 
         private static Delegate[] codeChefBeginner = new Delegate[]
@@ -152,7 +152,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] codeForces800List = new Delegate[]
         {
-            TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc,
+            TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -5403,6 +5403,46 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Design Authentication Manager");
             ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void WordCapitalizationFunc()
+        {
+            Program.Space();
+            Program.Title("Word Capitalization");
+            ResultTester.CheckSolution("CF", CodeForces.WordCapitalization.Solution.TestCases());
+        }
+
+
+        private static void BoyorGirlFunc()
+        {
+            Program.Space();
+            Program.Title("Boy or Girl");
+            ResultTester.CheckSolution("CF", CodeForces.BoyorGirl.Solution.TestCases());
+        }
+
+
+        private static void CSB001IntroductionFunc()
+        {
+            Program.Space();
+            Program.Title("CSB001 Introduction");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void CSB002IntroductionFunc()
+        {
+            Program.Space();
+            Program.Title("CSB002 Introduction");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void CSB003IntroductionFunc()
+        {
+            Program.Space();
+            Program.Title("CSB003 Introduction");
+            ResultTester.SpecialTestCase("CC");
         }
 
  
