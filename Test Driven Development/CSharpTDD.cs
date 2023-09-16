@@ -130,7 +130,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] geeksForGeeksBasicList = new Delegate[]
         {
-            
+            PrintfirstnFibonacciNumbersFunc, ReversearrayingroupsFunc,
         };
 
         private static Delegate[] geeksForGeeksEasyList = new Delegate[]
@@ -1004,6 +1004,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("DFS of Graph");
             ResultTester.CheckSolution("GFG", GeeksForGeeks.Easy.DFSofGraph.Test.TestDFSofGraph());
+        }
+
+
+        private static void PrintfirstnFibonacciNumbersFunc()
+        {
+            Program.Space();
+            Program.Title("Print first n Fibonacci Numbers");
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Basic.PrintfirstnFibonacciNumbers.Test.TestCases());
+        }
+
+
+        private static void ReversearrayingroupsFunc()
+        {
+            Program.Space();
+            Program.Title("Reverse array in groups");
+            ResultTester.SpecialTestCase("GFG");
         }
 
 
