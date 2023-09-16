@@ -92,7 +92,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumRemovetoMakeValidParenthesesFunc, FindEventualSafeStatesFunc, NaryTreeLevelOrderTraversalFunc, FlattenNestedListIteratorFunc, UniqueBinarySearchTreesIIFunc, FindLatestGroupofSizeMFunc, ReorderListFunc, ShortestPathVisitingAllNodesFunc, SortCharactersByFrequencyFunc, SumofMutatedArrayClosesttoTargetFunc,
             KClosestPointstoOriginFunc, CheckifThereisaValidPartitionForTheArrayFunc, MaximumLengthofPairChainFunc, MinimumPenaltyforaShopFunc, InterleavingStringFunc, MinimumSpeedtoArriveonTimeFunc, MinimumNumberofDaystoMakemBouquetsFunc, FairDistributionofCookiesFunc, RepeatedDNASequencesFunc, NumberofLongestIncreasingSubsequenceFunc,
             MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc, DeleteOperationforTwoStringsFunc, BitwiseANDofNumbersRangeFunc, MaximumNumberofRemovableCharactersFunc, FindKPairswithSmallestSumsFunc, MinimumAbsoluteSumDifferenceFunc, FindtheSmallestDivisorGivenaThresholdFunc, SplitLinkedListinPartsFunc,
-            DesignAuthenticationManagerFunc, InsertDeleteGetRandomFunc, MyCalendarIFunc, MaximizetheConfusionofanExamFunc, AllNodesDistanceKinBinaryTreeFunc, LongestPalindromebyConcatenatingTwoLetterWordsFunc,
+            DesignAuthenticationManagerFunc, InsertDeleteGetRandomFunc, MyCalendarIFunc, MaximizetheConfusionofanExamFunc, AllNodesDistanceKinBinaryTreeFunc, LongestPalindromebyConcatenatingTwoLetterWordsFunc, PathWithMinimumEffortFunc, WhereWilltheBallFallFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -5475,6 +5475,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Task Scheduler");
             ResultTester.CheckSolution("LC", LeetCode.TaskScheduler.Test.TestCases());
+        }
+
+
+        private static void PathWithMinimumEffortFunc()
+        {
+            Program.Space();
+            Program.Title("Path With Minimum Effort");
+            ResultTester.CheckSolution("LC", LeetCode.PathWithMinimumEffort.Test.TestCases());
+        }
+
+
+        private static void WhereWilltheBallFallFunc()
+        {
+            Program.Space();
+            Program.Title("Where Will the Ball Fall");
+            ResultTester.CheckSolution("LC", LeetCode.WhereWilltheBallFall.Test.TestCases());
         }
 
 
