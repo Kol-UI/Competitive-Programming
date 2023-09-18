@@ -137,7 +137,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] geeksForGeeksEasyList = new Delegate[]
         {
             CounttheSubstringsFunc, MinimumIntegerFunc, Remainderondividingby11Func, MakeArrayElementsEqualFunc, EqualLeftandRightSubarraySumFunc, BFSofgraphFunc, MakeTheArrayBeautifulFunc, FrogsAndJumpFunc, DominantPairsFunc, DFSofGraphFunc,
-            StringPermutationsFunc,
+            StringPermutationsFunc, FindfirstsetbitFunc,
         };
 
         private static Delegate[] geeksForGeeksMediumList = new Delegate[]
@@ -158,7 +158,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] coderByteEasyList = new Delegate[]
         {
-            FirstFactorialFunc, FirstReverseFunc,
+            FirstFactorialFunc, FirstReverseFunc, CodelandUsernameValidationFunc,
         };
 
         private static Delegate[] coderByteMediumList = new Delegate[]
@@ -5652,6 +5652,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Bear and Big Brother");
             ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void CodelandUsernameValidationFunc()
+        {
+            Program.Space();
+            Program.Title("Codeland Username Validation");
+            ResultTester.CheckSolution("CB", CoderByte.CodelandUsernameValidation.Test.TestCases());
+        }
+
+
+        private static void FindfirstsetbitFunc()
+        {
+            Program.Space();
+            Program.Title("Find first set bit");
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Easy.Findfirstsetbit.Test.TestCases());
         }
 
  
