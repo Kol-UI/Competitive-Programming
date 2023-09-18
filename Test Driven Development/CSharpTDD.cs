@@ -153,7 +153,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] codeForces800List = new Delegate[]
         {
-            TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc,
+            TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -5636,6 +5636,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Reconstruct Itinerary");
             ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void StonesontheTableFunc()
+        {
+            Program.Space();
+            Program.Title("Stones on the Table");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void BearandBigBrotherFunc()
+        {
+            Program.Space();
+            Program.Title("Bear and Big Brother");
+            ResultTester.SpecialTestCase("CF");
         }
 
  
