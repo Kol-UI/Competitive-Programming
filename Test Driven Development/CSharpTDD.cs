@@ -11,7 +11,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
     {
         private static Delegate[] codeWarsEightList = new Delegate[]
         {
-            GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, ReturnNegativeFunc, RemoveExclamationMarksFunc, BeginnerLostWithoutaMapFunc,
+            GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, ReturnNegativeFunc, RemoveExclamationMarksFunc, BeginnerLostWithoutaMapFunc, AreYouPlayingBanjoFunc,
             FindMinAndMaxOfListFunc, StringRepeatFunc, SumOfPositiveFunc, ConvertbooleanvaluestostringsYesorNoFunc, ConvertaNumbertoaStringFunc, ANeedleintheHaystackFunc,
             EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc, MakeUpperCaseFunc,
             BeginnerSeries2ClockFunc, OppositesAttractFunc, SquaringAnArgumentFunc, ReturningStringsFunc, ReturnToSanityFunc, ReturnHelloWorldFunc, BeginnerSeries1SchoolPaperworkFunc,
@@ -31,7 +31,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeChefLearn = new Delegate[]
         {
             StringOperationsFunc, IndexingFunc, AccessingcharactersofaStringFunc, StringOperationsSTRS7Func, EnormousInputTestFunc, GoodTurnFunc, AddTwoNumbersCCFunc, UserInputUsrs1Func, USRS2IntegerInputFunc, HelloUserFunc,
-            CalculatorFunc, MiletoKilometerConvertorFunc, CSB001IntroductionFunc, CSB002IntroductionFunc, CSB003IntroductionFunc,
+            CalculatorFunc, MiletoKilometerConvertorFunc, CSB001IntroductionFunc, CSB002IntroductionFunc, CSB003IntroductionFunc, CSB004ArithmeticOperationsFunc, CSB007MultipleOutputsFunc,
         };
 
         private static Delegate[] codeChefBeginner = new Delegate[]
@@ -101,7 +101,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             CountDigitOneFunc, LongestPathWithDifferentAdjacentCharactersFunc, CheckifPointIsReachableFunc, NamingaCompanyFunc, IPOFunc, EditDistanceFunc, CountSubarraysWithFixedBoundsFunc, JumpGameIVFunc, LongestCycleinaGraphFunc, NumberofWaysofCuttingaPizzaFunc, FindMinimuminRotatedSortedArrayIIFunc, NumberofMusicPlaylistsFunc, WordLadderFunc, CandyFunc,
             ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
             MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc, FrogJumpFunc, TextJustificationFunc, SortItemsbyGroupsRespectingDependenciesFunc,
-            NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc, MergekSortedListsFunc, PutMarblesinBagsFunc, CountAllValidPickupandDeliveryOptionsFunc, ReconstructItineraryFunc,
+            NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc, MergekSortedListsFunc, PutMarblesinBagsFunc, CountAllValidPickupandDeliveryOptionsFunc, ReconstructItineraryFunc, NQueensFunc,
             CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc, BusRoutesFunc, StrangePrinterFunc, SumofDistancesinTreeFunc, DataStreamasDisjointIntervalsFunc, MinimumNumberofTapstoOpentoWateraGardenFunc,
             MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc, FirstMissingPositiveFunc, LFUCacheFunc, BinaryTreeMaximumPathSumFunc,
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc, MaxPointsonaLineFunc, MaximumRunningTimeofNComputersFunc,
@@ -111,7 +111,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
         {
-            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc, PlusMinusFunc, StaircaseFunc,
+            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc, PlusMinusFunc, StaircaseFunc, MiniMaxSumFunc,
         };
 
         private static Delegate[] hackerRankMediumList = new Delegate[]
@@ -158,7 +158,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] coderByteEasyList = new Delegate[]
         {
-            FirstFactorialFunc, FirstReverseFunc, CodelandUsernameValidationFunc,
+            FirstFactorialFunc, FirstReverseFunc, CodelandUsernameValidationFunc, FindIntersectionFunc,
         };
 
         private static Delegate[] coderByteMediumList = new Delegate[]
@@ -5668,6 +5668,54 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Find first set bit");
             ResultTester.CheckSolution("GFG", GeeksForGeeks.Easy.Findfirstsetbit.Test.TestCases());
+        }
+
+
+        private static void FindIntersectionFunc()
+        {
+            Program.Space();
+            Program.Title("Find Intersection");
+            ResultTester.CheckSolution("CB", CoderByte.FindIntersection.Test.TestCases());
+        }
+
+
+        private static void AreYouPlayingBanjoFunc()
+        {
+            Program.Space();
+            Program.Title("Are You Playing Banjo");
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.AreYouPlayingBanjo.Test.TestCases());
+        }
+
+
+        private static void CSB004ArithmeticOperationsFunc()
+        {
+            Program.Space();
+            Program.Title("CSB004 Arithmetic Operations");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void CSB007MultipleOutputsFunc()
+        {
+            Program.Space();
+            Program.Title("CSB007 Multiple Outputs");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void MiniMaxSumFunc()
+        {
+            Program.Space();
+            Program.Title("Mini-Max Sum");
+            ResultTester.SpecialTestCase("HR");
+        }
+
+
+        private static void NQueensFunc()
+        {
+            Program.Space();
+            Program.Title("N-Queens");
+            ResultTester.CheckSolution("LC", LeetCode.NQueens.Test.TestCases());
         }
 
  
