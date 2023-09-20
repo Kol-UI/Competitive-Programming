@@ -93,7 +93,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             KClosestPointstoOriginFunc, CheckifThereisaValidPartitionForTheArrayFunc, MaximumLengthofPairChainFunc, MinimumPenaltyforaShopFunc, InterleavingStringFunc, MinimumSpeedtoArriveonTimeFunc, MinimumNumberofDaystoMakemBouquetsFunc, FairDistributionofCookiesFunc, RepeatedDNASequencesFunc, NumberofLongestIncreasingSubsequenceFunc,
             MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc, DeleteOperationforTwoStringsFunc, BitwiseANDofNumbersRangeFunc, MaximumNumberofRemovableCharactersFunc, FindKPairswithSmallestSumsFunc, MinimumAbsoluteSumDifferenceFunc, FindtheSmallestDivisorGivenaThresholdFunc, SplitLinkedListinPartsFunc,
             DesignAuthenticationManagerFunc, InsertDeleteGetRandomFunc, MyCalendarIFunc, MaximizetheConfusionofanExamFunc, AllNodesDistanceKinBinaryTreeFunc, LongestPalindromebyConcatenatingTwoLetterWordsFunc, PathWithMinimumEffortFunc, WhereWilltheBallFallFunc, MinimumASCIIDeleteSumforTwoStringsFunc, CombinationSumIIFunc,
-            GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc,
+            GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc, MinimumOperationstoReduceXtoZeroFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -5716,6 +5716,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("N-Queens");
             ResultTester.CheckSolution("LC", LeetCode.NQueens.Test.TestCases());
+        }
+
+
+        private static void MinimumOperationstoReduceXtoZeroFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Operations to Reduce X to Zero");
+            ResultTester.CheckSolution("LC", LeetCode.MinimumOperationstoReduceXtoZero.Test.TestCases());
         }
 
  
