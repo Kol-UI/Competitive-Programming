@@ -158,7 +158,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] coderByteEasyList = new Delegate[]
         {
-            FirstFactorialFunc, FirstReverseFunc, CodelandUsernameValidationFunc, FindIntersectionFunc,
+            FirstFactorialFunc, FirstReverseFunc, CodelandUsernameValidationFunc, FindIntersectionFunc, QuestionsMarksFunc,
         };
 
         private static Delegate[] coderByteMediumList = new Delegate[]
@@ -5724,6 +5724,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Minimum Operations to Reduce X to Zero");
             ResultTester.CheckSolution("LC", LeetCode.MinimumOperationstoReduceXtoZero.Test.TestCases());
+        }
+
+
+        private static void QuestionsMarksFunc()
+        {
+            Program.Space();
+            Program.Title("Questions Marks");
+            ResultTester.CheckSolution("CB", CoderByte.QuestionsMarks.Test.TestCases());
         }
 
  
