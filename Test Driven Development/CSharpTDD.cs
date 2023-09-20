@@ -143,7 +143,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] geeksForGeeksMediumList = new Delegate[]
         {
             StringrporprFunc, EvenSwapFunc, MinimumStepsRequiredFunc, AddMinimumCharactersFunc, MaximumLengthFunc, RemoveandReverseFunc, ShyGeek, MaximumIntersectingLinesFunc, KnightInGeeklandFunc, CountSpecialNumbersFunc, BTSMaximumDifferenceFunc,
-            ReverseaStackFunc,
+            ReverseaStackFunc, SticklerThiefFunc,
         };
 
         private static Delegate[] geeksForGeeksHardList = new Delegate[]
@@ -5732,6 +5732,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Questions Marks");
             ResultTester.CheckSolution("CB", CoderByte.QuestionsMarks.Test.TestCases());
+        }
+
+
+        private static void SticklerThiefFunc()
+        {
+            Program.Space();
+            Program.Title("Stickler Thief");
+            ResultTester.CheckSolution("GFG", GeeksForGeeks.Medium.SticklerThief.Test.TestCases());
         }
 
  
