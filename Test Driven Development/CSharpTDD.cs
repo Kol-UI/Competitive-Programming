@@ -111,7 +111,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
         {
-            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc, PlusMinusFunc, StaircaseFunc, MiniMaxSumFunc,
+            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc, PlusMinusFunc, StaircaseFunc, MiniMaxSumFunc, BirthdayCakeCandlesFunc, TimeConversionFunc,
         };
 
         private static Delegate[] hackerRankMediumList = new Delegate[]
@@ -158,7 +158,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] coderByteEasyList = new Delegate[]
         {
-            FirstFactorialFunc, FirstReverseFunc, CodelandUsernameValidationFunc, FindIntersectionFunc, QuestionsMarksFunc,
+            FirstFactorialFunc, FirstReverseFunc, CodelandUsernameValidationFunc, FindIntersectionFunc, QuestionsMarksFunc, LongestWordFunc,
         };
 
         private static Delegate[] coderByteMediumList = new Delegate[]
@@ -5765,6 +5765,31 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Title("Soldier and Bananas");
             ResultTester.SpecialTestCase("CF");
         }
+
+
+        private static void LongestWordFunc()
+        {
+            Program.Space();
+            Program.Title("Longest Word");
+            ResultTester.CheckSolution("CB", CoderByte.LongestWord.Test.TestCases());
+        }
+
+
+        private static void BirthdayCakeCandlesFunc()
+        {
+            Program.Space();
+            Program.Title("Birthday Cake Candles");
+            ResultTester.SpecialTestCase("HR");
+        }
+
+
+        private static void TimeConversionFunc()
+        {
+            Program.Space();
+            Program.Title("Time Conversion");
+            ResultTester.CheckSolution("HR", HackerRank.TimeConversion.Test.TestCases());
+        }
+        
 
  
         // CURRENT TESTS
