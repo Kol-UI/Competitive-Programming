@@ -106,7 +106,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc, FirstMissingPositiveFunc, LFUCacheFunc, BinaryTreeMaximumPathSumFunc,
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc, MaxPointsonaLineFunc, MaximumRunningTimeofNComputersFunc,
             CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc, SlidingWindowMaximumFunc,
-            FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc, MinimumReplacementstoSorttheArrayFunc,
+            FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc, MinimumReplacementstoSorttheArrayFunc, MedianofTwoSortedArraysFunc,
         };
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
@@ -5740,6 +5740,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Stickler Thief");
             ResultTester.CheckSolution("GFG", GeeksForGeeks.Medium.SticklerThief.Test.TestCases());
+        }
+
+
+        private static void MedianofTwoSortedArraysFunc()
+        {
+            Program.Space();
+            Program.Title("Median of Two Sorted Arrays");
+            ResultTester.CheckSolution("LC", LeetCode.MedianofTwoSortedArrays.Test.TestCases());
         }
 
  
