@@ -51,7 +51,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, LengthofLastWordFunc, ToLowerCaseFunc, ConvertBinaryNumberinaLinkedListtoIntegerFunc, FirstBadVersionFunc, SubtreeofAnotherTreeFunc,
             FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ValidPerfectSquareFunc, ArrangingCoinsFunc, BaseballGameFunc, KeysandRoomsFunc, SumofLeftLeavesFunc, BinaryTreeInorderTraversalFunc,
             RobotReturntoOriginFunc, FindWinneronaTicTacToeGameFunc, LemonadeChangeFunc, LargestPerimeterTriangleFunc, CheckIfItIsaStraightLineFunc, DeleteColumnstoMakeSortedFunc, GuessNumberHigherorLowerFunc, ExcelSheetColumnTitleFunc,
-            ReverseVowelsofaStringFunc, CountingBitsFunc, IsSubsequenceFunc, MinCostClimbingStairsFunc, MaximumAverageSubarrayIFunc, DesignParkingSystemFunc, LeafSimilarTreesFunc, IntersectionofTwoArraysIIFunc, RemoveElement,
+            ReverseVowelsofaStringFunc, CountingBitsFunc, IsSubsequenceFunc, MinCostClimbingStairsFunc, MaximumAverageSubarrayIFunc, DesignParkingSystemFunc, LeafSimilarTreesFunc, IntersectionofTwoArraysIIFunc, RemoveElementFunc,
             FindtheHighestAltitudeFunc, FindPivotIndexFunc, UniqueNumberofOccurrencesFunc, MajorityElementFunc, GoalParserInterpretationFunc, AddtoArrayFormofIntegerFunc, DetectCapitalFunc, ValidAnagramFunc, ImplementStackusingQueuesFunc,
             FloodFillFunc, HappyNumberFunc, DecryptStringfromAlphabettoIntegerMappingFunc, TheKWeakestRowsinaMatrixFunc, CheckifOneStringSwapCanMakeStringsEqualFunc, MergeTwoBinaryTreesFunc, BinaryTreePreorderTraversalFunc,
             SubtracttheProductandSumofDigitsofanIntegerFunc, SpecialArrayWithXElementsGreaterThanorEqualXFunc, SqrtxFunc, FindtheDistanceValueBetweenTwoArraysFunc, SortColorsFunc, ReverseStringFunc, IntersectionofTwoLinkedListsFunc,
@@ -59,7 +59,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc,
             ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc,
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc,
-            DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc,
+            DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -153,7 +153,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] codeForces800List = new Delegate[]
         {
-            TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc,
+            TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -5767,6 +5767,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void ElephantFunc()
+        {
+            Program.Space();
+            Program.Title("Elephant");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void WordFunc()
+        {
+            Program.Space();
+            Program.Title("Word");
+            ResultTester.CheckSolution("CF", CodeForces.Word.Test.TestCases());
+        }
+
+
         private static void LongestWordFunc()
         {
             Program.Space();
@@ -5799,11 +5815,19 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
         
 
-        private static void RemoveElement()
+        private static void RemoveElementFunc()
         {
             Program.Space();
             Program.Title("Remove Element");
             ResultTester.CheckSolution("LC", LeetCode.RemoveElement.Test.TestCases());
+        }
+
+
+        private static void RemoveDuplicatesfromSortedArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Remove Duplicates from Sorted Array");
+            ResultTester.CheckSolution("LC", LeetCode.RemoveDuplicatesfromSortedArray.Test.TestCases());
         }
 
  
