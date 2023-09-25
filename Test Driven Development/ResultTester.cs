@@ -28,6 +28,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static int _counterGeeksForGeeksProblem = 0;
         private static int _counterHackerRankProblem = 0;
         private static int _counterAtCoderProblem = 0;
+        private static int _counterCodinGameProblem = 0;
         private static int _counterOtherSourceProblem = 0;
         
         // Lock
@@ -316,6 +317,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 case "AC":
                     _counterAtCoderProblem++;
                     break;
+                case "CG":
+                    _counterCodinGameProblem++;
+                    break;
                 default:
                     _counterOtherSourceProblem++;
                     break;
@@ -416,6 +420,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             counters.Append("CoderByte Problems : [" + _counterCoderByteProblem.ToString() + "]" + separator);
             counters.Append("CodeWars Problems : [" + _counterCodeWarsProblem.ToString() + "]" + "\n");
 
+            counters.Append("CodinGame Problems : [" + _counterCodinGameProblem.ToString() + "]" + separator);
             counters.Append("GeeksForGeeks Problems : [" + _counterGeeksForGeeksProblem.ToString() + "]" + separator);
             counters.Append("HackerRank Problems : [" + _counterHackerRankProblem.ToString() + "]" + separator);
             counters.Append("LeetCode Problems : [" + _counterLeetCodeProblem.ToString() + "]");

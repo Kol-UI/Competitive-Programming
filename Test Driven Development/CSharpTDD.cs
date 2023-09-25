@@ -176,6 +176,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ADisjointSetUnionFunc, BFenwickTreeFunc, CFloorSumFunc, DMaxflowFunc, EMinCostFlowFunc, FConvolutionFunc, GSCCFunc, TwoSATFunc, NumberofSubstringsFunc, SegmentTreeFunc, RangeAffineRangeSumFunc, LazySegmentTreeFunc,
         };
 
+        private static Delegate[] codinGameList = new Delegate[]
+        {
+            TheDescentFunc, OnboardingFunc,
+        };
 
         public static void StartAllTDD()
         {
@@ -187,6 +191,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
             // All CodeWars Solutions
             CodeWarsTests();
+
+            // All CodinGame Solutions
+            CodinGameTests();
 
             // All CodeChef Solutions
             CodeChefTests();
@@ -313,6 +320,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static void AtCoderTests()
         {
             InvokeDelegateIfNotNull(atCoderList);
+        }
+
+
+        // CODINGAME
+        private static void CodinGameTests()
+        {
+            InvokeDelegateIfNotNull(codinGameList);
         }
 
 
@@ -5828,6 +5842,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Remove Duplicates from Sorted Array");
             ResultTester.CheckSolution("LC", LeetCode.RemoveDuplicatesfromSortedArray.Test.TestCases());
+        }
+
+        
+        private static void TheDescentFunc()
+        {
+            Program.Space();
+            Program.Title("The Descent");
+            ResultTester.SpecialTestCase("CG");
+        }
+
+
+        private static void OnboardingFunc()
+        {
+            Program.Space();
+            Program.Title("Onboarding");
+            ResultTester.SpecialTestCase("CG");
         }
 
  
