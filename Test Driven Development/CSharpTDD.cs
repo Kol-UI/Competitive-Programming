@@ -59,7 +59,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc,
             ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc,
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc,
-            DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc,
+            DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -154,6 +154,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeForces800List = new Delegate[]
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
+            WrongSubtractionFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -5874,6 +5875,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Decoded Stringat Index");
             ResultTester.CheckSolution("LC", LeetCode.DecodedStringatIndex.Test.TestCases());
+        }
+
+
+        private static void SortArrayByParityFunc()
+        {
+            Program.Space();
+            Program.Title("Sort Array By Parity");
+            ResultTester.CheckSolution("LC", LeetCode.SortArrayByParity.Test.TestCases());
+        }
+
+
+        private static void WrongSubtractionFunc()
+        {
+            Program.Space();
+            Program.Title("Wrong Subtraction");
+            ResultTester.SpecialTestCase("CF");
         }
 
  
