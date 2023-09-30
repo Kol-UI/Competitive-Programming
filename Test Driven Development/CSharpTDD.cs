@@ -154,7 +154,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeForces800List = new Delegate[]
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
-            WrongSubtractionFunc, NearlyLuckyNumberFunc,
+            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -5818,7 +5818,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Time Conversion");
-            ResultTester.CheckSolution("HR", HackerRank.TimeConversion.Test.TestCases());
+            ResultTester.SpecialTestCase("HR");
         }
 
 
@@ -5907,6 +5907,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("132 Pattern");
             ResultTester.CheckSolution("LC", LeetCode.OneThreeTwoPattern.Test.TestCases());
+        }
+
+
+        private static void AntonandDanikFunc()
+        {
+            Program.Space();
+            Program.Title("Anton and Danik");
+            ResultTester.CheckSolution("CF", CodeForces.AntonandDanik.Test.TestCases());
+        }
+
+
+        private static void ATranslationFunc()
+        {
+            Program.Space();
+            Program.Title("41A Translation");
+            ResultTester.CheckSolution("CF", CodeForces.Translation.Test.TestCases());
         }
 
  
