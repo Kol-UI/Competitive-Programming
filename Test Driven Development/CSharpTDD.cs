@@ -12,7 +12,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeWarsEightList = new Delegate[]
         {
             GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, ReturnNegativeFunc, RemoveExclamationMarksFunc, BeginnerLostWithoutaMapFunc, AreYouPlayingBanjoFunc,
-            FindMinAndMaxOfListFunc, StringRepeatFunc, SumOfPositiveFunc, ConvertbooleanvaluestostringsYesorNoFunc, ConvertaNumbertoaStringFunc, ANeedleintheHaystackFunc,
+            FindMinAndMaxOfListFunc, StringRepeatFunc, SumOfPositiveFunc, ConvertbooleanvaluestostringsYesorNoFunc, ConvertaNumbertoaStringFunc, ANeedleintheHaystackFunc, InvertValuesFunc,
             EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc, MakeUpperCaseFunc,
             BeginnerSeries2ClockFunc, OppositesAttractFunc, SquaringAnArgumentFunc, ReturningStringsFunc, ReturnToSanityFunc, ReturnHelloWorldFunc, BeginnerSeries1SchoolPaperworkFunc,
             YouCantCodeUnderPressure1Func, CenturyFromYearFunc, BasicMathematicalOperationsFunc, ConvertNumberToReversedArrayOfDigitsFunc, AbbreviateaTwoWordNameFunc, SimplemultiplicationFunc,
@@ -31,7 +31,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeChefLearn = new Delegate[]
         {
             StringOperationsFunc, IndexingFunc, AccessingcharactersofaStringFunc, StringOperationsSTRS7Func, EnormousInputTestFunc, GoodTurnFunc, AddTwoNumbersCCFunc, UserInputUsrs1Func, USRS2IntegerInputFunc, HelloUserFunc,
-            CalculatorFunc, MiletoKilometerConvertorFunc, CSB001IntroductionFunc, CSB002IntroductionFunc, CSB003IntroductionFunc, CSB004ArithmeticOperationsFunc, CSB007MultipleOutputsFunc,
+            CalculatorFunc, MiletoKilometerConvertorFunc, CSB001IntroductionFunc, CSB002IntroductionFunc, CSB003IntroductionFunc, CSB004ArithmeticOperationsFunc, CSB007MultipleOutputsFunc, CSB008OutputsInSeperateLinesFunc, CSB009AreaPerimeterofRectangleFunc,
         };
 
         private static Delegate[] codeChefBeginner = new Delegate[]
@@ -154,7 +154,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeForces800List = new Delegate[]
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
-            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc,
+            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -5716,6 +5716,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Title("CSB007 Multiple Outputs");
             ResultTester.SpecialTestCase("CC");
         }
+        
+
+        private static void CSB008OutputsInSeperateLinesFunc()
+        {
+            Program.Space();
+            Program.Title("CSB008 Outputs In Seperate Lines");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void CSB009AreaPerimeterofRectangleFunc()
+        {
+            Program.Space();
+            Program.Title("CSB009 Area & Perimeter of Rectangle");
+            ResultTester.SpecialTestCase("CC");
+        }
 
 
         private static void MiniMaxSumFunc()
@@ -5923,6 +5939,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("41A Translation");
             ResultTester.CheckSolution("CF", CodeForces.Translation.Test.TestCases());
+        }
+
+
+        private static void ATramFunc()
+        {
+            Program.Space();
+            Program.Title("116A Tram");
+            ResultTester.CheckSolution("CF", CodeForces.Tram.Test.TestCases());
+        }
+
+
+        private static void InvertValuesFunc()
+        {
+            Program.Space();
+            Program.Title("Invert Values");
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.InvertValues.Test.TestCases());
         }
 
  

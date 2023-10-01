@@ -17,6 +17,7 @@ Output: "doG gniD"
 */
 
 using System;
+using System.Text;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ReverseWordsinaStringIII
@@ -46,6 +47,27 @@ namespace CompetitiveProgramming.LeetCode.ReverseWordsinaStringIII
         }
     }
 
+    public class AlternativeSolution
+    {
+        public static string ReverseWords(string s)
+        {
+            var arrayOfWords = s.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            StringBuilder reversedString = new StringBuilder("");
+
+            foreach (var word in arrayOfWords)
+            {            
+                char[] charArray = word.ToCharArray();
+                Array.Reverse(charArray);
+
+                reversedString.Append(" " + new string(charArray));
+            }
+
+            string result = reversedString.ToString().Substring(1);
+
+            return result;
+        }
+    }
+
     public class Test
     {
         public static bool[] TestReverseWordsinaStringIII()
@@ -58,10 +80,15 @@ namespace CompetitiveProgramming.LeetCode.ReverseWordsinaStringIII
             string result1 = Solution.ReverseWords(case1_557);
             string result2 = Solution.ReverseWords(case2_557);
 
+            string AlternativeResult1 = AlternativeSolution.ReverseWords(case1_557);
+            string AlternativeResult2 = AlternativeSolution.ReverseWords(case2_557);
+
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<string>(result1, output1_557),
-                ResultTester.CheckResult<string>(result2, output2_557)
+                ResultTester.CheckResult<string>(result2, output2_557),
+                ResultTester.CheckResult<string>(AlternativeResult1, output1_557),
+                ResultTester.CheckResult<string>(AlternativeResult2, output2_557)
             };
             return results;
         }
