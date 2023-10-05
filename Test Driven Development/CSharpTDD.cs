@@ -94,6 +94,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc, DeleteOperationforTwoStringsFunc, BitwiseANDofNumbersRangeFunc, MaximumNumberofRemovableCharactersFunc, FindKPairswithSmallestSumsFunc, MinimumAbsoluteSumDifferenceFunc, FindtheSmallestDivisorGivenaThresholdFunc, SplitLinkedListinPartsFunc,
             DesignAuthenticationManagerFunc, InsertDeleteGetRandomFunc, MyCalendarIFunc, MaximizetheConfusionofanExamFunc, AllNodesDistanceKinBinaryTreeFunc, LongestPalindromebyConcatenatingTwoLetterWordsFunc, PathWithMinimumEffortFunc, WhereWilltheBallFallFunc, MinimumASCIIDeleteSumforTwoStringsFunc, CombinationSumIIFunc,
             GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc, MinimumOperationstoReduceXtoZeroFunc, ChampagneTowerFunc, RemoveDuplicateLettersFunc, DecodedStringatIndexFunc, OneThreeTwoPatternFunc, RemoveColoredPiecesifBothNeighborsaretheSameColorFunc,
+            MajorityElementIIFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -5971,6 +5972,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Number of Good Pairs");
             ResultTester.CheckSolution("LC", LeetCode.NumberofGoodPairs.Test.TestCases());
+        }
+
+
+        private static void MajorityElementIIFunc()
+        {
+            Program.Space();
+            Program.Title("Majority Element II");
+            ResultTester.CheckSolution("LC", LeetCode.MajorityElementII.Test.TestCases());
         }
 
  
