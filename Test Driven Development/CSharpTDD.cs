@@ -155,7 +155,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeForces800List = new Delegate[]
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
-            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc,
+            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -6020,6 +6020,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Find in Mountain Array");
             ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void VanyaandFenceFunc()
+        {
+            Program.Space();
+            Program.Title("Vanya and Fence");
+            ResultTester.CheckSolution("CF", CodeForces.VanyaandFence.Test.TestCases());
         }
 
  

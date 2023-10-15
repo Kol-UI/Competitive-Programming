@@ -1,7 +1,6 @@
 // Anton and Danik
 
 using System;
-using System;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeForces.AntonandDanik;
