@@ -58,7 +58,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SumofAllOddLengthSubarraysFunc, NextGreaterElementIFunc, SquaresofaSortedArrayFunc, FibonacciNumberFunc, FindNearestPointThatHastheSameXorYCoordinateFunc, NaryTreePreorderTraversalFunc, MaximumAscendingSubarraySumFunc,
             Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc,
             ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc,
-            InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc,
+            InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc,
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, 
         };
 
@@ -94,7 +94,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc, DeleteOperationforTwoStringsFunc, BitwiseANDofNumbersRangeFunc, MaximumNumberofRemovableCharactersFunc, FindKPairswithSmallestSumsFunc, MinimumAbsoluteSumDifferenceFunc, FindtheSmallestDivisorGivenaThresholdFunc, SplitLinkedListinPartsFunc,
             DesignAuthenticationManagerFunc, InsertDeleteGetRandomFunc, MyCalendarIFunc, MaximizetheConfusionofanExamFunc, AllNodesDistanceKinBinaryTreeFunc, LongestPalindromebyConcatenatingTwoLetterWordsFunc, PathWithMinimumEffortFunc, WhereWilltheBallFallFunc, MinimumASCIIDeleteSumforTwoStringsFunc, CombinationSumIIFunc,
             GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc, MinimumOperationstoReduceXtoZeroFunc, ChampagneTowerFunc, RemoveDuplicateLettersFunc, DecodedStringatIndexFunc, OneThreeTwoPatternFunc, RemoveColoredPiecesifBothNeighborsaretheSameColorFunc,
-            MajorityElementIIFunc,
+            MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -104,7 +104,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc, FrogJumpFunc, TextJustificationFunc, SortItemsbyGroupsRespectingDependenciesFunc,
             NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc, MergekSortedListsFunc, PutMarblesinBagsFunc, CountAllValidPickupandDeliveryOptionsFunc, ReconstructItineraryFunc, NQueensFunc, PaintingtheWallsFunc, 
             CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc, BusRoutesFunc, StrangePrinterFunc, SumofDistancesinTreeFunc, DataStreamasDisjointIntervalsFunc, MinimumNumberofTapstoOpentoWateraGardenFunc, MaxDotProductofTwoSubsequencesFunc, NumberofFlowersinFullBloomFunc, FindinMountainArrayFunc, ConstrainedSubsequenceSumFunc, ParallelCoursesIIIFunc,
-            MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc, FirstMissingPositiveFunc, LFUCacheFunc, BinaryTreeMaximumPathSumFunc, MinimumNumberofOperationstoMakeArrayContinuousFunc, NumberofWaystoStayintheSamePlaceAfterSomeStepsFunc,
+            MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc, FirstMissingPositiveFunc, LFUCacheFunc, BinaryTreeMaximumPathSumFunc, MinimumNumberofOperationstoMakeArrayContinuousFunc, NumberofWaystoStayintheSamePlaceAfterSomeStepsFunc, CountVowelsPermutationFunc,
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc, MaxPointsonaLineFunc, MaximumRunningTimeofNComputersFunc,
             CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc, SlidingWindowMaximumFunc, MaximumScoreofaGoodSubarrayFunc,
             FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc, MinimumReplacementstoSorttheArrayFunc, MedianofTwoSortedArraysFunc, BuildArrayWhereYouCanFindTheMaximumExactlyKComparisonsFunc,
@@ -155,7 +155,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeForces800List = new Delegate[]
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
-            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc,
+            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYear,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -6085,12 +6085,61 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Title("Parallel Courses III");
             ResultTester.CheckSolution("LC", LeetCode.ParallelCoursesIII.Test.TestCases());
         }
+
+
+        private static void CountVowelsPermutationFunc()
+        {
+            Program.Space();
+            Program.Title("Count Vowels Permutation");
+            ResultTester.CheckSolution("LC", LeetCode.CountVowelsPermutation.Test.TestCases());
+        }
+
+
+        private static void PowerofFourFunc()
+        {
+            Program.Space();
+            Program.Title("Power of Four");
+            ResultTester.CheckSolution("LC", LeetCode.PowerofFour.Test.TestCases());
+        }
+
+
+        private static void FindLargestValueinEachTreeRowFunc()
+        {
+            Program.Space();
+            Program.Title("Find Largest Value in Each Tree Row");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void KthSymbolinGrammarFunc()
+        {
+            Program.Space();
+            Program.Title("K-th Symbol in Grammar");
+            ResultTester.CheckSolution("LC", LeetCode.KthSymbolinGrammar.Test.TestCases());
+        }
+
+
+        private static void BeautifulYear()
+        {
+            Program.Space();
+            Program.Title("Beautiful Year");
+            ResultTester.CheckSolution("CF", CodeForces.BeautifulYear.Test.TestCases());
+        }
+        
+        
+        private static void BinaryTreesWithFactorsFunc()
+        {
+            Program.Space();
+            Program.Title("Binary Trees With Factors");
+            ResultTester.CheckSolution("LC", LeetCode.BinaryTreesWithFactors.Test.TestCases());
+        }
         
 
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
+            
         }
     }
 }
