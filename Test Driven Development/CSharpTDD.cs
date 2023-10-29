@@ -155,7 +155,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeForces800List = new Delegate[]
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
-            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYear,
+            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -6119,7 +6119,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
-        private static void BeautifulYear()
+        private static void BeautifulYearFunc()
         {
             Program.Space();
             Program.Title("Beautiful Year");
@@ -6140,6 +6140,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Poor Pigs");
             ResultTester.CheckSolution("LC", LeetCode.PoorPigs.Test.TestCases());
+        }
+
+
+        private static void InSearchofanEasyProblemFunc()
+        {
+            Program.Space();
+            Program.Title("In Search of an Easy Problem");
+            ResultTester.CheckSolution("CF", CodeForces.InSearchofanEasyProblem.Test.TestCases());
         }
         
         
