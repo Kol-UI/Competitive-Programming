@@ -42,7 +42,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] leetCodeEasyList = new Delegate[]
         {
             ClimbingStairsFunc, AddTwoIntegersFunc, NumberOfStepsFunc, ContainsDuplicateFunc, BestTimetoBuyandSellStockFunc, RangeSumQueryImmutableFunc, DesignHashSetFunc, SearchintoaBinarySearchTreeFunc, SameTreeFunc, AddStringsFunc,
-            FirstUniqueCharacterinaStringFunc, SingleNumberFunc, FindJudgeFunc, ShuffleTheArrayFunc, CountOddNumbersInAnIntervalRangeFunc, RunningSumof1dArrayFunc, TwoSumIVInputisaBSTFunc, WordPatternFunc, SymmetricTreeFunc,
+            FirstUniqueCharacterinaStringFunc, SingleNumberFunc, FindJudgeFunc, ShuffleTheArrayFunc, CountOddNumbersInAnIntervalRangeFunc, RunningSumof1dArrayFunc, TwoSumIVInputisaBSTFunc, WordPatternFunc, SymmetricTreeFunc, FindtheKorofanArrayFunc,
             AddBinaryFunc, DefanginganIPAddressFunc, FindLuckyIntegerinanArrayFunc, SearchInsertPositionFunc, FindtheIndexoftheFirstOccurrenceinaStringFunc, MinimumDistanceBetweenBSTNodesFunc, PascalsTriangleIIFunc, DiameterofBinaryTreeFunc,
             KthMissingPositiveNumberFunc, ConvertSortedArraytoBinarySearchTreeFunc, CanPlaceFlowersFunc, KItemsWiththeMaximumSumFunc, BinarySearchFunc, MiddleoftheLinkedListFunc, ReshapetheMatrixFunc, MergeSortedArrayFunc,
             CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc, DesignHashMapFunc, AlternatingDigitSumFunc, TwoSumFunc, BalancedBinaryTreeFunc,
@@ -60,6 +60,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc,
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc,
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc,  FindModeinBinarySearchTreeFunc,
+            SubarraysDistinctElementSumofSquaresIFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -94,7 +95,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc, DeleteOperationforTwoStringsFunc, BitwiseANDofNumbersRangeFunc, MaximumNumberofRemovableCharactersFunc, FindKPairswithSmallestSumsFunc, MinimumAbsoluteSumDifferenceFunc, FindtheSmallestDivisorGivenaThresholdFunc, SplitLinkedListinPartsFunc,
             DesignAuthenticationManagerFunc, InsertDeleteGetRandomFunc, MyCalendarIFunc, MaximizetheConfusionofanExamFunc, AllNodesDistanceKinBinaryTreeFunc, LongestPalindromebyConcatenatingTwoLetterWordsFunc, PathWithMinimumEffortFunc, WhereWilltheBallFallFunc, MinimumASCIIDeleteSumforTwoStringsFunc, CombinationSumIIFunc,
             GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc, MinimumOperationstoReduceXtoZeroFunc, ChampagneTowerFunc, RemoveDuplicateLettersFunc, DecodedStringatIndexFunc, OneThreeTwoPatternFunc, RemoveColoredPiecesifBothNeighborsaretheSameColorFunc,
-            MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc,
+            MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -6164,6 +6165,46 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Find Mode in Binary Search Tree");
             ResultTester.SpecialTestCase("LC");
+        }
+        
+
+        private static void CountNodesEqualtoAverageofSubtreeFunc()
+        {
+            Program.Space();
+            Program.Title("Count Nodes Equal to Average of Subtree");
+            ResultTester.SpecialTestCase("LC");
+        }
+        
+
+        private static void BuildanArrayWithStackOperationsFunc()
+        {
+            Program.Space();
+            Program.Title("Build an Array With Stack Operations");
+            ResultTester.CheckSolution("LC", LeetCode.BuildanArrayWithStackOperations.Test.TestCases());
+        }
+
+
+        private static void LastMomentBeforeAllAntsFallOutofaPlankFunc()
+        {
+            Program.Space();
+            Program.Title("Last Moment Before All Ants Fall Out of a Plank");
+            ResultTester.CheckSolution("LC", LeetCode.LastMomentBeforeAllAntsFallOutofaPlank.Test.TestCases());
+        }
+
+
+        private static void FindtheKorofanArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Find the K-or of an Array");
+            ResultTester.CheckSolution("LC", LeetCode.FindtheKorofanArray.Test.TestCases());
+        }
+
+
+        private static void SubarraysDistinctElementSumofSquaresIFunc()
+        {
+            Program.Space();
+            Program.Title("Subarrays Distinct Element Sum of Squares I");
+            ResultTester.CheckSolution("LC", LeetCode.SubarraysDistinctElementSumofSquaresI.Test.TestCases());
         }
         
 
