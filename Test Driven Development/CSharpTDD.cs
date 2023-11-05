@@ -13,7 +13,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             GrasshopperSummationFunc, SumArrayFunc, RemoveFirstandLastCharacterFunc, ReturnNegativeFunc, RemoveExclamationMarksFunc, BeginnerLostWithoutaMapFunc, AreYouPlayingBanjoFunc,
             FindMinAndMaxOfListFunc, StringRepeatFunc, SumOfPositiveFunc, ConvertbooleanvaluestostringsYesorNoFunc, ConvertaNumbertoaStringFunc, ANeedleintheHaystackFunc, InvertValuesFunc,
-            EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc, MakeUpperCaseFunc,
+            EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc, MakeUpperCaseFunc, CalculateaverageFunc,
             BeginnerSeries2ClockFunc, OppositesAttractFunc, SquaringAnArgumentFunc, ReturningStringsFunc, ReturnToSanityFunc, ReturnHelloWorldFunc, BeginnerSeries1SchoolPaperworkFunc,
             YouCantCodeUnderPressure1Func, CenturyFromYearFunc, BasicMathematicalOperationsFunc, ConvertNumberToReversedArrayOfDigitsFunc, AbbreviateaTwoWordNameFunc, SimplemultiplicationFunc,
         };
@@ -36,7 +36,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] codeChefBeginner = new Delegate[]
         {
-            AgeLimitFunc, NumberMirrorFunc,
+            AgeLimitFunc, NumberMirrorFunc, RichieRichFunc, VaccineDatesFunc, HoopJumpFunc, TheTwoDishesFunc,
         };
 
         private static Delegate[] leetCodeEasyList = new Delegate[]
@@ -128,7 +128,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] geeksForGeeksSchoolList = new Delegate[]
         {
-            SumofSeriesFunc, PrintSecondLargestFunc,
+            SumofSeriesFunc, PrintSecondLargestFunc, Print1ToNWithoutLoopFunc,
         };
 
         private static Delegate[] geeksForGeeksBasicList = new Delegate[]
@@ -6239,6 +6239,55 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ResultTester.CheckSolution("CF", CodeForces.GeorgeandAccommodation.Test.TestCases());
         }
 
+        
+        private static void Print1ToNWithoutLoopFunc()
+        {
+            Program.Space();
+            Program.Title("Print 1 To N Without Loop");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
+        private static void RichieRichFunc()
+        {
+            Program.Space();
+            Program.Title("Richie Rich");
+            ResultTester.CheckSolution("CC", CodeChef.RichieRich.Test.TestCases());
+        }
+
+
+        private static void VaccineDatesFunc()
+        {
+            Program.Space();
+            Program.Title("Vaccine Dates");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void HoopJumpFunc()
+        {
+            Program.Space();
+            Program.Title("Hoop Jump");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void TheTwoDishesFunc()
+        {
+            Program.Space();
+            Program.Title("The Two Dishes");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void CalculateaverageFunc()
+        {
+            Program.Space();
+            Program.Title("Calculate average");
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.Calculateaverage.Test.TestCases());
+        }
+
+        
         
         
 

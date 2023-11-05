@@ -243,15 +243,11 @@ namespace CompetitiveProgramming
 
 /*
 bool[] results = new bool[]
-            {
-                ResultTester.CheckResult<int>(result1, 3),
-                ResultTester.CheckResult<int>(result2, 5),
-                ResultTester.CheckResult<int>(result3, 2)
-            };
-
+{
+    ResultTester.CheckResult<int>(result1, 3),
+    ResultTester.CheckResult<int>(result2, 5),
+    ResultTester.CheckResult<int>(result3, 2)
+};
 
 ResultTester.CheckSolution(source, results);
 */
-
-
-// TODO OLD : 1161 Tests to END
