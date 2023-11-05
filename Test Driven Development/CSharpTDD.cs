@@ -44,7 +44,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ClimbingStairsFunc, AddTwoIntegersFunc, NumberOfStepsFunc, ContainsDuplicateFunc, BestTimetoBuyandSellStockFunc, RangeSumQueryImmutableFunc, DesignHashSetFunc, SearchintoaBinarySearchTreeFunc, SameTreeFunc, AddStringsFunc,
             FirstUniqueCharacterinaStringFunc, SingleNumberFunc, FindJudgeFunc, ShuffleTheArrayFunc, CountOddNumbersInAnIntervalRangeFunc, RunningSumof1dArrayFunc, TwoSumIVInputisaBSTFunc, WordPatternFunc, SymmetricTreeFunc, FindtheKorofanArrayFunc,
             AddBinaryFunc, DefanginganIPAddressFunc, FindLuckyIntegerinanArrayFunc, SearchInsertPositionFunc, FindtheIndexoftheFirstOccurrenceinaStringFunc, MinimumDistanceBetweenBSTNodesFunc, PascalsTriangleIIFunc, DiameterofBinaryTreeFunc,
-            KthMissingPositiveNumberFunc, ConvertSortedArraytoBinarySearchTreeFunc, CanPlaceFlowersFunc, KItemsWiththeMaximumSumFunc, BinarySearchFunc, MiddleoftheLinkedListFunc, ReshapetheMatrixFunc, MergeSortedArrayFunc,
+            KthMissingPositiveNumberFunc, ConvertSortedArraytoBinarySearchTreeFunc, CanPlaceFlowersFunc, KItemsWiththeMaximumSumFunc, BinarySearchFunc, MiddleoftheLinkedListFunc, ReshapetheMatrixFunc, MergeSortedArrayFunc, FindChampionIFunc,
             CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc, DesignHashMapFunc, AlternatingDigitSumFunc, TwoSumFunc, BalancedBinaryTreeFunc,
             BestPokerHandFunc, LastStoneWeightFunc, AddDigitsFunc, BulbSwitcherFunc, FindtheDifferenceFunc, RepeatedSubstringPatternFunc, VerifyinganAlienDictionaryFunc, MinimumAbsoluteDifferenceinBSTFunc, BackspaceStringCompareFunc,
             MoveZeroesFunc, PlusOneFunc, AverageSalaryExcludingtheMinimumandMaximumSalaryFunc, FindifPathExistsinGraphFunc, RichestCustomerWealthFunc, NumberofRecentCallsFunc, LongestPalindromeFunc, BuddyStringsFunc, NumberofGoodPairsFunc,
@@ -60,7 +60,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc,
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc,
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc,  FindModeinBinarySearchTreeFunc,
-            SubarraysDistinctElementSumofSquaresIFunc,
+            SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -156,7 +156,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeForces800List = new Delegate[]
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
-            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc,
+            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -6214,6 +6214,32 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Title("Find the Winner of an Array Game");
             ResultTester.CheckSolution("LC", LeetCode.FindtheWinnerofanArrayGame.Test.TestCases());
         }
+        
+        
+        private static void FindChampionIFunc()
+        {
+            Program.Space();
+            Program.Title("Find Champion I");
+            ResultTester.CheckSolution("LC", LeetCode.FindChampionI.Test.TestCases());
+        }
+
+
+        private static void MinimumSumofMountainTripletsIFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Sum of Mountain Triplets I");
+            ResultTester.CheckSolution("LC", LeetCode.MinimumSumofMountainTripletsI.Test.TestCases());
+        }
+
+
+        private static void GeorgeandAccommodationFunc()
+        {
+            Program.Space();
+            Program.Title("George and Accommodation");
+            ResultTester.CheckSolution("CF", CodeForces.GeorgeandAccommodation.Test.TestCases());
+        }
+
+        
         
 
         // CURRENT TESTS
