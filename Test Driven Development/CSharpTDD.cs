@@ -95,7 +95,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc, DeleteOperationforTwoStringsFunc, BitwiseANDofNumbersRangeFunc, MaximumNumberofRemovableCharactersFunc, FindKPairswithSmallestSumsFunc, MinimumAbsoluteSumDifferenceFunc, FindtheSmallestDivisorGivenaThresholdFunc, SplitLinkedListinPartsFunc,
             DesignAuthenticationManagerFunc, InsertDeleteGetRandomFunc, MyCalendarIFunc, MaximizetheConfusionofanExamFunc, AllNodesDistanceKinBinaryTreeFunc, LongestPalindromebyConcatenatingTwoLetterWordsFunc, PathWithMinimumEffortFunc, WhereWilltheBallFallFunc, MinimumASCIIDeleteSumforTwoStringsFunc, CombinationSumIIFunc,
             GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc, MinimumOperationstoReduceXtoZeroFunc, ChampagneTowerFunc, RemoveDuplicateLettersFunc, DecodedStringatIndexFunc, OneThreeTwoPatternFunc, RemoveColoredPiecesifBothNeighborsaretheSameColorFunc,
-            MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc,
+            MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -6205,6 +6205,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Subarrays Distinct Element Sum of Squares I");
             ResultTester.CheckSolution("LC", LeetCode.SubarraysDistinctElementSumofSquaresI.Test.TestCases());
+        }
+
+
+        private static void FindtheWinnerofanArrayGameFunc()
+        {
+            Program.Space();
+            Program.Title("Find the Winner of an Array Game");
+            ResultTester.CheckSolution("LC", LeetCode.FindtheWinnerofanArrayGame.Test.TestCases());
         }
         
 
