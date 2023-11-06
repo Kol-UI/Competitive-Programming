@@ -36,7 +36,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] codeChefBeginner = new Delegate[]
         {
-            AgeLimitFunc, NumberMirrorFunc, RichieRichFunc, VaccineDatesFunc, HoopJumpFunc, TheTwoDishesFunc,
+            AgeLimitFunc, NumberMirrorFunc, RichieRichFunc, VaccineDatesFunc, HoopJumpFunc, TheTwoDishesFunc, MotivationFunc,
         };
 
         private static Delegate[] leetCodeEasyList = new Delegate[]
@@ -139,7 +139,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] geeksForGeeksEasyList = new Delegate[]
         {
             CounttheSubstringsFunc, MinimumIntegerFunc, Remainderondividingby11Func, MakeArrayElementsEqualFunc, EqualLeftandRightSubarraySumFunc, BFSofgraphFunc, MakeTheArrayBeautifulFunc, FrogsAndJumpFunc, DominantPairsFunc, DFSofGraphFunc,
-            StringPermutationsFunc, FindfirstsetbitFunc,
+            StringPermutationsFunc, FindfirstsetbitFunc, SumofupperandlowertrianglesFunc,
         };
 
         private static Delegate[] geeksForGeeksMediumList = new Delegate[]
@@ -156,7 +156,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeForces800List = new Delegate[]
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
-            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc,
+            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -6287,14 +6287,34 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ResultTester.CheckSolution("CW", CodeWars.EightKyu.Calculateaverage.Test.TestCases());
         }
 
+
+        private static void MotivationFunc()
+        {
+            Program.Space();
+            Program.Title("Motivation");
+            ResultTester.SpecialTestCase("CC");
+        }
         
         
+        private static void MagnetsFunc()
+        {
+            Program.Space();
+            Program.Title("Magnets");
+            ResultTester.CheckSolution("CF", CodeForces.Magnets.Test.TestCases());
+        }
+
+
+        private static void SumofupperandlowertrianglesFunc()
+        {
+            Program.Space();
+            Program.Title("Sum of upper and lower triangles");
+            ResultTester.CheckSolution("CF", GeeksForGeeks.Easy.Sumofupperandlowertriangles.Test.TestCases());
+        }
         
 
         // CURRENT TESTS
         private static void CurrentTests()
         {
-
         }
     }
 }
