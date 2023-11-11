@@ -154,9 +154,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SpecialDigitsFunc, DivideInIncrementialGroupsFunc, SolvetheSudokuFunc,
         };
 
-        private static Delegate[] SphereOnlineJudgeList = new Delegate[]
+        private static Delegate[] sphereOnlineJudgeList = new Delegate[]
         {
             LifetheUniverseandEverythingFunc, PrimeGeneratorFunc,
+        };
+
+        private static Delegate[] csacademyTutorialList = new Delegate[]
+        {
+            AdditionFunc, GreatestCommonDivisorFunc,
         };
 
         private static Delegate[] codeForces800List = new Delegate[]
@@ -213,8 +218,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             // All HackerRank Solutions
             HackerRankTests();
 
-            // All Sphere Online Judge
+            // All Sphere Online Judge Solutions
             SphereOnlineJudgeTests();
+
+            // All CS Academy Solutions
+            CSAcademyTests();
 
             // All CodeForces Solutions
             CodeForcesTests();
@@ -297,7 +305,15 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static void SphereOnlineJudgeTests()
         {
-            InvokeDelegateIfNotNull(SphereOnlineJudgeList);
+            // All
+            InvokeDelegateIfNotNull(sphereOnlineJudgeList);
+        }
+
+
+        private static void CSAcademyTests()
+        {
+            // Tutorial
+            InvokeDelegateIfNotNull(csacademyTutorialList);
         }
 
 
@@ -6415,6 +6431,20 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
         
         
+        private static void AdditionFunc()
+        {
+            Program.Space();
+            Program.Title("Addition");
+            ResultTester.SpecialTestCase("CSA");
+        }
+
+
+        private static void GreatestCommonDivisorFunc()
+        {
+            Program.Space();
+            Program.Title("Greatest Common Divisor");
+            ResultTester.SpecialTestCase("CSA");
+        }
 
         // CURRENT TESTS
         private static void CurrentTests()

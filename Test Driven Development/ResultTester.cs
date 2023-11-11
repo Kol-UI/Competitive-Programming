@@ -30,6 +30,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static int _counterHackerRankProblem = 0;
         private static int _counterAtCoderProblem = 0;
         private static int _counterCodinGameProblem = 0;
+        private static int _counterCSAcademyProblem = 0;
         private static int _counterOtherSourceProblem = 0;
         
         // Lock
@@ -324,6 +325,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 case "CG":
                     _counterCodinGameProblem++;
                     break;
+                case "CSA":
+                    _counterCSAcademyProblem++;
+                    break;
                 default:
                     _counterOtherSourceProblem++;
                     break;
@@ -425,9 +429,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             counters.Append("CodeWars Problems : [" + _counterCodeWarsProblem.ToString() + "]" + "\n");
 
             counters.Append("CodinGame Problems : [" + _counterCodinGameProblem.ToString() + "]" + separator);
+            counters.Append("CSAcademy Problems : [" + _counterCSAcademyProblem.ToString() + "]" + separator);
             counters.Append("GeeksForGeeks Problems : [" + _counterGeeksForGeeksProblem.ToString() + "]" + separator);
             counters.Append("HackerRank Problems : [" + _counterHackerRankProblem.ToString() + "]" + separator);
-            counters.Append("LeetCode Problems : [" + _counterLeetCodeProblem.ToString() + "]" + separator);
+            counters.Append("LeetCode Problems : [" + _counterLeetCodeProblem.ToString() + "]" + "\n");
+            
             counters.Append("SPOJ Problems : [" + _counterSphreOnlineJudgeProblem.ToString() + "]" + separator);
             if (_counterOtherSourceProblem != 0)
             {
