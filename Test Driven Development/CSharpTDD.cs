@@ -154,10 +154,15 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SpecialDigitsFunc, DivideInIncrementialGroupsFunc, SolvetheSudokuFunc,
         };
 
+        private static Delegate[] SphereOnlineJudgeList = new Delegate[]
+        {
+            LifetheUniverseandEverythingFunc, PrimeGeneratorFunc,
+        };
+
         private static Delegate[] codeForces800List = new Delegate[]
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
-            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc,
+            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -207,6 +212,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
             // All HackerRank Solutions
             HackerRankTests();
+
+            // All Sphere Online Judge
+            SphereOnlineJudgeTests();
 
             // All CodeForces Solutions
             CodeForcesTests();
@@ -284,6 +292,12 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             // 800
             InvokeDelegateIfNotNull(codeForces800List);
+        }
+
+
+        private static void SphereOnlineJudgeTests()
+        {
+            InvokeDelegateIfNotNull(SphereOnlineJudgeList);
         }
 
 
@@ -6295,6 +6309,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Title("Motivation");
             ResultTester.SpecialTestCase("CC");
         }
+
+
+        private static void PresentsFunc()
+        {
+            Program.Space();
+            Program.Title("Presents");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+        
+        private static void CalculateFunctionFunc()
+        {
+            Program.Space();
+            Program.Title("Calculate Function");
+            ResultTester.SpecialTestCase("CF");
+        }
         
         
         private static void MagnetsFunc()
@@ -6366,6 +6396,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Distribute Candies Among Children I");
             ResultTester.CheckSolution("LC", LeetCode.DistributeCandiesAmongChildrenI.Test.TestCases());
+        }
+
+
+        private static void LifetheUniverseandEverythingFunc()
+        {
+            Program.Space();
+            Program.Title("Life the Universe and Everything");
+            ResultTester.SpecialTestCase("SPOJ");
+        }
+
+
+        private static void PrimeGeneratorFunc()
+        {
+            Program.Space();
+            Program.Title("Prime Generator");
+            ResultTester.SpecialTestCase("SPOJ");
         }
         
         
