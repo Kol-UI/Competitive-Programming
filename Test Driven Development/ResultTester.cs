@@ -28,9 +28,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static int _counterCodeWarsProblem = 0;
         private static int _counterGeeksForGeeksProblem = 0;
         private static int _counterHackerRankProblem = 0;
+        private static int _counterKattisProblem = 0;
         private static int _counterAtCoderProblem = 0;
         private static int _counterCodinGameProblem = 0;
         private static int _counterCSAcademyProblem = 0;
+        private static int _counterProjectEulerProblem = 0;
         private static int _counterOtherSourceProblem = 0;
         
         // Lock
@@ -313,6 +315,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 case "HR":
                     _counterHackerRankProblem++;
                     break;
+                case "KAT":
+                    _counterKattisProblem++;
+                    break;
                 case "GFG":
                     _counterGeeksForGeeksProblem++;
                     break;
@@ -327,6 +332,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                     break;
                 case "CSA":
                     _counterCSAcademyProblem++;
+                    break;
+                case "PE":
+                    _counterProjectEulerProblem++;
                     break;
                 default:
                     _counterOtherSourceProblem++;
@@ -432,8 +440,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             counters.Append("CSAcademy Problems : [" + _counterCSAcademyProblem.ToString() + "]" + separator);
             counters.Append("GeeksForGeeks Problems : [" + _counterGeeksForGeeksProblem.ToString() + "]" + separator);
             counters.Append("HackerRank Problems : [" + _counterHackerRankProblem.ToString() + "]" + separator);
-            counters.Append("LeetCode Problems : [" + _counterLeetCodeProblem.ToString() + "]" + "\n");
+            counters.Append("Kattis Problems : [" + _counterKattisProblem.ToString() + "]" + "\n");
             
+            
+            counters.Append("LeetCode Problems : [" + _counterLeetCodeProblem.ToString() + "]" + separator);
+            counters.Append("ProjectEuler Problems : [" + _counterProjectEulerProblem.ToString() + "]" + separator);
             counters.Append("SPOJ Problems : [" + _counterSphreOnlineJudgeProblem.ToString() + "]" + separator);
             if (_counterOtherSourceProblem != 0)
             {

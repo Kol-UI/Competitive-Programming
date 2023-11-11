@@ -164,6 +164,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             AdditionFunc, GreatestCommonDivisorFunc,
         };
 
+        private static Delegate[] kattisEasyList = new Delegate[]
+        {
+            VelkominFunc, HelloWorldKattisFunc,
+        };
+
         private static Delegate[] codeForces800List = new Delegate[]
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
@@ -188,6 +193,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] atCoderList = new Delegate[]
         {
             ADisjointSetUnionFunc, BFenwickTreeFunc, CFloorSumFunc, DMaxflowFunc, EMinCostFlowFunc, FConvolutionFunc, GSCCFunc, TwoSATFunc, NumberofSubstringsFunc, SegmentTreeFunc, RangeAffineRangeSumFunc, LazySegmentTreeFunc,
+        };
+
+        private static Delegate[] projectEulerList = new Delegate[]
+        {
+            Multiplesof3or5Func, EvenFibonacciNumbersFunc,
         };
 
         private static Delegate[] codinGameList = new Delegate[]
@@ -218,6 +228,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             // All HackerRank Solutions
             HackerRankTests();
 
+            // All Kattis Solutions
+            KattisTests();
+
             // All Sphere Online Judge Solutions
             SphereOnlineJudgeTests();
 
@@ -229,6 +242,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
             // All LeetCode Solutions
             LeetCodeTests();
+
+            // All Project Euler Solutions
+            ProjectEulerTests();
 
             // Current Testing Solution
             CurrentTests();
@@ -303,10 +319,24 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void KattisTests()
+        {
+            // Easy
+            InvokeDelegateIfNotNull(kattisEasyList);
+        }
+
+
         private static void SphereOnlineJudgeTests()
         {
             // All
             InvokeDelegateIfNotNull(sphereOnlineJudgeList);
+        }
+
+
+        private static void ProjectEulerTests()
+        {
+            // All
+            InvokeDelegateIfNotNull(projectEulerList);
         }
 
 
@@ -353,6 +383,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         // ATCODER
         private static void AtCoderTests()
         {
+            // All
             InvokeDelegateIfNotNull(atCoderList);
         }
 
@@ -360,6 +391,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         // CODINGAME
         private static void CodinGameTests()
         {
+            // All
             InvokeDelegateIfNotNull(codinGameList);
         }
 
@@ -6446,9 +6478,40 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ResultTester.SpecialTestCase("CSA");
         }
 
+        private static void Multiplesof3or5Func()
+        {
+            Program.Space();
+            Program.Title("Multiple of 3 or 5");
+            ResultTester.CheckSolution("PE", ProjectEuler.Multiplesof3or5.Test.TestCases());
+        }
+
+
+        private static void EvenFibonacciNumbersFunc()
+        {
+            Program.Space();
+            Program.Title("Even Fibonacci Numbers");
+            ResultTester.CheckSolution("PE", ProjectEuler.EvenFibonacciNumbers.Test.TestCases());
+        }
+
+        private static void VelkominFunc()
+        {
+            Program.Space();
+            Program.Title("Velkomin");
+            ResultTester.SpecialTestCase("KAT");
+        }
+
+        
+        private static void HelloWorldKattisFunc()
+        {
+            Program.Space();
+            Program.Title("Hello World");
+            ResultTester.SpecialTestCase("KAT");
+        }
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
+
         }
     }
 }

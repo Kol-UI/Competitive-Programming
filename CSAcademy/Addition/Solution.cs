@@ -9,9 +9,12 @@ class Solution
     //static void Main(String[] args)
     static void Function()
     {
-        int val1 = Convert.ToInt32(Console.ReadLine());
-        int val2 = Convert.ToInt32(Console.ReadLine());
-        int sum = val1 + val2;
+        string[] input = Console.ReadLine()!.Split();
+        int a = int.Parse(input[0]);
+        int b = int.Parse(input[1]);
+
+        int sum = a + b;
+
         Console.WriteLine(sum);
     }
 }
