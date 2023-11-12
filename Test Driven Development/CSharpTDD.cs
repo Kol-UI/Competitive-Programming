@@ -172,7 +172,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] codeForces800List = new Delegate[]
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
-            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc,
+            WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc, DrinksFunc,
+            UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -6522,6 +6523,30 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Last Visited Integers");
             ResultTester.CheckSolution("LC", LeetCode.LastVisitedIntegers.Test.TestCases());
+        }
+
+
+        private static void DrinksFunc()
+        {
+            Program.Space();
+            Program.Title("Drinks");
+            ResultTester.CheckSolution("CF", CodeForces.Drinks.Test.TestCases());
+        }
+
+
+        private static void UltraFastMathematicianFunc()
+        {
+            Program.Space();
+            Program.Title("Ultra Fast Mathematician");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void IsyourhorseshoeontheotherhoofFunc()
+        {
+            Program.Space();
+            Program.Title("Is your horseshoe on the other hoof");
+            ResultTester.SpecialTestCase("CF");
         }
 
         // CURRENT TESTS
