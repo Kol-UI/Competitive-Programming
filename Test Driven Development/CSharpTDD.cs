@@ -59,8 +59,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc,
             ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc,
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc,
-            DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc,  FindModeinBinarySearchTreeFunc,
-            SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc,
+            DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc,
+            SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -6506,6 +6506,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Hello World");
             ResultTester.SpecialTestCase("KAT");
+        }
+
+
+        private static void MaximumStrongPairXORIFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Strong Pair XOR I");
+            ResultTester.CheckSolution("LC", LeetCode.MaximumStrongPairXORI.Test.TestCases());
+        }
+
+
+        private static void LastVisitedIntegersFunc()
+        {
+            Program.Space();
+            Program.Title("Last Visited Integers");
+            ResultTester.CheckSolution("LC", LeetCode.LastVisitedIntegers.Test.TestCases());
         }
 
         // CURRENT TESTS
