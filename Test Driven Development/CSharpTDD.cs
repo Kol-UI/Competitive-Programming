@@ -57,10 +57,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SubtracttheProductandSumofDigitsofanIntegerFunc, SpecialArrayWithXElementsGreaterThanorEqualXFunc, SqrtxFunc, FindtheDistanceValueBetweenTwoArraysFunc, SortColorsFunc, ReverseStringFunc, IntersectionofTwoLinkedListsFunc,
             SumofAllOddLengthSubarraysFunc, NextGreaterElementIFunc, SquaresofaSortedArrayFunc, FibonacciNumberFunc, FindNearestPointThatHastheSameXorYCoordinateFunc, NaryTreePreorderTraversalFunc, MaximumAscendingSubarraySumFunc,
             Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc,
-            ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc,
+            ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc, UniqueLength3PalindromicSubsequencesFunc,
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc,
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
+            CountNumberofPairsWithAbsoluteDifferenceKFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -6563,6 +6564,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Divisible and Non divisible Sums Difference");
             ResultTester.CheckSolution("LC", LeetCode.DivisibleandNondivisibleSumsDifference.Test.TestCases());
+        }
+
+
+        private static void UniqueLength3PalindromicSubsequencesFunc()
+        {
+            Program.Space();
+            Program.Title("Unique Length-3 Palindromic Subsequences");
+            ResultTester.CheckSolution("LC", LeetCode.UniqueLength3PalindromicSubsequences.Test.TestCases());
+        }
+
+
+        private static void CountNumberofPairsWithAbsoluteDifferenceKFunc()
+        {
+            Program.Space();
+            Program.Title("Count Number of Pairs With Absolute Difference K");
+            ResultTester.CheckSolution("LC", LeetCode.CountNumberofPairsWithAbsoluteDifferenceK.Test.TestCases());
         }
 
         // CURRENT TESTS
