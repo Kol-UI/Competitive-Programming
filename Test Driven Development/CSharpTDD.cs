@@ -16,6 +16,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc, MakeUpperCaseFunc, CalculateaverageFunc,
             BeginnerSeries2ClockFunc, OppositesAttractFunc, SquaringAnArgumentFunc, ReturningStringsFunc, ReturnToSanityFunc, ReturnHelloWorldFunc, BeginnerSeries1SchoolPaperworkFunc,
             YouCantCodeUnderPressure1Func, CenturyFromYearFunc, BasicMathematicalOperationsFunc, ConvertNumberToReversedArrayOfDigitsFunc, AbbreviateaTwoWordNameFunc, SimplemultiplicationFunc,
+            IshegonnasurviveFunc, FakeBinaryFunc,
         };
 
         private static Delegate[] codeWarsSevenKyuList = new Delegate[]
@@ -435,6 +436,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Replace With Alphabet Position");
             ResultTester.CheckSolution("CW", CodeWars.SixKyu.ReplaceWithAlphabetPosition.Test.TestReplaceWithAlphabetPosition());
+        }
+
+
+        private static void FakeBinaryFunc()
+        {
+            Program.Space();
+            Program.Title("Fake Binary");
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.FakeBinary.Test.TestCases());
         }
 
 
@@ -1239,6 +1248,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Find the smallest integer in the array");
             ResultTester.CheckSolution("CW", CodeWars.EightKyu.Findthesmallestintegerinthearray.Test.TestFindthesmallestintegerinthearray());
+        }
+
+
+        private static void IshegonnasurviveFunc()
+        {
+            Program.Space();
+            Program.Title("Is he gonna survive");
+            ResultTester.CheckSolution("CW", CodeWars.EightKyu.Ishegonnasurvive.Test.TestCases());
         }
 
 
@@ -5068,7 +5085,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static void MakeUpperCaseFunc()
         {
             Program.Space();
-            Program.Title("MakeUpperCase");
+            Program.Title("Make Upper Case");
             ResultTester.CheckSolution("CW", CodeWars.EightKyu.MakeUpperCase.Test.TestCases());
         }
 
@@ -6585,7 +6602,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         // CURRENT TESTS
         private static void CurrentTests()
         {
-
         }
     }
 }
