@@ -158,7 +158,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] sphereOnlineJudgeList = new Delegate[]
         {
-            LifetheUniverseandEverythingFunc, PrimeGeneratorFunc,
+            LifetheUniverseandEverythingFunc, PrimeGeneratorFunc, TransformtheExpressionFunc,
         };
 
         private static Delegate[] csacademyTutorialList = new Delegate[]
@@ -6470,6 +6470,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Life the Universe and Everything");
+            ResultTester.SpecialTestCase("SPOJ");
+        }
+
+
+        private static void TransformtheExpressionFunc()
+        {
+            Program.Space();
+            Program.Title("Transform the Expression");
             ResultTester.SpecialTestCase("SPOJ");
         }
 
