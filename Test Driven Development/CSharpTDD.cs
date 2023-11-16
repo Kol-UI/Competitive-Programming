@@ -4,6 +4,7 @@ using CompetitiveProgramming.CodeChef;
 using CompetitiveProgramming.CoderByte;
 using CompetitiveProgramming.LeetCode;
 using CompetitiveProgramming.CodeWars;
+using CompetitiveProgramming.ProjectEuler;
 
 namespace CompetitiveProgramming.TestDrivenDevelopment
 {
@@ -148,7 +149,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] geeksForGeeksMediumList = new Delegate[]
         {
             StringrporprFunc, EvenSwapFunc, MinimumStepsRequiredFunc, AddMinimumCharactersFunc, MaximumLengthFunc, RemoveandReverseFunc, ShyGeek, MaximumIntersectingLinesFunc, KnightInGeeklandFunc, CountSpecialNumbersFunc, BTSMaximumDifferenceFunc,
-            ReverseaStackFunc, SticklerThiefFunc,
+            ReverseaStackFunc, SticklerThiefFunc, BinaryTreetoCDLLFunc,
         };
 
         private static Delegate[] geeksForGeeksHardList = new Delegate[]
@@ -200,7 +201,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] projectEulerList = new Delegate[]
         {
-            Multiplesof3or5Func, EvenFibonacciNumbersFunc,
+            Multiplesof3or5Func, EvenFibonacciNumbersFunc, LargestPrimeFactorFunc,
         };
 
         private static Delegate[] codinGameList = new Delegate[]
@@ -6631,10 +6632,25 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ResultTester.CheckSolution("LC", LeetCode.FindUniqueBinaryString.Test.TestCases());
         }
 
+
+        private static void BinaryTreetoCDLLFunc()
+        {
+            Program.Space();
+            Program.Title("Binary Tree to CDLL");
+            ResultTester.SpecialTestCase("GFG");
+        }
+
+
+        private static void LargestPrimeFactorFunc()
+        {
+            Program.Space();
+            Program.Title("Largest Prime Factor");
+            ResultTester.CheckSolution("PE", ProjectEuler.LargestPrimeFactor.Test.TestCases());
+        }
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            FindUniqueBinaryStringFunc();
         }
     }
 }
