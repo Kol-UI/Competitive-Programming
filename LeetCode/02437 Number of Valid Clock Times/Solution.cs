@@ -90,16 +90,16 @@ namespace CompetitiveProgramming.LeetCode.NumberofValidClockTimes
     }
 
     public class Test
-{
-    public static bool[] TestCases()
     {
-        bool[] results = new bool[]
+        public static bool[] TestCases()
         {
-            ResultTester.CheckResult<int>(Solution.CountTime("?5:00"), 2),
-            ResultTester.CheckResult<int>(Solution.CountTime("0?:0?"), 100),
-            ResultTester.CheckResult<int>(Solution.CountTime("??:??"), 1440),
-        };
-        return results;
+            bool[] results = new bool[]
+            {
+                ResultTester.CheckResult<int>(Solution.CountTime("?5:00"), 2),
+                ResultTester.CheckResult<int>(Solution.CountTime("0?:0?"), 100),
+                ResultTester.CheckResult<int>(Solution.CountTime("??:??"), 1440),
+            };
+            return results;
+        }
     }
-}
 }
