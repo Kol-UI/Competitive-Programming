@@ -63,7 +63,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc,
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
-            CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc,
+            CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -99,7 +99,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             DesignAuthenticationManagerFunc, InsertDeleteGetRandomFunc, MyCalendarIFunc, MaximizetheConfusionofanExamFunc, AllNodesDistanceKinBinaryTreeFunc, LongestPalindromebyConcatenatingTwoLetterWordsFunc, PathWithMinimumEffortFunc, WhereWilltheBallFallFunc, MinimumASCIIDeleteSumforTwoStringsFunc, CombinationSumIIFunc,
             GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc, MinimumOperationstoReduceXtoZeroFunc, ChampagneTowerFunc, RemoveDuplicateLettersFunc, DecodedStringatIndexFunc, OneThreeTwoPatternFunc, RemoveColoredPiecesifBothNeighborsaretheSameColorFunc,
             MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc, EliminateMaximumNumberofMonstersFunc,
-            DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc,
+            DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -6648,9 +6648,27 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ResultTester.CheckSolution("PE", ProjectEuler.LargestPrimeFactor.Test.TestCases());
         }
 
+
+        private static void MinimizeMaximumPairSuminArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Minimize Maximum Pair Sum in Array");
+            ResultTester.CheckSolution("LC", LeetCode.MinimizeMaximumPairSuminArray.Test.TestCases());
+        }
+
+
+        private static void DistributeCandiesFunc()
+        {
+            Program.Space();
+            Program.Title("Distribute Candies");
+            ResultTester.CheckSolution("LC", LeetCode.DistributeCandies.Test.TestCases());
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
+
         }
     }
 }
