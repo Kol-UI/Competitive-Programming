@@ -63,7 +63,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc,
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
-            CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc,
+            CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -6665,10 +6665,17 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void AccountBalanceAfterRoundedPurchaseFunc()
+        {
+            Program.Space();
+            Program.Title("Account Balance After Rounded Purchase");
+            ResultTester.CheckSolution("LC", LeetCode.AccountBalanceAfterRoundedPurchase.Test.TestCases());
+        }
+
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
-
         }
     }
 }
