@@ -32,8 +32,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] codeChefLearn = new Delegate[]
         {
-            StringOperationsFunc, IndexingFunc, AccessingcharactersofaStringFunc, StringOperationsSTRS7Func, EnormousInputTestFunc, GoodTurnFunc, AddTwoNumbersCCFunc, UserInputUsrs1Func, USRS2IntegerInputFunc, HelloUserFunc,
+            StringOperationsFunc, IndexingFunc, AccessingcharactersofaStringFunc, StringOperationsSTRS7Func, EnormousInputTestFunc, GoodTurnFunc, AddTwoNumbersCCFunc, UserInputUsrs1Func, USRS2IntegerInputFunc, HelloUserFunc, MultipleoutputsusingasinglelineFunc,
             CalculatorFunc, MiletoKilometerConvertorFunc, CSB001IntroductionFunc, CSB002IntroductionFunc, CSB003IntroductionFunc, CSB004ArithmeticOperationsFunc, CSB007MultipleOutputsFunc, CSB008OutputsInSeperateLinesFunc, CSB009AreaPerimeterofRectangleFunc,
+            InsertingspacebetweenoutputsFunc, InsertingtextBetweenOutputsFunc, MultiplicationFunc, DivisionFunc, SyntaxFunc, StoringBoxesFunc, DeclaringavariableFunc, AdditionofVariablesFunc, AreaofRectangleFunc, DoubledatatypeFunc, StringDatatypeFunc,
         };
 
         private static Delegate[] codeChefBeginner = new Delegate[]
@@ -4943,6 +4944,102 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Hello User");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void MultipleoutputsusingasinglelineFunc()
+        {
+            Program.Space();
+            Program.Title("Multiple outputs using a single line");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void InsertingspacebetweenoutputsFunc()
+        {
+            Program.Space();
+            Program.Title("Inserting space between outputs");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void InsertingtextBetweenOutputsFunc()
+        {
+            Program.Space();
+            Program.Title("Inserting text Between Outputs");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void MultiplicationFunc()
+        {
+            Program.Space();
+            Program.Title("Multiplication");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void DivisionFunc()
+        {
+            Program.Space();
+            Program.Title("Division");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void SyntaxFunc()
+        {
+            Program.Space();
+            Program.Title("Syntax");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void StoringBoxesFunc()
+        {
+            Program.Space();
+            Program.Title("Storing Boxes");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void DeclaringavariableFunc()
+        {
+            Program.Space();
+            Program.Title("Declaring a variable");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void AdditionofVariablesFunc()
+        {
+            Program.Space();
+            Program.Title("Addition of Variables");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void AreaofRectangleFunc()
+        {
+            Program.Space();
+            Program.Title("Area of Rectangle");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void DoubledatatypeFunc()
+        {
+            Program.Space();
+            Program.Title("Double data type");
+            ResultTester.SpecialTestCase("CC");
+        }
+
+
+        private static void StringDatatypeFunc()
+        {
+            Program.Space();
+            Program.Title("String Data type");
             ResultTester.SpecialTestCase("CC");
         }
 
