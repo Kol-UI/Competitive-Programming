@@ -170,7 +170,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] kattisEasyList = new Delegate[]
         {
-            VelkominFunc, HelloWorldKattisFunc,
+            VelkominFunc, HelloWorldKattisFunc, LeggjasamanFunc, SevenWondersFunc,
         };
 
         private static Delegate[] codeForces800List = new Delegate[]
@@ -6622,6 +6622,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Velkomin");
+            ResultTester.SpecialTestCase("KAT");
+        }
+
+
+        private static void LeggjasamanFunc()
+        {
+            Program.Space();
+            Program.Title("Leggja saman");
+            ResultTester.SpecialTestCase("KAT");
+        }
+
+
+        private static void SevenWondersFunc()
+        {
+            Program.Space();
+            Program.Title("Seven Wonders");
             ResultTester.SpecialTestCase("KAT");
         }
 
