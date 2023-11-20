@@ -145,7 +145,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static Delegate[] geeksForGeeksEasyList = new Delegate[]
         {
             CounttheSubstringsFunc, MinimumIntegerFunc, Remainderondividingby11Func, MakeArrayElementsEqualFunc, EqualLeftandRightSubarraySumFunc, BFSofgraphFunc, MakeTheArrayBeautifulFunc, FrogsAndJumpFunc, DominantPairsFunc, DFSofGraphFunc,
-            StringPermutationsFunc, FindfirstsetbitFunc, SumofupperandlowertrianglesFunc,
+            StringPermutationsFunc, FindfirstsetbitFunc, SumofupperandlowertrianglesFunc, DetermineifTwoTreesareIdenticalFunc,
         };
 
         private static Delegate[] geeksForGeeksMediumList = new Delegate[]
@@ -169,6 +169,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             AdditionFunc, GreatestCommonDivisorFunc,
         };
 
+        private static Delegate[] csacademyEasyList = new Delegate[]
+        {
+            MatrixExplorationFunc,
+        };
+
         private static Delegate[] kattisEasyList = new Delegate[]
         {
             VelkominFunc, HelloWorldKattisFunc, LeggjasamanFunc, SevenWondersFunc,
@@ -178,7 +183,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
             WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc, DrinksFunc,
-            UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc,
+            UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -203,7 +208,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] projectEulerList = new Delegate[]
         {
-            Multiplesof3or5Func, EvenFibonacciNumbersFunc, LargestPrimeFactorFunc,
+            Multiplesof3or5Func, EvenFibonacciNumbersFunc, LargestPrimeFactorFunc, LargestPalindromeProductFunc,
         };
 
         private static Delegate[] codinGameList = new Delegate[]
@@ -350,6 +355,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             // Tutorial
             InvokeDelegateIfNotNull(csacademyTutorialList);
+
+            // Easy
+            InvokeDelegateIfNotNull(csacademyEasyList);
         }
 
 
@@ -1107,6 +1115,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("DFS of Graph");
             ResultTester.CheckSolution("GFG", GeeksForGeeks.Easy.DFSofGraph.Test.TestDFSofGraph());
+        }
+
+
+        private static void DetermineifTwoTreesareIdenticalFunc()
+        {
+            Program.Space();
+            Program.Title("Determine if Two Trees are Identical");
+            ResultTester.SpecialTestCase("GFG");
         }
 
 
@@ -2411,6 +2427,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Next Round");
             ResultTester.CheckSolution("CF", CodeForces.NextRound.Test.TestCases());
+        }
+
+
+        private static void HulkFunc()
+        {
+            Program.Space();
+            Program.Title("Hulk");
+            ResultTester.SpecialTestCase("CF");
         }
 
 
@@ -6604,11 +6628,26 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ResultTester.SpecialTestCase("CSA");
         }
 
+        private static void MatrixExplorationFunc()
+        {
+            Program.Space();
+            Program.Title("Matrix Exploration");
+            ResultTester.SpecialTestCase("CSA");
+        }
+
         private static void Multiplesof3or5Func()
         {
             Program.Space();
             Program.Title("Multiple of 3 or 5");
             ResultTester.CheckSolution("PE", ProjectEuler.Multiplesof3or5.Test.TestCases());
+        }
+
+
+        private static void LargestPalindromeProductFunc()
+        {
+            Program.Space();
+            Program.Title("Largest Palindrome Product");
+            ResultTester.CheckSolution("PE", ProjectEuler.LargestPalindromeProduct.Test.TestCases());
         }
 
 
@@ -6821,7 +6860,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         // CURRENT TESTS
         private static void CurrentTests()
         {
-
         }
     }
 }
