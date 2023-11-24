@@ -176,14 +176,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] kattisEasyList = new Delegate[]
         {
-            VelkominFunc, HelloWorldKattisFunc, LeggjasamanFunc, SevenWondersFunc,
+            VelkominFunc, HelloWorldKattisFunc, LeggjasamanFunc, SevenWondersFunc, EchoEchoEchoFunc, SecretMessageFunc,
         };
 
         private static Delegate[] codeForces800List = new Delegate[]
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
             WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc, DrinksFunc,
-            UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc,
+            UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -2450,6 +2450,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             Program.Space();
             Program.Title("Divisibility Problem");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void ArrivaloftheGeneralFunc()
+        {
+            Program.Space();
+            Program.Title("Arrival of the General");
             ResultTester.SpecialTestCase("CF");
         }
 
@@ -6704,12 +6712,28 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Title("Velkomin");
             ResultTester.SpecialTestCase("KAT");
         }
+        
+
+        private static void EchoEchoEchoFunc()
+        {
+            Program.Space();
+            Program.Title("Echo Echo Echo");
+            ResultTester.SpecialTestCase("KAT");
+        }
 
 
         private static void LeggjasamanFunc()
         {
             Program.Space();
             Program.Title("Leggja saman");
+            ResultTester.SpecialTestCase("KAT");
+        }
+
+
+        private static void SecretMessageFunc()
+        {
+            Program.Space();
+            Program.Title("Secret Message");
             ResultTester.SpecialTestCase("KAT");
         }
 
