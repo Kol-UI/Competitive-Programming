@@ -35,14 +35,11 @@ namespace CompetitiveProgramming.LeetCode.MakeThreeStringsEqual
         {
             int value  = Math.Min(s1.Length, Math.Min(s2.Length, s3.Length));
             int id = value;
-            int x = 0;
-
-            for(int i = 0; i < value; ++i)
+            for (int i = 0; i < value; ++i)
             {
                 if (s1[i] != s2[i] || s1[i] != s3[i] || s2[i] != s3[i])
                 {
                     id = i;
-                    x = 1;
                     break;
                 }
             }

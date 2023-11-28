@@ -183,7 +183,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
             WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc, DrinksFunc,
-            UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc,
+            UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc, PangramFunc, InsomniacureFunc, AntonandLettersFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -4682,7 +4682,31 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Implement Queue using Stacks");
             ResultTester.SpecialTestCase("LC");
-        } 
+        }
+
+
+        private static void PangramFunc()
+        {
+            Program.Space();
+            Program.Title("Pangram");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void InsomniacureFunc()
+        {
+            Program.Space();
+            Program.Title("Insomnia cure");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void AntonandLettersFunc()
+        {
+            Program.Space();
+            Program.Title("Anton and Letters");
+            ResultTester.SpecialTestCase("CF");
+        }
 
 
         private static void InvertBinaryTreeFunc()
