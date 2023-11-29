@@ -64,7 +64,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc,
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
-            CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc,
+            CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -6981,8 +6981,16 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static void MakeThreeStringsEqualFunc()
         {
             Program.Space();
-            Program.Title("Make Three String sEqual");
+            Program.Title("Make Three Strings Equal");
             ResultTester.CheckSolution("LC", LeetCode.MakeThreeStringsEqual.Test.TestCases());
+        }
+
+
+        private static void MatrixSimilarityAfterCyclicShiftsFunc()
+        {
+            Program.Space();
+            Program.Title("Matrix Similarity After Cyclic Shifts");
+            ResultTester.CheckSolution("LC", LeetCode.MatrixSimilarityAfterCyclicShifts.Test.TestCases());
         }
 
         // CURRENT TESTS
