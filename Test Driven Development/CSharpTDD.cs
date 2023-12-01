@@ -65,6 +65,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc,
+            CheckIfTwoStringArraysareEquivalentFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -7009,9 +7010,18 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ResultTester.CheckSolution("LC", LeetCode.FindWordsContainingCharacter.Test.TestCases());
         }
 
+
+        private static void CheckIfTwoStringArraysareEquivalentFunc()
+        {
+            Program.Space();
+            Program.Title("Check If Two String Arrays are Equivalent");
+            ResultTester.CheckSolution("LC", LeetCode.CheckIfTwoStringArraysareEquivalent.Test.TestCases());
+        }
+
         // CURRENT TESTS
         private static void CurrentTests()
         {
+            
         }
     }
 }
