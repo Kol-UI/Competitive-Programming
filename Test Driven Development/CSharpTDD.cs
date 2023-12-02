@@ -65,7 +65,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc,
-            CheckIfTwoStringArraysareEquivalentFunc,
+            CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -184,7 +184,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
             WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc, DrinksFunc,
-            UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc, PangramFunc, InsomniacureFunc, AntonandLettersFunc,
+            UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc, PangramFunc, InsomniacureFunc, AntonandLettersFunc, HittheLotteryFunc, GamesFunc, AntonandPolyhedronsFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -6811,10 +6811,34 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void HittheLotteryFunc()
+        {
+            Program.Space();
+            Program.Title("Hit the Lottery");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void GamesFunc()
+        {
+            Program.Space();
+            Program.Title("Games");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
         private static void IsyourhorseshoeontheotherhoofFunc()
         {
             Program.Space();
             Program.Title("Is your horseshoe on the other hoof");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void AntonandPolyhedronsFunc()
+        {
+            Program.Space();
+            Program.Title("Anton and Polyhedrons");
             ResultTester.SpecialTestCase("CF");
         }
 
@@ -7016,6 +7040,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Check If Two String Arrays are Equivalent");
             ResultTester.CheckSolution("LC", LeetCode.CheckIfTwoStringArraysareEquivalent.Test.TestCases());
+        }
+
+
+        private static void FindWordsThatCanBeFormedbyCharactersFunc()
+        {
+            Program.Space();
+            Program.Title("Find Words That Can Be Formed by Characters");
+            ResultTester.CheckSolution("LC", LeetCode.FindWordsThatCanBeFormedbyCharacters.Test.TestCases());
         }
 
         // CURRENT TESTS
