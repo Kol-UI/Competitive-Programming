@@ -65,7 +65,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc,
-            CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc,
+            CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -6851,11 +6851,27 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void MinimumTimeVisitingAllPointsFunc()
+        {
+            Program.Space();
+            Program.Title("Minimum Time Visiting All Points");
+            ResultTester.CheckSolution("LC", LeetCode.MinimumTimeVisitingAllPoints.Test.TestCases());
+        }
+
+
         private static void DivisibleandNondivisibleSumsDifferenceFunc()
         {
             Program.Space();
             Program.Title("Divisible and Non divisible Sums Difference");
             ResultTester.CheckSolution("LC", LeetCode.DivisibleandNondivisibleSumsDifference.Test.TestCases());
+        }
+
+
+        private static void FindthePeaksFunc()
+        {
+            Program.Space();
+            Program.Title("Find the Peaks");
+            ResultTester.CheckSolution("LC", LeetCode.FindthePeaks.Test.TestCases());
         }
 
 
