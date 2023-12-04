@@ -65,7 +65,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc,
-            CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc,
+            CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -6880,6 +6880,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Unique Length-3 Palindromic Subsequences");
             ResultTester.CheckSolution("LC", LeetCode.UniqueLength3PalindromicSubsequences.Test.TestCases());
+        }
+
+
+        private static void LargestSameDigitNumberinStringFunc()
+        {
+            Program.Space();
+            Program.Title("Largest 3-Same-Digit Number in String");
+            ResultTester.CheckSolution("LC", LeetCode.LargestSameDigitNumberinString.Test.TestCases());
         }
 
 
