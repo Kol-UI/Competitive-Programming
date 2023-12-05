@@ -65,7 +65,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, EquilibriumPointFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc,
-            CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc,
+            CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -6888,6 +6888,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Largest 3-Same-Digit Number in String");
             ResultTester.CheckSolution("LC", LeetCode.LargestSameDigitNumberinString.Test.TestCases());
+        }
+
+
+        private static void CountofMatchesinTournamentFunc()
+        {
+            Program.Space();
+            Program.Title("Count of Matches in Tournament");
+            ResultTester.CheckSolution("LC", LeetCode.CountofMatchesinTournament.Test.TestCases());
         }
 
 
