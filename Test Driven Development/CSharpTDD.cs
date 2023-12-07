@@ -66,6 +66,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc,
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc,
+            LargestOddNumberinStringFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -6904,6 +6905,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Calculate Money in Leetcode Bank");
             ResultTester.CheckSolution("LC", LeetCode.CalculateMoneyinLeetcodeBank.Test.TestCases());
+        }
+
+
+        private static void LargestOddNumberinStringFunc()
+        {
+            Program.Space();
+            Program.Title("Largest Odd Number in String");
+            ResultTester.CheckSolution("LC", LeetCode.LargestOddNumberinString.Test.TestCases());
         }
 
 
