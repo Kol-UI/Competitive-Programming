@@ -185,7 +185,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
             WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc, DrinksFunc,
-            UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc, PangramFunc, InsomniacureFunc, AntonandLettersFunc, HittheLotteryFunc, GamesFunc, AntonandPolyhedronsFunc,
+            UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc, PangramFunc, InsomniacureFunc, AntonandLettersFunc, HittheLotteryFunc, GamesFunc, AntonandPolyhedronsFunc, CandiesandTwoSistersFunc,
+            AmusingJokeFunc, FoxAndSnakeFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -634,6 +635,30 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Linked List Random Node");
             ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void CandiesandTwoSistersFunc()
+        {
+            Program.Space();
+            Program.Title("Candies and Two Sisters");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void AmusingJokeFunc()
+        {
+            Program.Space();
+            Program.Title("Amusing Joke");
+            ResultTester.SpecialTestCase("CF");
+        }
+
+
+        private static void FoxAndSnakeFunc()
+        {
+            Program.Space();
+            Program.Title("Fox And Snake");
+            ResultTester.SpecialTestCase("CF");
         }
 
 
