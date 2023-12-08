@@ -66,7 +66,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc,
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc,
-            LargestOddNumberinStringFunc,
+            LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -6916,6 +6916,22 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void ConstructStringfromBinaryTreeFunc()
+        {
+            Program.Space();
+            Program.Title("Construct String from Binary Tree");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void MaximumValueofanOrderedTripletIFunc()
+        {
+            Program.Space();
+            Program.Title("Maximum Value of an Ordered Triplet I");
+            ResultTester.CheckSolution("LC", LeetCode.MaximumValueofanOrderedTripletI.Test.TestCases());
+        }
+
+
         private static void CountNumberofPairsWithAbsoluteDifferenceKFunc()
         {
             Program.Space();
@@ -7102,7 +7118,6 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            
         }
     }
 }
