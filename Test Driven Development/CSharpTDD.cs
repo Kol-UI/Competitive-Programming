@@ -66,7 +66,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc,
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc,
-            LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc,
+            LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -755,6 +755,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Max Subarray Sum Circular");
             ResultTester.CheckSolution("LC", LeetCode.MaximumSumCircularSubarray.Test.TestMaximumSumCircularSubarray());
+        }
+
+
+        private static void FindCommonElementsBetweenTwoArraysFunc()
+        {
+            Program.Space();
+            Program.Title("Find Common Elements Between Two Arrays");
+            ResultTester.CheckSolution("LC", LeetCode.FindCommonElementsBetweenTwoArrays.Test.TestCases());
         }
 
 
