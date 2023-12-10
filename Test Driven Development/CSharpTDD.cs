@@ -66,7 +66,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc,
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc,
-            LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc,
+            LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -774,6 +774,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
+        private static void TransposeMatrixFunc()
+        {
+            Program.Space();
+            Program.Title("Transpose Matrix");
+            ResultTester.CheckSolution("LC", LeetCode.TransposeMatrix.Test.TestCases());
+        }
+
         private static void SubarraySumFunc()
         {
             Program.Space();
@@ -782,22 +789,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
 
-        private static void SubarraysDivByKFunc()
+        private static void CountTestedDevicesAfterTestOperationsFunc()
         {
             Program.Space();
-            Program.Title("Subarrays Div By K");
-
-            // Case 1
-            int[] numsCase1_974 = { 4, 5, 0, -2, -3, 1 };
-            int kCase1 = 5;
-            int Case1_974_Result = LeetCode.SubarraySumEqualsK.Solution.SubarraySum(numsCase1_974, kCase1);
-            Console.WriteLine(Case1_974_Result);
-
-            // Case 2
-            int[] numsCase2_974 = { 5 };
-            int kCase2 = 9;
-            int Case2_974_Result = LeetCode.SubarraySumEqualsK.Solution.SubarraySum(numsCase2_974, kCase2);
-            Console.WriteLine(Case2_974_Result);
+            Program.Title("Count Tested Devices After Test Operations");
+            ResultTester.CheckSolution("LC", LeetCode.CountTestedDevicesAfterTestOperations.Test.TestCases());
         }
 
 
@@ -7146,6 +7142,25 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Find Words That Can Be Formed by Characters");
             ResultTester.CheckSolution("LC", LeetCode.FindWordsThatCanBeFormedbyCharacters.Test.TestCases());
+        }
+
+
+        private static void SubarraysDivByKFunc()
+        {
+            Program.Space();
+            Program.Title("Subarrays Div By K");
+
+            // Case 1
+            int[] numsCase1_974 = { 4, 5, 0, -2, -3, 1 };
+            int kCase1 = 5;
+            int Case1_974_Result = LeetCode.SubarraySumEqualsK.Solution.SubarraySum(numsCase1_974, kCase1);
+            Console.WriteLine(Case1_974_Result);
+
+            // Case 2
+            int[] numsCase2_974 = { 5 };
+            int kCase2 = 9;
+            int Case2_974_Result = LeetCode.SubarraySumEqualsK.Solution.SubarraySum(numsCase2_974, kCase2);
+            Console.WriteLine(Case2_974_Result);
         }
 
         // CURRENT TESTS
