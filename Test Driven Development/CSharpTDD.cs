@@ -121,7 +121,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         private static Delegate[] hackerRankEasyList = new Delegate[]
         {
-            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc, PlusMinusFunc, StaircaseFunc, MiniMaxSumFunc, BirthdayCakeCandlesFunc, TimeConversionFunc,
+            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc, PlusMinusFunc, StaircaseFunc, MiniMaxSumFunc, BirthdayCakeCandlesFunc, TimeConversionFunc, GradientStudentsFunc,
         };
 
         private static Delegate[] hackerRankMediumList = new Delegate[]
@@ -6147,6 +6147,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ResultTester.SpecialTestCase("HR");
         }
 
+
+        private static void GradientStudentsFunc()
+        {
+            Program.Space();
+            Program.Title("Gradient Students");
+            ResultTester.CheckSolution("HR", HackerRank.GradientStudents.Test.TestCases());
+        }
+        
 
         private static void ChampagneTowerFunc()
         {
