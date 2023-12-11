@@ -66,7 +66,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc,
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc,
-            LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc,
+            LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc, ElementAppearingMoreThanInSortedArrayFunc,
         };
 
         private static Delegate[] leetCodeMediumList = new Delegate[]
@@ -7142,6 +7142,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             Program.Space();
             Program.Title("Find Words That Can Be Formed by Characters");
             ResultTester.CheckSolution("LC", LeetCode.FindWordsThatCanBeFormedbyCharacters.Test.TestCases());
+        }
+
+
+        private static void ElementAppearingMoreThanInSortedArrayFunc()
+        {
+            Program.Space();
+            Program.Title("Element Appearing More Than 25% In Sorted Array");
+            ResultTester.CheckSolution("LC", LeetCode.ElementAppearingMoreThanInSortedArray.Test.TestCases());
         }
 
 
