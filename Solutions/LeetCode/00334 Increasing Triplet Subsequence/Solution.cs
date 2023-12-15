@@ -25,6 +25,7 @@ Explanation: The triplet (3, 4, 5) is valid because nums[3] == 0 < nums[4] == 4 
 */
 
 using System;
+using CompetitiveProgramming.Helpers.Generaters;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.IncreasingTripletSubsequence
@@ -78,14 +79,14 @@ namespace CompetitiveProgramming.LeetCode.IncreasingTripletSubsequence
             int[] Case16 = { 1, 2, 2 };
             int[] Case17 = { 1, 2 };
             int[] Case18 = { 5, 3, 4 };
-            int[] Case19 = Program.GenerateRandomNumber(10, 100);
-            int[] Case20 = Program.GenerateRandomNumber(10, 100);
-            int[] Case21 = Program.GenerateRandomNumber(10, 100);
-            int[] Case22 = Program.GenerateRandomNumber(10, 100);
-            int[] Case23 = Program.GenerateRandomNegativeNumber(100);
-            int[] Case24 = Program.GenerateRandomNegativeNumber(100);
-            int[] Case25 = Program.GenerateRandomNegativeNumber(100);
-            int[] Case26 = Program.GenerateRandomNegativeNumber(100);
+            int[] Case19 = RandomGeneraters.GenerateRandomNumber(10, 100);
+            int[] Case20 = RandomGeneraters.GenerateRandomNumber(10, 100);
+            int[] Case21 = RandomGeneraters.GenerateRandomNumber(10, 100);
+            int[] Case22 = RandomGeneraters.GenerateRandomNumber(10, 100);
+            int[] Case23 = RandomGeneraters.GenerateRandomNegativeNumber(100);
+            int[] Case24 = RandomGeneraters.GenerateRandomNegativeNumber(100);
+            int[] Case25 = RandomGeneraters.GenerateRandomNegativeNumber(100);
+            int[] Case26 = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int[] Case27 = { -1, -2 };
             int[] Case28 = { 78, 56, 232, 12, 11, 43 };
             int[] Case29 = { 78, 56, -2, 12, 8, -33 };

@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.Helpers.Generaters;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.JumpGameIV
@@ -103,39 +104,39 @@ namespace CompetitiveProgramming.LeetCode.JumpGameIV
             int resultCase4_1345 = Solution.MinJumps(arrCase4_1345);
 
             // Case 5
-            int[] arrCase5_1345 = Program.GenerateRandomNumber(100, 5);
+            int[] arrCase5_1345 = RandomGeneraters.GenerateRandomNumber(100, 5);
             int resultCase5_1345 = Solution.MinJumps(arrCase5_1345);
 
             // Case 6
-            int[] arrCase6_1345 = Program.GenerateRandomNumber(1000, 5);
+            int[] arrCase6_1345 = RandomGeneraters.GenerateRandomNumber(1000, 5);
             int resultCase6_1345 = Solution.MinJumps(arrCase6_1345);
 
             // Case 7
-            int[] arrCase7_1345 = Program.GenerateRandomNumber(100, 10);
+            int[] arrCase7_1345 = RandomGeneraters.GenerateRandomNumber(100, 10);
             int resultCase7_1345 = Solution.MinJumps(arrCase7_1345);
 
             // Case 8
-            int[] arrCase8_1345 = Program.GenerateRandomNumber(1000, 10);
+            int[] arrCase8_1345 = RandomGeneraters.GenerateRandomNumber(1000, 10);
             int resultCase8_1345 = Solution.MinJumps(arrCase8_1345);
 
             // Case 9
-            int[] arrCase9_1345 = Program.GenerateRandomNumber(10, 100);
+            int[] arrCase9_1345 = RandomGeneraters.GenerateRandomNumber(10, 100);
             int resultCase9_1345 = Solution.MinJumps(arrCase9_1345);
 
             // Case 10
-            int[] arrCase10_1345 = Program.GenerateRandomNegativeNumber(5);
+            int[] arrCase10_1345 = RandomGeneraters.GenerateRandomNegativeNumber(5);
             int resultCase10_1345 = Solution.MinJumps(arrCase10_1345);
 
             // Case 11
-            int[] arrCase11_1345 = Program.GenerateRandomNegativeNumber(10);
+            int[] arrCase11_1345 = RandomGeneraters.GenerateRandomNegativeNumber(10);
             int resultCase11_1345 = Solution.MinJumps(arrCase11_1345);
 
             // Case 12
-            int[] arrCase12_1345 = Program.GenerateRandomNegativePositiveNumber(5);
+            int[] arrCase12_1345 = RandomGeneraters.GenerateRandomNegativePositiveNumber(5);
             int resultCase12_1345 = Solution.MinJumps(arrCase12_1345);
 
             // Case 13
-            int[] arrCase13_1345 = Program.GenerateRandomNegativePositiveNumber(10);
+            int[] arrCase13_1345 = RandomGeneraters.GenerateRandomNegativePositiveNumber(10);
             int resultCase13_1345 = Solution.MinJumps(arrCase13_1345);
 
             // Case 14

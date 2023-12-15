@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.Helpers.Outputs;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BinarySearch
@@ -60,7 +61,7 @@ namespace CompetitiveProgramming.LeetCode.BinarySearch
             int result704_1 = Solution.Search(nums704_1, target704_1);
 
             // Case 2
-            Program.Space();
+            StyleHelper.Space();
             int[] nums704_2 = {-1,0,3,5,9,12};
             int target704_2 = 2;
             int result704_2 = Solution.Search(nums704_2, target704_2);

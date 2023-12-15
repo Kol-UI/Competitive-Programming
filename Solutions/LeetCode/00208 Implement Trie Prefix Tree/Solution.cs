@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.Helpers.Outputs;
 namespace CompetitiveProgramming.LeetCode.ImplementTriePrefixTree
 {
     /*
@@ -97,60 +98,60 @@ namespace CompetitiveProgramming.LeetCode.ImplementTriePrefixTree
         {
             LeetCode.ImplementTriePrefixTree.Trie obj_208 = new LeetCode.ImplementTriePrefixTree.Trie();
             string word1_208 = "Trie";
-            Program.SubTitle(word1_208);
+            StyleHelper.SubTitle(word1_208);
             obj_208.Insert(word1_208);
             bool searchResult1_208 = obj_208.Search(word1_208);
             bool startsWithResult1_208 = obj_208.StartsWith(word1_208);
             Console.WriteLine("Search: {0} - Starts With: {1}", searchResult1_208, startsWithResult1_208);
 
             string word2_208 = "insert";
-            Program.SubTitle(word2_208);
+            StyleHelper.SubTitle(word2_208);
             obj_208.Insert(word2_208);
             bool searchResult2_208 = obj_208.Search(word2_208);
             bool startsWithResult2_208 = obj_208.StartsWith(word2_208);
             Console.WriteLine("Search: {0} - Starts With: {1}", searchResult2_208, startsWithResult2_208);
 
             string word3_208 = "search";
-            Program.SubTitle(word3_208);
+            StyleHelper.SubTitle(word3_208);
             obj_208.Insert(word3_208);
             bool searchResult3_208 = obj_208.Search(word3_208);
             bool startsWithResult3_208 = obj_208.StartsWith(word3_208);
             Console.WriteLine("Search: {0} - Starts With: {1}", searchResult3_208, startsWithResult3_208);
             
-            Program.SubTitle(word3_208);
+            StyleHelper.SubTitle(word3_208);
             obj_208.Insert(word3_208);
             bool searchResult3_2_208 = obj_208.Search(word3_208);
             bool startsWithResult3_2_208 = obj_208.StartsWith(word3_208);
             Console.WriteLine("Search: {0} - Starts With: {1}", searchResult3_2_208, startsWithResult3_2_208);
 
             string word4_208 = "startsWith";
-            Program.SubTitle(word4_208);
+            StyleHelper.SubTitle(word4_208);
             obj_208.Insert(word4_208);
             bool searchResult4_208 = obj_208.Search(word4_208);
             bool startsWithResult4_208 = obj_208.StartsWith(word4_208);
             Console.WriteLine("Search: {0} - Starts With: {1}", searchResult4_208, startsWithResult4_208);
 
-            Program.SubTitle(word2_208);
+            StyleHelper.SubTitle(word2_208);
             obj_208.Insert(word2_208);
             bool searchResult2_2_208 = obj_208.Search(word2_208);
             bool startsWithResult2_2_208 = obj_208.StartsWith(word2_208);
             Console.WriteLine("Search: {0} - Starts With: {1}", searchResult2_2_208, startsWithResult2_2_208);
 
-            Program.SubTitle(word3_208);
+            StyleHelper.SubTitle(word3_208);
             obj_208.Insert(word3_208);
             bool searchResult3_3_208 = obj_208.Search(word3_208);
             bool startsWithResult3_3_208 = obj_208.StartsWith(word3_208);
             Console.WriteLine("Search: {0} - Starts With: {1}", searchResult3_3_208, startsWithResult3_3_208);
 
             string word5_208 = "apple";
-            Program.SubTitle(word5_208);
+            StyleHelper.SubTitle(word5_208);
             obj_208.Insert(word5_208);
             bool searchResult5_208 = obj_208.Search(word5_208);
             bool startsWithResult5_208 = obj_208.StartsWith(word5_208);
             Console.WriteLine("Search: {0} - Starts With: {1}", searchResult5_208, startsWithResult5_208);
 
             LeetCode.ImplementTriePrefixTree.Trie trie = new LeetCode.ImplementTriePrefixTree.Trie();
-            Program.SubTitle(word5_208);
+            StyleHelper.SubTitle(word5_208);
             trie.Insert(word5_208);
             bool test1_2_208 = trie.StartsWith(word5_208);
             bool test1_208 = trie.Search(word5_208);
@@ -158,7 +159,7 @@ namespace CompetitiveProgramming.LeetCode.ImplementTriePrefixTree
             Console.WriteLine(test1_208);
 
             string word6_208 = "app";
-            Program.SubTitle(word6_208);
+            StyleHelper.SubTitle(word6_208);
             bool test2_208 = trie.Search(word6_208);
             Console.WriteLine(test2_208);
 

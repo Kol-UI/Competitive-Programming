@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Linq;
 using System.Text;
+using CompetitiveProgramming.Helpers.Converters;
+using CompetitiveProgramming.Helpers.Outputs;
 
 namespace CompetitiveProgramming.TestDrivenDevelopment
 {
@@ -54,9 +56,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                     {
                         // Compare the Jagged Arrays of the same type
                         // Convert jagged arrays to strings and compare
-                        string resultString = Program.JaggedArrayToString(result as Array);
-                        string expectedString = Program.JaggedArrayToString(expected as Array);
-                        Program.PrintTestResult(resultString, expectedString);
+                        string resultString = JaggedArrayToStringConverter.JaggedArrayToString(result as Array);
+                        string expectedString = JaggedArrayToStringConverter.JaggedArrayToString(expected as Array);
+                        PrintHelper.PrintTestResult(resultString, expectedString);
                         if (resultString.Equals(expectedString))
                         {
                             CheckResultRight();
@@ -70,9 +72,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                     }
                     else
                     {
-                        string resultString = Program.ArrayToString(result as Array);
-                        string expectedString = Program.ArrayToString(expected as Array);
-                        Program.PrintTestResult(resultString, expectedString);
+                        string resultString = ArrayToStringConverter.ArrayToString(result as Array);
+                        string expectedString = ArrayToStringConverter.ArrayToString(expected as Array);
+                        PrintHelper.PrintTestResult(resultString, expectedString);
 
                         // Compare the Single-Dimensional Arrays of the same type => .SequenceEqual();
                         if (result is Array resultArray && expected is Array expectedArray)
@@ -89,7 +91,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                     object objExpected = (object)expected;
                     string resultString = ConvertResultToString(objResult);
                     string expectedString = ConvertResultToString(objExpected);
-                    Program.PrintTestResult(resultString, expectedString);
+                    PrintHelper.PrintTestResult(resultString, expectedString);
 
                     if(string.Equals(resultString, expectedString))
                     {
@@ -103,7 +105,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 {
                     string resultString = result.ToString()!;
                     string expectedString = expected.ToString()!;
-                    Program.PrintTestResult(resultString, expectedString);
+                    PrintHelper.PrintTestResult(resultString, expectedString);
 
                     if (result.Equals(expected))
                     {
@@ -117,7 +119,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 {
                     string resultString = result.ToString()!;
                     string expectedString = expected.ToString()!;
-                    Program.PrintTestResult(resultString, expectedString);
+                    PrintHelper.PrintTestResult(resultString, expectedString);
                     if (result.Equals(expected))
                     {
                         CheckResultRight();
@@ -139,7 +141,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 {
                     string resultString = ConvertResultToString(result);
                     string expectedString = ConvertResultToString(expected);
-                    Program.PrintTestResult(resultString, expectedString);
+                    PrintHelper.PrintTestResult(resultString, expectedString);
 
                     if (resultString.Equals(expectedString))
                     {
@@ -432,18 +434,18 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
         public static void GetAllStats()
         {
-            Program.Space();
-            Program.Title("Stats");
+            StyleHelper.Space();
+            StyleHelper.Title("Stats");
 
-            Program.HightLight(GetProblemsSourcesCounters(), ConsoleColor.Cyan);
+            PrintHelper.HightLight(GetProblemsSourcesCounters(), ConsoleColor.Cyan);
 
-            Program.HightLight(GetTestPercentage(), ConsoleColor.Yellow);
+            PrintHelper.HightLight(GetTestPercentage(), ConsoleColor.Yellow);
 
-            Program.HightLight(GetCounterTotalTestCaseDone(), ConsoleColor.Yellow);
+            PrintHelper.HightLight(GetCounterTotalTestCaseDone(), ConsoleColor.Yellow);
             
-            Program.HightLight(GetSolutionPercentage(), ConsoleColor.Green);
+            PrintHelper.HightLight(GetSolutionPercentage(), ConsoleColor.Green);
 
-            Program.HightLight(GetCounterTotalSolutions(), ConsoleColor.Green);
+            PrintHelper.HightLight(GetCounterTotalSolutions(), ConsoleColor.Green);
         }
     }
 }

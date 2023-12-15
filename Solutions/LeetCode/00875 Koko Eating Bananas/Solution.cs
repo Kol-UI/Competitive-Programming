@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.Helpers.Generaters;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.KokoEatingBananas
@@ -45,7 +46,7 @@ namespace CompetitiveProgramming.LeetCode.KokoEatingBananas
     {
         public static bool[] TestKokoEatingBananas()
         {
-            System.Random random = new System.Random();
+            System.Random random = new();
 
             // Case 1
             int[] piles1_875 = { 3, 6, 7, 11 };
@@ -63,12 +64,12 @@ namespace CompetitiveProgramming.LeetCode.KokoEatingBananas
             int result3_875 = Solution.MinEatingSpeed(piles3_875, h3_875);
 
             // Case 4
-            int[] piles4_875 = Program.GenerateRandomNumber(25, 10);
+            int[] piles4_875 = RandomGeneraters.GenerateRandomNumber(25, 10);
             int h4_875 = random.Next(1, 10);
             int result4_875 = Solution.MinEatingSpeed(piles4_875, h4_875);
 
             // Case 5
-            int[] piles5_875 = Program.GenerateRandomNumber(25, 10);
+            int[] piles5_875 = RandomGeneraters.GenerateRandomNumber(25, 10);
             int h5_875 = random.Next(1, 10);
             int result5_875 = Solution.MinEatingSpeed(piles5_875, h5_875);
 

@@ -29,6 +29,7 @@ Explanation: The smallest positive integer 1 is missing.
 */
 
 using System;
+using CompetitiveProgramming.Helpers.Generaters;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FirstMissingPositive
@@ -75,14 +76,14 @@ namespace CompetitiveProgramming.LeetCode.FirstMissingPositive
             int[] case16 = {1, 2, 2};
             int[] case17 = {1, 2};
             int[] case18 = {5, 3, 4};
-            int[] case19 = Program.GenerateRandomNumber(10, 100);
-            int[] case20 = Program.GenerateRandomNumber(10, 100);
-            int[] case21 = Program.GenerateRandomNumber(10, 100);
-            int[] case22 = Program.GenerateRandomNumber(10, 100);
-            int[] case23 = Program.GenerateRandomNegativeNumber(100);
-            int[] case24 = Program.GenerateRandomNegativeNumber(100);
-            int[] case25 = Program.GenerateRandomNegativeNumber(100);
-            int[] case26 = Program.GenerateRandomNegativeNumber(100);
+            int[] case19 = RandomGeneraters.GenerateRandomNumber(10, 100);
+            int[] case20 = RandomGeneraters.GenerateRandomNumber(10, 100);
+            int[] case21 = RandomGeneraters.GenerateRandomNumber(10, 100);
+            int[] case22 = RandomGeneraters.GenerateRandomNumber(10, 100);
+            int[] case23 = RandomGeneraters.GenerateRandomNegativeNumber(100);
+            int[] case24 = RandomGeneraters.GenerateRandomNegativeNumber(100);
+            int[] case25 = RandomGeneraters.GenerateRandomNegativeNumber(100);
+            int[] case26 = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int[] case27 = {-1, -2};
             int[] case28 = {78, 56, 232, 12, 11, 43};
             int[] case29 = {78, 56, -2, 12, 8, -33};

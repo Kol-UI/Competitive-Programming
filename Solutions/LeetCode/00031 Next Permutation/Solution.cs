@@ -33,6 +33,7 @@ Output: [1,5,1]
 
 
 using System;
+using CompetitiveProgramming.Helpers.Outputs;
 namespace CompetitiveProgramming.LeetCode.NextPermutation
 {
     public class Solution
@@ -50,7 +51,7 @@ namespace CompetitiveProgramming.LeetCode.NextPermutation
                         {
                             Swap(nums, i-1, j);
                             Array.Reverse(nums, i, (nums.Length)-i);
-                            Program.PrintArray(nums); // For Test
+                            PrintHelper.PrintArray(nums); // For Test
                             return;
                         }
                     }
@@ -58,7 +59,7 @@ namespace CompetitiveProgramming.LeetCode.NextPermutation
             }
 
             Array.Reverse(nums);
-            Program.PrintArray(nums); // For Test
+            PrintHelper.PrintArray(nums); // For Test
         }
         
         public static void Swap(int[] nums, int i, int j)

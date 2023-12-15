@@ -24,6 +24,7 @@ rotate 2 steps to the right: [3,99,-1,-100]
 */
 
 using System;
+using CompetitiveProgramming.Helpers.Outputs;
 namespace CompetitiveProgramming.LeetCode.RotateArray
 {
     public class Solution
@@ -37,7 +38,7 @@ namespace CompetitiveProgramming.LeetCode.RotateArray
                 nums[(i + k) % (len)] = lst[i];
 
             // For Test
-            Program.PrintArray(nums);
+            PrintHelper.PrintArray(nums);
         }
     }
 }

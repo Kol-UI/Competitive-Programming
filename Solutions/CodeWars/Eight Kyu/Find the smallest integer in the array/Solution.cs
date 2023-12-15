@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.Helpers.Generaters;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.Findthesmallestintegerinthearray
@@ -58,35 +59,35 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.Findthesmallestintegerinthear
             int case4_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case4_Findthesmallestintegerinthearray);
 
             // Case 5
-            int[] case5_Findthesmallestintegerinthearray = Program.GenerateRandomNumber(10, 100);
+            int[] case5_Findthesmallestintegerinthearray = RandomGeneraters.GenerateRandomNumber(10, 100);
             int case5_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(case5_Findthesmallestintegerinthearray);
 
             // Case 6
-            int[] Case6_Findthesmallestintegerinthearray = Program.GenerateRandomNumber(10, 100);
+            int[] Case6_Findthesmallestintegerinthearray = RandomGeneraters.GenerateRandomNumber(10, 100);
             int Case6_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case6_Findthesmallestintegerinthearray);
 
             // Case 7
-            int[] Case7_Findthesmallestintegerinthearray = Program.GenerateRandomNumber(10, 100);
+            int[] Case7_Findthesmallestintegerinthearray = RandomGeneraters.GenerateRandomNumber(10, 100);
             int Case7_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case7_Findthesmallestintegerinthearray);
 
             // Case 8
-            int[] Case8_Findthesmallestintegerinthearray = Program.GenerateRandomNumber(10, 100);
+            int[] Case8_Findthesmallestintegerinthearray = RandomGeneraters.GenerateRandomNumber(10, 100);
             int Case8_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case8_Findthesmallestintegerinthearray);
 
             // Case 9
-            int[] Case9_Findthesmallestintegerinthearray = Program.GenerateRandomNegativeNumber(100);
+            int[] Case9_Findthesmallestintegerinthearray = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int Case9_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case9_Findthesmallestintegerinthearray);
 
             // Case 10
-            int[] Case10_Findthesmallestintegerinthearray = Program.GenerateRandomNegativeNumber(100);
+            int[] Case10_Findthesmallestintegerinthearray = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int Case10_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case10_Findthesmallestintegerinthearray);
 
             // Case 11
-            int[] Case11_Findthesmallestintegerinthearray = Program.GenerateRandomNegativeNumber(100);
+            int[] Case11_Findthesmallestintegerinthearray = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int Case11_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case11_Findthesmallestintegerinthearray);
 
             // Case 12
-            int[] Case12_Findthesmallestintegerinthearray = Program.GenerateRandomNegativeNumber(100);
+            int[] Case12_Findthesmallestintegerinthearray = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int Case12_FindthesmallestintegerinthearrayResult = CodeWars.EightKyu.Findthesmallestintegerinthearray.Kata.FindSmallestInt(Case12_Findthesmallestintegerinthearray);
 
             // Case 13

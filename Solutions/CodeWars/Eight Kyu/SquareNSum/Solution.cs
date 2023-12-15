@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.Helpers.Generaters;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.SquareNSum
@@ -48,35 +49,35 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.SquareNSum
             int case4_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(case4_SquareNSum);
 
             // Case 5
-            int[] case5_SquareNSum = Program.GenerateRandomNumber(10, 100);
+            int[] case5_SquareNSum = RandomGeneraters.GenerateRandomNumber(10, 100);
             int case5_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(case5_SquareNSum);
 
             // Case 6
-            int[] Case6_SquareNSum = Program.GenerateRandomNumber(10, 100);
+            int[] Case6_SquareNSum = RandomGeneraters.GenerateRandomNumber(10, 100);
             int Case6_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case6_SquareNSum);
 
             // Case 7
-            int[] Case7_SquareNSum = Program.GenerateRandomNumber(10, 100);
+            int[] Case7_SquareNSum = RandomGeneraters.GenerateRandomNumber(10, 100);
             int Case7_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case7_SquareNSum);
 
             // Case 8
-            int[] Case8_SquareNSum = Program.GenerateRandomNumber(10, 100);
+            int[] Case8_SquareNSum = RandomGeneraters.GenerateRandomNumber(10, 100);
             int Case8_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case8_SquareNSum);
 
             // Case 9
-            int[] Case9_SquareNSum = Program.GenerateRandomNegativeNumber(100);
+            int[] Case9_SquareNSum = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int Case9_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case9_SquareNSum);
 
             // Case 10
-            int[] Case10_SquareNSum = Program.GenerateRandomNegativeNumber(100);
+            int[] Case10_SquareNSum = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int Case10_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case10_SquareNSum);
 
             // Case 11
-            int[] Case11_SquareNSum = Program.GenerateRandomNegativeNumber(100);
+            int[] Case11_SquareNSum = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int Case11_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case11_SquareNSum);
 
             // Case 12
-            int[] Case12_SquareNSum = Program.GenerateRandomNegativeNumber(100);
+            int[] Case12_SquareNSum = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int Case12_SquareNSumResult = CodeWars.EightKyu.SquareNSum.Kata.SquareSum(Case12_SquareNSum);
 
             // Case 1 Clever
@@ -96,35 +97,35 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.SquareNSum
             int case4_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(case4_SquareNSumClever);
 
             // Case 5 Clever
-            int[] case5_SquareNSumClever = Program.GenerateRandomNumber(10, 100);
+            int[] case5_SquareNSumClever = RandomGeneraters.GenerateRandomNumber(10, 100);
             int case5_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(case5_SquareNSumClever);
 
             // Case 6 Clever
-            int[] Case6_SquareNSumClever = Program.GenerateRandomNumber(10, 100);
+            int[] Case6_SquareNSumClever = RandomGeneraters.GenerateRandomNumber(10, 100);
             int Case6_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case6_SquareNSumClever);
 
             // Case 7 Clever
-            int[] Case7_SquareNSumClever = Program.GenerateRandomNumber(10, 100);
+            int[] Case7_SquareNSumClever = RandomGeneraters.GenerateRandomNumber(10, 100);
             int Case7_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case7_SquareNSumClever);
 
             // Case 8 Clever
-            int[] Case8_SquareNSumClever = Program.GenerateRandomNumber(10, 100);
+            int[] Case8_SquareNSumClever = RandomGeneraters.GenerateRandomNumber(10, 100);
             int Case8_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case8_SquareNSumClever);
 
             // Case 9 Clever
-            int[] Case9_SquareNSumClever = Program.GenerateRandomNegativeNumber(100);
+            int[] Case9_SquareNSumClever = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int Case9_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case9_SquareNSumClever);
 
             // Case 10 Clever
-            int[] Case10_SquareNSumClever = Program.GenerateRandomNegativeNumber(100);
+            int[] Case10_SquareNSumClever = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int Case10_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case10_SquareNSumClever);
 
             // Case 11 Clever
-            int[] Case11_SquareNSumClever = Program.GenerateRandomNegativeNumber(100);
+            int[] Case11_SquareNSumClever = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int Case11_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case11_SquareNSumClever);
 
             // Case 12 Clever
-            int[] Case12_SquareNSumClever = Program.GenerateRandomNegativeNumber(100);
+            int[] Case12_SquareNSumClever = RandomGeneraters.GenerateRandomNegativeNumber(100);
             int Case12_SquareNSumResultClever = CodeWars.EightKyu.SquareNSum.Kata.SquareSumClever(Case12_SquareNSumClever);
 
             bool[] results = new bool[]

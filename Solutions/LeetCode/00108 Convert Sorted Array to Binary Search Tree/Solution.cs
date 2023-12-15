@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.Helpers.Outputs;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ConvertSortedArraytoBinarySearchTree
@@ -40,7 +41,7 @@ namespace CompetitiveProgramming.LeetCode.ConvertSortedArraytoBinarySearchTree
                 node.val = nums[0];
 
                 // Print
-                Program.PrintArray(nums);
+                PrintHelper.PrintArray(nums);
                 
                 return node;
             }
@@ -60,7 +61,7 @@ namespace CompetitiveProgramming.LeetCode.ConvertSortedArraytoBinarySearchTree
             }
 
             // Print
-            Program.PrintArray(nums);
+            PrintHelper.PrintArray(nums);
             return node;
         }
     }
@@ -71,12 +72,12 @@ namespace CompetitiveProgramming.LeetCode.ConvertSortedArraytoBinarySearchTree
         {
             
             // Case 1
-            Program.SubTitle("Case 1");
+            StyleHelper.SubTitle("Case 1");
             int[] numsCase1_108 = { -10, -3, 0, 5, 9 };
             TreeNode resultCase1_108 = Solution.SortedArrayToBST(numsCase1_108);
             
             // Case 2
-            Program.SubTitle("Case 2");
+            StyleHelper.SubTitle("Case 2");
             int[] numsCase2_108 = { 1, 3 };
             TreeNode resultCase2_108 = Solution.SortedArrayToBST(numsCase2_108);
 
