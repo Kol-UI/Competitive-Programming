@@ -77,63 +77,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                         // Compare the Single-Dimensional Arrays of the same type => .SequenceEqual();
                         if (result is Array resultArray && expected is Array expectedArray)
                         {
-                            // If int[]
-                            if (resultArray is int[] && expectedArray is int[])
-                            {
-                                if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
-                                {
-                                    CheckResultRight();
-                                    return true;
-                                }
-                            }
-
-                            // If bool[]
-                            else if (resultArray is bool[] && expectedArray is bool[])
-                            {
-                                if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
-                                {
-                                    CheckResultRight();
-                                    return true;
-                                }
-                            }
-
-                            // If char[]
-                            else if (resultArray is char[] && expectedArray is char[])
-                            {
-                                if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
-                                {
-                                    CheckResultRight();
-                                    return true;
-                                }
-                            }
-
-                            // If double[]
-                            else if (resultArray is double[] && expectedArray is double[])
-                            {
-                                if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
-                                {
-                                    CheckResultRight();
-                                    return true;
-                                }
-                            }
-
-                            // If long[]
-                            else if (resultArray is long[] && expectedArray is long[])
-                            {
-                                if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
-                                {
-                                    CheckResultRight();
-                                    return true;
-                                }
-                            }
-
-                            // Handle other array types here...
-
-                            // If no matching array type found
-                            CheckResultWrong();
-                            return false;
+                            return CheckArrayResult<Array>(resultArray, expectedArray);
                         }
-
                     }
                 }
 
@@ -210,6 +155,26 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 CheckResultWrong();
                 return false;
             }
+        }
+
+        public static bool CheckArrayResult<T>(T result, T expected)
+        {
+            if (result is Array resultArray && expected is Array expectedArray)
+            {
+                if (resultArray.Cast<object>().SequenceEqual(expectedArray.Cast<object>()))
+                {
+                    CheckResultRight();
+                    return true;
+                }
+                else
+                {
+                    CheckResultWrong();
+                    return false;
+                }
+            }
+
+            CheckResultWrong();
+            return false;
         }
 
         private static string ConvertResultToString(object toConvert)
