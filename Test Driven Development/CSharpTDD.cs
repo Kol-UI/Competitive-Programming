@@ -187,7 +187,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
             WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc, DrinksFunc,
             UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc, PangramFunc, InsomniacureFunc, AntonandLettersFunc, HittheLotteryFunc, GamesFunc, AntonandPolyhedronsFunc, CandiesandTwoSistersFunc,
-            AmusingJokeFunc, FoxAndSnakeFunc,
+            AmusingJokeFunc, FoxAndSnakeFunc, PoliceRecruitsFunc,
         };
 
         private static Delegate[] coderByteEasyList = new Delegate[]
@@ -2450,6 +2450,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             StyleHelper.Space();
             StyleHelper.Title("Next Round");
             ResultTester.CheckSolution("CF", CodeForces.NextRound.Test.TestCases());
+        }
+
+
+        private static void PoliceRecruitsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Police Recruits");
+            ResultTester.CheckSolution("CF", CodeForces.PoliceRecruits.Test.TestCases());
         }
 
 
