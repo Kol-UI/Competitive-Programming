@@ -104,7 +104,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc, MinimumOperationstoReduceXtoZeroFunc, ChampagneTowerFunc, RemoveDuplicateLettersFunc, DecodedStringatIndexFunc, OneThreeTwoPatternFunc, RemoveColoredPiecesifBothNeighborsaretheSameColorFunc,
             MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc, EliminateMaximumNumberofMonstersFunc,
             DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc,
-            MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc,
+            MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc,
         };
 
         private static Delegate[] leetCodeHardList = new Delegate[]
@@ -722,6 +722,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         {
             StyleHelper.Space();
             StyleHelper.Title("Binary Tree Maximum Path Sum");
+            ResultTester.SpecialTestCase("LC");
+        }
+
+
+        private static void DesignaFoodRatingSystemFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Design a Food Rating System");
             ResultTester.SpecialTestCase("LC");
         }
 
@@ -7238,7 +7246,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         // CURRENT TESTS
         private static void CurrentTests()
         {
-            ExcelSheetColumnNumberFunc();
+
         }
     }
 }
