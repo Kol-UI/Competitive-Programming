@@ -16,4 +16,5 @@ public enum ProblemOrigin
     LeetCode = 11,
     ProjectEuler = 12,
     SphereOnlineJudge = 13,
+    CodingBlocks = 14,
 }

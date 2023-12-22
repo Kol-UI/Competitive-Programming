@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.RegularExpressions;
 using CompetitiveProgramming.Helpers.Outputs;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
@@ -18,9 +15,6 @@ namespace CompetitiveProgramming
             Console.WriteLine("Hello World!");
             // Tests
             CSharpTDD.StartAllTDD();
-
-            // ResultTester Stats
-            ResultTester.GetAllStats();
 
             // StopWatch
             sw.Stop();

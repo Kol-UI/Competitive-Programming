@@ -2,8 +2,10 @@ using System;
 using System.Collections;
 using System.Linq;
 using System.Text;
+using CompetitiveProgramming.CodeForces.BuyaShovel;
 using CompetitiveProgramming.Helpers.Converters;
 using CompetitiveProgramming.Helpers.Outputs;
+using CompetitiveProgramming.Models;
 
 namespace CompetitiveProgramming.TestDrivenDevelopment
 {
@@ -33,6 +35,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static int _counterKattisProblem = 0;
         private static int _counterAtCoderProblem = 0;
         private static int _counterCodinGameProblem = 0;
+        private static int _counterCodingBlocksProblem = 0;
         private static int _counterCSAcademyProblem = 0;
         private static int _counterProjectEulerProblem = 0;
         private static int _counterOtherSourceProblem = 0;
@@ -234,7 +237,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         }
 
         // To call in each Solution
-        public static void CheckSolution(string source, params bool[] values)
+        public static void CheckSolution(ProblemOrigin source, params bool[] values)
         {
             TestSolution();
             // If at least one is false then Solution is Invalidate
@@ -250,7 +253,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SourceManager(source);
         }
 
-        public static void SpecialTestCase(string source)
+        public static void SpecialTestCase(ProblemOrigin source)
         {
             Console.WriteLine("See Solution Directly");
             TestDone();
@@ -260,47 +263,50 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SourceManager(source);
         }
 
-        private static void SourceManager(string source)
+        private static void SourceManager(ProblemOrigin source)
         {
             switch(source)
             {
-                case "LC":
+                case ProblemOrigin.LeetCode:
                     _counterLeetCodeProblem++;
                     break;
-                case "CC":
+                case ProblemOrigin.CodeChef:
                     _counterCodeChefProblem++;
                     break;
-                case "CF":
+                case ProblemOrigin.CodeForces:
                     _counterCodeForcesProblem++;
                     break;
-                case "SPOJ":
+                case ProblemOrigin.SphereOnlineJudge:
                     _counterSphreOnlineJudgeProblem++;
                     break;
-                case "CB":
+                case ProblemOrigin.CoderByte:
                     _counterCoderByteProblem++;
                     break;
-                case "HR":
+                case ProblemOrigin.HackerRank:
                     _counterHackerRankProblem++;
                     break;
-                case "KAT":
+                case ProblemOrigin.Kattis:
                     _counterKattisProblem++;
                     break;
-                case "GFG":
+                case ProblemOrigin.GeeksForGeeks:
                     _counterGeeksForGeeksProblem++;
                     break;
-                case "CW":
+                case ProblemOrigin.CodeWars:
                     _counterCodeWarsProblem++;
                     break;
-                case "AC":
+                case ProblemOrigin.AtCoder:
                     _counterAtCoderProblem++;
                     break;
-                case "CG":
+                case ProblemOrigin.CodinGame:
                     _counterCodinGameProblem++;
                     break;
-                case "CSA":
+                case ProblemOrigin.CodingBlocks:
+                    _counterCodingBlocksProblem++;
+                    break;
+                case ProblemOrigin.CSAcademy:
                     _counterCSAcademyProblem++;
                     break;
-                case "PE":
+                case ProblemOrigin.ProjectEuler:
                     _counterProjectEulerProblem++;
                     break;
                 default:
@@ -413,6 +419,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             counters.Append("LeetCode Problems : [" + _counterLeetCodeProblem.ToString() + "]" + separator);
             counters.Append("ProjectEuler Problems : [" + _counterProjectEulerProblem.ToString() + "]" + separator);
             counters.Append("SPOJ Problems : [" + _counterSphreOnlineJudgeProblem.ToString() + "]" + separator);
+            counters.Append("CodingBlocks Problems : [" + _counterCodingBlocksProblem.ToString() + "]" + separator);
             if (_counterOtherSourceProblem != 0)
             {
                 counters.Append(separator + "Other Sources Problems : [" + _counterOtherSourceProblem.ToString() + "]");
@@ -432,13 +439,17 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             return result;
         }
 
-        public static void GetAllStats()
+        public static void GetSourceStats()
         {
             StyleHelper.Space();
             StyleHelper.Title("Stats");
 
             PrintHelper.HightLight(GetProblemsSourcesCounters(), ConsoleColor.Cyan);
+        }
 
+        public static void GetAllStats()
+        {
+            StyleHelper.Space();
             PrintHelper.HightLight(GetTestPercentage(), ConsoleColor.Yellow);
 
             PrintHelper.HightLight(GetCounterTotalTestCaseDone(), ConsoleColor.Yellow);
