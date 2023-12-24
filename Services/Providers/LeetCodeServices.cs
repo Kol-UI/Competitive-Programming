@@ -48,7 +48,7 @@ namespace CompetitiveProgramming.Services.Providers
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc, MaximumProductofTwoElementsinanArrayFunc,
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc, MaximumOddBinaryNumberFunc,
             LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc, ElementAppearingMoreThanInSortedArrayFunc,
-            SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc,
+            SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -103,6 +103,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions   
+
+        private static void MinimumChangesToMakeAlternatingBinaryStringFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Changes To Make Alternating Binary String");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumChangesToMakeAlternatingBinaryString.Test.TestCases());
+        }
 
         private static void PathCrossingFunc()
         {
