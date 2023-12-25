@@ -49,6 +49,7 @@ namespace CompetitiveProgramming.Services.Providers
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc, MaximumOddBinaryNumberFunc,
             LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc, ElementAppearingMoreThanInSortedArrayFunc,
             SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc,
+            MinimumNumberGameFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -103,6 +104,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions   
+
+        private static void MinimumNumberGameFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Number Game");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumNumberGame.Test.TestCases());
+        }
 
         private static void MinimumChangesToMakeAlternatingBinaryStringFunc()
         {
