@@ -1,0 +1,21 @@
+# Ignore bin and obj folders
+bin/
+obj/
+
+# Ignore .DS_Store files everywhere
+**/.DS_Store
+
+Solutions/CodeChef/.DS_Store
+Solutions/CodeForces/.DS_Store
+Solutions/CoderByte/.DS_Store
+Solutions/CodeWars/.DS_Store
+Solutions/GeeksForGeeks/.DS_Store
+Solutions/HackerRank/.DS_Store
+Solutions/LeetCode/.DS_Store
+
+# Ignore .vscode folder
+.vscode/
+
+# Ignore .vs folder
+.vs/
+
