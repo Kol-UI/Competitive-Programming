@@ -49,7 +49,7 @@ namespace CompetitiveProgramming.Services.Providers
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc, MaximumOddBinaryNumberFunc,
             LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc, ElementAppearingMoreThanInSortedArrayFunc,
             SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc,
-            MinimumNumberGameFunc,
+            MinimumNumberGameFunc, CounttheNumberofIncremovableSubarraysIFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -87,7 +87,7 @@ namespace CompetitiveProgramming.Services.Providers
             MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc, EliminateMaximumNumberofMonstersFunc,
             DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc,
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc,
-            WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc,
+            WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc,
         };
 
         private static readonly Delegate[] leetCodeHardList = new Delegate[]
@@ -104,6 +104,20 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions   
+
+        private static void CounttheNumberofIncremovableSubarraysIFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count the Number of Incremovable Subarrays I");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CounttheNumberofIncremovableSubarraysI.Test.TestCases());
+        }
+
+        private static void NumberofDiceRollsWithTargetSumFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Dice Rolls With Target Sum");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofDiceRollsWithTargetSum.Test.TestCases());
+        }
 
         private static void MinimumNumberGameFunc()
         {

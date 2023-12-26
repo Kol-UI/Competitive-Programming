@@ -46,7 +46,7 @@ namespace CompetitiveProgramming.Services.Providers
         private static readonly Delegate[] geeksForGeeksEasyList = new Delegate[]
         {
             CounttheSubstringsFunc, MinimumIntegerFunc, Remainderondividingby11Func, MakeArrayElementsEqualFunc, EqualLeftandRightSubarraySumFunc, BFSofgraphFunc, MakeTheArrayBeautifulFunc, FrogsAndJumpFunc, DominantPairsFunc, DFSofGraphFunc,
-            StringPermutationsFunc, FindfirstsetbitFunc, SumofupperandlowertrianglesFunc, DetermineifTwoTreesareIdenticalFunc, EquilibriumPointFunc,
+            StringPermutationsFunc, FindfirstsetbitFunc, SumofupperandlowertrianglesFunc, DetermineifTwoTreesareIdenticalFunc, EquilibriumPointFunc, DeterminantofaMatrixFunc,
         };
 
         private static readonly Delegate[] geeksForGeeksMediumList = new Delegate[]
@@ -60,7 +60,15 @@ namespace CompetitiveProgramming.Services.Providers
             SpecialDigitsFunc, DivideInIncrementialGroupsFunc, SolvetheSudokuFunc, CandyGFGFunc,
         };
 
-        // Functions
+        // Functions 
+
+        private static void DeterminantofaMatrixFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Determinant of a Matrix");
+            ResultTester.CheckSolution(ProblemOrigin.GeeksForGeeks, GeeksForGeeks.Easy.DeterminantofaMatrix.Test.TestCases());
+        }
+
         private static void DFSofGraphFunc()
         {
             StyleHelper.Space();

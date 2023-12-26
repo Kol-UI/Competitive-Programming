@@ -15,10 +15,18 @@ namespace CompetitiveProgramming.Services.Providers
         // Delegates
         private static readonly Delegate[] codingBlocksEasyList = new Delegate[]
         {
-            UltraFastMathematiciansFunc,
+            UltraFastMathematiciansFunc, PushzeroestoendFunc,
         };
 
-        // Functions
+        // Functions 
+
+        private static void PushzeroestoendFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Push zeroes to end");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodingBlocks);
+        }
+
         private static void UltraFastMathematiciansFunc()
         {
             StyleHelper.Space();
