@@ -1,6 +1,9 @@
 Percentage of Tests Done : 100% (Tests Validated : 3960 | Tests Invalidated : 0)
+
 Number of Case Done : 3960
+
 Percentage of Solutions Done : 100% (Solutions Validated : 895 | Solutions Invalidated : 0)
+
 Number of Solutions Done : 895
 
 | Source             | Other    | Easy     | Medium   | Hard     | Total    |
