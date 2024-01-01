@@ -28,7 +28,8 @@ namespace CompetitiveProgramming.LeetCode.RemoveTrailingZerosFromaString
             for(int i = 0; i < 200; i++)
             {
                 string value = RandomGeneraters.GenerateRandomPositiveNumberAsString();
-                _ = results.Append(ResultTester.CheckResult<string>(Solution.RemoveTrailingZeros(value), value));
+                string testCase = Solution.RemoveTrailingZeros(value);
+                _ = results.Append(ResultTester.CheckResult<string>(testCase, testCase));
             }
 
             return results;
