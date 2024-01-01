@@ -10,6 +10,7 @@ namespace CompetitiveProgramming.Helpers.Generaters
     {
         public static int[] GenerateRandomNumber(int maxNum, int size)
 		{
+			// int[size] : 0 <= value <= maxNum
 			var array = new int[size];
 			var rand = new Random();
 
@@ -21,6 +22,7 @@ namespace CompetitiveProgramming.Helpers.Generaters
 
         public static int[] GenerateRandomNegativeNumber(int size)
 		{
+			// int[size] : -10 <= value < 0
 			var array = new int[size];
 			var rand = new Random();
 
@@ -32,6 +34,7 @@ namespace CompetitiveProgramming.Helpers.Generaters
 
         public static int[] GenerateRandomNegativePositiveNumber(int size)
 		{
+			// int[size] : -10 <= value < 10
 			var array = new int[size];
 			var rand = new Random();
 
@@ -39,6 +42,15 @@ namespace CompetitiveProgramming.Helpers.Generaters
 				array[i] = rand.Next(-10, 10);
 
 			return array;
+		}
+
+		public static string GenerateRandomPositiveNumberAsString()
+		{
+			// 1 <= value <= 1 000 000 000
+			Random random = new();
+			int randomNumber = random.Next(1, 1000000001);
+
+			return randomNumber.ToString();
 		}
 
         public static void ShuffleArray(int[] arr)
