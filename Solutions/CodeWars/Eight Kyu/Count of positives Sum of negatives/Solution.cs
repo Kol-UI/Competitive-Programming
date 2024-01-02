@@ -1,6 +1,6 @@
 // Count of positives Sum of negatives
 using System;
-using CompetitiveProgramming.Helpers.Generaters;
+using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.CountofpositivesSumofnegatives

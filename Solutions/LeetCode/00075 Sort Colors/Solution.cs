@@ -21,7 +21,7 @@ Output: [0,1,2]
 */
 
 using System;
-using CompetitiveProgramming.Helpers.Outputs;
+using CompetitiveProgramming.Helpers;
 namespace CompetitiveProgramming.LeetCode.SortColors
 {
     public class Solution

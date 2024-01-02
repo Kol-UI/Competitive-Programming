@@ -24,7 +24,7 @@ rotate 2 steps to the right: [3,99,-1,-100]
 */
 
 using System;
-using CompetitiveProgramming.Helpers.Outputs;
+using CompetitiveProgramming.Helpers;
 namespace CompetitiveProgramming.LeetCode.RotateArray
 {
     public class Solution

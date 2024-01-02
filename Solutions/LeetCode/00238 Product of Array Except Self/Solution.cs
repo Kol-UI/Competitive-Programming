@@ -22,7 +22,7 @@ Output: [0,0,9,0,0]
 
 
 using System;
-using CompetitiveProgramming.Helpers.Generaters;
+using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ProductofArrayExceptSelf

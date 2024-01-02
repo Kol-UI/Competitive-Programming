@@ -1,5 +1,5 @@
 
-namespace CompetitiveProgramming.Helpers.Converters
+namespace CompetitiveProgramming.Helpers
 {
     public class CharIsVowelConverter
     {

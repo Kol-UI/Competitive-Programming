@@ -29,7 +29,7 @@ Explanation: The smallest positive integer 1 is missing.
 */
 
 using System;
-using CompetitiveProgramming.Helpers.Generaters;
+using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FirstMissingPositive

@@ -28,7 +28,7 @@ Explanation: "lee", "eet" and "ode" contain 2 vowels.
 */
 
 using System;
-using CompetitiveProgramming.Helpers.Converters;
+using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximumNumberofVowelsinaSubstringofGivenLength

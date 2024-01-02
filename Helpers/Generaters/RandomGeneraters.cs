@@ -4,7 +4,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
-namespace CompetitiveProgramming.Helpers.Generaters
+namespace CompetitiveProgramming.Helpers
 {
     public class RandomGeneraters
     {

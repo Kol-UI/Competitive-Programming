@@ -1,6 +1,6 @@
 using System;
 using CompetitiveProgramming.Models;
-using CompetitiveProgramming.Helpers.Outputs;
+using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.Services.Providers;
 
 namespace CompetitiveProgramming.TestDrivenDevelopment
@@ -9,12 +9,34 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
     {
         public static void StartAllTDD()
         {
+            if (TestHelpers() == true)
+            {
+                Console.WriteLine("Helpers Are Ready");
+                TestSolutions();
+            }
+            else
+            {
+                Console.WriteLine("Helpers Must Be Ready");
+            }
             // Current Testing Solution
-            CurrentTests();
+            CurrentTest();
         }
 
-        // CURRENT TESTS
-        private static void CurrentTests()
+        // HELPERS TESTS
+        private static bool TestHelpers()
+        {
+            bool[] areHelpersReady = new bool[]
+            {
+                ArrayExtensionTests.MergeArraysTest(), ArrayExtensionTests.ProductArrayTest(),
+                ListExtensionTests.MergeListsTest(), ListExtensionTests.ProductListTest(),
+            };
+
+            bool ready = areHelpersReady != null && areHelpersReady.Length > 0 && areHelpersReady.All(element => element);
+            return ready;
+        }
+
+        // SOLUTIONS TESTS
+        private static void TestSolutions()
         {
             CodingBlocksServices servicesCBL = new();
             CoderByteServices servicesCB = new();
@@ -55,6 +77,12 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 
             tableRows = tableRows.OrderByDescending(row => row.GetTotal()).ToList();
             TableMarkdownHelper.GenerateMarkdownTable(tableRows);
+        }
+
+        // CURRENT TEST
+        private static void CurrentTest()
+        {
+            
         }
     }
 }

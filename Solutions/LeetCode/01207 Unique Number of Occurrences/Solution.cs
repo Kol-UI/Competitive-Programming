@@ -22,7 +22,7 @@ Output: true
 
 
 using System;
-using CompetitiveProgramming.Helpers.Generaters;
+using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.UniqueNumberofOccurrences

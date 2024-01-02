@@ -1,7 +1,7 @@
 
 using System.Text;
 
-namespace CompetitiveProgramming.Helpers.Converters;
+namespace CompetitiveProgramming.Helpers;
 public class ArrayToStringConverter
 {
     public static string ArrayToString<T>(T array)

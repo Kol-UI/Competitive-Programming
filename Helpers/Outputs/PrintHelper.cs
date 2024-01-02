@@ -4,7 +4,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
-namespace CompetitiveProgramming.Helpers.Outputs
+namespace CompetitiveProgramming.Helpers
 {
     public class PrintHelper
     {
@@ -55,6 +55,20 @@ namespace CompetitiveProgramming.Helpers.Outputs
                 }
                 Console.WriteLine();
             }
+        }
+
+        public static void PrintList<T>(List<T> list)
+        {
+            Console.Write("[");
+            for (int i = 0; i < list.Count; i++)
+            {
+                Console.Write(list[i]);
+                if (i < list.Count - 1)
+                {
+                    Console.Write(", ");
+                }
+            }
+            Console.WriteLine("]");
         }
 
         public static void HightLight(string message, ConsoleColor color)

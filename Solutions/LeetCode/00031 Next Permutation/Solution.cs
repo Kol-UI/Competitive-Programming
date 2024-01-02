@@ -33,7 +33,7 @@ Output: [1,5,1]
 
 
 using System;
-using CompetitiveProgramming.Helpers.Outputs;
+using CompetitiveProgramming.Helpers;
 namespace CompetitiveProgramming.LeetCode.NextPermutation
 {
     public class Solution

@@ -1,7 +1,7 @@
 using System;
 using CompetitiveProgramming.Models;
 
-namespace CompetitiveProgramming.Helpers.Outputs
+namespace CompetitiveProgramming.Helpers
 {
     public class TableMarkdownHelper
     {

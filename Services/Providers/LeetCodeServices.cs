@@ -1,5 +1,4 @@
-using CompetitiveProgramming.Helpers.Delegates;
-using CompetitiveProgramming.Helpers.Outputs;
+using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.Services.Interfaces;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
@@ -88,7 +87,7 @@ namespace CompetitiveProgramming.Services.Providers
             MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc, EliminateMaximumNumberofMonstersFunc,
             DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc,
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc,
-            WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc,
+            WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditions,
         };
 
         private static readonly Delegate[] leetCodeHardList = new Delegate[]
@@ -105,6 +104,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void ConvertanArrayIntoaTwoDArrayWithConditions()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Convert an Array Into a 2D Array With Conditions");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ConvertanArrayIntoaTwoDArrayWithConditions.Test.TestCases());
+        }
 
         private static void RemoveTrailingZerosFromaStringFunc()
         {

@@ -1,6 +1,6 @@
 using System;
 
-namespace CompetitiveProgramming.Helpers.Delegates
+namespace CompetitiveProgramming.Helpers
 {
     public class InvokeDelegateHelper
     {

@@ -2,9 +2,7 @@ using System;
 using System.Collections;
 using System.Linq;
 using System.Text;
-using CompetitiveProgramming.CodeForces.BuyaShovel;
-using CompetitiveProgramming.Helpers.Converters;
-using CompetitiveProgramming.Helpers.Outputs;
+using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.Models;
 
 namespace CompetitiveProgramming.TestDrivenDevelopment

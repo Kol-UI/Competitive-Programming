@@ -1,5 +1,5 @@
 using System;
-using CompetitiveProgramming.Helpers.Outputs;
+using CompetitiveProgramming.Helpers;
 namespace CompetitiveProgramming.LeetCode.ImplementTriePrefixTree
 {
     /*
