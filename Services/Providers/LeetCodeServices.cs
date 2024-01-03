@@ -87,7 +87,7 @@ namespace CompetitiveProgramming.Services.Providers
             MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc, EliminateMaximumNumberofMonstersFunc,
             DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc,
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc,
-            WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditions,
+            WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc,
         };
 
         private static readonly Delegate[] leetCodeHardList = new Delegate[]
@@ -105,7 +105,14 @@ namespace CompetitiveProgramming.Services.Providers
 
         // Functions 
 
-        private static void ConvertanArrayIntoaTwoDArrayWithConditions()
+        private static void NumberofLaserBeamsinaBankFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Laser Beams in a Bank");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofLaserBeamsinaBank.Test.TestCases());
+        }
+
+        private static void ConvertanArrayIntoaTwoDArrayWithConditionsFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Convert an Array Into a 2D Array With Conditions");
