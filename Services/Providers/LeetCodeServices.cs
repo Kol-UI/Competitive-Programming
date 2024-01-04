@@ -49,7 +49,7 @@ namespace CompetitiveProgramming.Services.Providers
             LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc, ElementAppearingMoreThanInSortedArrayFunc,
             SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc,
             MinimumNumberGameFunc, CounttheNumberofIncremovableSubarraysIFunc, CheckifaStringIsanAcronymofWordsFunc, CountPairsWhoseSumisLessthanTargetFunc, LargestSubstringBetweenTwoEqualCharactersFunc, CheckifBitwiseORHasTrailingZerosFunc,
-            RemoveTrailingZerosFromaStringFunc,
+            RemoveTrailingZerosFromaStringFunc, NumberofEmployeesWhoMettheTargetFunc, SplitStringsbySeparatorFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -87,7 +87,7 @@ namespace CompetitiveProgramming.Services.Providers
             MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc, EliminateMaximumNumberofMonstersFunc,
             DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc,
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc,
-            WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc,
+            WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc, MinimumNumberofOperationstoMakeArrayEmptyFunc,
         };
 
         private static readonly Delegate[] leetCodeHardList = new Delegate[]
@@ -104,6 +104,27 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void SplitStringsbySeparatorFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Split Strings by Separator");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SplitStringsbySeparator.Test.TestCases());
+        }
+
+        private static void NumberofEmployeesWhoMettheTargetFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Employees Who Met the Target");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofEmployeesWhoMettheTarget.Test.TestCases());
+        }
+
+        private static void MinimumNumberofOperationstoMakeArrayEmptyFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Number of Operations to Make Array Empty");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumNumberofOperationstoMakeArrayEmpty.Test.TestCases());
+        }
 
         private static void NumberofLaserBeamsinaBankFunc()
         {
