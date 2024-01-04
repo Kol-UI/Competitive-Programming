@@ -51,7 +51,7 @@ namespace CompetitiveProgramming.Services.Providers
         private static readonly Delegate[] geeksForGeeksMediumList = new Delegate[]
         {
             StringrporprFunc, EvenSwapFunc, MinimumStepsRequiredFunc, AddMinimumCharactersFunc, MaximumLengthFunc, RemoveandReverseFunc, ShyGeek, MaximumIntersectingLinesFunc, KnightInGeeklandFunc, CountSpecialNumbersFunc, BTSMaximumDifferenceFunc,
-            ReverseaStackFunc, SticklerThiefFunc, BinaryTreetoCDLLFunc,
+            ReverseaStackFunc, SticklerThiefFunc, BinaryTreetoCDLLFunc, CountpossiblewaystoconstructbuildingsFunc,
         };
 
         private static readonly Delegate[] geeksForGeeksHardList = new Delegate[]
@@ -60,6 +60,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void CountpossiblewaystoconstructbuildingsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count possible ways to construct buildings");
+            ResultTester.CheckSolution(ProblemOrigin.GeeksForGeeks, GeeksForGeeks.Medium.Countpossiblewaystoconstructbuildings.Test.TestCases());
+        }
 
         private static void DeterminantofaMatrixFunc()
         {
