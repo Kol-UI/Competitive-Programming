@@ -17,7 +17,8 @@ namespace CompetitiveProgramming.Services.Providers
             TeamFunc, WayTooLongWordsFunc, WatermelonFunc, NextRoundFunc, DominoPilingFunc, BitPPFunc, BeautifulMatrixFunc, PetyaandStringsFunc, HelpfulMathsFunc, WordCapitalizationFunc, BoyorGirlFunc, StonesontheTableFunc, BearandBigBrotherFunc, SoldierandBananasFunc, ElephantFunc, WordFunc,
             WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc, DrinksFunc,
             UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc, PangramFunc, InsomniacureFunc, AntonandLettersFunc, HittheLotteryFunc, GamesFunc, AntonandPolyhedronsFunc, CandiesandTwoSistersFunc,
-            AmusingJokeFunc, FoxAndSnakeFunc, PoliceRecruitsFunc, IloveusernameFunc, NewYearandHurryFunc, SumofRoundNumbersFunc, TheNewYearMeetingFriendsFunc, VasyatheHipsterFunc, BuyaShovelFunc, RestoringThreeNumbersFunc, SoftDrinkingFunc, RemoveSmallestFunc,
+            AmusingJokeFunc, FoxAndSnakeFunc, PoliceRecruitsFunc, IloveusernameFunc, NewYearandHurryFunc, SumofRoundNumbersFunc, TheNewYearMeetingFriendsFunc, VasyatheHipsterFunc, BuyaShovelFunc, RestoringThreeNumbersFunc, SoftDrinkingFunc, RemoveSmallestFunc, ProblemsolvingLogFunc,
+            LOLLoversFunc, CoverinWaterFunc,
         };
 
         // Functions 
@@ -361,6 +362,27 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Soft Drinking");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces);
+        }
+
+        private static void ProblemsolvingLogFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Problemsolving Log");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces);
+        }
+
+        private static void LOLLoversFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("LOL Lovers");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces);
+        }
+
+        private static void CoverinWaterFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Cover in Water");
             ResultTester.SpecialTestCase(ProblemOrigin.CodeForces);
         }
 

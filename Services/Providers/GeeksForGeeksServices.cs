@@ -45,7 +45,7 @@ namespace CompetitiveProgramming.Services.Providers
         private static readonly Delegate[] geeksForGeeksEasyList = new Delegate[]
         {
             CounttheSubstringsFunc, MinimumIntegerFunc, Remainderondividingby11Func, MakeArrayElementsEqualFunc, EqualLeftandRightSubarraySumFunc, BFSofgraphFunc, MakeTheArrayBeautifulFunc, FrogsAndJumpFunc, DominantPairsFunc, DFSofGraphFunc,
-            StringPermutationsFunc, FindfirstsetbitFunc, SumofupperandlowertrianglesFunc, DetermineifTwoTreesareIdenticalFunc, EquilibriumPointFunc, DeterminantofaMatrixFunc,
+            StringPermutationsFunc, FindfirstsetbitFunc, SumofupperandlowertrianglesFunc, DetermineifTwoTreesareIdenticalFunc, EquilibriumPointFunc, DeterminantofaMatrixFunc, ReverseFirstKelementsofQueueFunc,
         };
 
         private static readonly Delegate[] geeksForGeeksMediumList = new Delegate[]
@@ -93,6 +93,13 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Determine if Two Trees are Identical");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks);
+        }
+
+        private static void ReverseFirstKelementsofQueueFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reverse First K elements of Queue");
             ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks);
         }
 

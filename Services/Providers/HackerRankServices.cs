@@ -24,7 +24,7 @@ namespace CompetitiveProgramming.Services.Providers
         // Delegates
         private static readonly Delegate[] hackerRankEasyList = new Delegate[]
         {
-            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc, PlusMinusFunc, StaircaseFunc, MiniMaxSumFunc, BirthdayCakeCandlesFunc, TimeConversionFunc, GradientStudentsFunc,
+            SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc, PlusMinusFunc, StaircaseFunc, MiniMaxSumFunc, BirthdayCakeCandlesFunc, TimeConversionFunc, GradientStudentsFunc, AppleAndOrangeFunc,
         };
 
         private static readonly Delegate[] hackerRankMediumList = new Delegate[]
@@ -37,7 +37,7 @@ namespace CompetitiveProgramming.Services.Providers
             FormingaMagicSquareFunc, AshtonandStringFunc,
         };
 
-        // Functions
+        // Functions 
         private static void SimpleArraySumFunc()
         {
             StyleHelper.Space();
@@ -70,6 +70,13 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Diagonal Difference");
+            ResultTester.SpecialTestCase(ProblemOrigin.HackerRank);
+        }
+
+        private static void AppleAndOrangeFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Apple And Orange");
             ResultTester.SpecialTestCase(ProblemOrigin.HackerRank);
         }
 
