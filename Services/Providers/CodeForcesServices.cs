@@ -18,10 +18,25 @@ namespace CompetitiveProgramming.Services.Providers
             WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc, DrinksFunc,
             UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc, PangramFunc, InsomniacureFunc, AntonandLettersFunc, HittheLotteryFunc, GamesFunc, AntonandPolyhedronsFunc, CandiesandTwoSistersFunc,
             AmusingJokeFunc, FoxAndSnakeFunc, PoliceRecruitsFunc, IloveusernameFunc, NewYearandHurryFunc, SumofRoundNumbersFunc, TheNewYearMeetingFriendsFunc, VasyatheHipsterFunc, BuyaShovelFunc, RestoringThreeNumbersFunc, SoftDrinkingFunc, RemoveSmallestFunc, ProblemsolvingLogFunc,
-            LOLLoversFunc, CoverinWaterFunc,
+            LOLLoversFunc, CoverinWaterFunc, HelpFarAwayKingdomFunc, HaikuFunc, LLSPFunc,
         };
 
         // Functions 
+
+        private static void LLSPFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("LLSP");
+            ResultTester.CheckSolution(ProblemOrigin.CodeForces, CodeForces.LLSP.Test.TestCases());
+        }
+
+        private static void HaikuFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Haiku");
+            ResultTester.CheckSolution(ProblemOrigin.CodeForces, CodeForces.Haiku.Test.TestCases());
+        }
+
         private static void BuyaShovelFunc()
         {
             StyleHelper.Space();
@@ -376,6 +391,13 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("LOL Lovers");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces);
+        }
+
+        private static void HelpFarAwayKingdomFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Help Far Away Kingdom");
             ResultTester.SpecialTestCase(ProblemOrigin.CodeForces);
         }
 
