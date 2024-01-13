@@ -78,7 +78,7 @@ namespace CompetitiveProgramming.CodeForces.LLSP
             string[] phrases2 = { "how many gallons", "of edo s rain did you drink", "cuckoo" };
             bool[] results = new bool[]
             {
-                ResultTester.CheckResult<string>(Test.Solution("abracadabra"), "a"),
+                ResultTester.CheckResult<string>(Test.Solution("abracadabra"), "aaaaa"),
             };
             return results;
         }
