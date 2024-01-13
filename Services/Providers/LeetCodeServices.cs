@@ -50,6 +50,7 @@ namespace CompetitiveProgramming.Services.Providers
             SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc,
             MinimumNumberGameFunc, CounttheNumberofIncremovableSubarraysIFunc, CheckifaStringIsanAcronymofWordsFunc, CountPairsWhoseSumisLessthanTargetFunc, LargestSubstringBetweenTwoEqualCharactersFunc, CheckifBitwiseORHasTrailingZerosFunc,
             RemoveTrailingZerosFromaStringFunc, NumberofEmployeesWhoMettheTargetFunc, SplitStringsbySeparatorFunc, CheckifArrayisGoodFunc, SumofSquaresofSpecialElementsFunc, LongestAlternatingSubarrayFunc, DetermineifStringHalvesAreAlikeFunc,
+            MinimumNumberofStepstoMakeTwoStringsAnagramFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -104,6 +105,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void MinimumNumberofStepstoMakeTwoStringsAnagramFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Number of Steps to Make Two Strings Anagram");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumNumberofStepstoMakeTwoStringsAnagram.Test.TestCases());
+        }
 
         private static void MaximumDifferenceBetweenNodeandAncestorFunc()
         {

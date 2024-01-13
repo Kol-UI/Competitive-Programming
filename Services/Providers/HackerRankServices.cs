@@ -25,6 +25,7 @@ namespace CompetitiveProgramming.Services.Providers
         private static readonly Delegate[] hackerRankEasyList = new Delegate[]
         {
             SimpleArraySumFunc, SolveMeFirstFunc, AVeryBigSumFunc, CompareTheTripletsFunc, DiagonalDifferenceFunc, PlusMinusFunc, StaircaseFunc, MiniMaxSumFunc, BirthdayCakeCandlesFunc, TimeConversionFunc, GradientStudentsFunc, AppleAndOrangeFunc,
+            NumberLineJumpsFunc, BetweenTwoSetsFunc, BreakingtheRecordsFunc, SubarrayDivisionFunc,
         };
 
         private static readonly Delegate[] hackerRankMediumList = new Delegate[]
@@ -38,6 +39,35 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void SubarrayDivisionFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Subarray Division");
+            ResultTester.CheckSolution(ProblemOrigin.HackerRank, HackerRank.SubarrayDivision.Test.TestCases());
+        }
+
+        private static void BreakingtheRecordsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Breaking the Records");
+            ResultTester.CheckSolution(ProblemOrigin.HackerRank, HackerRank.BreakingtheRecords.Test.TestCases());
+        }
+
+        private static void BetweenTwoSetsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Between Two Sets");
+            ResultTester.CheckSolution(ProblemOrigin.HackerRank, HackerRank.BetweenTwoSets.Test.TestCases());
+        }
+
+        private static void NumberLineJumpsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number Line Jumps");
+            ResultTester.CheckSolution(ProblemOrigin.HackerRank, HackerRank.NumberLineJumps.Test.TestCases());
+        }
+
         private static void SimpleArraySumFunc()
         {
             StyleHelper.Space();
