@@ -50,7 +50,7 @@ namespace CompetitiveProgramming.Services.Providers
             SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc,
             MinimumNumberGameFunc, CounttheNumberofIncremovableSubarraysIFunc, CheckifaStringIsanAcronymofWordsFunc, CountPairsWhoseSumisLessthanTargetFunc, LargestSubstringBetweenTwoEqualCharactersFunc, CheckifBitwiseORHasTrailingZerosFunc,
             RemoveTrailingZerosFromaStringFunc, NumberofEmployeesWhoMettheTargetFunc, SplitStringsbySeparatorFunc, CheckifArrayisGoodFunc, SumofSquaresofSpecialElementsFunc, LongestAlternatingSubarrayFunc, DetermineifStringHalvesAreAlikeFunc,
-            MinimumNumberofStepstoMakeTwoStringsAnagramFunc,
+            MinimumNumberofStepstoMakeTwoStringsAnagramFunc, FindMaximumNumberofStringPairsFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -105,6 +105,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void FindMaximumNumberofStringPairsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Maximum Number of String Pairs");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindMaximumNumberofStringPairs.Test.TestCases());
+        }
 
         private static void MinimumNumberofStepstoMakeTwoStringsAnagramFunc()
         {
