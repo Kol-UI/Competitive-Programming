@@ -87,7 +87,7 @@ namespace CompetitiveProgramming.Services.Providers
             GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc, MinimumOperationstoReduceXtoZeroFunc, ChampagneTowerFunc, RemoveDuplicateLettersFunc, DecodedStringatIndexFunc, OneThreeTwoPatternFunc, RemoveColoredPiecesifBothNeighborsaretheSameColorFunc,
             MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc, EliminateMaximumNumberofMonstersFunc,
             DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc,
-            MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc,
+            MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc, FindPlayersWithZeroorOneLossesFunc,
             WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc, MinimumNumberofOperationstoMakeArrayEmptyFunc, AmountofTimeforBinaryTreetoBeInfectedFunc, MaximumDifferenceBetweenNodeandAncestorFunc,
         };
 
@@ -105,6 +105,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void FindPlayersWithZeroorOneLossesFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Players With Zero or One Losses");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindPlayersWithZeroorOneLosses.Test.TestCases());
+        }
 
         private static void FindMaximumNumberofStringPairsFunc()
         {
