@@ -50,7 +50,8 @@ namespace CompetitiveProgramming.Services.Providers
             SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc,
             MinimumNumberGameFunc, CounttheNumberofIncremovableSubarraysIFunc, CheckifaStringIsanAcronymofWordsFunc, CountPairsWhoseSumisLessthanTargetFunc, LargestSubstringBetweenTwoEqualCharactersFunc, CheckifBitwiseORHasTrailingZerosFunc,
             RemoveTrailingZerosFromaStringFunc, NumberofEmployeesWhoMettheTargetFunc, SplitStringsbySeparatorFunc, CheckifArrayisGoodFunc, SumofSquaresofSpecialElementsFunc, LongestAlternatingSubarrayFunc, DetermineifStringHalvesAreAlikeFunc,
-            MinimumNumberofStepstoMakeTwoStringsAnagramFunc, FindMaximumNumberofStringPairsFunc,
+            MinimumNumberofStepstoMakeTwoStringsAnagramFunc, FindMaximumNumberofStringPairsFunc, CountElementsWithMaximumFrequencyFunc, MaximumAreaofLongestDiagonalRectangleFunc, SmallestMissingIntegerGreaterThanSequentialPrefixSumFunc,
+            LongestEvenOddSubarrayWithThresholdFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -105,6 +106,34 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void LongestEvenOddSubarrayWithThresholdFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Longest Even Odd Subarray With Threshold");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LongestEvenOddSubarrayWithThreshold.Test.TestCases());
+        }
+
+        private static void SmallestMissingIntegerGreaterThanSequentialPrefixSumFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Smallest Missing Integer Greater Than Sequential Prefix Sum");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SmallestMissingIntegerGreaterThanSequentialPrefixSum.Test.TestCases());
+        }
+
+        private static void MaximumAreaofLongestDiagonalRectangleFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Area of Longest Diagonal Rectangle");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximumAreaofLongestDiagonalRectangle.Test.TestCases());
+        }
+
+        private static void CountElementsWithMaximumFrequencyFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count Elements With Maximum Frequency");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CountElementsWithMaximumFrequency.Test.TestCases());
+        }
 
         private static void FindPlayersWithZeroorOneLossesFunc()
         {
