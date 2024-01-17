@@ -48,10 +48,10 @@ namespace CompetitiveProgramming.Services.Providers
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc, MaximumOddBinaryNumberFunc,
             LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc, ElementAppearingMoreThanInSortedArrayFunc,
             SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc,
-            MinimumNumberGameFunc, CounttheNumberofIncremovableSubarraysIFunc, CheckifaStringIsanAcronymofWordsFunc, CountPairsWhoseSumisLessthanTargetFunc, LargestSubstringBetweenTwoEqualCharactersFunc, CheckifBitwiseORHasTrailingZerosFunc,
+            MinimumNumberGameFunc, CounttheNumberofIncremovableSubarraysIFunc, CheckifaStringIsanAcronymofWordsFunc, CountPairsWhoseSumisLessthanTargetFunc, LargestSubstringBetweenTwoEqualCharactersFunc, CheckifBitwiseORHasTrailingZerosFunc, FindtheLosersoftheCircularGameFunc,
             RemoveTrailingZerosFromaStringFunc, NumberofEmployeesWhoMettheTargetFunc, SplitStringsbySeparatorFunc, CheckifArrayisGoodFunc, SumofSquaresofSpecialElementsFunc, LongestAlternatingSubarrayFunc, DetermineifStringHalvesAreAlikeFunc,
-            MinimumNumberofStepstoMakeTwoStringsAnagramFunc, FindMaximumNumberofStringPairsFunc, CountElementsWithMaximumFrequencyFunc, MaximumAreaofLongestDiagonalRectangleFunc, SmallestMissingIntegerGreaterThanSequentialPrefixSumFunc,
-            LongestEvenOddSubarrayWithThresholdFunc,
+            MinimumNumberofStepstoMakeTwoStringsAnagramFunc, FindMaximumNumberofStringPairsFunc, CountElementsWithMaximumFrequencyFunc, MaximumAreaofLongestDiagonalRectangleFunc, SmallestMissingIntegerGreaterThanSequentialPrefixSumFunc, MinimumStringLengthAfterRemovingSubstringsFunc,
+            LongestEvenOddSubarrayWithThresholdFunc, NumberofBeautifulPairsFunc, TotalDistanceTraveledFunc, NeitherMinimumnorMaximumFunc, SemiOrderedPermutationFunc, CheckifTheNumberisFascinatingFunc, MinimizeStringLengthFunc, LexicographicallySmallestPalindromeFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -106,6 +106,69 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void FindtheLosersoftheCircularGameFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find the Losers of the Circular Game");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindtheLosersoftheCircularGame.Test.TestCases());
+        }
+
+        private static void MinimumStringLengthAfterRemovingSubstringsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum String Length After Removing Substrings");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumStringLengthAfterRemovingSubstrings.Test.TestCases());
+        }
+
+        private static void LexicographicallySmallestPalindromeFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Lexicographically Smallest Palindrome");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LexicographicallySmallestPalindrome.Test.TestCases());
+        }
+
+        private static void MinimizeStringLengthFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimize String Length");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimizeStringLength.Test.TestCases());
+        }
+
+        private static void SemiOrderedPermutationFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Semi-Ordered Permutation");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SemiOrderedPermutation.Test.TestCases());
+        }
+
+        private static void CheckifTheNumberisFascinatingFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Check if The Number is Fascinating");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CheckifTheNumberisFascinating.Test.TestCases());
+        }
+
+        private static void NeitherMinimumnorMaximumFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Neither Minimum nor Maximum");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NeitherMinimumnorMaximum.Test.TestCases());
+        }
+
+        private static void TotalDistanceTraveledFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Total Distance Traveled");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.TotalDistanceTraveled.Test.TestCases());
+        }
+
+        private static void NumberofBeautifulPairsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Beautiful Pairs");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofBeautifulPairs.Test.TestCases());
+        }
 
         private static void LongestEvenOddSubarrayWithThresholdFunc()
         {
