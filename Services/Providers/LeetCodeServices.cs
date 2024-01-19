@@ -52,7 +52,7 @@ namespace CompetitiveProgramming.Services.Providers
             RemoveTrailingZerosFromaStringFunc, NumberofEmployeesWhoMettheTargetFunc, SplitStringsbySeparatorFunc, CheckifArrayisGoodFunc, SumofSquaresofSpecialElementsFunc, LongestAlternatingSubarrayFunc, DetermineifStringHalvesAreAlikeFunc, NumberofSeniorCitizensFunc,
             MinimumNumberofStepstoMakeTwoStringsAnagramFunc, FindMaximumNumberofStringPairsFunc, CountElementsWithMaximumFrequencyFunc, MaximumAreaofLongestDiagonalRectangleFunc, SmallestMissingIntegerGreaterThanSequentialPrefixSumFunc, MinimumStringLengthAfterRemovingSubstringsFunc,
             LongestEvenOddSubarrayWithThresholdFunc, NumberofBeautifulPairsFunc, TotalDistanceTraveledFunc, NeitherMinimumnorMaximumFunc, SemiOrderedPermutationFunc, CheckifTheNumberisFascinatingFunc, MinimizeStringLengthFunc, LexicographicallySmallestPalindromeFunc,
-            FindtheMaximumDivisibilityScoreFunc, RowWithMaximumOnesFunc, FindtheWidthofColumnsofaGridFunc,
+            FindtheMaximumDivisibilityScoreFunc, RowWithMaximumOnesFunc, FindtheWidthofColumnsofaGridFunc, FindtheLongestBalancedSubstringofaBinaryStringFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -107,6 +107,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void FindtheLongestBalancedSubstringofaBinaryStringFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find the Longest Balanced Substring of a Binary String");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindtheLongestBalancedSubstringofaBinaryString.Test.TestCases());
+        }
 
         private static void PrimeInDiagonalFunc()
         {
