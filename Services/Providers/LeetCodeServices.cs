@@ -52,7 +52,8 @@ namespace CompetitiveProgramming.Services.Providers
             RemoveTrailingZerosFromaStringFunc, NumberofEmployeesWhoMettheTargetFunc, SplitStringsbySeparatorFunc, CheckifArrayisGoodFunc, SumofSquaresofSpecialElementsFunc, LongestAlternatingSubarrayFunc, DetermineifStringHalvesAreAlikeFunc, NumberofSeniorCitizensFunc,
             MinimumNumberofStepstoMakeTwoStringsAnagramFunc, FindMaximumNumberofStringPairsFunc, CountElementsWithMaximumFrequencyFunc, MaximumAreaofLongestDiagonalRectangleFunc, SmallestMissingIntegerGreaterThanSequentialPrefixSumFunc, MinimumStringLengthAfterRemovingSubstringsFunc,
             LongestEvenOddSubarrayWithThresholdFunc, NumberofBeautifulPairsFunc, TotalDistanceTraveledFunc, NeitherMinimumnorMaximumFunc, SemiOrderedPermutationFunc, CheckifTheNumberisFascinatingFunc, MinimizeStringLengthFunc, LexicographicallySmallestPalindromeFunc,
-            FindtheMaximumDivisibilityScoreFunc, RowWithMaximumOnesFunc, FindtheWidthofColumnsofaGridFunc, FindtheLongestBalancedSubstringofaBinaryStringFunc,
+            FindtheMaximumDivisibilityScoreFunc, RowWithMaximumOnesFunc, FindtheWidthofColumnsofaGridFunc, FindtheLongestBalancedSubstringofaBinaryStringFunc, MinimumNumberofPushestoTypeWordIFunc, DivideanArrayIntoSubarraysWithMinimumCostIFunc, FormSmallestNumberFromTwoDigitArraysFunc,
+            NumberofEvenandOddBitsFunc, DistributeMoneytoMaximumChildrenFunc, CounttheNumberofVowelStringsinRangeFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -107,6 +108,48 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void CounttheNumberofVowelStringsinRangeFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count the Number of Vowel Strings in Range");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CounttheNumberofVowelStringsinRange.Test.TestCases());
+        }
+
+        private static void DistributeMoneytoMaximumChildrenFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Distribute Money to Maximum Children");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.DistributeMoneytoMaximumChildren.Test.TestCases());
+        }
+
+        private static void NumberofEvenandOddBitsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Even and Odd Bits");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofEvenandOddBits.Test.TestCases());
+        }
+
+        private static void FormSmallestNumberFromTwoDigitArraysFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Form Smallest Number From Two Digit Arrays");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FormSmallestNumberFromTwoDigitArrays.Test.TestCases());
+        }
+
+        private static void DivideanArrayIntoSubarraysWithMinimumCostIFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Divide an Array Into Subarrays With Minimum Cost I");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.DivideanArrayIntoSubarraysWithMinimumCostI.Test.TestCases());
+        }
+
+        private static void MinimumNumberofPushestoTypeWordIFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Number of Pushes to Type Word I");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumNumberofPushestoTypeWordI.Test.TestCases());
+        }
 
         private static void SumofSubarrayMinimumsFunc()
         {
