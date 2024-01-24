@@ -28,7 +28,7 @@ namespace CompetitiveProgramming.Services.Providers
             FirstUniqueCharacterinaStringFunc, SingleNumberFunc, FindJudgeFunc, ShuffleTheArrayFunc, CountOddNumbersInAnIntervalRangeFunc, RunningSumof1dArrayFunc, TwoSumIVInputisaBSTFunc, WordPatternFunc, SymmetricTreeFunc, FindtheKorofanArrayFunc, SumMultiplesFunc, SetMismatchFunc,
             AddBinaryFunc, DefanginganIPAddressFunc, FindLuckyIntegerinanArrayFunc, SearchInsertPositionFunc, FindtheIndexoftheFirstOccurrenceinaStringFunc, MinimumDistanceBetweenBSTNodesFunc, PascalsTriangleIIFunc, DiameterofBinaryTreeFunc, MaximumSumWithExactlyKElementsFunc,
             KthMissingPositiveNumberFunc, ConvertSortedArraytoBinarySearchTreeFunc, CanPlaceFlowersFunc, KItemsWiththeMaximumSumFunc, BinarySearchFunc, MiddleoftheLinkedListFunc, ReshapetheMatrixFunc, MergeSortedArrayFunc, FindChampionIFunc, FindtheMaximumAchievableNumberFunc,
-            CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc, DesignHashMapFunc, AlternatingDigitSumFunc, TwoSumFunc, BalancedBinaryTreeFunc, FurthestPointFromOriginFunc,
+            CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc, DesignHashMapFunc, AlternatingDigitSumFunc, TwoSumFunc, BalancedBinaryTreeFunc, FurthestPointFromOriginFunc, PassthePillowFunc,
             BestPokerHandFunc, LastStoneWeightFunc, AddDigitsFunc, BulbSwitcherFunc, FindtheDifferenceFunc, RepeatedSubstringPatternFunc, VerifyinganAlienDictionaryFunc, MinimumAbsoluteDifferenceinBSTFunc, BackspaceStringCompareFunc, CheckifStringsCanbeMadeEqualWithOperationsIFunc,
             MoveZeroesFunc, PlusOneFunc, AverageSalaryExcludingtheMinimumandMaximumSalaryFunc, FindifPathExistsinGraphFunc, RichestCustomerWealthFunc, NumberofRecentCallsFunc, LongestPalindromeFunc, BuddyStringsFunc, NumberofGoodPairsFunc, RedistributeCharacterstoMakeAllStringsEqualFunc,
             SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, LengthofLastWordFunc, ToLowerCaseFunc, ConvertBinaryNumberinaLinkedListtoIntegerFunc, FirstBadVersionFunc, SubtreeofAnotherTreeFunc, MaximumProductDifferenceBetweenTwoPairsFunc,
@@ -89,7 +89,7 @@ namespace CompetitiveProgramming.Services.Providers
             DesignAuthenticationManagerFunc, InsertDeleteGetRandomFunc, MyCalendarIFunc, MaximizetheConfusionofanExamFunc, AllNodesDistanceKinBinaryTreeFunc, LongestPalindromebyConcatenatingTwoLetterWordsFunc, PathWithMinimumEffortFunc, WhereWilltheBallFallFunc, MinimumASCIIDeleteSumforTwoStringsFunc, CombinationSumIIFunc,
             GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc, MinimumOperationstoReduceXtoZeroFunc, ChampagneTowerFunc, RemoveDuplicateLettersFunc, DecodedStringatIndexFunc, OneThreeTwoPatternFunc, RemoveColoredPiecesifBothNeighborsaretheSameColorFunc,
             MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc, EliminateMaximumNumberofMonstersFunc,
-            DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc,
+            DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc, PseudoPalindromicPathsinaBinaryTreeFunc,
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc, FindPlayersWithZeroorOneLossesFunc,
             WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc, MinimumNumberofOperationstoMakeArrayEmptyFunc, AmountofTimeforBinaryTreetoBeInfectedFunc, MaximumDifferenceBetweenNodeandAncestorFunc,
         };
@@ -108,6 +108,20 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void PassthePillowFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Pass the Pillow");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.PassthePillow.Test.TestCases());
+        }
+
+        private static void PseudoPalindromicPathsinaBinaryTreeFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Pseudo-Palindromic Paths in a Binary Tree");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.PseudoPalindromicPathsinaBinaryTree.Test.TestCases());
+        }
 
         private static void MaximumLengthofaConcatenatedStringwithUniqueCharactersFunc()
         {
