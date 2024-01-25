@@ -43,7 +43,6 @@ namespace CompetitiveProgramming.LeetCode.PseudoPalindromicPathsinaBinaryTree
     {
         public static bool[] TestCases()
         {
-            // Test Case 1
             TreeNode root1 = new TreeNode(2,
                 new TreeNode(3,
                     new TreeNode(3),
@@ -52,7 +51,6 @@ namespace CompetitiveProgramming.LeetCode.PseudoPalindromicPathsinaBinaryTree
                     null!,
                     new TreeNode(1)));
 
-            // Test Case 2
             TreeNode root2 = new TreeNode(2,
                 new TreeNode(1,
                     new TreeNode(1),
