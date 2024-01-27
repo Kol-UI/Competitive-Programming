@@ -29,7 +29,7 @@ namespace CompetitiveProgramming.Services.Providers
             EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc, MakeUpperCaseFunc, CalculateaverageFunc,
             BeginnerSeries2ClockFunc, OppositesAttractFunc, SquaringAnArgumentFunc, ReturningStringsFunc, ReturnToSanityFunc, ReturnHelloWorldFunc, BeginnerSeries1SchoolPaperworkFunc,
             YouCantCodeUnderPressure1Func, CenturyFromYearFunc, BasicMathematicalOperationsFunc, ConvertNumberToReversedArrayOfDigitsFunc, AbbreviateaTwoWordNameFunc, SimplemultiplicationFunc,
-            IshegonnasurviveFunc, FakeBinaryFunc, CountofpositivesSumofnegativesFunc,
+            IshegonnasurviveFunc, FakeBinaryFunc, CountofpositivesSumofnegativesFunc, BeginnerReducebutGrowFunc, HowgoodareyoureallyFunc,
         };
 
         private static readonly Delegate[] codeWarsSevenKyuList = new Delegate[]
@@ -43,6 +43,20 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void HowgoodareyoureallyFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("How good are you really");
+            ResultTester.CheckSolution(ProblemOrigin.CodeWars, CodeWars.EightKyu.Howgoodareyoureally.Test.TestCases());
+        }
+
+        private static void BeginnerReducebutGrowFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Beginner - Reduce but Grow");
+            ResultTester.CheckSolution(ProblemOrigin.CodeWars, CodeWars.EightKyu.BeginnerReducebutGrow.Test.TestCases());
+        }
 
         private static void CountofpositivesSumofnegativesFunc()
         {
