@@ -32,7 +32,7 @@ namespace CompetitiveProgramming.Services.Providers
             BestPokerHandFunc, LastStoneWeightFunc, AddDigitsFunc, BulbSwitcherFunc, FindtheDifferenceFunc, RepeatedSubstringPatternFunc, VerifyinganAlienDictionaryFunc, MinimumAbsoluteDifferenceinBSTFunc, BackspaceStringCompareFunc, CheckifStringsCanbeMadeEqualWithOperationsIFunc,
             MoveZeroesFunc, PlusOneFunc, AverageSalaryExcludingtheMinimumandMaximumSalaryFunc, FindifPathExistsinGraphFunc, RichestCustomerWealthFunc, NumberofRecentCallsFunc, LongestPalindromeFunc, BuddyStringsFunc, NumberofGoodPairsFunc, RedistributeCharacterstoMakeAllStringsEqualFunc,
             SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, LengthofLastWordFunc, ToLowerCaseFunc, ConvertBinaryNumberinaLinkedListtoIntegerFunc, FirstBadVersionFunc, SubtreeofAnotherTreeFunc, MaximumProductDifferenceBetweenTwoPairsFunc,
-            FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ValidPerfectSquareFunc, ArrangingCoinsFunc, BaseballGameFunc, KeysandRoomsFunc, SumofLeftLeavesFunc, BinaryTreeInorderTraversalFunc, SortthePeopleFunc, AssignCookiesFunc,
+            FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ValidPerfectSquareFunc, ArrangingCoinsFunc, BaseballGameFunc, KeysandRoomsFunc, SumofLeftLeavesFunc, BinaryTreeInorderTraversalFunc, SortthePeopleFunc, AssignCookiesFunc, NumberofChangingKeysFunc,
             RobotReturntoOriginFunc, FindWinneronaTicTacToeGameFunc, LemonadeChangeFunc, LargestPerimeterTriangleFunc, CheckIfItIsaStraightLineFunc, DeleteColumnstoMakeSortedFunc, GuessNumberHigherorLowerFunc, ExcelSheetColumnTitleFunc, ImageSmootherFunc, CalculateDelayedArrivalTimeFunc,
             ReverseVowelsofaStringFunc, CountingBitsFunc, IsSubsequenceFunc, MinCostClimbingStairsFunc, MaximumAverageSubarrayIFunc, DesignParkingSystemFunc, LeafSimilarTreesFunc, IntersectionofTwoArraysIIFunc, RemoveElementFunc, FindMissingandRepeatedValuesFunc,
             FindtheHighestAltitudeFunc, FindPivotIndexFunc, UniqueNumberofOccurrencesFunc, MajorityElementFunc, GoalParserInterpretationFunc, AddtoArrayFormofIntegerFunc, DetectCapitalFunc, ValidAnagramFunc, ImplementStackusingQueuesFunc, MaxPairSuminanArrayFunc,
@@ -103,11 +103,25 @@ namespace CompetitiveProgramming.Services.Providers
             CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc, BusRoutesFunc, StrangePrinterFunc, SumofDistancesinTreeFunc, DataStreamasDisjointIntervalsFunc, MinimumNumberofTapstoOpentoWateraGardenFunc, MaxDotProductofTwoSubsequencesFunc, NumberofFlowersinFullBloomFunc, FindinMountainArrayFunc, ConstrainedSubsequenceSumFunc, ParallelCoursesIIIFunc,
             MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc, FirstMissingPositiveFunc, LFUCacheFunc, BinaryTreeMaximumPathSumFunc, MinimumNumberofOperationstoMakeArrayContinuousFunc, NumberofWaystoStayintheSamePlaceAfterSomeStepsFunc, CountVowelsPermutationFunc, MinimumOneBitOperationstoMakeIntegersZeroFunc,
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc, MaxPointsonaLineFunc, MaximumRunningTimeofNComputersFunc, DesignGraphWithShortestPathCalculatorFunc, MinimumDifficultyofaJobScheduleFunc, ArithmeticSlicesIISubsequenceFunc, LongestValidParenthesesFunc, KInversePairsArrayFunc,
-            CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc, SlidingWindowMaximumFunc, MaximumScoreofaGoodSubarrayFunc, NumberofWaystoDivideaLongCorridorFunc, LargestRectangleinHistogramFunc, FindMedianfromDataStreamFunc,
+            CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc, SlidingWindowMaximumFunc, MaximumScoreofaGoodSubarrayFunc, NumberofWaystoDivideaLongCorridorFunc, LargestRectangleinHistogramFunc, FindMedianfromDataStreamFunc, NumberofSubmatricesThatSumtoTargetFunc,
             FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc, MinimumReplacementstoSorttheArrayFunc, MedianofTwoSortedArraysFunc, BuildArrayWhereYouCanFindTheMaximumExactlyKComparisonsFunc, StringCompressionIIFunc, MaximumProfitinJobSchedulingFunc,
         };
 
         // Functions 
+
+        private static void NumberofChangingKeysFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Changing Keys");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofChangingKeys.Test.TestCases());
+        }
+
+        private static void NumberofSubmatricesThatSumtoTargetFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Submatrices That Sum to Target");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofSubmatricesThatSumtoTarget.Test.TestCases());
+        }
 
         private static void KInversePairsArrayFunc()
         {
