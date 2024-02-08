@@ -54,6 +54,7 @@ namespace CompetitiveProgramming.Services.Providers
             LongestEvenOddSubarrayWithThresholdFunc, NumberofBeautifulPairsFunc, TotalDistanceTraveledFunc, NeitherMinimumnorMaximumFunc, SemiOrderedPermutationFunc, CheckifTheNumberisFascinatingFunc, MinimizeStringLengthFunc, LexicographicallySmallestPalindromeFunc,
             FindtheMaximumDivisibilityScoreFunc, RowWithMaximumOnesFunc, FindtheWidthofColumnsofaGridFunc, FindtheLongestBalancedSubstringofaBinaryStringFunc, MinimumNumberofPushestoTypeWordIFunc, DivideanArrayIntoSubarraysWithMinimumCostIFunc, FormSmallestNumberFromTwoDigitArraysFunc,
             NumberofEvenandOddBitsFunc, DistributeMoneytoMaximumChildrenFunc, CounttheNumberofVowelStringsinRangeFunc, MaximumLengthofaConcatenatedStringwithUniqueCharactersFunc, LeftandRightSumDifferencesFunc, FindtheArrayConcatenationValueFunc, TakeGiftsFromtheRichestPileFunc,
+            SeparatetheDigitsinanArrayFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -108,6 +109,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void SeparatetheDigitsinanArrayFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Separate the Digits in an Array");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SeparatetheDigitsinanArray.Test.TestCases());
+        }
 
         private static void TakeGiftsFromtheRichestPileFunc()
         {
