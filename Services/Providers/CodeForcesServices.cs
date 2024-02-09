@@ -18,7 +18,7 @@ namespace CompetitiveProgramming.Services.Providers
             WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc, DrinksFunc,
             UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc, PangramFunc, InsomniacureFunc, AntonandLettersFunc, HittheLotteryFunc, GamesFunc, AntonandPolyhedronsFunc, CandiesandTwoSistersFunc,
             AmusingJokeFunc, FoxAndSnakeFunc, PoliceRecruitsFunc, IloveusernameFunc, NewYearandHurryFunc, SumofRoundNumbersFunc, TheNewYearMeetingFriendsFunc, VasyatheHipsterFunc, BuyaShovelFunc, RestoringThreeNumbersFunc, SoftDrinkingFunc, RemoveSmallestFunc, ProblemsolvingLogFunc,
-            LOLLoversFunc, CoverinWaterFunc, HelpFarAwayKingdomFunc, HaikuFunc, LLSPFunc, TrickyTemplateFunc,
+            LOLLoversFunc, CoverinWaterFunc, HelpFarAwayKingdomFunc, HaikuFunc, LLSPFunc, TrickyTemplateFunc, PlusMinusSplitFunc, WeGotEverythingCoveredFunc,
         };
 
         // Functions 
@@ -345,10 +345,24 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.CodeForces);
         }
 
+        private static void PlusMinusSplitFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Plus Minus Split");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces);
+        }
+
         private static void ElephantFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Elephant");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces);
+        }
+
+        private static void WeGotEverythingCoveredFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("We Got Everything Covered");
             ResultTester.SpecialTestCase(ProblemOrigin.CodeForces);
         }
 
