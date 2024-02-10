@@ -54,7 +54,7 @@ namespace CompetitiveProgramming.Services.Providers
             LongestEvenOddSubarrayWithThresholdFunc, NumberofBeautifulPairsFunc, TotalDistanceTraveledFunc, NeitherMinimumnorMaximumFunc, SemiOrderedPermutationFunc, CheckifTheNumberisFascinatingFunc, MinimizeStringLengthFunc, LexicographicallySmallestPalindromeFunc,
             FindtheMaximumDivisibilityScoreFunc, RowWithMaximumOnesFunc, FindtheWidthofColumnsofaGridFunc, FindtheLongestBalancedSubstringofaBinaryStringFunc, MinimumNumberofPushestoTypeWordIFunc, DivideanArrayIntoSubarraysWithMinimumCostIFunc, FormSmallestNumberFromTwoDigitArraysFunc,
             NumberofEvenandOddBitsFunc, DistributeMoneytoMaximumChildrenFunc, CounttheNumberofVowelStringsinRangeFunc, MaximumLengthofaConcatenatedStringwithUniqueCharactersFunc, LeftandRightSumDifferencesFunc, FindtheArrayConcatenationValueFunc, TakeGiftsFromtheRichestPileFunc,
-            SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc,
+            SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc, MaximumCountofPositiveIntegerandNegativeIntegerFunc, CategorizeBoxAccordingtoCriteriaFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -79,7 +79,7 @@ namespace CompetitiveProgramming.Services.Providers
             NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc, LongestArithmeticSubsequenceFunc, MaximalNetworkRankFunc, UncrossedLinesFunc, MinimumNumberofArrowstoBurstBalloonsFunc, BinaryTreeLevelOrderTraversalFunc, ShuffleanArrayFunc,
             StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc, ValidTriangleNumberFunc, RandomPickwithWeightFunc, CountGoodNodesinBinaryTreeFunc, DesignCircularQueueFunc, CombinationSumIIIFunc, ValidateBinarySearchTreeFunc, PerfectSquaresFunc,
             TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc, KnightProbabilityinChessboardFunc, FindAllAnagramsinaStringFunc, PalindromePartitioningFunc, MaximumSubarrayFunc, ValidateBinaryTreeNodesFunc,
-            DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc, PossibleBipartitionFunc, LinkedListRandomNodeFunc, SumRoottoLeafNumbersFunc, UglyNumberIIIFunc, SortListFunc,
+            DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc, PossibleBipartitionFunc, LinkedListRandomNodeFunc, SumRoottoLeafNumbersFunc, UglyNumberIIIFunc, SortListFunc, PalindromicSubstringsFunc,
             MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc, LongestRepeatingCharacterReplacementFunc, InsertintoaBinarySearchTreeFunc, HouseRobberIIFunc, BinaryTreeZigzagLevelOrderTraversalFunc, Searcha2DMatrixIIFunc,
             NextGreaterElementIIIFunc, SubsetsIIFunc, MinimumNumberofVerticestoReachAllNodesFunc, BasicCalculatorIIFunc, TopKFrequentWordsFunc, NextGreaterElementIIFunc, LinkedListinBinaryTreeFunc, MaximumSideLengthofaSquarewithSumLessthanorEqualtoThresholdFunc, CloneGraphFunc, CombinationsFunc, SurroundedRegionsFunc, PartitionArrayforMaximumSumFunc,
             SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc, CombinationSumFunc, CopyListwithRandomPointerFunc, MinimumGeneticMutationFunc, LongestZigZagPathinaBinaryTreeFunc, SubarrayProductLessThanKFunc, PermutationinStringFunc, BestTimetoBuyandSellStockwithCooldownFunc, SetMatrixZeroesFunc, OutofBoundaryPathsFunc,
@@ -109,6 +109,27 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void CategorizeBoxAccordingtoCriteriaFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Categorize Box According to Criteria");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CategorizeBoxAccordingtoCriteria.Test.TestCases());
+        }
+
+        private static void MaximumCountofPositiveIntegerandNegativeIntegerFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Count of Positive Integer and Negative Integer");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximumCountofPositiveIntegerandNegativeInteger.Test.TestCases());
+        }
+
+        private static void PalindromicSubstringsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Palindromic Substrings");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.PalindromicSubstrings.Test.TestCases());
+        }
 
         private static void DifferenceBetweenElementSumandDigitSumofanArrayFunc()
         {
