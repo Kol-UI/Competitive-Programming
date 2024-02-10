@@ -51,7 +51,7 @@ namespace CompetitiveProgramming.Services.Providers
         private static readonly Delegate[] geeksForGeeksMediumList = new Delegate[]
         {
             StringrporprFunc, EvenSwapFunc, MinimumStepsRequiredFunc, AddMinimumCharactersFunc, MaximumLengthFunc, RemoveandReverseFunc, ShyGeek, MaximumIntersectingLinesFunc, KnightInGeeklandFunc, CountSpecialNumbersFunc, BTSMaximumDifferenceFunc,
-            ReverseaStackFunc, SticklerThiefFunc, BinaryTreetoCDLLFunc, CountpossiblewaystoconstructbuildingsFunc,
+            ReverseaStackFunc, SticklerThiefFunc, BinaryTreetoCDLLFunc, CountpossiblewaystoconstructbuildingsFunc, CheckforChildrenSumPropertyinaBinaryTreeFunc,
         };
 
         private static readonly Delegate[] geeksForGeeksHardList = new Delegate[]
@@ -261,6 +261,13 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Count Special Numbers");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks);
+        }
+
+        private static void CheckforChildrenSumPropertyinaBinaryTreeFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Check for Children Sum Property in a Binary Tree");
             ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks);
         }
 
