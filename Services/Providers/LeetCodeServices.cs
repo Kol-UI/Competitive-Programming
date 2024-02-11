@@ -43,7 +43,7 @@ namespace CompetitiveProgramming.Services.Providers
             ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc, UniqueLength3PalindromicSubsequencesFunc, TypeofTriangleIIFunc,
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc, MinimumOperationstoCollectElementsFunc,
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc, SpecialPositionsinaBinaryMatrixFunc, RangeSumofBSTFunc,
-            SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc, BuyTwoChocolatesFunc,
+            SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc, BuyTwoChocolatesFunc, ModifytheMatrixFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc, MaximumProductofTwoElementsinanArrayFunc,
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc, MaximumOddBinaryNumberFunc,
             LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc, ElementAppearingMoreThanInSortedArrayFunc, SplitWithMinimumSumFunc,
@@ -54,7 +54,7 @@ namespace CompetitiveProgramming.Services.Providers
             LongestEvenOddSubarrayWithThresholdFunc, NumberofBeautifulPairsFunc, TotalDistanceTraveledFunc, NeitherMinimumnorMaximumFunc, SemiOrderedPermutationFunc, CheckifTheNumberisFascinatingFunc, MinimizeStringLengthFunc, LexicographicallySmallestPalindromeFunc,
             FindtheMaximumDivisibilityScoreFunc, RowWithMaximumOnesFunc, FindtheWidthofColumnsofaGridFunc, FindtheLongestBalancedSubstringofaBinaryStringFunc, MinimumNumberofPushestoTypeWordIFunc, DivideanArrayIntoSubarraysWithMinimumCostIFunc, FormSmallestNumberFromTwoDigitArraysFunc,
             NumberofEvenandOddBitsFunc, DistributeMoneytoMaximumChildrenFunc, CounttheNumberofVowelStringsinRangeFunc, MaximumLengthofaConcatenatedStringwithUniqueCharactersFunc, LeftandRightSumDifferencesFunc, FindtheArrayConcatenationValueFunc, TakeGiftsFromtheRichestPileFunc,
-            SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc, MaximumCountofPositiveIntegerandNegativeIntegerFunc, CategorizeBoxAccordingtoCriteriaFunc,
+            SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc, MaximumCountofPositiveIntegerandNegativeIntegerFunc, CategorizeBoxAccordingtoCriteriaFunc, CounttheDigitsThatDivideaNumberFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -105,10 +105,31 @@ namespace CompetitiveProgramming.Services.Providers
             MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc, FirstMissingPositiveFunc, LFUCacheFunc, BinaryTreeMaximumPathSumFunc, MinimumNumberofOperationstoMakeArrayContinuousFunc, NumberofWaystoStayintheSamePlaceAfterSomeStepsFunc, CountVowelsPermutationFunc, MinimumOneBitOperationstoMakeIntegersZeroFunc,
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc, MaxPointsonaLineFunc, MaximumRunningTimeofNComputersFunc, DesignGraphWithShortestPathCalculatorFunc, MinimumDifficultyofaJobScheduleFunc, ArithmeticSlicesIISubsequenceFunc, LongestValidParenthesesFunc, KInversePairsArrayFunc,
             CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc, SlidingWindowMaximumFunc, MaximumScoreofaGoodSubarrayFunc, NumberofWaystoDivideaLongCorridorFunc, LargestRectangleinHistogramFunc, FindMedianfromDataStreamFunc, NumberofSubmatricesThatSumtoTargetFunc,
-            FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc, MinimumReplacementstoSorttheArrayFunc, MedianofTwoSortedArraysFunc, BuildArrayWhereYouCanFindTheMaximumExactlyKComparisonsFunc, StringCompressionIIFunc, MaximumProfitinJobSchedulingFunc,
+            FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc, MinimumReplacementstoSorttheArrayFunc, MedianofTwoSortedArraysFunc, BuildArrayWhereYouCanFindTheMaximumExactlyKComparisonsFunc, StringCompressionIIFunc, MaximumProfitinJobSchedulingFunc, CherryPickupIIFunc,
         };
 
         // Functions 
+
+        private static void CounttheDigitsThatDivideaNumberFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count the Digits That Divide a Number");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CounttheDigitsThatDivideaNumber.Test.TestCases());
+        }
+
+        private static void ModifytheMatrixFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Modify the Matrix");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ModifytheMatrix.Test.TestCases());
+        }
+
+        private static void CherryPickupIIFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Cherry Pickup II");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CherryPickupII.Test.TestCases());
+        }
 
         private static void CategorizeBoxAccordingtoCriteriaFunc()
         {
