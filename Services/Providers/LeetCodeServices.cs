@@ -55,6 +55,7 @@ namespace CompetitiveProgramming.Services.Providers
             FindtheMaximumDivisibilityScoreFunc, RowWithMaximumOnesFunc, FindtheWidthofColumnsofaGridFunc, FindtheLongestBalancedSubstringofaBinaryStringFunc, MinimumNumberofPushestoTypeWordIFunc, DivideanArrayIntoSubarraysWithMinimumCostIFunc, FormSmallestNumberFromTwoDigitArraysFunc,
             NumberofEvenandOddBitsFunc, DistributeMoneytoMaximumChildrenFunc, CounttheNumberofVowelStringsinRangeFunc, MaximumLengthofaConcatenatedStringwithUniqueCharactersFunc, LeftandRightSumDifferencesFunc, FindtheArrayConcatenationValueFunc, TakeGiftsFromtheRichestPileFunc,
             SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc, MaximumCountofPositiveIntegerandNegativeIntegerFunc, CategorizeBoxAccordingtoCriteriaFunc, CounttheDigitsThatDivideaNumberFunc,
+            ShortestDistancetoTargetStringinaCircularArrayFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -109,6 +110,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void ShortestDistancetoTargetStringinaCircularArrayFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Shortest Distance to Target String in a Circular Array");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ShortestDistancetoTargetStringinaCircularArray.Test.TestCases());
+        }
 
         private static void CounttheDigitsThatDivideaNumberFunc()
         {
