@@ -55,7 +55,7 @@ namespace CompetitiveProgramming.Services.Providers
             FindtheMaximumDivisibilityScoreFunc, RowWithMaximumOnesFunc, FindtheWidthofColumnsofaGridFunc, FindtheLongestBalancedSubstringofaBinaryStringFunc, MinimumNumberofPushestoTypeWordIFunc, DivideanArrayIntoSubarraysWithMinimumCostIFunc, FormSmallestNumberFromTwoDigitArraysFunc,
             NumberofEvenandOddBitsFunc, DistributeMoneytoMaximumChildrenFunc, CounttheNumberofVowelStringsinRangeFunc, MaximumLengthofaConcatenatedStringwithUniqueCharactersFunc, LeftandRightSumDifferencesFunc, FindtheArrayConcatenationValueFunc, TakeGiftsFromtheRichestPileFunc,
             SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc, MaximumCountofPositiveIntegerandNegativeIntegerFunc, CategorizeBoxAccordingtoCriteriaFunc, CounttheDigitsThatDivideaNumberFunc,
-            ShortestDistancetoTargetStringinaCircularArrayFunc,
+            ShortestDistancetoTargetStringinaCircularArrayFunc, FindFirstPalindromicStringintheArray,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -110,6 +110,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void FindFirstPalindromicStringintheArray()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find First Palindromic String in the Array");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindFirstPalindromicStringintheArray.Test.TestCases());
+        }
 
         private static void ShortestDistancetoTargetStringinaCircularArrayFunc()
         {
