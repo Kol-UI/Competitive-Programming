@@ -55,7 +55,7 @@ namespace CompetitiveProgramming.Services.Providers
             FindtheMaximumDivisibilityScoreFunc, RowWithMaximumOnesFunc, FindtheWidthofColumnsofaGridFunc, FindtheLongestBalancedSubstringofaBinaryStringFunc, MinimumNumberofPushestoTypeWordIFunc, DivideanArrayIntoSubarraysWithMinimumCostIFunc, FormSmallestNumberFromTwoDigitArraysFunc,
             NumberofEvenandOddBitsFunc, DistributeMoneytoMaximumChildrenFunc, CounttheNumberofVowelStringsinRangeFunc, MaximumLengthofaConcatenatedStringwithUniqueCharactersFunc, LeftandRightSumDifferencesFunc, FindtheArrayConcatenationValueFunc, TakeGiftsFromtheRichestPileFunc,
             SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc, MaximumCountofPositiveIntegerandNegativeIntegerFunc, CategorizeBoxAccordingtoCriteriaFunc, CounttheDigitsThatDivideaNumberFunc,
-            ShortestDistancetoTargetStringinaCircularArrayFunc, FindFirstPalindromicStringintheArray,
+            ShortestDistancetoTargetStringinaCircularArrayFunc, FindFirstPalindromicStringintheArray, MaximumEnemyFortsThatCanBeCapturedFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -110,6 +110,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void MaximumEnemyFortsThatCanBeCapturedFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Enemy Forts That Can Be Captured");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximumEnemyFortsThatCanBeCaptured.Test.TestCases());
+        }
 
         private static void FindFirstPalindromicStringintheArray()
         {
