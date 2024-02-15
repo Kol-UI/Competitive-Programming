@@ -94,7 +94,7 @@ namespace CompetitiveProgramming.Services.Providers
             DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc, PseudoPalindromicPathsinaBinaryTreeFunc,
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc, FindPlayersWithZeroorOneLossesFunc,
             WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc, MinimumNumberofOperationstoMakeArrayEmptyFunc, AmountofTimeforBinaryTreetoBeInfectedFunc, MaximumDifferenceBetweenNodeandAncestorFunc,
-            RearrangeArrayElementsbySignFunc,
+            RearrangeArrayElementsbySignFunc, FindPolygonWiththeLargestPerimeterFunc,
         };
 
         private static readonly Delegate[] leetCodeHardList = new Delegate[]
@@ -111,6 +111,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void FindPolygonWiththeLargestPerimeterFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Polygon With the Largest Perimeter");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindPolygonWiththeLargestPerimeter.Test.TestCases());
+        }
 
         private static void CountPairsOfSimilarStringsFunc()
         {
