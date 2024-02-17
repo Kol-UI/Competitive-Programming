@@ -39,5 +39,11 @@ namespace CompetitiveProgramming.Helpers
             string reversed = ReverseString(cleanedInput);
             return cleanedInput.Equals(reversed, StringComparison.OrdinalIgnoreCase);
         }
+
+        // Check if strings are egal while ignoring case
+        public static bool Solution(string string1, string string2)
+        {
+            return String.Equals(string1, string2, StringComparison.OrdinalIgnoreCase);
+        }
     }
 }
