@@ -41,7 +41,7 @@ namespace CompetitiveProgramming.Helpers
         }
 
         // Check if strings are egal while ignoring case
-        public static bool Solution(string string1, string string2)
+        public static bool AreStringsEgalIgnoreCase(string string1, string string2)
         {
             return String.Equals(string1, string2, StringComparison.OrdinalIgnoreCase);
         }
