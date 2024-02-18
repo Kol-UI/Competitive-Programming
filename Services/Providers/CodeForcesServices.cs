@@ -18,10 +18,17 @@ namespace CompetitiveProgramming.Services.Providers
             WrongSubtractionFunc, NearlyLuckyNumberFunc, AntonandDanikFunc, ATranslationFunc, ATramFunc, VanyaandFenceFunc, QueueattheSchoolFunc, BeautifulYearFunc, InSearchofanEasyProblemFunc, GeorgeandAccommodationFunc, MagnetsFunc, PresentsFunc, CalculateFunctionFunc, DrinksFunc,
             UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc, PangramFunc, InsomniacureFunc, AntonandLettersFunc, HittheLotteryFunc, GamesFunc, AntonandPolyhedronsFunc, CandiesandTwoSistersFunc,
             AmusingJokeFunc, FoxAndSnakeFunc, PoliceRecruitsFunc, IloveusernameFunc, NewYearandHurryFunc, SumofRoundNumbersFunc, TheNewYearMeetingFriendsFunc, VasyatheHipsterFunc, BuyaShovelFunc, RestoringThreeNumbersFunc, SoftDrinkingFunc, RemoveSmallestFunc, ProblemsolvingLogFunc,
-            LOLLoversFunc, CoverinWaterFunc, HelpFarAwayKingdomFunc, HaikuFunc, LLSPFunc, TrickyTemplateFunc, PlusMinusSplitFunc, WeGotEverythingCoveredFunc, SquareFunc, YetAnotherTwoIntegersProblemFunc, SumFunc, YESorYESFunc,
+            LOLLoversFunc, CoverinWaterFunc, HelpFarAwayKingdomFunc, HaikuFunc, LLSPFunc, TrickyTemplateFunc, PlusMinusSplitFunc, WeGotEverythingCoveredFunc, SquareFunc, YetAnotherTwoIntegersProblemFunc, SumFunc, YESorYESFunc, AgainTwentyFiveFunc,
         };
 
         // Functions 
+
+        private static void AgainTwentyFiveFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Again Twenty Five");
+            ResultTester.CheckSolution(ProblemOrigin.CodeForces, CodeForces.AgainTwentyFive.Test.TestCases());
+        }
 
         private static void YESorYESFunc()
         {
