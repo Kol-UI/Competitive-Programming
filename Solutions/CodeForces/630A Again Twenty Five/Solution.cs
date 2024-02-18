@@ -1,21 +1,13 @@
 // Again Twenty Five
 
 using System;
+using System.Numerics;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeForces.AgainTwentyFive
 {
     class Program
     {
-        //static void Main()
-        public static void Problem()
-        {
-            int n = int.Parse(Console.ReadLine()!);
-            string result = Solution(n);
-
-            Console.WriteLine(result);
-        }
-
         public static string Solution(int n)
         {
             double value = Math.Pow(5, n);
@@ -29,7 +21,7 @@ namespace CompetitiveProgramming.CodeForces.AgainTwentyFive
     {
         static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
+            BigInteger n = BigInteger.Parse(Console.ReadLine());
             Console.WriteLine(Solution(n));
         }
 
