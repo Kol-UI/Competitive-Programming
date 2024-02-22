@@ -24,10 +24,25 @@ namespace CompetitiveProgramming.Services.Providers
 
         private static readonly Delegate[] csacademyEasyList = new Delegate[]
         {
-            MatrixExplorationFunc,
+            MatrixExplorationFunc, WordOrderingFunc, SimilarWordsFunc,
         };
 
-        // Functions
+        // Functions 
+
+        private static void SimilarWordsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Similar Words");
+            ResultTester.SpecialTestCase(ProblemOrigin.CSAcademy);
+        }
+
+        private static void WordOrderingFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Word Ordering");
+            ResultTester.SpecialTestCase(ProblemOrigin.CSAcademy);
+        }
+
         private static void AdditionFunc()
         {
             StyleHelper.Space();
