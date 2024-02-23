@@ -42,7 +42,7 @@ namespace CompetitiveProgramming.Services.Providers
             Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc, MakeThreeStringsEqualFunc, FaultyKeyboardFunc, MinimumCommonValueFunc,
             ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc, UniqueLength3PalindromicSubsequencesFunc, TypeofTriangleIIFunc,
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc, MinimumOperationstoCollectElementsFunc, MissingNumberFunc,
-            DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc, SpecialPositionsinaBinaryMatrixFunc, RangeSumofBSTFunc,
+            DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc, SpecialPositionsinaBinaryMatrixFunc, RangeSumofBSTFunc, MinimumCutstoDivideaCircleFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc, BuyTwoChocolatesFunc, ModifytheMatrixFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc, MaximumProductofTwoElementsinanArrayFunc,
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc, MaximumOddBinaryNumberFunc,
@@ -56,6 +56,7 @@ namespace CompetitiveProgramming.Services.Providers
             NumberofEvenandOddBitsFunc, DistributeMoneytoMaximumChildrenFunc, CounttheNumberofVowelStringsinRangeFunc, MaximumLengthofaConcatenatedStringwithUniqueCharactersFunc, LeftandRightSumDifferencesFunc, FindtheArrayConcatenationValueFunc, TakeGiftsFromtheRichestPileFunc,
             SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc, MaximumCountofPositiveIntegerandNegativeIntegerFunc, CategorizeBoxAccordingtoCriteriaFunc, CounttheDigitsThatDivideaNumberFunc, CountPrefixandSuffixPairsIFunc,
             ShortestDistancetoTargetStringinaCircularArrayFunc, FindFirstPalindromicStringintheArray, MaximumEnemyFortsThatCanBeCapturedFunc, CountPairsOfSimilarStringsFunc, DeleteGreatestValueinEachRowFunc, LongestUnequalAdjacentGroupsSubsequenceIFunc, MaximumNumberofOperationsWiththeSameScoreIFunc,
+            NumberofUnequalTripletsinArrayFunc, ConverttheTemperatureFunc, NumberofDistinctAveragesFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -111,6 +112,34 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void NumberofDistinctAveragesFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Distinct Averages");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofDistinctAverages.Test.TestCases());
+        }
+
+        private static void ConverttheTemperatureFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Convert the Temperature");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ConverttheTemperature.Test.TestCases());
+        }
+
+        private static void NumberofUnequalTripletsinArrayFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Unequal Triplets in Array");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofUnequalTripletsinArray.Test.TestCases());
+        }
+
+        private static void MinimumCutstoDivideaCircleFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Cuts to Divide a Circle");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumCutstoDivideaCircle.Test.TestCases());
+        }
 
         private static void FindthePivotIntegerFunc()
         {
