@@ -95,7 +95,7 @@ namespace CompetitiveProgramming.Services.Providers
             DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc, PseudoPalindromicPathsinaBinaryTreeFunc,
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc, FindPlayersWithZeroorOneLossesFunc,
             WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc, MinimumNumberofOperationstoMakeArrayEmptyFunc, AmountofTimeforBinaryTreetoBeInfectedFunc, MaximumDifferenceBetweenNodeandAncestorFunc,
-            RearrangeArrayElementsbySignFunc, FindPolygonWiththeLargestPerimeterFunc, LeastNumberofUniqueIntegersafterKRemovalsFunc, FurthestBuildingYouCanReachFunc,
+            RearrangeArrayElementsbySignFunc, FindPolygonWiththeLargestPerimeterFunc, LeastNumberofUniqueIntegersafterKRemovalsFunc, FurthestBuildingYouCanReachFunc, FindBottomLeftTreeValueFunc,
         };
 
         private static readonly Delegate[] leetCodeHardList = new Delegate[]
@@ -1055,6 +1055,13 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Find Median from Data Stream");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
+        }
+
+        private static void FindBottomLeftTreeValueFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Bottom Left Tree Value");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
