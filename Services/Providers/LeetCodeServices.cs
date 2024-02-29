@@ -56,7 +56,7 @@ namespace CompetitiveProgramming.Services.Providers
             NumberofEvenandOddBitsFunc, DistributeMoneytoMaximumChildrenFunc, CounttheNumberofVowelStringsinRangeFunc, MaximumLengthofaConcatenatedStringwithUniqueCharactersFunc, LeftandRightSumDifferencesFunc, FindtheArrayConcatenationValueFunc, TakeGiftsFromtheRichestPileFunc,
             SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc, MaximumCountofPositiveIntegerandNegativeIntegerFunc, CategorizeBoxAccordingtoCriteriaFunc, CounttheDigitsThatDivideaNumberFunc, CountPrefixandSuffixPairsIFunc,
             ShortestDistancetoTargetStringinaCircularArrayFunc, FindFirstPalindromicStringintheArray, MaximumEnemyFortsThatCanBeCapturedFunc, CountPairsOfSimilarStringsFunc, DeleteGreatestValueinEachRowFunc, LongestUnequalAdjacentGroupsSubsequenceIFunc, MaximumNumberofOperationsWiththeSameScoreIFunc,
-            NumberofUnequalTripletsinArrayFunc, ConverttheTemperatureFunc, NumberofDistinctAveragesFunc, ApplyOperationstoanArrayFunc, AverageValueofEvenNumbersThatAreDivisiblebyThreeFunc, OddStringDifferenceFunc, EvaluateBooleanBinaryTreeFunc,
+            NumberofUnequalTripletsinArrayFunc, ConverttheTemperatureFunc, NumberofDistinctAveragesFunc, ApplyOperationstoanArrayFunc, AverageValueofEvenNumbersThatAreDivisiblebyThreeFunc, OddStringDifferenceFunc, EvaluateBooleanBinaryTreeFunc, LargestPositiveIntegerThatExistsWithItsNegativeFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -118,6 +118,13 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Odd String Difference");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.OddStringDifference.Test.TestCases());
+        }
+
+        private static void LargestPositiveIntegerThatExistsWithItsNegativeFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Largest Positive Integer That Exists With Its Negative");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LargestPositiveIntegerThatExistsWithItsNegative.Test.TestCases());
         }
 
         private static void AverageValueofEvenNumbersThatAreDivisiblebyThreeFunc()
