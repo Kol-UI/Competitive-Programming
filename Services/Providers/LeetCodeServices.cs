@@ -57,7 +57,7 @@ namespace CompetitiveProgramming.Services.Providers
             SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc, MaximumCountofPositiveIntegerandNegativeIntegerFunc, CategorizeBoxAccordingtoCriteriaFunc, CounttheDigitsThatDivideaNumberFunc, CountPrefixandSuffixPairsIFunc,
             ShortestDistancetoTargetStringinaCircularArrayFunc, FindFirstPalindromicStringintheArray, MaximumEnemyFortsThatCanBeCapturedFunc, CountPairsOfSimilarStringsFunc, DeleteGreatestValueinEachRowFunc, LongestUnequalAdjacentGroupsSubsequenceIFunc, MaximumNumberofOperationsWiththeSameScoreIFunc,
             NumberofUnequalTripletsinArrayFunc, ConverttheTemperatureFunc, NumberofDistinctAveragesFunc, ApplyOperationstoanArrayFunc, AverageValueofEvenNumbersThatAreDivisiblebyThreeFunc, OddStringDifferenceFunc, EvaluateBooleanBinaryTreeFunc, LargestPositiveIntegerThatExistsWithItsNegativeFunc,
-            DetermineifTwoEventsHaveConflictFunc,
+            DetermineifTwoEventsHaveConflictFunc, NumberofCommonFactorsFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -113,6 +113,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void NumberofCommonFactorsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Common Factors");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofCommonFactors.Test.TestCases());
+        }
 
         private static void DetermineifTwoEventsHaveConflictFunc()
         {
