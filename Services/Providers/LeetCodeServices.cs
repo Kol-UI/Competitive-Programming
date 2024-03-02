@@ -57,6 +57,7 @@ namespace CompetitiveProgramming.Services.Providers
             SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc, MaximumCountofPositiveIntegerandNegativeIntegerFunc, CategorizeBoxAccordingtoCriteriaFunc, CounttheDigitsThatDivideaNumberFunc, CountPrefixandSuffixPairsIFunc,
             ShortestDistancetoTargetStringinaCircularArrayFunc, FindFirstPalindromicStringintheArray, MaximumEnemyFortsThatCanBeCapturedFunc, CountPairsOfSimilarStringsFunc, DeleteGreatestValueinEachRowFunc, LongestUnequalAdjacentGroupsSubsequenceIFunc, MaximumNumberofOperationsWiththeSameScoreIFunc,
             NumberofUnequalTripletsinArrayFunc, ConverttheTemperatureFunc, NumberofDistinctAveragesFunc, ApplyOperationstoanArrayFunc, AverageValueofEvenNumbersThatAreDivisiblebyThreeFunc, OddStringDifferenceFunc, EvaluateBooleanBinaryTreeFunc, LargestPositiveIntegerThatExistsWithItsNegativeFunc,
+            DetermineifTwoEventsHaveConflictFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -112,6 +113,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void DetermineifTwoEventsHaveConflictFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Determine if Two Events Have Conflict");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.DetermineifTwoEventsHaveConflict.Test.TestCases());
+        }
 
         private static void OddStringDifferenceFunc()
         {
