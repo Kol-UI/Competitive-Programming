@@ -57,7 +57,7 @@ namespace CompetitiveProgramming.Services.Providers
             SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc, MaximumCountofPositiveIntegerandNegativeIntegerFunc, CategorizeBoxAccordingtoCriteriaFunc, CounttheDigitsThatDivideaNumberFunc, CountPrefixandSuffixPairsIFunc,
             ShortestDistancetoTargetStringinaCircularArrayFunc, FindFirstPalindromicStringintheArray, MaximumEnemyFortsThatCanBeCapturedFunc, CountPairsOfSimilarStringsFunc, DeleteGreatestValueinEachRowFunc, LongestUnequalAdjacentGroupsSubsequenceIFunc, MaximumNumberofOperationsWiththeSameScoreIFunc,
             NumberofUnequalTripletsinArrayFunc, ConverttheTemperatureFunc, NumberofDistinctAveragesFunc, ApplyOperationstoanArrayFunc, AverageValueofEvenNumbersThatAreDivisiblebyThreeFunc, OddStringDifferenceFunc, EvaluateBooleanBinaryTreeFunc, LargestPositiveIntegerThatExistsWithItsNegativeFunc,
-            DetermineifTwoEventsHaveConflictFunc, NumberofCommonFactorsFunc, MinimumAmountofTimetoFillCupsFunc, TheEmployeeThatWorkedontheLongestTaskFunc, MinimumRecolorstoGetKConsecutiveBlackBlocksFunc,
+            DetermineifTwoEventsHaveConflictFunc, NumberofCommonFactorsFunc, MinimumAmountofTimetoFillCupsFunc, TheEmployeeThatWorkedontheLongestTaskFunc, MinimumRecolorstoGetKConsecutiveBlackBlocksFunc, MinimumHoursofTrainingtoWinaCompetitionFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -113,6 +113,7 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
 
         private static void MinimumRecolorstoGetKConsecutiveBlackBlocksFunc()
         {
@@ -5669,6 +5670,13 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Subtree of Another Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
+        }
+
+        private static void MinimumHoursofTrainingtoWinaCompetitionFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Hours of Training to Win a Competition");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
