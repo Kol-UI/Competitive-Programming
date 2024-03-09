@@ -47,7 +47,7 @@ namespace CompetitiveProgramming.Services.Providers
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc, MaximumProductofTwoElementsinanArrayFunc, OccurrencesAfterBigramFunc,
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc, MaximumOddBinaryNumberFunc, FirstLettertoAppearTwiceFunc,
             LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc, ElementAppearingMoreThanInSortedArrayFunc, SplitWithMinimumSumFunc,
-            SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc, SumofSubarrayMinimumsFunc,
+            SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc, SumofSubarrayMinimumsFunc, CountLargestGroupFunc,
             MinimumNumberGameFunc, CounttheNumberofIncremovableSubarraysIFunc, CheckifaStringIsanAcronymofWordsFunc, CountPairsWhoseSumisLessthanTargetFunc, LargestSubstringBetweenTwoEqualCharactersFunc, CheckifBitwiseORHasTrailingZerosFunc, FindtheLosersoftheCircularGameFunc, MakeArrayZerobySubtractingEqualAmountsFunc,
             RemoveTrailingZerosFromaStringFunc, NumberofEmployeesWhoMettheTargetFunc, SplitStringsbySeparatorFunc, CheckifArrayisGoodFunc, SumofSquaresofSpecialElementsFunc, LongestAlternatingSubarrayFunc, DetermineifStringHalvesAreAlikeFunc, NumberofSeniorCitizensFunc, MergeSimilarItemsFunc,
             MinimumNumberofStepstoMakeTwoStringsAnagramFunc, FindMaximumNumberofStringPairsFunc, CountElementsWithMaximumFrequencyFunc, MaximumAreaofLongestDiagonalRectangleFunc, SmallestMissingIntegerGreaterThanSequentialPrefixSumFunc, MinimumStringLengthAfterRemovingSubstringsFunc,
@@ -113,6 +113,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void CountLargestGroupFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count Largest Group");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CountLargestGroup.Test.TestCases());
+        }
 
         private static void DayoftheYearFunc()
         {
