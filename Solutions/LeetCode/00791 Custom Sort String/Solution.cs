@@ -17,8 +17,8 @@ namespace CompetitiveProgramming.LeetCode.CustomSortString
         {
             bool[] results = new bool[]
             {
-                ResultTester.CheckResult<string>(Solution.CustomSortString("cba", "abcd"), "cbad"),
-                ResultTester.CheckResult<string>(Solution.CustomSortString("bcafg", "abcd"), "bcad"),
+                ResultTester.CheckResult<string>(Solution.CustomSortString("cba", "abcd"), "dcba"),
+                ResultTester.CheckResult<string>(Solution.CustomSortString("bcafg", "abcd"), "dbca"),
             };
             return results;
         }
