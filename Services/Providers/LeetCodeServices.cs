@@ -96,7 +96,7 @@ namespace CompetitiveProgramming.Services.Providers
             DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc, PseudoPalindromicPathsinaBinaryTreeFunc,
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc, FindPlayersWithZeroorOneLossesFunc,
             WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc, MinimumNumberofOperationstoMakeArrayEmptyFunc, AmountofTimeforBinaryTreetoBeInfectedFunc, MaximumDifferenceBetweenNodeandAncestorFunc,
-            RearrangeArrayElementsbySignFunc, FindPolygonWiththeLargestPerimeterFunc, LeastNumberofUniqueIntegersafterKRemovalsFunc, FurthestBuildingYouCanReachFunc, FindBottomLeftTreeValueFunc, EvenOddTreeFunc, MinimumLengthofStringAfterDeletingSimilarEndsFunc, CustomSortStringFunc,
+            RearrangeArrayElementsbySignFunc, FindPolygonWiththeLargestPerimeterFunc, LeastNumberofUniqueIntegersafterKRemovalsFunc, FurthestBuildingYouCanReachFunc, FindBottomLeftTreeValueFunc, EvenOddTreeFunc, MinimumLengthofStringAfterDeletingSimilarEndsFunc, CustomSortStringFunc, RemoveZeroSumConsecutiveNodesfromLinkedListFunc,
         };
 
         private static readonly Delegate[] leetCodeHardList = new Delegate[]
@@ -113,6 +113,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void RemoveZeroSumConsecutiveNodesfromLinkedListFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Remove Zero Sum Consecutive Nodes from Linked List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
+        }
 
         private static void CustomSortStringFunc()
         {
