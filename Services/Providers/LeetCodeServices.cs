@@ -58,7 +58,7 @@ namespace CompetitiveProgramming.Services.Providers
             ShortestDistancetoTargetStringinaCircularArrayFunc, FindFirstPalindromicStringintheArray, MaximumEnemyFortsThatCanBeCapturedFunc, CountPairsOfSimilarStringsFunc, DeleteGreatestValueinEachRowFunc, LongestUnequalAdjacentGroupsSubsequenceIFunc, MaximumNumberofOperationsWiththeSameScoreIFunc,
             NumberofUnequalTripletsinArrayFunc, ConverttheTemperatureFunc, NumberofDistinctAveragesFunc, ApplyOperationstoanArrayFunc, AverageValueofEvenNumbersThatAreDivisiblebyThreeFunc, OddStringDifferenceFunc, EvaluateBooleanBinaryTreeFunc, LargestPositiveIntegerThatExistsWithItsNegativeFunc,
             DetermineifTwoEventsHaveConflictFunc, NumberofCommonFactorsFunc, MinimumAmountofTimetoFillCupsFunc, TheEmployeeThatWorkedontheLongestTaskFunc, MinimumRecolorstoGetKConsecutiveBlackBlocksFunc, MinimumHoursofTrainingtoWinaCompetitionFunc, PartitionArrayIntoThreePartsWithEqualSumFunc,
-            FindAllKDistantIndicesinanArrayFunc, RemoveOutermostParenthesesFunc,
+            FindAllKDistantIndicesinanArrayFunc, RemoveOutermostParenthesesFunc, MinimumOperationstoExceedThresholdValueIFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -114,6 +114,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void MinimumOperationstoExceedThresholdValueIFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Operations to Exceed Threshold Value I");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumOperationstoExceedThresholdValueI.Test.TestCases());
+        }
 
         private static void DivisorGameFunc()
         {
