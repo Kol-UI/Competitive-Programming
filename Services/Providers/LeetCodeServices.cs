@@ -39,7 +39,7 @@ namespace CompetitiveProgramming.Services.Providers
             FloodFillFunc, HappyNumberFunc, DecryptStringfromAlphabettoIntegerMappingFunc, TheKWeakestRowsinaMatrixFunc, CheckifOneStringSwapCanMakeStringsEqualFunc, MergeTwoBinaryTreesFunc, BinaryTreePreorderTraversalFunc, FindWordsContainingCharacterFunc, PrimeInDiagonalFunc, DayoftheYearFunc,
             SubtracttheProductandSumofDigitsofanIntegerFunc, SpecialArrayWithXElementsGreaterThanorEqualXFunc, SqrtxFunc, FindtheDistanceValueBetweenTwoArraysFunc, SortColorsFunc, ReverseStringFunc, IntersectionofTwoLinkedListsFunc, ExcelSheetColumnNumberFunc, MergeTwoTwoDArraysbySummingValuesFunc,
             SumofAllOddLengthSubarraysFunc, NextGreaterElementIFunc, SquaresofaSortedArrayFunc, FibonacciNumberFunc, FindNearestPointThatHastheSameXorYCoordinateFunc, NaryTreePreorderTraversalFunc, MaximumAscendingSubarraySumFunc, DestinationCityFunc, FindtheDistinctDifferenceArrayFunc, ReformatTheStringFunc,
-            Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc, MakeThreeStringsEqualFunc, FaultyKeyboardFunc, MinimumCommonValueFunc,
+            Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc, MakeThreeStringsEqualFunc, FaultyKeyboardFunc, MinimumCommonValueFunc, ReplaceAllDigitswithCharactersFunc,
             ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc, UniqueLength3PalindromicSubsequencesFunc, TypeofTriangleIIFunc, IntersectionofTwoArraysFunc,
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc, MinimumOperationstoCollectElementsFunc, MissingNumberFunc,
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc, SpecialPositionsinaBinaryMatrixFunc, RangeSumofBSTFunc, MinimumCutstoDivideaCircleFunc,
@@ -114,6 +114,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+        
+        private static void ReplaceAllDigitswithCharactersFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Replace All Digits with Characters");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ReplaceAllDigitswithCharacters.Test.TestCases());
+        }
 
         private static void ExistenceofaSubstringinaStringandItsReverseFunc()
         {
