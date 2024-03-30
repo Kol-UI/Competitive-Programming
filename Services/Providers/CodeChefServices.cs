@@ -26,10 +26,25 @@ namespace CompetitiveProgramming.Services.Providers
 
         private static readonly Delegate[] codeChefBeginner = new Delegate[]
         {
-            AgeLimitFunc, NumberMirrorFunc, RichieRichFunc, VaccineDatesFunc, HoopJumpFunc, TheTwoDishesFunc, MotivationFunc,
+            AgeLimitFunc, NumberMirrorFunc, RichieRichFunc, VaccineDatesFunc, HoopJumpFunc, TheTwoDishesFunc, MotivationFunc, TwoDishesFunc, CricketWorldCupQualifierFunc, LuckySevenFunc,
         };
 
-        // Functions
+        // Functions 
+
+        private static void LuckySevenFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Lucky Seven");
+            ResultTester.CheckSolution(ProblemOrigin.CodeChef, CodeChef.LuckySeven.Test.TestCases());
+        }
+
+        private static void CricketWorldCupQualifierFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Cricket World Cup Qualifier");
+            ResultTester.CheckSolution(ProblemOrigin.CodeChef, CodeChef.CricketWorldCupQualifier.Test.TestCases());
+        }
+
         private static void StringOperationsFunc()
         {
             StyleHelper.Space();
@@ -48,6 +63,13 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Age Limit");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeChef);
+        }
+
+        private static void TwoDishesFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Two Dishes");
             ResultTester.SpecialTestCase(ProblemOrigin.CodeChef);
         }
 

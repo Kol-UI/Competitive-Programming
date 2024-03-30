@@ -1,7 +1,5 @@
 // The Two Dishes
 
-
-
 using System;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeChef.TheTwoDishes
@@ -21,6 +19,22 @@ namespace CompetitiveProgramming.CodeChef.TheTwoDishes
 
                 int maxDifference = Math.Min(N, S - N);
                 Console.WriteLine(maxDifference);
+            }
+        }
+
+        //public static void Main()
+        public static void Solution2()
+        {
+            long t = long.Parse(Console.ReadLine()!);
+
+            while (t-- > 0)
+            {
+                string[] inputs = Console.ReadLine()!.Split();
+                long n = long.Parse(inputs[0]);
+                long s = long.Parse(inputs[1]);
+
+                long result = (s < n) ? s : (2 * n - s);
+                Console.WriteLine(result);
             }
         }
     }

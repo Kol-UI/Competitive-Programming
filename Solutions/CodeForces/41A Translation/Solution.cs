@@ -1,8 +1,5 @@
 // 41A Translation
 
-
-
-using System;
 using System;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
