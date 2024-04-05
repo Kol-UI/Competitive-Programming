@@ -53,7 +53,7 @@ namespace CompetitiveProgramming.Services.Providers
             MinimumNumberofStepstoMakeTwoStringsAnagramFunc, FindMaximumNumberofStringPairsFunc, CountElementsWithMaximumFrequencyFunc, MaximumAreaofLongestDiagonalRectangleFunc, SmallestMissingIntegerGreaterThanSequentialPrefixSumFunc, MinimumStringLengthAfterRemovingSubstringsFunc, SmallestEvenMultipleFunc,
             LongestEvenOddSubarrayWithThresholdFunc, NumberofBeautifulPairsFunc, TotalDistanceTraveledFunc, NeitherMinimumnorMaximumFunc, SemiOrderedPermutationFunc, CheckifTheNumberisFascinatingFunc, MinimizeStringLengthFunc, LexicographicallySmallestPalindromeFunc, FindthePivotIntegerFunc, RemoveLetterToEqualizeFrequencyFunc,
             FindtheMaximumDivisibilityScoreFunc, RowWithMaximumOnesFunc, FindtheWidthofColumnsofaGridFunc, FindtheLongestBalancedSubstringofaBinaryStringFunc, MinimumNumberofPushestoTypeWordIFunc, DivideanArrayIntoSubarraysWithMinimumCostIFunc, FormSmallestNumberFromTwoDigitArraysFunc, BinaryPrefixDivisibleByFiveFunc,
-            NumberofEvenandOddBitsFunc, DistributeMoneytoMaximumChildrenFunc, CounttheNumberofVowelStringsinRangeFunc, MaximumLengthofaConcatenatedStringwithUniqueCharactersFunc, LeftandRightSumDifferencesFunc, FindtheArrayConcatenationValueFunc, TakeGiftsFromtheRichestPileFunc, NumberofArithmeticTripletsFunc,
+            NumberofEvenandOddBitsFunc, DistributeMoneytoMaximumChildrenFunc, CounttheNumberofVowelStringsinRangeFunc, MaximumLengthofaConcatenatedStringwithUniqueCharactersFunc, LeftandRightSumDifferencesFunc, FindtheArrayConcatenationValueFunc, TakeGiftsFromtheRichestPileFunc, NumberofArithmeticTripletsFunc, MakeTheStringGreatFunc,
             SeparatetheDigitsinanArrayFunc, CountDistinctNumbersonBoardFunc, DifferenceBetweenElementSumandDigitSumofanArrayFunc, MaximumCountofPositiveIntegerandNegativeIntegerFunc, CategorizeBoxAccordingtoCriteriaFunc, CounttheDigitsThatDivideaNumberFunc, CountPrefixandSuffixPairsIFunc, MaximumNumberofWordsYouCanTypeFunc,
             ShortestDistancetoTargetStringinaCircularArrayFunc, FindFirstPalindromicStringintheArray, MaximumEnemyFortsThatCanBeCapturedFunc, CountPairsOfSimilarStringsFunc, DeleteGreatestValueinEachRowFunc, LongestUnequalAdjacentGroupsSubsequenceIFunc, MaximumNumberofOperationsWiththeSameScoreIFunc, HeightCheckerFunc,
             NumberofUnequalTripletsinArrayFunc, ConverttheTemperatureFunc, NumberofDistinctAveragesFunc, ApplyOperationstoanArrayFunc, AverageValueofEvenNumbersThatAreDivisiblebyThreeFunc, OddStringDifferenceFunc, EvaluateBooleanBinaryTreeFunc, LargestPositiveIntegerThatExistsWithItsNegativeFunc, LongerContiguousSegmentsofOnesthanZerosFunc,
@@ -115,6 +115,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void MakeTheStringGreatFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Make The String Great");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MakeTheStringGreat.Test.TestCases());
+        }
 
         private static void MaximumNestingDepthoftheParenthesesFunc()
         {
