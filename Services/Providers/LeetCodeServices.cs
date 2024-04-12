@@ -50,7 +50,7 @@ namespace CompetitiveProgramming.Services.Providers
             SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc, SumofSubarrayMinimumsFunc, CountLargestGroupFunc, TimeNeededtoBuyTicketsFunc,
             MinimumNumberGameFunc, CounttheNumberofIncremovableSubarraysIFunc, CheckifaStringIsanAcronymofWordsFunc, CountPairsWhoseSumisLessthanTargetFunc, LargestSubstringBetweenTwoEqualCharactersFunc, CheckifBitwiseORHasTrailingZerosFunc, FindtheLosersoftheCircularGameFunc, MakeArrayZerobySubtractingEqualAmountsFunc,
             RemoveTrailingZerosFromaStringFunc, NumberofEmployeesWhoMettheTargetFunc, SplitStringsbySeparatorFunc, CheckifArrayisGoodFunc, SumofSquaresofSpecialElementsFunc, LongestAlternatingSubarrayFunc, DetermineifStringHalvesAreAlikeFunc, NumberofSeniorCitizensFunc, MergeSimilarItemsFunc, FindtheMiddleIndexinArrayFunc,
-            MinimumNumberofStepstoMakeTwoStringsAnagramFunc, FindMaximumNumberofStringPairsFunc, CountElementsWithMaximumFrequencyFunc, MaximumAreaofLongestDiagonalRectangleFunc, SmallestMissingIntegerGreaterThanSequentialPrefixSumFunc, MinimumStringLengthAfterRemovingSubstringsFunc, SmallestEvenMultipleFunc,
+            MinimumNumberofStepstoMakeTwoStringsAnagramFunc, FindMaximumNumberofStringPairsFunc, CountElementsWithMaximumFrequencyFunc, MaximumAreaofLongestDiagonalRectangleFunc, SmallestMissingIntegerGreaterThanSequentialPrefixSumFunc, MinimumStringLengthAfterRemovingSubstringsFunc, SmallestEvenMultipleFunc, KeyboardRowFunc,
             LongestEvenOddSubarrayWithThresholdFunc, NumberofBeautifulPairsFunc, TotalDistanceTraveledFunc, NeitherMinimumnorMaximumFunc, SemiOrderedPermutationFunc, CheckifTheNumberisFascinatingFunc, MinimizeStringLengthFunc, LexicographicallySmallestPalindromeFunc, FindthePivotIntegerFunc, RemoveLetterToEqualizeFrequencyFunc,
             FindtheMaximumDivisibilityScoreFunc, RowWithMaximumOnesFunc, FindtheWidthofColumnsofaGridFunc, FindtheLongestBalancedSubstringofaBinaryStringFunc, MinimumNumberofPushestoTypeWordIFunc, DivideanArrayIntoSubarraysWithMinimumCostIFunc, FormSmallestNumberFromTwoDigitArraysFunc, BinaryPrefixDivisibleByFiveFunc,
             NumberofEvenandOddBitsFunc, DistributeMoneytoMaximumChildrenFunc, CounttheNumberofVowelStringsinRangeFunc, MaximumLengthofaConcatenatedStringwithUniqueCharactersFunc, LeftandRightSumDifferencesFunc, FindtheArrayConcatenationValueFunc, TakeGiftsFromtheRichestPileFunc, NumberofArithmeticTripletsFunc, MakeTheStringGreatFunc,
@@ -115,6 +115,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void KeyboardRowFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Keyboard Row");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.KeyboardRow.Test.TestCases());
+        }
 
         private static void RemoveKDigitsFunc()
         {
