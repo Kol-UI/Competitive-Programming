@@ -58,7 +58,7 @@ namespace CompetitiveProgramming.Services.Providers
             ShortestDistancetoTargetStringinaCircularArrayFunc, FindFirstPalindromicStringintheArray, MaximumEnemyFortsThatCanBeCapturedFunc, CountPairsOfSimilarStringsFunc, DeleteGreatestValueinEachRowFunc, LongestUnequalAdjacentGroupsSubsequenceIFunc, MaximumNumberofOperationsWiththeSameScoreIFunc, HeightCheckerFunc,
             NumberofUnequalTripletsinArrayFunc, ConverttheTemperatureFunc, NumberofDistinctAveragesFunc, ApplyOperationstoanArrayFunc, AverageValueofEvenNumbersThatAreDivisiblebyThreeFunc, OddStringDifferenceFunc, EvaluateBooleanBinaryTreeFunc, LargestPositiveIntegerThatExistsWithItsNegativeFunc, LongerContiguousSegmentsofOnesthanZerosFunc,
             DetermineifTwoEventsHaveConflictFunc, NumberofCommonFactorsFunc, MinimumAmountofTimetoFillCupsFunc, TheEmployeeThatWorkedontheLongestTaskFunc, MinimumRecolorstoGetKConsecutiveBlackBlocksFunc, MinimumHoursofTrainingtoWinaCompetitionFunc, PartitionArrayIntoThreePartsWithEqualSumFunc, SumofAllSubsetXORTotalsFunc,
-            FindAllKDistantIndicesinanArrayFunc, RemoveOutermostParenthesesFunc, MinimumOperationstoExceedThresholdValueIFunc, DistributeElementsIntoTwoArraysIFunc,
+            FindAllKDistantIndicesinanArrayFunc, RemoveOutermostParenthesesFunc, MinimumOperationstoExceedThresholdValueIFunc, DistributeElementsIntoTwoArraysIFunc, IslandPerimeterFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -114,7 +114,14 @@ namespace CompetitiveProgramming.Services.Providers
             SubarrayswithKDifferentIntegersFunc,
         };
 
-        // Functions
+        // Functions 
+
+        private static void IslandPerimeterFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Island Perimeter");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.IslandPerimeter.Test.TestCases());
+        }
 
         private static void KeyboardRowFunc()
         {
