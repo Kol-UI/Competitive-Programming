@@ -58,7 +58,7 @@ namespace CompetitiveProgramming.Services.Providers
             ShortestDistancetoTargetStringinaCircularArrayFunc, FindFirstPalindromicStringintheArray, MaximumEnemyFortsThatCanBeCapturedFunc, CountPairsOfSimilarStringsFunc, DeleteGreatestValueinEachRowFunc, LongestUnequalAdjacentGroupsSubsequenceIFunc, MaximumNumberofOperationsWiththeSameScoreIFunc, HeightCheckerFunc,
             NumberofUnequalTripletsinArrayFunc, ConverttheTemperatureFunc, NumberofDistinctAveragesFunc, ApplyOperationstoanArrayFunc, AverageValueofEvenNumbersThatAreDivisiblebyThreeFunc, OddStringDifferenceFunc, EvaluateBooleanBinaryTreeFunc, LargestPositiveIntegerThatExistsWithItsNegativeFunc, LongerContiguousSegmentsofOnesthanZerosFunc,
             DetermineifTwoEventsHaveConflictFunc, NumberofCommonFactorsFunc, MinimumAmountofTimetoFillCupsFunc, TheEmployeeThatWorkedontheLongestTaskFunc, MinimumRecolorstoGetKConsecutiveBlackBlocksFunc, MinimumHoursofTrainingtoWinaCompetitionFunc, PartitionArrayIntoThreePartsWithEqualSumFunc, SumofAllSubsetXORTotalsFunc,
-            FindAllKDistantIndicesinanArrayFunc, RemoveOutermostParenthesesFunc, MinimumOperationstoExceedThresholdValueIFunc, DistributeElementsIntoTwoArraysIFunc, IslandPerimeterFunc,
+            FindAllKDistantIndicesinanArrayFunc, RemoveOutermostParenthesesFunc, MinimumOperationstoExceedThresholdValueIFunc, DistributeElementsIntoTwoArraysIFunc, IslandPerimeterFunc, HowManyNumbersAreSmallerThantheCurrentNumberFunc,
         };
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
@@ -115,6 +115,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void HowManyNumbersAreSmallerThantheCurrentNumberFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("How Many Numbers Are Smaller Than the Current Number");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.HowManyNumbersAreSmallerThantheCurrentNumber.Test.TestCases());
+        }
 
         private static void IslandPerimeterFunc()
         {
