@@ -35,7 +35,7 @@ namespace CompetitiveProgramming.Services.Providers
             FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ValidPerfectSquareFunc, ArrangingCoinsFunc, BaseballGameFunc, KeysandRoomsFunc, SumofLeftLeavesFunc, BinaryTreeInorderTraversalFunc, SortthePeopleFunc, AssignCookiesFunc, NumberofChangingKeysFunc, CountDaysSpentTogetherFunc,
             RobotReturntoOriginFunc, FindWinneronaTicTacToeGameFunc, LemonadeChangeFunc, LargestPerimeterTriangleFunc, CheckIfItIsaStraightLineFunc, DeleteColumnstoMakeSortedFunc, GuessNumberHigherorLowerFunc, ExcelSheetColumnTitleFunc, ImageSmootherFunc, CalculateDelayedArrivalTimeFunc, FindtheSumofEncryptedIntegersFunc,
             ReverseVowelsofaStringFunc, CountingBitsFunc, IsSubsequenceFunc, MinCostClimbingStairsFunc, MaximumAverageSubarrayIFunc, DesignParkingSystemFunc, LeafSimilarTreesFunc, IntersectionofTwoArraysIIFunc, RemoveElementFunc, FindMissingandRepeatedValuesFunc, AntontheBoundaryFunc, ExistenceofaSubstringinaStringandItsReverseFunc,
-            FindtheHighestAltitudeFunc, FindPivotIndexFunc, UniqueNumberofOccurrencesFunc, MajorityElementFunc, GoalParserInterpretationFunc, AddtoArrayFormofIntegerFunc, DetectCapitalFunc, ValidAnagramFunc, ImplementStackusingQueuesFunc, MaxPairSuminanArrayFunc, MaximumDifferencebyRemappingaDigitFunc,
+            FindtheHighestAltitudeFunc, FindPivotIndexFunc, UniqueNumberofOccurrencesFunc, MajorityElementFunc, GoalParserInterpretationFunc, AddtoArrayFormofIntegerFunc, DetectCapitalFunc, ValidAnagramFunc, ImplementStackusingQueuesFunc, MaxPairSuminanArrayFunc, MaximumDifferencebyRemappingaDigitFunc, CounttheNumberofSpecialCharactersIFunc,
             FloodFillFunc, HappyNumberFunc, DecryptStringfromAlphabettoIntegerMappingFunc, TheKWeakestRowsinaMatrixFunc, CheckifOneStringSwapCanMakeStringsEqualFunc, MergeTwoBinaryTreesFunc, BinaryTreePreorderTraversalFunc, FindWordsContainingCharacterFunc, PrimeInDiagonalFunc, DayoftheYearFunc, CountSpecialQuadrupletsFunc,
             SubtracttheProductandSumofDigitsofanIntegerFunc, SpecialArrayWithXElementsGreaterThanorEqualXFunc, SqrtxFunc, FindtheDistanceValueBetweenTwoArraysFunc, SortColorsFunc, ReverseStringFunc, IntersectionofTwoLinkedListsFunc, ExcelSheetColumnNumberFunc, MergeTwoTwoDArraysbySummingValuesFunc, NumberofStudentsUnabletoEatLunchFunc,
             SumofAllOddLengthSubarraysFunc, NextGreaterElementIFunc, SquaresofaSortedArrayFunc, FibonacciNumberFunc, FindNearestPointThatHastheSameXorYCoordinateFunc, NaryTreePreorderTraversalFunc, MaximumAscendingSubarraySumFunc, DestinationCityFunc, FindtheDistinctDifferenceArrayFunc, ReformatTheStringFunc,
@@ -116,6 +116,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void CounttheNumberofSpecialCharactersIFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count the Number of Special Characters I");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CounttheNumberofSpecialCharactersI.Test.TestCases());
+        }
 
         private static void LongestSubsequenceWithLimitedSumFunc()
         {
