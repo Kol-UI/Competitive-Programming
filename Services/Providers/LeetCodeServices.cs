@@ -112,10 +112,17 @@ namespace CompetitiveProgramming.Services.Providers
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc, MaxPointsonaLineFunc, MaximumRunningTimeofNComputersFunc, DesignGraphWithShortestPathCalculatorFunc, MinimumDifficultyofaJobScheduleFunc, ArithmeticSlicesIISubsequenceFunc, LongestValidParenthesesFunc, KInversePairsArrayFunc,
             CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc, SlidingWindowMaximumFunc, MaximumScoreofaGoodSubarrayFunc, NumberofWaystoDivideaLongCorridorFunc, LargestRectangleinHistogramFunc, FindMedianfromDataStreamFunc, NumberofSubmatricesThatSumtoTargetFunc, MaximalRectangleFunc,
             FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc, MinimumReplacementstoSorttheArrayFunc, MedianofTwoSortedArraysFunc, BuildArrayWhereYouCanFindTheMaximumExactlyKComparisonsFunc, StringCompressionIIFunc, MaximumProfitinJobSchedulingFunc, CherryPickupIIFunc, MeetingRoomsIIIFunc, FindAllPeopleWithSecretFunc, GreatestCommonDivisorTraversalFunc,
-            SubarrayswithKDifferentIntegersFunc, MinimumFallingPathSumIIFunc,
+            SubarrayswithKDifferentIntegersFunc, MinimumFallingPathSumIIFunc, FreedomTrailFunc,
         };
 
         // Functions 
+
+        private static void FreedomTrailFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Freedom Trail");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FreedomTrail.Test.TestCases());
+        }
 
         private static void LongestIdealSubsequenceFunc()
         {
