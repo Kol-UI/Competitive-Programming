@@ -50,5 +50,12 @@ namespace CompetitiveProgramming.Helpers
 
             return merged.ToArray();
         }
+
+        // Input: words = ["a","b","c","ab","bc","abc"], s = "abc" return 3
+        // The strings in words which are a prefix of s = "abc" are: "a", "ab", and "abc".
+        public static int CountPrefixes(string[] words, string s)
+        {
+            return words.Count(i => s.StartsWith(i));
+        }
     }
 }
