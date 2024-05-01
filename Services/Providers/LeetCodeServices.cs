@@ -40,7 +40,7 @@ namespace CompetitiveProgramming.Services.Providers
             SubtracttheProductandSumofDigitsofanIntegerFunc, SpecialArrayWithXElementsGreaterThanorEqualXFunc, SqrtxFunc, FindtheDistanceValueBetweenTwoArraysFunc, SortColorsFunc, ReverseStringFunc, IntersectionofTwoLinkedListsFunc, ExcelSheetColumnNumberFunc, MergeTwoTwoDArraysbySummingValuesFunc, NumberofStudentsUnabletoEatLunchFunc,
             SumofAllOddLengthSubarraysFunc, NextGreaterElementIFunc, SquaresofaSortedArrayFunc, FibonacciNumberFunc, FindNearestPointThatHastheSameXorYCoordinateFunc, NaryTreePreorderTraversalFunc, MaximumAscendingSubarraySumFunc, DestinationCityFunc, FindtheDistinctDifferenceArrayFunc, ReformatTheStringFunc, GreatestEnglishLetterinUpperandLowerCaseFunc,
             Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc, MakeThreeStringsEqualFunc, FaultyKeyboardFunc, MinimumCommonValueFunc, ReplaceAllDigitswithCharactersFunc,
-            ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc, UniqueLength3PalindromicSubsequencesFunc, TypeofTriangleIIFunc, IntersectionofTwoArraysFunc,
+            ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc, UniqueLength3PalindromicSubsequencesFunc, TypeofTriangleIIFunc, IntersectionofTwoArraysFunc, ReversePrefixofWordFunc,
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc, MinimumOperationstoCollectElementsFunc, MissingNumberFunc, SplittheArrayFunc, DistanceBetweenBusStopsFunc,
             DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc, SpecialPositionsinaBinaryMatrixFunc, RangeSumofBSTFunc, MinimumCutstoDivideaCircleFunc, MaximumPopulationYearFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc, BuyTwoChocolatesFunc, ModifytheMatrixFunc, LuckyNumbersinaMatrixFunc, LongestSubsequenceWithLimitedSumFunc,
@@ -116,6 +116,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void ReversePrefixofWordFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reverse Prefix of Word");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ReversePrefixofWord.Test.TestCases());
+        }
 
         private static void NumberofWonderfulSubstringsFunc()
         {
