@@ -29,7 +29,7 @@ namespace CompetitiveProgramming.Services.Providers
             AddBinaryFunc, DefanginganIPAddressFunc, FindLuckyIntegerinanArrayFunc, SearchInsertPositionFunc, FindtheIndexoftheFirstOccurrenceinaStringFunc, MinimumDistanceBetweenBSTNodesFunc, PascalsTriangleIIFunc, DiameterofBinaryTreeFunc, MaximumSumWithExactlyKElementsFunc, DivisorGameFunc, SumofDigitsinBaseKFunc, NumberofStringsThatAppearasSubstringsinWordFunc,
             KthMissingPositiveNumberFunc, ConvertSortedArraytoBinarySearchTreeFunc, CanPlaceFlowersFunc, KItemsWiththeMaximumSumFunc, BinarySearchFunc, MiddleoftheLinkedListFunc, ReshapetheMatrixFunc, MergeSortedArrayFunc, FindChampionIFunc, FindtheMaximumAchievableNumberFunc, FindSubarraysWithEqualSumFunc, BinaryWatchFunc,
             CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc, DesignHashMapFunc, AlternatingDigitSumFunc, TwoSumFunc, BalancedBinaryTreeFunc, FurthestPointFromOriginFunc, PassthePillowFunc, AppleRedistributionintoBoxesFunc, CountPrefixesofaGivenStringFunc,
-            BestPokerHandFunc, LastStoneWeightFunc, AddDigitsFunc, BulbSwitcherFunc, FindtheDifferenceFunc, RepeatedSubstringPatternFunc, VerifyinganAlienDictionaryFunc, MinimumAbsoluteDifferenceinBSTFunc, BackspaceStringCompareFunc, CheckifStringsCanbeMadeEqualWithOperationsIFunc, TwoOutofThreeFunc, SortingtheSentenceFunc,
+            BestPokerHandFunc, LastStoneWeightFunc, AddDigitsFunc, BulbSwitcherFunc, FindtheDifferenceFunc, RepeatedSubstringPatternFunc, VerifyinganAlienDictionaryFunc, MinimumAbsoluteDifferenceinBSTFunc, BackspaceStringCompareFunc, CheckifStringsCanbeMadeEqualWithOperationsIFunc, TwoOutofThreeFunc, SortingtheSentenceFunc, RelativeSortArrayFunc,
             MoveZeroesFunc, PlusOneFunc, AverageSalaryExcludingtheMinimumandMaximumSalaryFunc, FindifPathExistsinGraphFunc, RichestCustomerWealthFunc, NumberofRecentCallsFunc, LongestPalindromeFunc, BuddyStringsFunc, NumberofGoodPairsFunc, RedistributeCharacterstoMakeAllStringsEqualFunc, DivideArrayIntoEqualPairsFunc, DeleteCharacterstoMakeFancyStringFunc,
             SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, LengthofLastWordFunc, ToLowerCaseFunc, ConvertBinaryNumberinaLinkedListtoIntegerFunc, FirstBadVersionFunc, SubtreeofAnotherTreeFunc, MaximumProductDifferenceBetweenTwoPairsFunc, LargestLocalValuesinaMatrixFunc, ShuffleStringFunc,
             FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ValidPerfectSquareFunc, ArrangingCoinsFunc, BaseballGameFunc, KeysandRoomsFunc, SumofLeftLeavesFunc, BinaryTreeInorderTraversalFunc, SortthePeopleFunc, AssignCookiesFunc, NumberofChangingKeysFunc, CountDaysSpentTogetherFunc, ThreeDivisorsFunc,
@@ -116,6 +116,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void RelativeSortArrayFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Relative Sort Array");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.RelativeSortArray.Test.TestCases());
+        }
 
         private static void NumberofStringsThatAppearasSubstringsinWordFunc()
         {
