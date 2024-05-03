@@ -42,13 +42,13 @@ namespace CompetitiveProgramming.Services.Providers
             Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc, MakeThreeStringsEqualFunc, FaultyKeyboardFunc, MinimumCommonValueFunc, ReplaceAllDigitswithCharactersFunc,
             ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc, UniqueLength3PalindromicSubsequencesFunc, TypeofTriangleIIFunc, IntersectionofTwoArraysFunc, ReversePrefixofWordFunc,
             InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc, MinimumOperationstoCollectElementsFunc, MissingNumberFunc, SplittheArrayFunc, DistanceBetweenBusStopsFunc,
-            DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc, SpecialPositionsinaBinaryMatrixFunc, RangeSumofBSTFunc, MinimumCutstoDivideaCircleFunc, MaximumPopulationYearFunc,
+            DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc, SpecialPositionsinaBinaryMatrixFunc, RangeSumofBSTFunc, MinimumCutstoDivideaCircleFunc, MaximumPopulationYearFunc, DistributeCandiestoPeopleFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc, BuyTwoChocolatesFunc, ModifytheMatrixFunc, LuckyNumbersinaMatrixFunc, LongestSubsequenceWithLimitedSumFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc, MaximumProductofTwoElementsinanArrayFunc, OccurrencesAfterBigramFunc, MaximumNestingDepthoftheParenthesesFunc,
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc, MaximumOddBinaryNumberFunc, FirstLettertoAppearTwiceFunc, MostFrequentEvenElementFunc,
             LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc, ElementAppearingMoreThanInSortedArrayFunc, SplitWithMinimumSumFunc, CreateTargetArrayintheGivenOrderFunc,
             SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc, SumofSubarrayMinimumsFunc, CountLargestGroupFunc, TimeNeededtoBuyTicketsFunc,
-            MinimumNumberGameFunc, CounttheNumberofIncremovableSubarraysIFunc, CheckifaStringIsanAcronymofWordsFunc, CountPairsWhoseSumisLessthanTargetFunc, LargestSubstringBetweenTwoEqualCharactersFunc, CheckifBitwiseORHasTrailingZerosFunc, FindtheLosersoftheCircularGameFunc, MakeArrayZerobySubtractingEqualAmountsFunc,
+            MinimumNumberGameFunc, CounttheNumberofIncremovableSubarraysIFunc, CheckifaStringIsanAcronymofWordsFunc, CountPairsWhoseSumisLessthanTargetFunc, LargestSubstringBetweenTwoEqualCharactersFunc, CheckifBitwiseORHasTrailingZerosFunc, FindtheLosersoftheCircularGameFunc, MakeArrayZerobySubtractingEqualAmountsFunc, MinimumDistancetotheTargetElementFunc,
             RemoveTrailingZerosFromaStringFunc, NumberofEmployeesWhoMettheTargetFunc, SplitStringsbySeparatorFunc, CheckifArrayisGoodFunc, SumofSquaresofSpecialElementsFunc, LongestAlternatingSubarrayFunc, DetermineifStringHalvesAreAlikeFunc, NumberofSeniorCitizensFunc, MergeSimilarItemsFunc, FindtheMiddleIndexinArrayFunc,
             MinimumNumberofStepstoMakeTwoStringsAnagramFunc, FindMaximumNumberofStringPairsFunc, CountElementsWithMaximumFrequencyFunc, MaximumAreaofLongestDiagonalRectangleFunc, SmallestMissingIntegerGreaterThanSequentialPrefixSumFunc, MinimumStringLengthAfterRemovingSubstringsFunc, SmallestEvenMultipleFunc, KeyboardRowFunc,
             LongestEvenOddSubarrayWithThresholdFunc, NumberofBeautifulPairsFunc, TotalDistanceTraveledFunc, NeitherMinimumnorMaximumFunc, SemiOrderedPermutationFunc, CheckifTheNumberisFascinatingFunc, MinimizeStringLengthFunc, LexicographicallySmallestPalindromeFunc, FindthePivotIntegerFunc, RemoveLetterToEqualizeFrequencyFunc,
@@ -88,7 +88,7 @@ namespace CompetitiveProgramming.Services.Providers
             MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc, LongestRepeatingCharacterReplacementFunc, InsertintoaBinarySearchTreeFunc, HouseRobberIIFunc, BinaryTreeZigzagLevelOrderTraversalFunc, Searcha2DMatrixIIFunc, FindAllGroupsofFarmlandFunc,
             NextGreaterElementIIIFunc, SubsetsIIFunc, MinimumNumberofVerticestoReachAllNodesFunc, BasicCalculatorIIFunc, TopKFrequentWordsFunc, NextGreaterElementIIFunc, LinkedListinBinaryTreeFunc, MaximumSideLengthofaSquarewithSumLessthanorEqualtoThresholdFunc, CloneGraphFunc, CombinationsFunc, SurroundedRegionsFunc, PartitionArrayforMaximumSumFunc,
             SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc, CombinationSumFunc, CopyListwithRandomPointerFunc, MinimumGeneticMutationFunc, LongestZigZagPathinaBinaryTreeFunc, SubarrayProductLessThanKFunc, PermutationinStringFunc, BestTimetoBuyandSellStockwithCooldownFunc, SetMatrixZeroesFunc, OutofBoundaryPathsFunc, NumberofWonderfulSubstringsFunc,
-            LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc, MinimumTimetoCollectAllApplesinaTreeFunc, PathwithMaximumProbabilityFunc, FindDuplicateSubtreesFunc, PathSumIIIFunc, ConstructBinaryTreefromInorderandPostorderTraversalFunc, SequentialDigitsFunc,
+            LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc, MinimumTimetoCollectAllApplesinaTreeFunc, PathwithMaximumProbabilityFunc, FindDuplicateSubtreesFunc, PathSumIIIFunc, ConstructBinaryTreefromInorderandPostorderTraversalFunc, SequentialDigitsFunc, CompareVersionNumbersFunc,
             MinimumRemovetoMakeValidParenthesesFunc, FindEventualSafeStatesFunc, NaryTreeLevelOrderTraversalFunc, FlattenNestedListIteratorFunc, UniqueBinarySearchTreesIIFunc, FindLatestGroupofSizeMFunc, ReorderListFunc, ShortestPathVisitingAllNodesFunc, SortCharactersByFrequencyFunc, SumofMutatedArrayClosesttoTargetFunc, DivideArrayIntoArraysWithMaxDifferenceFunc,
             KClosestPointstoOriginFunc, CheckifThereisaValidPartitionForTheArrayFunc, MaximumLengthofPairChainFunc, MinimumPenaltyforaShopFunc, InterleavingStringFunc, MinimumSpeedtoArriveonTimeFunc, MinimumNumberofDaystoMakemBouquetsFunc, FairDistributionofCookiesFunc, RepeatedDNASequencesFunc, NumberofLongestIncreasingSubsequenceFunc, LongestIdealSubsequenceFunc,
             MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc, DeleteOperationforTwoStringsFunc, BitwiseANDofNumbersRangeFunc, MaximumNumberofRemovableCharactersFunc, FindKPairswithSmallestSumsFunc, MinimumAbsoluteSumDifferenceFunc, FindtheSmallestDivisorGivenaThresholdFunc, SplitLinkedListinPartsFunc, FlattenBinaryTreetoLinkedListFunc,
@@ -116,6 +116,27 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void MinimumDistancetotheTargetElementFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Distance to the Target Element");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumDistancetotheTargetElement.Test.TestCases());
+        }
+
+        private static void DistributeCandiestoPeopleFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Distribute Candies to People");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.DistributeCandiestoPeople.Test.TestCases());
+        }
+
+        private static void CompareVersionNumbersFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Compare Version Numbers");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CompareVersionNumbers.Test.TestCases());
+        }
 
         private static void RelativeSortArrayFunc()
         {
