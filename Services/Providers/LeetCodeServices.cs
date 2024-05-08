@@ -46,7 +46,7 @@ namespace CompetitiveProgramming.Services.Providers
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc, BuyTwoChocolatesFunc, ModifytheMatrixFunc, LuckyNumbersinaMatrixFunc, LongestSubsequenceWithLimitedSumFunc,
             CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc, MaximumProductofTwoElementsinanArrayFunc, OccurrencesAfterBigramFunc, MaximumNestingDepthoftheParenthesesFunc,
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc, MaximumOddBinaryNumberFunc, FirstLettertoAppearTwiceFunc, MostFrequentEvenElementFunc,
-            LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc, ElementAppearingMoreThanInSortedArrayFunc, SplitWithMinimumSumFunc, CreateTargetArrayintheGivenOrderFunc,
+            LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc, ElementAppearingMoreThanInSortedArrayFunc, SplitWithMinimumSumFunc, CreateTargetArrayintheGivenOrderFunc, RelativeRanksFunc,
             SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc, SumofSubarrayMinimumsFunc, CountLargestGroupFunc, TimeNeededtoBuyTicketsFunc,
             MinimumNumberGameFunc, CounttheNumberofIncremovableSubarraysIFunc, CheckifaStringIsanAcronymofWordsFunc, CountPairsWhoseSumisLessthanTargetFunc, LargestSubstringBetweenTwoEqualCharactersFunc, CheckifBitwiseORHasTrailingZerosFunc, FindtheLosersoftheCircularGameFunc, MakeArrayZerobySubtractingEqualAmountsFunc, MinimumDistancetotheTargetElementFunc,
             RemoveTrailingZerosFromaStringFunc, NumberofEmployeesWhoMettheTargetFunc, SplitStringsbySeparatorFunc, CheckifArrayisGoodFunc, SumofSquaresofSpecialElementsFunc, LongestAlternatingSubarrayFunc, DetermineifStringHalvesAreAlikeFunc, NumberofSeniorCitizensFunc, MergeSimilarItemsFunc, FindtheMiddleIndexinArrayFunc,
@@ -116,6 +116,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void RelativeRanksFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Relative Ranks");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.RelativeRanks.Test.TestCases());
+        }
 
         private static void MinimumDistancetotheTargetElementFunc()
         {
