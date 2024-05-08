@@ -45,5 +45,12 @@ namespace CompetitiveProgramming.Helpers
         {
             return String.Equals(string1, string2, StringComparison.OrdinalIgnoreCase);
         }
+
+        // Check if string ends with another one
+        // "test" "est" => true
+        public static bool CheckIfEndsWith(string str, string ending)
+        {
+            return str.EndsWith(ending);
+        }
     }
 }

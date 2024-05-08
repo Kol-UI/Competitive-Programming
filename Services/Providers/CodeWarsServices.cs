@@ -34,7 +34,7 @@ namespace CompetitiveProgramming.Services.Providers
 
         private static readonly Delegate[] codeWarsSevenKyuList = new Delegate[]
         {
-            ItIsIsogramFunc,
+            ItIsIsogramFunc, Stringendswith,
         };
 
         private static readonly Delegate[] codeWarsSixKyuList = new Delegate[]
@@ -43,6 +43,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void Stringendswith()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("String ends with?");
+            ResultTester.CheckSolution(ProblemOrigin.CodeWars, CodeWars.SevenKyu.Stringendswith.Test.TestCases());
+        }
 
         private static void HowgoodareyoureallyFunc()
         {
