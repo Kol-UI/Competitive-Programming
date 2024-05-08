@@ -25,7 +25,7 @@ namespace CompetitiveProgramming.Services.Providers
         private static readonly Delegate[] leetCodeEasyList = new Delegate[]
         {
             ClimbingStairsFunc, AddTwoIntegersFunc, NumberOfStepsFunc, ContainsDuplicateFunc, BestTimetoBuyandSellStockFunc, RangeSumQueryImmutableFunc, DesignHashSetFunc, SearchintoaBinarySearchTreeFunc, SameTreeFunc, AddStringsFunc, DeterminetheWinnerofaBowlingGameFunc, CircularSentenceFunc, CheckIfStringIsaPrefixofArrayFunc,
-            FirstUniqueCharacterinaStringFunc, SingleNumberFunc, FindJudgeFunc, ShuffleTheArrayFunc, CountOddNumbersInAnIntervalRangeFunc, RunningSumof1dArrayFunc, TwoSumIVInputisaBSTFunc, WordPatternFunc, SymmetricTreeFunc, FindtheKorofanArrayFunc, SumMultiplesFunc, SetMismatchFunc, MinimumNumberofMovestoSeatEveryoneFunc,
+            FirstUniqueCharacterinaStringFunc, SingleNumberFunc, FindJudgeFunc, ShuffleTheArrayFunc, CountOddNumbersInAnIntervalRangeFunc, RunningSumof1dArrayFunc, TwoSumIVInputisaBSTFunc, WordPatternFunc, SymmetricTreeFunc, FindtheKorofanArrayFunc, SumMultiplesFunc, SetMismatchFunc, MinimumNumberofMovestoSeatEveryoneFunc, ScoreofaStringFunc,
             AddBinaryFunc, DefanginganIPAddressFunc, FindLuckyIntegerinanArrayFunc, SearchInsertPositionFunc, FindtheIndexoftheFirstOccurrenceinaStringFunc, MinimumDistanceBetweenBSTNodesFunc, PascalsTriangleIIFunc, DiameterofBinaryTreeFunc, MaximumSumWithExactlyKElementsFunc, DivisorGameFunc, SumofDigitsinBaseKFunc, NumberofStringsThatAppearasSubstringsinWordFunc,
             KthMissingPositiveNumberFunc, ConvertSortedArraytoBinarySearchTreeFunc, CanPlaceFlowersFunc, KItemsWiththeMaximumSumFunc, BinarySearchFunc, MiddleoftheLinkedListFunc, ReshapetheMatrixFunc, MergeSortedArrayFunc, FindChampionIFunc, FindtheMaximumAchievableNumberFunc, FindSubarraysWithEqualSumFunc, BinaryWatchFunc,
             CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc, DesignHashMapFunc, AlternatingDigitSumFunc, TwoSumFunc, BalancedBinaryTreeFunc, FurthestPointFromOriginFunc, PassthePillowFunc, AppleRedistributionintoBoxesFunc, CountPrefixesofaGivenStringFunc,
@@ -116,6 +116,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void ScoreofaStringFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Score of a String");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ScoreofaString.Test.TestCases());
+        }
 
         private static void RelativeRanksFunc()
         {
