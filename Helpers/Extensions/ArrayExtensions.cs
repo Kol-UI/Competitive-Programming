@@ -57,5 +57,8 @@ namespace CompetitiveProgramming.Helpers
         {
             return words.Count(i => s.StartsWith(i));
         }
+
+        // Check if the sum of array is Even or Odd
+        public static string IsSumOddOrEven(int[] array) => array.Sum() % 2 == 0 ? "even" : "odd";
     }
 }

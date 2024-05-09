@@ -29,12 +29,12 @@ namespace CompetitiveProgramming.Services.Providers
             EvenOrOddFunc, SquareNSumFunc, FindthesmallestintegerinthearrayFunc, RemoveStringSpacesFunc, CountingsheepFunc, ConvertaStringtoaNumberFunc, MakeUpperCaseFunc, CalculateaverageFunc,
             BeginnerSeries2ClockFunc, OppositesAttractFunc, SquaringAnArgumentFunc, ReturningStringsFunc, ReturnToSanityFunc, ReturnHelloWorldFunc, BeginnerSeries1SchoolPaperworkFunc,
             YouCantCodeUnderPressure1Func, CenturyFromYearFunc, BasicMathematicalOperationsFunc, ConvertNumberToReversedArrayOfDigitsFunc, AbbreviateaTwoWordNameFunc, SimplemultiplicationFunc,
-            IshegonnasurviveFunc, FakeBinaryFunc, CountofpositivesSumofnegativesFunc, BeginnerReducebutGrowFunc, HowgoodareyoureallyFunc,
+            IshegonnasurviveFunc, FakeBinaryFunc, CountofpositivesSumofnegativesFunc, BeginnerReducebutGrowFunc, HowgoodareyoureallyFunc, ReversedsequenceFunc,
         };
 
         private static readonly Delegate[] codeWarsSevenKyuList = new Delegate[]
         {
-            ItIsIsogramFunc, Stringendswith,
+            ItIsIsogramFunc, Stringendswith, SumofthefirstnthtermofSeriesFunc, OddorEvenFunc, DisemvowelTrollsFunc,
         };
 
         private static readonly Delegate[] codeWarsSixKyuList = new Delegate[]
@@ -43,6 +43,34 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void DisemvowelTrollsFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Disemvowel Trolls");
+            ResultTester.CheckSolution(ProblemOrigin.CodeWars, CodeWars.SevenKyu.DisemvowelTrolls.Test.TestCases());
+        }
+
+        private static void ReversedsequenceFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reversed sequence");
+            ResultTester.CheckSolution(ProblemOrigin.CodeWars, CodeWars.EightKyu.Reversedsequence.Test.TestCases());
+        }
+
+        private static void OddorEvenFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Odd or Even");
+            ResultTester.CheckSolution(ProblemOrigin.CodeWars, CodeWars.SevenKyu.OddorEven.Test.TestCases());
+        }
+
+        private static void SumofthefirstnthtermofSeriesFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Sum of the first nth term of Series");
+            ResultTester.CheckSolution(ProblemOrigin.CodeWars, CodeWars.SevenKyu.SumofthefirstnthtermofSeries.Test.TestCases());
+        }
 
         private static void Stringendswith()
         {

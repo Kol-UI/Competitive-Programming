@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace CompetitiveProgramming.Helpers
 {
     public class StringUtils
@@ -52,5 +54,8 @@ namespace CompetitiveProgramming.Helpers
         {
             return str.EndsWith(ending);
         }
+
+        // Remove letters from a string => "[aeuoi]" will be remove from str, also works with case
+        public static string RemoveLettersFromString(string str, string toRemove) => Regex.Replace(str, "[" + toRemove + "]", string.Empty, RegexOptions.IgnoreCase);
     }
 }
