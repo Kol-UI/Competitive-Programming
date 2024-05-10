@@ -94,7 +94,7 @@ namespace CompetitiveProgramming.Services.Providers
             MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc, DeleteOperationforTwoStringsFunc, BitwiseANDofNumbersRangeFunc, MaximumNumberofRemovableCharactersFunc, FindKPairswithSmallestSumsFunc, MinimumAbsoluteSumDifferenceFunc, FindtheSmallestDivisorGivenaThresholdFunc, SplitLinkedListinPartsFunc, FlattenBinaryTreetoLinkedListFunc,
             DesignAuthenticationManagerFunc, InsertDeleteGetRandomFunc, MyCalendarIFunc, MaximizetheConfusionofanExamFunc, AllNodesDistanceKinBinaryTreeFunc, LongestPalindromebyConcatenatingTwoLetterWordsFunc, PathWithMinimumEffortFunc, WhereWilltheBallFallFunc, MinimumASCIIDeleteSumforTwoStringsFunc, CombinationSumIIFunc, LongestConsecutiveSequenceFunc,
             GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc, MinimumOperationstoReduceXtoZeroFunc, ChampagneTowerFunc, RemoveDuplicateLettersFunc, DecodedStringatIndexFunc, OneThreeTwoPatternFunc, RemoveColoredPiecesifBothNeighborsaretheSameColorFunc, RemoveKDigitsFunc,
-            MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc, EliminateMaximumNumberofMonstersFunc,
+            MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc, EliminateMaximumNumberofMonstersFunc, KthSmallestPrimeFractionFunc,
             DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc, PseudoPalindromicPathsinaBinaryTreeFunc,
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc, FindPlayersWithZeroorOneLossesFunc,
             WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc, MinimumNumberofOperationstoMakeArrayEmptyFunc, AmountofTimeforBinaryTreetoBeInfectedFunc, MaximumDifferenceBetweenNodeandAncestorFunc,
@@ -116,6 +116,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void KthSmallestPrimeFractionFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("K-th Smallest Prime Fraction");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.KthSmallestPrimeFraction.Test.TestCases());
+        }
 
         private static void MaximizeHappinessofSelectedChildrenFunc()
         {
