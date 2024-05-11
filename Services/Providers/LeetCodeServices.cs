@@ -112,10 +112,17 @@ namespace CompetitiveProgramming.Services.Providers
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc, MaxPointsonaLineFunc, MaximumRunningTimeofNComputersFunc, DesignGraphWithShortestPathCalculatorFunc, MinimumDifficultyofaJobScheduleFunc, ArithmeticSlicesIISubsequenceFunc, LongestValidParenthesesFunc, KInversePairsArrayFunc,
             CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc, SlidingWindowMaximumFunc, MaximumScoreofaGoodSubarrayFunc, NumberofWaystoDivideaLongCorridorFunc, LargestRectangleinHistogramFunc, FindMedianfromDataStreamFunc, NumberofSubmatricesThatSumtoTargetFunc, MaximalRectangleFunc,
             FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc, MinimumReplacementstoSorttheArrayFunc, MedianofTwoSortedArraysFunc, BuildArrayWhereYouCanFindTheMaximumExactlyKComparisonsFunc, StringCompressionIIFunc, MaximumProfitinJobSchedulingFunc, CherryPickupIIFunc, MeetingRoomsIIIFunc, FindAllPeopleWithSecretFunc, GreatestCommonDivisorTraversalFunc,
-            SubarrayswithKDifferentIntegersFunc, MinimumFallingPathSumIIFunc, FreedomTrailFunc,
+            SubarrayswithKDifferentIntegersFunc, MinimumFallingPathSumIIFunc, FreedomTrailFunc, MinimumCosttoHireKWorkersFunc,
         };
 
         // Functions 
+
+        private static void MinimumCosttoHireKWorkersFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Cost to Hire K Workers");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumCosttoHireKWorkers.Test.TestCases());
+        }
 
         private static void KthSmallestPrimeFractionFunc()
         {
