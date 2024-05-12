@@ -19,7 +19,7 @@ namespace CompetitiveProgramming.Services.Providers
             UltraFastMathematicianFunc, IsyourhorseshoeontheotherhoofFunc, HulkFunc, DivisibilityProblemFunc, IWannaBetheGuyFunc, ArrivaloftheGeneralFunc, PangramFunc, InsomniacureFunc, AntonandLettersFunc, HittheLotteryFunc, GamesFunc, AntonandPolyhedronsFunc, CandiesandTwoSistersFunc,
             AmusingJokeFunc, FoxAndSnakeFunc, PoliceRecruitsFunc, IloveusernameFunc, NewYearandHurryFunc, SumofRoundNumbersFunc, TheNewYearMeetingFriendsFunc, VasyatheHipsterFunc, BuyaShovelFunc, RestoringThreeNumbersFunc, SoftDrinkingFunc, RemoveSmallestFunc, ProblemsolvingLogFunc,
             LOLLoversFunc, CoverinWaterFunc, HelpFarAwayKingdomFunc, HaikuFunc, LLSPFunc, TrickyTemplateFunc, PlusMinusSplitFunc, WeGotEverythingCoveredFunc, SquareFunc, YetAnotherTwoIntegersProblemFunc, SumFunc, YESorYESFunc, AgainTwentyFiveFunc, SerejaandDimaFunc, MakeEqualFunc, LuckyFunc,
-            SpyDetectedFunc, MarathonFunc,
+            SpyDetectedFunc, MarathonFunc, ContestProposalFunc,
         };
 
         // Functions 
@@ -301,6 +301,13 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Insomnia cure");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces);
+        }
+
+        private static void ContestProposalFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Contest Proposal");
             ResultTester.SpecialTestCase(ProblemOrigin.CodeForces);
         }
 
