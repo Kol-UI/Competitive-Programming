@@ -34,7 +34,7 @@ namespace CompetitiveProgramming.Services.Providers
 
         private static readonly Delegate[] codeWarsSevenKyuList = new Delegate[]
         {
-            ItIsIsogramFunc, Stringendswith, SumofthefirstnthtermofSeriesFunc, OddorEvenFunc, DisemvowelTrollsFunc,
+            ItIsIsogramFunc, Stringendswith, SumofthefirstnthtermofSeriesFunc, OddorEvenFunc, DisemvowelTrollsFunc, FriendorFoeFunc,
         };
 
         private static readonly Delegate[] codeWarsSixKyuList = new Delegate[]
@@ -43,6 +43,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void FriendorFoeFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Friend or Foe");
+            ResultTester.CheckSolution(ProblemOrigin.CodeWars, CodeWars.SevenKyu.FriendorFoe.Test.TestCases());
+        }
 
         private static void DisemvowelTrollsFunc()
         {
