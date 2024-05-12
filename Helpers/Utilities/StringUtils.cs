@@ -57,5 +57,8 @@ namespace CompetitiveProgramming.Helpers
 
         // Remove letters from a string => "[aeuoi]" will be remove from str, also works with case
         public static string RemoveLettersFromString(string str, string toRemove) => Regex.Replace(str, "[" + toRemove + "]", string.Empty, RegexOptions.IgnoreCase);
+
+        // Check if pin is 4 or 6 digits
+        public static bool IsValidPinLength(string pin) => pin.All(char.IsDigit) && (pin.Length == 6 || pin.Length == 4);
     }
 }

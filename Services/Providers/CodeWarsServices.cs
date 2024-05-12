@@ -34,7 +34,7 @@ namespace CompetitiveProgramming.Services.Providers
 
         private static readonly Delegate[] codeWarsSevenKyuList = new Delegate[]
         {
-            ItIsIsogramFunc, Stringendswith, SumofthefirstnthtermofSeriesFunc, OddorEvenFunc, DisemvowelTrollsFunc, FriendorFoeFunc,
+            ItIsIsogramFunc, Stringendswith, SumofthefirstnthtermofSeriesFunc, OddorEvenFunc, DisemvowelTrollsFunc, FriendorFoeFunc, RegexvalidatePINcodeFunc,
         };
 
         private static readonly Delegate[] codeWarsSixKyuList = new Delegate[]
@@ -43,6 +43,13 @@ namespace CompetitiveProgramming.Services.Providers
         };
 
         // Functions 
+
+        private static void RegexvalidatePINcodeFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Regex validate PIN code");
+            ResultTester.CheckSolution(ProblemOrigin.CodeWars, CodeWars.SevenKyu.RegexvalidatePINcode.Test.TestCases());
+        }
 
         private static void FriendorFoeFunc()
         {
