@@ -97,7 +97,7 @@ namespace CompetitiveProgramming.Services.Providers
             MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc, EliminateMaximumNumberofMonstersFunc, KthSmallestPrimeFractionFunc,
             DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc, PseudoPalindromicPathsinaBinaryTreeFunc,
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc, FindPlayersWithZeroorOneLossesFunc,
-            WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc, MinimumNumberofOperationstoMakeArrayEmptyFunc, AmountofTimeforBinaryTreetoBeInfectedFunc, MaximumDifferenceBetweenNodeandAncestorFunc,
+            WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc, MinimumNumberofOperationstoMakeArrayEmptyFunc, AmountofTimeforBinaryTreetoBeInfectedFunc, MaximumDifferenceBetweenNodeandAncestorFunc, FindtheSafestPathinaGridFunc,
             RearrangeArrayElementsbySignFunc, FindPolygonWiththeLargestPerimeterFunc, LeastNumberofUniqueIntegersafterKRemovalsFunc, FurthestBuildingYouCanReachFunc, FindBottomLeftTreeValueFunc, EvenOddTreeFunc, MinimumLengthofStringAfterDeletingSimilarEndsFunc, CustomSortStringFunc, RemoveZeroSumConsecutiveNodesfromLinkedListFunc, MinimumNumberofOperationstoMakeArrayXOREqualtoKFunc,
         };
 
@@ -544,10 +544,17 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
+        private static void FindtheSafestPathinaGridFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find the Safest Path in a Grid");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
+        }
+
         private static void PathwithMaximumGoldFunc()
         {
             StyleHelper.Space();
-            StyleHelper.Title("DPath with Maximum Gold");
+            StyleHelper.Title("Path with Maximum Gold");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
