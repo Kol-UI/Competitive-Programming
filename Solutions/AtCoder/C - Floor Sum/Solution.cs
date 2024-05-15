@@ -1,5 +1,7 @@
 using System;
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.AtCoder.CFloorSum
@@ -32,4 +34,14 @@ namespace CompetitiveProgramming.AtCoder.CFloorSum
         }
     }
     */
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Floor Sum");
+            ResultTester.SpecialTestCase(ProblemOrigin.AtCoder, ProblemCategory.BeginnerAC);
+        }
+    }
 }

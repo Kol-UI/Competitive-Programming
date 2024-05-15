@@ -2,6 +2,9 @@
 
 using System;
 using System.Collections.Generic;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.AtCoder.GSCC
 {
     class Program
@@ -100,4 +103,13 @@ namespace CompetitiveProgramming.AtCoder.GSCC
         }
     }
 
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("SCC");
+            ResultTester.SpecialTestCase(ProblemOrigin.AtCoder, ProblemCategory.BeginnerAC);
+        }
+    }
 }

@@ -1,6 +1,8 @@
 // A - Disjoint Set Union
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.AtCoder.ADisjointSetUnion
@@ -110,7 +112,7 @@ namespace CompetitiveProgramming.AtCoder.ADisjointSetUnion
         
     }
 
-    public class Test
+    public class Test : BaseSolution
     {
         public static bool[] TestCases()
         {
@@ -131,6 +133,13 @@ namespace CompetitiveProgramming.AtCoder.ADisjointSetUnion
             bool result = Solution.DisjointSetUnion(input, expected);
             bool[] results = new bool[] { result };
             return results;
+        }
+
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Disjoint Set Union");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.AtCoder, ProblemCategory.BeginnerAC, TestCases());
         }
     }
 }

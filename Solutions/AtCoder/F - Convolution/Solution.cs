@@ -1,6 +1,9 @@
 // Convolution
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.AtCoder.FConvolution
 {
     class Program
@@ -31,4 +34,13 @@ namespace CompetitiveProgramming.AtCoder.FConvolution
         }
     }
 
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Convolution");
+            ResultTester.SpecialTestCase(ProblemOrigin.AtCoder, ProblemCategory.BeginnerAC);
+        }
+    }
 }

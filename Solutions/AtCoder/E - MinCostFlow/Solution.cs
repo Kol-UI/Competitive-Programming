@@ -1,6 +1,9 @@
 // MinCostFlow
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.AtCoder.EMinCostFlow
 {
     class Solution
@@ -55,4 +58,13 @@ namespace CompetitiveProgramming.AtCoder.EMinCostFlow
         }
     }
 
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Min Cost Flow");
+            ResultTester.SpecialTestCase(ProblemOrigin.AtCoder, ProblemCategory.BeginnerAC);
+        }
+    }
 }

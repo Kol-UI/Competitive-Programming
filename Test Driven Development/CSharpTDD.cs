@@ -2,6 +2,7 @@ using System;
 using CompetitiveProgramming.Models;
 using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.Services.Providers;
+using CompetitiveProgramming.Services;
 
 namespace CompetitiveProgramming.TestDrivenDevelopment
 {
@@ -13,6 +14,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             {
                 Console.WriteLine("Helpers Are Ready");
                 TestSolutions();
+
+                ResultTester.InitializeCounters();// dictionaries count
+                AutoInstantiate.SetAutoInstantiate();
+                DelegateLists.ExecuteDelegates();
+                int AtCoder = ResultTester.GetCounterDifficulty(ProblemCategory.BeginnerAC);
+                Console.WriteLine("BeginnerAC " + AtCoder);
+                int pb = ResultTester.GetCounterOrigin(ProblemOrigin.AtCoder);
+                Console.WriteLine("AtCoder " + pb);
             }
             else
             {

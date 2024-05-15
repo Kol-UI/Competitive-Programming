@@ -3,6 +3,9 @@
 namespace CompetitiveProgramming.AtCoder.SegmentTree;
 using System;
 using System.Collections.Generic;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 class Program
 {
@@ -68,6 +71,16 @@ class Program
         foreach (int result in results)
         {
             Console.WriteLine(result);
+        }
+    }
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Segment Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.AtCoder, ProblemCategory.BeginnerAC);
         }
     }
 }

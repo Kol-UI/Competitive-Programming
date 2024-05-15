@@ -2,6 +2,9 @@
 
 using System;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.AtCoder.LazySegmentTree
 {
@@ -44,6 +47,16 @@ namespace CompetitiveProgramming.AtCoder.LazySegmentTree
                     Console.WriteLine(answer);
                 }
             }
+        }
+    }
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Lazy Segment Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.AtCoder, ProblemCategory.BeginnerAC);
         }
     }
 }

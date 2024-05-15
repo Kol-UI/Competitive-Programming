@@ -1,5 +1,8 @@
 // D - Maxflow
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.AtCoder.DMaxflow
 {
@@ -60,4 +63,14 @@ namespace CompetitiveProgramming.AtCoder.DMaxflow
         }
     }
     */
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("MaxFlow");
+            ResultTester.SpecialTestCase(ProblemOrigin.AtCoder, ProblemCategory.BeginnerAC);
+        }
+    }
 }

@@ -1,6 +1,9 @@
 // I - Number of Substrings
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.AtCoder.NumberofSubstrings;
 
 class Program
@@ -43,5 +46,15 @@ class Program
         }
 
         Console.WriteLine(result + N);
+    }
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Substrings");
+            ResultTester.SpecialTestCase(ProblemOrigin.AtCoder, ProblemCategory.BeginnerAC);
+        }
     }
 }

@@ -1,6 +1,8 @@
 // B - Fenwick Tree
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.AtCoder.BFenwickTree
@@ -55,7 +57,7 @@ namespace CompetitiveProgramming.AtCoder.BFenwickTree
 
 
 
-    public class Test
+    public class Test : BaseSolution
     {
         public static long[] FenwickTreeMain(int N, int Q, long[] arr, List<Tuple<int, int, int, long>> queries)
         {
@@ -112,6 +114,13 @@ namespace CompetitiveProgramming.AtCoder.BFenwickTree
                 ResultTester.CheckResult<bool>(true, true)
             };
             return results;
+        }
+
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Fenwick Tree");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.AtCoder, ProblemCategory.BeginnerAC, TestCases());
         }
     }
 

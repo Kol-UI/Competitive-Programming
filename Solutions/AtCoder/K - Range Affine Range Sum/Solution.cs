@@ -1,6 +1,9 @@
 // K - Range Affine Range Sum
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.AtCoder.RangeAffineRangeSum
 {
@@ -54,6 +57,16 @@ namespace CompetitiveProgramming.AtCoder.RangeAffineRangeSum
                     }
                 }
             }
+        }
+    }
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Range Affine Range Sum");
+            ResultTester.SpecialTestCase(ProblemOrigin.AtCoder, ProblemCategory.BeginnerAC);
         }
     }
 }

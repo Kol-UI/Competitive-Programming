@@ -9,6 +9,12 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
 {
     public class ResultTester
     {
+        // Difficulty Counter
+        private static readonly Dictionary<ProblemCategory, int> _counterDifficulty = new();
+
+        // Origin Counter
+        private static readonly Dictionary<ProblemOrigin, int> _counterOrigin = new();
+
         // Totals
         private static int _counterTotalSolutions = 0;
         private static int _counterTotalTestCaseDone = 0;
@@ -40,6 +46,42 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         
         // Lock
         private static object _lock = new object();
+
+        public static void InitializeCounters()
+        {
+            foreach (ProblemCategory diff in Enum.GetValues(typeof(ProblemCategory)))
+            {
+                _counterDifficulty[diff] = 0;
+            }
+            foreach (ProblemOrigin origin in Enum.GetValues(typeof(ProblemOrigin)))
+            {
+                _counterOrigin[origin] = 0;
+            }
+        }
+
+        public static int GetCounterDifficulty(ProblemCategory diff)
+        {
+            if (_counterDifficulty.ContainsKey(diff))
+            {
+                return _counterDifficulty[diff];
+            }
+            else
+            {
+                throw new ArgumentException("Invalid enum type");
+            }
+        }
+
+        public static int GetCounterOrigin(ProblemOrigin origin)
+        {
+            if (_counterOrigin.ContainsKey(origin))
+            {
+                return _counterOrigin[origin];
+            }
+            else
+            {
+                throw new ArgumentException("Invalid enum type");
+            }
+        }
 
         // Check each cases
         public static bool CheckResult<T>(T result, T expected)
@@ -251,6 +293,24 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             SourceManager(source);
         }
 
+        public static void CheckCurrentSolution(ProblemOrigin source, ProblemCategory category, params bool[] values)
+        {
+            TestSolution();
+            // If at least one is false then Solution is Invalidate
+            bool result = values.Any(b => !b);
+            if(!result)
+            {
+                IncrementCategoryCounter(category);
+                IncrementOriginCounter(source);
+                //SourceManager(source);
+                ValidateSolution();
+            }
+            else
+            {
+                InvalidateSolution();
+            }
+        }
+
         public static void SpecialTestCase(ProblemOrigin source)
         {
             Console.WriteLine("See Solution Directly");
@@ -259,6 +319,18 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             ValidateSolution();
             TestSolution();
             SourceManager(source);
+        }
+
+        // NEW
+        public static void SpecialTestCase(ProblemOrigin source, ProblemCategory category)
+        {
+            Console.WriteLine("See Solution Directly");
+            TestDone();
+            ValidateTest();
+            ValidateSolution();
+            TestSolution();
+            IncrementCategoryCounter(category);
+            IncrementOriginCounter(source);
         }
 
         private static void SourceManager(ProblemOrigin source)
@@ -310,6 +382,30 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 default:
                     _counterOtherSourceProblem++;
                     break;
+            }
+        }
+
+        public static void IncrementCategoryCounter(ProblemCategory category)
+        {
+            if (_counterDifficulty.ContainsKey(category))
+            {
+                _counterDifficulty[category]++;
+            }
+            else
+            {
+                throw new ArgumentException("Invalid problem category");
+            }
+        }
+
+        public static void IncrementOriginCounter(ProblemOrigin origin)
+        {
+            if (_counterOrigin.ContainsKey(origin))
+            {
+                _counterOrigin[origin]++;
+            }
+            else
+            {
+                throw new ArgumentException("Invalid problem origin");
             }
         }
 
