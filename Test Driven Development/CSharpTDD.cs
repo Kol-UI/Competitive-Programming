@@ -3,6 +3,7 @@ using CompetitiveProgramming.Models;
 using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.Services.Providers;
 using CompetitiveProgramming.Services;
+using CompetitiveProgramming.CodeForces.BuyaShovel;
 
 namespace CompetitiveProgramming.TestDrivenDevelopment
 {
@@ -18,10 +19,14 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 ResultTester.InitializeCounters();// dictionaries count
                 AutoInstantiate.SetAutoInstantiate();
                 DelegateLists.ExecuteDelegates();
-                int AtCoder = ResultTester.GetCounterDifficulty(ProblemCategory.BeginnerAC);
-                Console.WriteLine("BeginnerAC " + AtCoder);
                 int pb = ResultTester.GetCounterOrigin(ProblemOrigin.AtCoder);
-                Console.WriteLine("AtCoder " + pb);
+                int AtCoder = ResultTester.GetCounterDifficulty(ProblemCategory.BeginnerAC);
+                Console.WriteLine("AtCoder " + pb + " BeginnerAC " + AtCoder);
+                
+                int pb2 = ResultTester.GetCounterOrigin(ProblemOrigin.CodeChef);
+                int ccLearn = ResultTester.GetCounterDifficulty(ProblemCategory.LearnCC);
+                int ccBeginner = ResultTester.GetCounterDifficulty(ProblemCategory.BeginnerCC);
+                Console.WriteLine("CodeChef " + pb2 + " learn " + ccLearn + " beginner " + ccBeginner);
             }
             else
             {

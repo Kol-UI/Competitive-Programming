@@ -2,6 +2,9 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeChef.CSB001Introduction
 {
     /*
@@ -13,4 +16,14 @@ namespace CompetitiveProgramming.CodeChef.CSB001Introduction
         }
     }
     */
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("CSB001 Introduction");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeChef, ProblemCategory.LearnCC);
+        }
+    }
 }

@@ -11,6 +11,9 @@ Note - Notice that in the output they are printed together without any space bet
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeChef.CSB007MultipleOutputs
 {
     class Program
@@ -20,6 +23,16 @@ namespace CompetitiveProgramming.CodeChef.CSB007MultipleOutputs
         {
             Console.Write(3 + 4);
             Console.Write(2 + 1);
+        }
+    }
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Multiple Outputs");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeChef, ProblemCategory.LearnCC);
         }
     }
 }
