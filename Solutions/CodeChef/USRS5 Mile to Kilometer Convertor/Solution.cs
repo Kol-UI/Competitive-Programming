@@ -9,6 +9,10 @@ Accept user input and store it in mile
 Declare a double variable km
 Compute and output distance in kilometers console
 */
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.CodeChef.MiletoKilometerConvertor
 {
     /*
@@ -22,4 +26,14 @@ namespace CompetitiveProgramming.CodeChef.MiletoKilometerConvertor
         }
     }
     */
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Mile to Kilometer Convertor");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeChef, ProblemCategory.LearnCC);
+        }
+    }
 }

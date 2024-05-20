@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeChef.HoopJump
 {
@@ -19,6 +21,16 @@ namespace CompetitiveProgramming.CodeChef.HoopJump
                 int lastHoop = (N + 1) / 2;
                 Console.WriteLine(lastHoop);
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Hoop Jump");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeChef, ProblemCategory.BeginnerCC);
         }
     }
 

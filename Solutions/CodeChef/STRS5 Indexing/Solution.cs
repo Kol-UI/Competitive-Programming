@@ -12,6 +12,8 @@ Note: Indexing always starts from 0 when going left to right.
 Try running the code given and observe the output
 */
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeChef.Indexing
@@ -51,6 +53,16 @@ namespace CompetitiveProgramming.CodeChef.Indexing
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Indexing");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeChef, ProblemCategory.LearnCC, Test.TestIndexing());
         }
     }
 }

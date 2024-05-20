@@ -1,5 +1,7 @@
 // USRS3 Hello User
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeChef.HelloUser
@@ -15,4 +17,14 @@ namespace CompetitiveProgramming.CodeChef.HelloUser
         }
     }
     */
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Hello User");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeChef, ProblemCategory.LearnCC);
+        }
+    }
 }

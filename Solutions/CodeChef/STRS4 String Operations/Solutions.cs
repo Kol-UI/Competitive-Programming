@@ -27,6 +27,8 @@ Use the ToLower() method to output to the console the Lowercase of txt
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeChef.StringOperations
@@ -60,6 +62,16 @@ namespace CompetitiveProgramming.CodeChef.StringOperations
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("String Operations");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeChef, ProblemCategory.LearnCC, Test.TestStringOperations());
         }
     }
 }

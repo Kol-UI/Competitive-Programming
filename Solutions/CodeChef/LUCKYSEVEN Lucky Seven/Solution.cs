@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeChef.LuckySeven
 {
@@ -31,6 +33,16 @@ namespace CompetitiveProgramming.CodeChef.LuckySeven
                 ResultTester.CheckResult<char>(Test.TestSolution("outofsight"), 'i'),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Lucky Seven");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeChef, ProblemCategory.BeginnerCC, Test.TestCases());
         }
     }
 }

@@ -17,6 +17,8 @@ Sample 1:
 Input 5
 Output 25
 */
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeChef.USRS2IntegerInput
@@ -50,6 +52,16 @@ namespace CompetitiveProgramming.CodeChef.USRS2IntegerInput
                 ResultTester.CheckResult<string>(TestIntegerInput(2), "Square of the number is: 4")
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Integer Input");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeChef, ProblemCategory.LearnCC, Test.TestCases());
         }
     }
 }

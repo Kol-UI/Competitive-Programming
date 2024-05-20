@@ -11,6 +11,9 @@ Output the answer in a single line.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeChef.NumberMirror
 {
     public class Test
@@ -22,5 +25,15 @@ namespace CompetitiveProgramming.CodeChef.NumberMirror
 		    Console.WriteLine(num);
         }
         */
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number Mirror");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeChef, ProblemCategory.BeginnerCC);
+        }
     }
 }

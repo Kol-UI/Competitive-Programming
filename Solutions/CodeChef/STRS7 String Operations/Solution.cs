@@ -7,6 +7,8 @@ Declare a string variable txt and initialize it to the value "Programming"
 Print the 3rd and 5th Characters from txt in separate lines.
 */
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeChef.StringOperationsStrs7
@@ -52,6 +54,16 @@ namespace CompetitiveProgramming.CodeChef.StringOperationsStrs7
                 ResultTester.CheckResult<char>(result3, 'r')
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("String Operations 7");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeChef, ProblemCategory.LearnCC, Test.TestStringOperationsStrs7());
         }
     }
 }

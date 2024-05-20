@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeChef.RichieRich
 {
@@ -40,6 +42,16 @@ namespace CompetitiveProgramming.CodeChef.RichieRich
                 ResultTester.CheckResult<long>(Test.Solution(2, 10, 3), 2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Richie Rich");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeChef, ProblemCategory.BeginnerCC, Test.TestCases());
         }
     }
 }

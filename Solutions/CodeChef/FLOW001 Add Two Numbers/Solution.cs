@@ -1,4 +1,7 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 /*
 Problem Statement
@@ -41,5 +44,15 @@ namespace CompetitiveProgramming.CodeChef.AddTwoNumbers
             }
         }
         */
+    }
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Add Two Numbers");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeChef, ProblemCategory.LearnCC);
+        }
     }
 }

@@ -1,6 +1,8 @@
 // The Two Dishes
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeChef.TheTwoDishes
 {
@@ -36,6 +38,16 @@ namespace CompetitiveProgramming.CodeChef.TheTwoDishes
                 long result = (s < n) ? s : (2 * n - s);
                 Console.WriteLine(result);
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("The Two Dishes");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeChef, ProblemCategory.BeginnerCC);
         }
     }
 }

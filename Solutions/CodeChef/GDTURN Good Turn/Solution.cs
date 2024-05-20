@@ -17,9 +17,12 @@ Each character of the output may be printed in either uppercase or lowercase. Th
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeChef.GoodTurn
 {
-    public class Test
+    public class TestSolution
     {
         public static void Solution()
         {
@@ -42,6 +45,16 @@ namespace CompetitiveProgramming.CodeChef.GoodTurn
                     Console.WriteLine("NO");
                 }
             }
+        }
+    }
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Good Turn");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeChef, ProblemCategory.LearnCC);
         }
     }
 }

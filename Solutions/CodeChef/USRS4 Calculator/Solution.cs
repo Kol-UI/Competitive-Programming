@@ -8,6 +8,10 @@ Declare 2 integer variables a and b.
 Initialize the variables a and b based on two user inputs.
 Output sum and difference to the console on separate lines.
 */
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.CodeChef.Calculator
 {
     /*
@@ -22,4 +26,14 @@ namespace CompetitiveProgramming.CodeChef.Calculator
         }
     }
   */
+
+    public class Test : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Calculator");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeChef, ProblemCategory.LearnCC);
+        }
+    }
 }
