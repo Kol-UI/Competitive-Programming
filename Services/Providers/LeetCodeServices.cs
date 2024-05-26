@@ -112,7 +112,7 @@ namespace CompetitiveProgramming.Services.Providers
             MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc, MaxPointsonaLineFunc, MaximumRunningTimeofNComputersFunc, DesignGraphWithShortestPathCalculatorFunc, MinimumDifficultyofaJobScheduleFunc, ArithmeticSlicesIISubsequenceFunc, LongestValidParenthesesFunc, KInversePairsArrayFunc,
             CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc, SlidingWindowMaximumFunc, MaximumScoreofaGoodSubarrayFunc, NumberofWaystoDivideaLongCorridorFunc, LargestRectangleinHistogramFunc, FindMedianfromDataStreamFunc, NumberofSubmatricesThatSumtoTargetFunc, MaximalRectangleFunc,
             FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc, MinimumReplacementstoSorttheArrayFunc, MedianofTwoSortedArraysFunc, BuildArrayWhereYouCanFindTheMaximumExactlyKComparisonsFunc, StringCompressionIIFunc, MaximumProfitinJobSchedulingFunc, CherryPickupIIFunc, MeetingRoomsIIIFunc, FindAllPeopleWithSecretFunc, GreatestCommonDivisorTraversalFunc,
-            SubarrayswithKDifferentIntegersFunc, MinimumFallingPathSumIIFunc, FreedomTrailFunc, MinimumCosttoHireKWorkersFunc, FindtheMaximumSumofNodeValuesFunc, MaximumScoreWordsFormedbyLettersFunc,
+            SubarrayswithKDifferentIntegersFunc, MinimumFallingPathSumIIFunc, FreedomTrailFunc, MinimumCosttoHireKWorkersFunc, FindtheMaximumSumofNodeValuesFunc, MaximumScoreWordsFormedbyLettersFunc, StudentAttendanceRecordIIFunc,
         };
 
         // Functions 
@@ -555,6 +555,13 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Word Break II");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
+        }
+
+        private static void StudentAttendanceRecordIIFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Student Attendance Record II");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
