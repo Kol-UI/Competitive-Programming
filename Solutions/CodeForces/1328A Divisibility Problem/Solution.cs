@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.DivisibilityProblem
 {
@@ -30,6 +32,16 @@ namespace CompetitiveProgramming.CodeForces.DivisibilityProblem
                 
                 Console.WriteLine(difference);
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Divisibility Problem");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
         }
     }
 }

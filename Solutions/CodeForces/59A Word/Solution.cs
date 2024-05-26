@@ -1,6 +1,8 @@
 // Word
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeForces.Word;
@@ -68,5 +70,15 @@ public class Test
             ResultTester.CheckResult<string>(SolutionTest("aA1bB2cC3"), "aa1bb2cc3"),
         };
         return results;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Word");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
     }
 }

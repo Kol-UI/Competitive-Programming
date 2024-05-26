@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.BearandBigBrother
 {
@@ -27,4 +29,13 @@ namespace CompetitiveProgramming.CodeForces.BearandBigBrother
         }
     }
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Bear and Big Brother");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
+        }
+    }
 }

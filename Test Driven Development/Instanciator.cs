@@ -25,7 +25,7 @@ namespace CompetitiveProgramming.Services
 
         public static void SetAutoInstantiate()
         {
-            var namespaces = new string[] { "CompetitiveProgramming.AtCoder", "CompetitiveProgramming.CodeChef" };
+            var namespaces = new string[] { "CompetitiveProgramming.AtCoder", "CompetitiveProgramming.CodeChef", "CompetitiveProgramming.CodeForces" };
             //var ignored = new string[] { "CsharpNotes.Tests" };
             var types = GetTypesInNamespaces(namespaces);
 

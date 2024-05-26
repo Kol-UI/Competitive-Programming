@@ -3,6 +3,9 @@
 namespace CompetitiveProgramming.CodeForces.Marathon
 {
     using System;
+    using CompetitiveProgramming.Helpers;
+    using CompetitiveProgramming.Models;
+    using CompetitiveProgramming.TestDrivenDevelopment;
 
     class Program
     {
@@ -20,6 +23,16 @@ namespace CompetitiveProgramming.CodeForces.Marathon
 
                 Console.WriteLine((b > a ? 1 : 0) + (c > a ? 1 : 0) + (d > a ? 1 : 0));
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Marathon");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
         }
     }
 }

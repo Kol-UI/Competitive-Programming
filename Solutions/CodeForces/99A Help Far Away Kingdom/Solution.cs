@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.HelpFarAwayKingdom
 {
@@ -37,6 +39,16 @@ namespace CompetitiveProgramming.CodeForces.HelpFarAwayKingdom
             {
                 return "GOTO Vasilisa.";
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Help Far Away Kingdom");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
         }
     }
 }

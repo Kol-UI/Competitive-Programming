@@ -1,6 +1,8 @@
 // Restoring Three Numbers
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.RestoringThreeNumbers
 {
@@ -24,6 +26,16 @@ namespace CompetitiveProgramming.CodeForces.RestoringThreeNumbers
             int c = numbers[3] - numbers[2];
 
             Console.WriteLine($"{a} {b} {c}");
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Restoring Three Numbers");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
         }
     }
 }

@@ -2,6 +2,8 @@
 namespace CompetitiveProgramming.CodeForces.YESorYES;
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 class Program
@@ -53,5 +55,15 @@ public class Test
             ResultTester.CheckResult<string>(Program.Solution("XES", "YES"), "NO"),
         };
         return results;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("YES or YES");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
     }
 }

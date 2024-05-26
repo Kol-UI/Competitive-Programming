@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeForces.YetAnotherTwoIntegersProblem
@@ -24,6 +26,16 @@ namespace CompetitiveProgramming.CodeForces.YetAnotherTwoIntegersProblem
 
                 Console.WriteLine(minimumMoves);
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Yet Another Two Integers Problem");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
         }
     }
 }

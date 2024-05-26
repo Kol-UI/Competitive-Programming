@@ -3,6 +3,9 @@
 
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.WeGotEverythingCovered
 {
     class Program
@@ -33,6 +36,16 @@ namespace CompetitiveProgramming.CodeForces.WeGotEverythingCovered
                 }
             }
             Console.WriteLine(sb);
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("We Got Everything Covered");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
         }
     }
 }

@@ -1,6 +1,8 @@
 // 116A Tram
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.Tram;
 class Program
@@ -63,5 +65,15 @@ class Test
             ResultTester.CheckResult<int>(Test.CalculateMinTramCapacity(n3, exiting3, entering3), 1),
         };
         return results;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Tram");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
     }
 }

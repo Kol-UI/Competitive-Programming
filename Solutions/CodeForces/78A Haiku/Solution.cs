@@ -3,6 +3,8 @@
 
 using System;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.Haiku
 {
@@ -65,6 +67,16 @@ namespace CompetitiveProgramming.CodeForces.Haiku
                 ResultTester.CheckResult<bool>(IsHaiku(phrases2), false),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Haiku");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
         }
     }
 }

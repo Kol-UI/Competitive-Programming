@@ -1,6 +1,8 @@
 // Vanya and Fence
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeForces.VanyaandFence;
@@ -68,5 +70,15 @@ public class Test
             ResultTester.CheckResult<int>(Test.CalculateFenceWidth(6, 1, testHeights6), 6),
         };
         return results;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Vanya and Fence");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
     }
 }

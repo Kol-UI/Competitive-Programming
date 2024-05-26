@@ -4,6 +4,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.AntonandLetters
 {
@@ -20,6 +22,16 @@ namespace CompetitiveProgramming.CodeForces.AntonandLetters
             HashSet<char> uniqueLetters = new(letters.SelectMany(s => s));
 
             Console.WriteLine(uniqueLetters.Count);
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Anton and Letters");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
         }
     }
 }

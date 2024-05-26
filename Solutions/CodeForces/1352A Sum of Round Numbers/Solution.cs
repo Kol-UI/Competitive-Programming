@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.SumofRoundNumbers
 {
@@ -33,6 +35,16 @@ namespace CompetitiveProgramming.CodeForces.SumofRoundNumbers
                 Console.WriteLine(roundNumbers.Count);
                 Console.WriteLine(string.Join(" ", roundNumbers));
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Sum of Round Numbers");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
         }
     }
 }

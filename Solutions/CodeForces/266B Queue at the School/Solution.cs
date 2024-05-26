@@ -1,6 +1,8 @@
 // Queue at the School
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeForces.QueueattheSchool
@@ -104,6 +106,16 @@ namespace CompetitiveProgramming.CodeForces.QueueattheSchool
             }
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Queue at the School");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
         }
     }
 }

@@ -26,4 +26,5 @@ public enum ProblemCategory
     HardGFG = 21,
     HardHR = 22,
     HardLC = 23,
+    CF800 = 24,
 }

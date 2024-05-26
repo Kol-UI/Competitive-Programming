@@ -16,6 +16,9 @@ If it is a female by our hero's method, print "CHAT WITH HER!" (without the quot
 
 using System;
     using System.Linq;
+using CompetitiveProgramming.AtCoder.ADisjointSetUnion;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.BoyorGirl
 {
@@ -69,6 +72,16 @@ namespace CompetitiveProgramming.CodeForces.BoyorGirl
                 ResultTester.CheckResult<bool>(Solution.IsMale("pjqxhvxkyeqqvyuujxhmbspatvrckhhkfloottuybjivkkhpyivcighxumavrxzxslfpggnwbtalmhysyfllznphzia"), true),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Boy or Girl");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
         }
     }
 }

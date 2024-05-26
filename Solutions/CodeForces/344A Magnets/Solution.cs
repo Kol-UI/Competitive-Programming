@@ -7,6 +7,8 @@ using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.Magnets;
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 
 class Program
 {
@@ -69,5 +71,15 @@ public class Test
             ResultTester.CheckResult<int>(Test.MagnetsSolution(test3), 1),
         };
         return results;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Magnets");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
     }
 }

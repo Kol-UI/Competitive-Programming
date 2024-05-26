@@ -1,6 +1,8 @@
 // Anton and Danik
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeForces.AntonandDanik;
@@ -67,5 +69,15 @@ class Test
             ResultTester.CheckResult<string>(Test.DetermineWinner(2, "DD"), "Danik"),
         };
         return results;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Anton and Danik");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
     }
 }

@@ -1,6 +1,8 @@
 // Ultra Fast Mathematician
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.UltraFastMathematician;
 
@@ -20,5 +22,15 @@ class Program
         }
 
         Console.WriteLine(new string(result));
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Ultra-Fast Mathematician");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
+        }
     }
 }

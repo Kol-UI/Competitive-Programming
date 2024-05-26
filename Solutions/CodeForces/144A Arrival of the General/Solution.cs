@@ -1,6 +1,8 @@
 // Arrival of the General
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.ArrivaloftheGeneral
 {
@@ -38,6 +40,16 @@ namespace CompetitiveProgramming.CodeForces.ArrivaloftheGeneral
             }
 
             Console.WriteLine(moves);
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Arrival of the General");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
         }
     }
 }

@@ -3,6 +3,8 @@
 namespace CompetitiveProgramming.CodeForces.Sum;
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 class Program
@@ -57,5 +59,15 @@ public class Test
             ResultTester.CheckResult<string>(Program.Solution(15, 7, 8), "YES"),
         };
         return results;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Sum");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
     }
 }

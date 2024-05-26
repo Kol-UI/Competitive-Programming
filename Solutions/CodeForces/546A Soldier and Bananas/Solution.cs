@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeForces.SoldierandBananas
@@ -25,6 +27,16 @@ namespace CompetitiveProgramming.CodeForces.SoldierandBananas
             long borrowAmount = Math.Max(0, totalCost - n);
 
             Console.WriteLine(borrowAmount);
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Soldier and Bananas");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
         }
     }
 }

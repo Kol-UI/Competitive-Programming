@@ -27,6 +27,10 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 int ccLearn = ResultTester.GetCounterDifficulty(ProblemCategory.LearnCC);
                 int ccBeginner = ResultTester.GetCounterDifficulty(ProblemCategory.BeginnerCC);
                 Console.WriteLine("CodeChef " + pb2 + " learn " + ccLearn + " beginner " + ccBeginner);
+
+                int pb3 = ResultTester.GetCounterOrigin(ProblemOrigin.CodeForces);
+                int CF800 = ResultTester.GetCounterDifficulty(ProblemCategory.CF800);
+                Console.WriteLine("CodeForces " + pb3 + " 800 " + CF800);
             }
             else
             {

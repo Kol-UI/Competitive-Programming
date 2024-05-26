@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeForces.VasyatheHipster
@@ -44,6 +46,16 @@ namespace CompetitiveProgramming.CodeForces.VasyatheHipster
                 ResultTester.CheckResult<int[]>(Test.Solution(3, 5), new int[] { 3, 1 }),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Vasya the Hipster");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
         }
     }
 }

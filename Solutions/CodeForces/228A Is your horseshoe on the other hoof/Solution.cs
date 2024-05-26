@@ -2,6 +2,9 @@
 
 using System;
 using System.Collections.Generic;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.Isyourhorseshoeontheotherhoof;
 
 class Program
@@ -24,5 +27,15 @@ class Program
         }
 
         Console.WriteLine(replacements);
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Is your horseshoe on the other hoof");
+        ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
     }
 }

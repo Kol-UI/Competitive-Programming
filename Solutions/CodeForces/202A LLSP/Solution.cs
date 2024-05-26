@@ -3,6 +3,8 @@
 
 using System;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.LLSP
 {
@@ -81,6 +83,16 @@ namespace CompetitiveProgramming.CodeForces.LLSP
                 ResultTester.CheckResult<string>(Test.Solution("abracadabra"), "aaaaa"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("LLSP");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
         }
     }
 }

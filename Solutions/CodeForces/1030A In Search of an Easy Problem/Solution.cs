@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.InSearchofanEasyProblem
 {
@@ -58,6 +60,16 @@ namespace CompetitiveProgramming.CodeForces.InSearchofanEasyProblem
                 ResultTester.CheckResult<string>(Test.DetermineDifficulty(100, responses6), "EASY"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("In Search of an Easy Problem");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
         }
     }
 }

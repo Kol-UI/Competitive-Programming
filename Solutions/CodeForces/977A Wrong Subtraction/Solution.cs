@@ -6,6 +6,8 @@ using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.WrongSubtraction;
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 
 class Program
 {
@@ -29,5 +31,15 @@ class Program
         }
 
         Console.WriteLine(n);
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Wrong Subtraction");
+        ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
     }
 }

@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.SoftDrinking
 {
@@ -30,6 +32,16 @@ namespace CompetitiveProgramming.CodeForces.SoftDrinking
             int toastsPerFriend = maxPossibleToasts / friends;
     
             Console.WriteLine(toastsPerFriend);
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Soft Drinking");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
         }
     }
 }

@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.TheNewYearMeetingFriends
 {
@@ -20,6 +22,16 @@ namespace CompetitiveProgramming.CodeForces.TheNewYearMeetingFriends
             int distance = max - min;
 
             Console.WriteLine(distance);
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("The New Year Meeting Friends");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF800);
         }
     }
 }

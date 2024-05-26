@@ -1,6 +1,8 @@
 // Beautiful Matrix
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeForces.BeautifulMatrix
 {
@@ -131,6 +133,16 @@ namespace CompetitiveProgramming.CodeForces.BeautifulMatrix
                 ResultTester.CheckResult<int>(Test.TestSolution(matrix5), 3),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Beautiful Matrix");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
         }
     }
 }

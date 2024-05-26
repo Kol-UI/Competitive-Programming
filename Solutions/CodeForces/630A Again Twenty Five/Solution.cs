@@ -2,6 +2,8 @@
 
 using System;
 using System.Numerics;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeForces.AgainTwentyFive
@@ -42,6 +44,16 @@ namespace CompetitiveProgramming.CodeForces.AgainTwentyFive
                 ResultTester.CheckResult<string>(Program.Solution(7), "25"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Again Twenty Five");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
         }
     }
 }

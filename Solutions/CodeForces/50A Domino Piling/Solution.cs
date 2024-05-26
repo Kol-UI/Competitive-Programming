@@ -19,6 +19,8 @@ Output one number — the maximal number of dominoes, which can be placed.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeForces.DominoPiling;
@@ -65,5 +67,15 @@ namespace CompetitiveProgramming.CodeForces.DominoPiling;
                 ResultTester.CheckResult<int>(Test.TestDominoPiling(case5), 105),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Domino Piling");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeForces, ProblemCategory.CF800, Test.TestCases());
         }
     }
