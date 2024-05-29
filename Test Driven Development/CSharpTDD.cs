@@ -31,6 +31,12 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 int pb3 = ResultTester.GetCounterOrigin(ProblemOrigin.CodeForces);
                 int CF800 = ResultTester.GetCounterDifficulty(ProblemCategory.CF800);
                 Console.WriteLine("CodeForces " + pb3 + " 800 " + CF800);
+
+                int pb4 = ResultTester.GetCounterOrigin(ProblemOrigin.CoderByte);
+                int CBHard = ResultTester.GetCounterDifficulty(ProblemCategory.HardCB);
+                int CBMedium = ResultTester.GetCounterDifficulty(ProblemCategory.MediumCB);
+                int CBEasy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyCB);
+                Console.WriteLine("CoderByte " + pb4 + " Hard " + CBHard + " Medium " + CBMedium + " Easy " + CBEasy);
             }
             else
             {

@@ -16,7 +16,8 @@ Input: "u__hello_world123"
 Output: true
 */
 
-using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CoderByte.CodelandUsernameValidation
@@ -70,6 +71,16 @@ namespace CompetitiveProgramming.CoderByte.CodelandUsernameValidation
                 ResultTester.CheckResult<string>(MainClass.CodelandUsernameValidation("aaaaaaaaaa"), "true"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Codeland Username Validation");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCB, Test.TestCases());
         }
     }
 }

@@ -18,13 +18,18 @@ public enum ProblemCategory
     EasyLC = 13,
     FourKyu = 14,
     ThreeKyu = 15,
-    MediumGFG = 16,
-    MediumHR = 17,
-    MediumLC = 18,
-    TwoKyu = 19,
-    OneKyu = 20,
-    HardGFG = 21,
-    HardHR = 22,
-    HardLC = 23,
-    CF800 = 24,
+    HardCB = 16,
+    MediumGFG = 17,
+    MediumHR = 18,
+    MediumLC = 19,
+    TwoKyu = 20,
+    OneKyu = 21,
+    MediumCB = 22,
+    HardGFG = 23,
+    HardHR = 24,
+    HardLC = 25,
+
+
+
+    CF800 = 40,
 }

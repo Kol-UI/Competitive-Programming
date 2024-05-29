@@ -9,8 +9,9 @@ Input: "I love dogs"
 Output: love
 */
 
-using System;
 using System.Text.RegularExpressions;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CoderByte.LongestWord
@@ -49,6 +50,16 @@ namespace CompetitiveProgramming.CoderByte.LongestWord
                 ResultTester.CheckResult<string>(MainClass.LongestWord("hello world"), "hello"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Longest Word");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCB, Test.TestCases());
         }
     }
 }

@@ -3,6 +3,8 @@
 // Have the function BracketCombinations(num) read num which will be an integer greater than or equal to zero, and return the number of valid combinations that can be formed with num pairs of parentheses. For example, if the input is 3, then the possible combinations of 3 pairs of parenthesis, namely: ()()(), are ()()(), ()(()), (())(), ((())), and (()()). There are 5 total combinations when the input is 3, so your program should return 5.
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CoderByte.BracketCombinations
@@ -57,6 +59,16 @@ namespace CompetitiveProgramming.CoderByte.BracketCombinations
                 ResultTester.CheckResult<int>(Solution.BracketCombinations(9), 4862),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Bracket Combinations");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.HardCB, Test.TestCases());
         }
     }
 }

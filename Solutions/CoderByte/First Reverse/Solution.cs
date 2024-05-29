@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CoderByte.FirstReverse
@@ -31,5 +32,14 @@ namespace CompetitiveProgramming.CoderByte.FirstReverse
             return results;
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("First Reverse");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCB, Test.TestFirstReverse());
+        }
+    }
+}

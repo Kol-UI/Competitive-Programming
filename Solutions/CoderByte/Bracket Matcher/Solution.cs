@@ -9,6 +9,8 @@ Input: "(c(oder)) b(yte)"
 Output: 1
 */
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CoderByte.BracketMatcher;
@@ -57,5 +59,15 @@ public class Test
             ResultTester.CheckResult<int>(MainClass.BracketMatcher("(c(oder)) b(yte)"), 1),
         };
         return results;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Bracket Matcher");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.MediumCB, Test.TestCases());
     }
 }

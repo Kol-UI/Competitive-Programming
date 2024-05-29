@@ -10,7 +10,8 @@ Output: aksfaje
 Input: new string[] {"aaffhkksemckelloe", "fhea"}
 Output: affhkkse
 */
-using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CoderByte.MinWindowSubstring
@@ -101,6 +102,16 @@ namespace CompetitiveProgramming.CoderByte.MinWindowSubstring
                 ResultTester.CheckResult<string>(Solution.MinWindowSubstring(case3), result3),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Min Window Substring");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.MediumCB, Test.TestCases());
         }
     }
 }

@@ -12,6 +12,8 @@ Output: true
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CoderByte.QuestionsMarks
@@ -73,6 +75,16 @@ namespace CompetitiveProgramming.CoderByte.QuestionsMarks
                 ResultTester.CheckResult<string>(MainClass.QuestionsMarks("acc?7??sss?3rr1??????5"), "true"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Questions Marks");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCB, Test.TestCases());
         }
     }
 }

@@ -10,8 +10,8 @@ Input: new string[] {"(1,2)", "(3,2)", "(2,12)", "(5,2)"}
 Output: false
 */
 
-using System;
-using System.Collections.Generic;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CoderByte.TreeConstructor;
@@ -93,5 +93,15 @@ public class Test
             ResultTester.CheckResult<string>(MainClass.TreeConstructor(testCase2), "false"),
         };
         return results;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Tree Constructor");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.MediumCB, Test.TestCases());
     }
 }
