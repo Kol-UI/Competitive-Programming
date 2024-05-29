@@ -99,6 +99,7 @@ namespace CompetitiveProgramming.Services.Providers
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc, FindPlayersWithZeroorOneLossesFunc,
             WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc, MinimumNumberofOperationstoMakeArrayEmptyFunc, AmountofTimeforBinaryTreetoBeInfectedFunc, MaximumDifferenceBetweenNodeandAncestorFunc, FindtheSafestPathinaGridFunc,
             RearrangeArrayElementsbySignFunc, FindPolygonWiththeLargestPerimeterFunc, LeastNumberofUniqueIntegersafterKRemovalsFunc, FurthestBuildingYouCanReachFunc, FindBottomLeftTreeValueFunc, EvenOddTreeFunc, MinimumLengthofStringAfterDeletingSimilarEndsFunc, CustomSortStringFunc, RemoveZeroSumConsecutiveNodesfromLinkedListFunc, MinimumNumberofOperationstoMakeArrayXOREqualtoKFunc,
+            NumberofStepstoReduceaNumberinBinaryRepresentationtoOneFunc,
         };
 
         private static readonly Delegate[] leetCodeHardList = new Delegate[]
@@ -206,6 +207,13 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Check If String Is a Prefix of Array");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CheckIfStringIsaPrefixofArray.Test.TestCases());
+        }
+
+        private static void NumberofStepstoReduceaNumberinBinaryRepresentationtoOneFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Steps to Reduce a Number in Binary Representation to One");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofStepstoReduceaNumberinBinaryRepresentationtoOne.Test.TestCases());
         }
 
         private static void DeleteCharacterstoMakeFancyStringFunc()
