@@ -99,7 +99,7 @@ namespace CompetitiveProgramming.Services.Providers
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc, FindPlayersWithZeroorOneLossesFunc,
             WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc, NumberofDiceRollsWithTargetSumFunc, MinimumTimetoMakeRopeColorfulFunc, ConvertanArrayIntoaTwoDArrayWithConditionsFunc, NumberofLaserBeamsinaBankFunc, MinimumNumberofOperationstoMakeArrayEmptyFunc, AmountofTimeforBinaryTreetoBeInfectedFunc, MaximumDifferenceBetweenNodeandAncestorFunc, FindtheSafestPathinaGridFunc,
             RearrangeArrayElementsbySignFunc, FindPolygonWiththeLargestPerimeterFunc, LeastNumberofUniqueIntegersafterKRemovalsFunc, FurthestBuildingYouCanReachFunc, FindBottomLeftTreeValueFunc, EvenOddTreeFunc, MinimumLengthofStringAfterDeletingSimilarEndsFunc, CustomSortStringFunc, RemoveZeroSumConsecutiveNodesfromLinkedListFunc, MinimumNumberofOperationstoMakeArrayXOREqualtoKFunc,
-            NumberofStepstoReduceaNumberinBinaryRepresentationtoOneFunc,
+            NumberofStepstoReduceaNumberinBinaryRepresentationtoOneFunc, CountTripletsThatCanFormTwoArraysofEqualXORFunc,
         };
 
         private static readonly Delegate[] leetCodeHardList = new Delegate[]
@@ -214,6 +214,13 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Number of Steps to Reduce a Number in Binary Representation to One");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofStepstoReduceaNumberinBinaryRepresentationtoOne.Test.TestCases());
+        }
+
+        private static void CountTripletsThatCanFormTwoArraysofEqualXORFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count Triplets That Can Form Two Arrays of Equal XOR");
+            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CountTripletsThatCanFormTwoArraysofEqualXOR.Test.TestCases());
         }
 
         private static void DeleteCharacterstoMakeFancyStringFunc()
