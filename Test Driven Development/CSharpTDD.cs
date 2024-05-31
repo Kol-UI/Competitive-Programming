@@ -106,7 +106,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         // CURRENT TEST
         private static void CurrentTest()
         {
-            
+
         }
     }
 }
