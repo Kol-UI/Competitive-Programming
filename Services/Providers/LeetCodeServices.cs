@@ -31,7 +31,7 @@ namespace CompetitiveProgramming.Services.Providers
             CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc, DesignHashMapFunc, AlternatingDigitSumFunc, TwoSumFunc, BalancedBinaryTreeFunc, FurthestPointFromOriginFunc, PassthePillowFunc, AppleRedistributionintoBoxesFunc, CountPrefixesofaGivenStringFunc,
             BestPokerHandFunc, LastStoneWeightFunc, AddDigitsFunc, BulbSwitcherFunc, FindtheDifferenceFunc, RepeatedSubstringPatternFunc, VerifyinganAlienDictionaryFunc, MinimumAbsoluteDifferenceinBSTFunc, BackspaceStringCompareFunc, CheckifStringsCanbeMadeEqualWithOperationsIFunc, TwoOutofThreeFunc, SortingtheSentenceFunc, RelativeSortArrayFunc,
             MoveZeroesFunc, PlusOneFunc, AverageSalaryExcludingtheMinimumandMaximumSalaryFunc, FindifPathExistsinGraphFunc, RichestCustomerWealthFunc, NumberofRecentCallsFunc, LongestPalindromeFunc, BuddyStringsFunc, NumberofGoodPairsFunc, RedistributeCharacterstoMakeAllStringsEqualFunc, DivideArrayIntoEqualPairsFunc, DeleteCharacterstoMakeFancyStringFunc,
-            SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, LengthofLastWordFunc, ToLowerCaseFunc, ConvertBinaryNumberinaLinkedListtoIntegerFunc, FirstBadVersionFunc, SubtreeofAnotherTreeFunc, MaximumProductDifferenceBetweenTwoPairsFunc, LargestLocalValuesinaMatrixFunc, ShuffleStringFunc,
+            SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, LengthofLastWordFunc, ToLowerCaseFunc, ConvertBinaryNumberinaLinkedListtoIntegerFunc, FirstBadVersionFunc, SubtreeofAnotherTreeFunc, MaximumProductDifferenceBetweenTwoPairsFunc, LargestLocalValuesinaMatrixFunc, ShuffleStringFunc, FindCommonCharactersFunc,
             FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ValidPerfectSquareFunc, ArrangingCoinsFunc, BaseballGameFunc, KeysandRoomsFunc, SumofLeftLeavesFunc, BinaryTreeInorderTraversalFunc, SortthePeopleFunc, AssignCookiesFunc, NumberofChangingKeysFunc, CountDaysSpentTogetherFunc, ThreeDivisorsFunc,
             RobotReturntoOriginFunc, FindWinneronaTicTacToeGameFunc, LemonadeChangeFunc, LargestPerimeterTriangleFunc, CheckIfItIsaStraightLineFunc, DeleteColumnstoMakeSortedFunc, GuessNumberHigherorLowerFunc, ExcelSheetColumnTitleFunc, ImageSmootherFunc, CalculateDelayedArrivalTimeFunc, FindtheSumofEncryptedIntegersFunc,
             ReverseVowelsofaStringFunc, CountingBitsFunc, IsSubsequenceFunc, MinCostClimbingStairsFunc, MaximumAverageSubarrayIFunc, DesignParkingSystemFunc, LeafSimilarTreesFunc, IntersectionofTwoArraysIIFunc, RemoveElementFunc, FindMissingandRepeatedValuesFunc, AntontheBoundaryFunc, ExistenceofaSubstringinaStringandItsReverseFunc,
@@ -570,6 +570,13 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Delete Node in a Linked List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
+        }
+
+        private static void FindCommonCharactersFunc()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Common Characters");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
