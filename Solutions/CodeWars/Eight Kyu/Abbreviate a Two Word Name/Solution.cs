@@ -13,6 +13,8 @@ patrick feeney => P.F
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.AbbreviateaTwoWordName
@@ -84,5 +86,15 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.AbbreviateaTwoWordName
             return results.ToArray();
         }
 
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Abbreviate a Two Word Name");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Solution.TestAbbreviateaTwoWordName());
+        }
     }
 }

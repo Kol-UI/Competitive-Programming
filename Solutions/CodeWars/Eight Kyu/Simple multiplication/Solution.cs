@@ -4,6 +4,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.Simplemultiplication
@@ -32,6 +34,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.Simplemultiplication
                 ResultTester.CheckResult<int>(Solution.Multiply(5), 45),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Simple multiplication");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestCases());
         }
     }
 }

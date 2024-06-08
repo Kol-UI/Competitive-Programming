@@ -2,6 +2,8 @@
 
 using System.Linq;
 using System.Text.RegularExpressions;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.SevenKyu.RegexvalidatePINcode
@@ -101,6 +103,16 @@ namespace CompetitiveProgramming.CodeWars.SevenKyu.RegexvalidatePINcode
             }
             results.Concat(GenerateTests()).ToArray();
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Regex validate PIN code");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.SevenKyu, Test.TestCases());
         }
     }
 }

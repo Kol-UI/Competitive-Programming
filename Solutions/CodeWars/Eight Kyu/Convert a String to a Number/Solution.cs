@@ -1,5 +1,7 @@
 using System;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.ConvertaStringtoaNumber
@@ -63,6 +65,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.ConvertaStringtoaNumber
                 ResultTester.CheckResult<int>(resultcase4ConvertaStringtoaNumber, resultcase4ConvertaStringtoaNumberClever),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Convert a String a Number 1");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestConvertaStringtoaNumber());
         }
     }
 }

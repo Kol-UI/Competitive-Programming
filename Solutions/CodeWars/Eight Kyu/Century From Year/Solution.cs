@@ -14,6 +14,8 @@ Examples
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.CenturyFromYear
@@ -48,6 +50,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.CenturyFromYear
                 ResultTester.CheckResult<int>(result4, case4)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Centure From Year 1");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestCenturyFromYear());
         }
     }
 }

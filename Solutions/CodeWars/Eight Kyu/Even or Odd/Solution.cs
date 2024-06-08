@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.EvenorOdd
@@ -106,6 +108,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.EvenorOdd
                 ResultTester.CheckResult<string>(Case15_EvenOrOdd_Result, Case15_EvenOrOdd_Result),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Even or Odd");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestEvenorOdd());
         }
     }
 }

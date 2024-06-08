@@ -10,6 +10,8 @@ For example:
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.BeginnerLostWithoutaMap
@@ -69,6 +71,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.BeginnerLostWithoutaMap
                 ResultTester.CheckResult<int[]>(result8, expected4)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Lost Without a Map");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestBeginnerLostWithoutaMap());
         }
     }
 }

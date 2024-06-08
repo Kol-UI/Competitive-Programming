@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.FakeBinary
@@ -34,6 +36,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.FakeBinary
                 ResultTester.CheckResult<string>(Kata.FakeBin("366058562030849490134388085"), "011011110000101010000011011"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Fake Binary");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestCases());
         }
     }
 }

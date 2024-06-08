@@ -2,6 +2,8 @@
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.ComponentModel;
 using CompetitiveProgramming.TestDrivenDevelopment;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.GrasshopperSummation
 {
@@ -31,6 +33,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.GrasshopperSummation
                 ResultTester.CheckResult<int>(GrasshopperSummation.Solution.summation(8), 36),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Grasshopper Summation");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestGrasshopperSummation());
         }
     }
 }

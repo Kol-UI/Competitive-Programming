@@ -1,5 +1,6 @@
 using System;
 using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.Findthesmallestintegerinthearray
@@ -186,6 +187,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.Findthesmallestintegerinthear
                 ResultTester.CheckResult<int>(Case12_FindthesmallestintegerinthearrayResultCleverLinq, Case12_FindthesmallestintegerinthearrayResultCleverLinq),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find the smallest integer in the array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestFindthesmallestintegerinthearray());
         }
     }
 }

@@ -1,5 +1,7 @@
 // Odd or Even
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.SevenKyu.OddorEven
@@ -28,6 +30,16 @@ namespace CompetitiveProgramming.CodeWars.SevenKyu.OddorEven
                 ResultTester.CheckResult<string>(Kata.OddOrEven(new int[]{-1023, -1, -2}), "even"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Odd or Even");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.SevenKyu, Test.TestCases());
         }
     }
 }

@@ -1,5 +1,7 @@
 // Sum of the first nth term of Series
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.SevenKyu.SumofthefirstnthtermofSeries
@@ -30,6 +32,16 @@ namespace CompetitiveProgramming.CodeWars.SevenKyu.SumofthefirstnthtermofSeries
                 ResultTester.CheckResult<string>(NthSeries.SeriesSum(9), "1,77"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Sum of the first nth term of Series");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.SevenKyu, Test.TestCases());
         }
     }
 }

@@ -14,6 +14,8 @@ After your function finds the needle it should return a message (as a string) th
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.ANeedleintheHaystack
@@ -71,6 +73,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.ANeedleintheHaystack
                 ResultTester.CheckResult<string>(result3, result6),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("A Needle in the Haystack");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestCases());
         }
     }
 }

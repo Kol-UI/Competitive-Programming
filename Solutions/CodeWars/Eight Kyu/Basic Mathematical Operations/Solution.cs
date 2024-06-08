@@ -14,6 +14,8 @@ Examples(Operator, value1, value2) --> output
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.BasicMathematicalOperations
@@ -61,6 +63,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.BasicMathematicalOperations
                 ResultTester.CheckResult<double>(result4, expected4)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Basic Mathematical Operations");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestBasicMathematicalOperations());
         }
     }
 }

@@ -10,6 +10,8 @@ invert([]) == []
 
 using System;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.InvertValues
@@ -157,6 +159,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.InvertValues
 
             return results;
         } 
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Invert values");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestCases());
+        }
     }
 }
 

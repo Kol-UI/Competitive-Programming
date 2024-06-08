@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Diagnostics.Metrics;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.SixKyu.ReplaceWithAlphabetPosition
@@ -28,5 +30,14 @@ namespace CompetitiveProgramming.CodeWars.SixKyu.ReplaceWithAlphabetPosition
             return results;
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Replace With Alphabet Position");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.SixKyu, Test.TestReplaceWithAlphabetPosition());
+        }
+    }
+}

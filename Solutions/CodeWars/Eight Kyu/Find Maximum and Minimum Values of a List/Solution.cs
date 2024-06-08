@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.FindMaximumandMinimumValuesofaList
@@ -93,6 +95,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.FindMaximumandMinimumValuesof
                 ResultTester.CheckResult<int>(maxCase8, maxCase8),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Maximum and Minimum values of a List");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestFindMaximumandMinimumValuesofaList());
         }
     }
 }

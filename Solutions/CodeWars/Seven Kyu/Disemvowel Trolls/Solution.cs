@@ -1,6 +1,8 @@
 // Disemvowel Trolls
 
 using System.Text.RegularExpressions;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.SevenKyu.DisemvowelTrolls
@@ -21,6 +23,16 @@ namespace CompetitiveProgramming.CodeWars.SevenKyu.DisemvowelTrolls
                 ResultTester.CheckResult<string>(Kata.Disemvowel("What are you, a communist?"), "Wht r y,  cmmnst?"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Disemvowel Trolls");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.SevenKyu, Test.TestCases());
         }
     }
 }

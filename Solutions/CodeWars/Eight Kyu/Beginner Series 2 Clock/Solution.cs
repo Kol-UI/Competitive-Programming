@@ -20,6 +20,8 @@ Input constraints:
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeWars.EightKyu.BeginnerSeries2Clock
 {
@@ -41,6 +43,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.BeginnerSeries2Clock
                 ResultTester.CheckResult<int>(result1, 61000),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Clock 1");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Solution.TestBeginnerSeries2Clock());
         }
     }
 }

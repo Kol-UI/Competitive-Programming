@@ -1,4 +1,7 @@
 ﻿using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodeWars.EightKyu.ReturnToSanity
 {
 	public class Solution
@@ -10,5 +13,14 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.ReturnToSanity
             return results;
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Return To Sanity");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodeWars, ProblemCategory.EightKyu);
+        }
+    }
+}

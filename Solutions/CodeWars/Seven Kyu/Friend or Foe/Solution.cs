@@ -2,6 +2,8 @@
 
 using System.Linq;
 using System.Text.RegularExpressions;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.SevenKyu.FriendorFoe
@@ -22,6 +24,16 @@ namespace CompetitiveProgramming.CodeWars.SevenKyu.FriendorFoe
                 ResultTester.CheckResult<IEnumerable<string>>(Kata.FriendOrFoe(new string[]{"Ryan", "Kieran", "Mark"}), names),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Friend or Foe");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.SevenKyu, Test.TestCases());
         }
     }
 }

@@ -1,5 +1,7 @@
 using System;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.RemoveStringSpaces
@@ -44,6 +46,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.RemoveStringSpaces
                 ResultTester.CheckResult<string>(Case3_Result, "8aaaaaddddr"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Remove String Spaces");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestRemoveStringSpaces());
         }
     }
 }

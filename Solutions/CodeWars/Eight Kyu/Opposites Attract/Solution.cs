@@ -6,6 +6,8 @@ Timmy & Sarah think they are in love, but around where they live, they will only
 Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
 */
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.OppositesAttract
@@ -84,6 +86,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.OppositesAttract
             }
             
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Opposites Attract");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestOppositesAttract());
         }
     }
 }

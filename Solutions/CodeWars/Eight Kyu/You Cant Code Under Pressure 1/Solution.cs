@@ -4,6 +4,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.YouCantCodeUnderPressure1
@@ -34,6 +36,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.YouCantCodeUnderPressure1
                 ResultTester.CheckResult<int>(result5, 200)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("You Cant Code Under Pressure");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestYouCantCodeUnderPressure1());
         }
     }
 }

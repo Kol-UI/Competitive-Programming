@@ -1,5 +1,7 @@
 // Reversed sequence
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.Reversedsequence
@@ -29,6 +31,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.Reversedsequence
                 ResultTester.CheckResult<int[]>(Kata.ReverseSeqLinq(6), new int[] {6,5,4,3,2,1}),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reversed sequence");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestCases());
         }
     }
 }

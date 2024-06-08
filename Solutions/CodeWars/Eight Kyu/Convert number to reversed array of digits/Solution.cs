@@ -9,6 +9,8 @@ Example(Input => Output):
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.ConvertNumberToReversedArrayOfDigits
@@ -53,6 +55,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.ConvertNumberToReversedArrayO
                 ResultTester.CheckResult<long[]>(result4, expected2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Convert number to reversed array of digits");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestConvertNumberToReversedArrayOfDigits());
         }
     }
 }

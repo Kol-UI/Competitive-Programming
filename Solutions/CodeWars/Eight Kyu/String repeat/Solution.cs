@@ -1,5 +1,7 @@
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.Stringrepeat
@@ -119,6 +121,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.Stringrepeat
                 ResultTester.CheckResult<string>(Case7_ResultStringBuilder, ""),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("String repeat");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestStringrepeat());
         }
     }
 }

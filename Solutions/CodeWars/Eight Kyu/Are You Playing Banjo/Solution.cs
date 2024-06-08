@@ -12,6 +12,8 @@ Names given are always valid strings.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodeWars.EightKyu.AreYouPlayingBanjo
@@ -46,6 +48,16 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.AreYouPlayingBanjo
                 ResultTester.CheckResult<string>(Kata.AreYouPlayingBanjo("Ringo"), "Ringo plays banjo"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Are You Playing Banjo");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestCases());
         }
     }
 }
