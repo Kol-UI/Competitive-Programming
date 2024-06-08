@@ -1,6 +1,8 @@
 // Onboarding
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodinGame.Onboarding;
@@ -27,6 +29,16 @@ class Player
             {
                 Console.WriteLine(enemy2);
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Onboarding");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodinGame, ProblemCategory.Unknown);
         }
     }
 }

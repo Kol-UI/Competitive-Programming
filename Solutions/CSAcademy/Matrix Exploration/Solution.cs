@@ -4,6 +4,8 @@
 
 using System;
 using System.Collections.Generic;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CSAcademy.MatrixExploration;
@@ -95,5 +97,15 @@ class Solution
         }
 
         Console.WriteLine(answer);
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Matrix Exploration");
+        ResultTester.SpecialTestCase(ProblemOrigin.CSAcademy, ProblemCategory.EasyCSA);
     }
 }

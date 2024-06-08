@@ -68,7 +68,7 @@ namespace CompetitiveProgramming.CoderByte.BracketCombinations
         {
             StyleHelper.Space();
             StyleHelper.Title("Bracket Combinations");
-            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.HardCB, Test.TestCases());
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.HardCBy, Test.TestCases());
         }
     }
 }

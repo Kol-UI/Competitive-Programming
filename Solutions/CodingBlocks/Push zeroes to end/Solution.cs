@@ -1,6 +1,8 @@
 // Push zeroes to end
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CodingBlocks.Pushzeroestoend
 {
@@ -42,6 +44,16 @@ namespace CompetitiveProgramming.CodingBlocks.Pushzeroestoend
             {
                 arr[count++] = 0;
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Push zeroes to end");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodingBlocks, ProblemCategory.EasyCBl);
         }
     }
 }

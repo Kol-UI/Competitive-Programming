@@ -43,7 +43,7 @@ namespace CompetitiveProgramming.CoderByte.FirstFactorial
         {
             StyleHelper.Space();
             StyleHelper.Title("First Factorial");
-            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCB, Test.TestFirstFactorial());
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCBy, Test.TestFirstFactorial());
         }
     }
 }

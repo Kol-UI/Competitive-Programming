@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CSAcademy.GreatestCommonDivisor;
 
@@ -29,5 +31,15 @@ class Solution
             a = temp;
         }
         return a;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Greatest Common Divisor");
+        ResultTester.SpecialTestCase(ProblemOrigin.CSAcademy, ProblemCategory.TutorialCSA);
     }
 }

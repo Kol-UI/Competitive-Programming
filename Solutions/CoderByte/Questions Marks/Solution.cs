@@ -84,7 +84,7 @@ namespace CompetitiveProgramming.CoderByte.QuestionsMarks
         {
             StyleHelper.Space();
             StyleHelper.Title("Questions Marks");
-            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCB, Test.TestCases());
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCBy, Test.TestCases());
         }
     }
 }

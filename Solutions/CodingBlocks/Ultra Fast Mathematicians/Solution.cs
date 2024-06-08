@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.CodingBlocks.UltraFastMathematicians
@@ -44,4 +46,13 @@ namespace CompetitiveProgramming.CodingBlocks.UltraFastMathematicians
         }
     }
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Ultra Fast Methematicians");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodingBlocks, ProblemCategory.EasyCBl);
+        }
+    }
 }

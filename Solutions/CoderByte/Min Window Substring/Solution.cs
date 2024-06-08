@@ -111,7 +111,7 @@ namespace CompetitiveProgramming.CoderByte.MinWindowSubstring
         {
             StyleHelper.Space();
             StyleHelper.Title("Min Window Substring");
-            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.MediumCB, Test.TestCases());
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.MediumCBy, Test.TestCases());
         }
     }
 }

@@ -59,7 +59,7 @@ namespace CompetitiveProgramming.CoderByte.LongestWord
         {
             StyleHelper.Space();
             StyleHelper.Title("Longest Word");
-            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCB, Test.TestCases());
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCBy, Test.TestCases());
         }
     }
 }

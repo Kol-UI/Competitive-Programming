@@ -39,7 +39,7 @@ namespace CompetitiveProgramming.CoderByte.FirstReverse
         {
             StyleHelper.Space();
             StyleHelper.Title("First Reverse");
-            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCB, Test.TestFirstReverse());
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCBy, Test.TestFirstReverse());
         }
     }
 }

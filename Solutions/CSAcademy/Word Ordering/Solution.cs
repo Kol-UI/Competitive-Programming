@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using CompetitiveProgramming.TestDrivenDevelopment;
 using System.IO;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 
 namespace CompetitiveProgramming.CSAcademy.WordOrdering
 {
@@ -90,6 +92,16 @@ namespace CompetitiveProgramming.CSAcademy.WordOrdering
                     }
                 }
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Word Ordering");
+            ResultTester.SpecialTestCase(ProblemOrigin.CSAcademy, ProblemCategory.EasyCSA);
         }
     }
 }

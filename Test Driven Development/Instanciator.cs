@@ -28,7 +28,8 @@ namespace CompetitiveProgramming.Services
             var namespaces = new string[]
             { 
                 "AtCoder", "CodeChef", "CodeForces", "CoderByte",
-                "CodeWars.EightKyu", "CodeWars.SevenKyu", "CodeWars.SixKyu"
+                "CodeWars.EightKyu", "CodeWars.SevenKyu", "CodeWars.SixKyu",
+                "CodinGame", "CodingBlocks", "CSAcademy"
             };
 
             for(int i = 0; i < namespaces.Length; i++)

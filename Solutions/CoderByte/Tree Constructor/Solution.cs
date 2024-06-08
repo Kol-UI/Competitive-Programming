@@ -102,6 +102,6 @@ public class TestSolution : BaseSolution
     {
         StyleHelper.Space();
         StyleHelper.Title("Tree Constructor");
-        ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.MediumCB, Test.TestCases());
+        ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.MediumCBy, Test.TestCases());
     }
 }

@@ -80,7 +80,7 @@ namespace CompetitiveProgramming.CoderByte.CodelandUsernameValidation
         {
             StyleHelper.Space();
             StyleHelper.Title("Codeland Username Validation");
-            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCB, Test.TestCases());
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCBy, Test.TestCases());
         }
     }
 }

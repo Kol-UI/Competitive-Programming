@@ -17,6 +17,8 @@ using System.Collections.Generic;
 
 using System;
 using CompetitiveProgramming.TestDrivenDevelopment;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.Helpers;
 
 namespace CompetitiveProgramming.CodinGame.TheDescent;
 class Player
@@ -45,6 +47,16 @@ class Player
 
             Console.WriteLine(targetIndex); // The index of the mountain to fire on.
 
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("The Descent");
+            ResultTester.SpecialTestCase(ProblemOrigin.CodinGame, ProblemCategory.Unknown);
         }
     }
 }

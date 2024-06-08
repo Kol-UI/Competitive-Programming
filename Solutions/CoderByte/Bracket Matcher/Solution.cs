@@ -68,6 +68,6 @@ public class TestSolution : BaseSolution
     {
         StyleHelper.Space();
         StyleHelper.Title("Bracket Matcher");
-        ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.MediumCB, Test.TestCases());
+        ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.MediumCBy, Test.TestCases());
     }
 }

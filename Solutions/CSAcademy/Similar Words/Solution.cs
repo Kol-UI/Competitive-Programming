@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using CompetitiveProgramming.TestDrivenDevelopment;
 using System.IO;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.Helpers;
 
 namespace CompetitiveProgramming.CSAcademy.SimilarWords
 {
@@ -68,6 +70,16 @@ namespace CompetitiveProgramming.CSAcademy.SimilarWords
             }
             
             return true;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Similar Words");
+            ResultTester.SpecialTestCase(ProblemOrigin.CSAcademy, ProblemCategory.EasyCSA);
         }
     }
 }

@@ -33,16 +33,28 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 Console.WriteLine("CodeForces " + pb3 + " 800 " + CF800);
 
                 int pb4 = ResultTester.GetCounterOrigin(ProblemOrigin.CoderByte);
-                int CBHard = ResultTester.GetCounterDifficulty(ProblemCategory.HardCB);
-                int CBMedium = ResultTester.GetCounterDifficulty(ProblemCategory.MediumCB);
-                int CBEasy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyCB);
-                Console.WriteLine("CoderByte " + pb4 + " Hard " + CBHard + " Medium " + CBMedium + " Easy " + CBEasy);
+                int CByHard = ResultTester.GetCounterDifficulty(ProblemCategory.HardCBy);
+                int CByMedium = ResultTester.GetCounterDifficulty(ProblemCategory.MediumCBy);
+                int CByEasy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyCBy);
+                Console.WriteLine("CoderByte " + pb4 + " Hard " + CByHard + " Medium " + CByMedium + " Easy " + CByEasy);
 
                 int pb5 = ResultTester.GetCounterOrigin(ProblemOrigin.CodeWars);
                 int kyu8 = ResultTester.GetCounterDifficulty(ProblemCategory.EightKyu);
                 int kyu7 = ResultTester.GetCounterDifficulty(ProblemCategory.SevenKyu);
                 int kyu6 = ResultTester.GetCounterDifficulty(ProblemCategory.SixKyu);
                 Console.WriteLine("CodeWars " + pb5 + " EightKyu " + kyu8 + " SevenKyu " + kyu7 + " SixKyu " + kyu6);
+
+                int pb6 = ResultTester.GetCounterOrigin(ProblemOrigin.CodinGame);
+                Console.WriteLine("CodinGame " + pb6);
+
+                int pb7 = ResultTester.GetCounterOrigin(ProblemOrigin.CodingBlocks);
+                int CBlEasy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyCBl);
+                Console.WriteLine("CodingBlocks " + pb7 + " Easy " + CBlEasy);
+
+                int pb8 = ResultTester.GetCounterOrigin(ProblemOrigin.CSAcademy);
+                int CSATuto = ResultTester.GetCounterDifficulty(ProblemCategory.TutorialCSA);
+                int CSAEasy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyCSA);
+                Console.WriteLine("CSAcademy " + pb8 + " Tuto " + CSATuto + " Easy " + CSAEasy);
             }
             else
             {

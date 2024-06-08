@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.CSAcademy.Addition;
 class Solution
@@ -16,5 +18,15 @@ class Solution
         int sum = a + b;
 
         Console.WriteLine(sum);
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Addition");
+        ResultTester.SpecialTestCase(ProblemOrigin.CSAcademy, ProblemCategory.TutorialCSA);
     }
 }

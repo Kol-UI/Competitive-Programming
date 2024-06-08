@@ -3,33 +3,55 @@ public enum ProblemCategory
 {
     Unknown = 0,
 
-    LearnCC = 1,
-    SchoolGFG = 2,
-    BeginnerCC = 3,
-    BeginnerAC = 4,
+    LearnCC = 10,
+
+    TutorialCSA = 20,
+
+
+    SchoolGFG = 30,
+
+    BeginnerCC = 40,
+    BeginnerAC = 41,
+
+
+
     SevenKyu = 5,
     EightKyu = 6,
-    BasicGFG = 7,
+
+
+    BasicGFG = 50,
+
+
     SixKyu = 8,
     FiveKyu = 9,
-    EasyCB = 10,
-    EasyGFG = 11,
-    EasyHR = 12,
-    EasyLC = 13,
-    FourKyu = 14,
-    ThreeKyu = 15,
-    HardCB = 16,
-    MediumGFG = 17,
-    MediumHR = 18,
-    MediumLC = 19,
-    TwoKyu = 20,
-    OneKyu = 21,
-    MediumCB = 22,
-    HardGFG = 23,
-    HardHR = 24,
-    HardLC = 25,
+
+    EasyCBy = 60,
+    EasyCBl = 61,
+    EasyGFG = 62,
+    EasyHR = 63,
+    EasyLC = 64,
+    EasyCSA = 65,
+    
+
+    FourKyu = 15,
+    ThreeKyu = 16,
+
+    MediumCBy = 70,
+    MediumCBl = 71,
+    MediumGFG = 72,
+    MediumHR = 73,
+    MediumLC = 74,
+
+    TwoKyu = 22,
+    OneKyu = 23,
+
+    HardCBy = 80,
+    HardCBl = 81,
+    HardGFG = 82,
+    HardHR = 83,
+    HardLC = 84,
 
 
 
-    CF800 = 40,
+    CF800 = 100,
 }

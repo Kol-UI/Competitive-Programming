@@ -47,7 +47,7 @@ namespace CompetitiveProgramming.CoderByte.FindIntersection
         {
             StyleHelper.Space();
             StyleHelper.Title("Find Intersection");
-            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCB, Test.TestCases());
+            ResultTester.CheckCurrentSolution(ProblemOrigin.CoderByte, ProblemCategory.EasyCBy, Test.TestCases());
         }
     }
 }
