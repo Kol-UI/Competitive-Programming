@@ -28,6 +28,8 @@ You don't need to read input or print anything. Your task is to complete the fun
 */
 
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.MaximumLength
@@ -89,6 +91,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.MaximumLength
                 ResultTester.CheckResult<int>(MaximumLength.Solution.Solve(11, 2, 2), -1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Length");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.MediumGFG, Test.TestMaximumLength());
         }
     }
 }

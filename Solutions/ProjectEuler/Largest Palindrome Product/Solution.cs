@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.ProjectEuler.LargestPalindromeProduct
 {
@@ -54,6 +56,16 @@ namespace CompetitiveProgramming.ProjectEuler.LargestPalindromeProduct
                 ResultTester.CheckResult<int>(Solution.LargestPalindrome(), Solution.LargestPalindrome())
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Largest Palindrome Product");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.ProjectEuler, ProblemCategory.OtherEuler, Test.TestCases());
         }
     }
 

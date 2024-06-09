@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.HackerRank.BreakingtheRecords
@@ -45,6 +47,16 @@ namespace CompetitiveProgramming.HackerRank.BreakingtheRecords
                 ResultTester.CheckResult<List<int>>(Solution.BreakingRecords(new List<int>(){3, 4, 21, 36, 10, 28, 35, 5, 24, 42}), new List<int>(){4, 0}),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Breaking the Records");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.HackerRank, ProblemCategory.EasyHR, Test.TestCases());
         }
     }
 }

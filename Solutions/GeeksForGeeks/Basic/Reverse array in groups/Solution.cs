@@ -29,6 +29,8 @@ You don't need to read input or print anything. The task is to complete the func
 
 using System;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Basic.Reversearrayingroups
@@ -52,6 +54,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Basic.Reversearrayingroups
                     right--;
                 }
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reverse array in groups");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks, ProblemCategory.BasicGFG);
         }
     }
 }

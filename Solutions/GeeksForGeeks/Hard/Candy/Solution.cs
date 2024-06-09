@@ -4,6 +4,8 @@
 using System;
 using System.Linq;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Hard.Candy
@@ -63,6 +65,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Hard.Candy
                 ResultTester.CheckResult<int>(Solution.MinCandy(ratings5.Length, ratings5), 1),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Candy");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.HardGFG, Test.TestCases());
         }
     }
 }

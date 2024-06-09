@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.SphereOnlineJudge.PrimeGenerator;
 
@@ -44,6 +46,16 @@ class Program
         for (int i = m; i <= n; i++)
         {
             if (IsPrime(i)) Console.WriteLine(i);
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Prime Generator");
+            ResultTester.SpecialTestCase(ProblemOrigin.SphereOnlineJudge, ProblemCategory.OtherSOJ);
         }
     }
 }

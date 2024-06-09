@@ -3,6 +3,9 @@
 // Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.HackerRank.DiagonalDifference
 {
     public class Solution
@@ -45,5 +48,15 @@ namespace CompetitiveProgramming.HackerRank.DiagonalDifference
             textWriter.Close();
         }
         */
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Diagonal Difference");
+            ResultTester.SpecialTestCase(ProblemOrigin.HackerRank, ProblemCategory.EasyHR);
+        }
     }
 }

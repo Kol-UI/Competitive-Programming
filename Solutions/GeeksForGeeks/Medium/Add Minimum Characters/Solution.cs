@@ -26,6 +26,8 @@ You don't need to read input or print anything. Your task is to complete the fun
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.AddMinimumCharacters
@@ -66,6 +68,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.AddMinimumCharacters
                 ResultTester.CheckResult<int>(Solution.AddMinChar("ABA"), 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Add Minimum Characters");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.MediumGFG, Test.TestAddMinimumCharacters());
         }
     }
 }

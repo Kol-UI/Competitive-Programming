@@ -1,6 +1,9 @@
 using System;
 using System.Linq;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.RemoveandReverse
 {
@@ -73,6 +76,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.RemoveandReverse
             }
             return ans;
             
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Remove and Reverse");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks, ProblemCategory.MediumGFG);
         }
     }
 }

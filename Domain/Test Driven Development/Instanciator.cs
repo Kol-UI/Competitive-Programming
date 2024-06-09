@@ -29,7 +29,9 @@ namespace CompetitiveProgramming.Services
             { 
                 "AtCoder", "CodeChef", "CodeForces", "CoderByte",
                 "CodeWars.EightKyu", "CodeWars.SevenKyu", "CodeWars.SixKyu",
-                "CodinGame", "CodingBlocks", "CSAcademy"
+                "CodinGame", "CodingBlocks", "CSAcademy",
+                "GeeksForGeeks.School", "GeeksForGeeks.Basic", "GeeksForGeeks.Easy", "GeeksForGeeks.Medium", "GeeksForGeeks.Hard",
+                "HackerRank", "Kattis", "ProjectEuler", "SphereOnlineJudge"
             };
 
             for(int i = 0; i < namespaces.Length; i++)

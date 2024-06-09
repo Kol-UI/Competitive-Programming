@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.DetermineifTwoTreesareIdentical
@@ -30,4 +32,14 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.DetermineifTwoTreesareIdenti
         }
     }
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Determine if Two Trees are Identical");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG);
+        }
+    }
 }

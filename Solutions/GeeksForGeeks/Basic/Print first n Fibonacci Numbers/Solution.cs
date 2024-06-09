@@ -22,6 +22,8 @@ Your task is to complete printFibb() which takes single argument N and returns a
 
 using System;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Basic.PrintfirstnFibonacciNumbers
@@ -61,6 +63,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Basic.PrintfirstnFibonacciNumbers
                 ResultTester.CheckResult<long[]>(Solution.PrintFibb(7), result2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Print first n Fibonacci Numbers");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.BasicGFG, Test.TestCases());
         }
     }
 }

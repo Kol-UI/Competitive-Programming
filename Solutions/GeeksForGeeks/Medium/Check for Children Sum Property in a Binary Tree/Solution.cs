@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.CheckforChildrenSumPropertyinaBinaryTree
@@ -27,5 +29,15 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.CheckforChildrenSumPropert
             return 0;
         }
         */
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Check for Children Sum Property in a Binary Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks, ProblemCategory.MediumGFG);
+        }
     }
 }

@@ -1,6 +1,8 @@
 using System;
 using System.Linq;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.CounttheSubstrings
@@ -39,6 +41,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.CounttheSubstrings
                 ResultTester.CheckResult<int>(Solution.CountSubstring("WomensDAY"), 4)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count the Substrings");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG, Test.TestCounttheSubstrings());
         }
     }
 }

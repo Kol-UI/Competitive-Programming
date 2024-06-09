@@ -1,6 +1,8 @@
 // Ashton and String
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.HackerRank.AshtonandString
@@ -59,6 +61,16 @@ namespace CompetitiveProgramming.HackerRank.AshtonandString
                 ResultTester.CheckResult<int>(Result.AshtonString("hello", 7), 101),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Ashton and String");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.HackerRank, ProblemCategory.HardHR, Test.TestCases());
         }
     }
 }

@@ -1,6 +1,8 @@
 // Reverse First K elements of Queue
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.ReverseFirstKelementsofQueue
 {
@@ -30,6 +32,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.ReverseFirstKelementsofQueue
             }
 
             return q;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reverse First K elements of Queue");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG);
         }
     }
 }

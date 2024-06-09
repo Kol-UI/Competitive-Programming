@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.HackerRank.SubarrayDivision
@@ -49,6 +51,16 @@ namespace CompetitiveProgramming.HackerRank.SubarrayDivision
                 ResultTester.CheckResult<int>(Solution.Birthday(s, d, m), 2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Subarray Division");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.HackerRank, ProblemCategory.EasyHR, Test.TestCases());
         }
     }
 }

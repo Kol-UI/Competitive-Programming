@@ -36,6 +36,9 @@ You don't need to read input or print anything. Your task is to complete the fun
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.DominantPairs
 {
     public class Solution
@@ -58,6 +61,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.DominantPairs
             }
 
             return result;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Dominant Pairs");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG);
         }
     }
 }

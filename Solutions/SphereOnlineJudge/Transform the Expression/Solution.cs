@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.SphereOnlineJudge.TransformtheExpression
 {
@@ -71,6 +73,16 @@ namespace CompetitiveProgramming.SphereOnlineJudge.TransformtheExpression
                 string rpn = InfixToRPN(expression);
                 Console.WriteLine(rpn);
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Transform the Expression");
+            ResultTester.SpecialTestCase(ProblemOrigin.SphereOnlineJudge, ProblemCategory.OtherSOJ);
         }
     }
 }

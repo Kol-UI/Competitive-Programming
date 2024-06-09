@@ -27,3 +27,21 @@ different sign. So the final array is empty.
 Your Task:
 You don't need to read input or print anything. Your task is to complete the function makeBeautiful() which takes an array as an input parameter and returns an array.
 */
+
+
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
+namespace CompetitiveProgramming.GeeksForGeeks.Easy.Makethearraybeautiful
+{
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Make the array beautiful");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG);
+        }
+    }
+}

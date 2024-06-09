@@ -39,6 +39,8 @@ Complete the function minOperations() which takes the integer N as the input par
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.MakeArrayElementsEqual
@@ -65,6 +67,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.MakeArrayElementsEqual
                 ResultTester.CheckResult<long>(Solution.MinOperations(2), 1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Make Array Elements Equal");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG, Test.TestMakeArrayElementsEqual());
         }
     }
 }

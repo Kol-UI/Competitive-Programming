@@ -1,6 +1,8 @@
 // Number Line Jumps
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.HackerRank.NumberLineJumps
@@ -31,6 +33,16 @@ namespace CompetitiveProgramming.HackerRank.NumberLineJumps
                 ResultTester.CheckResult<string>(Solution.Kangaroo(0, 2, 5, 3), "NO"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number Line Jumps");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.HackerRank, ProblemCategory.EasyHR, Test.TestCases());
         }
     }
 }

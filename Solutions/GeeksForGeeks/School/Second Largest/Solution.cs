@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.School.SecondLargest
@@ -47,6 +49,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.School.SecondLargest
                 ResultTester.CheckResult<int>(case2_PrintSecondLargestResult, 5)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Second Largest");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.SchoolGFG, Test.TestSecondLargest());
         }
     }
 }

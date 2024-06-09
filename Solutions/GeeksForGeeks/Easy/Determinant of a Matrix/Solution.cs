@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.DeterminantofaMatrix
@@ -86,6 +88,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.DeterminantofaMatrix
                 ResultTester.CheckResult<int>(Solution.determinantOfMatrix(matrix2, 3), -53),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Determinant of a Matrix");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG, Test.TestCases());
         }
     }
 }

@@ -52,6 +52,8 @@ Sample Output 0
 1 1
 */
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.HackerRank.CompareTheTriplets
@@ -129,6 +131,16 @@ namespace CompetitiveProgramming.HackerRank.CompareTheTriplets
                 ResultTester.CheckResult<List<int>>(result2, listOutput2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Compare The Triplets");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.HackerRank, ProblemCategory.EasyHR, Test.TestCompareTriplets());
         }
     }
 }

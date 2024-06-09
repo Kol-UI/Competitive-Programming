@@ -33,6 +33,9 @@ You dont need to read input or print anything. Your task is to complete the func
 
 using System;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.BFSofgraph
 {
@@ -65,6 +68,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.BFSofgraph
             }
 
             return result;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("BFS of graph");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG);
         }
     }
 }

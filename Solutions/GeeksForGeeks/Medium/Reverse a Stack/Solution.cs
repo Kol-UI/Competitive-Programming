@@ -1,6 +1,9 @@
 using System;
 using System.Linq;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.ReverseaStack
 {
@@ -27,6 +30,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.ReverseaStack
             int temp = stack.Pop();
             InsertAtBottom(stack, item);
             stack.Push(temp);
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reverse a Stack");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks, ProblemCategory.MediumGFG);
         }
     }
 }

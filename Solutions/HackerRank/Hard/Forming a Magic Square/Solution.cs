@@ -1,6 +1,8 @@
 // Forming a Magic Square
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.HackerRank.FormingaMagicSquare
@@ -98,6 +100,16 @@ namespace CompetitiveProgramming.HackerRank.FormingaMagicSquare
                 ResultTester.CheckResult<int>(Result.FormingMagicSquare(test5), 0),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Forming a Magic Square");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.HackerRank, ProblemCategory.EasyHR, Test.TestCases());
         }
     }
 }

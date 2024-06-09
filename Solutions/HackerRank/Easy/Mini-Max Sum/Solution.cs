@@ -1,6 +1,8 @@
 // Mini-Max Sum
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.HackerRank.MiniMaxSum
@@ -25,6 +27,16 @@ namespace CompetitiveProgramming.HackerRank.MiniMaxSum
             }
 
             Console.WriteLine($"{minSum} {maxSum}");
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Mini-Max Sum");
+            ResultTester.SpecialTestCase(ProblemOrigin.HackerRank, ProblemCategory.EasyHR);
         }
     }
 }

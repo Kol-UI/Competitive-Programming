@@ -30,6 +30,8 @@ The task is to complete the function equilibriumPoint() which takes the array an
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.EquilibriumPoint
@@ -80,6 +82,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.EquilibriumPoint
                 ResultTester.CheckResult<int>(Solution.equilibriumPoint(A2, n2), 1),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Equilibrium Point");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG, Test.TestCases());
         }
     }
 }

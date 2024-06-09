@@ -41,3 +41,21 @@ numbers is 25, which contains C, which is 5.
 Your Task:
 The task is to complete the function solve() which takes five integers N,A,B,C and D as input parameters and returns the number of best integers modulo 109+7.
 */
+
+
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
+namespace CompetitiveProgramming.GeeksForGeeks.Hard.SpecialDigits
+{
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Special Digits");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks, ProblemCategory.HardGFG);
+        }
+    }
+}

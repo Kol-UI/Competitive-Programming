@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.EvenSwap
@@ -45,6 +47,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.EvenSwap
                 ResultTester.CheckResult<int[]>(Solution.LexicographicallyLargest(a1, N1), a1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Even Swap");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.MediumGFG, Test.TestEvenSwap());
         }
     }
 }

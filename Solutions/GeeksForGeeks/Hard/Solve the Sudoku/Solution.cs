@@ -93,3 +93,20 @@ class Solution
     }
 }
 */
+
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
+namespace CompetitiveProgramming.GeeksForGeeks.Hard.SolvetheSudoku
+{
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Solve the Sudoku");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks, ProblemCategory.HardGFG);
+        }
+    }
+}

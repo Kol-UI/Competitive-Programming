@@ -23,6 +23,8 @@ This is a function problem. You only need to complete the function permutation t
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.StringPermutations
@@ -80,6 +82,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.StringPermutations
                 ResultTester.CheckResult<List<string>>(Solution.Permutation("ABSG"), list2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("String Permutations");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG, Test.TestCases());
         }
     }
 }

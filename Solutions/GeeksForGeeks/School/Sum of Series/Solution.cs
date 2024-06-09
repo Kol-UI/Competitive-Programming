@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.School.SumofSeries
@@ -22,6 +24,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.School.SumofSeries
                 ResultTester.CheckResult<long>(Solution.SeriesSum(5), 15)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Sum of Series");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.SchoolGFG, Test.TestSumofSeries());
         }
     }
 }

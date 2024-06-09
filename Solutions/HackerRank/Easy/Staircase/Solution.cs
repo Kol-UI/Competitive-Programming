@@ -1,6 +1,8 @@
 // Staircase
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.HackerRank.Staircase
@@ -36,6 +38,16 @@ namespace CompetitiveProgramming.HackerRank.Staircase
                 ResultTester.CheckResult<bool>(true, true);
             }
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Staircase");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.HackerRank, ProblemCategory.EasyHR, Test.TestCases());
         }
     }
 }

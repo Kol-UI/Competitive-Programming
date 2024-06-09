@@ -29,6 +29,8 @@
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.EqualLeftandRightSubarraySum
@@ -80,6 +82,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.EqualLeftandRightSubarraySum
                 ResultTester.CheckResult<int>(Output2, 1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Equal Left and Right Subarray Sum");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG, Test.TestEqualLeftandRightSubarraySum());
         }
     }
 }

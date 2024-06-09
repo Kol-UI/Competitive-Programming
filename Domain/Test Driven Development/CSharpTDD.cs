@@ -3,7 +3,6 @@ using CompetitiveProgramming.Models;
 using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.Services.Providers;
 using CompetitiveProgramming.Services;
-using CompetitiveProgramming.CodeForces.BuyaShovel;
 
 namespace CompetitiveProgramming.TestDrivenDevelopment
 {
@@ -45,7 +44,8 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 Console.WriteLine("CodeWars " + pb5 + " EightKyu " + kyu8 + " SevenKyu " + kyu7 + " SixKyu " + kyu6);
 
                 int pb6 = ResultTester.GetCounterOrigin(ProblemOrigin.CodinGame);
-                Console.WriteLine("CodinGame " + pb6);
+                int CGOther = ResultTester.GetCounterDifficulty(ProblemCategory.OtherCodinGame);
+                Console.WriteLine("CodinGame " + pb6 + " Other " + CGOther);
 
                 int pb7 = ResultTester.GetCounterOrigin(ProblemOrigin.CodingBlocks);
                 int CBlEasy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyCBl);
@@ -55,6 +55,32 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 int CSATuto = ResultTester.GetCounterDifficulty(ProblemCategory.TutorialCSA);
                 int CSAEasy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyCSA);
                 Console.WriteLine("CSAcademy " + pb8 + " Tuto " + CSATuto + " Easy " + CSAEasy);
+
+                int pb9 = ResultTester.GetCounterOrigin(ProblemOrigin.GeeksForGeeks);
+                int gfgschool = ResultTester.GetCounterDifficulty(ProblemCategory.SchoolGFG);
+                int gfgbasic = ResultTester.GetCounterDifficulty(ProblemCategory.BasicGFG);
+                int gfgeasy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyGFG);
+                int gfgmedium = ResultTester.GetCounterDifficulty(ProblemCategory.MediumGFG);
+                int gfghard = ResultTester.GetCounterDifficulty(ProblemCategory.HardGFG);
+                Console.WriteLine("GeeksForGeeks " + pb9 + " School " + gfgschool + " Basic " + gfgbasic + " Easy " + gfgeasy + " Medium " + gfgmedium + " Hard " + gfghard);
+
+                int pb10 = ResultTester.GetCounterOrigin(ProblemOrigin.HackerRank);
+                int HReasy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyHR);
+                int HRmedium = ResultTester.GetCounterDifficulty(ProblemCategory.MediumHR);
+                int HRhard = ResultTester.GetCounterDifficulty(ProblemCategory.HardHR);
+                Console.WriteLine("HarckerRank " + pb10 + " Easy " + HReasy + " Medium " + HRmedium + " Hard " + HRhard);
+
+                int pb11 = ResultTester.GetCounterOrigin(ProblemOrigin.Kattis);
+                int KATeasy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyKAT);
+                Console.WriteLine("Kattis " + pb11 + " Easy " + KATeasy);
+
+                int pb12 = ResultTester.GetCounterOrigin(ProblemOrigin.ProjectEuler);
+                int EulerOther = ResultTester.GetCounterDifficulty(ProblemCategory.OtherEuler);
+                Console.WriteLine("ProjectEuler " + pb12 + " Other " + EulerOther);
+
+                int pb13 = ResultTester.GetCounterOrigin(ProblemOrigin.SphereOnlineJudge);
+                int SOJOther = ResultTester.GetCounterDifficulty(ProblemCategory.OtherSOJ);
+                Console.WriteLine("SphereOnlineJudge " + pb13 + " Other " + SOJOther);
             }
             else
             {

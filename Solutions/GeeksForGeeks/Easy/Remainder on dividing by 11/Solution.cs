@@ -24,6 +24,8 @@ Constraints:
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.Remainderondividingby11
@@ -53,6 +55,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.Remainderondividingby11
                 ResultTester.CheckResult<int>(Solution.xmod11("231456786543567898765"), 1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Remainder on dividing by 11");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG, Test.TestRemainderondividingby11());
         }
     }
 }

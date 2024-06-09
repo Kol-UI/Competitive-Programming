@@ -38,7 +38,7 @@ class Player
         {
             StyleHelper.Space();
             StyleHelper.Title("Onboarding");
-            ResultTester.SpecialTestCase(ProblemOrigin.CodinGame, ProblemCategory.Unknown);
+            ResultTester.SpecialTestCase(ProblemOrigin.CodinGame, ProblemCategory.OtherCodinGame);
         }
     }
 }

@@ -54,6 +54,8 @@ Expected Auxiliary Space: O(1)
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Easy.Sumofupperandlowertriangles
@@ -116,6 +118,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Easy.Sumofupperandlowertriangles
                 ResultTester.CheckResult<List<int>>(Solution.sumTriangles(mat2, N2), result2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Sum of upper and lower triangles");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.EasyGFG, Test.TestCases());
         }
     }
 }

@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.Stringrporpr
@@ -79,6 +81,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.Stringrporpr
                 ResultTester.CheckResult<long>(case2_Result, 14)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("String rp or pr");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.MediumGFG, Test.TestStringrporpr());
         }
     }
 }

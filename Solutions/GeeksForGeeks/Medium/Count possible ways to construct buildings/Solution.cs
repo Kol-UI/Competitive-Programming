@@ -1,6 +1,8 @@
 // Count possible ways to construct buildings
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.GeeksForGeeks.Medium.Countpossiblewaystoconstructbuildings
@@ -38,6 +40,16 @@ namespace CompetitiveProgramming.GeeksForGeeks.Medium.Countpossiblewaystoconstru
                 ResultTester.CheckResult<int>(Solution.TotalWays(3), 25),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count possible ways to construct buildings");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.GeeksForGeeks, ProblemCategory.MediumGFG, Test.TestCases());
         }
     }
 }

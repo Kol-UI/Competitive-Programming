@@ -56,7 +56,7 @@ class Player
         {
             StyleHelper.Space();
             StyleHelper.Title("The Descent");
-            ResultTester.SpecialTestCase(ProblemOrigin.CodinGame, ProblemCategory.Unknown);
+            ResultTester.SpecialTestCase(ProblemOrigin.CodinGame, ProblemCategory.OtherCodinGame);
         }
     }
 }

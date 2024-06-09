@@ -17,6 +17,8 @@ Output: 1 2 3 4 5
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.GeeksForGeeks.School.Print1ToNWithoutLoop
 {
@@ -32,5 +34,15 @@ namespace CompetitiveProgramming.GeeksForGeeks.School.Print1ToNWithoutLoop
             }
         }
 
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Print 1 To N Without Loop");
+            ResultTester.SpecialTestCase(ProblemOrigin.GeeksForGeeks, ProblemCategory.SchoolGFG);
+        }
     }
 }
