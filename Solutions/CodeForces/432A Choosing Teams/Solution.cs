@@ -30,7 +30,7 @@ namespace CompetitiveProgramming.CodeForces.ChoosingTeams
             
             Console.WriteLine(numberOfTeams);
         }
-
+        
         private static string ReadLn() => Console.ReadLine()!;
         private static int ReadInt() => int.Parse(ReadLn());
         private static long ReadLong() => long.Parse(ReadLn());

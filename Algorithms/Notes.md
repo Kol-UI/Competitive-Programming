@@ -21,7 +21,16 @@ public class TestSolution : BaseSolution
         StyleHelper.Space();
         StyleHelper.Title("Title");
         ResultTester.CheckCurrentSolution(ProblemOrigin, ProblemCategory, Test.TestCases());
-        //ResultTester.SpecialTestCase(ProblemOrigin, ProblemCategory);
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Title");
+        ResultTester.SpecialTestCase(ProblemOrigin, ProblemCategory);
     }
 }
 
@@ -57,6 +66,6 @@ public class Solution
     private static int[] ReadInts() => ReadStrings().Select(int.Parse).ToArray();
     private static long[] ReadLongs() => ReadStrings().Select(long.Parse).ToArray();
     private static double[] ReadDoubles() => ReadStrings().Select(double.Parse).ToArray();
-    private static void PrintResults(List<int> results) => results.ForEach(Console.WriteLine);
+    private static void PrintResults<T>(List<T> results) => results.ForEach(result => Console.WriteLine(result?.ToString()));
 }
 ```
