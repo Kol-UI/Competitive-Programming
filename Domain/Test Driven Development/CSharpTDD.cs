@@ -81,6 +81,12 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 int pb13 = ResultTester.GetCounterOrigin(ProblemOrigin.SphereOnlineJudge);
                 int SOJOther = ResultTester.GetCounterDifficulty(ProblemCategory.OtherSOJ);
                 Console.WriteLine("SphereOnlineJudge " + pb13 + " Other " + SOJOther);
+
+                int pb14 = ResultTester.GetCounterOrigin(ProblemOrigin.LeetCode);
+                int LCEasy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyLC);
+                int LCMedium = ResultTester.GetCounterDifficulty(ProblemCategory.MediumLC);
+                int LCHard = ResultTester.GetCounterDifficulty(ProblemCategory.HardLC);
+                Console.WriteLine("LeetCode " + pb14 + " Easy " + LCEasy + " Medium " + LCMedium + " Hard " + LCHard);
             }
             else
             {

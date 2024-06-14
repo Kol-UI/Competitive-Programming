@@ -31,7 +31,8 @@ namespace CompetitiveProgramming.Services
                 "CodeWars.EightKyu", "CodeWars.SevenKyu", "CodeWars.SixKyu",
                 "CodinGame", "CodingBlocks", "CSAcademy",
                 "GeeksForGeeks.School", "GeeksForGeeks.Basic", "GeeksForGeeks.Easy", "GeeksForGeeks.Medium", "GeeksForGeeks.Hard",
-                "HackerRank", "Kattis", "ProjectEuler", "SphereOnlineJudge"
+                "HackerRank", "Kattis", "ProjectEuler", "SphereOnlineJudge",
+                "LeetCode"
             };
 
             for(int i = 0; i < namespaces.Length; i++)
