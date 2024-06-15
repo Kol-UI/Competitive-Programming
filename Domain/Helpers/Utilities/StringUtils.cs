@@ -60,5 +60,11 @@ namespace CompetitiveProgramming.Helpers
 
         // Check if pin is 4 or 6 digits
         public static bool IsValidPinLength(string pin) => pin.All(char.IsDigit) && (pin.Length == 6 || pin.Length == 4);
+
+        // Convert a String Array to a Sentence with space between words
+        public static string ConvertArrayToSentence(string[] words)
+        {
+            return words.Length >= 1 ? string.Join(" ", words) : "";
+        }
     }
 }
