@@ -8,7 +8,8 @@ namespace CompetitiveProgramming.CodeForces.ShortSubstrings
 {
     public class Solution
     {
-        public static void Main(string[] args)
+        //public static void Main(string[] args)
+        public static void MainSolution()
         {
             int numberOfTestCases = int.Parse(Console.ReadLine()!);
             
