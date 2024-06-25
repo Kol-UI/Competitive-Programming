@@ -12,22 +12,29 @@ public enum ProblemCategory
     // SCHOOL
     SchoolGFG = 30,
 
+    // Tuto/Learn/School
+
     // BEGINNER
     BeginnerCC = 40,
     BeginnerAC = 41,
 
-
-
-    SevenKyu = 5,
-    EightKyu = 6,
-
-
     // BASIC
     BasicGFG = 50,
 
+    // Beginner/Basic/8Kyu
 
+    EightKyu = 5,
+    SevenKyu = 6,
+
+    // Newbie/7Kyu
+
+    // 6Kyu
     SixKyu = 8,
+    // 5Kyu
     FiveKyu = 9,
+
+    // Easy/xKyu
+
 
     // EASY
     EasyCBy = 60,
@@ -42,6 +49,8 @@ public enum ProblemCategory
     FourKyu = 15,
     ThreeKyu = 16,
 
+    // Medium/xKyu
+
     // MEDIUM
     MediumCBy = 70,
     MediumCBl = 71,
@@ -51,6 +60,8 @@ public enum ProblemCategory
 
     TwoKyu = 22,
     OneKyu = 23,
+
+    // Hard/xKyu
 
     // HARD
     HardCBy = 80,
