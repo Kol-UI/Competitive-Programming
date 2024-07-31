@@ -7,7 +7,8 @@ namespace CompetitiveProgramming.CodeForces.CatchtheCoin
 {
     public class Program
     {
-        public static void Main()
+        //public static void Main()
+        public static void MainSolution()
         {
             int testCases = int.Parse(Console.ReadLine()!);
 
