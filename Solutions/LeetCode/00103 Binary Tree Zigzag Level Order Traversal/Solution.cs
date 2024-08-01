@@ -1,4 +1,7 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BinaryTreeZigzagLevelOrderTraversal
 {
@@ -33,6 +36,14 @@ namespace CompetitiveProgramming.LeetCode.BinaryTreeZigzagLevelOrderTraversal
             if (nd.right != null) ZigzagLevelOrderSub(nd.right, ret, level + 1);
         }
     }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Binary Tree Zigzag Level Order Traversal");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }
-
-

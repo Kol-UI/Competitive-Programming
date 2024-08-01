@@ -29,6 +29,8 @@ Explanation: All possible pairs are returned from the sequence: [1,3],[2,3]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.FindKPairswithSmallestSums
 {
@@ -106,6 +108,16 @@ namespace CompetitiveProgramming.LeetCode.FindKPairswithSmallestSums
                 ResultTester.CheckResult<IList<IList<int>>>(Solution.KSmallestPairs(nums1_3, nums2_3, k_3), result3),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Number of Removable Characters");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

@@ -1,6 +1,8 @@
 // Minimum Falling Path Sum II
 
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumFallingPathSumII
@@ -36,6 +38,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumFallingPathSumII
             }
 
             return min;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("1289");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
         }
     }
 }

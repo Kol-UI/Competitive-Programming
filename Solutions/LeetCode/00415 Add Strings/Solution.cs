@@ -25,6 +25,8 @@ Output: "0"
 
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.AddStrings
@@ -62,6 +64,16 @@ namespace CompetitiveProgramming.LeetCode.AddStrings
                 ResultTester.CheckResult<string>(Solution.AddStrings("0", "0"), "0"),
             };
             return results;
+        }
+    }
+    
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("add Strings");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }
 }

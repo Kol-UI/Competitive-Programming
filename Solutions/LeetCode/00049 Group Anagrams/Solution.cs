@@ -24,7 +24,10 @@ Output: [["a"]]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.GroupAnagrams
 {
     public class Solution 
@@ -79,6 +82,16 @@ namespace CompetitiveProgramming.LeetCode.GroupAnagrams
                 ResultTester.CheckResult<IList<IList<string>>>(Solution.GroupAnagrams(case3), expected3),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Group Anagrams");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

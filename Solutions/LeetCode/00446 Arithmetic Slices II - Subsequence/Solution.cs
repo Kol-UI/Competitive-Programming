@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.ArithmeticSlicesIISubsequence
 {
@@ -107,6 +109,16 @@ namespace CompetitiveProgramming.LeetCode.ArithmeticSlicesIISubsequence
                 ResultTester.CheckResult<int>(Solution.NumberOfArithmeticSlices(new int[] {7,7,7,7,7}), 16),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Arithmetic Slices II Subsequence");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

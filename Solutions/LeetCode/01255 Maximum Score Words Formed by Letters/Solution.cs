@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MaximumScoreWordsFormedbyLetters
 {
@@ -36,6 +38,16 @@ namespace CompetitiveProgramming.LeetCode.MaximumScoreWordsFormedbyLetters
             int result = 0;
             for (int k = 0; k < words.Length; k++) result = Math.Max(result, backtrack(k, lettersFreq, words, score));
             return result;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("1255");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
         }
     }
 }

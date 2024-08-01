@@ -35,6 +35,9 @@ minStack.getMin(); // return -2
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MinStack
 {
     public class MinStack
@@ -107,4 +110,14 @@ namespace CompetitiveProgramming.LeetCode.MinStack
     * int param_3 = obj.Top();
     * int param_4 = obj.GetMin();
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Min Stack");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

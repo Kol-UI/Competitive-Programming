@@ -29,6 +29,8 @@ g.shortestPath(0, 3); // return 6. The shortest path from 0 to 3 now is 0 -> 1 -
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.DesignGraphWithShortestPathCalculator
@@ -107,4 +109,14 @@ namespace CompetitiveProgramming.LeetCode.DesignGraphWithShortestPathCalculator
     * obj.AddEdge(edge);
     * int param_2 = obj.ShortestPath(node1,node2);
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Design Graph With Shortest Path Calculator");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
+        }
+    }
 }

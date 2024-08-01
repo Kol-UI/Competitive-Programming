@@ -23,7 +23,10 @@ Output: true
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BalancedBinaryTree
 {
     /**
@@ -57,6 +60,16 @@ namespace CompetitiveProgramming.LeetCode.BalancedBinaryTree
             if (node == null)
                 return 0;
             return 1 + Math.Max(height(node.left), height(node.right));
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Balanced Binary Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }
 }

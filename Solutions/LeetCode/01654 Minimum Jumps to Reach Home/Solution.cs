@@ -34,6 +34,8 @@ Explanation: One jump forward (0 -> 16) then one jump backward (16 -> 7) will ge
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumJumpstoReachHome
@@ -110,6 +112,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumJumpstoReachHome
                 ResultTester.CheckResult<int>(result3, 2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Jumps to Reach Home");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

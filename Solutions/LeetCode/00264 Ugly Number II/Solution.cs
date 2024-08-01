@@ -20,6 +20,8 @@ Explanation: 1 has no prime factors, therefore all of its prime factors are limi
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.UglyNumberII
@@ -61,6 +63,16 @@ namespace CompetitiveProgramming.LeetCode.UglyNumberII
                 ResultTester.CheckResult<int>(result2, 1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Ugly Number II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestUglyNumberII());
         }
     }
 }

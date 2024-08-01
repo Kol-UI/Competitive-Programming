@@ -26,6 +26,8 @@ Output: true
 
 using System;
 using System.Numerics;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.PowerofFour
@@ -55,6 +57,16 @@ namespace CompetitiveProgramming.LeetCode.PowerofFour
                 ResultTester.CheckResult<bool>(Solution.IsPowerOfFour(1), true),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Power of Four");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

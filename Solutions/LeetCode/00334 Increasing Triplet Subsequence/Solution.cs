@@ -26,6 +26,7 @@ Explanation: The triplet (3, 4, 5) is valid because nums[3] == 0 < nums[4] == 4 
 
 using System;
 using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.IncreasingTripletSubsequence
@@ -194,6 +195,16 @@ namespace CompetitiveProgramming.LeetCode.IncreasingTripletSubsequence
 
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Increasing Triplet Subsequence");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestIncreasingTripletSubsequence());
         }
     }
 }

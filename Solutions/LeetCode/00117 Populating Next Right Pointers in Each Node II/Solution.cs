@@ -27,7 +27,9 @@ Example 2:
 Input: root = []
 Output: []
 */
-
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.PopulatingNextRightPointersinEachNodeII
 {
@@ -57,6 +59,16 @@ namespace CompetitiveProgramming.LeetCode.PopulatingNextRightPointersinEachNodeI
 
             Build(node.left!, level + 1);
             Build(node.right!, level + 1);
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Populating Next Right Pointers in Each Node II");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

@@ -28,6 +28,8 @@ For each person, we return the number of flowers in full bloom during their arri
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.NumberofFlowersinFullBloom
@@ -113,6 +115,16 @@ namespace CompetitiveProgramming.LeetCode.NumberofFlowersinFullBloom
                 ResultTester.CheckResult<int[]>(Solution.FullBloomFlowers(flowers2, people2), result2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Flowers in Full Bloom");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

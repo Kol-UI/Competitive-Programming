@@ -26,6 +26,9 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.FirstBadVersion
 {
     /* The isBadVersion API is defined in the parent class VersionControl.
@@ -50,4 +53,14 @@ namespace CompetitiveProgramming.LeetCode.FirstBadVersion
         }
     }
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("First Bad Version");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

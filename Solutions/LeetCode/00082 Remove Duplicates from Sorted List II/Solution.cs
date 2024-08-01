@@ -17,6 +17,9 @@ Output: [2,3]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.RemoveDuplicatesfromSortedListII
 {
     /**
@@ -49,6 +52,16 @@ namespace CompetitiveProgramming.LeetCode.RemoveDuplicatesfromSortedListII
             }
 
             return dummyHead.next;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Remove Duplicates from Sorted List II");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

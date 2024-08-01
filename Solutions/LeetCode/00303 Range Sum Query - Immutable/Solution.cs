@@ -26,6 +26,10 @@ numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.RangeSumQueryImmutable
 {
     public class NumArray
@@ -53,4 +57,14 @@ namespace CompetitiveProgramming.LeetCode.RangeSumQueryImmutable
     * NumArray obj = new NumArray(nums);
     * int param_1 = obj.SumRange(left,right);
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Range Sum Query - Immutable");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

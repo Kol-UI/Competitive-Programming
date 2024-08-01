@@ -25,6 +25,8 @@ Explanation: This is the same as example 1 except that 4 needs to be before 6 in
 
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SortItemsbyGroupsRespectingDependencies
@@ -200,6 +202,16 @@ namespace CompetitiveProgramming.LeetCode.SortItemsbyGroupsRespectingDependencie
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Sort Items by Groups Respecting Dependencies");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

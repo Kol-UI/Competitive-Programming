@@ -1,5 +1,7 @@
 // Minimum Cost to Hire K Workers
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumCosttoHireKWorkers
@@ -55,6 +57,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumCosttoHireKWorkers
                 ResultTester.CheckResult<double>(Solution.MincostToHireWorkers(new int[]{3,1,10,10,1}, new int[]{4,8,2,2,7}, 3), 30.666666666666664),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("857");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

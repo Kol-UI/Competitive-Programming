@@ -30,6 +30,8 @@ The total number of paths is 2 + 1 = 3.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.NumberofIncreasingPathsinaGrid
@@ -93,6 +95,16 @@ namespace CompetitiveProgramming.LeetCode.NumberofIncreasingPathsinaGrid
                 ResultTester.CheckResult<int>(result2, 3)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Increasing Paths in a Grid");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

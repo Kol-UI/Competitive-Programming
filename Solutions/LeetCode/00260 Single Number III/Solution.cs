@@ -1,6 +1,8 @@
 // Single Number III
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.SingleNumberIII
 {
@@ -46,6 +48,16 @@ namespace CompetitiveProgramming.LeetCode.SingleNumberIII
                 ResultTester.CheckResult<int[]>(Solution.SingleNumber(new int[]{0,1}), new int[]{0,1}),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Single Number III");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

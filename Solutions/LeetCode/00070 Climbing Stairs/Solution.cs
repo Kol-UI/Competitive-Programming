@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Threading;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ClimbingStairs
@@ -56,5 +58,14 @@ namespace CompetitiveProgramming.LeetCode.ClimbingStairs
             return results;
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Climbing Stairs");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestClimbingStairs());
+        }
+    }
+}

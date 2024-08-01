@@ -1,4 +1,7 @@
 ﻿using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.HouseRobberII
 {
@@ -50,5 +53,14 @@ namespace CompetitiveProgramming.LeetCode.HouseRobberII
             return Math.Max(case1[case1.Length - 1], case2[case2.Length - 2]);
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("House Robber II");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
+}

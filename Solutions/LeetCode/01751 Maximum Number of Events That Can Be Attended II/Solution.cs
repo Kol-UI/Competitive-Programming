@@ -30,6 +30,8 @@ Explanation: Although the events do not overlap, you can only attend 3 events. P
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximumNumberofEventsThatCanBeAttendedII
@@ -108,6 +110,16 @@ namespace CompetitiveProgramming.LeetCode.MaximumNumberofEventsThatCanBeAttended
                 ResultTester.CheckResult<int>(result3, 9)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Number of Events That Can Be Attended II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

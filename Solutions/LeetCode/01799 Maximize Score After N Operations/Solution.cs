@@ -37,6 +37,8 @@ Explanation: The optimal choice of operations is:
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximizeScoreAfterNOperations
@@ -122,6 +124,16 @@ namespace CompetitiveProgramming.LeetCode.MaximizeScoreAfterNOperations
                 ResultTester.CheckResult<int>(result3, 14)
             };
             return results;
+        }
+    }
+    
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximize Score After N Operations");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

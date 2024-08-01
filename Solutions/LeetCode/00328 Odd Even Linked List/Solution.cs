@@ -23,6 +23,10 @@ Output: [2,3,6,7,1,5,4]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.OddEvenLinkedList
 {
     /**
@@ -66,4 +70,14 @@ namespace CompetitiveProgramming.LeetCode.OddEvenLinkedList
         }
     }
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Odd Even Linked List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

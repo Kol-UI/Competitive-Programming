@@ -2,6 +2,8 @@
 
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FindtheNumberofGoodPairsI
@@ -31,6 +33,16 @@ namespace CompetitiveProgramming.LeetCode.FindtheNumberofGoodPairsI
                     right++;
             }
             return resCount;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find the Number of Good Pairs I");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }
 }

@@ -30,8 +30,9 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
-
 namespace CompetitiveProgramming.LeetCode.ReverseWordsinaString
 {
     public class Solution
@@ -92,6 +93,16 @@ namespace CompetitiveProgramming.LeetCode.ReverseWordsinaString
                 ResultTester.CheckResult<string>(solution2Case3, expected3)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reverse Words in a String");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestReverseWordsinaString());
         }
     }
 }

@@ -33,6 +33,10 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.GuessNumberHigherorLower
 {
     /** 
@@ -72,4 +76,13 @@ namespace CompetitiveProgramming.LeetCode.GuessNumberHigherorLower
         }
     }
 */
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Guess Number Higher or Lower");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

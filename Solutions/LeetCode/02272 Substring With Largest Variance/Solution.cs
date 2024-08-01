@@ -34,6 +34,8 @@ No letter occurs more than once in s, so the variance of every substring is 0.
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SubstringWithLargestVariance
@@ -129,6 +131,16 @@ namespace CompetitiveProgramming.LeetCode.SubstringWithLargestVariance
                 ResultTester.CheckResult<int>(result2, 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Substring With Largest Variance");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

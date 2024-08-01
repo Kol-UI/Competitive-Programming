@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MinimumDifficultyofaJobSchedule
 {
@@ -64,6 +66,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumDifficultyofaJobSchedule
                 ResultTester.CheckResult<int>(Solution.MinDifficulty(new int[] {1,1,1}, 3), 3),
             };
             return results;
+        }
+    }
+    
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Difficulty of a Job Schedule");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

@@ -33,6 +33,8 @@ Output: 68
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CountVowelsPermutation
@@ -79,6 +81,16 @@ namespace CompetitiveProgramming.LeetCode.CountVowelsPermutation
                 ResultTester.CheckResult<int>(Solution.CountVowelPermutation(5), 68),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count Vowels Permutation");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

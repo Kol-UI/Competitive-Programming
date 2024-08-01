@@ -13,6 +13,9 @@
 *     }
 * }
 */
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.PartitionList;
 public class Solution
@@ -43,5 +46,15 @@ public class Solution
         moreTail = null;
 
         return lessHead;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Partition List");
+        ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
     }
 }

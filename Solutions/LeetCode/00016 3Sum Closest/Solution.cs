@@ -22,6 +22,8 @@ Output: 0
 Explanation: The sum that is closest to the target is 0. (0 + 0 + 0 = 0).
 */
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ThreeSumClosest
@@ -75,4 +77,13 @@ namespace CompetitiveProgramming.LeetCode.ThreeSumClosest
         }
     }
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("3Sum Closest");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestThreeSumClosest());
+        }
+    }
 }

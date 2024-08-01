@@ -1,5 +1,6 @@
 using System;
 using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.JumpGameIV
@@ -171,6 +172,16 @@ namespace CompetitiveProgramming.LeetCode.JumpGameIV
                 ResultTester.CheckResult<int>(resultCase15_1345, resultCase15_1345),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Jump Game IV");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestJumpGameIV());
         }
     }
 }

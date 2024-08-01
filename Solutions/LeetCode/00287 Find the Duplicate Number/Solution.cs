@@ -21,6 +21,8 @@ Output: 3
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FindtheDuplicateNumber
@@ -53,6 +55,16 @@ namespace CompetitiveProgramming.LeetCode.FindtheDuplicateNumber
                 ResultTester.CheckResult<int>(Solution.FindDuplicate(nums2), 3)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find the Duplicate Number");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestFindtheDuplicateNumber());
         }
     }
 }

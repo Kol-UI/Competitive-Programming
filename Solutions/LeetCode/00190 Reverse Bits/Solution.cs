@@ -23,6 +23,8 @@ Explanation: The input binary string 11111111111111111111111111111101 represents
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ReverseBits
@@ -66,6 +68,16 @@ namespace CompetitiveProgramming.LeetCode.ReverseBits
                 ResultTester.CheckResult<uint>(result2, output2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reverse Bits");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestReverseBits());
         }
     }
 }

@@ -22,6 +22,9 @@ Output: []
 
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SerializeandDeserializeBinaryTree
 {
@@ -110,4 +113,14 @@ namespace CompetitiveProgramming.LeetCode.SerializeandDeserializeBinaryTree
     // Codec ser = new Codec();
     // Codec deser = new Codec();
     // TreeNode ans = deser.deserialize(ser.serialize(root));
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Serialize and Deserialize Binary Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
+        }
+    }
 }

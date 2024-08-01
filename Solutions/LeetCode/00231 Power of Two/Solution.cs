@@ -26,6 +26,8 @@ Output: false
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.PowerofTwo
@@ -63,6 +65,16 @@ namespace CompetitiveProgramming.LeetCode.PowerofTwo
                 ResultTester.CheckResult<bool>(result3, output3_231)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Power of Two");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestPowerofTwo());
         }
     }
 }

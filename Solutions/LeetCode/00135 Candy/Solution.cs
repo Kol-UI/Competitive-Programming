@@ -26,7 +26,10 @@ The third child gets 1 candy because it satisfies the above two conditions.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.Candy
 {
     public class Solution 
@@ -73,6 +76,16 @@ namespace CompetitiveProgramming.LeetCode.Candy
                 ResultTester.CheckResult<int>(Solution.Candy(ratings2), 4),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Candy");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

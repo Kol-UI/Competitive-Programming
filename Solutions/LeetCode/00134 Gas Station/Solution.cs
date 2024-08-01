@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.GasStation
@@ -69,6 +71,16 @@ namespace CompetitiveProgramming.LeetCode.GasStation
                 ResultTester.CheckResult<int>(Solution.CanCompleteCircuit(gas2, cost2), -1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Gas Station");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestGasStation());
         }
     }
 }

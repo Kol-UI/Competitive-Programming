@@ -31,6 +31,8 @@ There are much ordering with total cost <= 25, for example, the order [4, 6, 5, 
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumCosttoCutaStick
@@ -82,6 +84,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumCosttoCutaStick
                 ResultTester.CheckResult<int>(result2, 22),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Cost to Cut a Stick");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

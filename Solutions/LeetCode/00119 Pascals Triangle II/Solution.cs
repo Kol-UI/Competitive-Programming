@@ -25,6 +25,8 @@ Output: [1,1]
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.PascalsTriangleII
@@ -89,6 +91,16 @@ namespace CompetitiveProgramming.LeetCode.PascalsTriangleII
                 ResultTester.CheckResult<IList<int>>(Solution.GetRow(1), Solution.GetRow(1))
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Pascals Triangle II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestPascalsTriangleII());
         }
     }
 }

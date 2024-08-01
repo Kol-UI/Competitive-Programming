@@ -2,6 +2,8 @@
 
 
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ImplementStackusingQueues
@@ -31,4 +33,14 @@ namespace CompetitiveProgramming.LeetCode.ImplementStackusingQueues
     * int param_3 = obj.Top();
     * bool param_4 = obj.Empty();
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Implement Stack using Queues");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

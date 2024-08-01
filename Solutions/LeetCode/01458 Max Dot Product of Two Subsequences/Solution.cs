@@ -32,6 +32,8 @@ Their dot product is -1.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaxDotProductofTwoSubsequences
@@ -81,6 +83,16 @@ namespace CompetitiveProgramming.LeetCode.MaxDotProductofTwoSubsequences
                 ResultTester.CheckResult<int>(Solution.MaxDotProduct(nums1_3, nums2_3), -1),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Max Dot Product of Two Subsequences");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

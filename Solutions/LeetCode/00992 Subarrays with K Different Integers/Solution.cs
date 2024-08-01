@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SubarrayswithKDifferentIntegers
@@ -70,6 +72,16 @@ namespace CompetitiveProgramming.LeetCode.SubarrayswithKDifferentIntegers
                 ResultTester.CheckResult<int>(Solution.SubarraysWithKDistinct(new int[]{1,2,1,3,4}, 3), 3),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("992");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

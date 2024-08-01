@@ -1,4 +1,7 @@
 ﻿using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.NumberofGoodPaths
 {
 	public class Solution
@@ -73,5 +76,14 @@ namespace CompetitiveProgramming.LeetCode.NumberofGoodPaths
         //     return p;
         // }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Good Paths");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
+        }
+    }
+}

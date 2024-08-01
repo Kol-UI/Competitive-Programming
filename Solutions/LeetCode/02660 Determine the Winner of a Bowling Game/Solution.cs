@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.DeterminetheWinnerofaBowlingGame
 {
@@ -56,6 +58,16 @@ namespace CompetitiveProgramming.LeetCode.DeterminetheWinnerofaBowlingGame
                 ResultTester.CheckResult<int>(Solution.IsWinner(new int[]{2,3}, new int[]{4,1}), 0),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Determine the Winner of a Bowling Game");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

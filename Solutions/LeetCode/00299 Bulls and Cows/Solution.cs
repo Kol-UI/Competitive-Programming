@@ -35,6 +35,8 @@ Note that only one of the two unmatched 1s is counted as a cow since the non-bul
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BullsandCows
@@ -86,6 +88,16 @@ namespace CompetitiveProgramming.LeetCode.BullsandCows
                 ResultTester.CheckResult<string>(Solution.GetHint("1123", "0111"), "1A1B"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Bulls and Cows");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

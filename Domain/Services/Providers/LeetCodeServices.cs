@@ -24,27 +24,23 @@ namespace CompetitiveProgramming.Services.Providers
         // Delegates
         private static readonly Delegate[] leetCodeEasyList = new Delegate[]
         {
-            ClimbingStairsFunc, AddTwoIntegersFunc, NumberOfStepsFunc, ContainsDuplicateFunc, BestTimetoBuyandSellStockFunc, RangeSumQueryImmutableFunc, DesignHashSetFunc, SearchintoaBinarySearchTreeFunc, SameTreeFunc, AddStringsFunc, DeterminetheWinnerofaBowlingGameFunc, CircularSentenceFunc, CheckIfStringIsaPrefixofArrayFunc,
-            FirstUniqueCharacterinaStringFunc, SingleNumberFunc, FindJudgeFunc, ShuffleTheArrayFunc, CountOddNumbersInAnIntervalRangeFunc, RunningSumof1dArrayFunc, TwoSumIVInputisaBSTFunc, WordPatternFunc, SymmetricTreeFunc, FindtheKorofanArrayFunc, SumMultiplesFunc, SetMismatchFunc, MinimumNumberofMovestoSeatEveryoneFunc, ScoreofaStringFunc,
-            AddBinaryFunc, DefanginganIPAddressFunc, FindLuckyIntegerinanArrayFunc, SearchInsertPositionFunc, FindtheIndexoftheFirstOccurrenceinaStringFunc, MinimumDistanceBetweenBSTNodesFunc, PascalsTriangleIIFunc, DiameterofBinaryTreeFunc, MaximumSumWithExactlyKElementsFunc, DivisorGameFunc, SumofDigitsinBaseKFunc, NumberofStringsThatAppearasSubstringsinWordFunc,
-            KthMissingPositiveNumberFunc, ConvertSortedArraytoBinarySearchTreeFunc, CanPlaceFlowersFunc, KItemsWiththeMaximumSumFunc, BinarySearchFunc, MiddleoftheLinkedListFunc, ReshapetheMatrixFunc, MergeSortedArrayFunc, FindChampionIFunc, FindtheMaximumAchievableNumberFunc, FindSubarraysWithEqualSumFunc, BinaryWatchFunc, FindtheNumberofGoodPairsIFunc,
-            CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, RomantoIntegerFunc, DesignHashMapFunc, AlternatingDigitSumFunc, TwoSumFunc, BalancedBinaryTreeFunc, FurthestPointFromOriginFunc, PassthePillowFunc, AppleRedistributionintoBoxesFunc, CountPrefixesofaGivenStringFunc,
-            BestPokerHandFunc, LastStoneWeightFunc, AddDigitsFunc, BulbSwitcherFunc, FindtheDifferenceFunc, RepeatedSubstringPatternFunc, VerifyinganAlienDictionaryFunc, MinimumAbsoluteDifferenceinBSTFunc, BackspaceStringCompareFunc, CheckifStringsCanbeMadeEqualWithOperationsIFunc, TwoOutofThreeFunc, SortingtheSentenceFunc, RelativeSortArrayFunc,
-            MoveZeroesFunc, PlusOneFunc, AverageSalaryExcludingtheMinimumandMaximumSalaryFunc, FindifPathExistsinGraphFunc, RichestCustomerWealthFunc, NumberofRecentCallsFunc, LongestPalindromeFunc, BuddyStringsFunc, NumberofGoodPairsFunc, RedistributeCharacterstoMakeAllStringsEqualFunc, DivideArrayIntoEqualPairsFunc, DeleteCharacterstoMakeFancyStringFunc,
-            SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, LengthofLastWordFunc, ToLowerCaseFunc, ConvertBinaryNumberinaLinkedListtoIntegerFunc, FirstBadVersionFunc, SubtreeofAnotherTreeFunc, MaximumProductDifferenceBetweenTwoPairsFunc, LargestLocalValuesinaMatrixFunc, ShuffleStringFunc, FindCommonCharactersFunc,
-            FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ValidPerfectSquareFunc, ArrangingCoinsFunc, BaseballGameFunc, KeysandRoomsFunc, SumofLeftLeavesFunc, BinaryTreeInorderTraversalFunc, SortthePeopleFunc, AssignCookiesFunc, NumberofChangingKeysFunc, CountDaysSpentTogetherFunc, ThreeDivisorsFunc,
-            RobotReturntoOriginFunc, FindWinneronaTicTacToeGameFunc, LemonadeChangeFunc, LargestPerimeterTriangleFunc, CheckIfItIsaStraightLineFunc, DeleteColumnstoMakeSortedFunc, GuessNumberHigherorLowerFunc, ExcelSheetColumnTitleFunc, ImageSmootherFunc, CalculateDelayedArrivalTimeFunc, FindtheSumofEncryptedIntegersFunc,
-            ReverseVowelsofaStringFunc, CountingBitsFunc, IsSubsequenceFunc, MinCostClimbingStairsFunc, MaximumAverageSubarrayIFunc, DesignParkingSystemFunc, LeafSimilarTreesFunc, IntersectionofTwoArraysIIFunc, RemoveElementFunc, FindMissingandRepeatedValuesFunc, AntontheBoundaryFunc, ExistenceofaSubstringinaStringandItsReverseFunc,
-            FindtheHighestAltitudeFunc, FindPivotIndexFunc, UniqueNumberofOccurrencesFunc, MajorityElementFunc, GoalParserInterpretationFunc, AddtoArrayFormofIntegerFunc, DetectCapitalFunc, ValidAnagramFunc, ImplementStackusingQueuesFunc, MaxPairSuminanArrayFunc, MaximumDifferencebyRemappingaDigitFunc, CounttheNumberofSpecialCharactersIFunc,
-            FloodFillFunc, HappyNumberFunc, DecryptStringfromAlphabettoIntegerMappingFunc, TheKWeakestRowsinaMatrixFunc, CheckifOneStringSwapCanMakeStringsEqualFunc, MergeTwoBinaryTreesFunc, BinaryTreePreorderTraversalFunc, FindWordsContainingCharacterFunc, PrimeInDiagonalFunc, DayoftheYearFunc, CountSpecialQuadrupletsFunc,
-            SubtracttheProductandSumofDigitsofanIntegerFunc, SpecialArrayWithXElementsGreaterThanorEqualXFunc, SqrtxFunc, FindtheDistanceValueBetweenTwoArraysFunc, SortColorsFunc, ReverseStringFunc, IntersectionofTwoLinkedListsFunc, ExcelSheetColumnNumberFunc, MergeTwoTwoDArraysbySummingValuesFunc, NumberofStudentsUnabletoEatLunchFunc,
+            CheckIfNandItsDoubleExistFunc, ConcatenationofArrayFunc, KidsWiththeGreatestNumberofCandiesFunc, MergeStringsAlternatelyFunc, DesignHashMapFunc, AlternatingDigitSumFunc, FurthestPointFromOriginFunc, PassthePillowFunc, AppleRedistributionintoBoxesFunc, CountPrefixesofaGivenStringFunc,
+            BestPokerHandFunc, LastStoneWeightFunc, FindtheDifferenceFunc, RepeatedSubstringPatternFunc, VerifyinganAlienDictionaryFunc, MinimumAbsoluteDifferenceinBSTFunc, BackspaceStringCompareFunc, CheckifStringsCanbeMadeEqualWithOperationsIFunc, TwoOutofThreeFunc, SortingtheSentenceFunc, RelativeSortArrayFunc,
+            AverageSalaryExcludingtheMinimumandMaximumSalaryFunc, FindifPathExistsinGraphFunc, RichestCustomerWealthFunc, NumberofRecentCallsFunc, LongestPalindromeFunc, BuddyStringsFunc, NumberofGoodPairsFunc, RedistributeCharacterstoMakeAllStringsEqualFunc, DivideArrayIntoEqualPairsFunc, DeleteCharacterstoMakeFancyStringFunc,
+            SignoftheProductofanArrayFunc, CanMakeArithmeticProgressionFunc, MonotonicArrayFunc, ToLowerCaseFunc, ConvertBinaryNumberinaLinkedListtoIntegerFunc, SubtreeofAnotherTreeFunc, MaximumProductDifferenceBetweenTwoPairsFunc, LargestLocalValuesinaMatrixFunc, ShuffleStringFunc, FindCommonCharactersFunc,
+            FindSmallestLetterGreaterThanTargetFunc, CountNegativeNumbersinaSortedMatrixFunc, ArrangingCoinsFunc, BaseballGameFunc, KeysandRoomsFunc, SumofLeftLeavesFunc, SortthePeopleFunc, AssignCookiesFunc, NumberofChangingKeysFunc, CountDaysSpentTogetherFunc, ThreeDivisorsFunc,
+            RobotReturntoOriginFunc, FindWinneronaTicTacToeGameFunc, LemonadeChangeFunc, LargestPerimeterTriangleFunc, CheckIfItIsaStraightLineFunc, DeleteColumnstoMakeSortedFunc, ImageSmootherFunc, CalculateDelayedArrivalTimeFunc, FindtheSumofEncryptedIntegersFunc,
+            IsSubsequenceFunc, MinCostClimbingStairsFunc, MaximumAverageSubarrayIFunc, DesignParkingSystemFunc, LeafSimilarTreesFunc, FindMissingandRepeatedValuesFunc, AntontheBoundaryFunc, ExistenceofaSubstringinaStringandItsReverseFunc,
+            FindtheHighestAltitudeFunc, FindPivotIndexFunc, UniqueNumberofOccurrencesFunc, GoalParserInterpretationFunc, AddtoArrayFormofIntegerFunc, DetectCapitalFunc, MaxPairSuminanArrayFunc, MaximumDifferencebyRemappingaDigitFunc, CounttheNumberofSpecialCharactersIFunc,
+            FloodFillFunc, DecryptStringfromAlphabettoIntegerMappingFunc, TheKWeakestRowsinaMatrixFunc, CheckifOneStringSwapCanMakeStringsEqualFunc, MergeTwoBinaryTreesFunc, FindWordsContainingCharacterFunc, PrimeInDiagonalFunc, DayoftheYearFunc, CountSpecialQuadrupletsFunc,
+            SubtracttheProductandSumofDigitsofanIntegerFunc, SpecialArrayWithXElementsGreaterThanorEqualXFunc, FindtheDistanceValueBetweenTwoArraysFunc, MergeTwoTwoDArraysbySummingValuesFunc, NumberofStudentsUnabletoEatLunchFunc,
             SumofAllOddLengthSubarraysFunc, NextGreaterElementIFunc, SquaresofaSortedArrayFunc, FibonacciNumberFunc, FindNearestPointThatHastheSameXorYCoordinateFunc, NaryTreePreorderTraversalFunc, MaximumAscendingSubarraySumFunc, DestinationCityFunc, FindtheDistinctDifferenceArrayFunc, ReformatTheStringFunc, GreatestEnglishLetterinUpperandLowerCaseFunc,
-            Numberof1BitsFunc, SortIntegersbyTheNumberof1BitsFunc, SearchinRotatedSortedArrayFunc, PowerofTwoFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc, MakeThreeStringsEqualFunc, FaultyKeyboardFunc, MinimumCommonValueFunc, ReplaceAllDigitswithCharactersFunc,
-            ReverseBitsFunc, MaximumValueofaStringinanArrayFunc, SummaryRangesFunc, FindtheDifferenceofTwoArraysFunc, IntegerBreakFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, MergeTwoSortedListsFunc, UniqueLength3PalindromicSubsequencesFunc, TypeofTriangleIIFunc, IntersectionofTwoArraysFunc, ReversePrefixofWordFunc,
-            InvertBinaryTreeFunc, IsomorphicStringsFunc, RemoveLinkedListElementsFunc, LinkedListCycleFunc, PascalsTriangleFunc, PathSumFuncFunc, MaximumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedListFunc, PowerofFourFunc, MinimumOperationstoCollectElementsFunc, MissingNumberFunc, SplittheArrayFunc, DistanceBetweenBusStopsFunc,
-            DetermineWhetherMatrixCanBeObtainedByRotationFunc, MinimumDepthofBinaryTreeFunc, RemoveDuplicatesfromSortedArrayFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc, SpecialPositionsinaBinaryMatrixFunc, RangeSumofBSTFunc, MinimumCutstoDivideaCircleFunc, MaximumPopulationYearFunc, DistributeCandiestoPeopleFunc,
+            SortIntegersbyTheNumberof1BitsFunc, ReverseWordsinaStringIIIFunc, GreatestCommonDivisorofStringsFunc, RansomNoteFunc, ValidParenthesesFunc, MakeThreeStringsEqualFunc, FaultyKeyboardFunc, MinimumCommonValueFunc, ReplaceAllDigitswithCharactersFunc,
+            MaximumValueofaStringinanArrayFunc, FindtheDifferenceofTwoArraysFunc, NthTribonacciNumberFunc, KthLargestElementinaStreamFunc, UniqueLength3PalindromicSubsequencesFunc, TypeofTriangleIIFunc, ReversePrefixofWordFunc,
+            PascalsTriangleFunc, MinimumOperationstoCollectElementsFunc, SplittheArrayFunc, DistanceBetweenBusStopsFunc,
+            DetermineWhetherMatrixCanBeObtainedByRotationFunc, SortArrayByParityFunc, FindModeinBinarySearchTreeFunc, LastVisitedIntegersFunc, SpecialPositionsinaBinaryMatrixFunc, RangeSumofBSTFunc, MinimumCutstoDivideaCircleFunc, MaximumPopulationYearFunc, DistributeCandiestoPeopleFunc,
             SubarraysDistinctElementSumofSquaresIFunc, MinimumSumofMountainTripletsIFunc, FindIndicesWithIndexandValueDifferenceIFunc, DistributeCandiesAmongChildrenIFunc, MaximumStrongPairXORIFunc, DivisibleandNondivisibleSumsDifferenceFunc, BuyTwoChocolatesFunc, ModifytheMatrixFunc, LuckyNumbersinaMatrixFunc, LongestSubsequenceWithLimitedSumFunc,
-            CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, PalindromeNumberFunc, ValidPalindromeFunc, MatrixSimilarityAfterCyclicShiftsFunc, MaximumProductofTwoElementsinanArrayFunc, OccurrencesAfterBigramFunc, MaximumNestingDepthoftheParenthesesFunc,
+            CountNumberofPairsWithAbsoluteDifferenceKFunc, NumberofValidClockTimesFunc, DistributeCandiesFunc, AccountBalanceAfterRoundedPurchaseFunc, MatrixSimilarityAfterCyclicShiftsFunc, MaximumProductofTwoElementsinanArrayFunc, OccurrencesAfterBigramFunc, MaximumNestingDepthoftheParenthesesFunc,
             CheckIfTwoStringArraysareEquivalentFunc, FindWordsThatCanBeFormedbyCharactersFunc, MinimumTimeVisitingAllPointsFunc, FindthePeaksFunc, LargestSameDigitNumberinStringFunc, CountofMatchesinTournamentFunc, CalculateMoneyinLeetcodeBankFunc, MaximumOddBinaryNumberFunc, FirstLettertoAppearTwiceFunc, MostFrequentEvenElementFunc,
             LargestOddNumberinStringFunc, ConstructStringfromBinaryTreeFunc, MaximumValueofanOrderedTripletIFunc, FindCommonElementsBetweenTwoArraysFunc, TransposeMatrixFunc, CountTestedDevicesAfterTestOperationsFunc, ElementAppearingMoreThanInSortedArrayFunc, SplitWithMinimumSumFunc, CreateTargetArrayintheGivenOrderFunc, RelativeRanksFunc,
             SumofValuesatIndicesWithKSetBitsFunc, MaximumScoreAfterSplittingaStringFunc, MinimumRightShiftstoSorttheArrayFunc, PointsThatIntersectWithCarsFunc, CountSymmetricIntegersFunc, PathCrossingFunc, MinimumChangesToMakeAlternatingBinaryStringFunc, SumofSubarrayMinimumsFunc, CountLargestGroupFunc, TimeNeededtoBuyTicketsFunc,
@@ -64,36 +60,35 @@ namespace CompetitiveProgramming.Services.Providers
 
         private static readonly Delegate[] leetCodeMediumList = new Delegate[]
         {
-            RestoreIpAddressesFunc, SnakesAndLaddersFunc, FindClosestNodetoGivenTwoNodesFunc, FruitIntoBasketsFunc, JumpGameIIFunc, AllPathsFromSourcetoTargetFunc, MagneticForceBetweenTwoBallsFunc, PredicttheWinnerFunc, SubarraySumsDivisiblebyKFunc, ImplementQueueusingStacksFunc, SwapNodesinPairsFunc, ExtraCharactersinaStringFunc,
-            AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc, DesignUndergroundSystemFunc, CheckCompletenessofaBinaryTreeFunc, BinaryTreeRightSideViewFunc, GenerateParenthesesFunc, ReorganizeStringFunc, AppendCharacterstoStringtoMakeSubsequenceFunc,
-            SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, ImplementTriePrefixTreeFunc, CountSubIslandsFunc, KRadiusSubarrayAveragesFunc, SeatReservationManagerFunc, MaximumLevelSumofaBinaryTreeFunc, LowestCommonAncestorofaBinaryTreeFunc, RemoveNthNodeFromEndofListFunc, SoupServingsFunc, TheNumberofBeautifulSubsetsFunc,
-            NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc, NondecreasingSubsequencesFunc, HouseRobberFunc, ValidSudokuFunc, AddTwoNumbersFunc, ContiguousArrayFunc, GetEqualSubstringsWithinBudgetFunc,
-            MinimumPathSumFunc, PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc, HIndexIIFunc, FindaPeakElementIIFunc, WaterandJugProblemFunc, ShortestPathinBinaryMatrixFunc, OddEvenLinkedListFunc, GasStationFunc, PermutationsFunc, RotateImageFunc, AddOneRowtoTreeFunc, PathwithMaximumGoldFunc,
-            OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc, RangeSumofSortedSubarraySumsFunc, SellDiminishingValuedColoredBallsFunc, PermutationsIIFunc, CheapestFlightsWithinKStopsFunc, LowestCommonAncestorofaBinarySearchTreeFunc, CombinationSumIVFunc, DeleteNodeinaLinkedListFunc, HandofStraightsFunc,
-            SimplifyPathFunc, ValidateStackSequencesFunc, LongestPalindromicSubsequenceFunc, NonoverlappingIntervalsFunc, RobotBoundedInCircleFunc, MinimumSizeSubarraySumFunc, OpentheLockFunc, DesignBrowserHistoryFunc, RottingOrangesFunc, ConstructQuadTreeFunc, BinaryTreePostorderTraversalFunc, BullsandCowsFunc, ReverseLinkedListIIFunc, ScoreAfterFlippingMatrixFunc,
-            MatrixDiagonalSumFunc, MultiplyStringsFunc, PowxnFunc, ReverseWordsinaStringFunc, ProductofArrayExceptSelfFunc, WaystoSplitArrayIntoThreeSubarraysFunc, FindKClosestElementsFunc, PopulatingNextRightPointersinEachNodeIIFunc, AddTwoNumbersIIFunc, PeekingIteratorFunc, SpiralMatrixFunc, ZigzagConversionFunc, CountSubarraysWhereMaxElementAppearsatLeastKTimesFunc,
-            Dota2SenateFunc, MinimumFlipstoMakeaORbEqualtocFunc, BestTimetoBuyandSellStockwithTransactionFeeFunc, IncreasingTripletSubsequenceFunc, MaximumNumberofVowelsinaSubstringofGivenLengthFunc, SearchSuggestionsSystemFunc, MaximumWidthofBinaryTreeFunc, ReverseLinkedListFunc, SpiralMatrixIIFunc, SingleNumberIIFunc, MinimumHeightTreesFunc, SingleNumberIIIFunc,
-            DominoandTrominoTilingFunc, ContainerWithMostWaterFunc, MaxNumberofKSumPairsFunc, UniquePathsFunc, NearestExitfromEntranceinMazeFunc, FrequencyoftheMostFrequentElementFunc, NumberofNodesintheSubTreeWiththeSameLabelFunc, DeleteNodeinaBSTFunc, HouseRobberIIIFunc, PopulatingNextRightPointersinEachNodeIFunc, SmallestStringStartingFromLeafFunc, ReplaceWordsFunc,
-            LongestCommonSubsequenceFunc, MaxIceCreamFunc, TopKFrequentFunc, LexicographicallySmallestEquivalentStringFunc, FlipStringtoMonotoneIncreasingFunc, SearchA2DMatrixFunc, InsertIntervalFunc, MaxSubarraySumCircularFunc, SubarraySumFunc, SubarraysDivByKFunc, LinkedListCycleIIFunc, LetterCombinationsofaPhoneNumberFunc, RemoveNodesFromLinkedListFunc,
-            LongestSubstringWithoutRepeatingCharactersFunc, UniquePathsIIFunc, MaximalSquareFunc, JumpGameFunc, PathSumIIFunc, MaximumValueataGivenIndexinaBoundedArrayFunc, BinarySearchTreeIteratorFunc, KthSmallestElementinaBSTFunc, ConstructBinaryTreefromPreorderandInorderTraversalFunc, SmallestNumberinInfiniteSetFunc, FindAllDuplicatesinanArrayFunc, ContinuousSubarraySumFunc,
-            SnapshotArrayFunc, LongestIncreasingSubsequenceFunc, WiggleSubsequenceFunc, LongestPalindromicSubstringFunc, RangeSumQuery2DImmutableFunc, BestTimetoBuyandSellStockIIFunc, BestSightseeingPairFunc, MatrixBlockSumFunc, MaximumProductSubarrayFunc, MaximumLengthofSubarrayWithPositiveProductFunc, PartitionLabelsFunc, MergeInBetweenLinkedListsFunc,
-            FindtheWinneroftheCircularGameFunc, RemoveDuplicatesfromSortedListIIFunc, DesignLinkedListFunc, MinStackFunc, CoinChangeFunc, CoinChangeIIFunc, MinimumRoundstoCompleteAllTasksFunc, SolvingQuestionsWithBrainpowerFunc, MaximumTwinSumofaLinkedListFunc, DeletetheMiddleNodeofaLinkedListFunc, GroupAnagramsFunc, LargestDivisibleSubsetFunc, DeleteLeavesWithaGivenValueFunc,
-            MaxConsecutiveOnesIIIFunc, LongestSubarrayof1sAfterDeletingOneElementFunc, NumberofProvincesFunc, NumberofSubsequencesThatSatisfytheGivenSumConditionFunc, AsteroidCollisionFunc, IntervalListIntersectionsFunc, OnlineStockSpanFunc, EvaluateDivisionFunc, DesignAddandSearchWordsDataStructureFunc, PartitionListFunc, BagofTokensFunc, DoubleaNumberRepresentedasaLinkedListFunc,
-            FindPeakElementFunc, WateringPlantsIIFunc, CarPoolingFunc, CountWaysToBuildGoodStringsFunc, TotalCosttoHireKWorkersFunc, PacificAtlanticWaterFlowFunc, FindtheStudentthatWillReplacetheChalkFunc, JumpGameIIIFunc, DailyTemperaturesFunc, DecodeStringFunc, EvaluateReversePolishNotationFunc, SubsetsFunc, WordSearchFunc, ValidParenthesisStringFunc,
-            MaximumSubsequenceScoreFunc, KthLargestElementinanArrayFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc, MinimumLimitofBallsinaBagFunc, AllPossibleFullBinaryTreesFunc, LetterCasePermutationFunc, TopKFrequentElementsFunc, ConvertSortedListtoBinarySearchTreeFunc, TaskSchedulerFunc, RevealCardsInIncreasingOrderFunc,
-            NextPermutationFunc, ShortestBridgeFunc, FindtheDuplicateNumberFunc, New21GameFunc, FindMinimuminRotatedSortedArrayFunc, NumberofIslandsFunc, LongestArithmeticSubsequenceFunc, MaximalNetworkRankFunc, UncrossedLinesFunc, MinimumNumberofArrowstoBurstBalloonsFunc, BinaryTreeLevelOrderTraversalFunc, ShuffleanArrayFunc, LengthofLongestSubarrayWithatMostKFrequencyFunc,
-            StoneGameIIFunc, CourseScheduleFunc, ThreeSumFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, SearchinRotatedSortedArrayIIFunc, ValidTriangleNumberFunc, RandomPickwithWeightFunc, CountGoodNodesinBinaryTreeFunc, DesignCircularQueueFunc, CombinationSumIIIFunc, ValidateBinarySearchTreeFunc, PerfectSquaresFunc, BinarySubarraysWithSumFunc,
-            TwoSumIIInputArrayIsSortedFunc, FindFirstandLastPositionofElementinSortedArrayFunc, MergeIntervalsFunc, TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc, KnightProbabilityinChessboardFunc, FindAllAnagramsinaStringFunc, PalindromePartitioningFunc, MaximumSubarrayFunc, ValidateBinaryTreeNodesFunc, MaximizeHappinessofSelectedChildrenFunc,
-            DecodeWaysFunc, ArithmeticSlicesFunc, RotateArrayFunc, UglyNumberIIFunc, UniqueBinarySearchTreesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc, PossibleBipartitionFunc, LinkedListRandomNodeFunc, SumRoottoLeafNumbersFunc, UglyNumberIIIFunc, SortListFunc, PalindromicSubstringsFunc,
-            MaximumDistanceBetweenaPairofValuesFunc, WordBreakFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, TriangleFunc, MostProfitAssigningWorkFunc, CountCompleteTreeNodesFunc, LongestRepeatingCharacterReplacementFunc, InsertintoaBinarySearchTreeFunc, HouseRobberIIFunc, BinaryTreeZigzagLevelOrderTraversalFunc, Searcha2DMatrixIIFunc, FindAllGroupsofFarmlandFunc,
-            NextGreaterElementIIIFunc, SubsetsIIFunc, MinimumNumberofVerticestoReachAllNodesFunc, BasicCalculatorIIFunc, TopKFrequentWordsFunc, NextGreaterElementIIFunc, LinkedListinBinaryTreeFunc, MaximumSideLengthofaSquarewithSumLessthanorEqualtoThresholdFunc, CloneGraphFunc, CombinationsFunc, SurroundedRegionsFunc, PartitionArrayforMaximumSumFunc, DistributeCoinsinBinaryTreeFunc,
-            SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, ThreeSumClosestFunc, CombinationSumFunc, CopyListwithRandomPointerFunc, MinimumGeneticMutationFunc, LongestZigZagPathinaBinaryTreeFunc, SubarrayProductLessThanKFunc, PermutationinStringFunc, BestTimetoBuyandSellStockwithCooldownFunc, SetMatrixZeroesFunc, OutofBoundaryPathsFunc, NumberofWonderfulSubstringsFunc,
-            LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, RotateListFunc, ArithmeticSubarraysFunc, OnlineElectionFunc, MinimumTimetoCollectAllApplesinaTreeFunc, PathwithMaximumProbabilityFunc, FindDuplicateSubtreesFunc, PathSumIIIFunc, ConstructBinaryTreefromInorderandPostorderTraversalFunc, SequentialDigitsFunc, CompareVersionNumbersFunc,
-            MinimumRemovetoMakeValidParenthesesFunc, FindEventualSafeStatesFunc, NaryTreeLevelOrderTraversalFunc, FlattenNestedListIteratorFunc, UniqueBinarySearchTreesIIFunc, FindLatestGroupofSizeMFunc, ReorderListFunc, ShortestPathVisitingAllNodesFunc, SortCharactersByFrequencyFunc, SumofMutatedArrayClosesttoTargetFunc, DivideArrayIntoArraysWithMaxDifferenceFunc,
-            KClosestPointstoOriginFunc, CheckifThereisaValidPartitionForTheArrayFunc, MaximumLengthofPairChainFunc, MinimumPenaltyforaShopFunc, InterleavingStringFunc, MinimumSpeedtoArriveonTimeFunc, MinimumNumberofDaystoMakemBouquetsFunc, FairDistributionofCookiesFunc, RepeatedDNASequencesFunc, NumberofLongestIncreasingSubsequenceFunc, LongestIdealSubsequenceFunc,
-            MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc, DeleteOperationforTwoStringsFunc, BitwiseANDofNumbersRangeFunc, MaximumNumberofRemovableCharactersFunc, FindKPairswithSmallestSumsFunc, MinimumAbsoluteSumDifferenceFunc, FindtheSmallestDivisorGivenaThresholdFunc, SplitLinkedListinPartsFunc, FlattenBinaryTreetoLinkedListFunc,
-            DesignAuthenticationManagerFunc, InsertDeleteGetRandomFunc, MyCalendarIFunc, MaximizetheConfusionofanExamFunc, AllNodesDistanceKinBinaryTreeFunc, LongestPalindromebyConcatenatingTwoLetterWordsFunc, PathWithMinimumEffortFunc, WhereWilltheBallFallFunc, MinimumASCIIDeleteSumforTwoStringsFunc, CombinationSumIIFunc, LongestConsecutiveSequenceFunc,
-            GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc, MinimumOperationstoReduceXtoZeroFunc, ChampagneTowerFunc, RemoveDuplicateLettersFunc, DecodedStringatIndexFunc, OneThreeTwoPatternFunc, RemoveColoredPiecesifBothNeighborsaretheSameColorFunc, RemoveKDigitsFunc,
+            SnakesAndLaddersFunc, FindClosestNodetoGivenTwoNodesFunc, FruitIntoBasketsFunc, AllPathsFromSourcetoTargetFunc, MagneticForceBetweenTwoBallsFunc, PredicttheWinnerFunc, SubarraySumsDivisiblebyKFunc, ExtraCharactersinaStringFunc,
+            AsFarfromLandasPossibleFunc, ShortestPathWithAlternatingColorsFunc, MinimumFuelCosttoReporttotheCapitalFunc, SingleElementinaSortedArrayFunc, CapacityToShipPackagesWithinDDaysFunc, DesignUndergroundSystemFunc, CheckCompletenessofaBinaryTreeFunc, ReorganizeStringFunc, AppendCharacterstoStringtoMakeSubsequenceFunc,
+            SortanArrayFunc, StringCompressionFunc, MinimumTimetoCompleteTripsFunc, KokoEatingBananasFunc, CountSubIslandsFunc, KRadiusSubarrayAveragesFunc, SeatReservationManagerFunc, MaximumLevelSumofaBinaryTreeFunc, SoupServingsFunc, TheNumberofBeautifulSubsetsFunc,
+            NumberofZeroFilledSubarraysFunc, MinimumScoreofaPathBetweenTwoCitiesFunc, NumberofOperationstoMakeNetworkConnectedFunc, ReorderRoutestoMakeAllPathsLeadtotheCityZeroFunc, CountUnreachablePairsofNodesinanUndirectedGraphFunc, NondecreasingSubsequencesFunc, ContiguousArrayFunc, GetEqualSubstringsWithinBudgetFunc,
+            PrimeSubtractionOperationFunc, MinimumCostForTicketsFunc, SuccessfulPairsofSpellsandPotionsFunc, BoatstoSavePeopleFunc, FindaPeakElementIIFunc, ShortestPathinBinaryMatrixFunc, AddOneRowtoTreeFunc, PathwithMaximumGoldFunc,
+            OptimalPartitionofStringFunc, MinimizeMaximumofArrayFunc, NumberofEnclavesFunc, RemoveStarsFunc, NumberofClosedIslandsFunc, RangeSumofSortedSubarraySumsFunc, SellDiminishingValuedColoredBallsFunc, CheapestFlightsWithinKStopsFunc, HandofStraightsFunc,
+            ValidateStackSequencesFunc, LongestPalindromicSubsequenceFunc, NonoverlappingIntervalsFunc, RobotBoundedInCircleFunc, OpentheLockFunc, DesignBrowserHistoryFunc, RottingOrangesFunc, ConstructQuadTreeFunc, ScoreAfterFlippingMatrixFunc,
+            MatrixDiagonalSumFunc, WaystoSplitArrayIntoThreeSubarraysFunc, FindKClosestElementsFunc, AddTwoNumbersIIFunc, CountSubarraysWhereMaxElementAppearsatLeastKTimesFunc,
+            Dota2SenateFunc, MinimumFlipstoMakeaORbEqualtocFunc, BestTimetoBuyandSellStockwithTransactionFeeFunc, MaximumNumberofVowelsinaSubstringofGivenLengthFunc, SearchSuggestionsSystemFunc, MaximumWidthofBinaryTreeFunc,
+            DominoandTrominoTilingFunc, MaxNumberofKSumPairsFunc, NearestExitfromEntranceinMazeFunc, FrequencyoftheMostFrequentElementFunc, NumberofNodesintheSubTreeWiththeSameLabelFunc, DeleteNodeinaBSTFunc, SmallestStringStartingFromLeafFunc, ReplaceWordsFunc,
+            LongestCommonSubsequenceFunc, MaxIceCreamFunc, TopKFrequentFunc, LexicographicallySmallestEquivalentStringFunc, FlipStringtoMonotoneIncreasingFunc, SearchA2DMatrixFunc, MaxSubarraySumCircularFunc, SubarraySumFunc, SubarraysDivByKFunc, RemoveNodesFromLinkedListFunc,
+            LongestSubstringWithoutRepeatingCharactersFunc, MaximumValueataGivenIndexinaBoundedArrayFunc, SmallestNumberinInfiniteSetFunc, FindAllDuplicatesinanArrayFunc, ContinuousSubarraySumFunc,
+            SnapshotArrayFunc, BestSightseeingPairFunc, MatrixBlockSumFunc, MaximumLengthofSubarrayWithPositiveProductFunc, PartitionLabelsFunc, MergeInBetweenLinkedListsFunc,
+            FindtheWinneroftheCircularGameFunc, DesignLinkedListFunc, CoinChangeIIFunc, MinimumRoundstoCompleteAllTasksFunc, SolvingQuestionsWithBrainpowerFunc, MaximumTwinSumofaLinkedListFunc, DeletetheMiddleNodeofaLinkedListFunc, DeleteLeavesWithaGivenValueFunc,
+            MaxConsecutiveOnesIIIFunc, LongestSubarrayof1sAfterDeletingOneElementFunc, NumberofProvincesFunc, NumberofSubsequencesThatSatisfytheGivenSumConditionFunc, AsteroidCollisionFunc, IntervalListIntersectionsFunc, OnlineStockSpanFunc, EvaluateDivisionFunc, BagofTokensFunc, DoubleaNumberRepresentedasaLinkedListFunc,
+            WateringPlantsIIFunc, CarPoolingFunc, CountWaysToBuildGoodStringsFunc, TotalCosttoHireKWorkersFunc, PacificAtlanticWaterFlowFunc, FindtheStudentthatWillReplacetheChalkFunc, JumpGameIIIFunc, DailyTemperaturesFunc, DecodeStringFunc, ValidParenthesisStringFunc,
+            MaximumSubsequenceScoreFunc, EqualRowandColumnPairsFunc, DetermineifTwoStringsAreCloseFunc, IsGraphBipartiteFunc, MinimumLimitofBallsinaBagFunc, AllPossibleFullBinaryTreesFunc, LetterCasePermutationFunc, TaskSchedulerFunc, RevealCardsInIncreasingOrderFunc, ShortestBridgeFunc, New21GameFunc, LongestArithmeticSubsequenceFunc, MaximalNetworkRankFunc, UncrossedLinesFunc, MinimumNumberofArrowstoBurstBalloonsFunc, ShuffleanArrayFunc, LengthofLongestSubarrayWithatMostKFrequencyFunc,
+            StoneGameIIFunc, PeakIndexinaMountainArrayFunc, DeleteandEarnFunc, ValidTriangleNumberFunc, RandomPickwithWeightFunc, CountGoodNodesinBinaryTreeFunc, DesignCircularQueueFunc, BinarySubarraysWithSumFunc,
+            TimeNeededtoInformAllEmployeesFunc, SumofSquareNumbersFunc, AvoidFloodinTheCityFunc, KnightProbabilityinChessboardFunc, FindAllAnagramsinaStringFunc, ValidateBinaryTreeNodesFunc, MaximizeHappinessofSelectedChildrenFunc,
+            ArithmeticSlicesFunc, FindRightIntervalFunc, ShortestSubarraytobeRemovedtoMakeArraySortedFunc, SwappingNodesinaLinkedListFunc, PossibleBipartitionFunc, LinkedListRandomNodeFunc, UglyNumberIIIFunc, PalindromicSubstringsFunc,
+            MaximumDistanceBetweenaPairofValuesFunc, ZeroOneMatrixFunc, MaxAreaofIslandFunc, MostProfitAssigningWorkFunc, LongestRepeatingCharacterReplacementFunc, InsertintoaBinarySearchTreeFunc, FindAllGroupsofFarmlandFunc,
+            NextGreaterElementIIIFunc, MinimumNumberofVerticestoReachAllNodesFunc, TopKFrequentWordsFunc, NextGreaterElementIIFunc, LinkedListinBinaryTreeFunc, MaximumSideLengthofaSquarewithSumLessthanorEqualtoThresholdFunc, PartitionArrayforMaximumSumFunc, DistributeCoinsinBinaryTreeFunc,
+            SmallestRangeIIFunc, BestTeamWithNoConflictsFunc, MinimumGeneticMutationFunc, LongestZigZagPathinaBinaryTreeFunc, SubarrayProductLessThanKFunc, PermutationinStringFunc, OutofBoundaryPathsFunc, NumberofWonderfulSubstringsFunc,
+            LongestArithmeticSubsequenceofGivenDifferenceFunc, PartitionEqualSubsetSumFunc, ArithmeticSubarraysFunc, OnlineElectionFunc, MinimumTimetoCollectAllApplesinaTreeFunc, PathwithMaximumProbabilityFunc, FindDuplicateSubtreesFunc, PathSumIIIFunc, SequentialDigitsFunc,
+            MinimumRemovetoMakeValidParenthesesFunc, FindEventualSafeStatesFunc, NaryTreeLevelOrderTraversalFunc, FindLatestGroupofSizeMFunc, ShortestPathVisitingAllNodesFunc, SortCharactersByFrequencyFunc, SumofMutatedArrayClosesttoTargetFunc, DivideArrayIntoArraysWithMaxDifferenceFunc,
+            KClosestPointstoOriginFunc, CheckifThereisaValidPartitionForTheArrayFunc, MaximumLengthofPairChainFunc, MinimumPenaltyforaShopFunc, MinimumSpeedtoArriveonTimeFunc, MinimumNumberofDaystoMakemBouquetsFunc, FairDistributionofCookiesFunc, NumberofLongestIncreasingSubsequenceFunc, LongestIdealSubsequenceFunc,
+            MinimizetheMaximumDifferenceofPairsFunc, TimeBasedKeyValueStoreFunc, DeleteOperationforTwoStringsFunc, MaximumNumberofRemovableCharactersFunc, MinimumAbsoluteSumDifferenceFunc, FindtheSmallestDivisorGivenaThresholdFunc, SplitLinkedListinPartsFunc,
+            DesignAuthenticationManagerFunc, InsertDeleteGetRandomFunc, MyCalendarIFunc, MaximizetheConfusionofanExamFunc, AllNodesDistanceKinBinaryTreeFunc, LongestPalindromebyConcatenatingTwoLetterWordsFunc, PathWithMinimumEffortFunc, WhereWilltheBallFallFunc, MinimumASCIIDeleteSumforTwoStringsFunc,
+            GroupthePeopleGiventheGroupSizeTheyBelongToFunc, MinimumDeletionstoMakeCharacterFrequenciesUniqueFunc, MinCosttoConnectAllPointsFunc, MinimumOperationstoReduceXtoZeroFunc, ChampagneTowerFunc, DecodedStringatIndexFunc, OneThreeTwoPatternFunc, RemoveColoredPiecesifBothNeighborsaretheSameColorFunc, RemoveKDigitsFunc,
             MajorityElementIIFunc, FindLargestValueinEachTreeRowFunc, KthSymbolinGrammarFunc, BinaryTreesWithFactorsFunc, FindTheOriginalArrayofPrefixXorFunc, CountNodesEqualtoAverageofSubtreeFunc, BuildanArrayWithStackOperationsFunc, LastMomentBeforeAllAntsFallOutofaPlankFunc, FindtheWinnerofanArrayGameFunc, EliminateMaximumNumberofMonstersFunc, KthSmallestPrimeFractionFunc,
             DetermineifaCellIsReachableataGivenTimeFunc, CountNumberofHomogenousSubstringsFunc, RestoretheArrayFromAdjacentPairsFunc, SortVowelsinaStringFunc, MaximumElementAfterDecreasingandRearrangingFunc, FindUniqueBinaryStringFunc, MinimizeMaximumPairSuminArrayFunc, ReductionOperationstoMaketheArrayElementsEqualFunc, PseudoPalindromicPathsinaBinaryTreeFunc,
             MinimumAmountofTimetoCollectGarbageFunc, CountNicePairsinanArrayFunc, DiagonalTraverseIIFunc, MaximumNumberofCoinsYouCanGetFunc, SumofAbsoluteDifferencesinaSortedArrayFunc, LargestSubmatrixWithRearrangementsFunc, KnightDialerFunc, DifferenceBetweenOnesandZerosinRowandColumnFunc, DesignaFoodRatingSystemFunc, FindPlayersWithZeroorOneLossesFunc,
@@ -104,16 +99,7 @@ namespace CompetitiveProgramming.Services.Providers
 
         private static readonly Delegate[] leetCodeHardList = new Delegate[]
         {
-            CountDigitOneFunc, LongestPathWithDifferentAdjacentCharactersFunc, CheckifPointIsReachableFunc, NamingaCompanyFunc, IPOFunc, EditDistanceFunc, CountSubarraysWithFixedBoundsFunc, JumpGameIVFunc, LongestCycleinaGraphFunc, NumberofWaysofCuttingaPizzaFunc, FindMinimuminRotatedSortedArrayIIFunc, NumberofMusicPlaylistsFunc, WordLadderFunc, CandyFunc,
-            ReducingDishesFunc, ScrambleStringFunc, MinimumReverseOperationsFunc, LargestColorValueinaDirectedGraphFunc, MaximumValueofKCoinsFromPilesFunc, NumberofWaystoFormaTargetStringGivenaDictionaryFunc, ProfitableSchemesFunc, MinimumInsertionStepstoMakeaStringPalindromeFunc, RestoreTheArrayFunc, FindtheLongestValidObstacleCourseatEachPositionFunc,
-            MaximizeScoreAfterNOperationsFunc, StoneGameIIIFunc, MinimumCosttoCutaStickFunc, TrappingRainWaterFunc, NumberofGoodPathsFunc, SerializeandDeserializeBinaryTreeFunc, ReverseNodesinkGroupFunc, MakeArrayStrictlyIncreasingFunc, NumberofIncreasingPathsinaGridFunc, FrogJumpFunc, TextJustificationFunc, SortItemsbyGroupsRespectingDependenciesFunc,
-            NumberofWaystoReorderArraytoGetSameBSTFunc, TallestBillboardFunc, CheckingExistenceofEdgeLengthLimitedPathsFunc, MinimizeDeviationinArrayFunc, SubstringWithLargestVarianceFunc, MergekSortedListsFunc, PutMarblesinBagsFunc, CountAllValidPickupandDeliveryOptionsFunc, ReconstructItineraryFunc, NQueensFunc, PaintingtheWallsFunc, PoorPigsFunc,
-            CountAllPossibleRoutesFunc, MinimumJumpstoReachHomeFunc, BusRoutesFunc, StrangePrinterFunc, SumofDistancesinTreeFunc, DataStreamasDisjointIntervalsFunc, MinimumNumberofTapstoOpentoWateraGardenFunc, MaxDotProductofTwoSubsequencesFunc, NumberofFlowersinFullBloomFunc, FindinMountainArrayFunc, ConstrainedSubsequenceSumFunc, ParallelCoursesIIIFunc,
-            MinimumCosttoMakeArrayEqualFunc, RemoveMaxNumberofEdgestoKeepGraphFullyTraversableFunc, FirstMissingPositiveFunc, LFUCacheFunc, BinaryTreeMaximumPathSumFunc, MinimumNumberofOperationstoMakeArrayContinuousFunc, NumberofWaystoStayintheSamePlaceAfterSomeStepsFunc, CountVowelsPermutationFunc, MinimumOneBitOperationstoMakeIntegersZeroFunc, WordBreakIIFunc,
-            MaximumNumberofEventsThatCanBeAttendedIIFunc, SmallestSufficientTeamFunc, MaximumNumberofAchievableTransferRequestsFunc, MaxPointsonaLineFunc, MaximumRunningTimeofNComputersFunc, DesignGraphWithShortestPathCalculatorFunc, MinimumDifficultyofaJobScheduleFunc, ArithmeticSlicesIISubsequenceFunc, LongestValidParenthesesFunc, KInversePairsArrayFunc,
-            CourseScheduleIIFunc, LastDayWhereYouCanStillCrossFunc, ShortestPathtoGetAllKeysFunc, SimilarStringGroupsFunc, ConcatenatedWordsFunc, SlidingWindowMaximumFunc, MaximumScoreofaGoodSubarrayFunc, NumberofWaystoDivideaLongCorridorFunc, LargestRectangleinHistogramFunc, FindMedianfromDataStreamFunc, NumberofSubmatricesThatSumtoTargetFunc, MaximalRectangleFunc,
-            FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc, MinimumReplacementstoSorttheArrayFunc, MedianofTwoSortedArraysFunc, BuildArrayWhereYouCanFindTheMaximumExactlyKComparisonsFunc, StringCompressionIIFunc, MaximumProfitinJobSchedulingFunc, CherryPickupIIFunc, MeetingRoomsIIIFunc, FindAllPeopleWithSecretFunc, GreatestCommonDivisorTraversalFunc,
-            SubarrayswithKDifferentIntegersFunc, MinimumFallingPathSumIIFunc, FreedomTrailFunc, MinimumCosttoHireKWorkersFunc, FindtheMaximumSumofNodeValuesFunc, MaximumScoreWordsFormedbyLettersFunc, StudentAttendanceRecordIIFunc,
+            
         };
 
         // Functions 
@@ -172,13 +158,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Distribute Candies to People");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.DistributeCandiestoPeople.Test.TestCases());
-        }
-
-        private static void CompareVersionNumbersFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Compare Version Numbers");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CompareVersionNumbers.Test.TestCases());
         }
 
         private static void RelativeSortArrayFunc()
@@ -559,13 +538,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ExistenceofaSubstringinaStringandItsReverse.Test.TestCases());
         }
 
-        private static void SingleNumberIIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Single Number III");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SingleNumberIII.Test.TestCases());
-        }
-
         private static void MaximumNumberofWordsYouCanTypeFunc()
         {
             StyleHelper.Space();
@@ -578,13 +550,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Reformat The String");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ReformatTheString.Test.TestCases());
-        }
-        
-        private static void DeleteNodeinaLinkedListFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Delete Node in a Linked List");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
         private static void ReplaceWordsFunc()
@@ -612,13 +577,6 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Maximum Score Words Formed by Letters");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void WordBreakIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Word Break II");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
@@ -706,13 +664,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void MinimumHeightTreesFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Minimum Height Trees");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void FindTargetIndicesAfterSortingArrayFunc()
         {
             StyleHelper.Space();
@@ -738,13 +689,6 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Smallest String Starting From Leaf");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void MaximalRectangleFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Maximal Rectangle");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
@@ -872,13 +816,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Custom Sort String");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CustomSortString.Test.TestCases());
-        }
-
-        private static void IntersectionofTwoArraysFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Intersection of Two Arrays");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.IntersectionofTwoArrays.Test.TestCases());
         }
 
         private static void CountLargestGroupFunc()
@@ -1049,13 +986,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CircularSentence.Test.TestCases());
         }
 
-        private static void MissingNumberFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Missing Number");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MissingNumber.Test.TestCases());
-        }
-
         private static void CountPrefixandSuffixPairsIFunc()
         {
             StyleHelper.Space();
@@ -1196,13 +1126,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.DifferenceBetweenElementSumandDigitSumofanArray.Test.TestCases());
         }
 
-        private static void LargestDivisibleSubsetFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Largest Divisible Subset");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LargestDivisibleSubset.Test.TestCases());
-        }
-
         private static void MinimumCommonValueFunc()
         {
             StyleHelper.Space();
@@ -1313,27 +1236,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("K Inverse Pairs Array");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.KInversePairsArray.Test.TestCases());
-        }
-
-        private static void LongestConsecutiveSequenceFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Longest Consecutive Sequence");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LongestConsecutiveSequence.Test.TestCases());
-        }
-
-        private static void LongestValidParenthesesFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Longest Valid Parentheses");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LongestValidParentheses.Test.TestCases());
-        }
-
-        private static void LargestRectangleinHistogramFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Largest Rectangle in Histogram");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LargestRectangleinHistogram.Test.TestCases());
         }
 
         private static void OutofBoundaryPathsFunc()
@@ -1903,25 +1805,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumDeletionstoMakeCharacterFrequenciesUnique.Test.TestCases());
         }
 
-        private static void CandyFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Candy");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.Candy.Test.TestCases());
-        }
-
         private static void MinCosttoConnectAllPointsFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Min Cost to Connect All Points");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinCosttoConnectAllPoints.Test.TestCases());
-        }
-
-        private static void FindMedianfromDataStreamFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Find Median from Data Stream");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
         private static void LargestLocalValuesinaMatrixFunc()
@@ -1952,20 +1840,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void ReconstructItineraryFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Reconstruct Itinerary");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void FlattenBinaryTreetoLinkedListFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Flatten Binary Tree to Linked List");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void DetermineifStringHalvesAreAlikeFunc()
         {
             StyleHelper.Space();
@@ -1973,25 +1847,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void NQueensFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("N-Queens");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NQueens.Test.TestCases());
-        }
-
         private static void MinimumOperationstoReduceXtoZeroFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Minimum Operations to Reduce X to Zero");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumOperationstoReduceXtoZero.Test.TestCases());
-        }
-
-        private static void MedianofTwoSortedArraysFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Median of Two Sorted Arrays");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MedianofTwoSortedArrays.Test.TestCases());
         }
 
         private static void MaximumProductofTwoElementsinanArrayFunc()
@@ -2015,32 +1875,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SpecialPositionsinaBinaryMatrix.Test.TestCases());
         }
 
-        private static void RemoveElementFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Remove Element");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.RemoveElement.Test.TestCases());
-        }
-
         private static void DifferenceBetweenOnesandZerosinRowandColumnFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Difference Between Ones and Zeros in Row and Column");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.DifferenceBetweenOnesandZerosinRowandColumn.Test.TestCases());
-        }
-
-        private static void RemoveDuplicatesfromSortedArrayFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Remove Duplicates from Sorted Array");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.RemoveDuplicatesfromSortedArray.Test.TestCases());
-        }
-
-        private static void RemoveDuplicateLettersFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Remove Duplicate Letters");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.RemoveDuplicateLetters.Test.TestCases());
         }
 
         private static void DecodedStringatIndexFunc()
@@ -2174,13 +2013,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Count Vowels Permutation");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CountVowelsPermutation.Test.TestCases());
-        }
-
-        private static void PowerofFourFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Power of Four");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.PowerofFour.Test.TestCases());
         }
 
         private static void FindLargestValueinEachTreeRowFunc()
@@ -2477,25 +2309,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ReductionOperationstoMaketheArrayElementsEqual.Test.TestCases());
         }
 
-        private static void PalindromeNumberFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Palindrome Number");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.PalindromeNumber.Test.TestCases());
-        }
-
         private static void MinimumAmountofTimetoCollectGarbageFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Minimum Amount of Time to Collect Garbage");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumAmountofTimetoCollectGarbage.Test.TestCases());
-        }
-
-        private static void ValidPalindromeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Valid Palindrome");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ValidPalindrome.Test.TestCases());
         }
 
         private static void SumofAbsoluteDifferencesinaSortedArrayFunc()
@@ -2596,13 +2414,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SortthePeople.Test.TestCases());
         }
 
-        private static void ExcelSheetColumnNumberFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Excel Sheet Column Number");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ExcelSheetColumnNumber.Test.TestCases());
-        }
-
         private static void WidestVerticalAreaBetweenTwoPointsContainingNoPointsFunc()
         {
             StyleHelper.Space();
@@ -2631,13 +2442,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimizetheMaximumDifferenceofPairs.Test.TestCase());
         }
 
-        private static void WordLadderFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Word Ladder");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.WordLadder.Test.TestCase());
-        }
-
         private static void KClosestPointstoOriginFunc()
         {
             StyleHelper.Space();
@@ -2645,39 +2449,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.KClosestPointstoOrigin.Test.TestCases());
         }
 
-        private static void SlidingWindowMaximumFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Sliding Window Maximum");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SlidingWindowMaximum.Test.TestCases());
-        }
-
-        private static void PartitionListFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Partition List");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void CheckifThereisaValidPartitionForTheArrayFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Check if There is a Valid Partition For The Array");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CheckifThereisaValidPartitionForTheArray.Test.TestCases());
-        }
-
-        private static void PerfectSquaresFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Perfect Squares");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.PerfectSquares.Test.TestCases());
-        }
-
-        private static void CombinationSumIVFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Combination Sum IV");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CombinationSumIV.Test.TestCases());
         }
 
         private static void FindCriticalandPseudoCriticalEdgesinMinimumSpanningTreeFunc()
@@ -2715,13 +2491,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumPenaltyforaShop.Test.TestCases());
         }
 
-        private static void ImplementStackusingQueuesFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Implement Stack using Queues");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void ExtraCharactersinaStringFunc()
         {
             StyleHelper.Space();
@@ -2734,13 +2503,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Minimum Number of Taps to Open to Water a Garden");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumNumberofTapstoOpentoWateraGarden.Test.TestCases());
-        }
-
-        private static void InterleavingStringFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Interleaving String");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.InterleavingString.Test.TestCases());
         }
 
         private static void ShuffleanArrayFunc()
@@ -2762,13 +2524,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Delete Operation for Two Strings");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.DeleteOperationforTwoStrings.Test.TestCases());
-        }
-
-        private static void BitwiseANDofNumbersRangeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Bitwise AND of Numbers Range");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.BitwiseANDofNumbersRange.Test.TestCases());
         }
 
         private static void MinimumSpeedtoArriveonTimeFunc()
@@ -2799,32 +2554,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumNumberofDaystoMakemBouquets.Test.TestCases());
         }
 
-        private static void TextJustificationFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Text Justification");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.TextJustification.Test.TestCases());
-        }
-
         private static void ReorganizeStringFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Reorganize String");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ReorganizeString.Test.TestCases());
-        }
-
-        private static void RepeatedDNASequencesFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Repeated DNA Sequences");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.RepeatedDNASequences.Test.TestCases());
-        }
-
-        private static void ExcelSheetColumnTitleFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Excel Sheet Column Title");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ExcelSheetColumnTitle.Test.TestCases());
         }
 
         private static void SortItemsbyGroupsRespectingDependenciesFunc()
@@ -2846,20 +2580,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Maximum Number of Removable Characters");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximumNumberofRemovableCharacters.Test.TestCases());
-        }
-
-        private static void BalancedBinaryTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Balanced Binary Tree");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void FindKPairswithSmallestSumsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Maximum Number of Removable Characters");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindKPairswithSmallestSums.Test.TestCases());
         }
 
         private static void MinimumAbsoluteSumDifferenceFunc()
@@ -2897,20 +2617,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.AddStrings.Test.TestCases());
         }
 
-        private static void WordSearchFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Word Search");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.WordSearch.Test.TestCases());
-        }
-
-        private static void Searcha2DMatrixIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Search a 2D Matrix II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.Searcha2DMatrixII.Test.TestCases());
-        }
-
         private static void InsertDeleteGetRandomFunc()
         {
             StyleHelper.Space();
@@ -2932,13 +2638,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void ReverseLinkedListIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Reverse Linked List II");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void MyCalendarIFunc()
         {
             StyleHelper.Space();
@@ -2950,20 +2649,6 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Design Authentication Manager");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void SortListFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Sort List");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void MinimumDepthofBinaryTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Minimum Depth of Binary Tree");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
@@ -3016,13 +2701,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.WhereWilltheBallFall.Test.TestCases());
         }
 
-        private static void ClimbingStairsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Climbing Stairs");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ClimbingStairs.Test.TestClimbingStairs());
-        }
-
         private static void AddTwoIntegersFunc()
         {
             StyleHelper.Space();
@@ -3044,32 +2722,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LongestCommonSubsequence.Solution.TestLongestCommonSubsequence());
         }
 
-        private static void CountDigitOneFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Count Digit One");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofDigitOne.Test.TestNumberofDigitOne());
-        }
-
-        private static void ContainsDuplicateFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Contains Duplicate");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ContainsDuplicate.Test.TestContainsDuplicate());            
-        }
-
         private static void MaxIceCreamFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Max Ice Cream");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximumIceCreamBars.Test.TestCases());
-        }
-
-        private static void LongestPathWithDifferentAdjacentCharactersFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Longest Path With Different Adjacent Characters");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LongestPathWithDifferentAdjacentCharacters.Test.TestCases());
         }
 
         private static void LexicographicallySmallestEquivalentStringFunc()
@@ -3091,27 +2748,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Search a Matrix");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.Searcha2DMatrix.Test.TestSearcha2DMatrix());
-        }
-
-        private static void SetMatrixZeroesFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Set Matrix Zeroes");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SetMatrixZeroes.Test.TestSetMatrixZeroes());
-        }
-
-        private static void InsertIntervalFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Insert Interval");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.InsertInterval.Test.TestInsertInterval());
-        }
-
-        private static void BestTimetoBuyandSellStockFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Best Time to Buy and Sell Stock");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.BestTimetoBuyandSellStock.Test.TestBestTimetoBuyandSellStock());
         }
 
         private static void FirstUniqueCharacterinaStringFunc()
@@ -3142,76 +2778,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void BinaryTreePreorderTraversalFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Binary Tree Preorder Traversal");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-        
-        private static void CombinationSumIIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Combination Sum III");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void ValidSudokuFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Valid Sudoku");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void LinkedListCycleIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Linked List Cycle II");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void LinkedListCycleFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Linked List Cycle");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void CloneGraphFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Clone Graph");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void PalindromePartitioningFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Palindrome Partitioning");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void SumRoottoLeafNumbersFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Sum Root to Leaf Numbers");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void SingleNumberFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Single Number");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SingleNumber.Test.TestSingleNumber());
-        }
-
-        private static void BinaryTreeMaximumPathSumFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Binary Tree Maximum Path Sum");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void DesignaFoodRatingSystemFunc()
         {
             StyleHelper.Space();
@@ -3238,13 +2804,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Find Common Elements Between Two Arrays");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindCommonElementsBetweenTwoArrays.Test.TestCases());
-        }
-
-        private static void GasStationFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Gas Station");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.GasStation.Test.TestGasStation());
         }
 
         private static void TransposeMatrixFunc()
@@ -3287,13 +2846,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Add to Array Form of Integer");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.AddtoArrayFormofInteger.Test.TestAddtoArrayFormofInteger());
-        }
-
-        private static void RestoreIpAddressesFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Restore Ip Addresses");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.RestoreIPAddresses.Test.TestRestoreIPAddresses());
         }
 
         private static void CheckifPointIsReachableFunc()
@@ -3352,13 +2904,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void JumpGameIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Jump Game II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.JumpGameII.Test.TestJumpGameII());
-        }
-
         private static void NamingaCompanyFunc()
         {
             StyleHelper.Space();
@@ -3394,13 +2939,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumFuelCosttoReporttotheCapital.Test.TestCases());
         }
 
-        private static void AddBinaryFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Add Binary");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.AddBinary.Test.TestAddBinary());
-        }
-
         private static void DefanginganIPAddressFunc()
         {
             StyleHelper.Space();
@@ -3413,13 +2951,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Find Lucky Integer in an Array");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindLuckyIntegerinanArray.Test.TestFindLuckyIntegerinanArray());
-        }
-
-        private static void SearchInsertPositionFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Search Insert Position");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SearchInsertPosition.Test.TestSearchInsertPosition());
         }
 
         private static void MinimumAbsoluteDifferenceinBSTFunc()
@@ -3450,13 +2981,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.IPO.Test.TestIPO());
         }
 
-        private static void EditDistanceFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Edit Distance");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.EditDistance.Test.TestEditDistance());
-        }
-
         private static void SortanArrayFunc()
         {
             StyleHelper.Space();
@@ -3469,13 +2993,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("String Compression");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.StringCompression.Test.TestStringCompression());
-        }
-
-        private static void FindtheIndexoftheFirstOccurrenceinaStringFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Find the Index of the First Occurrence in a String");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindtheIndexoftheFirstOccurrenceinaString.Test.TestFindtheIndexoftheFirstOccurrenceinaString());
         }
 
         private static void CountSubarraysWithFixedBoundsFunc()
@@ -3527,13 +3044,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void ConvertSortedArraytoBinarySearchTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Convert Sorted Array to Binary Search Tree");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ConvertSortedArraytoBinarySearchTree.Test.TestConvertSortedArraytoBinarySearchTree());
-        }
-
         private static void MaximumRunningTimeofNComputersFunc()
         {
             StyleHelper.Space();
@@ -3541,25 +3051,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximumRunningTimeofNComputers.Test.TestCases());
         }
 
-        private static void ImplementTriePrefixTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Implement Trie Prefix Tree");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ImplementTriePrefixTree.Test.TestImplementTriePrefixTree());
-        }
-
         private static void MinimumASCIIDeleteSumforTwoStringsFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Minimum ASCII Delete Sum for Two Strings");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumASCIIDeleteSumforTwoStrings.Test.TestCases());
-        }
-
-        private static void CombinationSumIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Combination Sum II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CombinationSumII.Test.TestCases());
         }
 
         private static void CanPlaceFlowersFunc()
@@ -3609,13 +3105,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Longest Cycle in a Graph");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LongestCycleinaGraph.Test.TestCases());
-        }
-
-        private static void MinimumPathSumFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Minimum Path Sum");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumPathSum.Test.TestMinimumPathSum());
         }
 
         private static void PrimeSubtractionOperationFunc()
@@ -3679,13 +3168,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Reshape the Matrix");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ReshapetheMatrix.Test.TestReshapetheMatrix());
-        }
-
-        private static void ScrambleStringFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Scramble String");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ScrambleString.Test.TestScrambleString());
         }
 
         private static void BinarySearchFunc()
@@ -3793,13 +3275,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LargestColorValueinaDirectedGraph.Test.TestCases());
         }
 
-        private static void SimplifyPathFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Simplify Path");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SimplifyPath.Test.TestSimplifyPath());
-        }
-
         private static void ValidateStackSequencesFunc()
         {
             StyleHelper.Space();
@@ -3863,13 +3338,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MergeStringsAlternately.Test.TestCases());
         }
 
-        private static void RomantoIntegerFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Roman to Integer");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.RomantoInteger.Test.TestRomantoInteger());
-        }
-
         private static void ProfitableSchemesFunc()
         {
             StyleHelper.Space();
@@ -3926,27 +3394,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LastStoneWeight.Test.TestLastStoneWeight());
         }
 
-        private static void AddDigitsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Add Digits");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.AddDigits.Test.TestAddDigits());
-        }
-
-        private static void ValidAnagramFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Valid Anagram");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ValidAnagram.Test.TestValidAnagram());
-        }
-
-        private static void BulbSwitcherFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Bulb Switcher");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.BulbSwitcher.Test.TestBulbSwitcher());
-        }
-
         private static void FindtheDifferenceFunc()
         {
             StyleHelper.Space();
@@ -3966,27 +3413,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Minimum Number of Arrows to Burst Balloons");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumNumberofArrowstoBurstBalloons.Test.TestMinimumNumberofArrowstoBurstBalloons());
-        }
-
-        private static void MoveZeroesFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Move Zeroes");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void FirstBadVersionFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("First Bad Version");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void PlusOneFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Plus One");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.PlusOne.Test.TestPlusOne());
         }
 
         private static void AverageSalaryExcludingtheMinimumandMaximumSalaryFunc()
@@ -4024,13 +3450,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MonotonicArray.Test.TestMonotonicArray());
         }
 
-        private static void LengthofLastWordFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Length of Last Word");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LengthofLastWord.Test.TestLengthofLastWord());
-        }
-
         private static void ToLowerCaseFunc()
         {
             StyleHelper.Space();
@@ -4050,13 +3469,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Count Negative Numbers in a Sorted Matrix");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CountNegativeNumbersinaSortedMatrix.Test.TestCountNegativeNumbersinaSortedMatrix());
-        }
-
-        private static void ValidPerfectSquareFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Valid Perfect Square");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ValidPerfectSquare.Test.TestValidPerfectSquare());
         }
 
         private static void ArrangingCoinsFunc()
@@ -4098,13 +3510,6 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Two Sum IV - Input is a BST");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void TwoSumFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Two Sum");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
@@ -4178,55 +3583,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CheckIfItIsaStraightLine.Test.TestCheckIfItIsaStraightLine());
         }
 
-        private static void MultiplyStringsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Multiply Strings");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MultiplyStrings.Test.TestMultiplyStrings());
-        }
-
-        private static void PowxnFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Pow(x, n)");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.Powxn.Test.TestPowxn());
-        }
-
-        private static void ReverseVowelsofaStringFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Reverse Vowels of a String");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ReverseVowelsofaString.Test.TestReverseVowelsofaString());
-        }
-
-        private static void ReverseStringFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Reverse String");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void ReverseWordsinaStringFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Reverse Words in a String");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ReverseWordsinaString.Test.TestReverseWordsinaString());
-        }
-
-        private static void EvaluateReversePolishNotationFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Evaluate Reverse Polish Notation");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.EvaluateReversePolishNotation.Test.TestEvaluateReversePolishNotation());
-        }
-
-        private static void ProductofArrayExceptSelfFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Product of Array Except Self");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ProductofArrayExceptSelf.Test.TestProductofArrayExceptSelf());
-        }
-
         private static void Dota2SenateFunc()
         {
             StyleHelper.Space();
@@ -4241,25 +3597,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumFlipstoMakeaORbEqualtoc.Test.TestMinimumFlipstoMakeaORbEqualtoc());
         }
 
-        private static void CountingBitsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Counting Bits");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CountingBits.Test.TestCountingBits());
-        }
-
         private static void BestTimetoBuyandSellStockwithTransactionFeeFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Best Time to Buy and Sell Stock with Transaction Fee");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.BestTimetoBuyandSellStockwithTransactionFee.Test.TestBestTimetoBuyandSellStockwithTransactionFee());
-        }
-
-        private static void IncreasingTripletSubsequenceFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Increasing Triplet Subsequence");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.IncreasingTripletSubsequence.Test.TestIncreasingTripletSubsequence());
         }
 
         private static void IsSubsequenceFunc()
@@ -4290,13 +3632,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinCostClimbingStairs.Test.TestMinCostClimbingStairs());    
         }
 
-        private static void ContainerWithMostWaterFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Container With Most Water");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ContainerWithMostWater.Test.TestContainerWithMostWater());    
-        }
-
         private static void MaxNumberofKSumPairsFunc()
         {
             StyleHelper.Space();
@@ -4309,13 +3644,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Maximum Average Subarray I");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximumAverageSubarrayI.Test.TestMaximumAverageSubarrayI());
-        }
-
-        private static void UniquePathsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Unique Paths");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.UniquePaths.Test.TestUniquePaths());
         }
 
         private static void MaxConsecutiveOnesIIIFunc()
@@ -4372,13 +3700,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Asteroid Collision");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.AsteroidCollision.Test.TestAsteroidCollision());
-        }
-
-        private static void FindPeakElementFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Find Peak Element");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindPeakElement.Test.TestFindPeakElement());
         }
 
         private static void MaximizeScoreAfterNOperationsFunc()
@@ -4486,13 +3807,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximumSubsequenceScore.Test.TestCases());
         }
 
-        private static void KthLargestElementinanArrayFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Kth Largest Element in an Array");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.KthLargestElementinanArray.Test.TestKthLargestElementinanArray());
-        }
-
         private static void EqualRowandColumnPairsFunc()
         {
             StyleHelper.Space();
@@ -4535,76 +3849,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void MaxPointsonaLineFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Max Points on a Line");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void BinaryTreePostorderTraversalFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Binary Tree Level Order Traversal");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void LowestCommonAncestorofaBinaryTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Lowest Common Ancestor of a Binary Tree");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void OddEvenLinkedListFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Odd Even Linked List");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void LowestCommonAncestorofaBinarySearchTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Lowest Common Ancestor of a Binary Search Tree");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-        
-        private static void HouseRobberFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("House Robber");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void HouseRobberIIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("House Robber III");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void HouseRobberIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("House Robber II");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void DesignAddandSearchWordsDataStructureFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Design Add and Search Words Data Structure");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void NextPermutationFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Next Permutation");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NextPermutation.Test.TestNextPermutation());
-        }
-
         private static void ShortestBridgeFunc()
         {
             StyleHelper.Space();
@@ -4619,20 +3863,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void PeekingIteratorFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Peeking Iterator");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void FindtheDuplicateNumberFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Find the Duplicate Number");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindtheDuplicateNumber.Test.TestFindtheDuplicateNumber());
-        }
-
         private static void New21GameFunc()
         {
             StyleHelper.Space();
@@ -4640,60 +3870,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.New21Game.Test.TestNew21Game());
         }
 
-        private static void FindMinimuminRotatedSortedArrayFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Find Minimum in Rotated Sorted Array");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindMinimuminRotatedSortedArray.Test.TestFindMinimuminRotatedSortedArray());
-        }
-
         private static void StoneGameIIFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Stone Game II");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.StoneGameII.Solution.TestStoneGameII());
-        }
-
-        private static void PermutationsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Permutations");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.Permutations.Test.TestPermutations());
-        }
-
-        private static void PermutationsIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Permutations II");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void ReverseLinkedListFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Reverse Linked List");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void IsomorphicStringsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Isomorphic Strings");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void RemoveLinkedListElementsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Remove Linked List Elements");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void CourseScheduleFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Course Schedule");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CourseSchedule.Test.TestCourseSchedule());
         }
 
         private static void StoneGameIIIFunc()
@@ -4710,13 +3891,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumCosttoCutaStick.Test.TestCases());
         }
 
-        private static void MajorityElementFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Majority Element");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MajorityElement.Test.TestMajorityElement());
-        }
-
         private static void GoalParserInterpretationFunc()
         {
             StyleHelper.Space();
@@ -4729,13 +3903,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Flood Fill");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FloodFill.Test.TestFloodFill());
-        }
-
-        private static void HappyNumberFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Happy Number");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.HappyNumber.Test.TestHappyNumber());
         }
 
         private static void DecryptStringfromAlphabettoIntegerMappingFunc()
@@ -4764,13 +3931,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Check if One String Swap Can Make Strings Equal");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CheckifOneStringSwapCanMakeStringsEqual.Test.TestCases());
-        }
-
-        private static void ThreeSumFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("3Sum");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ThreeSum.Test.TestThreeSum());
         }
 
         private static void PeakIndexinaMountainArrayFunc()
@@ -4822,46 +3982,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SpecialArrayWithXElementsGreaterThanorEqualX.Test.TestCases());
         }
 
-        private static void TwoSumIIInputArrayIsSortedFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Two Sum II - Input Array Is Sorted");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.TwoSumIIInputArrayIsSorted.Test.TestTwoSumIIInputArrayIsSorted());
-        }
-
-        private static void FindFirstandLastPositionofElementinSortedArrayFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Find First and Last Position of Element in Sorted Array");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindFirstandLastPositionofElementinSortedArray.Test.TestFindFirstandLastPositionofElementinSortedArray());
-        }
-
-        private static void SqrtxFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Sqrt(x)");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.Sqrtx.Test.TestSqrtx());
-        }
-
         private static void FindtheDistanceValueBetweenTwoArraysFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Find the Distance Value Between Two Arrays");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindtheDistanceValueBetweenTwoArrays.Test.TestFindtheDistanceValueBetweenTwoArrays());
-        }
-
-        private static void MergeIntervalsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Merge Intervals");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MergeIntervals.Test.TestInsertInterval());
-        }
-
-        private static void SortColorsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Sort Colors");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
         private static void TimeNeededtoInformAllEmployeesFunc()
@@ -4899,13 +4024,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SumofSquareNumbers.Test.TestSumofSquareNumbers());
         }
 
-        private static void DecodeWaysFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Decode Ways");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.DecodeWays.Test.TestDecodeWays());
-        }
-
         private static void ArithmeticSlicesFunc()
         {
             StyleHelper.Space();
@@ -4941,13 +4059,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SquaresofaSortedArray.Test.TestSquaresofaSortedArray());
         }
 
-        private static void RotateArrayFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Rotate Array");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void FibonacciNumberFunc()
         {
             StyleHelper.Space();
@@ -4962,27 +4073,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindNearestPointThatHastheSameXorYCoordinate.Test.TestCases());
         }
 
-        private static void Numberof1BitsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Number of 1 Bits");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.Numberof1Bits.Test.TestNumberof1Bits());
-        }
-
-        private static void UglyNumberIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Ugly Number II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.UglyNumberII.Test.TestUglyNumberII());
-        }
-
-        private static void UniqueBinarySearchTreesFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Unique Binary Search Trees");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.UniqueBinarySearchTrees.Test.TestUniqueBinarySearchTrees());
-        }
-
         private static void SortIntegersbyTheNumberof1BitsFunc()
         {
             StyleHelper.Space();
@@ -4990,32 +4080,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SortIntegersbyTheNumberof1Bits.Test.TestSortIntegersbyTheNumberof1Bits());
         }
 
-        private static void SearchinRotatedSortedArrayFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Search in Rotated Sorted Array");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SearchinRotatedSortedArray.Test.TestSearchinRotatedSortedArray());
-        }
-
         private static void MaximumDistanceBetweenaPairofValuesFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Maximum Distance Between a Pair of Values");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximumDistanceBetweenaPairofValues.Test.TestCases());
-        }
-
-        private static void TrappingRainWaterFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Trapping Rain Water");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.TrappingRainWater.Test.TestTrappingRainWater());
-        }
-
-        private static void WordBreakFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Word Break");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.WordBreak.Test.TestWordBreak());
         }
 
         private static void ZeroOneMatrixFunc()
@@ -5032,32 +4101,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaxAreaofIsland.Test.TestMaxAreaofIsland());
         }
 
-        private static void PowerofTwoFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Power of Two");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.PowerofTwo.Test.TestPowerofTwo());
-        }
-
         private static void ReverseWordsinaStringIIIFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Power of Two");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ReverseWordsinaStringIII.Test.TestReverseWordsinaStringIII());
-        }
-
-        private static void TriangleFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Tringle");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.Triangle.Test.TestTriangle());
-        }
-
-        private static void PascalsTriangleIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Pascals Triangle II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.PascalsTriangleII.Test.TestPascalsTriangleII());
         }
 
         private static void LongestSubstringWithoutRepeatingCharactersFunc()
@@ -5067,130 +4115,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LongestSubstringWithoutRepeatingCharacters.Test.TestLongestSubstringWithoutRepeatingCharacters());
         }
 
-        private static void ReverseBitsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Reverse Bits");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ReverseBits.Test.TestReverseBits());
-        }
-
-        private static void UniquePathsIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Unique Paths II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.UniquePathsII.Test.TestUniquePathsII());
-        }
-
-        private static void MaximalSquareFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Maximal Square");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximalSquare.Test.TestMaximalSquare());
-        }
-
-        private static void JumpGameFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Jump Game");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.JumpGame.Test.TestJumpGame());
-        }
-
-        private static void PathSumIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Path Sum II");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-        
-        private static void BinaryTreeInorderTraversalFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Binary Tree Inorder Traversal");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void MaximumValueataGivenIndexinaBoundedArrayFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Maximum Value at a Given Index in a Bounded Array");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximumValueataGivenIndexinaBoundedArray.Test.TestCases());
-        }
-
-        private static void BinarySearchTreeIteratorFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Binary Search Tree Iterator");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void PathSumFuncFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Path Sum Func");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void ConvertSortedListtoBinarySearchTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("ConvertSorted List to Binary Search Tree");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void KthSmallestElementinaBSTFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Kth Smallest Element in a BST");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void ConstructBinaryTreefromPreorderandInorderTraversalFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Construct Binary Tree from Preorder and Inorder Traversal");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void MaximumDepthofBinaryTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Maximum Depth of Binary Tree");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void BinaryTreeZigzagLevelOrderTraversalFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Binary Tree Zigzag Level Order Traversal");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void BinaryTreeLevelOrderTraversalFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Binary Tree Level Order Traversal");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void SymmetricTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Symmetric Tree");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void SameTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Same Tree");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void ValidateBinarySearchTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Validate Binary Search Tree");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
         private static void MaximumValueofaStringinanArrayFunc()
@@ -5207,53 +4136,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void LongestIncreasingSubsequenceFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Longest Increasing Subsequence");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LongestIncreasingSubsequence.Test.TestLongestIncreasingSubsequence());
-        }
-
-        private static void WiggleSubsequenceFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Wiggle Subsequence");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.WiggleSubsequence.Test.TestWiggleSubsequence());
-        }
-
-        private static void LongestPalindromicSubstringFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Longest Palindromic Substring");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LongestPalindromicSubstring.Test.TestLongestPalindromicSubstring());
-        }
-
         private static void LongestPalindromeFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Longest Palindrome");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.LongestPalindrome.Test.TestLongestPalindrome());
-        }
-
-        private static void RangeSumQuery2DImmutableFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Range Sum Query 2D - Immutable");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void BestTimetoBuyandSellStockwithCooldownFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Best Time to Buy and Sell Stock with Cooldown");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.BestTimetoBuyandSellStockwithCooldown.Test.TestBestTimetoBuyandSellStockwithCooldown());
-        }
-
-        private static void GuessNumberHigherorLowerFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Guess Number Higher or Lower");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
         private static void SumofLeftLeavesFunc()
@@ -5277,13 +4164,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.DecodeString.Test.TestDecodeString());
         }
 
-        private static void BestTimetoBuyandSellStockIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Best Time to Buy and Sell Stock II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.BestTimetoBuyandSellStockII.Test.TestBestTimetoBuyandSellStockII());
-        }
-
         private static void BestSightseeingPairFunc()
         {
             StyleHelper.Space();
@@ -5291,39 +4171,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.BestSightseeingPair.Test.TestBestSightseeingPair());
         }
 
-        private static void WordPatternFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Word Pattern");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.WordPattern.Test.TestWordPattern());
-        }
-
-        private static void SerializeandDeserializeBinaryTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Serialize and Deserialize Binary Tree");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void MatrixBlockSumFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Matrix Block Sum");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MatrixBlockSum.Test.TestMatrixBlockSum());
-        }
-
-        private static void SummaryRangesFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Summary Ranges");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SummaryRanges.Test.TestSummaryRanges());
-        }
-
-        private static void MaximumProductSubarrayFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Maximum Product Subarray");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximumProductSubarray.Test.TestMaximumProductSubarray());
         }
 
         private static void MaximumLengthofSubarrayWithPositiveProductFunc()
@@ -5347,20 +4199,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindtheWinneroftheCircularGame.Test.TestCases());
         }
 
-        private static void RemoveDuplicatesfromSortedListFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Remove Duplicates from Sorted List");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void RemoveDuplicatesfromSortedListIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Remove Duplicates from Sorted List II");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void DesignLinkedListFunc()
         {
             StyleHelper.Space();
@@ -5380,55 +4218,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Design Hash Set");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void ReverseNodesinkGroupFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Reverse Nodes in k-Group");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void SwapNodesinPairsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Swap Nodes in Pairs");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void MergekSortedListsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Merge k Sorted Lists");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void MinStackFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Min Stack");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void GenerateParenthesesFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Generate Parentheses");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void MergeTwoSortedListsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Merge Two Sorted Lists");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void CoinChangeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Coin Change");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CoinChange.Test.TestCoinChange());
         }
 
         private static void ValidParenthesesFunc()
@@ -5494,25 +4283,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NearestExitfromEntranceinMaze.Test.TestCases());
         }
 
-        private static void RangeSumQueryImmutableFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Range Sum Query - Immutable");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void MakeArrayStrictlyIncreasingFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Make Array Strictly Increasing");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MakeArrayStrictlyIncreasing.Test.TestMakeArrayStrictlyIncreasing());
-        }
-
-        private static void SearchinRotatedSortedArrayIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Search in Rotated Sorted Array II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SearchinRotatedSortedArrayII.Test.TestSearchinRotatedSortedArrayII());
         }
 
         private static void FindRightIntervalFunc()
@@ -5536,13 +4311,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.WaystoSplitArrayIntoThreeSubarrays.Test.TestCases());
         }
 
-        private static void NumberofIslandsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Number of Islands");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.NumberofIslands.Test.TestHappyNumber());
-        }
-
         private static void AllPathsFromSourcetoTargetFunc()
         {
             StyleHelper.Space();
@@ -5562,13 +4330,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Pacific Atlantic Water Flow");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.PacificAtlanticWaterFlow.Test.TestPacificAtlanticWaterFlow());
-        }
-
-        private static void BinaryTreeRightSideViewFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Binary Tree Right Side View");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
         
         private static void CountSubIslandsFunc()
@@ -5592,25 +4353,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.RangeSumofSortedSubarraySums.Test.TestCases());
         }
 
-        private static void MinimumSizeSubarraySumFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Minimum Size Subarray Sum");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumSizeSubarraySum.Test.TestMinimumSizeSubarraySum());
-        }
-
         private static void ValidTriangleNumberFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Valid Triangle Number");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ValidTriangleNumber.Test.TestValidTriangleNumber());
-        }
-
-        private static void CountCompleteTreeNodesFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Count Complete Tree Nodes");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
         private static void FrequencyoftheMostFrequentElementFunc()
@@ -5620,25 +4367,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FrequencyoftheMostFrequentElement.Test.TestCases());
         }
 
-        private static void HIndexIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("H-Index II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.HIndexII.Test.TestHIndexII());
-        }
-
         private static void KRadiusSubarrayAveragesFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("K Radius Subarray Averages");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.KRadiusSubarrayAverages.Test.TestCases());
-        }
-
-        private static void FindMinimuminRotatedSortedArrayIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Find Minimum in Rotated Sorted Array II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindMinimuminRotatedSortedArrayII.Test.TestFindMinimuminRotatedSortedArrayII());
         }
 
         private static void NumberofWaystoReorderArraytoGetSameBSTFunc()
@@ -5781,13 +4514,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.RichestCustomerWealth.Test.TestCases());
         }
 
-        private static void IntegerBreakFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Integer Break");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.IntegerBreak.Test.TestIntegerBreak());
-        }
-
         private static void JumpGameIIIFunc()
         {
             StyleHelper.Space();
@@ -5851,13 +4577,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MinimumCosttoMakeArrayEqual.Test.TestCases());
         }
 
-        private static void SubsetsIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Subsets II");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void MaximumNumberofEventsThatCanBeAttendedIIFunc()
         {
             StyleHelper.Space();
@@ -5871,33 +4590,12 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Title("Design Parking System");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
-        
-        private static void MergeSortedArrayFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Merge Sorted Array");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void CombinationsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Combinations");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
 
         private static void SmallestSufficientTeamFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Smallest Sufficient Team");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SmallestSufficientTeam.Test.TestSmallestSufficientTeam());
-        }
-
-        private static void ThreeSumClosestFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("3Sum Closest");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ThreeSumClosest.Test.TestThreeSumClosest());
         }
 
         private static void PartitionEqualSubsetSumFunc()
@@ -5912,55 +4610,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Bus Routes");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.BusRoutes.Test.TestBusRoutes());
-        }
-
-        private static void CourseScheduleIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Course Schedule II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CourseScheduleII.Test.TestCourseScheduleII());
-        }
-
-        private static void BasicCalculatorIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Basic Calculator II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.BasicCalculatorII.Test.TestBasicCalculatorII());
-        }
-
-        private static void CombinationSumFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Combination Sum");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.CombinationSum.Test.TestCases());
-        }
-
-        private static void RotateListFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Rotate List");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void SpiralMatrixFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Spiral Matrix");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SpiralMatrix.Test.TestSpiralMatrix());
-        }
-
-        private static void SpiralMatrixIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Spiral Matrix II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SpiralMatrixII.Test.TestSpiralMatrixII());
-        }
-
-        private static void CopyListwithRandomPointerFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Copy List with Random Pointer");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
         private static void ArithmeticSubarraysFunc()
@@ -6061,32 +4710,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void PopulatingNextRightPointersinEachNodeIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Populating Next Right Pointers in Each Node I");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void PopulatingNextRightPointersinEachNodeIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Populating Next Right Pointers in Each Node II");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void ShortestPathtoGetAllKeysFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Shortest Path to Get All Keys");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ShortestPathtoGetAllKeys.Test.TestShortestPathtoGetAllKeys());
-        }
-
-        private static void WaterandJugProblemFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Water and Jug Problem");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.WaterandJugProblem.Test.TestWaterandJugProblem());
         }
 
         private static void MaximumNumberofAchievableTransferRequestsFunc()
@@ -6110,13 +4738,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void DataStreamasDisjointIntervalsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Data Stream as Disjoint Intervals");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void MinimumTimetoCollectAllApplesinaTreeFunc()
         {
             StyleHelper.Space();
@@ -6124,25 +4745,11 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void IntersectionofTwoArraysIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Intersection of Two Arrays II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.IntersectionofTwoArraysII.Test.TestIntersectionofTwoArraysII());
-        }
-
         private static void StrangePrinterFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Strange Printer");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.StrangePrinter.Test.TestStrangePrinter());
-        }
-
-        private static void TopKFrequentElementsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Top K Frequent Elements");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.TopKFrequentElements.Test.TestTopKFrequentElements());
         }
 
         private static void MaximumWidthofBinaryTreeFunc()
@@ -6157,13 +4764,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Search Suggestions System");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SearchSuggestionsSystem.Test.TestSearchSuggestionsSystem());
-        }
-
-        private static void FirstMissingPositiveFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("First Missing Positive");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FirstMissingPositive.Test.TestFirstMissingPositive());
         }
 
         private static void CheapestFlightsWithinKStopsFunc()
@@ -6250,66 +4850,10 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.AlternatingDigitSum.Test.TestCase());
         }
 
-        private static void ImplementQueueusingStacksFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Implement Queue using Stacks");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void InvertBinaryTreeFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Invert Binary Tree");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void PascalsTriangleFunc()
         {
             StyleHelper.Space();
             StyleHelper.Title("Pascals Triangle");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void ConstructBinaryTreefromInorderandPostorderTraversalFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Construct Binary Tree from In order and Post order Traversal");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void MaximumSubarrayFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Maximum Subarray");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.MaximumSubarray.Test.TestMaximumSubarray());
-        }
-
-        private static void RemoveNthNodeFromEndofListFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Remove Nth Node From End of List");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void LetterCombinationsofaPhoneNumberFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Letter Combinations of a Phone Number");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void ZigzagConversionFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Zigzag Conversion");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.ZigzagConversion.Test.TestZigzagConversion());
-        }
-
-        private static void AddTwoNumbersFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Add Two Numbers");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
@@ -6318,20 +4862,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Buddy Strings");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.BuddyStrings.Test.TestCase());
-        }
-
-        private static void SurroundedRegionsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Surrounded Regions");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SurroundedRegions.Test.TestCases());
-        }
-
-        private static void BullsandCowsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Bulls and Cows");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.BullsandCows.Test.TestCases());
         }
 
         private static void MinimumRemovetoMakeValidParenthesesFunc()
@@ -6355,27 +4885,6 @@ namespace CompetitiveProgramming.Services.Providers
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
-        private static void FlattenNestedListIteratorFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Flatten Nested List Iterator");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void SingleNumberIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Single Number II");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SingleNumberII.Test.TestCases());
-        }
-
-        private static void UniqueBinarySearchTreesIIFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Unique Binary Search Trees II");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
         private static void NumberofMusicPlaylistsFunc()
         {
             StyleHelper.Space();
@@ -6388,13 +4897,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Find Latest Group of Size M");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.FindLatestGroupofSizeM.Test.TestCases());
-        }
-
-        private static void ReorderListFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Reorder List");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
 
         private static void ShortestPathVisitingAllNodesFunc()
@@ -6423,27 +4925,6 @@ namespace CompetitiveProgramming.Services.Providers
             StyleHelper.Space();
             StyleHelper.Title("Sum of Mutated Array Closest to Target");
             ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.SumofMutatedArrayClosesttoTarget.Test.TestCases());
-        }
-
-        private static void IntersectionofTwoLinkedListsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Intersection of Two Linked Lists");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void SubsetsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Subsets");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.Subsets.Test.TestCases());
-        }
-
-        private static void GroupAnagramsFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Group Anagrams");
-            ResultTester.CheckSolution(ProblemOrigin.LeetCode, LeetCode.GroupAnagrams.Test.TestCases());
         }
 
         private static void PartitionLabelsFunc()
@@ -6478,13 +4959,6 @@ namespace CompetitiveProgramming.Services.Providers
         {
             StyleHelper.Space();
             StyleHelper.Title("Find Subarrays With Equal Sum");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
-        }
-
-        private static void RotateImageFunc()
-        {
-            StyleHelper.Space();
-            StyleHelper.Title("Rotate Image");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode);
         }
     }

@@ -32,7 +32,9 @@ Example 3:
 Input: head = [[3,null],[3,0],[3,null]]
 Output: [[3,null],[3,0],[3,null]]
 */
-
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.CopyListwithRandomPointer
 {
     /*
@@ -72,4 +74,14 @@ namespace CompetitiveProgramming.LeetCode.CopyListwithRandomPointer
             return tracking[head];
         }
     }*/
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Copy List with Random Pointer");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

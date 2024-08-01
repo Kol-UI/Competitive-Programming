@@ -29,6 +29,8 @@ Explanation: The input binary string 11111111111111111111111111111101 has a tota
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.Numberof1Bits
@@ -71,6 +73,16 @@ namespace CompetitiveProgramming.LeetCode.Numberof1Bits
                 ResultTester.CheckResult<int>(result2Linq, 8)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of 1 Bits");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestNumberof1Bits());
         }
     }
 }

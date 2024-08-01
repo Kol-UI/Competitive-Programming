@@ -25,6 +25,8 @@ Explanation: Print "aaa" first and then print "b" from the second place of the s
 
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.StrangePrinter
@@ -91,6 +93,16 @@ namespace CompetitiveProgramming.LeetCode.StrangePrinter
                 ResultTester.CheckResult<int>(result2, 2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Strange Printer");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestStrangePrinter());
         }
     }
 }

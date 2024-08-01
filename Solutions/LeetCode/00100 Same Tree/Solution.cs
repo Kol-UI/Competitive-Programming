@@ -1,4 +1,8 @@
 ﻿using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SameTree
 {
 
@@ -39,5 +43,14 @@ namespace CompetitiveProgramming.LeetCode.SameTree
             return IsSameTree(p.left, q.left) && IsSameTree(p.right, q.right);
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Same Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
+}

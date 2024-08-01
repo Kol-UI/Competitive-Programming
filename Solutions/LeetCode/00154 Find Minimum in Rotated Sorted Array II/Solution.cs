@@ -25,6 +25,8 @@ Output: 0
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FindMinimuminRotatedSortedArrayII
@@ -72,6 +74,16 @@ namespace CompetitiveProgramming.LeetCode.FindMinimuminRotatedSortedArrayII
                 ResultTester.CheckResult<int>(result2, 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Minimum in Rotated Sorted Array II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestFindMinimuminRotatedSortedArrayII());
         }
     }
 }

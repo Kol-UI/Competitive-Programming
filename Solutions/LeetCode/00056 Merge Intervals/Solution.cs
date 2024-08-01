@@ -20,6 +20,8 @@ Explanation: Intervals [1,4] and [4,5] are considered overlapping.
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MergeIntervals
@@ -103,6 +105,16 @@ namespace CompetitiveProgramming.LeetCode.MergeIntervals
                 ResultTester.CheckResult<int[][]>(result2, expected2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Title");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestInsertInterval());
         }
     }
 }

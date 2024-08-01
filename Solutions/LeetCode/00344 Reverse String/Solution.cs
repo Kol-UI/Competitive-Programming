@@ -19,6 +19,8 @@ Output: ["h","a","n","n","a","H"]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ReverseString
@@ -33,6 +35,16 @@ namespace CompetitiveProgramming.LeetCode.ReverseString
                 s[i] = s[s.Length - (i + 1)];
                 s[s.Length - (i + 1)] = temp;
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reverse String");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }
 }

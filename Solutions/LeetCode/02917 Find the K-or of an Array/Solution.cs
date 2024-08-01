@@ -36,6 +36,8 @@ Explanation: Since k == 1, the 1-or of the array is equal to the bitwise OR of a
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.FindtheKorofanArray
 {
@@ -88,6 +90,16 @@ namespace CompetitiveProgramming.LeetCode.FindtheKorofanArray
                 ResultTester.CheckResult<int>(Solution.FindKOr(nums3, k3), 15),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find the K-or of an Array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

@@ -1,4 +1,8 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MergekSortedLists
 {
     // You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.
@@ -93,4 +97,14 @@ namespace CompetitiveProgramming.LeetCode.MergekSortedLists
         }
     }
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Merge k Sorted Lists");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
+        }
+    }
 }

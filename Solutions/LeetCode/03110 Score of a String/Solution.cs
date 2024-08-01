@@ -1,5 +1,7 @@
 // Score of a String
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ScoreofaString
@@ -29,6 +31,16 @@ namespace CompetitiveProgramming.LeetCode.ScoreofaString
                 ResultTester.CheckResult<int>(Solution.ScoreOfString("zaz"), 50),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Score of a String");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

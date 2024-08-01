@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MaximumSumWithExactlyKElements
 {
@@ -20,6 +22,16 @@ namespace CompetitiveProgramming.LeetCode.MaximumSumWithExactlyKElements
                 ResultTester.CheckResult<int>(Solution.MaximizeSum(new int[]{5,5,5}, 2), 11),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Sum With Exactly K Elements");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

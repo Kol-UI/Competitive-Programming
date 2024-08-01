@@ -33,6 +33,8 @@ Thus, the result should be [1,0].
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.PlusOne
@@ -99,6 +101,16 @@ namespace CompetitiveProgramming.LeetCode.PlusOne
                 ResultTester.CheckResult<int[]>(result3_66, expected3)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Plus One");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestPlusOne());
         }
     }
 }

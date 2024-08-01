@@ -17,6 +17,10 @@ Output: ["()"]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.GenerateParentheses
 {
     public class Solution
@@ -41,6 +45,16 @@ namespace CompetitiveProgramming.LeetCode.GenerateParentheses
             
             if(opened < maxLen) GenerateAndCheck(str + "(", opened + 1, closed);
             if(closed < opened) GenerateAndCheck(str + ")", opened, closed + 1);
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Generate Parentheses");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

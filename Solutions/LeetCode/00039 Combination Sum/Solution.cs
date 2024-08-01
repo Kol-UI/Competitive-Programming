@@ -30,7 +30,8 @@ Example 3:
 Input: candidates = [2], target = 1
 Output: []
 */
-
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CombinationSum
@@ -99,6 +100,16 @@ namespace CompetitiveProgramming.LeetCode.CombinationSum
                 ResultTester.CheckResult<IList<IList<int>>>(result3, expected3)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Combination Sum");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

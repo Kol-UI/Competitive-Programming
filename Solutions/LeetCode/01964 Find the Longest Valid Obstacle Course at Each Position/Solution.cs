@@ -45,6 +45,8 @@ Explanation: The longest valid obstacle course at each position is:
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FindtheLongestValidObstacleCourseatEachPosition
@@ -116,6 +118,16 @@ namespace CompetitiveProgramming.LeetCode.FindtheLongestValidObstacleCourseatEac
                 ResultTester.CheckResult<int[]>(result3, output3)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find the Longest Valid Obstacle Course at Each Position");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

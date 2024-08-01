@@ -21,6 +21,8 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum jump 
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.JumpGame
@@ -61,6 +63,16 @@ namespace CompetitiveProgramming.LeetCode.JumpGame
                 ResultTester.CheckResult<bool>(result2_55, output2_55)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Jump Game");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestJumpGame());
         }
     }
 }

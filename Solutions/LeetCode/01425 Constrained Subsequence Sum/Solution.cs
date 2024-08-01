@@ -27,6 +27,8 @@ Explanation: The subsequence is [10, -2, -5, 20].
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ConstrainedSubsequenceSum
@@ -84,6 +86,16 @@ namespace CompetitiveProgramming.LeetCode.ConstrainedSubsequenceSum
                 ResultTester.CheckResult<int>(Solution.ConstrainedSubsetSum(nums3, k3), 23),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Constrained Subsequence Sum");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

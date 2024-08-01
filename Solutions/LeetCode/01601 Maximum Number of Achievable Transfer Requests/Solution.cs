@@ -45,6 +45,8 @@ Output: 4
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximumNumberofAchievableTransferRequests
@@ -144,6 +146,16 @@ namespace CompetitiveProgramming.LeetCode.MaximumNumberofAchievableTransferReque
                 ResultTester.CheckResult<int>(result3, 4)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Number of Achievable Transfer Requests");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestMaximumNumberofAchievableTransferRequests());
         }
     }
 }

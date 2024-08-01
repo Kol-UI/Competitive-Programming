@@ -11,6 +11,8 @@
 // Output: "10101"
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.AddBinary
@@ -76,6 +78,16 @@ namespace CompetitiveProgramming.LeetCode.AddBinary
                 ResultTester.CheckResult<string>(Case2_67_Result, "10101")
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Add Binary");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestAddBinary());
         }
     }
 }

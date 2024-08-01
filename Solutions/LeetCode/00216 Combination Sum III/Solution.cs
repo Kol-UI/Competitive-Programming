@@ -36,6 +36,10 @@ Using 4 different numbers in the range [1,9], the smallest sum we can get is 1+2
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CombinationSumIII
 {
     public class Solution
@@ -60,6 +64,16 @@ namespace CompetitiveProgramming.LeetCode.CombinationSumIII
                     stack.Pop();
                 }
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Combination Sum III");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

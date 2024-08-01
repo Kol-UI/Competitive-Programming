@@ -28,6 +28,8 @@ Explanation: Possible arrays are [1317],[131,7],[13,17],[1,317],[13,1,7],[1,31,7
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RestoreTheArray
@@ -81,6 +83,16 @@ namespace CompetitiveProgramming.LeetCode.RestoreTheArray
                 ResultTester.CheckResult<int>(Case3_1416, 6)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Restore The Array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestRestoreTheArray());
         }
     }
 }

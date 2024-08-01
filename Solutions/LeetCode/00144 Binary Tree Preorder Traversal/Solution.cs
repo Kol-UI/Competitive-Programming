@@ -1,4 +1,7 @@
 ﻿using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BinaryTreePreorderTraversal
 {
@@ -37,5 +40,14 @@ namespace CompetitiveProgramming.LeetCode.BinaryTreePreorderTraversal
             return result;
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Binary Tree Preorder Traversal");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
+}

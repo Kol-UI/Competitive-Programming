@@ -1,6 +1,8 @@
 // Freedom Trail
 
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FreedomTrail
@@ -53,6 +55,16 @@ namespace CompetitiveProgramming.LeetCode.FreedomTrail
                 ResultTester.CheckResult<int>(Solution.FindRotateSteps("godding", "godding"), 13),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("514");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

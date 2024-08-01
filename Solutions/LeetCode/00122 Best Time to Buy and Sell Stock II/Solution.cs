@@ -32,6 +32,8 @@ Explanation: There is no way to make a positive profit, so we never buy the stoc
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BestTimetoBuyandSellStockII
@@ -77,6 +79,16 @@ namespace CompetitiveProgramming.LeetCode.BestTimetoBuyandSellStockII
                 ResultTester.CheckResult<int>(result2_122, 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Best Time to Buy and Sell Stock II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestBestTimetoBuyandSellStockII());
         }
     }
 }

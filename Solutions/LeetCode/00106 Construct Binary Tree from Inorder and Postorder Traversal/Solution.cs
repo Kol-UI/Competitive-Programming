@@ -1,4 +1,8 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ConstructBinaryTreefromInorderandPostorderTraversal
 {
     /*
@@ -37,4 +41,14 @@ namespace CompetitiveProgramming.LeetCode.ConstructBinaryTreefromInorderandPosto
         }
     }
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Construct Binary Tree from In order and Post order Traversal");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

@@ -1,4 +1,7 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RemoveDuplicatesfromSortedList
 {
@@ -51,5 +54,15 @@ namespace CompetitiveProgramming.LeetCode.RemoveDuplicatesfromSortedList
         //     }
         //     return head;
         // }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Remove Duplicates from Sorted List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
     }
 }

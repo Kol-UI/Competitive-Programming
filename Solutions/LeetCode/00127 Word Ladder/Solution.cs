@@ -25,6 +25,8 @@ Explanation: The endWord "cog" is not in wordList, therefore there is no valid t
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.WordLadder
@@ -132,6 +134,16 @@ namespace CompetitiveProgramming.LeetCode.WordLadder
                 ResultTester.CheckResult<int>(Solution.LadderLength(beginWord2, endWord2, wordList2), 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Word Ladder");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCase());
         }
     }
 }

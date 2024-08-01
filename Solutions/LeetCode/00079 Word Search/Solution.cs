@@ -29,6 +29,8 @@ Output: false
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.WordSearch
@@ -82,6 +84,16 @@ namespace CompetitiveProgramming.LeetCode.WordSearch
                 ResultTester.CheckResult<bool>(Solution.Exist(board, "ABCB"), false),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Word Search");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

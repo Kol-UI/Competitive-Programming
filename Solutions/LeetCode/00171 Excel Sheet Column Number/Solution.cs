@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.ExcelSheetColumnNumber
 {
@@ -79,6 +81,16 @@ namespace CompetitiveProgramming.LeetCode.ExcelSheetColumnNumber
                 ResultTester.CheckResult<int>(Solution.TitleToNumber("QRST"), 311474)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Excel Sheet Column Number");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

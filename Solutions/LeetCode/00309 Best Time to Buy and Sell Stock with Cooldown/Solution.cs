@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BestTimetoBuyandSellStockwithCooldown
@@ -66,5 +68,14 @@ namespace CompetitiveProgramming.LeetCode.BestTimetoBuyandSellStockwithCooldown
             return results;
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Best Time to Buy and Sell Stock with Cooldown");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestBestTimetoBuyandSellStockwithCooldown());
+        }
+    }
+}

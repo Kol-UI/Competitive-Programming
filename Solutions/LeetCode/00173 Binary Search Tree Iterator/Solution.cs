@@ -34,6 +34,10 @@ bSTIterator.hasNext(); // return False
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BinarySearchTreeIterator
 {
     /**
@@ -83,4 +87,14 @@ namespace CompetitiveProgramming.LeetCode.BinarySearchTreeIterator
     * int param_1 = obj.Next();
     * bool param_2 = obj.HasNext();
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Binary Search Tree Iterator");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

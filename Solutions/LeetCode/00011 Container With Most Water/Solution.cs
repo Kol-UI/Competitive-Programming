@@ -25,6 +25,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ContainerWithMostWater
@@ -68,6 +70,16 @@ namespace CompetitiveProgramming.LeetCode.ContainerWithMostWater
                 ResultTester.CheckResult<int>(result2, 1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Container With Most Water");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestContainerWithMostWater());
         }
     }
 }

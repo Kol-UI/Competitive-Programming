@@ -28,6 +28,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.UniquePathsII
@@ -117,6 +119,16 @@ namespace CompetitiveProgramming.LeetCode.UniquePathsII
                 ResultTester.CheckResult<int>(result2_63, output2_63)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Unique Paths II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestUniquePathsII());
         }
     }
 }

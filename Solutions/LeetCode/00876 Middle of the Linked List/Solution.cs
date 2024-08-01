@@ -23,6 +23,9 @@ Explanation: Since the list has two middle nodes with values 3 and 4, we return 
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MiddleoftheLinkedList
 {
     /**
@@ -63,6 +66,16 @@ namespace CompetitiveProgramming.LeetCode.MiddleoftheLinkedList
             if (i == 0) return head;
 
             return NodeAt(i - 1, head.next);
+        }
+    }
+    
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Middle of the Linked List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }
 }

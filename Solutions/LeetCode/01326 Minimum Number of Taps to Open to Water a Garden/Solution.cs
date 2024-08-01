@@ -31,6 +31,8 @@ Explanation: Even if you activate all the four taps you cannot water the whole g
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumNumberofTapstoOpentoWateraGarden
@@ -96,6 +98,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumNumberofTapstoOpentoWateraGarde
                 ResultTester.CheckResult<int>(Solution.MinTaps(n2, ranges2), -1),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Number of Taps to Open to Water a Garden");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

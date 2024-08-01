@@ -25,6 +25,8 @@ Output: 0
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumSizeSubarraySum
@@ -72,6 +74,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumSizeSubarraySum
                 ResultTester.CheckResult<int>(result3, 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Size Subarray Sum");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestMinimumSizeSubarraySum());
         }
     }
 }

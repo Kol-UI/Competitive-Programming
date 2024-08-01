@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.SetMismatch
 {
@@ -26,6 +28,16 @@ namespace CompetitiveProgramming.LeetCode.SetMismatch
                 ResultTester.CheckResult<int[]>(Solution.FindErrorNums(new int[]{1,1}), new int[]{1,2}),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Set Mismatch");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }
 }

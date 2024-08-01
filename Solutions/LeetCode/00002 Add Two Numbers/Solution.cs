@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.AddTwoNumbers
 {
     public class Solution
@@ -54,5 +57,14 @@ namespace CompetitiveProgramming.LeetCode.AddTwoNumbers
             return listNode.next;
         } */
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Add Two Numbers");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
+}

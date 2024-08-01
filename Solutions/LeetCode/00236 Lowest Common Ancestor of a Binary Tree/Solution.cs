@@ -27,6 +27,10 @@ Output: 1
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LowestCommonAncestorofaBinaryTree
 {
     /**
@@ -57,4 +61,14 @@ namespace CompetitiveProgramming.LeetCode.LowestCommonAncestorofaBinaryTree
         }
     }
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Lowest Common Ancestor of a Binary Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

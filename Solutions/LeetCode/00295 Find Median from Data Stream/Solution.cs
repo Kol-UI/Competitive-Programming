@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.FindMedianfromDataStream
 {
@@ -61,4 +63,14 @@ namespace CompetitiveProgramming.LeetCode.FindMedianfromDataStream
     * obj.AddNum(num);
     * double param_2 = obj.FindMedian();
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Median from Data Stream");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
+        }
+    }
 }

@@ -1,4 +1,7 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximumDepthofBinaryTree
 {
@@ -38,5 +41,14 @@ namespace CompetitiveProgramming.LeetCode.MaximumDepthofBinaryTree
     //         return Math.Max(MaxDepth(root.left), MaxDepth(root.right)) + 1;
     //     }
     // }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Depth of Binary Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
+}

@@ -23,6 +23,8 @@ Explanation: There is no way to jump to the last stone as the gap between the 5t
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FrogJump
@@ -70,6 +72,15 @@ namespace CompetitiveProgramming.LeetCode.FrogJump
                 ResultTester.CheckResult<bool>(Solution.CanCross(stones2), false),
             };
             return results;
+        }
+    }
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Frog Jump");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

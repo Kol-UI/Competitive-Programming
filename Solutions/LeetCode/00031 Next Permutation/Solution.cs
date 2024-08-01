@@ -34,6 +34,9 @@ Output: [1,5,1]
 
 using System;
 using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.NextPermutation
 {
     public class Solution
@@ -87,6 +90,16 @@ namespace CompetitiveProgramming.LeetCode.NextPermutation
                 true, true, true
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Next Permutation");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestNextPermutation());
         }
     }
 }

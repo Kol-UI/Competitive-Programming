@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumNumberofMovestoSeatEveryone
@@ -34,6 +36,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumNumberofMovestoSeatEveryone
                 ResultTester.CheckResult<int>(Solution.MinMovesToSeat(new int[]{2,2,6,6}, new int[]{1,3,2,6}), 4),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Number of Moves to Seat Everyone");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

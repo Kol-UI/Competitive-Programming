@@ -23,7 +23,10 @@ Output: 5
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.MinimumDepthofBinaryTree
 {
     /**
@@ -57,6 +60,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumDepthofBinaryTree
             }
 
             return Math.Min(leftMinDepth, rightMinDepth) + 1;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Depth of Binary Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }
 }

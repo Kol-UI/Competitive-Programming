@@ -41,6 +41,8 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RemoveDuplicatesfromSortedArray
@@ -79,6 +81,16 @@ namespace CompetitiveProgramming.LeetCode.RemoveDuplicatesfromSortedArray
                 ResultTester.CheckResult<double>(Solution.RemoveDuplicates(nums5), 1),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Remove Duplicates from Sorted Array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

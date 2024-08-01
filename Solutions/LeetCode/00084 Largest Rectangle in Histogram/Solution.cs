@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.LargestRectangleinHistogram
 {
@@ -49,6 +51,16 @@ namespace CompetitiveProgramming.LeetCode.LargestRectangleinHistogram
                 ResultTester.CheckResult<int>(Solution.LargestRectangleArea(new int[]{2,4}), 4),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Largest Rectangle in Histogram");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

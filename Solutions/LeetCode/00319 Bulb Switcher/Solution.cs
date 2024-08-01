@@ -33,6 +33,8 @@ Constraints:
 0 <= n <= 109
 */
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BulbSwitcher
@@ -65,6 +67,16 @@ namespace CompetitiveProgramming.LeetCode.BulbSwitcher
                 ResultTester.CheckResult<int>(Case3_319, 1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Bulb Switcher");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestBulbSwitcher());
         }
     }
 }

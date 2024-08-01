@@ -27,6 +27,8 @@ Explanation: Another possible reconstruction is ["JFK","SFO","ATL","JFK","ATL","
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.ReconstructItinerary
 {
@@ -125,6 +127,16 @@ namespace CompetitiveProgramming.LeetCode.ReconstructItinerary
                 ResultTester.CheckResult<IList<string>>(Solution.FindItinerary(tickets2), airportCodes2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reconstruct Itinerary");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
         }
     }
 }

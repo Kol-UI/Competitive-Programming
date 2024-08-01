@@ -23,6 +23,8 @@ Output: false
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.Searcha2DMatrixII
@@ -69,6 +71,16 @@ namespace CompetitiveProgramming.LeetCode.Searcha2DMatrixII
                 ResultTester.CheckResult<bool>(Solution.SearchMatrix(matrix, 20), false),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Search a 2D Matrix II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

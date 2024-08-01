@@ -39,6 +39,8 @@ At time 30, one of the two pigs must die, and the poisonous bucket is the one it
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.PoorPigs
@@ -69,6 +71,16 @@ namespace CompetitiveProgramming.LeetCode.PoorPigs
                 ResultTester.CheckResult<int>(Solution.PoorPigs(4, 15, 30), 2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Poor Pigs");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

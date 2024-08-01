@@ -110,3 +110,20 @@ namespace CompetitiveProgramming.LeetCode.SimilarStringGroups
     }
 }
 */
+
+using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+namespace CompetitiveProgramming.LeetCode.SimilarStringGroups
+{
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Similar String Groups");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
+        }
+    }
+}

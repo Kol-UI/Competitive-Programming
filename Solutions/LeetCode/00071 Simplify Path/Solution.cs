@@ -32,6 +32,8 @@ Explanation: In the canonical path, multiple consecutive slashes are replaced by
 
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SimplifyPath
@@ -96,6 +98,16 @@ namespace CompetitiveProgramming.LeetCode.SimplifyPath
                 ResultTester.CheckResult<string>(result71_3, "/home/foo"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Simplify Path");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestSimplifyPath());
         }
     }
 }

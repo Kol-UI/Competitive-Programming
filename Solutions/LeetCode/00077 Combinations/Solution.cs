@@ -22,6 +22,9 @@ Explanation: There is 1 choose 1 = 1 total combination.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.Combinations
 {
     public class Solution
@@ -51,5 +54,15 @@ namespace CompetitiveProgramming.LeetCode.Combinations
             }
         }
         
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Combinations");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
     }
 }

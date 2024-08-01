@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.IntersectionofTwoArrays
@@ -24,6 +26,16 @@ namespace CompetitiveProgramming.LeetCode.IntersectionofTwoArrays
                 ResultTester.CheckResult<int[]>(Solution.Intersection(new int[]{4,9,5}, new int[]{9,4,9,8,4}), new int[]{4,9}),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Intersection of Two Arrays");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

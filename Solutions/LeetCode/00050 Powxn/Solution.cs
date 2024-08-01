@@ -21,6 +21,8 @@ Explanation: 2-2 = 1/22 = 1/4 = 0.25
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.Powxn
@@ -63,6 +65,16 @@ namespace CompetitiveProgramming.LeetCode.Powxn
                 ResultTester.CheckResult<double>(result3, 0.25000)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Pow(x, n)");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestPowxn());
         }
     }
 }

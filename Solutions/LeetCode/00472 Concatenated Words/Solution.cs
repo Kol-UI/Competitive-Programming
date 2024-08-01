@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ConcatenatedWords
@@ -103,6 +105,16 @@ namespace CompetitiveProgramming.LeetCode.ConcatenatedWords
                 ResultTester.CheckResult<IList<string>>(result2, expected2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Concatenated Words");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestConcatenatedWords());
         }
     }
 }

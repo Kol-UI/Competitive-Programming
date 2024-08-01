@@ -33,6 +33,8 @@ Since both the maximal and minimal score are the same, we return 0.
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.PutMarblesinBags
 {
@@ -57,6 +59,16 @@ namespace CompetitiveProgramming.LeetCode.PutMarblesinBags
                 ResultTester.CheckResult<long>(Solution.PutMarbles(weights2, 2), 0),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Put Marbles in Bags");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

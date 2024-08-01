@@ -40,6 +40,8 @@ Explanation: There are no other orderings of nums that will yield the same BST.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.NumberofWaystoReorderArraytoGetSameBST
@@ -118,6 +120,16 @@ namespace CompetitiveProgramming.LeetCode.NumberofWaystoReorderArraytoGetSameBST
                 ResultTester.CheckResult<int>(result3, 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Ways to Reorder Array to Get Same BST");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

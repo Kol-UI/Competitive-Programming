@@ -38,6 +38,8 @@ Output: true
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.InterleavingString
@@ -112,6 +114,16 @@ namespace CompetitiveProgramming.LeetCode.InterleavingString
                 ResultTester.CheckResult<bool>(Solution.IsInterleave(s1_3, s2_3, s3_3), true),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Interleaving String");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

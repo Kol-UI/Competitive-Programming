@@ -20,8 +20,10 @@ Explanation: 13 = 4 + 9.
 */
 
 
-using CompetitiveProgramming.TestDrivenDevelopment;
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.PerfectSquares;
 
 public class Solution
@@ -70,5 +72,15 @@ public class Test
             ResultTester.CheckResult<int>(Solution.NumSquares(13), 2),
         };
         return results;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Perfect Squares");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
     }
 }

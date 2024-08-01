@@ -30,6 +30,8 @@ So team 1 will be the champion.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.FindChampionI
 {
@@ -80,6 +82,16 @@ namespace CompetitiveProgramming.LeetCode.FindChampionI
                 ResultTester.CheckResult<int>(Solution.FindChampion(grid2), 1),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Champion");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

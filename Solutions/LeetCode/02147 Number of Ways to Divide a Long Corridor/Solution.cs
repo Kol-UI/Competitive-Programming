@@ -40,6 +40,8 @@ Explanation: There is no way to divide the corridor because there will always be
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.NumberofWaystoDivideaLongCorridor
 {
@@ -104,6 +106,16 @@ namespace CompetitiveProgramming.LeetCode.NumberofWaystoDivideaLongCorridor
                 ResultTester.CheckResult<int>(Solution.NumberOfWays("S"), 0),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Ways to Divide a Long Corridor");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

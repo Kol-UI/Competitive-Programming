@@ -31,6 +31,8 @@ Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We ret
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.TwoSumIIInputArrayIsSorted
@@ -94,6 +96,16 @@ namespace CompetitiveProgramming.LeetCode.TwoSumIIInputArrayIsSorted
                 ResultTester.CheckResult<int[]>(result3, expected3)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Two Sum II - Input Array Is Sorted");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestTwoSumIIInputArrayIsSorted());
         }
     }
 }

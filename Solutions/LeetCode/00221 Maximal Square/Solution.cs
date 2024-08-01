@@ -24,6 +24,8 @@ Output: 0
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximalSquare
@@ -101,6 +103,16 @@ namespace CompetitiveProgramming.LeetCode.MaximalSquare
                 ResultTester.CheckResult<int>(result2_221, output2_221)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximal Square");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestMaximalSquare());
         }
     }
 }

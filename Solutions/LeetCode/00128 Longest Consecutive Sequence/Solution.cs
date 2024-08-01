@@ -2,7 +2,10 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LongestConsecutiveSequence
 {
     public class Solution
@@ -43,6 +46,16 @@ namespace CompetitiveProgramming.LeetCode.LongestConsecutiveSequence
                 ResultTester.CheckResult<int>(Solution.LongestConsecutive(new int[]{0,3,7,2,5,8,4,6,0,1}), 9),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Longest Consecutive Sequence");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

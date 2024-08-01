@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.KthMissingPositiveNumber
@@ -67,6 +69,16 @@ namespace CompetitiveProgramming.LeetCode.KthMissingPositiveNumber
                 ResultTester.CheckResult<int>(resultCase3_1345, resultCase3_1345)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Kth Missing Positive Number");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

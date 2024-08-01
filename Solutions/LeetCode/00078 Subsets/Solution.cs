@@ -22,7 +22,10 @@ Output: [[],[0]]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.Subsets
 {
     public class Solution
@@ -81,6 +84,16 @@ namespace CompetitiveProgramming.LeetCode.Subsets
                 ResultTester.CheckResult<IList<IList<int>>>(Solution.Subsets(arr2), expected2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Subsets");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

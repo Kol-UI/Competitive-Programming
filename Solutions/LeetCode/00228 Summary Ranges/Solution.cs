@@ -34,6 +34,8 @@ Explanation: The ranges are:
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SummaryRanges
@@ -88,6 +90,16 @@ namespace CompetitiveProgramming.LeetCode.SummaryRanges
                 ResultTester.CheckResult<IList<string>>(result2, expected2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Summary Ranges");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestSummaryRanges());
         }
     }
 }

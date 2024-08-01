@@ -18,6 +18,8 @@ Output: "leotcede"
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ReverseVowelsofaString
@@ -56,6 +58,16 @@ namespace CompetitiveProgramming.LeetCode.ReverseVowelsofaString
                 ResultTester.CheckResult<string>(Case2_345, "leotcede")
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reverse Vowels of a String");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestReverseVowelsofaString());
         }
     }
 }

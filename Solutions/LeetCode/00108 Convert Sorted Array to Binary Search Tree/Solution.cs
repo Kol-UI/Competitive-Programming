@@ -1,5 +1,6 @@
 using System;
 using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ConvertSortedArraytoBinarySearchTree
@@ -87,6 +88,16 @@ namespace CompetitiveProgramming.LeetCode.ConvertSortedArraytoBinarySearchTree
                 ResultTester.CheckResult<bool>(false, false)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Convert Sorted Array to Binary Search Tree");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestConvertSortedArraytoBinarySearchTree());
         }
     }
 }

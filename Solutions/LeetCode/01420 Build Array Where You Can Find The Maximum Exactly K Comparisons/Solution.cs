@@ -35,6 +35,8 @@ Explanation: The only possible array is [1, 1, 1, 1, 1, 1, 1, 1, 1]
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BuildArrayWhereYouCanFindTheMaximumExactlyKComparisons
@@ -95,6 +97,16 @@ namespace CompetitiveProgramming.LeetCode.BuildArrayWhereYouCanFindTheMaximumExa
                 ResultTester.CheckResult<int>(Solution.NumOfArrays(9, 1, 1), 1),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Build Array Where You Can Find The Maximum Exactly K Comparisons");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

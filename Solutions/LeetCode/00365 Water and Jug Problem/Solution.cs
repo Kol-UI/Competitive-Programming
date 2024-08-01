@@ -30,6 +30,8 @@ Output: true
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.WaterandJugProblem
@@ -114,6 +116,16 @@ namespace CompetitiveProgramming.LeetCode.WaterandJugProblem
                 ResultTester.CheckResult<bool>(result3, true)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Water and Jug Problem");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestWaterandJugProblem());
         }
     }
 }

@@ -26,6 +26,8 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LongestSubstringWithoutRepeatingCharacters
@@ -90,6 +92,16 @@ namespace CompetitiveProgramming.LeetCode.LongestSubstringWithoutRepeatingCharac
                 ResultTester.CheckResult<int>(result3, output3)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Longest Substring Without Repeating Characters");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestLongestSubstringWithoutRepeatingCharacters());
         }
     }
 }

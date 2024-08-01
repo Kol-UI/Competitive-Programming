@@ -22,6 +22,8 @@ Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MedianofTwoSortedArrays
@@ -74,6 +76,16 @@ namespace CompetitiveProgramming.LeetCode.MedianofTwoSortedArrays
                 ResultTester.CheckResult<double>(Solution.FindMedianSortedArrays(nums1_2, nums2_2), 2.50000),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Median of Two Sorted Arrays");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

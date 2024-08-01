@@ -30,6 +30,8 @@ Explanation: The binary representation of 6 is "110".
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MinimumOneBitOperationstoMakeIntegersZero
 {
@@ -56,6 +58,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumOneBitOperationstoMakeIntegersZ
                 ResultTester.CheckResult<int>(Solution.MinimumOneBitOperations(6), 4),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum One Bit Operations to Make Integers Zero");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

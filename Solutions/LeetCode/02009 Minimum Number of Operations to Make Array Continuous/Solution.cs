@@ -39,6 +39,8 @@ The resulting array is [1,2,3,4], which is continuous.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumNumberofOperationstoMakeArrayContinuous
@@ -83,6 +85,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumNumberofOperationstoMakeArrayCo
                 ResultTester.CheckResult<int>(Solution.MinOperations(nums3), 3),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Number of Operations to Make Array Continuous");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

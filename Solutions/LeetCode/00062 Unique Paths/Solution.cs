@@ -25,6 +25,8 @@ Explanation: From the top-left corner, there are a total of 3 ways to reach the 
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.UniquePaths
@@ -60,6 +62,16 @@ namespace CompetitiveProgramming.LeetCode.UniquePaths
                 ResultTester.CheckResult<int>(result2, 3)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Unique Paths");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestUniquePaths());
         }
     }
 }

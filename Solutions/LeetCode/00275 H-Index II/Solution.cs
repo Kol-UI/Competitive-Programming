@@ -23,6 +23,8 @@ Output: 2
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.HIndexII
@@ -70,6 +72,16 @@ namespace CompetitiveProgramming.LeetCode.HIndexII
                 ResultTester.CheckResult<int>(Solution.HIndex(citations2), 2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("H-Index II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestHIndexII());
         }
     }
 }

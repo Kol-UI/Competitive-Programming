@@ -1,4 +1,7 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ValidateBinarySearchTree
 {
@@ -44,4 +47,14 @@ namespace CompetitiveProgramming.LeetCode.ValidateBinarySearchTree
     //         return isValid && BstTraversal(node.left, node, rightParent) && BstTraversal(node.right, leftParent, node);
     //     }
     // }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Validate Binary Search Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

@@ -16,6 +16,10 @@ Output: 3
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.KthSmallestElementinaBST
 {
     /**
@@ -58,6 +62,16 @@ namespace CompetitiveProgramming.LeetCode.KthSmallestElementinaBST
             
             if (root.right is not null)
                 traverseBSTInorder(root.right);
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Kth Smallest Element in a BST");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

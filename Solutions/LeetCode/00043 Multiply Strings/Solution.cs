@@ -20,6 +20,8 @@ Output: "56088"
 
 using System;
 using System.Numerics;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MultiplyStrings
@@ -53,6 +55,16 @@ namespace CompetitiveProgramming.LeetCode.MultiplyStrings
                 ResultTester.CheckResult<string>(result2, "56088")
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Multiply Strings");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestMultiplyStrings());
         }
     }
 }

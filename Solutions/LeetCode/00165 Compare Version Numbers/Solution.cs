@@ -1,5 +1,7 @@
 // Compare Version Numbers
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CompareVersionNumbers
@@ -57,6 +59,16 @@ namespace CompetitiveProgramming.LeetCode.CompareVersionNumbers
                 ResultTester.CheckResult<int>(Solution.CompareVersion("0.1", "1.1"), -1),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Compare Version Numbers");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

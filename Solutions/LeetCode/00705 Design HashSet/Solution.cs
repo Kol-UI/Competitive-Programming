@@ -31,6 +31,9 @@ myHashSet.contains(2); // return False, (already removed)
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.DesignHashSet
 {
     public class MyHashSet
@@ -66,4 +69,14 @@ namespace CompetitiveProgramming.LeetCode.DesignHashSet
     * obj.Remove(key);
     * bool param_3 = obj.Contains(key);
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Design HashSet");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

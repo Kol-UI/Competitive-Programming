@@ -38,6 +38,8 @@ Thus, the minimum time needed to complete all the courses is 7 + 5 = 12 months.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ParallelCoursesIII
@@ -129,6 +131,16 @@ namespace CompetitiveProgramming.LeetCode.ParallelCoursesIII
                 ResultTester.CheckResult<int>(Solution.MinimumTime(n2, relations2, time2), 12),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Parallel Courses III");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

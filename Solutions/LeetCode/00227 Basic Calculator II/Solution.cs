@@ -27,11 +27,13 @@ Input: s = " 3+5 / 2 "
 Output: 5
 */
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+using System.Text.RegularExpressions;
+
 namespace CompetitiveProgramming.LeetCode.BasicCalculatorII
 {
-    using System.Text.RegularExpressions;
-    using CompetitiveProgramming.TestDrivenDevelopment;
-
     public class Solution
     {
         public static int Calculate(string s)
@@ -96,6 +98,16 @@ namespace CompetitiveProgramming.LeetCode.BasicCalculatorII
                 ResultTester.CheckResult<int>(result3, 5)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Basic Calculator II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestBasicCalculatorII());
         }
     }
 }

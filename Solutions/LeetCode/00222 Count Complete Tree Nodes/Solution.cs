@@ -26,6 +26,10 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.CountCompleteTreeNodes
 {
     /**
@@ -51,6 +55,16 @@ namespace CompetitiveProgramming.LeetCode.CountCompleteTreeNodes
             int l2 = CountNodes(root.right);
 
             return 1 + l1 + l2;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count Complete Tree Nodes");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

@@ -18,6 +18,8 @@ Output: "bb"
 
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LongestPalindromicSubstring
@@ -77,6 +79,16 @@ namespace CompetitiveProgramming.LeetCode.LongestPalindromicSubstring
                 ResultTester.CheckResult<string>(result2_5, "bb")
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Longest Palindromic Substring");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestLongestPalindromicSubstring());
         }
     }
 }

@@ -39,6 +39,8 @@ Explanation: There are 4 ways to form target.
 */
 
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.NumberofWaystoFormaTargetStringGivenaDictionary
@@ -105,6 +107,16 @@ namespace CompetitiveProgramming.LeetCode.NumberofWaystoFormaTargetStringGivenaD
                 ResultTester.CheckResult<int>(result2_1639, 4)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Ways to Form a Target Strinng Given a Dictionary");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

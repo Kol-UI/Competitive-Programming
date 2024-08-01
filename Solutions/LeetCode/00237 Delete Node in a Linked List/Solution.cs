@@ -1,5 +1,8 @@
 // Delete Node in a Linked List
 
+
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.DeleteNodeinaLinkedList
@@ -18,6 +21,16 @@ namespace CompetitiveProgramming.LeetCode.DeleteNodeinaLinkedList
         {
             node.val = node.next.val;
             node.next = node.next.next;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Delete Node in a Linked List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

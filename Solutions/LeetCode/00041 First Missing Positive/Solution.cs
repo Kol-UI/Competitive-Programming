@@ -30,6 +30,7 @@ Explanation: The smallest positive integer 1 is missing.
 
 using System;
 using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FirstMissingPositive
@@ -149,6 +150,16 @@ namespace CompetitiveProgramming.LeetCode.FirstMissingPositive
                 resultBooleans[i] = ResultTester.CheckResult<int>(results[i], results[i]);
             }
             return resultBooleans;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("First Missing Positive");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestFirstMissingPositive());
         }
     }
 }

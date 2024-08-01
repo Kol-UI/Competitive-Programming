@@ -23,6 +23,7 @@ Output: [0,0,9,0,0]
 
 using System;
 using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ProductofArrayExceptSelf
@@ -215,6 +216,16 @@ namespace CompetitiveProgramming.LeetCode.ProductofArrayExceptSelf
                 ResultTester.CheckResult<int[]>(result39, result39)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Product of Array Except Self");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestProductofArrayExceptSelf());
         }
     }
 }

@@ -24,6 +24,8 @@ To take course 1 you should have finished course 0, and to take course 0 you sho
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CourseSchedule
@@ -89,6 +91,16 @@ namespace CompetitiveProgramming.LeetCode.CourseSchedule
                 ResultTester.CheckResult<bool>(result2, false),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Course Schedule");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCourseSchedule());
         }
     }
 }

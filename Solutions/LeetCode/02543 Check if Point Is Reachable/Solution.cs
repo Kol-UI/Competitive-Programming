@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Numerics;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CheckifPointIsReachable
@@ -75,5 +77,14 @@ namespace CompetitiveProgramming.LeetCode.CheckifPointIsReachable
             return results;
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Check if Point Is Reachable");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
+        }
+    }
+}

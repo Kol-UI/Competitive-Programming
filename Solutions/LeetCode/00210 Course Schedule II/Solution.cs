@@ -27,7 +27,8 @@ Input: numCourses = 1, prerequisites = []
 Output: [0]
 */
 
-
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CourseScheduleII
@@ -90,6 +91,16 @@ namespace CompetitiveProgramming.LeetCode.CourseScheduleII
                 ResultTester.CheckResult<int[]>(result3, expected3)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Course Schedule II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCourseScheduleII());
         }
     }
 }

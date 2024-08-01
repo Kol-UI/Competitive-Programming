@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.EvaluateReversePolishNotation
@@ -91,6 +93,16 @@ namespace CompetitiveProgramming.LeetCode.EvaluateReversePolishNotation
                 ResultTester.CheckResult<int>(Solution.EvalRPN(tokens3), 22)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Evaluate Reverse Polish Notation");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestEvaluateReversePolishNotation());
         }
     }
 }

@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.JumpGameII
@@ -57,6 +59,16 @@ namespace CompetitiveProgramming.LeetCode.JumpGameII
                 ResultTester.CheckResult<int>(Case2_45_Result, 2)
             };
             return results;
+        }
+    }
+    
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Jump Game II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestJumpGameII());
         }
     }
 }

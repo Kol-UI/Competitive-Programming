@@ -1,4 +1,8 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LinkedListCycleII
 {
     // Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
@@ -36,4 +40,14 @@ namespace CompetitiveProgramming.LeetCode.LinkedListCycleII
     //             return null;
     //     }
     // }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Linked List Cycle II");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

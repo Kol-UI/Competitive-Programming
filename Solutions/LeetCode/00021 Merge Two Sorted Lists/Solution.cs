@@ -6,6 +6,9 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MergeTwoSortedLists
 {
@@ -56,4 +59,14 @@ namespace CompetitiveProgramming.LeetCode.MergeTwoSortedLists
     //         return head.next;
     //     }
     // }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Merge Two Sorted Lists");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

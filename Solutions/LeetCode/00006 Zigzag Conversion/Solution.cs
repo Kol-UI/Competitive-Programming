@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ZigzagConversion
@@ -80,6 +82,16 @@ namespace CompetitiveProgramming.LeetCode.ZigzagConversion
                 ResultTester.CheckResult<string>(Solution.Convert("A", 1), "A"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Zigzag Conversion");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestZigzagConversion());
         }
     }
 }

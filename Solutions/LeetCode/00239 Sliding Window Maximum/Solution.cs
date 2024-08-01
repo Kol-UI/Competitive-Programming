@@ -27,6 +27,8 @@ Output: [1]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SlidingWindowMaximum
@@ -81,6 +83,16 @@ namespace CompetitiveProgramming.LeetCode.SlidingWindowMaximum
                 ResultTester.CheckResult<int[]>(Solution.MaxSlidingWindow(nums, k), expected),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Sliding Window Maximum");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

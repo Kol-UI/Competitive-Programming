@@ -23,6 +23,8 @@ Explanation: The walls at index 0 and 3 will be painted by the paid painter, and
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.PaintingtheWalls
@@ -65,6 +67,16 @@ namespace CompetitiveProgramming.LeetCode.PaintingtheWalls
 
             dp[i, t] = Math.Min(cost[i] + Fhelper(cost, time, i + 1, t + 1 + time[i]), Fhelper(cost, time, i + 1, t));
             return dp[i, t];
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Painting the Walls");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
         }
     }
 }

@@ -29,6 +29,8 @@ Explanation: You can't make arr1 strictly increasing.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MakeArrayStrictlyIncreasing
@@ -106,6 +108,16 @@ namespace CompetitiveProgramming.LeetCode.MakeArrayStrictlyIncreasing
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Make Array Strictly Increasing");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestMakeArrayStrictlyIncreasing());
         }
     }
 }

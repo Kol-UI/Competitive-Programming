@@ -27,6 +27,10 @@ Output: []
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.PathSumII
 {
     /**
@@ -81,6 +85,16 @@ namespace CompetitiveProgramming.LeetCode.PathSumII
                     if (sum == targetSum)
                         result.Add(pathItems.ToList());
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Path Sum II");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

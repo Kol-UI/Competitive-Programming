@@ -21,8 +21,9 @@ Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
-
 namespace CompetitiveProgramming.LeetCode.MaximumProductSubarray
 {
     public class Solution
@@ -76,6 +77,16 @@ namespace CompetitiveProgramming.LeetCode.MaximumProductSubarray
                 ResultTester.CheckResult<int>(result2_152, 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Product Subarray");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestMaximumProductSubarray());
         }
     }
 }

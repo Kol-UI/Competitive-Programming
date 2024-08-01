@@ -27,6 +27,10 @@ Output: []
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.PopulatingNextRightPointersinEachNode
 {
     /*
@@ -81,4 +85,14 @@ namespace CompetitiveProgramming.LeetCode.PopulatingNextRightPointersinEachNode
         }
     }
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Populating Next Right Pointers in Each Node I");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

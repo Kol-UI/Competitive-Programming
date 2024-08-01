@@ -1,5 +1,7 @@
 ﻿using System;
 using System.IO;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LongestPathWithDifferentAdjacentCharacters
@@ -75,5 +77,14 @@ namespace CompetitiveProgramming.LeetCode.LongestPathWithDifferentAdjacentCharac
             return results;
         }
     }
+    
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Longest Path With Different Adjacent Characters");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
+        }
+    }
 }
-

@@ -19,7 +19,10 @@ Output: [5]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ReverseLinkedListII
 {
     /**
@@ -66,6 +69,16 @@ namespace CompetitiveProgramming.LeetCode.ReverseLinkedListII
             tail.next = current;
             
             return head;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reverse Linked List II");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

@@ -24,6 +24,8 @@ s consists of lowercase English letters.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RemoveDuplicateLetters
@@ -92,6 +94,16 @@ namespace CompetitiveProgramming.LeetCode.RemoveDuplicateLetters
                 ResultTester.CheckResult<string>(Solution.RemoveDuplicateLetters("cbacdcbc"), "acdb"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Remove Duplicate Letters");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

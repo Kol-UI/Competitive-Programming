@@ -22,6 +22,8 @@ Output: 0
 Explanation: The array is already in non-decreasing order. Therefore, we return 0. 
 */
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumReplacementstoSorttheArray
@@ -66,6 +68,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumReplacementstoSorttheArray
                 ResultTester.CheckResult<long>(Solution.MinimumReplacement(nums2), 0),
             };
             return results;
+        }
+    }
+    
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Replacements to Sort the Array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

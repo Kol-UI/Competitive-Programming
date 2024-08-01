@@ -23,6 +23,8 @@ Explanation: The optimal subarray is (0, 4) with a score of min(5,5,4,5,4) * (4-
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximumScoreofaGoodSubarray
@@ -108,6 +110,16 @@ namespace CompetitiveProgramming.LeetCode.MaximumScoreofaGoodSubarray
                 ResultTester.CheckResult<int>(Solution.MaximumScore2(nums2, k2), 20),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Score of a Good Subarray");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

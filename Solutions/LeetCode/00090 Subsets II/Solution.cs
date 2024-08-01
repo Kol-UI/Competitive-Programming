@@ -21,6 +21,9 @@ Output: [[],[0]]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.SubsetsII
 {
     public class Solution
@@ -50,6 +53,16 @@ namespace CompetitiveProgramming.LeetCode.SubsetsII
                 Backtrack(sets,curr,i+1,nums);
                 curr.RemoveAt(curr.Count-1);
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Subsets II");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

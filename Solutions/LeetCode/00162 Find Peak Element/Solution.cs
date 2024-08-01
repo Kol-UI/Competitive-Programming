@@ -24,6 +24,8 @@ Explanation: Your function can return either index number 1 where the peak eleme
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FindPeakElement
@@ -70,6 +72,16 @@ namespace CompetitiveProgramming.LeetCode.FindPeakElement
                 ResultTester.CheckResult<int>(result2, 5)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Peak Element");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestFindPeakElement());
         }
     }
 }

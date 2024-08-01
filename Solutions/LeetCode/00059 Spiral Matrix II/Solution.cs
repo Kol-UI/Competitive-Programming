@@ -17,6 +17,8 @@ Output: [[1]]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SpiralMatrixII
@@ -64,6 +66,16 @@ namespace CompetitiveProgramming.LeetCode.SpiralMatrixII
                 ResultTester.CheckResult<int[][]>(result2, expected2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Spiral Matrix II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestSpiralMatrixII());
         }
     }
 }

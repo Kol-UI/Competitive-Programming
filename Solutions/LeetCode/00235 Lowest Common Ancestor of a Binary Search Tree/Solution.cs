@@ -1,4 +1,8 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LowestCommonAncestorofaBinarySearchTree
 {
     public class Solution
@@ -36,5 +40,15 @@ namespace CompetitiveProgramming.LeetCode.LowestCommonAncestorofaBinarySearchTre
 
         //         return right;
         // }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Lowest Common Ancestor of a Binary Search Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
     }
 }

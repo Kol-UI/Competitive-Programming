@@ -37,6 +37,8 @@ We can run the two computers simultaneously for at most 2 minutes, so we return 
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MaximumRunningTimeofNComputers
 {
@@ -105,6 +107,16 @@ namespace CompetitiveProgramming.LeetCode.MaximumRunningTimeofNComputers
                 ResultTester.CheckResult<long>(Solution.MaxRunTime(n2, batteries2), 2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Running Time of N Computers");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

@@ -1,4 +1,8 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ConvertSortedListtoBinarySearchTree
 {
     // Given the head of a singly linked list where elements are sorted in ascending order, convert it to a height-balanced binary search tree.
@@ -39,4 +43,14 @@ namespace CompetitiveProgramming.LeetCode.ConvertSortedListtoBinarySearchTree
     //         return root;
     //     }
     // }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("ConvertSorted List to Binary Search Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

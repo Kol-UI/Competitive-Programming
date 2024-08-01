@@ -23,6 +23,8 @@ The maximum total can be obtained if we choose all coins from the last pile.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximumValueofKCoinsFromPiles
@@ -102,6 +104,16 @@ namespace CompetitiveProgramming.LeetCode.MaximumValueofKCoinsFromPiles
                 ResultTester.CheckResult<int>(output2_2218, 706)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maaximum Value of K Coins From Piles");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

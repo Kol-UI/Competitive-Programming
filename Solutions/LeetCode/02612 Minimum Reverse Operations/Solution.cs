@@ -32,6 +32,8 @@ Explanation: In this case we can only perform reverse operations of size 1. So t
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumReverseOperations
@@ -121,6 +123,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumReverseOperations
                 ResultTester.CheckResult<int[]>(result2612_3, output3_2612)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Reverse Operations");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCase());
         }
     }
 }

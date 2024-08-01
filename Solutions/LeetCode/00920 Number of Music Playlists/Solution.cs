@@ -30,6 +30,8 @@ Explanation: There are 2 possible playlists: [1, 2, 1] and [2, 1, 2].
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.NumberofMusicPlaylists
@@ -71,6 +73,16 @@ namespace CompetitiveProgramming.LeetCode.NumberofMusicPlaylists
                 ResultTester.CheckResult<int>(Solution.NumMusicPlaylists(2, 3, 1), 2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Music Playlists");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

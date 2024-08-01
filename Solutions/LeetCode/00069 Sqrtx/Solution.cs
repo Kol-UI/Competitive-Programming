@@ -22,6 +22,8 @@ Explanation: The square root of 8 is 2.82842..., and since we round it down to t
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.Sqrtx
@@ -65,6 +67,16 @@ namespace CompetitiveProgramming.LeetCode.Sqrtx
                 ResultTester.CheckResult<int>(result2, 2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Sqrt(x)");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestSqrtx());
         }
     }
 }

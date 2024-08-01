@@ -32,6 +32,8 @@ Explanation: The only possible triplet sums up to 0.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ThreeSum
@@ -100,6 +102,16 @@ namespace CompetitiveProgramming.LeetCode.ThreeSum
                 ResultTester.CheckResult<IList<IList<int>>>(result2, output1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("3Sum");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestThreeSum());
         }
     }
 }

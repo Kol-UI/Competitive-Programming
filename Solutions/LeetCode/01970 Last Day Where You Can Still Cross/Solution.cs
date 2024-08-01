@@ -33,6 +33,8 @@ Explanation: The above image depicts how the matrix changes each day starting fr
 The last day where it is possible to cross from top to bottom is on day 3.
 */
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LastDayWhereYouCanStillCross
@@ -170,6 +172,16 @@ namespace CompetitiveProgramming.LeetCode.LastDayWhereYouCanStillCross
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Last Day Where You Can Still Cross");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestLastDayWhereYouCanStillCroww());
         }
     }
 }

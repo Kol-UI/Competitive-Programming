@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.NumberofStepstoReduceaNumbertoZero
@@ -61,5 +63,14 @@ namespace CompetitiveProgramming.LeetCode.NumberofStepstoReduceaNumbertoZero
             return results;
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Steps to Reduce Number to Zero");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestNumberofStepstoReduceaNumbertoZero());
+        }
+    }
+}

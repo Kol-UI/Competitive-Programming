@@ -28,6 +28,8 @@ Input: nums = [9], target = 3
 Output: 0
 */
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CombinationSumIV
@@ -74,6 +76,16 @@ namespace CompetitiveProgramming.LeetCode.CombinationSumIV
                 ResultTester.CheckResult<int>(Solution.CombinationSum4(nums2, target2), 0),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Combination Sum IV");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

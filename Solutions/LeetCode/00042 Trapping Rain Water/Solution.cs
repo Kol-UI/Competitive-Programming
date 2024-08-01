@@ -18,6 +18,8 @@ Output: 9
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.TrappingRainWater
@@ -73,6 +75,16 @@ namespace CompetitiveProgramming.LeetCode.TrappingRainWater
                 ResultTester.CheckResult<int>(result2, output2_42)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Trapping Rain Water");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestTrappingRainWater());
         }
     }
 }

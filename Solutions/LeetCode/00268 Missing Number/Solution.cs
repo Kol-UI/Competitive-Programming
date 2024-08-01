@@ -1,6 +1,7 @@
 // Missing Number
 
-
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MissingNumber
@@ -26,6 +27,16 @@ namespace CompetitiveProgramming.LeetCode.MissingNumber
                 ResultTester.CheckResult<int>(Solution.MissingNumber(new int[]{9,6,4,2,3,5,7,0,1}), 8),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Missing Number");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

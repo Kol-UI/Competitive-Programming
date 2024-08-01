@@ -20,6 +20,8 @@ Explanation: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.IntegerBreak
@@ -61,6 +63,16 @@ namespace CompetitiveProgramming.LeetCode.IntegerBreak
                 ResultTester.CheckResult<int>(result2, 36)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Integer Break");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestIntegerBreak());
         }
     }
 }

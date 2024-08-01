@@ -17,6 +17,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.UniqueBinarySearchTrees
@@ -64,6 +66,16 @@ namespace CompetitiveProgramming.LeetCode.UniqueBinarySearchTrees
                 ResultTester.CheckResult<int>(result2, 1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Unique Binary Search Trees");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestUniqueBinarySearchTrees());
         }
     }
 }

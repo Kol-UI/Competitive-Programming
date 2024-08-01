@@ -40,6 +40,8 @@ There may be multiple edges between two nodes.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CheckingExistenceofEdgeLengthLimitedPaths
@@ -153,6 +155,16 @@ namespace CompetitiveProgramming.LeetCode.CheckingExistenceofEdgeLengthLimitedPa
                 ResultTester.CheckResult<bool[]>(result2, expected2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Checking Existence of Edge Length limited Paths");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

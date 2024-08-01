@@ -1,5 +1,7 @@
 // Meeting Rooms III
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MeetingRoomsIII
@@ -85,6 +87,16 @@ namespace CompetitiveProgramming.LeetCode.MeetingRoomsIII
                 ResultTester.CheckResult<int>(Solution.MostBooked(3, matrix2), 1),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("2402");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

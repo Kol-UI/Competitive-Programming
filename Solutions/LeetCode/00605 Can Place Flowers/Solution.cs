@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CanPlaceFlowers
@@ -65,6 +67,16 @@ namespace CompetitiveProgramming.LeetCode.CanPlaceFlowers
                 ResultTester.CheckResult<bool>(case3_605Result, case3_605Result)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Can Place Flowers");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCanPlaceFlowers());
         }
     }
 }

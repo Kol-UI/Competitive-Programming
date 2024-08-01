@@ -29,6 +29,8 @@ Output: 3
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.NumberofIslands
@@ -102,6 +104,16 @@ namespace CompetitiveProgramming.LeetCode.NumberofIslands
                 ResultTester.CheckResult<int>(result2, 3)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Number of Islands");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestHappyNumber());
         }
     }
 }

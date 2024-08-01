@@ -1,5 +1,7 @@
 ﻿using System;
-using static CompetitiveProgramming.LeetCode.ImplementQueueusingStacks.Solution;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ImplementQueueusingStacks
 {
@@ -100,5 +102,14 @@ namespace CompetitiveProgramming.LeetCode.ImplementQueueusingStacks
          * bool param_4 = obj.Empty();
          */
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Implement Queue using Stacks");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
+}

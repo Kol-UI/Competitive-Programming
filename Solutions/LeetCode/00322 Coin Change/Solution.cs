@@ -27,6 +27,8 @@ Output: -1
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CoinChange
@@ -90,6 +92,16 @@ namespace CompetitiveProgramming.LeetCode.CoinChange
                 ResultTester.CheckResult<int>(result3_322, -1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Coin Change");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCoinChange());
         }
     }
 }

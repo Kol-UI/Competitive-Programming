@@ -23,6 +23,8 @@ Input: req_skills = ["algorithms","math","java","reactjs","csharp","aws"], peopl
 Output: [1,2]
 */
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SmallestSufficientTeam
@@ -110,6 +112,16 @@ namespace CompetitiveProgramming.LeetCode.SmallestSufficientTeam
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Smallest Sufficient Team");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestSmallestSufficientTeam());
         }
     }
 }

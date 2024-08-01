@@ -21,6 +21,8 @@ Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SetMatrixZeroes
@@ -97,6 +99,16 @@ namespace CompetitiveProgramming.LeetCode.SetMatrixZeroes
                 ResultTester.CheckResult<int[][]>(matrix2, matrix2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Set Matrix Zeroes");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestSetMatrixZeroes());
         }
     }
 }

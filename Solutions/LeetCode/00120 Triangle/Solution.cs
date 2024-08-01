@@ -25,6 +25,8 @@ Output: -10
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.Triangle
@@ -93,6 +95,16 @@ namespace CompetitiveProgramming.LeetCode.Triangle
                 ResultTester.CheckResult<int>(result2, output2_120)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Tringle");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestTriangle());
         }
     }
 }

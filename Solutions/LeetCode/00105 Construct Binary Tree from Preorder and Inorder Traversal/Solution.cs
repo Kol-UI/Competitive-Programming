@@ -17,6 +17,10 @@ Output: [-1]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.ConstructBinaryTreefromPreorderandInorderTraversal
 {
     /**
@@ -52,6 +56,16 @@ namespace CompetitiveProgramming.LeetCode.ConstructBinaryTreefromPreorderandInor
             if (rightLength > 0) rs.right = BuildTree(startPre + leftLength + 1, endPre, preorder, index + 1, endIn, inorder);
             
             return rs;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Construct Binary Tree from Preorder and Inorder Traversal");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

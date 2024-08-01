@@ -1,4 +1,7 @@
 ﻿using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.HouseRobberIII
 {
 	public class Solution
@@ -37,5 +40,14 @@ namespace CompetitiveProgramming.LeetCode.HouseRobberIII
             return new Tuple<int, int>(currentMax, left.Item1 + right.Item1);
         } */
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("House Robber III");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
+}

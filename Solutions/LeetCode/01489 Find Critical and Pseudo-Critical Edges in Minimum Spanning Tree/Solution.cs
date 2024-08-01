@@ -27,6 +27,11 @@ Explanation: We can observe that since all 4 edges have equal weight, choosing a
 
 */
 
+using CompetitiveProgramming;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+namespace CompetitiveProgramming.FindCriticalandPseudoCriticalEdgesInMinimumSpanningTree;
 public class Solution
 {
         internal class UnionFind
@@ -130,4 +135,14 @@ public class Solution
 
             return result;
         }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Critical and Pseudo Critical Edges in Minimum Spanning Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
+        }
+    }
 }

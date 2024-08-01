@@ -28,7 +28,10 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.PalindromeNumber
 {
     public class Solution
@@ -57,6 +60,16 @@ namespace CompetitiveProgramming.LeetCode.PalindromeNumber
                 ResultTester.CheckResult<bool>(Solution.IsPalindrome(10), false),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Palindrome Number");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

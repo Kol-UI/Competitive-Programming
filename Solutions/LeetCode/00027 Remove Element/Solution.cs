@@ -45,6 +45,8 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RemoveElement
@@ -81,6 +83,16 @@ namespace CompetitiveProgramming.LeetCode.RemoveElement
                 ResultTester.CheckResult<double>(Solution.RemoveElement(case3, 5), 2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Remove Element");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

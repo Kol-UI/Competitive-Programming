@@ -24,6 +24,8 @@ Constraints:
 0 <= num <= 231 - 1
 */
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.AddDigits
@@ -63,6 +65,16 @@ namespace CompetitiveProgramming.LeetCode.AddDigits
                 ResultTester.CheckResult<int>(Case2_258, 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Add Digits");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestAddDigits());
         }
     }
 }

@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MaximumProfitinJobScheduling
 {
@@ -64,6 +66,15 @@ namespace CompetitiveProgramming.LeetCode.MaximumProfitinJobScheduling
                 ResultTester.CheckResult<int>(Solution.JobScheduling(new int[] {1,1,1}, new int[] {2,3,4}, new int[] {5,6,4}), 6),
             };
             return results;
+        }
+    }
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("1235");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

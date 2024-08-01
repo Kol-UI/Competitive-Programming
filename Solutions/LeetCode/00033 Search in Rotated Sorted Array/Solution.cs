@@ -28,6 +28,8 @@ Output: -1
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SearchinRotatedSortedArray
@@ -69,6 +71,16 @@ namespace CompetitiveProgramming.LeetCode.SearchinRotatedSortedArray
                 ResultTester.CheckResult<int>(result2, output2_33)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Search in Rotated Sorted Array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestSearchinRotatedSortedArray());
         }
     }
 }

@@ -1,5 +1,7 @@
 // Check If String Is a Prefix of Array
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CheckIfStringIsaPrefixofArray
@@ -28,6 +30,16 @@ namespace CompetitiveProgramming.LeetCode.CheckIfStringIsaPrefixofArray
                 ResultTester.CheckResult<bool>(Solution.IsPrefixString("iloveleetcode",new string[]{"apples","i","love","leetcode"}), false),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Check If String Is a Prefix of Array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

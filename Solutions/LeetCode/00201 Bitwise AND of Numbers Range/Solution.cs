@@ -20,6 +20,8 @@ Output: 0
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BitwiseANDofNumbersRange
@@ -44,6 +46,16 @@ namespace CompetitiveProgramming.LeetCode.BitwiseANDofNumbersRange
                 ResultTester.CheckResult<int>(Solution.RangeBitwiseAnd(1, 2147483647), 0),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Bitwise AND of Numbers Range");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

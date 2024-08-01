@@ -23,6 +23,10 @@ Output: []
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.BinaryTreeRightSideView
 {
    /**
@@ -57,5 +61,15 @@ namespace CompetitiveProgramming.LeetCode.BinaryTreeRightSideView
             Helper(root.right, level + 1);
             Helper(root.left, level + 1);
         }
-    } 
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Binary Tree Right Side View");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

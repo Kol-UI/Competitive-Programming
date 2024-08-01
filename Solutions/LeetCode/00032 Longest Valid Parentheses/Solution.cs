@@ -2,7 +2,10 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.LongestValidParentheses
 {
     public class Solution
@@ -65,6 +68,16 @@ namespace CompetitiveProgramming.LeetCode.LongestValidParentheses
                 ResultTester.CheckResult<int>(Solution.LongestValidParentheses(""), 0),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Longest Valid Parentheses");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

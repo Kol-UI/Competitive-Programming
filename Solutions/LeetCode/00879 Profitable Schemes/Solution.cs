@@ -35,6 +35,8 @@ profit.length == group.length
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ProfitableSchemes
@@ -97,6 +99,16 @@ namespace CompetitiveProgramming.LeetCode.ProfitableSchemes
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Profitable Schemes");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestProfitableSchemes());
         }
     }
 }

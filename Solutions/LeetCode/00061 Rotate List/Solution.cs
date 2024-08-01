@@ -18,6 +18,9 @@ Example 2:
 Input: head = [0,1,2], k = 4
 Output: [2,0,1]
 */
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RotateList
 {
@@ -61,6 +64,16 @@ namespace CompetitiveProgramming.LeetCode.RotateList
                 head = head.next ?? first;
             }
             return first;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Rotate List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

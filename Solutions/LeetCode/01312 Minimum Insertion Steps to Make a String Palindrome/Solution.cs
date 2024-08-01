@@ -35,6 +35,8 @@ s consists of lowercase English letters.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumInsertionStepstoMakeaStringPalindrome
@@ -99,6 +101,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumInsertionStepstoMakeaStringPali
                 ResultTester.CheckResult<int>(Case3_1312, 5)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Insertion Steps to Make a String Palindrome");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestDecryptStringfromAlphabettoIntegerMapping());
         }
     }
 }

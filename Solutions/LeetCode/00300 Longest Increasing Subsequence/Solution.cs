@@ -25,6 +25,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LongestIncreasingSubsequence
@@ -76,6 +78,16 @@ namespace CompetitiveProgramming.LeetCode.LongestIncreasingSubsequence
                 ResultTester.CheckResult<int>(result3_300, 1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Longest Increasing Subsequence");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestLongestIncreasingSubsequence());
         }
     }
 }

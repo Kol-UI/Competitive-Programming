@@ -30,6 +30,8 @@ Output: 90
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.CountAllValidPickupandDeliveryOptions
 {
@@ -69,6 +71,16 @@ namespace CompetitiveProgramming.LeetCode.CountAllValidPickupandDeliveryOptions
                 ResultTester.CheckResult<int>(Solution.CountOrders(10), 850728840),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count All valid Pickup and Delivery Options");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

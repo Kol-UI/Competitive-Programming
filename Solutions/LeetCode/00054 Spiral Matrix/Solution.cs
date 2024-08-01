@@ -19,6 +19,8 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SpiralMatrix
@@ -100,6 +102,16 @@ namespace CompetitiveProgramming.LeetCode.SpiralMatrix
                 ResultTester.CheckResult<IList<int>>(Solution.SpiralOrder(matrix2), output2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Spiral Matrix");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestSpiralMatrix());
         }
     }
 }

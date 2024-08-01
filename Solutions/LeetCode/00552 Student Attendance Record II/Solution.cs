@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.StudentAttendanceRecordII
 {
@@ -32,6 +34,16 @@ namespace CompetitiveProgramming.LeetCode.StudentAttendanceRecordII
             res = (res+Solve(n - 1, a , 0)) % mod;
 
             return dp[n, a, l] = res;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("552");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
         }
     }
 }

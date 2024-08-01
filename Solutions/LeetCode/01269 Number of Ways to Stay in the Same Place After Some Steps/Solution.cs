@@ -28,6 +28,8 @@ Stay, Stay
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.NumberofWaystoStayintheSamePlaceAfterSomeSteps;
@@ -78,5 +80,15 @@ public class Test
             ResultTester.CheckResult<int>(Solution.NumWays(steps2, arrLen2), 2),
         };
         return results;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Number of Ways to Stay in the Same Place After Some Steps");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
     }
 }

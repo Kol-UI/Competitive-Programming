@@ -25,6 +25,8 @@ rotate 2 steps to the right: [3,99,-1,-100]
 
 using System;
 using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.RotateArray
 {
     public class Solution
@@ -39,6 +41,16 @@ namespace CompetitiveProgramming.LeetCode.RotateArray
 
             // For Test
             PrintHelper.PrintArray(nums);
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Rotate Array");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

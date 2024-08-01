@@ -1,5 +1,7 @@
 // Roman to Integer
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RomantoInteger
@@ -54,6 +56,16 @@ namespace CompetitiveProgramming.LeetCode.RomantoInteger
                 ResultTester.CheckResult<int>(Case3_13, 1994)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Roman to Integer");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestRomantoInteger());
         }
     }
 }

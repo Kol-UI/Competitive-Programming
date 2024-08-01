@@ -31,6 +31,8 @@ Explanation: All the elements are already equal, so no operations are needed.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumCosttoMakeArrayEqual
@@ -90,6 +92,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumCosttoMakeArrayEqual
                 ResultTester.CheckResult<double>(result2, 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Cost to Make Aarray Equal");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }

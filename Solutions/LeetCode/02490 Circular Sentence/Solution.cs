@@ -1,6 +1,8 @@
 // Circular Sentence
 
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CircularSentence
@@ -37,6 +39,16 @@ namespace CompetitiveProgramming.LeetCode.CircularSentence
                 ResultTester.CheckResult<bool>(Solution.IsCircularSentence("Leetcode is cool"), false),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Circular Sentence");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

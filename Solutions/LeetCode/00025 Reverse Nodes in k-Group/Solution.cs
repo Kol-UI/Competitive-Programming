@@ -21,6 +21,9 @@ Output: [3,2,1,4,5]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.ReverseNodesinkGroup
 {
     /**
@@ -74,6 +77,16 @@ namespace CompetitiveProgramming.LeetCode.ReverseNodesinkGroup
             }
 
             return prev;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Reverse Nodes in k-Group");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.HardLC);
         }
     }
 }

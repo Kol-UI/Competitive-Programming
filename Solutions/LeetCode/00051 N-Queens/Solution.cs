@@ -22,6 +22,8 @@ Output: [["Q"]]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.NQueens
@@ -121,6 +123,16 @@ namespace CompetitiveProgramming.LeetCode.NQueens
                 ResultTester.CheckResult<IList<IList<string>>>(Solution.SolveNQueens(1), expected2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("N-Queens");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
 }
