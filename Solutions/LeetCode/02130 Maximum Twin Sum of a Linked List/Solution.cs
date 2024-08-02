@@ -39,6 +39,7 @@ There is only one node with a twin in the linked list having twin sum of 1 + 100
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MaximumTwinSumofaLinkedList
 {
     /**
@@ -78,6 +79,16 @@ namespace CompetitiveProgramming.LeetCode.MaximumTwinSumofaLinkedList
             }
 
             return max;
+        }
+    }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Maximum Twin Sum of a Linked List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

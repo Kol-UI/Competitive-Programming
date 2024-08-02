@@ -54,4 +54,14 @@ namespace CompetitiveProgramming.LeetCode.LongerContiguousSegmentsofOnesthanZero
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Longer Contiguous Segments of Ones than Zeros");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
+        }
+    }
 }

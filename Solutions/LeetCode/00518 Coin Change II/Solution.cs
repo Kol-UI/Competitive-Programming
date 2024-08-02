@@ -103,4 +103,14 @@ namespace CompetitiveProgramming.LeetCode.CoinChangeII
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Coin Change II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCoinChangeII());
+        }
+    }
 }

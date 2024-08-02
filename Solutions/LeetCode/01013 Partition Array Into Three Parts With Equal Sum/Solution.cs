@@ -43,4 +43,14 @@ namespace CompetitiveProgramming.LeetCode.PartitionArrayIntoThreePartsWithEqualS
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Partition Array Into Three Parts With Equal Sum");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
+        }
+    }
 }

@@ -27,6 +27,8 @@ Explanation: s becomes "c" while t becomes "b".
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BackspaceStringCompare
@@ -88,6 +90,16 @@ namespace CompetitiveProgramming.LeetCode.BackspaceStringCompare
                 ResultTester.CheckResult<bool>(Solution.BackspaceCompare(s3, t3), false),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Backspace String Compare");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

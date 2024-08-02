@@ -30,6 +30,8 @@ seatManager.reserve();    // The only available seat is seat 5, so return 5.
 seatManager.unreserve(5); // Unreserve seat 5, so now the available seats are [5].
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.SeatReservationManager
 {
     public class SeatManager
@@ -68,4 +70,14 @@ namespace CompetitiveProgramming.LeetCode.SeatReservationManager
     * int param_1 = obj.Reserve();
     * obj.Unreserve(seatNumber);
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Seat Reservation Manager");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

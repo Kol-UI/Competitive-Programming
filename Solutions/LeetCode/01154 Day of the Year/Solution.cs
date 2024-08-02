@@ -28,4 +28,14 @@ namespace CompetitiveProgramming.LeetCode.DayoftheYear
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Day of the Year");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
+        }
+    }
 }

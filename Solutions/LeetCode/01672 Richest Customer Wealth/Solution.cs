@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RichestCustomerWealth
@@ -70,5 +72,14 @@ namespace CompetitiveProgramming.LeetCode.RichestCustomerWealth
             return results;
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Richest Customer Wealth");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
+}

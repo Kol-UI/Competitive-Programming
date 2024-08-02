@@ -105,4 +105,14 @@ namespace CompetitiveProgramming.LeetCode.MaximumValueataGivenIndexinaBoundedArr
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Maximum Value at a Given Index in a Bounded Array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

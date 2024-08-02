@@ -111,4 +111,14 @@ namespace CompetitiveProgramming.LeetCode.ReorderRoutestoMakeAllPathsLeadtotheCi
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Reorder Routes to Make All Paths Lead to the City Zero");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

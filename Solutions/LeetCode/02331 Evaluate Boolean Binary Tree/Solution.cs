@@ -24,4 +24,14 @@ namespace CompetitiveProgramming.LeetCode.EvaluateBooleanBinaryTree
             }
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Evaluate Boolean Binary Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

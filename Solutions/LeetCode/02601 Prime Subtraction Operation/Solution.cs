@@ -125,5 +125,14 @@ namespace CompetitiveProgramming.LeetCode.PrimeSubtractionOperation
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Prime Subtraction Operation");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCase());
+        }
+    }
+}

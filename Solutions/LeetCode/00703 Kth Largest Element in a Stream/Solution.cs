@@ -28,6 +28,7 @@ kthLargest.add(4);   // return 8
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.KthLargestElementinaStream
 {
     public class KthLargest
@@ -57,4 +58,14 @@ namespace CompetitiveProgramming.LeetCode.KthLargestElementinaStream
     * KthLargest obj = new KthLargest(k, nums);
     * int param_1 = obj.Add(val);
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("703");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

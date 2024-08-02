@@ -44,4 +44,14 @@ namespace CompetitiveProgramming.LeetCode.LatestTimeYouCanObtainAfterReplacingCh
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Lastest Time You Can Obtain After Replacing Characters");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
+        }
+    }
 }

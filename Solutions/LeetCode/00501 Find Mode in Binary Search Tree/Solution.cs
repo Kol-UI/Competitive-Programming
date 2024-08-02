@@ -53,4 +53,13 @@ namespace CompetitiveProgramming.LeetCode.FindModeinBinarySearchTree
             in_order_traversal(node.right);
         }
     }
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("501");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

@@ -12,4 +12,14 @@ namespace CompetitiveProgramming.LeetCode.FindTargetIndicesAfterSortingArray
                 nums.Count(num => num == target))
             .ToList();
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Find Target Indices After Sorting Array");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

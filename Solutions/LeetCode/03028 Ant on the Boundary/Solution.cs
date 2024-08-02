@@ -33,4 +33,14 @@ namespace CompetitiveProgramming.LeetCode.AntontheBoundary
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Ant on the Boundary");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
+        }
+    }
 }

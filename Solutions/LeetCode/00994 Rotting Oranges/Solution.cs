@@ -141,5 +141,14 @@ namespace CompetitiveProgramming.LeetCode.RottingOranges
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Rotting Oranges");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestRottingOranges());
+        }
+    }
+}

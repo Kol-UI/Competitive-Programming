@@ -32,6 +32,9 @@ myHashMap.get(2);    // return -1 (i.e., not found), The map is now [[1,1]]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.DesignHashMap
 {
     public class MyHashMap 
@@ -104,4 +107,14 @@ namespace CompetitiveProgramming.LeetCode.DesignHashMap
     * int param_2 = obj.Get(key);
     * obj.Remove(key);
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Design HashMap");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

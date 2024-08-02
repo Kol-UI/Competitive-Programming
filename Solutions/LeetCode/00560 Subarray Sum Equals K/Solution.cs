@@ -72,5 +72,14 @@ namespace CompetitiveProgramming.LeetCode.SubarraySumEqualsK
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Subarray Sum Equals K");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestSubarraySumEqualsK());
+        }
+    }
+}

@@ -66,6 +66,7 @@ undergroundSystem.getAverageTime("Leyton", "Paradise"); // return 6.66667, (5 + 
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.DesignUndergroundSystem
 {
     public class UndergroundSystem
@@ -97,4 +98,14 @@ namespace CompetitiveProgramming.LeetCode.DesignUndergroundSystem
     * obj.CheckOut(id,stationName,t);
     * double param_3 = obj.GetAverageTime(startStation,endStation);
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Design Underground System");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

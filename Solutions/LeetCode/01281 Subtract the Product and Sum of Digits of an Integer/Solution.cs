@@ -68,4 +68,14 @@ namespace CompetitiveProgramming.LeetCode.SubtracttheProductandSumofDigitsofanIn
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("1281");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestSubtracttheProductandSumofDigitsofanInteger());
+        }
+    }
 }

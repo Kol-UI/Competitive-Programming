@@ -85,4 +85,14 @@ namespace CompetitiveProgramming.LeetCode.SuccessfulPairsofSpellsandPotions
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Successful Pairs of Spells and Potions");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.TwoOutofThree
@@ -37,6 +39,16 @@ namespace CompetitiveProgramming.LeetCode.TwoOutofThree
                 }
                 else if(!numSet.Contains(i)) numCount[i]++; 
             }
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("2032");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }
 }

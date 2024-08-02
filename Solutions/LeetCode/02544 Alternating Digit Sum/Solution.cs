@@ -31,6 +31,8 @@ Explanation: (+8) + (-8) + (+6) + (-9) + (+9) + (-6) = 0.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.AlternatingDigitSum
@@ -67,6 +69,16 @@ namespace CompetitiveProgramming.LeetCode.AlternatingDigitSum
                 ResultTester.CheckResult<int>(Solution.AlternateDigitSum(n3), 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Alternating Digit Sum");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCase());
         }
     }
 }

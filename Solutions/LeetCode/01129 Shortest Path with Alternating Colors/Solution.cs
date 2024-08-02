@@ -142,4 +142,14 @@ namespace CompetitiveProgramming.LeetCode.ShortestPathwithAlternatingColors
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Shortest Path with Alternating Colors");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestShortestPathwithAlternatingColors());
+        }
+    }
 }

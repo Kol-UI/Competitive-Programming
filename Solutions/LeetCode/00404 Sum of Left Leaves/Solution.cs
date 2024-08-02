@@ -21,6 +21,9 @@ Output: 0
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.SumofLeftLeaves
 {
     /**
@@ -58,8 +61,16 @@ namespace CompetitiveProgramming.LeetCode.SumofLeftLeaves
             {
                 sum = sum + root.val;
             }
-
         }
+    }
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Sum of Left Leaves");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
     }
 }

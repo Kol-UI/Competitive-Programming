@@ -43,4 +43,14 @@ namespace CompetitiveProgramming.LeetCode.MinimumRecolorstoGetKConsecutiveBlackB
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Minimum Recolors to Get K Consecutive Black Blocks");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
+        }
+    }
 }

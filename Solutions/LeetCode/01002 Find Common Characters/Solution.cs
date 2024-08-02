@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.FindCommonCharacters
 {
@@ -31,6 +33,16 @@ namespace CompetitiveProgramming.LeetCode.FindCommonCharacters
                 }
             }
             return result;
+        }
+    }
+    
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Common Characters");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }
 }

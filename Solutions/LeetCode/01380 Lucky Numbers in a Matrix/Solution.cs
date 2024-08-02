@@ -23,4 +23,14 @@ namespace CompetitiveProgramming.LeetCode.LuckyNumbersinaMatrix
             return result.ToList();
         }
     }
+    
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("1380");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

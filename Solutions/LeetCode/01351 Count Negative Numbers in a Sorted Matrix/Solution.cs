@@ -19,6 +19,8 @@ Output: 0
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CountNegativeNumbersinaSortedMatrix
@@ -64,6 +66,16 @@ namespace CompetitiveProgramming.LeetCode.CountNegativeNumbersinaSortedMatrix
                 ResultTester.CheckResult<int>(result2_1351, 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count Negative Numbers in a Sorted Matrix");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCountNegativeNumbersinaSortedMatrix());
         }
     }
 }

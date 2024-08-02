@@ -75,4 +75,13 @@ namespace CompetitiveProgramming.LeetCode.SoupServings
             return cache![(a,b)] = total / 4;
         }
     }
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Soup Servings");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

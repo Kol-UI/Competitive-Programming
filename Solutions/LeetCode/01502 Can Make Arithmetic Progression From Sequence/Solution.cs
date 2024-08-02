@@ -20,6 +20,8 @@ Output: false
 Explanation: There is no way to reorder the elements to obtain an arithmetic progression.
 */
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CanMakeArithmeticProgressionFromSequence
@@ -71,6 +73,16 @@ namespace CompetitiveProgramming.LeetCode.CanMakeArithmeticProgressionFromSequen
                 ResultTester.CheckResult<bool>(Result7_1502, Result7_1502)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("1502");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

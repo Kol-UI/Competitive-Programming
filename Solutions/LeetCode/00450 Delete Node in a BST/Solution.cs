@@ -31,6 +31,7 @@ Output: []
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.DeleteNodeinaBST
 {
     /**
@@ -92,6 +93,16 @@ namespace CompetitiveProgramming.LeetCode.DeleteNodeinaBST
             }
 
             return Delete(root, key)!;
+        }
+    }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Delete node in a BST");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

@@ -27,6 +27,7 @@ Output: false
 
 using System;
 using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MonotonicArray
@@ -176,6 +177,16 @@ namespace CompetitiveProgramming.LeetCode.MonotonicArray
                 ResultTester.CheckResult<bool>(result37, result37),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("896");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestMonotonicArray());
         }
     }
 }

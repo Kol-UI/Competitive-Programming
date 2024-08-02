@@ -23,6 +23,8 @@ As we cannot use any three side lengths to form a triangle of non-zero area, we 
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LargestPerimeterTriangle
@@ -59,6 +61,16 @@ namespace CompetitiveProgramming.LeetCode.LargestPerimeterTriangle
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Largest Perimeter Triangle");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestLargestPerimeterTriangle());
         }
     }
 }

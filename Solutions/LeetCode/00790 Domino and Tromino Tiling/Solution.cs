@@ -67,4 +67,14 @@ namespace CompetitiveProgramming.LeetCode.DominoandTrominoTiling
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Domino and Tromino Tiling");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestDominoandTrominoTiling());
+        }
+    }
 }

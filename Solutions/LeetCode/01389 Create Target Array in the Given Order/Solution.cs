@@ -24,4 +24,13 @@ namespace CompetitiveProgramming.LeetCode.CreateTargetArrayintheGivenOrder
             return target;
         }
     }
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("1389");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

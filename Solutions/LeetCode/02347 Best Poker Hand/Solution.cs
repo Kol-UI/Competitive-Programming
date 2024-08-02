@@ -45,6 +45,8 @@ ranks.length == suits.length == 5
 No two cards have the same rank and suit.
 */
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BestPokerHand
@@ -108,6 +110,16 @@ namespace CompetitiveProgramming.LeetCode.BestPokerHand
                 ResultTester.CheckResult<string>(Case3_2347, "Pair")
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Best Poker Hand");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

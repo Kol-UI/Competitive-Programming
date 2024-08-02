@@ -1,4 +1,7 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MinimumAbsoluteDifferenceinBST
 {
     public class Solution
@@ -35,5 +38,14 @@ namespace CompetitiveProgramming.LeetCode.MinimumAbsoluteDifferenceinBST
             return result;
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Absolute Difference in BST");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
+}

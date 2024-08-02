@@ -32,6 +32,8 @@ Output: [true,false,true]
 */
 
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.KidsWiththeGreatestNumberofCandies
@@ -82,6 +84,16 @@ namespace CompetitiveProgramming.LeetCode.KidsWiththeGreatestNumberofCandies
                 ResultTester.CheckResult<IList<bool>>(result2, secondList)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("1431");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestKidsWiththeGreatestNumberofCandies());
         }
     }
 }

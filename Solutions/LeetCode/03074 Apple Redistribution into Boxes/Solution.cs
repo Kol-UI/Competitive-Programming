@@ -3,6 +3,8 @@
 
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.AppleRedistributionintoBoxes
@@ -37,6 +39,16 @@ namespace CompetitiveProgramming.LeetCode.AppleRedistributionintoBoxes
                 ResultTester.CheckResult<int>(Solution.MinimumBoxes(new int[]{5,5,5}, new int[]{2,4,2,7}), 4),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Apple Redistribution into Boxes");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

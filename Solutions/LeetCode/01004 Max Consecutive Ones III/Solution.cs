@@ -67,5 +67,15 @@ namespace CompetitiveProgramming.LeetCode.MaxConsecutiveOnesIII
 
             return results;
         }
-    } 
+    }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Max Consecutive Ones III");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

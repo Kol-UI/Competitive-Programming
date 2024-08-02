@@ -22,6 +22,7 @@ Output: [2,2]
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MergeTwoBinaryTrees
 {
     /**
@@ -84,6 +85,16 @@ namespace CompetitiveProgramming.LeetCode.MergeTwoBinaryTrees
             }
 
             return root1;
+        }
+    }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Merge Two Binary Trees");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }
 }

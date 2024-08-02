@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SortthePeople
@@ -63,6 +65,16 @@ namespace CompetitiveProgramming.LeetCode.SortthePeople
                 ResultTester.CheckResult<string[]>(Solution.SortPeople2(names2, heights2), expected2),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Sort the People");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

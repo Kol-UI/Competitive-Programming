@@ -38,4 +38,14 @@ namespace CompetitiveProgramming.LeetCode.LongestUnequalAdjacentGroupsSubsequenc
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Longest Unequal Adjacent Groups Subsequence I");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
+        }
+    }
 }

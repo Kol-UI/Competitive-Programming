@@ -120,4 +120,14 @@ namespace CompetitiveProgramming.LeetCode.Dota2Senate
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Dota2 Senate");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestDota2Senate());
+        }
+    }
 }

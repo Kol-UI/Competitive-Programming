@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MaximumProductDifferenceBetweenTwoPairs
 {
@@ -28,6 +30,16 @@ namespace CompetitiveProgramming.LeetCode.MaximumProductDifferenceBetweenTwoPair
                 ResultTester.CheckResult<int>(Solution.MaxProductDifference(nums2), 64),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("1913");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

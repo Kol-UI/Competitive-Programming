@@ -115,4 +115,14 @@ namespace CompetitiveProgramming.LeetCode.FloodFill
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Flood Fill");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestFloodFill());
+        }
+    }
 }

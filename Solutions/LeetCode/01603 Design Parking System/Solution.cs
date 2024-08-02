@@ -26,6 +26,7 @@ parkingSystem.addCar(1); // return false because there is no available slot for 
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.DesignParkingSystem
 {
     public class ParkingSystem 
@@ -55,4 +56,14 @@ namespace CompetitiveProgramming.LeetCode.DesignParkingSystem
     * ParkingSystem obj = new ParkingSystem(big, medium, small);
     * bool param_1 = obj.AddCar(carType);
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Design Parking System");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

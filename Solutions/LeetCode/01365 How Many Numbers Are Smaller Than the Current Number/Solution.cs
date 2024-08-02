@@ -41,4 +41,14 @@ namespace CompetitiveProgramming.LeetCode.HowManyNumbersAreSmallerThantheCurrent
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("How Many Numbers Are Smaller Than the Current Number");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
+        }
+    }
 }

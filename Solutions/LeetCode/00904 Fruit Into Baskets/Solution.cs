@@ -80,5 +80,14 @@ namespace CompetitiveProgramming.LeetCode.FruitIntoBaskets
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Fruit Into Baskets");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestFruitIntoBaskets());
+        }
+    }
+}

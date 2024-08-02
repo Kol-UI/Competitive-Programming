@@ -1,6 +1,8 @@
 // Three Divisors
 
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ThreeDivisors
@@ -23,6 +25,16 @@ namespace CompetitiveProgramming.LeetCode.ThreeDivisors
                 ResultTester.CheckResult<bool>(Solution.IsThree(4), true),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Three Divisors");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

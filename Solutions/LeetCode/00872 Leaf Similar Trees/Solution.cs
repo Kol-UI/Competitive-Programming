@@ -20,6 +20,7 @@ Output: false
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.LeafSimilarTrees
 {
     /**
@@ -58,4 +59,14 @@ namespace CompetitiveProgramming.LeetCode.LeafSimilarTrees
         }
     }
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Leaf Similar Trees");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

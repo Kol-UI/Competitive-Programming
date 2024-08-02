@@ -3,6 +3,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.FurthestPointFromOrigin
 {
@@ -48,6 +50,16 @@ namespace CompetitiveProgramming.LeetCode.FurthestPointFromOrigin
                 ResultTester.CheckResult<int>(Solution.FurthestDistanceFromOrigin("_______"), 7),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Furthest Point From Origin");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

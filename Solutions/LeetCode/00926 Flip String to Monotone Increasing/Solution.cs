@@ -90,5 +90,14 @@ namespace CompetitiveProgramming.LeetCode.FlipStringtoMonotoneIncreasing
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Flip String to monotone Increasing");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestFlipStringtoMonotoneIncreasing());
+        }
+    }
+}

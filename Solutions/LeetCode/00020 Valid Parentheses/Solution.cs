@@ -109,7 +109,7 @@ namespace CompetitiveProgramming.LeetCode.ValidParentheses
         {
             StyleHelper.Space();
             StyleHelper.Title("Longest Valid Parentheses");
-            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestValidParentheses());
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestValidParentheses());
         }
     }
 }

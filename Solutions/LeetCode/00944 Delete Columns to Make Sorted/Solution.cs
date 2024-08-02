@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.DeleteColumnstoMakeSorted
@@ -83,5 +85,14 @@ namespace CompetitiveProgramming.LeetCode.DeleteColumnstoMakeSorted
             return results;
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Delete Columns to Make Sorted");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestDeleteColumnstoMakeSorted());
+        }
+    }
+}

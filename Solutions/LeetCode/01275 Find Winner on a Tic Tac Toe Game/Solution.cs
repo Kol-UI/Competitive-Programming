@@ -35,6 +35,8 @@ Explanation: The game ends in a draw since there are no moves to make.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FindWinneronaTicTacToeGame
@@ -121,6 +123,16 @@ namespace CompetitiveProgramming.LeetCode.FindWinneronaTicTacToeGame
                 ResultTester.CheckResult<string>(result3_1275, "Draw")
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("1275");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestFindWinneronaTicTacToeGame());
         }
     }
 }

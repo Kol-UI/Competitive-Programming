@@ -57,6 +57,8 @@ Since the record is empty, the total sum is 0.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BaseballGame
@@ -112,6 +114,16 @@ namespace CompetitiveProgramming.LeetCode.BaseballGame
                 ResultTester.CheckResult<int>(result2_682, 0),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Baseball Game");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestBaseballGame());
         }
     }
 }

@@ -46,4 +46,14 @@ namespace CompetitiveProgramming.LeetCode.PathwithMaximumGold
             return maxGold;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Path with Maximum Gold");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

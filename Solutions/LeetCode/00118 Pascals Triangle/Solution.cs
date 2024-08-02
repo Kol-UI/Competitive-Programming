@@ -39,7 +39,7 @@ namespace CompetitiveProgramming.LeetCode.PascalsTriangle
         public override void GetResult()
         {
             StyleHelper.Space();
-            StyleHelper.Title("Pascals Triangle II");
+            StyleHelper.Title("Pascals Triangle");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }

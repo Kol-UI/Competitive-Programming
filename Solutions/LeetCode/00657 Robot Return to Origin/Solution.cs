@@ -25,6 +25,8 @@ Explanation: The robot moves left twice. It ends up two "moves" to the left of t
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RobotReturntoOrigin
@@ -52,6 +54,16 @@ namespace CompetitiveProgramming.LeetCode.RobotReturntoOrigin
                 ResultTester.CheckResult<bool>(result2, false)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Robot Return to Origin");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestRobotReturntoOrigin());
         }
     }
 }

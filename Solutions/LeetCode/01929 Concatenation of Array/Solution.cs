@@ -22,6 +22,8 @@ Explanation: The array ans is formed as follows:
 - ans = [1,3,2,1,1,3,2,1]
 */
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ConcatenationofArray
@@ -54,6 +56,16 @@ namespace CompetitiveProgramming.LeetCode.ConcatenationofArray
                 ResultTester.CheckResult<int[]>(output2_1929, expected2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("1929");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

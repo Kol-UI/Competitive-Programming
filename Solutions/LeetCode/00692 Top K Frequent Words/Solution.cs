@@ -55,4 +55,14 @@ namespace CompetitiveProgramming.LeetCode.TopKFrequentWords
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Top K Frequent Words");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestTopKFrequentWords());
+        }
+    }
 }

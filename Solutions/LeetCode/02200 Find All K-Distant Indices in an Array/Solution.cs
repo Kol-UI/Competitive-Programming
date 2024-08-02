@@ -34,4 +34,14 @@ namespace CompetitiveProgramming.LeetCode.FindAllKDistantIndicesinanArray
             return result;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Find All K-Distant Indices in an Array");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

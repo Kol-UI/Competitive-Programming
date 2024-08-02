@@ -35,4 +35,14 @@ namespace CompetitiveProgramming.LeetCode.MakeTwoArraysEqualbyReversingSubarrays
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Make Two Arrays Equal by Reversing Subarrays");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
+        }
+    }
 }

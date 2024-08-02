@@ -27,6 +27,8 @@ Explanation: There are no characters in letters that is lexicographically greate
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FindSmallestLetterGreaterThanTarget
@@ -70,6 +72,16 @@ namespace CompetitiveProgramming.LeetCode.FindSmallestLetterGreaterThanTarget
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find Smallest Letter Greater Than Target");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestFindSmallestLetterGreaterThanTarget());
         }
     }
 }

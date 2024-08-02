@@ -55,4 +55,14 @@ namespace CompetitiveProgramming.LeetCode.DoubleaNumberRepresentedasaLinkedList
                 return new ListNode(carry, Reverse(aux2));
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Double a Number Represented as a Linked List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

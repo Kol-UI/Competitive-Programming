@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CountDaysSpentTogether
@@ -30,6 +32,16 @@ namespace CompetitiveProgramming.LeetCode.CountDaysSpentTogether
                 ResultTester.CheckResult<int>(Solution.CountDaysTogether("10-01", "10-31", "11-01", "12-31"), 0),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count Days Spent Together");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

@@ -35,6 +35,7 @@ The number of nodes in the tree is in the range [1, 3000].
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MaximumWidthofBinaryTree
 {
 /**
@@ -98,6 +99,15 @@ namespace CompetitiveProgramming.LeetCode.MaximumWidthofBinaryTree
                 maxWidth = Math.Max(maxWidth, rightIndex - leftIndex + 1);
             }
             return maxWidth;
+        }
+    }
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Maximum Width of Binary Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

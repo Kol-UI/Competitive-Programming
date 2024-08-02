@@ -38,4 +38,14 @@ namespace CompetitiveProgramming.LeetCode.TheNumberofBeautifulSubsets
         }
     }
 }
+
+public class TestSolution : Models.BaseSolution
+{
+    public override void GetResult()
+    {
+        Helpers.StyleHelper.Space();
+        Helpers.StyleHelper.Title("The Number of Beautiful Subsets");
+        ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+    }
+}
 }

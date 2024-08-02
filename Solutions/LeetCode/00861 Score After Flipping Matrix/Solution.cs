@@ -53,4 +53,13 @@ namespace CompetitiveProgramming.LeetCode.ScoreAfterFlippingMatrix
             return result;
         }
     }
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Score After Flipping Matrix");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

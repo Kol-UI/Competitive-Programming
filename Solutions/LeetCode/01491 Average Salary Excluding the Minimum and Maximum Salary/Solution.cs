@@ -23,6 +23,8 @@ Average salary excluding minimum and maximum salary is (2000) / 1 = 2000
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.AverageSalaryExcludingtheMinimumandMaximumSalary
@@ -60,6 +62,16 @@ namespace CompetitiveProgramming.LeetCode.AverageSalaryExcludingtheMinimumandMax
                 ResultTester.CheckResult<double>(result2_1491, 2000.00000),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("1491");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

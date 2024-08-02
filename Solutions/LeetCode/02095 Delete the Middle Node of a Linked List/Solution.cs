@@ -37,6 +37,7 @@ Node 0 with value 2 is the only node remaining after removing node 1.
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.DeletetheMiddleNodeofaLinkedList
 {
     /**
@@ -76,6 +77,16 @@ namespace CompetitiveProgramming.LeetCode.DeletetheMiddleNodeofaLinkedList
                 
                 current.next = current.next.next;
             }
+        }
+    }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Delete the Middle Node of a Linked List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

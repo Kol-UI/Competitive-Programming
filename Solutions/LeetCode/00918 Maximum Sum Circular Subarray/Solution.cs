@@ -113,5 +113,14 @@ namespace CompetitiveProgramming.LeetCode.MaximumSumCircularSubarray
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Maximum Sum Circular Subarray");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestMaximumSumCircularSubarray());
+        }
+    }
+}

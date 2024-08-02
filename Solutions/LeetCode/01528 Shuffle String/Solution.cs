@@ -1,5 +1,7 @@
 // Shuffle String
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ShuffleString
@@ -23,6 +25,16 @@ namespace CompetitiveProgramming.LeetCode.ShuffleString
                 ResultTester.CheckResult<string>(Solution.RestoreString("abc", new int[]{0,1,2}), "abc"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Shuffle String");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

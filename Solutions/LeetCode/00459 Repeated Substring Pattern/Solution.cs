@@ -30,6 +30,8 @@ s consists of lowercase English letters.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RepeatedSubstringPattern
@@ -78,6 +80,16 @@ namespace CompetitiveProgramming.LeetCode.RepeatedSubstringPattern
                 ResultTester.CheckResult<bool>(Case3_459, true)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Repeated Substring Pattern");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestRepeatedSubstringPattern());
         }
     }
 }

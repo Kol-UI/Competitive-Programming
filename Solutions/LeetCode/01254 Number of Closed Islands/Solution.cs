@@ -106,4 +106,14 @@ namespace CompetitiveProgramming.LeetCode.NumberofClosedIslands
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Number of Closed Islands");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestNumberofClosedIslands());
+        }
+    }
 }

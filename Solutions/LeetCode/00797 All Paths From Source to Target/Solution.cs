@@ -87,4 +87,14 @@ namespace CompetitiveProgramming.LeetCode.AllPathsFromSourcetoTarget
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("All Paths From Source to Target");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestAllPathsFromSourcetoTarget());
+        }
+    }
 }

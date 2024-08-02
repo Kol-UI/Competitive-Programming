@@ -23,6 +23,7 @@ snapshotArr.get(0,0);  // Get the value of array[0] with snap_id = 0, return 5
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.SnapshotArray
 {
     public class SnapshotArray
@@ -66,4 +67,14 @@ namespace CompetitiveProgramming.LeetCode.SnapshotArray
     * int param_2 = obj.Snap();
     * int param_3 = obj.Get(index,snap_id);
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Snapshot Array");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

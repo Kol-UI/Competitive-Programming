@@ -40,6 +40,14 @@ namespace CompetitiveProgramming.LeetCode.SingleElementinaSortedArray
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Single Element in a Sorted Array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestSingleElementinaSortedArray());
+        }
+    }
 }
-
-

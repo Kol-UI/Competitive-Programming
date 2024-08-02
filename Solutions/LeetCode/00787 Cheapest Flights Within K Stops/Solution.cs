@@ -85,5 +85,14 @@ namespace CompetitiveProgramming.LeetCode.CheapestFlightsWithinKStops
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Cheapest Flights Within K Stops");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCheapestFlightsWithinKStops());
+        }
+    }
+}

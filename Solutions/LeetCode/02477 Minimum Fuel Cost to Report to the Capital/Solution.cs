@@ -125,4 +125,14 @@ namespace CompetitiveProgramming.LeetCode.MinimumFuelCosttoReporttotheCapital
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Minimum Fuel Cost to Report to the Capital");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

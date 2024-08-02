@@ -21,4 +21,14 @@ namespace CompetitiveProgramming.LeetCode.BinaryPrefixDivisibleByFive
             return result;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Binary prefix Divisible By 5");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

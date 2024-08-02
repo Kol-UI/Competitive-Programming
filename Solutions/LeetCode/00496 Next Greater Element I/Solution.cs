@@ -89,4 +89,14 @@ namespace CompetitiveProgramming.LeetCode.NextGreaterElementI
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Next Greater Element I");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestNextGreaterElementI());
+        }
+    }
 }

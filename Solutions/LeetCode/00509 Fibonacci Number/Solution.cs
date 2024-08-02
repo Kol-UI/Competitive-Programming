@@ -61,4 +61,14 @@ namespace CompetitiveProgramming.LeetCode.FibonacciNumber
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Fibonacci Number");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestFibonacciNumber());
+        }
+    }
 }

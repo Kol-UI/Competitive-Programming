@@ -112,4 +112,14 @@ namespace CompetitiveProgramming.LeetCode.RobotBoundedInCircle
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Robot Bounded In Circle");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestRobotBoundedInCircle());
+        }
+    }
 }

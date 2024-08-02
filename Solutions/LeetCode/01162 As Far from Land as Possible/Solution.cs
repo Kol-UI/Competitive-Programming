@@ -87,4 +87,14 @@ namespace CompetitiveProgramming.LeetCode.AsFarfromLandasPossible
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("As Far from Land as Possible");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Solution.TestAsFarfromLandasPossible());
+        }
+    }
 }

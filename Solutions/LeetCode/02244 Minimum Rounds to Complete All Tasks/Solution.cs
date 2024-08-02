@@ -65,5 +65,14 @@ namespace CompetitiveProgramming.LeetCode.MinimumRoundstoCompleteAllTasks
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Minimum Rounds to Complete All Tasks");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
+}

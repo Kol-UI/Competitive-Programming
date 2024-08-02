@@ -66,4 +66,14 @@ namespace CompetitiveProgramming.LeetCode.DeleteLeavesWithaGivenValue
             return root;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Delete leaves With a Given Value");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

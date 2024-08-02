@@ -62,4 +62,13 @@ namespace CompetitiveProgramming.LeetCode.ConstructStringfromBinaryTree
         }
     }
     */
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("606");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

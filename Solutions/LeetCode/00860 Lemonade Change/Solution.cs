@@ -31,6 +31,8 @@ Since not every customer received the correct change, the answer is false.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LemonadeChange
@@ -76,6 +78,16 @@ namespace CompetitiveProgramming.LeetCode.LemonadeChange
                 ResultTester.CheckResult<bool>(Solution.LemonadeChange(bills2), false),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Lemonade Change");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestLemonadeChange());
         }
     }
 }

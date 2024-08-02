@@ -79,4 +79,14 @@ namespace CompetitiveProgramming.LeetCode.ValidateStackSequences
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Validate Stack Sequences");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestValidateStackSequences());
+        }
+    }
 }

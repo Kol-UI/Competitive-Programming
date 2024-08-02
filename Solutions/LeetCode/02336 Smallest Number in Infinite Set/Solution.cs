@@ -37,6 +37,7 @@ Constraints:
 At most 1000 calls will be made in total to popSmallest and addBack.
 */
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.SmallestNumberinInfiniteSet
 {
     public class SmallestInfiniteSet
@@ -66,10 +67,21 @@ namespace CompetitiveProgramming.LeetCode.SmallestNumberinInfiniteSet
     }
 }
 
+public class TestSolution : Models.BaseSolution
+{
+    public override void GetResult()
+    {
+        Helpers.StyleHelper.Space();
+        Helpers.StyleHelper.Title("Smallest Number in Infinite Set");
+        ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+    }
+}
+
 /**
  * Your SmallestInfiniteSet object will be instantiated and called as such:
  * SmallestInfiniteSet obj = new SmallestInfiniteSet();
  * int param_1 = obj.PopSmallest();
  * obj.AddBack(num);
  */
+
 }

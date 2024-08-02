@@ -77,4 +77,14 @@ namespace CompetitiveProgramming.LeetCode.MinCostClimbingStairs
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Min Cost Climbing Stairs");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestMinCostClimbingStairs());
+        }
+    }
 }

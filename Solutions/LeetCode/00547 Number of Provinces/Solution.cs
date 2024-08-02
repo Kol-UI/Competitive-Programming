@@ -93,4 +93,14 @@ namespace CompetitiveProgramming.LeetCode.NumberofProvinces
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Number of Provinces");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestNumberofProvinces());
+        }
+    }
 }

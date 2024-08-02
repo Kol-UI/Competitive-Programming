@@ -27,4 +27,14 @@ namespace CompetitiveProgramming.LeetCode.AverageValueofEvenNumbersThatAreDivisi
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Average Value of Even Numbers That Are Divisible by Three");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
+        }
+    }
 }

@@ -21,6 +21,8 @@ Explanation: Because the 4th row is incomplete, we return 3.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ArrangingCoins
@@ -54,6 +56,16 @@ namespace CompetitiveProgramming.LeetCode.ArrangingCoins
                 ResultTester.CheckResult<int>(result2_441, 3)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Arranging Coins");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestArrangingCoins());
         }
     }
 }

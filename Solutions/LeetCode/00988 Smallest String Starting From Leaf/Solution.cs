@@ -57,4 +57,14 @@ namespace CompetitiveProgramming.LeetCode.SmallestStringStartingFromLeaf
             return result;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Smallest String Starting From Leaf");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

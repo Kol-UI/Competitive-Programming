@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.NumberofNodesintheSubTreeWiththeSameLabel
 {
@@ -81,5 +82,14 @@ namespace CompetitiveProgramming.LeetCode.NumberofNodesintheSubTreeWiththeSameLa
             return res;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Title");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
+}

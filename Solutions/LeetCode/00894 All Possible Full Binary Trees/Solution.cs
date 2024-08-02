@@ -20,6 +20,8 @@ Input: n = 3
 Output: [[0,0,0]]
 */
 
+using CompetitiveProgramming.TestDrivenDevelopment;
+
 namespace CompetitiveProgramming.LeetCode.AllPossibleFullBinaryTrees
 {
     /**
@@ -72,6 +74,16 @@ namespace CompetitiveProgramming.LeetCode.AllPossibleFullBinaryTrees
             }
 
             return result;
+        }
+    }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("All Possible Full Binary Trees");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

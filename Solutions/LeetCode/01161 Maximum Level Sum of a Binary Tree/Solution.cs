@@ -24,6 +24,7 @@ Output: 2
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MaximumLevelSumofaBinaryTree
 {
 /**
@@ -74,6 +75,16 @@ namespace CompetitiveProgramming.LeetCode.MaximumLevelSumofaBinaryTree
             }
 
             return minLevel;
+        }
+    }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Maximum Level Sum of a Binary Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

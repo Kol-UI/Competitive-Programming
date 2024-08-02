@@ -112,5 +112,13 @@ namespace CompetitiveProgramming.LeetCode.BoatstoSavePeople
         }
     }
 
-
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Boats to Save People");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestBoatstoSavePeople());
+        }
+    }
 }

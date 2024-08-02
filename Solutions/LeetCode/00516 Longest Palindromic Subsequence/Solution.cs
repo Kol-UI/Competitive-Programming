@@ -105,4 +105,14 @@ namespace CompetitiveProgramming.LeetCode.LongestPalindromicSubsequence
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Longest Palindromic Subsequence");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestLongestPalindromicSubsequence());
+        }
+    }
 }

@@ -65,4 +65,14 @@ namespace CompetitiveProgramming.LeetCode.MinimumFlipstoMakeaORbEqualtoc
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Minimum Flips to Make a OR b Equal toc");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestMinimumFlipstoMakeaORbEqualtoc());
+        }
+    }
 }

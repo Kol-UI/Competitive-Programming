@@ -34,6 +34,7 @@ myLinkedList.get(1);              // return 3
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.DesignLinkedList
 {
     public class MyLinkedList
@@ -95,4 +96,14 @@ namespace CompetitiveProgramming.LeetCode.DesignLinkedList
     * obj.AddAtIndex(index,val);
     * obj.DeleteAtIndex(index);
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Design Linked List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

@@ -83,5 +83,14 @@ namespace CompetitiveProgramming.LeetCode.DailyTemperatures
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Daily Temperatures");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestDailyTemperatures());
+        }
+    }
+}

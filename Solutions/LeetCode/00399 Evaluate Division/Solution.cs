@@ -148,4 +148,14 @@ namespace CompetitiveProgramming.LeetCode.EvaluateDivision
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Evaluate Division");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestEvaluateDivision());
+        }
+    }
 }

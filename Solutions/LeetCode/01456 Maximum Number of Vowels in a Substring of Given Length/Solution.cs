@@ -82,4 +82,14 @@ namespace CompetitiveProgramming.LeetCode.MaximumNumberofVowelsinaSubstringofGiv
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Maximum number of Vowels in a Substring of Given Length");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

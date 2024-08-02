@@ -1,4 +1,6 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.VerifyinganAlienDictionary
@@ -96,6 +98,16 @@ namespace CompetitiveProgramming.LeetCode.VerifyinganAlienDictionary
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Verifying an Alien Dictionary");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestVerifyinganAlienDictionary());
         }
     }
 }

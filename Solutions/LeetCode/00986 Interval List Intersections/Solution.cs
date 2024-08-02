@@ -109,4 +109,14 @@ namespace CompetitiveProgramming.LeetCode.IntervalListIntersections
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Interval List Intersections");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestIntervalListIntersections());
+        }
+    }
 }

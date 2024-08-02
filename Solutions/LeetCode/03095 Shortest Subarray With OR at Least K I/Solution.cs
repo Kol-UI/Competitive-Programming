@@ -50,4 +50,14 @@ namespace CompetitiveProgramming.LeetCode.ShortestSubarrayWithORatLeastKI
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Shortest Subarray With OR at Least K I");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
+        }
+    }
 }

@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.DivideArrayIntoEqualPairs
@@ -40,6 +42,16 @@ namespace CompetitiveProgramming.LeetCode.DivideArrayIntoEqualPairs
                 ResultTester.CheckResult<bool>(Solution.DivideArray(new int[]{1,2,3,4}), false),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("2206");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

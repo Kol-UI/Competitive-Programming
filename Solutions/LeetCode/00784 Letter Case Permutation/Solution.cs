@@ -81,4 +81,14 @@ namespace CompetitiveProgramming.LeetCode.LetterCasePermutation
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Letter Case Permutation");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestLetterCasePermutation());
+        }
+    }
 }

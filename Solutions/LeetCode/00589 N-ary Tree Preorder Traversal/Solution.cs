@@ -19,6 +19,7 @@ Output: [1,2,3,6,7,11,14,4,8,12,5,9,13,10]
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.NaryTreePreorderTraversal
 {
     /*
@@ -73,4 +74,14 @@ namespace CompetitiveProgramming.LeetCode.NaryTreePreorderTraversal
         }
     }
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("589");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+        }
+    }
 }

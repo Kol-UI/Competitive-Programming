@@ -77,5 +77,14 @@ namespace CompetitiveProgramming.LeetCode.NondecreasingSubsequences
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Non-decreasing Subsequences");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestNondecreasingSubsequences());
+        }
+    }
+}

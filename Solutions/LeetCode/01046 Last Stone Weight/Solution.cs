@@ -36,6 +36,8 @@ Constraints:
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LastStoneWeight
@@ -79,6 +81,16 @@ namespace CompetitiveProgramming.LeetCode.LastStoneWeight
                 ResultTester.CheckResult<int>(result2_1046, 1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Last Stone Weight");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestLastStoneWeight());
         }
     }
 }

@@ -145,4 +145,14 @@ namespace CompetitiveProgramming.LeetCode.OpentheLock
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Open the Lock");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestOpentheLock());
+        }
+    }
 }

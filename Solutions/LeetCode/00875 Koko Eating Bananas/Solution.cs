@@ -85,4 +85,14 @@ namespace CompetitiveProgramming.LeetCode.KokoEatingBananas
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Koko Eating Bananas");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestKokoEatingBananas());
+        }
+    }
 }

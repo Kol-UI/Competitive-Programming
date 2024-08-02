@@ -2,6 +2,8 @@
 
 using System.Text;
 using System.Text.RegularExpressions;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.DeleteCharacterstoMakeFancyString
@@ -66,6 +68,16 @@ namespace CompetitiveProgramming.LeetCode.DeleteCharacterstoMakeFancyString
                 ResultTester.CheckResult<string>(Solution.MakeFancyStringRegex("aab"), "aab"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("1957");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

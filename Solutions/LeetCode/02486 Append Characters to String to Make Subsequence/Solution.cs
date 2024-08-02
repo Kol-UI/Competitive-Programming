@@ -34,4 +34,14 @@ namespace CompetitiveProgramming.LeetCode.AppendCharacterstoStringtoMakeSubseque
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Append Characters to String to Make Subsequence");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

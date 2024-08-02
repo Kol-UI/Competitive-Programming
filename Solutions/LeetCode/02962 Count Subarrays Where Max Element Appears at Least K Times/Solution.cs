@@ -37,4 +37,14 @@ namespace CompetitiveProgramming.LeetCode.CountSubarraysWhereMaxElementAppearsat
             return subarrayCount;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Count Subarrays Where Max Element Appears at Least K Times");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

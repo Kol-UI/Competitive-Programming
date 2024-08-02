@@ -119,4 +119,14 @@ namespace CompetitiveProgramming.LeetCode.ShortestPathinBinaryMatrix
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Shortest Path in Binary Matrix");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestShortestPathinBinaryMatrix());
+        }
+    }
 }

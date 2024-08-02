@@ -35,6 +35,7 @@ Total points earned: 2 + 5 = 7. There is no other way to earn 7 or more points.
 */
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.SolvingQuestionsWithBrainpower
 {
     /*
@@ -73,4 +74,14 @@ namespace CompetitiveProgramming.LeetCode.SolvingQuestionsWithBrainpower
         }
     }
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Solving Questions With Brainpower");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

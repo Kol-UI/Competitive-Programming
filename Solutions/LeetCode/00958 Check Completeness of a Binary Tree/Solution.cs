@@ -1,4 +1,5 @@
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.CheckCompletenessofaBinaryTree
 {
     /*
@@ -46,6 +47,16 @@ namespace CompetitiveProgramming.LeetCode.CheckCompletenessofaBinaryTree
                 if (list[j] == -1) return false;
             }
             return true;
+        }
+    }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Check Completeness of a Binary Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

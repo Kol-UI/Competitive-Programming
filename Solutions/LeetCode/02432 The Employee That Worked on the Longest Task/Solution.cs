@@ -66,4 +66,14 @@ namespace CompetitiveProgramming.LeetCode.TheEmployeeThatWorkedontheLongestTask
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("The Employee That Worked on the Longest Task");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
+        }
+    }
 }

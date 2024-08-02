@@ -70,4 +70,14 @@ namespace CompetitiveProgramming.LeetCode.MaximumAverageSubarrayI
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Maximum Average Subarray");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestMaximumAverageSubarrayI());
+        }
+    }
 }

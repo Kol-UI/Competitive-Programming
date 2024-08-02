@@ -26,6 +26,8 @@ Explanation: You can swap s[0] = 'a' and s[1] = 'a' to get "aa", which is equal 
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BuddyStrings
@@ -70,6 +72,16 @@ namespace CompetitiveProgramming.LeetCode.BuddyStrings
                 ResultTester.CheckResult<bool>(Solution.BuddyStrings("aa", "aa"), true),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Buddy Strings");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCase());
         }
     }
 }

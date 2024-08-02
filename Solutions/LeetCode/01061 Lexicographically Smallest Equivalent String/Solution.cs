@@ -99,5 +99,14 @@ namespace CompetitiveProgramming.LeetCode.LexicographicallySmallestEquivalentStr
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Title");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestLexicographicallySmallestEquivalentString());
+        }
+    }
+}

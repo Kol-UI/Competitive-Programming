@@ -1,6 +1,8 @@
 // Check If N and Its Double Exist
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CheckIfNandItsDoubleExist
@@ -58,6 +60,16 @@ namespace CompetitiveProgramming.LeetCode.CheckIfNandItsDoubleExist
                 ResultTester.CheckResult<bool>(result2346_2, false)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Check If N and Its Double Exist");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCheckIfNandItsDoubleExist());
         }
     }
 }

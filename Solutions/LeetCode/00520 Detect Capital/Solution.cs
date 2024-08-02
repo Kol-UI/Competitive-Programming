@@ -64,5 +64,14 @@ namespace CompetitiveProgramming.LeetCode.DetectCapital
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Detect Capital");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestDetectCapital());
+        }
+    }
+}

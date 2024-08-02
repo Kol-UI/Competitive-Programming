@@ -36,6 +36,8 @@ merged: a p b q c   d
 */
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MergeStringsAlternately
@@ -84,6 +86,16 @@ namespace CompetitiveProgramming.LeetCode.MergeStringsAlternately
                 ResultTester.CheckResult<string>(Case3_1768, "apbqcd")
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Merge Strinngs Alternately");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

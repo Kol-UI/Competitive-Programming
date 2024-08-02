@@ -34,6 +34,7 @@ stockSpanner.next(85);  // return 6
 
 
 using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.OnlineStockSpan
 {
     public class StockSpanner
@@ -73,4 +74,14 @@ namespace CompetitiveProgramming.LeetCode.OnlineStockSpan
     * StockSpanner obj = new StockSpanner();
     * int param_1 = obj.Next(price);
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Online Stock Span");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

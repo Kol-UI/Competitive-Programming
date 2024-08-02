@@ -23,6 +23,9 @@ Output: 0
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.ConvertBinaryNumberinaLinkedListtoInteger
 {
     /**
@@ -47,6 +50,16 @@ namespace CompetitiveProgramming.LeetCode.ConvertBinaryNumberinaLinkedListtoInte
                 head = head.next;
             }
             return number;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Convert Binary Number in a Linked List to integer");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }
 }

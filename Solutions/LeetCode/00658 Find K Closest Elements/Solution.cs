@@ -69,4 +69,14 @@ namespace CompetitiveProgramming.LeetCode.FindKClosestElements
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Find K Cloest Elements");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestFindKClosestElements());
+        }
+    }
 }

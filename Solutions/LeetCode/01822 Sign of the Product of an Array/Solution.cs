@@ -32,6 +32,8 @@ Explanation: The product of all values in the array is -1, and signFunc(-1) = -1
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SignoftheProductofanArray
@@ -95,6 +97,16 @@ namespace CompetitiveProgramming.LeetCode.SignoftheProductofanArray
                 ResultTester.CheckResult<int>(Result3_1822, -1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("1822");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

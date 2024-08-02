@@ -101,4 +101,14 @@ namespace CompetitiveProgramming.LeetCode.SortIntegersbyTheNumberof1Bits
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("1356");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestSortIntegersbyTheNumberof1Bits());
+        }
+    }
 }

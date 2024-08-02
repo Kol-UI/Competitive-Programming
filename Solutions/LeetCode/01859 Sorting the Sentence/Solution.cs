@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SortingtheSentence
@@ -25,6 +27,16 @@ namespace CompetitiveProgramming.LeetCode.SortingtheSentence
                 ResultTester.CheckResult<string>(Solution.SortSentence("Myself2 Me1 I4 and3"), "Me Myself and I"),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Sorting the Sentence");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

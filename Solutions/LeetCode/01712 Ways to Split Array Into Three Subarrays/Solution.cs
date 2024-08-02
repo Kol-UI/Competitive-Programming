@@ -114,4 +114,14 @@ namespace CompetitiveProgramming.LeetCode.WaystoSplitArrayIntoThreeSubarrays
             return results;
         }
     }
+    
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Ways to Split Array Into Three Subarrays");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

@@ -145,4 +145,14 @@ namespace CompetitiveProgramming.LeetCode.CapacityToShipPackagesWithinDDays
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Capacity To Ship Packages Within D Days");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCapacityToShipPackagesWithinDDays());
+        }
+    }
 }

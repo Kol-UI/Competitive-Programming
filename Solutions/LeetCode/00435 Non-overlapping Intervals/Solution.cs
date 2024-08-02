@@ -97,4 +97,14 @@ namespace CompetitiveProgramming.LeetCode.NonoverlappingIntervals
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Non-overlapping Intervals");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestNonoverlappingIntervals());
+        }
+    }
 }

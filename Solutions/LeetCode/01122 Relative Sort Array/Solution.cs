@@ -1,5 +1,7 @@
 // Relative Sort Array
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.RelativeSortArray
@@ -49,6 +51,16 @@ namespace CompetitiveProgramming.LeetCode.RelativeSortArray
                 ResultTester.CheckResult<int[]>(Solution.RelativeSortArray(new int[]{28,6,22,8,44,17}, new int[]{22,28,8,6}), new int[]{22,28,8,6,17,44}),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Relative Sort Array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
         }
     }
 }

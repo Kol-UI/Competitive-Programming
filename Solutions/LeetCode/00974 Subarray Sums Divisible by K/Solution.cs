@@ -73,5 +73,14 @@ namespace CompetitiveProgramming.LeetCode.SubarraySumsDivisiblebyK
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Subarray Sums Divisible by K");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestSubarraySumsDivisiblebyK());
+        }
+    }
+}

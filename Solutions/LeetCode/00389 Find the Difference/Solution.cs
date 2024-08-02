@@ -29,6 +29,8 @@ s and t consist of lowercase English letters.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FindtheDifference
@@ -72,6 +74,16 @@ namespace CompetitiveProgramming.LeetCode.FindtheDifference
                 ResultTester.CheckResult<char>(Case2_389, 'y')
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find the Difference");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestFindtheDifference());
         }
     }
 }

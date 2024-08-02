@@ -62,4 +62,14 @@ namespace CompetitiveProgramming.LeetCode.BestSightseeingPair
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Best Sightseeing Pair");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestBestSightseeingPair());
+        }
+    }
 }

@@ -18,6 +18,8 @@ Output: false
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.CheckIfItIsaStraightLine
@@ -71,6 +73,16 @@ namespace CompetitiveProgramming.LeetCode.CheckIfItIsaStraightLine
                 ResultTester.CheckResult<bool>(result2, false)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Check If It Is a Straight Line");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCheckIfItIsaStraightLine());
         }
     }
 }

@@ -98,4 +98,14 @@ namespace CompetitiveProgramming.LeetCode.SquaresofaSortedArray
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Squares of a Sorted Array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestSquaresofaSortedArray());
+        }
+    }
 }
