@@ -29,6 +29,8 @@ The tree structure of the employees in the company is shown.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.TimeNeededtoInformAllEmployees
@@ -90,6 +92,16 @@ namespace CompetitiveProgramming.LeetCode.TimeNeededtoInformAllEmployees
                 ResultTester.CheckResult<int>(result2, 1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Title");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestTimeNeededtoInformAllEmployees());
         }
     }
 }

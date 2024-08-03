@@ -96,4 +96,14 @@ namespace CompetitiveProgramming.LeetCode.EliminateMaximumNumberofMonsters
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Eliminate Maximum Number of Monsters");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

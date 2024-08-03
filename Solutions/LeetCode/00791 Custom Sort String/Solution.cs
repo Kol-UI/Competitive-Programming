@@ -23,4 +23,14 @@ namespace CompetitiveProgramming.LeetCode.CustomSortString
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Custom Sort String");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

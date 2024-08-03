@@ -42,4 +42,14 @@ namespace CompetitiveProgramming.LeetCode.PartitionArrayforMaximumSum
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Partition Array for Maximum Sum");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

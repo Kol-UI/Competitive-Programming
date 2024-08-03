@@ -83,4 +83,14 @@ namespace CompetitiveProgramming.LeetCode.MinimizetheMaximumDifferenceofPairs
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Minimize the Maximum Difference of Pairs");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCase());
+        }
+    }
 }

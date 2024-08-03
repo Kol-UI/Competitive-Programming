@@ -1,4 +1,7 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.LinkedListRandomNode
 {
     // Given a singly linked list, return a random node's value from the linked list. Each node must have the same probability of being chosen.
@@ -41,6 +44,16 @@ namespace CompetitiveProgramming.LeetCode.LinkedListRandomNode
         public int GetRandom()
         {
             return values.ElementAt(random.Next(values.Count));
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Linked List Random Node");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

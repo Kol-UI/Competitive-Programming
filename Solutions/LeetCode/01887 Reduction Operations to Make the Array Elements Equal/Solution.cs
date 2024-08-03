@@ -83,4 +83,14 @@ namespace CompetitiveProgramming.LeetCode.ReductionOperationstoMaketheArrayEleme
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Reduction Operations to Make the Array Elements Equal");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

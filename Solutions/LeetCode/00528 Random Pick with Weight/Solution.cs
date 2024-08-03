@@ -48,6 +48,9 @@ and so on.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.RandomPickwithWeight
 {
     public class Solution
@@ -96,4 +99,14 @@ namespace CompetitiveProgramming.LeetCode.RandomPickwithWeight
     * Solution obj = new Solution(w);
     * int param_1 = obj.PickIndex();
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Random Pick with Weight");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

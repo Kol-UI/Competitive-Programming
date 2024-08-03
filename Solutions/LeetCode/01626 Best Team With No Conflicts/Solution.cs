@@ -83,5 +83,14 @@ namespace CompetitiveProgramming.LeetCode.BestTeamWithNoConflicts
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Best Team With No Conflicts");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
+}

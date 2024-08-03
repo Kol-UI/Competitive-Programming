@@ -49,4 +49,14 @@ namespace CompetitiveProgramming.LeetCode.CountNodesEqualtoAverageofSubtree
             return new Tuple<int, int>(nodeSum, nodeCount);
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Count Nodes Equal to Average of Subtree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

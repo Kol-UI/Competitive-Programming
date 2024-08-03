@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LengthofLongestSubarrayWithatMostKFrequency
@@ -48,6 +50,16 @@ namespace CompetitiveProgramming.LeetCode.LengthofLongestSubarrayWithatMostKFreq
                 ResultTester.CheckResult<int>(Solution.MaxSubarrayLength(new int[]{5,5,5,5,5,5,5}, 4), 4),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Length of Longest Subarray With at Most K Frequency");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

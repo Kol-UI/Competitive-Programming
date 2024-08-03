@@ -29,6 +29,8 @@ Input: n = 1, k = 0, row = 0, column = 0
 Output: 1.00000
 */
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.KnightProbabilityinChessboard
@@ -122,6 +124,16 @@ namespace CompetitiveProgramming.LeetCode.KnightProbabilityinChessboard
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Knight Probability in Chessboard");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestKnightProbabilityinChessboard());
         }
     }
 }

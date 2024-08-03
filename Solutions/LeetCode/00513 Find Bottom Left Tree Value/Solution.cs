@@ -25,4 +25,14 @@ namespace CompetitiveProgramming.LeetCode.FindBottomLeftTreeValue
             return root.val;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Find Bottom Left Tree Value");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

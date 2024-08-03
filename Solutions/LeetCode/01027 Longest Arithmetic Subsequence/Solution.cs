@@ -29,6 +29,8 @@ Explanation:  The longest arithmetic subsequence is [20,15,10,5].
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LongestArithmeticSubsequence
@@ -84,6 +86,16 @@ namespace CompetitiveProgramming.LeetCode.LongestArithmeticSubsequence
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Longest Arithmetic Subsequence");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestLongestArithmeticSubsequence());
         }
     }
 }

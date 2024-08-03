@@ -78,4 +78,14 @@ namespace CompetitiveProgramming.LeetCode.LastMomentBeforeAllAntsFallOutofaPlank
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Last Moment Before All Ants Fall Out of a Plank");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

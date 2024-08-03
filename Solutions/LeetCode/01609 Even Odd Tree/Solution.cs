@@ -49,4 +49,14 @@ namespace CompetitiveProgramming.LeetCode.EvenOddTree
             return true;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Even Odd Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

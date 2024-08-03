@@ -86,3 +86,16 @@ public class Solution
     }
 }
 */
+
+namespace CompetitiveProgramming.LeetCode.LongestZigZagPathinaBinaryTree
+{
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Longest ZigZag Path in a Binary Tree");
+            TestDrivenDevelopment.ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
+}

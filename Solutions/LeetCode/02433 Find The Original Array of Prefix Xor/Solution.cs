@@ -61,4 +61,14 @@ namespace CompetitiveProgramming.LeetCode.FindTheOriginalArrayofPrefixXor
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Find The Original Array of Prefix Xor");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

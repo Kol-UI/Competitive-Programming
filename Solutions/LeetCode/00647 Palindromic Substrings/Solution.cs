@@ -1,6 +1,8 @@
 // Palindromic Substrings
 
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.PalindromicSubstrings
 {
@@ -38,6 +40,16 @@ namespace CompetitiveProgramming.LeetCode.PalindromicSubstrings
                 ResultTester.CheckResult<int>(Solution.CountSubstrings("aaa"), 6),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Palindromic Substrings");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

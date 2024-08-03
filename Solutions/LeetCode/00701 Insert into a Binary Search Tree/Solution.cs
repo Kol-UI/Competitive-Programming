@@ -1,4 +1,7 @@
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.InsertintoaBinarySearchTree
 {
@@ -47,5 +50,15 @@ namespace CompetitiveProgramming.LeetCode.InsertintoaBinarySearchTree
         
         // return root;
         // }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Insert into a Binary Search Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
     }
 }

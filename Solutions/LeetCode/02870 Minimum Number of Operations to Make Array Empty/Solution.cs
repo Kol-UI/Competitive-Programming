@@ -59,4 +59,14 @@ namespace CompetitiveProgramming.LeetCode.MinimumNumberofOperationstoMakeArrayEm
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Minimum Number of Operations to Make Array Empty");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

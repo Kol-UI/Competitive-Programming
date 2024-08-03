@@ -30,6 +30,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.PeakIndexinaMountainArray
@@ -74,6 +76,16 @@ namespace CompetitiveProgramming.LeetCode.PeakIndexinaMountainArray
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Peak Index in a Mountain Array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestPeakIndexinaMountainArray());
         }
     }
 }

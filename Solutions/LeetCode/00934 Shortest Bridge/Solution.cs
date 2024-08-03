@@ -25,6 +25,8 @@ Output: 1
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ShortestBridge
@@ -129,6 +131,16 @@ namespace CompetitiveProgramming.LeetCode.ShortestBridge
                 ResultTester.CheckResult<int>(result3, 1)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Shortest Bridge");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestShortestBridge());
         }
     }
 }

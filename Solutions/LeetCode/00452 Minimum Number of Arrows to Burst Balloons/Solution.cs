@@ -1,4 +1,6 @@
 ﻿using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumNumberofArrowstoBurstBalloons
@@ -95,5 +97,14 @@ namespace CompetitiveProgramming.LeetCode.MinimumNumberofArrowstoBurstBalloons
             return results;
         }
     }
-}
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Number of Arrows to Burst Balloons");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestMinimumNumberofArrowstoBurstBalloons());
+        }
+    }
+}

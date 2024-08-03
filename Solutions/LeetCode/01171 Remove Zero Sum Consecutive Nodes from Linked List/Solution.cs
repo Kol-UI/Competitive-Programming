@@ -48,4 +48,15 @@ namespace CompetitiveProgramming.LeetCode.RemoveZeroSumConsecutiveNodesfromLinke
             return result.next;
         }
     }
+
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Remove Zero Sum Consecutive Nodes from linked List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

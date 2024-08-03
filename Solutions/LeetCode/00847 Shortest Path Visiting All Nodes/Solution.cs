@@ -25,69 +25,79 @@ Explanation: One possible path is [0,1,4,2,3]
 using System;
 namespace CompetitiveProgramming.LeetCode.ShortestPathVisitingAllNodes
 {
-        public class Solution
+    public class Solution
+    {
+        private int Helper(int visited, int max, int[,] edgesMovement, int[][] graph, int node, IDictionary<(int node, int visited), int> cache)
         {
-            private int Helper(int visited, int max, int[,] edgesMovement, int[][] graph, int node, IDictionary<(int node, int visited), int> cache)
+            if (visited == max)
             {
-                if (visited == max)
-                {
-                    return 0;
-                }
+                return 0;
+            }
 
-                var key = (node, visited);
-                if (cache.ContainsKey(key))
-                {
-                    return cache[key];
-                }
+            var key = (node, visited);
+            if (cache.ContainsKey(key))
+            {
+                return cache[key];
+            }
 
-                visited |= (1 << node);
+            visited |= (1 << node);
 
-                int res = int.MaxValue;
-                foreach (var next in graph[node])
+            int res = int.MaxValue;
+            foreach (var next in graph[node])
+            {
+                if ((visited & (1 << next)) == 0 || edgesMovement[node, next] != 2)
                 {
-                    if ((visited & (1 << next)) == 0 || edgesMovement[node, next] != 2)
+                    edgesMovement[node, next]++;
+                    edgesMovement[next, node]++;
+                    int inner = Helper(visited, max, edgesMovement, graph, next, cache);
+                    if (inner != int.MaxValue)
                     {
-                        edgesMovement[node, next]++;
-                        edgesMovement[next, node]++;
-                        int inner = Helper(visited, max, edgesMovement, graph, next, cache);
-                        if (inner != int.MaxValue)
-                        {
-                            res = Math.Min(res, inner + 1);
-                        }
-                        edgesMovement[node, next]--;
-                        edgesMovement[next, node]--;
+                        res = Math.Min(res, inner + 1);
                     }
+                    edgesMovement[node, next]--;
+                    edgesMovement[next, node]--;
                 }
-
-                cache[key] = res;
-                return res;
             }
 
-            public int ShortestPathLength(int[][] graph)
-            {
-                int n = graph.Length;
-                if (n == 0)
-                {
-                    return 0;
-                }
-
-                if (n == 1)
-                {
-                    return 0;
-                }
-
-                int[,] edgesMovement = new int[n,n];
-                int max = (int)Math.Pow(2, n) - 1;
-
-                int res = int.MaxValue;
-                IDictionary<(int node, int visited), int> cache = new Dictionary<(int node, int visited), int>();
-                for (int i = 0; i < n; i++)
-                {
-                    var cand = Helper(0, max, edgesMovement, graph, i, cache);
-                    res = Math.Min(res, cand);
-                }
-
-                return res - 1;
-            }
+            cache[key] = res;
+            return res;
         }
+
+        public int ShortestPathLength(int[][] graph)
+        {
+            int n = graph.Length;
+            if (n == 0)
+            {
+                return 0;
+            }
+
+            if (n == 1)
+            {
+                return 0;
+            }
+
+            int[,] edgesMovement = new int[n,n];
+            int max = (int)Math.Pow(2, n) - 1;
+
+            int res = int.MaxValue;
+            IDictionary<(int node, int visited), int> cache = new Dictionary<(int node, int visited), int>();
+            for (int i = 0; i < n; i++)
+            {
+                var cand = Helper(0, max, edgesMovement, graph, i, cache);
+                res = Math.Min(res, cand);
+            }
+
+            return res - 1;
+        }
+    }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Shortest Path Visiting All Nodes");
+            TestDrivenDevelopment.ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

@@ -23,6 +23,8 @@ There may exists other ways to achive this answer too.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.LongestRepeatingCharacterReplacement
@@ -70,4 +72,13 @@ namespace CompetitiveProgramming.LeetCode.LongestRepeatingCharacterReplacement
         }
     }
 
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Longest Repeating Character Replacement");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestLongestRepeatingCharacterReplacement());
+        }
+    }
 }

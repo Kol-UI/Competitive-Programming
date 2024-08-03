@@ -1,5 +1,7 @@
 using System;
 using System.Text;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.FindAllAnagramsinaString
@@ -87,6 +89,16 @@ namespace CompetitiveProgramming.LeetCode.FindAllAnagramsinaString
                 ResultTester.CheckResult<IList<int>>(Solution.FindAnagrams("abab", "ab"), list2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Find All Anagrams in a String");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestFindAllAnagramsinaString());
         }
     }
 }

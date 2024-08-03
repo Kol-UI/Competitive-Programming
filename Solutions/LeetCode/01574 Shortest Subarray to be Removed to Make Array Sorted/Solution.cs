@@ -30,6 +30,8 @@ Explanation: The array is already non-decreasing. We do not need to remove any e
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ShortestSubarraytobeRemovedtoMakeArraySorted
@@ -82,6 +84,16 @@ namespace CompetitiveProgramming.LeetCode.ShortestSubarraytobeRemovedtoMakeArray
                 ResultTester.CheckResult<int>(result3, 0)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Shortest Subarray to be Removed to Make Array Sorted");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

@@ -77,4 +77,14 @@ namespace CompetitiveProgramming.LeetCode.DesignaFoodRatingSystem
     * obj.ChangeRating(food,newRating);
     * string param_2 = obj.HighestRated(cuisine);
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Design a Food Rating System");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

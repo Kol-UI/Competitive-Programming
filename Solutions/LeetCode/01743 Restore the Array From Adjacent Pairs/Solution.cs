@@ -88,5 +88,14 @@ namespace CompetitiveProgramming.LeetCode.RestoretheArrayFromAdjacentPairs
             return results;
         }
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Restore the Array From Adjacent Pairs");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
+}

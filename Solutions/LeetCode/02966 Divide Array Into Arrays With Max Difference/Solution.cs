@@ -74,4 +74,14 @@ namespace CompetitiveProgramming.LeetCode.DivideArrayIntoArraysWithMaxDifference
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Divide Array Into Arrays With Max Difference");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

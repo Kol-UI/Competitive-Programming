@@ -34,6 +34,8 @@ The maximum distance is 2 with pair (2,4).
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximumDistanceBetweenaPairofValues
@@ -92,6 +94,16 @@ namespace CompetitiveProgramming.LeetCode.MaximumDistanceBetweenaPairofValues
                 ResultTester.CheckResult<int>(result3, output3_1855)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximum Distance Between a Pair of Values");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

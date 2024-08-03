@@ -30,6 +30,9 @@ Explanation: Root is considered as good.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.CountGoodNodesinBinaryTree
 {
     /**
@@ -53,6 +56,16 @@ namespace CompetitiveProgramming.LeetCode.CountGoodNodesinBinaryTree
 
             max = Math.Max(root.val, max);
             return (root.val == max ? 1 : 0) + GoodNodes(root.left, max) + GoodNodes(root.right, max);
+        }
+    }
+    
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Count Good Nodes in Binary Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

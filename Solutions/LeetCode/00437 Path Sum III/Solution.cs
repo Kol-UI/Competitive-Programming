@@ -52,4 +52,14 @@ namespace CompetitiveProgramming.LeetCode.PathSumIII
             return (node.val == targetSum ? 1 : 0) + CalcSum(node.left, targetSum - node.val) + CalcSum(node.right, targetSum - node.val);
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Path Sum III");
+            TestDrivenDevelopment.ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

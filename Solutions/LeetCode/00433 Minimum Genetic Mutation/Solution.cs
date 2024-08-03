@@ -100,4 +100,14 @@ namespace CompetitiveProgramming.LeetCode.MinimumGeneticMutation
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Minimum Genetic Mutation");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestMinimumGeneticMutation());
+        }
+    }
 }

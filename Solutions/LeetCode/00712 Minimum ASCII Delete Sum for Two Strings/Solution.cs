@@ -79,4 +79,14 @@ namespace CompetitiveProgramming.LeetCode.MinimumASCIIDeleteSumforTwoStrings
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Minimum ASCII Delete Sum for Two Strings");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

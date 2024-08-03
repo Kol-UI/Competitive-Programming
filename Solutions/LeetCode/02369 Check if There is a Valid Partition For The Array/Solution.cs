@@ -84,3 +84,13 @@ public class Test
         return results;
     }
 }
+
+public class TestSolution : Models.BaseSolution
+{
+    public override void GetResult()
+    {
+        Helpers.StyleHelper.Space();
+        Helpers.StyleHelper.Title("Check if There is a Valid Partition For The Array");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+    }
+}

@@ -94,4 +94,14 @@ namespace CompetitiveProgramming.LeetCode.AmountofTimeforBinaryTreetoBeInfected
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Amount of Time for Binary Tree to Be Infected");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

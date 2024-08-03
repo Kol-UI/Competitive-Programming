@@ -31,6 +31,8 @@ Output: false
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ValidateBinaryTreeNodes;
@@ -102,5 +104,15 @@ public class Solution
         }
 
         return uf.components == 1;
+    }
+}
+
+public class TestSolution : BaseSolution
+{
+    public override void GetResult()
+    {
+        StyleHelper.Space();
+        StyleHelper.Title("Validate Binary Tree Nodes");
+        ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
     }
 }

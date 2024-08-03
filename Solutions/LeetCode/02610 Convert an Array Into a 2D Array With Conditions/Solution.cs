@@ -135,4 +135,14 @@ namespace CompetitiveProgramming.LeetCode.ConvertanArrayIntoaTwoDArrayWithCondit
             return testCases;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Convert an Array Into a 2D Array With Conditinos");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

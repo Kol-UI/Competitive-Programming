@@ -74,4 +74,14 @@ namespace CompetitiveProgramming.LeetCode.InsertDeleteGetRandom
     * bool param_2 = obj.Remove(val);
     * int param_3 = obj.GetRandom();
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Insert Delete GetRandom O(1)");
+            TestDrivenDevelopment.ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

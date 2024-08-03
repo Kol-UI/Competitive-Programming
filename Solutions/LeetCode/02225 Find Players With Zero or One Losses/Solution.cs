@@ -67,4 +67,13 @@ namespace CompetitiveProgramming.LeetCode.FindPlayersWithZeroorOneLosses
         }
     }
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Find Players With Zero or One Losses");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

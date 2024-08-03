@@ -60,4 +60,14 @@ namespace CompetitiveProgramming.LeetCode.DetermineifaCellIsReachableataGivenTim
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Determine if a Cell Is Reachable at a Given Time");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

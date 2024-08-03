@@ -116,4 +116,14 @@ namespace CompetitiveProgramming.LeetCode.MinimumNumberofDaystoMakemBouquets
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Minimum Number of Days to Make m Bouquest");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

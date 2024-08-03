@@ -18,6 +18,8 @@ Output: false
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.SumofSquareNumbers
@@ -67,6 +69,16 @@ namespace CompetitiveProgramming.LeetCode.SumofSquareNumbers
                 ResultTester.CheckResult<bool>(result2, false)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Sum of Square Numbers");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestSumofSquareNumbers());
         }
     }
 }

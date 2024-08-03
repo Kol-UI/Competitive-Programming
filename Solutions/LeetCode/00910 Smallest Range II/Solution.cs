@@ -73,4 +73,14 @@ namespace CompetitiveProgramming.LeetCode.SmallestRangeII
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Smallest Range II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestSmallestRangeII());
+        }
+    }
 }

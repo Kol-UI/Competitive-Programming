@@ -21,6 +21,8 @@ Output: 4
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ValidTriangleNumber
@@ -75,6 +77,16 @@ namespace CompetitiveProgramming.LeetCode.ValidTriangleNumber
                 ResultTester.CheckResult<int>(result2, 4)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Valid Triangle Number");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestValidTriangleNumber());
         }
     }
 }

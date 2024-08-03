@@ -59,4 +59,14 @@ namespace CompetitiveProgramming.LeetCode.FindtheSafestPathinaGrid
             return -1;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Find the Safest Path in a Grid");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

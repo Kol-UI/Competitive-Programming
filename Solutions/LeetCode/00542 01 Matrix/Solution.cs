@@ -22,6 +22,8 @@ Output: [[0,0,0],[0,1,0],[1,2,1]]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ZeroOneMatrix
@@ -103,6 +105,16 @@ namespace CompetitiveProgramming.LeetCode.ZeroOneMatrix
                 ResultTester.CheckResult<int[][]>(result2, expected2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("01 Matrix");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestZeroOneMatrix());
         }
     }
 }

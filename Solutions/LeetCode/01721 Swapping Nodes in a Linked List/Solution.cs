@@ -18,6 +18,9 @@ Output: [7,9,6,6,8,7,3,0,9,5]
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.SwappingNodesinaLinkedList
 {
 /**
@@ -49,6 +52,16 @@ namespace CompetitiveProgramming.LeetCode.SwappingNodesinaLinkedList
             nodeList[nodeList.Count() - k].val = tempVal;
 
             return head;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Swapping Nodes in a Linked List");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }

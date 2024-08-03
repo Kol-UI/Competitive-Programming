@@ -33,6 +33,8 @@ Explanation: The network rank of 2 and 5 is 5. Notice that all the cities do not
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximalNetworkRank
@@ -117,6 +119,16 @@ namespace CompetitiveProgramming.LeetCode.MaximalNetworkRank
                 ResultTester.CheckResult<int>(result3, 5)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximal Network Rank");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

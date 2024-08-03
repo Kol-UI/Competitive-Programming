@@ -89,4 +89,14 @@ namespace CompetitiveProgramming.LeetCode.RemoveColoredPiecesifBothNeighborsaret
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Remove Colored Pieces if Both Neighbors are the Same Color");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

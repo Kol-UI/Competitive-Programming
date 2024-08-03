@@ -102,4 +102,14 @@ namespace CompetitiveProgramming.LeetCode.LinkedListinBinaryTree
             return (head.val == root.val && (dfs(head.next, root.left) || dfs(head.next, root.right)));
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Linked List in Binary Tree");
+            TestDrivenDevelopment.ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

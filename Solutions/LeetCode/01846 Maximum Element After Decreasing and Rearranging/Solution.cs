@@ -83,3 +83,13 @@ public class Test
         return results;
     }
 }
+
+public class TestSolution : Models.BaseSolution
+{
+    public override void GetResult()
+    {
+        Helpers.StyleHelper.Space();
+        Helpers.StyleHelper.Title("Maximum Element After Decreasing and Rearranging");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+    }
+}

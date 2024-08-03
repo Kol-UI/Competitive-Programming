@@ -130,4 +130,14 @@ namespace CompetitiveProgramming.LeetCode.DifferenceBetweenOnesandZerosinRowandC
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Difference Between Ones and Zeros in Row and Column");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

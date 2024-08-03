@@ -1,4 +1,5 @@
 ﻿using System;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MinimumTimetoCollectAllApplesinaTree
 {
@@ -76,5 +77,14 @@ namespace CompetitiveProgramming.LeetCode.MinimumTimetoCollectAllApplesinaTree
         }
 
     }
-}
 
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Minimum Time to Collect All Apples in a Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
+}

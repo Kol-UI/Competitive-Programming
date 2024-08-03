@@ -27,6 +27,8 @@ Explanation: The ugly numbers are 2, 4, 6, 8, 10, 11, 12, 13... The 5th is 10.
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.UglyNumberIII
 {
@@ -83,6 +85,16 @@ namespace CompetitiveProgramming.LeetCode.UglyNumberIII
                 ResultTester.CheckResult<int>(Solution.NthUglyNumber(5, 2, 11, 13), 10),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Ugly Number III");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

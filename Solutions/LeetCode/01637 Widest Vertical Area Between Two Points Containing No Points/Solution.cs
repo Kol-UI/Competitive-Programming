@@ -46,4 +46,14 @@ namespace CompetitiveProgramming.LeetCode.WidestVerticalAreaBetweenTwoPointsCont
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Widest Vertical Area Between Two Points Containing No Points");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

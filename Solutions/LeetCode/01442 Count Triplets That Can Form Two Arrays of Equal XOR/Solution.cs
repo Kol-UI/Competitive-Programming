@@ -38,4 +38,14 @@ namespace CompetitiveProgramming.LeetCode.CountTripletsThatCanFormTwoArraysofEqu
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Count Triplets That Can Form Two Arrays of Equel XOR");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

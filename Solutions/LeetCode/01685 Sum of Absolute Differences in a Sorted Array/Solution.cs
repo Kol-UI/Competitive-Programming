@@ -71,4 +71,14 @@ namespace CompetitiveProgramming.LeetCode.SumofAbsoluteDifferencesinaSortedArray
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Sum of Absolute Differences in a Sorted Array");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

@@ -68,3 +68,13 @@ public class TimeMap
  * obj.Set(key,value,timestamp);
  * string param_2 = obj.Get(key,timestamp);
  */
+
+public class TestSolution : Models.BaseSolution
+{
+    public override void GetResult()
+    {
+        Helpers.StyleHelper.Space();
+        Helpers.StyleHelper.Title("Time Based Key-Value Store");
+        TestDrivenDevelopment.ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+    }
+}

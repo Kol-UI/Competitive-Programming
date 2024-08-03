@@ -87,4 +87,14 @@ namespace CompetitiveProgramming.LeetCode.LongestArithmeticSubsequenceofGivenDif
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Longest Arithmetic Subsequence of Given Difference");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestLongestArithmeticSubsequenceofGivenDifference());
+        }
+    }
 }

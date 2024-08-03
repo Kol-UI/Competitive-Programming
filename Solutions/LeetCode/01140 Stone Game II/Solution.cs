@@ -21,6 +21,8 @@ Output: 104
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.StoneGameII
@@ -85,6 +87,16 @@ namespace CompetitiveProgramming.LeetCode.StoneGameII
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Stone Game II");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Solution.TestStoneGameII());
         }
     }
 }

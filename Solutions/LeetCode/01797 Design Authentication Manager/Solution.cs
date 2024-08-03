@@ -79,4 +79,14 @@ namespace CompetitiveProgramming.LeetCode.DesignAuthenticationManager
     * obj.Renew(tokenId,currentTime);
     * int param_3 = obj.CountUnexpiredTokens(currentTime);
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Design Authentication Manager");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

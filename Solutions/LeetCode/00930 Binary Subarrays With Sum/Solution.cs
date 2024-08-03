@@ -2,6 +2,8 @@
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.BinarySubarraysWithSum
@@ -46,6 +48,16 @@ namespace CompetitiveProgramming.LeetCode.BinarySubarraysWithSum
                 ResultTester.CheckResult<int>(Solution.NumSubarraysWithSum(new int[]{0,0,0,0,0}, 0), 15),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Binary Subarrays With Sum");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

@@ -25,6 +25,8 @@ Output: 0
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MostProfitAssigningWork
@@ -79,6 +81,16 @@ namespace CompetitiveProgramming.LeetCode.MostProfitAssigningWork
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Most Profit Assigning Work");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestMostProfitAssigningWork());
         }
     }
 }

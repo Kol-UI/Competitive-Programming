@@ -78,4 +78,14 @@ namespace CompetitiveProgramming.LeetCode.FindtheSmallestDivisorGivenaThreshold
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Find the Smallest Divisor Given a Threshold");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

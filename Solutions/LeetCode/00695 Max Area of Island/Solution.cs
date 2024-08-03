@@ -23,6 +23,8 @@ Output: 0
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaxAreaofIsland
@@ -118,6 +120,16 @@ namespace CompetitiveProgramming.LeetCode.MaxAreaofIsland
             };
 
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Max Aray of Island");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestMaxAreaofIsland());
         }
     }
 }

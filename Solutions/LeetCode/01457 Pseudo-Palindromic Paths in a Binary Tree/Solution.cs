@@ -69,4 +69,14 @@ namespace CompetitiveProgramming.LeetCode.PseudoPalindromicPathsinaBinaryTree
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Pseudo-Palindromic Paths in a Binary Tree");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

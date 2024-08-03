@@ -29,6 +29,8 @@ solution.shuffle();    // Returns the random shuffling of array [1,2,3]. Example
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ShuffleanArray
@@ -59,4 +61,14 @@ namespace CompetitiveProgramming.LeetCode.ShuffleanArray
     * int[] param_1 = obj.Reset();
     * int[] param_2 = obj.Shuffle();
     */
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Shuffle an Array");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

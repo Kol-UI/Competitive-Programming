@@ -76,3 +76,13 @@ public class Test
         return results;
     }
 }
+
+public class TestSolution : Models.BaseSolution
+{
+    public override void GetResult()
+    {
+        Helpers.StyleHelper.Space();
+        Helpers.StyleHelper.Title("Maximum Length of Pair Chain");
+        ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+    }
+}

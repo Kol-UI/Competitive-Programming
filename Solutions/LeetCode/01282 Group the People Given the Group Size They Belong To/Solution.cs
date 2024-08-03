@@ -100,4 +100,14 @@ namespace CompetitiveProgramming.LeetCode.GroupthePeopleGiventheGroupSizeTheyBel
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Group the People Given the Group Size They Belong To");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

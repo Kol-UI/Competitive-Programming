@@ -76,4 +76,14 @@ namespace CompetitiveProgramming.LeetCode.PermutationinString
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Permutation in String");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestValidTriangleNumber());
+        }
+    }
 }

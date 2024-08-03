@@ -52,4 +52,14 @@ namespace CompetitiveProgramming.LeetCode.NumberofStepstoReduceaNumberinBinaryRe
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Number of Steps to Reduce a Number in Binary Representation to One");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

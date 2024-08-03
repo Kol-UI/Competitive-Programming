@@ -64,4 +64,14 @@ namespace CompetitiveProgramming.LeetCode.SubarrayProductLessThanK
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Subarray Produc Less Than K");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestSubarrayProductLessThanK());
+        }
+    }
 }

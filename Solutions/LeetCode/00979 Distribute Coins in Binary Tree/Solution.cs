@@ -39,4 +39,14 @@ namespace CompetitiveProgramming.LeetCode.DistributeCoinsinBinaryTree
             }
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Distribute Coins in Binary Tree");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

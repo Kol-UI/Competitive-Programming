@@ -1,5 +1,7 @@
 // Maximize Happiness of Selected Children
 
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.MaximizeHappinessofSelectedChildren
@@ -41,6 +43,16 @@ namespace CompetitiveProgramming.LeetCode.MaximizeHappinessofSelectedChildren
                 ResultTester.CheckResult<long>(Solution.MaximumHappinessSum(new int[]{2,3,4,5}, 1), 5),
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Maximize Happiness of Selected Children");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

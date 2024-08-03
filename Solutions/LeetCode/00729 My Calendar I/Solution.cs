@@ -128,4 +128,14 @@ namespace CompetitiveProgramming.LeetCode.MyCalendarI
     * MyCalendar obj = new MyCalendar();
     * bool param_1 = obj.Book(start,end);
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("My Calendar I");
+            TestDrivenDevelopment.ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

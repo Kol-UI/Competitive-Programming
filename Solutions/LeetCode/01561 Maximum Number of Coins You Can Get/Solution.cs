@@ -78,4 +78,14 @@ namespace CompetitiveProgramming.LeetCode.MaximumNumberofCoinsYouCanGet
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Maximum Number of Coins You Can Get");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

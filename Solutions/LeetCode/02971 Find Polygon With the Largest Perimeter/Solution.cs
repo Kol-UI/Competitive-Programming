@@ -42,4 +42,14 @@ namespace CompetitiveProgramming.LeetCode.FindPolygonWiththeLargestPerimeter
             return results;
         }
     }
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Find Polygon With the Largest Perimeter");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
+        }
+    }
 }

@@ -49,6 +49,8 @@ After that, it will rain over lakes [1,2]. It's easy to prove that no matter whi
 */
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.AvoidFloodinTheCity
@@ -108,6 +110,16 @@ namespace CompetitiveProgramming.LeetCode.AvoidFloodinTheCity
                 ResultTester.CheckResult<int[]>(result2, expected2)
             };
             return results;
+        }
+    }
+
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Avoid Flood in The City");
+            ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
         }
     }
 }

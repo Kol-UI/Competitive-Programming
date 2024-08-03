@@ -99,4 +99,14 @@ namespace CompetitiveProgramming.LeetCode.OnlineElection
     * TopVotedCandidate obj = new TopVotedCandidate(persons, times);
     * int param_1 = obj.Q(t);
     */
+
+    public class TestSolution : Models.BaseSolution
+    {
+        public override void GetResult()
+        {
+            Helpers.StyleHelper.Space();
+            Helpers.StyleHelper.Title("Online Election");
+            TestDrivenDevelopment.ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+        }
+    }
 }

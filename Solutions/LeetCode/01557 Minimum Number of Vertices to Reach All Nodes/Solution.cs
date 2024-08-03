@@ -23,6 +23,9 @@ Explanation: Notice that vertices 0, 3 and 2 are not reachable from any other no
 
 
 using System;
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 namespace CompetitiveProgramming.LeetCode.MinimumNumberofVerticestoReachAllNodes
 {
     public class Solution
@@ -34,6 +37,16 @@ namespace CompetitiveProgramming.LeetCode.MinimumNumberofVerticestoReachAllNodes
                 set.Remove(edge[1]);
                 return set;
             }).ToArray();
+        }
+    }
+    
+    public class TestSolution : BaseSolution
+    {
+        public override void GetResult()
+        {
+            StyleHelper.Space();
+            StyleHelper.Title("Minimum Number of Vertices to Reach All Nodes");
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }
