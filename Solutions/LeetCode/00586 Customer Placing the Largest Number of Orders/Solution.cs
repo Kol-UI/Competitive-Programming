@@ -13,6 +13,10 @@ namespace CompetitiveProgramming.LeetCode.CustomerPlacingtheLargestNumberofOrder
             StyleHelper.Space();
             StyleHelper.Title("Customer Placing the Largest Number of Orders");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+            for (int i = 0; i < 15; i++)
+            {
+                ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
+            }
         }
     }
 }
