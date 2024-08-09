@@ -74,11 +74,11 @@ namespace CompetitiveProgramming.LeetCode.RemoveDuplicatesfromSortedArray
 
             bool[] results = new bool[]
             {
-                ResultTester.CheckResult<double>(Solution.RemoveDuplicates(nums1), 2),
-                ResultTester.CheckResult<double>(Solution.RemoveDuplicates(nums2), 5),
-                ResultTester.CheckResult<double>(Solution.RemoveDuplicates(nums3), 1),
-                ResultTester.CheckResult<double>(Solution.RemoveDuplicates(nums4), 3),
-                ResultTester.CheckResult<double>(Solution.RemoveDuplicates(nums5), 1),
+                ResultTester.CheckResult<int>(Solution.RemoveDuplicates(nums1), 2),
+                ResultTester.CheckResult<int>(Solution.RemoveDuplicates(nums2), 5),
+                ResultTester.CheckResult<int>(Solution.RemoveDuplicates(nums3), 1),
+                ResultTester.CheckResult<int>(Solution.RemoveDuplicates(nums4), 3),
+                ResultTester.CheckResult<int>(Solution.RemoveDuplicates(nums5), 1),
             };
             return results;
         }
