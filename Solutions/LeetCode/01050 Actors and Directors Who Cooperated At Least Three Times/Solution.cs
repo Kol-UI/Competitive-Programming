@@ -13,7 +13,6 @@ namespace CompetitiveProgramming.LeetCode.ActorsandDirectorsWhoCooperatedAtLeast
             StyleHelper.Space();
             StyleHelper.Title("Actors and Directors Who Cooperated At Least Three Times");
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }
