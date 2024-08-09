@@ -30,10 +30,17 @@ namespace CompetitiveProgramming.Helpers
             {
                 Console.Write($"| {row.Source.PadRight(padSource)} | ");
 
-                Console.ForegroundColor = otherColor;
-                Console.Write(row.Other.HasValue ? row.Other.ToString()!.PadRight(padValues) : "x".PadRight(padValues));
-                otherTotal += row.Other ?? 0;
-                Console.ResetColor();
+                if (row.Other.HasValue)
+                {
+                    Console.ForegroundColor = otherColor;
+                    Console.Write(row.Other.ToString()!.PadRight(padValues));
+                    otherTotal += row.Other ?? 0;
+                    Console.ResetColor();
+                }
+                else
+                {
+                    Console.Write("x".PadRight(padValues));
+                }
 
                 Console.Write(" | ");
 
