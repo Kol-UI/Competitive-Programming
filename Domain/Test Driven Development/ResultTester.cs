@@ -302,13 +302,13 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             {
                 IncrementCategoryCounter(category);
                 IncrementOriginCounter(source);
-                //SourceManager(source);
                 ValidateSolution();
             }
             else
             {
                 InvalidateSolution();
             }
+            SourceManager(source);
         }
 
         public static void SpecialTestCase(ProblemOrigin source)
@@ -331,6 +331,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             TestSolution();
             IncrementCategoryCounter(category);
             IncrementOriginCounter(source);
+            SourceManager(source);
         }
 
         private static void SourceManager(ProblemOrigin source)

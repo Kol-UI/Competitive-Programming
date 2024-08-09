@@ -47,7 +47,7 @@ namespace CompetitiveProgramming.LeetCode.GetEqualSubstringsWithinBudget
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<int>(Solution.EqualSubstring("abcd", "bcdf", 3), 3),
-                ResultTester.CheckResult<int>(Solution.EqualSubstring("abcd", "cdef", 3), 3),
+                ResultTester.CheckResult<int>(Solution.EqualSubstring("abcd", "cdef", 3), 1),
                 ResultTester.CheckResult<int>(Solution.EqualSubstring("abcd", "acde", 0), 1),
             };
 
