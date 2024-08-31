@@ -12,7 +12,7 @@ namespace CompetitiveProgramming.LeetCode.SalesPerson
         {
             StyleHelper.Space();
             StyleHelper.Title("Sales Person");
-            for(int i = 0; i < 3; i++)
+            for(int i = 0; i < 2; i++)
             {
                 ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
             }
