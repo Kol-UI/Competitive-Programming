@@ -5,7 +5,7 @@ namespace CompetitiveProgramming.Algorithms
     {
         enum WeatherState { Sunny, Cloudy, Rainy }
 
-        static void Main(string[] args)
+        static void TestMarkovChain()
         {
             WeatherState currentState = WeatherState.Sunny;
             Random random = new Random();

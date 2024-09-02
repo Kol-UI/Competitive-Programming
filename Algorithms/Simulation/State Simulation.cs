@@ -1,11 +1,12 @@
 namespace CompetitiveProgramming.Algorithms
 {
     // See Discrete Markov Chain
+    // See LC 2582 Solution2 for State Simulation Sample
     public class TrafficLight
     {
         enum LightState { Red, Green, Yellow }
 
-        static void Main(string[] args)
+        static void TestTrafficLight()
         {
             LightState currentState = LightState.Red;
             int time = 0;

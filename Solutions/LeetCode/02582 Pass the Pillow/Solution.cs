@@ -36,14 +36,40 @@ namespace CompetitiveProgramming.LeetCode.PassthePillow
         }
     }
 
+    public class Solution2
+    {
+        public int PassThePillow(int n, int time)
+        {
+            int position = 1;
+            int direction = 1;
+
+            while (time > 0)
+            {
+                position += direction;
+
+                if (position == n || position == 1)
+                {
+                    direction *= -1;
+                }
+
+                time--;
+            }
+
+            return position;
+        }
+    }
+
     public class Test
     {
         public static bool[] TestCases()
         {
+            Solution2 solution2 = new();
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<int>(Solution.PassThePillow(4, 5), 2),
                 ResultTester.CheckResult<int>(Solution.PassThePillow(3, 2), 3),
+                ResultTester.CheckResult<int>(solution2.PassThePillow(4, 5), 2),
+                ResultTester.CheckResult<int>(solution2.PassThePillow(3, 2), 3),
             };
             return results;
         }
