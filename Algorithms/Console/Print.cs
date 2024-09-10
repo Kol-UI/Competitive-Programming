@@ -2,6 +2,11 @@ namespace CompetitiveProgramming.Algorithms;
 
 public class Print
 {
+    public static void PrintIntArray(int[] array)
+    {
+        Console.WriteLine(String.Join(", ", array));
+    }
+    
     public void PrintMatrix(int[][] matrix)
     {
         if (matrix == null || matrix.Length == 0)
