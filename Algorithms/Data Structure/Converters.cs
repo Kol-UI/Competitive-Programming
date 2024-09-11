@@ -32,5 +32,15 @@ namespace CompetitiveProgramming.Algorithms
 
             return list.ToArray();
         }
+
+        public static int BinaryToInt(string binary)
+        {
+            return Convert.ToInt32(binary, 2);
+        }
+
+        public static string IntToBinary(int number)
+        {
+            return Convert.ToString(number, 2);
+        }
     }
 }
