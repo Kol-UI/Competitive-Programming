@@ -19,5 +19,17 @@ namespace CompetitiveProgramming.Algorithms
             return lowerChar - 'a' + 1;
         }
         #endregion
+
+        #region LC 1684
+        private static HashSet<char> CreateCharacterSet(string allowed)
+        {
+            return new HashSet<char>(allowed);
+        }
+
+        private static bool IsStringContainsChar(string word, HashSet<char> allowedSet)
+        {
+            return word.All(character => allowedSet.Contains(character));
+        }
+        #endregion
     }
 }
