@@ -37,7 +37,7 @@ namespace CompetitiveProgramming.LeetCode.LongestSubarrayWithMaximumBitwiseAND
         {
             StyleHelper.Space();
             StyleHelper.Title("Longest Subarray With Maximum Bitwise AND");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
+            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.MediumLC);
         }
     }
 }
