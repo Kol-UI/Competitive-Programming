@@ -68,5 +68,12 @@ namespace CompetitiveProgramming.Algorithms
 
             return input.Length;
         }
+
+        #region LC 884
+        public static List<string> SplitSentenceIntoWords(string sentence)
+        {
+            return sentence.Split(' ').ToList();
+        }
+        #endregion
     }
 }
