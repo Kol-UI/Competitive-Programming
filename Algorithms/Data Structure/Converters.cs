@@ -42,5 +42,10 @@ namespace CompetitiveProgramming.Algorithms
         {
             return Convert.ToString(number, 2);
         }
+
+        public static string[] ConvertToStringArray(int[] nums)
+        {
+            return nums.Select(num => num.ToString()).ToArray();
+        }
     }
 }
