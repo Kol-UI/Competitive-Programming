@@ -2,6 +2,22 @@ namespace CompetitiveProgramming.Algorithms
 {
     public class Palindrome
     {
+        #region 214
+        public static bool IsPalindrome(string s, int start, int end)
+        {
+            while (start < end)
+            {
+                if (s[start] != s[end])
+                {
+                    return false;
+                }
+                start++;
+                end--;
+            }
+            return true;
+        }
+        #endregion
+
         #region LC564
         public static string NearestPalindromic(string input)
         {

@@ -2,6 +2,15 @@ namespace CompetitiveProgramming.Algorithms
 {
     public class StringManipulation
     {
+        #region 214
+        public static string ReverseString(string s)
+        {
+            char[] charArray = s.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
+        #endregion
+
         #region LC 1945
         public static string ConvertStringToAlphabetPosition(string s)
         {
