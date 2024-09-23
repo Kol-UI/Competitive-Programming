@@ -1,6 +1,6 @@
 namespace CompetitiveProgramming.Algorithms
 {
-    public class Logic
+    public class BooleanLogic
     {
         public static bool Negation(bool a) => !a;
         public static bool Conjunction(bool a, bool b) => a && b;
