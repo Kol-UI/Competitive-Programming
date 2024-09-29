@@ -21,5 +21,15 @@ namespace CompetitiveProgramming.Algorithms
 
             return new int[]{};
         }
+
+        private static int CountOddNumbers(int[] array)
+        {
+            return array.Count(x => x % 2 != 0);
+        }
+
+        private static int CountEvenNumbers(int[] array)
+        {
+            return array.Count(x => x % 2 == 0);
+        }
     }
 }
