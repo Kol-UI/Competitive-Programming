@@ -8,7 +8,8 @@ namespace CompetitiveProgramming.CodeForces.BlankSpace
 {
     public class Solution
     {
-        public static void Main(string[] args)
+        //public static void Main(string[] args)
+        public static void MainSolution()
         {
             int numberOfTestCases = ReadInt();
             List<int> results = new List<int>();
