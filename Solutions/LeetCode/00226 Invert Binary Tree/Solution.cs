@@ -41,6 +41,21 @@ namespace CompetitiveProgramming.LeetCode.InvertBinaryTree
         //     node.left = node.right;
         //     node.right = a;
         // }
+
+
+        public TreeNode InvertTree(TreeNode root)
+        {
+            if (root == null) return null!;
+
+            TreeNode temp = root.left;
+            root.left = root.right;
+            root.right = temp;
+
+            InvertTree(root.left);
+            InvertTree(root.right);
+
+            return root;
+        }
     }
 
     public class TestSolution : BaseSolution
