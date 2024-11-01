@@ -44,6 +44,7 @@ public enum ProblemCategory
     EasyLC = 64,
     EasyCSA = 65,
     EasyKAT = 66,
+    EasyHE = 67,
     
 
     FourKyu = 15,
@@ -57,6 +58,7 @@ public enum ProblemCategory
     MediumGFG = 72,
     MediumHR = 73,
     MediumLC = 74,
+    MediumHE = 75,
 
     TwoKyu = 22,
     OneKyu = 23,
@@ -69,6 +71,7 @@ public enum ProblemCategory
     HardGFG = 82,
     HardHR = 83,
     HardLC = 84,
+    HardHE = 85,
 
 
     // OTHER

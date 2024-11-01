@@ -17,4 +17,5 @@ public enum ProblemOrigin
     ProjectEuler = 12,
     SphereOnlineJudge = 13,
     CodingBlocks = 14,
+    HackerEarth = 15,
 }

@@ -42,6 +42,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         private static int _counterCodingBlocksProblem = 0;
         private static int _counterCSAcademyProblem = 0;
         private static int _counterProjectEulerProblem = 0;
+        private static int _counterHackerEarthProblem = 0;
         private static int _counterOtherSourceProblem = 0;
         
         // Lock
@@ -380,6 +381,9 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 case ProblemOrigin.ProjectEuler:
                     _counterProjectEulerProblem++;
                     break;
+                case ProblemOrigin.HackerEarth:
+                    _counterHackerEarthProblem++;
+                    break;
                 default:
                     _counterOtherSourceProblem++;
                     break;
@@ -515,6 +519,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
             counters.Append("ProjectEuler Problems : [" + _counterProjectEulerProblem.ToString() + "]" + separator);
             counters.Append("SPOJ Problems : [" + _counterSphreOnlineJudgeProblem.ToString() + "]" + separator);
             counters.Append("CodingBlocks Problems : [" + _counterCodingBlocksProblem.ToString() + "]" + separator);
+            counters.Append("HackerEarth Problems : [" + _counterHackerEarthProblem.ToString() + "]" + separator);
             if (_counterOtherSourceProblem != 0)
             {
                 counters.Append(separator + "Other Sources Problems : [" + _counterOtherSourceProblem.ToString() + "]");
