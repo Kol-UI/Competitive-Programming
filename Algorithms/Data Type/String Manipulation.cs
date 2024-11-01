@@ -84,5 +84,13 @@ namespace CompetitiveProgramming.Algorithms
             return sentence.Split(' ').ToList();
         }
         #endregion
+
+        #region CW Convert a string to an array
+        // "Hello World" => new string[]{"Hello", "World"}
+        public static string[] StringToArray(string str)
+        {
+            return str.Split(' ');
+        }
+        #endregion
     }
 }

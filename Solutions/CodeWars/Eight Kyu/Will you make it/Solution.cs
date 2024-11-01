@@ -40,7 +40,7 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.Willyoumakeit
         public override void GetResult()
         {
             StyleHelper.Space();
-            StyleHelper.Title("DNA to RNA Conversion");
+            StyleHelper.Title("Will you make it ?");
             ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestCases());
         }
     }
