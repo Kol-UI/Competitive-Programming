@@ -41,7 +41,6 @@ namespace CompetitiveProgramming.CodeWars.EightKyu.DNAtoRNAConversion
             StyleHelper.Space();
             StyleHelper.Title("DNA to RNA Conversion");
             ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestCases());
-            ResultTester.CheckCurrentSolution(ProblemOrigin.CodeWars, ProblemCategory.EightKyu, Test.TestCases());
         }
     }
 }

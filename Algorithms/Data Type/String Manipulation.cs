@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace CompetitiveProgramming.Algorithms
 {
     public class StringManipulation
@@ -90,6 +92,31 @@ namespace CompetitiveProgramming.Algorithms
         public static string[] StringToArray(string str)
         {
             return str.Split(' ');
+        }
+        #endregion
+
+        #region LC 917
+        private static bool IsLetter(in char ch) => (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
+        #endregion
+
+        #region LC557
+        // Reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order
+        public string ReverseWordsInSentence(string s)
+        {
+            var arrayOfWords = s.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            StringBuilder reversedString = new StringBuilder("");
+
+            foreach (var word in arrayOfWords)
+            {            
+                char[] charArray = word.ToCharArray();
+                Array.Reverse(charArray);
+
+                reversedString.Append(" " + new string(charArray));
+            }
+
+            string result = reversedString.ToString().Substring(1);
+
+            return result;
         }
         #endregion
     }
