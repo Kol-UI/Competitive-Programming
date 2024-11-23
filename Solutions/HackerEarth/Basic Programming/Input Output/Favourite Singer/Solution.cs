@@ -43,7 +43,7 @@ namespace CompetitiveProgramming.HackerEarth.FavouriteSinger
         {
             StyleHelper.Space();
             StyleHelper.Title("Favourite Singer");
-            ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyHE);
+            ResultTester.SpecialTestCase(ProblemOrigin.HackerEarth, ProblemCategory.EasyHE);
         }
     }
 }

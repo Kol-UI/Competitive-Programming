@@ -33,7 +33,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                     new() { Source = "ProjectEuler", Other = ResultTester.GetCounterDifficulty(ProblemCategory.OtherEuler) },
                     new() { Source = "CodinGame", Other = ResultTester.GetCounterDifficulty(ProblemCategory.OtherCodinGame) },
                     new() { Source = "LeetCode", Easy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyLC), Medium = ResultTester.GetCounterDifficulty(ProblemCategory.MediumLC), Hard = ResultTester.GetCounterDifficulty(ProblemCategory.HardLC) },
-                    new() { Source = "HackEarth", Easy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyHE), Medium = ResultTester.GetCounterDifficulty(ProblemCategory.MediumHE), Hard = ResultTester.GetCounterDifficulty(ProblemCategory.HardHE) },
+                    new() { Source = "HackerEarth", Easy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyHE), Medium = ResultTester.GetCounterDifficulty(ProblemCategory.MediumHE), Hard = ResultTester.GetCounterDifficulty(ProblemCategory.HardHE) },
                 };
 
                 // ResultTester Stats
