@@ -1,16 +1,17 @@
 
-Percentage of Tests Done : 100% (Tests Validated : 9862 | Tests Invalidated : 0)
-Number of Case Done : 9862
-Percentage of Solutions Done : 100% (Solutions Validated : 1384 | Solutions Invalidated : 0)
-Number of Solutions Done : 1384
+Percentage of Tests Done : 100% (Tests Validated : 10180 | Tests Invalidated : 0)
+Number of Case Done : 10180
+Percentage of Solutions Done : 100% (Solutions Validated : 1571 | Solutions Invalidated : 0)
+Number of Solutions Done : 1571
 
 | Source             | Other    | Easy     | Medium   | Hard     | Total    |
 | ------------------ | -------- | -------- | -------- | -------- | -------- |
-| LeetCode           | x        | 471      | 482      | 116      | 1069     |
-| CodeForces         | 105      | x        | x        | x        | 105      |
+| LeetCode           | x        | 502      | 545      | 133      | 1180     |
+| CodeForces         | 152      | x        | x        | x        | 152      |
+| CodeWars           | 56       | x        | x        | x        | 56       |
 | CodeChef           | 54       | x        | x        | x        | 54       |
-| CodeWars           | 51       | x        | x        | x        | 51       |
 | GeeksForGeeks      | 5        | 17       | 16       | 4        | 42       |
+| HackerEarth        | x        | 21       | 3        | 0        | 24       |
 | HackerRank         | x        | 17       | 0        | 1        | 18       |
 | AtCoder            | 12       | x        | x        | x        | 12       |
 | CoderByte          | x        | 6        | 3        | 1        | 10       |
@@ -20,6 +21,6 @@ Number of Solutions Done : 1384
 | SphereOnlineJudge  | 3        | x        | x        | x        | 3        |
 | CodingBlocks       | x        | 2        | x        | x        | 2        |
 | CodinGame          | 2        | x        | x        | x        | 2        |
-| Total              | 238      | 523      | 501      | 122      | 1384     |
+| Total              | 290      | 575      | 567      | 139      | 1571     |
 
 Time Elapsed : 2202 ms
