@@ -31,5 +31,26 @@ namespace CompetitiveProgramming.Algorithms
         {
             return array.Count(x => x % 2 == 0);
         }
+
+        public static int RemoveDuplicates(int[] nums)
+        {
+            // For sorted arrays
+            if (nums is null || nums.Length < 2)
+            { 
+                return 1;
+            }
+
+            int left = 1;
+            for (int right = 0; right < nums.Length; right++)
+            {
+                if (nums[right] != nums[left - 1])
+                {
+                    nums[left] = nums[right];
+                    left++;
+                }
+            }
+
+            return left;
+        }
     }
 }

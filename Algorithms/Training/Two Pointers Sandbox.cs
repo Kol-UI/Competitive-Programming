@@ -74,6 +74,27 @@ namespace CompetitiveProgramming.Algorithms.Training
             return closestPair;
         }
 
+        // Enlever les duplicatas d'une array triée
+        public static int RemoveDuplicates(int[] nums)
+        {
+            if (nums is null || nums.Length < 2)
+            { 
+                return 1;
+            }
+
+            int left = 1;
+            for (int right = 0; right < nums.Length; right++)
+            {
+                if (nums[right] != nums[left - 1])
+                {
+                    nums[left] = nums[right];
+                    left++;
+                }
+            }
+
+            return left;
+        }
+
 
         // Vérification de palindrome
         public static bool IsPalindrome(string input)

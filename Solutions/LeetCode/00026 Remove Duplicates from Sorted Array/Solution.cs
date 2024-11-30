@@ -60,6 +60,26 @@ namespace CompetitiveProgramming.LeetCode.RemoveDuplicatesfromSortedArray
 
             return i;
         }
+
+        public static int RemoveDuplicates2(int[] nums)
+        {
+            if (nums is null || nums.Length < 2)
+            { 
+                return 1;
+            }
+
+            int left = 1;
+            for (int right = 0; right < nums.Length; right++)
+            {
+                if (nums[right] != nums[left - 1])
+                {
+                    nums[left] = nums[right];
+                    left++;
+                }
+            }
+
+            return left;
+        }
     }
 
     public class Test
@@ -79,6 +99,10 @@ namespace CompetitiveProgramming.LeetCode.RemoveDuplicatesfromSortedArray
                 ResultTester.CheckResult<int>(Solution.RemoveDuplicates(nums3), 1),
                 ResultTester.CheckResult<int>(Solution.RemoveDuplicates(nums4), 3),
                 ResultTester.CheckResult<int>(Solution.RemoveDuplicates(nums5), 1),
+                ResultTester.CheckResult<int>(Solution.RemoveDuplicates2(nums1), 2),
+                ResultTester.CheckResult<int>(Solution.RemoveDuplicates2(nums3), 1),
+                ResultTester.CheckResult<int>(Solution.RemoveDuplicates2(nums4), 3),
+                ResultTester.CheckResult<int>(Solution.RemoveDuplicates2(nums5), 1),
             };
             return results;
         }

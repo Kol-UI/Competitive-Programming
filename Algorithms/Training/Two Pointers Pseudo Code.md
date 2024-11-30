@@ -62,6 +62,25 @@ Trouver dans un tableau trié les deux nombres dont la somme est la plus proche 
 4) Retourner closestPair après la boucle.
 
 
+Enlever les duplicatas d'une array triée (RemoveDuplicates) :
+1) Validation des entrées :
+   - Si le tableau nums est null ou a moins de 2 éléments, il n'y a pas de doublons à retirer. La fonction retourne 1.
+
+2) Initialisation :
+   - left est le pointeur d'écriture où l'on stockera les prochains éléments uniques.
+   - On commence à 1, car le premier élément est toujours unique.
+
+3) Boucle principale :
+   - On utilise right pour parcourir chaque élément du tableau (nums[right]).
+   - Pour chaque élément, on vérifie si nums[right] est différent du dernier élément unique stocké (nums[left - 1]).
+      - Si oui : C'est un nouvel élément unique.
+         - On le place à nums[left].
+         - On incrémente left.
+      - Si non : C'est un doublon, donc on l'ignore.
+
+4) À la fin de la boucle, left contient le nombre d'éléments uniques.
+
+
 
 
 Vérification de palindrome (IsPalindrome) :
