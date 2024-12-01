@@ -80,6 +80,25 @@ namespace CompetitiveProgramming.Algorithms
             return input.Length;
         }
 
+        public static string InverseCase(string input)
+        {
+            string result = string.Empty;
+
+            foreach (char c in input)
+            {
+                if (char.IsUpper(c))
+                {
+                    result += char.ToLower(c);
+                }
+                else
+                {
+                    result += char.ToUpper(c);
+                }
+            }
+
+            return result;
+        }
+
         #region LC 884
         public static List<string> SplitSentenceIntoWords(string sentence)
         {
@@ -117,6 +136,24 @@ namespace CompetitiveProgramming.Algorithms
             string result = reversedString.ToString().Substring(1);
 
             return result;
+        }
+        #endregion
+
+        #region LC 434
+        // Each segment is separated by space
+        public int CountSegments(string s)
+        {
+            int segments = 0;
+
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (!char.IsWhiteSpace(s[i]) && (i == 0 || char.IsWhiteSpace(s[i - 1])))
+                {
+                    segments++;
+                }
+            }
+
+            return segments;
         }
         #endregion
     }
