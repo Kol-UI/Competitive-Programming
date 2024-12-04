@@ -11,23 +11,23 @@ namespace CompetitiveProgramming.LeetCode.AddingSpacestoaString
         public string AddSpaces(string s, int[] spaces)
         {
             char[] result = new char[s.Length + spaces.Length];
-            int writePos = 0;
-            int readPos = 0;
-            
+            int left = 0;
+            int right = 0;
+
             foreach (int spacePos in spaces)
             {
-                while (readPos < spacePos)
+                while (left < spacePos)
                 {
-                    result[writePos++] = s[readPos++];
+                    result[right++] = s[left++];
                 }
-                result[writePos++] = ' ';
+                result[right++] = ' ';
             }
-            
-            while (readPos < s.Length)
+
+            while (left < s.Length)
             {
-                result[writePos++] = s[readPos++];
+                result[right++] = s[left++];
             }
-            
+
             return new string(result);
         }
     }

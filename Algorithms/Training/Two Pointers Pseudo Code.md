@@ -276,9 +276,11 @@ Trouver des doublons adjacents dans une liste triée (ContainsAdjacentDuplicates
 Done :
 - Trouver si deux nombres dans un tableau trié ont une somme donnée (TargetSum)
 - Trouver dans un tableau trié les deux nombres dont la somme est la plus proche d'une cible donnée (ClosestTargetSum)
+- Enlever les duplicatas d'une array triée (RemoveDuplicates)
 - Vérification de palindrome (IsPalindrome)
 - Déplacer tous les zéros à la fin de l'array tout en gardant l'order des non-zéros (MoveZeroes)
-- Inverser une array avec la technique Two Pointers (ReverseArray) 
+- Inverser une array avec la technique Two Pointers (ReverseArray)
+- Insert des espaces au coordonnées spécifiées (AddSpaces)
 - Vérifier si un tableau trié contient une paire dont le produit est égal à une cible donnée (ContainsProductPair)
 - Trouver la plus longue sous-séquence sans répétition dans une chaîne de caractères (LongestSubstringWithoutRepeating)
 - Fusionner deux tableaux triés (MergeSortedArrays)

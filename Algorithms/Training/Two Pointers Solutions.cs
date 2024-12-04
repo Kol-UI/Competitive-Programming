@@ -167,6 +167,30 @@ namespace CompetitiveProgramming.Algorithms.Training
             }
         }
 
+        // Insert des espaces au coordonnées spécifiées
+        public static string AddSpaces(string s, int[] spaces)
+        {
+            char[] result = new char[s.Length + spaces.Length];
+            int left = 0;
+            int right = 0;
+
+            foreach (int spacePos in spaces)
+            {
+                while (left < spacePos)
+                {
+                    result[right++] = s[left++];
+                }
+                result[right++] = ' ';
+            }
+
+            while (left < s.Length)
+            {
+                result[right++] = s[left++];
+            }
+
+            return new string(result);
+        }
+
 
         // Vérifier si un tableau trié contient une paire dont le produit est égal à une cible donnée
         public static bool ContainsProductPair(int[] array, int target)
