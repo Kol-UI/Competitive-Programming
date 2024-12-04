@@ -144,6 +144,34 @@ Inverser une array avec la technique Two Pointers (ReverseArray) :
 
 
 
+Ajouter des espaces à une chaîne à des positions spécifiées (AddSpaces) :
+
+1) Si s est nul ou vide, ou si spaces est nul, retourner une chaîne vide.
+
+2) Initialiser un tableau result de taille s.Length + spaces.Length.
+
+3) Initialiser deux pointeurs :
+   - left = 0 (pointeur de lecture pour parcourir s).
+   - right = 0 (pointeur d'écriture pour construire result).
+
+4) Pour chaque position spacePos dans spaces :
+   - Tant que left < spacePos :
+      - Copier s[left] dans result[right].
+      - Incrémenter left et right.
+   - Insérer un espace (' ') dans result[right].
+   - Incrémenter right.
+
+5) Copier tous les caractères restants de s :
+   - Tant que left < s.Length :
+      - Copier s[left] dans result[right].
+      - Incrémenter left et right.
+
+6) Retourner une nouvelle chaîne construite à partir de result.
+
+
+
+
+
 Vérifier si un tableau trié contient une paire dont le produit est égal à une cible donnée (ContainsProductPair) :
 
 1) Vérifier si le tableau est vide ou nul.
