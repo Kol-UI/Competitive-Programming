@@ -64,6 +64,35 @@ namespace CompetitiveProgramming.LeetCode.MinimumLimitofBallsinaBag
         }
     }
 
+    public class Solution2
+    {
+        public int MinimumSize(int[] nums, int maxOperations)
+        {
+            int left = 1;
+            int right = 1000000000;
+            while (left < right)
+            {
+                int mid = left + (right - left) / 2;
+                int numOps = 0;
+
+                foreach (int num in nums)
+                {
+                    numOps += (num - 1) / mid;
+                }
+
+                if (numOps > maxOperations)
+                {
+                    left = mid + 1;
+                }
+                else
+                {
+                    right = mid;
+                }
+            }
+            return left;
+        }
+    }
+
     public class Test
     {
         public static bool[] TestCases()
@@ -76,10 +105,14 @@ namespace CompetitiveProgramming.LeetCode.MinimumLimitofBallsinaBag
             int result1 = Solution.MinimumSize(nums1, maxOperations1);
             int result2 = Solution.MinimumSize(nums2, maxOperations2);
 
+            Solution2 sol = new();
+
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<int>(result1, 3),
-                ResultTester.CheckResult<int>(result2, 2)
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(sol.MinimumSize(nums1, maxOperations1), 3),
+                ResultTester.CheckResult<int>(sol.MinimumSize(nums2, maxOperations2), 2)
             };
             return results;
         }
