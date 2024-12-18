@@ -54,4 +54,27 @@ public class MonotonicStack
         return result;
     }
     #endregion
+
+    #region LC 1475
+    public int[] FinalPrices(int[] prices)
+    {
+        int n = prices.Length;
+        int[] result = new int[n];
+        Array.Copy(prices, result, n);
+
+        Stack<int> stack = new Stack<int>();
+
+        for (int i = 0; i < n; i++)
+        {
+            while (stack.Count > 0 && prices[i] <= prices[stack.Peek()])
+            {
+                int j = stack.Pop();
+                result[j] = prices[j] - prices[i];
+            }
+            stack.Push(i);
+        }
+
+        return result;
+    }
+    #endregion
 }
