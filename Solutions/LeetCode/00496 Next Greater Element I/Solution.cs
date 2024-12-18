@@ -66,6 +66,39 @@ namespace CompetitiveProgramming.LeetCode.NextGreaterElementI
         }
     }
 
+    public class MonotonicStackSolution
+    {
+        public static int[] NextGreaterElement(int[] nums1, int[] nums2)
+        {
+            Dictionary<int, int> nextGreaterMap = new Dictionary<int, int>();
+            Stack<int> monotonicStack = new Stack<int>();
+
+            foreach (int num in nums2)
+            {
+                while (monotonicStack.Count > 0 && num > monotonicStack.Peek())
+                {
+                    int smallerElement = monotonicStack.Pop();
+                    nextGreaterMap[smallerElement] = num;
+                }
+
+                monotonicStack.Push(num);
+            }
+
+            while (monotonicStack.Count > 0)
+            {
+                nextGreaterMap[monotonicStack.Pop()] = -1;
+            }
+
+            int[] result = new int[nums1.Length];
+            for (int i = 0; i < nums1.Length; i++)
+            {
+                result[i] = nextGreaterMap[nums1[i]];
+            }
+
+            return result;
+        }
+    }
+
     public class Test
     {
         public static bool[] TestNextGreaterElementI()
@@ -81,10 +114,15 @@ namespace CompetitiveProgramming.LeetCode.NextGreaterElementI
             int[] result1 = Solution.NextGreaterElement(case1nums1, case1nums2);
             int[] result2 = Solution.NextGreaterElement(case2nums1, case2nums2);
 
+            int[] result3 = MonotonicStackSolution.NextGreaterElement(case1nums1, case1nums2);
+            int[] result4 = MonotonicStackSolution.NextGreaterElement(case2nums1, case2nums2);
+
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<int[]>(result1, output1_496),
-                ResultTester.CheckResult<int[]>(result2, output2_496)
+                ResultTester.CheckResult<int[]>(result2, output2_496),
+                ResultTester.CheckResult<int[]>(result3, output1_496),
+                ResultTester.CheckResult<int[]>(result4, output2_496)
             };
             return results;
         }
