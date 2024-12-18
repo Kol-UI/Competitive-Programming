@@ -58,10 +58,34 @@ namespace CompetitiveProgramming.LeetCode.DailyTemperatures
         }
     }
 
+    public class SolutionMonotonicStack
+    {
+        // Monotonic Stack Solution
+        public int[] DailyTemperatures(int[] temperatures)
+        {
+            int n = temperatures.Length;
+            int[] result = new int[n];
+            Stack<int> monotonicStack = new Stack<int>();
+
+            for (int i = 0; i < n; i++)
+            {
+                while (monotonicStack.Count > 0 && temperatures[i] > temperatures[monotonicStack.Peek()])
+                {
+                    int index = monotonicStack.Pop();
+                    result[index] = i - index;
+                }
+                monotonicStack.Push(i);
+            }
+
+            return result;
+        }
+    }
+
     public class Test
     {
         public static bool[] TestDailyTemperatures()
         {
+            SolutionMonotonicStack solution = new();
             int[] temperatures1 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
             int[] temperatures2 = new int[] { 30, 40, 50, 60 };
             int[] temperatures3 = new int[] { 30, 60, 90 };
@@ -78,6 +102,9 @@ namespace CompetitiveProgramming.LeetCode.DailyTemperatures
                 ResultTester.CheckResult<int[]>(Solution.DailyTemperatures2(temperatures1), output1),
                 ResultTester.CheckResult<int[]>(Solution.DailyTemperatures2(temperatures2), output2),
                 ResultTester.CheckResult<int[]>(Solution.DailyTemperatures2(temperatures3), output3),
+                ResultTester.CheckResult<int[]>(solution.DailyTemperatures(temperatures1), output1),
+                ResultTester.CheckResult<int[]>(solution.DailyTemperatures(temperatures2), output2),
+                ResultTester.CheckResult<int[]>(solution.DailyTemperatures(temperatures3), output3),
             };
 
             return results;

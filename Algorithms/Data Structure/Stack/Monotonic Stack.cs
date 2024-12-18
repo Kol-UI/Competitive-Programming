@@ -2,6 +2,25 @@ namespace CompetitiveProgramming.Algorithms;
 
 public class MonotonicStack
 {
+    public bool IsMonotonicStack(Stack<int> stack, bool isAscending)
+    {
+        if (stack == null || stack.Count == 0) return true;
+
+        int previous = stack.Pop();
+
+        while (stack.Count > 0)
+        {
+            int current = stack.Pop();
+
+            if (isAscending && current < previous) return false; // Increasing
+            if (!isAscending && current > previous) return false; // Decreasing
+
+            previous = current;
+        }
+
+        return true;
+    }
+
     private static int[] FindNextGreaterElements(int[] nums)
     {
         int n = nums.Length;
@@ -72,6 +91,27 @@ public class MonotonicStack
                 result[j] = prices[j] - prices[i];
             }
             stack.Push(i);
+        }
+
+        return result;
+    }
+    #endregion
+
+    #region LC 739
+    public int[] DailyTemperatures(int[] temperatures)
+    {
+        int n = temperatures.Length;
+        int[] result = new int[n];
+        Stack<int> monotonicStack = new Stack<int>();
+
+        for (int i = 0; i < n; i++)
+        {
+            while (monotonicStack.Count > 0 && temperatures[i] > temperatures[monotonicStack.Peek()])
+            {
+                int index = monotonicStack.Pop();
+                result[index] = i - index;
+            }
+            monotonicStack.Push(i);
         }
 
         return result;
