@@ -12,8 +12,8 @@ public class MonotonicStack
         {
             int current = stack.Pop();
 
-            if (isAscending && current < previous) return false; // Increasing
-            if (!isAscending && current > previous) return false; // Decreasing
+            if (isAscending && current < previous) return false;
+            if (!isAscending && current > previous) return false;
 
             previous = current;
         }
@@ -115,6 +115,32 @@ public class MonotonicStack
         }
 
         return result;
+    }
+    #endregion
+
+    #region LC 796
+    public int MaxChunksToSorted(int[] arr)
+    {
+        Stack<int> monotonicStack = new Stack<int>();
+
+        foreach (int num in arr)
+        {
+            if (monotonicStack.Count == 0 || num >= monotonicStack.Peek())
+            {
+                monotonicStack.Push(num);
+            }
+            else
+            {
+                int maxInChunk = monotonicStack.Pop();
+                while (monotonicStack.Count > 0 && monotonicStack.Peek() > num)
+                {
+                    monotonicStack.Pop();
+                }
+                monotonicStack.Push(maxInChunk);
+            }
+        }
+
+        return monotonicStack.Count;
     }
     #endregion
 }
