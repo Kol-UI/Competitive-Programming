@@ -3,6 +3,7 @@ using System.Collections;
 using System.Linq;
 using System.Text;
 using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.LeetCode;
 using CompetitiveProgramming.Models;
 
 namespace CompetitiveProgramming.TestDrivenDevelopment
@@ -193,6 +194,18 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                         return true;
                     }
                 }
+
+                // If TreeNode
+                else if (result is TreeNode resultTree && expected is TreeNode expectedTree)
+                {
+                    PrintHelper.PrintTestResult(TreeNodeToStringConverter.TreeNodeToString(resultTree), TreeNodeToStringConverter.TreeNodeToString(expectedTree));
+                    if (TreeNodeExtensions.AreTreesEqual(resultTree, expectedTree))
+                    {
+                        CheckResultRight();
+                        return true;
+                    }
+                }
+
             }
 
             // If null or not equal
