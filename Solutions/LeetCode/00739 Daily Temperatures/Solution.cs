@@ -93,6 +93,10 @@ namespace CompetitiveProgramming.LeetCode.DailyTemperatures
             int[] output1 = new int[] { 1, 1, 4, 2, 1, 1, 0, 0 };
             int[] output2 = new int[] { 1, 1, 1, 0 };
             int[] output3 = new int[] { 1, 1, 0 };
+            
+            int[] temperatures1_2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
+            int[] temperatures2_2 = new int[] { 30, 40, 50, 60 };
+            int[] temperatures3_2 = new int[] { 30, 60, 90 };
 
             bool[] results = new bool[]
             {
@@ -102,9 +106,9 @@ namespace CompetitiveProgramming.LeetCode.DailyTemperatures
                 ResultTester.CheckResult<int[]>(Solution.DailyTemperatures2(temperatures1), output1),
                 ResultTester.CheckResult<int[]>(Solution.DailyTemperatures2(temperatures2), output2),
                 ResultTester.CheckResult<int[]>(Solution.DailyTemperatures2(temperatures3), output3),
-                ResultTester.CheckResult<int[]>(solution.DailyTemperatures(temperatures1), output1),
-                ResultTester.CheckResult<int[]>(solution.DailyTemperatures(temperatures2), output2),
-                ResultTester.CheckResult<int[]>(solution.DailyTemperatures(temperatures3), output3),
+                ResultTester.CheckResult<int[]>(solution.DailyTemperatures(temperatures1_2), output1),
+                ResultTester.CheckResult<int[]>(solution.DailyTemperatures(temperatures2_2), output2),
+                ResultTester.CheckResult<int[]>(solution.DailyTemperatures(temperatures3_2), output3),
             };
 
             return results;

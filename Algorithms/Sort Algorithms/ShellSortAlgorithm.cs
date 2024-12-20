@@ -1,5 +1,5 @@
 ﻿using System;
-namespace CompetitiveProgramming.Helpers
+namespace CompetitiveProgramming.Algorithms
 {
 	public class ShellSortAlgorithm
 	{
