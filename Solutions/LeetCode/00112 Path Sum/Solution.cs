@@ -83,6 +83,27 @@ namespace CompetitiveProgramming.LeetCode.PathSum
     //         }
     //     }
     // }
+
+    #nullable disable
+    public class Solution
+    {
+        public bool HasPathSum(TreeNode root, int targetSum)
+        {
+            if (root == null)
+            {
+                return false;
+            }
+
+            if (root.left == null && root.right == null)
+            {
+                return root.val == targetSum;
+            }
+
+            int remainingSum = targetSum - root.val;
+            return HasPathSum(root.left, remainingSum) || HasPathSum(root.right, remainingSum);
+        }
+    }
+
     public class TestSolution : BaseSolution
     {
         public override void GetResult()
@@ -92,4 +113,5 @@ namespace CompetitiveProgramming.LeetCode.PathSum
             ResultTester.SpecialTestCase(ProblemOrigin.LeetCode, ProblemCategory.EasyLC);
         }
     }
+    #nullable enable
 }
