@@ -93,4 +93,39 @@ public class BinaryTree
         return height;
     }
     #endregion
+
+    #region LC 515
+    // Find Largest Value in Each Tree Row
+    public IList<int> GetLargestValues(TreeNode root)
+    {
+        IList<int> result = new List<int>();
+        if (root == null)
+            return result;
+        
+        Queue<TreeNode> queue = new();
+        queue.Enqueue(root);
+
+        while (queue.Count > 0)
+        {
+            int levelMax = int.MinValue;
+            int levelSize = queue.Count;
+
+            for (int i = 0; i < levelSize; i++)
+            {
+                TreeNode node = queue.Dequeue();
+                levelMax = Math.Max(levelMax, node.val);
+
+                if (node.left != null)
+                    queue.Enqueue(node.left);
+
+                if (node.right != null)
+                    queue.Enqueue(node.right);
+            }
+
+            result.Add(levelMax);
+        }
+
+        return result;
+    }
+    #endregion
 }

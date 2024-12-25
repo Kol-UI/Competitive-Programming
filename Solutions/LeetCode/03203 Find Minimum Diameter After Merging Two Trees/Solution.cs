@@ -10,7 +10,7 @@ namespace CompetitiveProgramming.LeetCode.FindMinimumDiameterAfterMergingTwoTree
     {
         public int MinimumDiameterAfterMerge(int[][] edges1, int[][] edges2)
         {
-            int n = edges1.Length;
+            int n = edges1.Length + 1;
             int m = edges2.Length + 1;
 
             List<List<int>> adjList1 = BuildAdjList(n, edges1);
