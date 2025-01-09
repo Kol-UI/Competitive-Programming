@@ -66,6 +66,7 @@ public class Solution
     private static int[] ReadInts() => ReadStrings().Select(int.Parse).ToArray();
     private static long[] ReadLongs() => ReadStrings().Select(long.Parse).ToArray();
     private static double[] ReadDoubles() => ReadStrings().Select(double.Parse).ToArray();
+    private static void PrintDouble(double value, int decimals) => Console.WriteLine(value.ToString($"F{decimals}"));
     private static void PrintResults<T>(List<T> results) => results.ForEach(result => Console.WriteLine(result?.ToString()));
 }
 ```
