@@ -38,7 +38,7 @@ public class TestSolution : BaseSolution
     public override void GetResult()
     {
         StyleHelper.Space();
-        StyleHelper.Title("Title");
+        StyleHelper.Title("Counting Words With a Given Prefix");
         ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.EasyLC, Test.TestCases());
     }
 }
