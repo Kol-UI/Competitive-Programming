@@ -82,5 +82,6 @@ public enum ProblemCategory
 
     // RANK
     CF800 = 100,
+    CF1200 = 101,
 
 }
