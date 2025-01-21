@@ -2,17 +2,18 @@ namespace CompetitiveProgramming.Algorithms.PrefixSum;
 
 public class PrefixSum
 {
-    private static int[] GetPrefixSum(int[] nums)
+    #region LC 1480
+    public static int[] GetPrefixSum(int[] nums)
     {
-        int n = nums.Length;
-        int[] result = new int[n];
-        result[0] = nums[0];
+        int size = nums.Length;
+        int[] prefix = new int[size];
+        prefix[0] = nums[0];
 
-        for (int i = 1; i < n; i++)
+        for (int i = 1; i < size; i++)
         {
-            result[i] = result[i - 1] + nums[i];
+            prefix[i] = prefix[i - 1] + nums[i];
         }
-
-        return result;
+        return prefix;
     }
+    #endregion
 }
