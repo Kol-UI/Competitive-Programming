@@ -24,19 +24,3 @@ Number of Solutions Done : 1715
 | Total              | 383      | 584      | 601      | 147      | 1715     |
 
 Time Elapsed : 2617 ms
-
-
-```mermaid
-bar
-    title Comparison of Categories
-    "Category A" : 5
-    "Category B" : 10
-    "Category C" : 7
-    "Category D" : 3
-    "Category E" : 8
-    "Category F" : 4
-    "Category G" : 6
-```
-
-
-
