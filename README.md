@@ -27,10 +27,16 @@ Time Elapsed : 2617 ms
 
 
 ```mermaid
-graph TD
-    A[Start] --> B{Decision?}
-    B -->|Yes| C[Do Task]
-    B -->|No| D[Stop]
+bar
+    title Comparison of Categories
+    "Category A" : 5
+    "Category B" : 10
+    "Category C" : 7
+    "Category D" : 3
+    "Category E" : 8
+    "Category F" : 4
+    "Category G" : 6
 ```
+
 
 
