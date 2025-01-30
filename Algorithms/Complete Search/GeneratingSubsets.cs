@@ -52,4 +52,26 @@ public class GeneratingSubsets
         return subsets;
     }
 
+
+    // var subsets = GenerateSubsetsOfSize(nums, new List<int>(), 0, subsetSize);
+	public static List<List<int>> GenerateSubsetsOfSize(List<int> nums, List<int> currentSubset, int index, int targetSize)
+	{
+		List<List<int>> subsets = new List<List<int>>();
+
+		if (currentSubset.Count == targetSize)
+		{
+			subsets.Add(new List<int>(currentSubset));
+			return subsets;
+		}
+
+		for (int i = index; i < nums.Count; i++)
+		{
+			currentSubset.Add(nums[i]);
+			subsets.AddRange(GenerateSubsetsOfSize(nums, currentSubset, i + 1, targetSize));
+			currentSubset.RemoveAt(currentSubset.Count - 1);
+		}
+
+		return subsets;
+	}
+
 }
