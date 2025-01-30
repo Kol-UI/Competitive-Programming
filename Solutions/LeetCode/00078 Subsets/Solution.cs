@@ -52,6 +52,28 @@ namespace CompetitiveProgramming.LeetCode.Subsets
         }
     }
 
+    public class Solution2
+    {
+        public IList<IList<int>> Subsets(int[] nums)
+        {
+            IList<IList<int>> subsets = new List<IList<int>>();
+            GenerateSubsets(nums, 0, new List<int>(), subsets);
+            return subsets;
+        }
+
+        private void GenerateSubsets(int[] nums, int index, List<int> currentSubset, IList<IList<int>> subsets)
+        {
+            subsets.Add(new List<int>(currentSubset));
+
+            for (int i = index; i < nums.Length; i++)
+            {
+                currentSubset.Add(nums[i]);
+                GenerateSubsets(nums, i + 1, currentSubset, subsets);
+                currentSubset.RemoveAt(currentSubset.Count - 1);
+            }
+        }
+    }
+
     public class Test
     {
         public static bool[] TestCases()
@@ -77,11 +99,13 @@ namespace CompetitiveProgramming.LeetCode.Subsets
                 new List<int> { 0 }
             };
 
+            Solution2 solution2 = new();
 
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<IList<IList<int>>>(Solution.Subsets(arr1), expected1),
                 ResultTester.CheckResult<IList<IList<int>>>(Solution.Subsets(arr2), expected2),
+                ResultTester.CheckResult<IList<IList<int>>>(solution2.Subsets(arr2), expected2),
             };
             return results;
         }

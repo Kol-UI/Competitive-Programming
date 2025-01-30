@@ -32,7 +32,7 @@ public class Solution
             Union(parent, rank, root1, root2);
         }
         
-        return null;
+        return null!;
     }
 
     private int Find(int[] parent, int node)

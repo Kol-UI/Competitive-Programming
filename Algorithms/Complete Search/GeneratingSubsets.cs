@@ -18,6 +18,25 @@ public class GeneratingSubsets
         return subsets;
     }
 
+    // Generate Subsets for an Array
+    public IList<IList<int>> GenerateSubsets(int[] nums)
+    {
+        IList<IList<int>> subsets = new List<IList<int>>();
+        GenerateSubsetsArray(nums, 0, new List<int>(), subsets);
+        return subsets;
+    }
+
+    private void GenerateSubsetsArray(int[] nums, int index, List<int> currentSubset, IList<IList<int>> subsets)
+    {
+        subsets.Add(new List<int>(currentSubset));
+
+        for (int i = index; i < nums.Length; i++)
+        {
+            currentSubset.Add(nums[i]);
+            GenerateSubsetsArray(nums, i + 1, currentSubset, subsets);
+            currentSubset.RemoveAt(currentSubset.Count - 1);
+        }
+    }
 
     // var subsetsFromIndex = GenerateSubsetsFromIndex(nums, new List<int>(), 2);
     public static List<List<int>> GenerateSubsetsFromIndex(List<int> nums, List<int> currentSubset, int index)
