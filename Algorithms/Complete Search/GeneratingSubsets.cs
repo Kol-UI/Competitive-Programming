@@ -38,6 +38,30 @@ public class GeneratingSubsets
         }
     }
 
+
+    // Duplicates are included
+    public IList<IList<int>> SubsetsWithDup(int[] nums)
+    {
+        Array.Sort(nums);
+        IList<IList<int>> subsets = new List<IList<int>>();
+        GenerateSubsetsIgnoreDuplicates(nums, 0, new List<int>(), subsets);
+        return subsets;
+    }
+
+    private void GenerateSubsetsIgnoreDuplicates(int[] nums, int index, List<int> currentSubset, IList<IList<int>> subsets)
+    {
+        subsets.Add(new List<int>(currentSubset));
+
+        for (int i = index; i < nums.Length; i++)
+        {
+            if (i > index && nums[i] == nums[i - 1]) continue;
+
+            currentSubset.Add(nums[i]);
+            GenerateSubsetsIgnoreDuplicates(nums, i + 1, currentSubset, subsets);
+            currentSubset.RemoveAt(currentSubset.Count - 1);
+        }
+    }
+
     // var subsetsFromIndex = GenerateSubsetsFromIndex(nums, new List<int>(), 2);
     public static List<List<int>> GenerateSubsetsFromIndex(List<int> nums, List<int> currentSubset, int index)
     {
