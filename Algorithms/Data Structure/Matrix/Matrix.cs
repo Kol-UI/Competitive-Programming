@@ -187,7 +187,7 @@ namespace CompetitiveProgramming.Algorithms
             return left;
         }
 
-        #region LC2022
+        #region LC 2022
         private static void Fill2DArray(int[] original, int[][] result, int m, int n)
         {
             for (int i = 0; i < m; i++)
@@ -273,6 +273,23 @@ namespace CompetitiveProgramming.Algorithms
             }
 
             Console.WriteLine();
+        }
+        #endregion
+
+        #region CF 1520C
+        public static string MatrixToString(int[,] matrix, int n)
+        {
+            List<string> rows = new List<string>();
+            for (int i = 0; i < n; i++)
+            {
+                List<string> row = new List<string>();
+                for (int j = 0; j < n; j++)
+                {
+                    row.Add(matrix[i, j].ToString());
+                }
+                rows.Add(string.Join(" ", row));
+            }
+            return string.Join("\n", rows);
         }
         #endregion
     }
