@@ -28,14 +28,33 @@ namespace CompetitiveProgramming.LeetCode.ValidAnagram
         }
     }
 
+    public class Solution2
+    {
+        public bool IsAnagram(string s, string t)
+        {
+            if(s.Length != t.Length) return false;
+            
+            char[] ss = s.ToCharArray();
+            char[] tt = t.ToCharArray();
+
+            Array.Sort(ss);
+            Array.Sort(tt);
+
+            return new string(ss) == new string(tt);
+        }
+    }
+
     public class Test
     {
         public static bool[] TestValidAnagram()
         {
+            Solution2 sol = new();
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<bool>(Solution.IsAnagram("anagram", "nagaram"), true),
-                ResultTester.CheckResult<bool>(Solution.IsAnagram("rat", "car"), false)
+                ResultTester.CheckResult<bool>(Solution.IsAnagram("rat", "car"), false),
+                ResultTester.CheckResult<bool>(sol.IsAnagram("anagram", "nagaram"), true),
+                ResultTester.CheckResult<bool>(sol.IsAnagram("rat", "car"), false)
             };
             return results;
         }

@@ -36,6 +36,16 @@ namespace CompetitiveProgramming.LeetCode.ConcatenationofArray
         }
     }
 
+    public class Solution2
+    {
+        public int[] GetConcatenation(int[] nums)
+        {
+            List<int> ans = new();
+            for(int i = 0; i < 2; i++) ans.AddRange(nums);
+            return ans.ToArray();
+        }
+    }
+
     public class Test
     {
         public static bool[] TestCases()
@@ -50,10 +60,14 @@ namespace CompetitiveProgramming.LeetCode.ConcatenationofArray
 
             int[] expected1 = {1,2,1,1,2,1};
             int[] expected2 = {1,3,2,1,1,3,2,1};
+
+            Solution2 sol = new();
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<int[]>(output1_1929, expected1),
-                ResultTester.CheckResult<int[]>(output2_1929, expected2)
+                ResultTester.CheckResult<int[]>(output2_1929, expected2),
+                ResultTester.CheckResult<int[]>(sol.GetConcatenation(nums1_1929), expected1),
+                ResultTester.CheckResult<int[]>(sol.GetConcatenation(nums2_1929), expected2)
             };
             return results;
         }

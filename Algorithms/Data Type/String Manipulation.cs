@@ -45,6 +45,8 @@ namespace CompetitiveProgramming.Algorithms
 
         public static bool IsAnagram(string s, string t)
         {
+            if(s.Length != t.Length) return false;
+            
             char[] ss = s.ToCharArray();
             char[] tt = t.ToCharArray();
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using CompetitiveProgramming.CodeForces.NotAdjacentMatrix;
 using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
@@ -38,6 +39,17 @@ namespace CompetitiveProgramming.LeetCode.ContainsDuplicate
         }
     }
 
+    public class Solution2
+    {
+        public bool ContainsDuplicate(int[] nums)
+        {
+            HashSet<int> set = new();
+            for(int i = 0; i < nums.Length; i++) set.Add(nums[i]);
+            if (set.Count == nums.Length) return false;
+            else return true;
+        }
+    }
+
     public class Test
     {
         public static bool[] TestContainsDuplicate()
@@ -54,11 +66,16 @@ namespace CompetitiveProgramming.LeetCode.ContainsDuplicate
             int[] Case3_217 = { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 };
             bool Case3_217_Result = Solution.ContainsDuplicate(Case3_217);
 
+            Solution2 sol = new();
+
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<bool>(Case1_217_Result, true),
                 ResultTester.CheckResult<bool>(Case2_217_Result, false),
-                ResultTester.CheckResult<bool>(Case3_217_Result, true)
+                ResultTester.CheckResult<bool>(Case3_217_Result, true),
+                ResultTester.CheckResult<bool>(sol.ContainsDuplicate(Case1_217), true),
+                ResultTester.CheckResult<bool>(sol.ContainsDuplicate(Case2_217), false),
+                ResultTester.CheckResult<bool>(sol.ContainsDuplicate(Case3_217), true)
             };
             return results;
         }
