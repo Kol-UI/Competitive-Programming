@@ -5,7 +5,30 @@ using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.TwoSum
 {
-	public class Solution
+    public class Solution
+    {
+        public int[] TwoSum(int[] nums, int target)
+        {
+            int[] result = new int[2];
+            int size = nums.Length;
+            if (nums == null || size < 2) return result;
+            for(int i = 0; i < size; i++)
+            {
+                for(int j = i + 1; j < size; j++)
+                {
+                    if(nums[i] + nums[j] == target)
+                    {
+                        result[0] = i;
+                        result[1] = j;
+                        return result;
+                    }
+                }
+            }
+            return result;
+        }
+    }
+
+	public class Solution2
 	{
         public static int[] TwoSum(int[] nums, int target)
         {
