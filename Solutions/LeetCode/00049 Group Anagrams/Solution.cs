@@ -30,23 +30,24 @@ using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.GroupAnagrams
 {
-    public class Solution 
+    public class Solution
     {
         public static IList<IList<string>> GroupAnagrams(string[] strs)
         {
-            var anigrams = new Dictionary<string, IList<string>>();
-
-            foreach (var str in strs)
+            var set = new Dictionary<string, IList<string>>();
+            foreach(string str in strs)
             {
-                var sortedStr = String.Concat(str.OrderBy(c => c));
-                if (!anigrams.ContainsKey(sortedStr))
+                char[] chars = str.ToCharArray();
+                Array.Sort(chars);
+                string value = new(chars);
+                if(!set.ContainsKey(value))
                 {
-                    anigrams[sortedStr] = new List<string>();
+                    set[value] = new List<string>();
                 }
-                anigrams[sortedStr].Add(str);
+                set[value].Add(str);
             }
 
-            return anigrams.Values.ToList();
+            return set.Values.ToList();
         }
     }
 
