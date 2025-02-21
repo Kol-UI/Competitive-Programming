@@ -32,7 +32,7 @@ namespace CompetitiveProgramming.LeetCode.GroupAnagrams
 {
     public class Solution
     {
-        public IList<IList<string>> GroupAnagrams(string[] strs)
+        public static IList<IList<string>> GroupAnagrams(string[] strs)
         {
             var set = new Dictionary<string, IList<string>>();
             foreach(string str in strs)
