@@ -34,21 +34,23 @@ Output: [["a"]]
 Sorting Solution :
 
 ```cs
-public static IList<IList<string>> GroupAnagrams(string[] strs)
+public IList<IList<string>> GroupAnagrams(string[] strs)
 {
     var set = new Dictionary<string, IList<string>>();
     foreach(string str in strs)
     {
         char[] chars = str.ToCharArray();
         Array.Sort(chars);
-        string value = new(chars);
-        if(!set.ContainsKey(value))
+        string value = new string(chars);
+        if(set.ContainsKey(value))
         {
-            set[value] = new List<string>();
+            set[value].Add(str);
         }
-        set[value].Add(str);
+        else
+        {
+            set.Add(value, new List<string>(){ str });
+        }
     }
-
     return set.Values.ToList();
 }
 ```
