@@ -53,19 +53,18 @@ namespace CompetitiveProgramming.LeetCode.RemoveElement
 {
     public class Solution
     {
-        public static int RemoveElement(int[] nums, int val)
+        public int RemoveElement(int[] nums, int val)
         {
-            int current = 0;
-
+            int k = 0;
             for (int i = 0; i < nums.Length; i++)
             {
                 if (nums[i] != val)
                 {
-                    nums[current] = nums[i];
-                    current++;
+                    nums[k] = nums[i];
+                    k++;
                 }
             }
-            return current;
+            return k;
         }
     }
 
@@ -73,14 +72,15 @@ namespace CompetitiveProgramming.LeetCode.RemoveElement
     {
         public static bool[] TestCases()
         {
+            Solution solution = new();
             int[] case1 = {3,2,2,3};
             int[] case2 = {0,1,2,2,3,0,4,2};
             int[] case3 = {3,3};
             bool[] results = new bool[]
             {
-                ResultTester.CheckResult<double>(Solution.RemoveElement(case1, 3), 2),
-                ResultTester.CheckResult<double>(Solution.RemoveElement(case2, 2), 5),
-                ResultTester.CheckResult<double>(Solution.RemoveElement(case3, 5), 2),
+                ResultTester.CheckResult<double>(solution.RemoveElement(case1, 3), 2),
+                ResultTester.CheckResult<double>(solution.RemoveElement(case2, 2), 5),
+                ResultTester.CheckResult<double>(solution.RemoveElement(case3, 5), 2),
             };
             return results;
         }
