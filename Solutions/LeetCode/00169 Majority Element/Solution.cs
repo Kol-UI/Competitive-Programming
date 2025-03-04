@@ -34,6 +34,27 @@ namespace CompetitiveProgramming.LeetCode.MajorityElement
         }
     }
 
+    public class Solution2
+    {
+        public int MajorityElement(int[] nums)
+        {
+            int size = nums.Length;
+            int majorityValue = size / 2;
+            Dictionary<int, int> counts = new();
+
+            for (int i = 0; i < size; i++)
+            {
+                int current = nums[i];
+                if (counts.ContainsKey(current)) counts[current]++;
+                else counts[current] = 1;
+
+                if (counts[current] > majorityValue) return current;
+            }
+            
+            return -1;
+        }
+    }
+
     public class Test
     {
         public static bool[] TestMajorityElement()
@@ -44,10 +65,14 @@ namespace CompetitiveProgramming.LeetCode.MajorityElement
             int result1 = Solution.MajorityElement(nums1);
             int result2 = Solution.MajorityElement(nums2);
 
+            Solution2 sol = new();
+
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<int>(result1, 3),
-                ResultTester.CheckResult<int>(result2, 2)
+                ResultTester.CheckResult<int>(result2, 2),
+                ResultTester.CheckResult<int>(sol.MajorityElement(nums1), 3),
+                ResultTester.CheckResult<int>(sol.MajorityElement(nums2), 2),
             };
             return results;
         }
