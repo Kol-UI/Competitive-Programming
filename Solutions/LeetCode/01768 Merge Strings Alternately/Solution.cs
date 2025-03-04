@@ -66,6 +66,27 @@ namespace CompetitiveProgramming.LeetCode.MergeStringsAlternately
         }
     }
 
+    public class Solution2
+    {
+        public string MergeAlternately(string word1, string word2)
+        {
+            StringBuilder result = new();
+            int i = 0;
+            int j = 0;
+            int size1 = word1.Length;
+            int size2 = word2.Length;
+            int maxLen = Math.Max(size1, size2);
+
+            for (int k = 0; k < maxLen; k++)
+            {
+                if (i < size1) result.Append(word1[i++]);
+                if (j < size2) result.Append(word2[j++]);
+            }
+
+            return result.ToString();
+        }
+    }
+
     public class Test
     {
         public static bool[] TestCases()
@@ -79,11 +100,16 @@ namespace CompetitiveProgramming.LeetCode.MergeStringsAlternately
             // Case 3
             string Case3_1768 = Solution.MergeAlternately("abcd", "pq");
 
+            Solution2 sol = new();
+
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<string>(Case1_1768, "apbqcr"),
                 ResultTester.CheckResult<string>(Case2_1768, "apbqrs"),
-                ResultTester.CheckResult<string>(Case3_1768, "apbqcd")
+                ResultTester.CheckResult<string>(Case3_1768, "apbqcd"),
+                ResultTester.CheckResult<string>(sol.MergeAlternately("abc", "pqr"), "apbqcr"),
+                ResultTester.CheckResult<string>(sol.MergeAlternately("ab", "pqrs"), "apbqrs"),
+                ResultTester.CheckResult<string>(sol.MergeAlternately("abcd", "pq"), "apbqcd")
             };
             return results;
         }
