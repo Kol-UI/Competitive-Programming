@@ -48,4 +48,4 @@ public class TestSolution : BaseSolution
         StyleHelper.Title("Alternating Groups II");
         ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.MediumLC, Test.TestCases());
     }
-}
+} 
