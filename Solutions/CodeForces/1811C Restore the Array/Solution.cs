@@ -9,7 +9,8 @@ using System.Collections.Generic;
 
 class Program
 {
-    static void Main()
+    //static void Main()
+    public static void MainSolution()
     {
         int t = int.Parse(Console.ReadLine()!);
         while (t-- > 0)
