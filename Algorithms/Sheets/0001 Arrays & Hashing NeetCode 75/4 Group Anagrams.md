@@ -36,22 +36,23 @@ Sorting Solution :
 ```cs
 public IList<IList<string>> GroupAnagrams(string[] strs)
 {
-    var set = new Dictionary<string, IList<string>>();
-    foreach(string str in strs)
+    var result = new Dictionary<string, IList<string>>();
+    for (int i = 0; i < strs.Length; i++)
     {
-        char[] chars = str.ToCharArray();
+        string current = strs[i];
+        char[] chars = current.ToCharArray();
         Array.Sort(chars);
-        string value = new string(chars);
-        if(set.ContainsKey(value))
+        string sorted = new string(chars);
+        if (result.ContainsKey(sorted))
         {
-            set[value].Add(str);
+            result[sorted].Add(current);
         }
         else
         {
-            set.Add(value, new List<string>(){ str });
+            result.Add(sorted, [current]);
         }
     }
-    return set.Values.ToList();
+    return result.Values.ToList();
 }
 ```
 
