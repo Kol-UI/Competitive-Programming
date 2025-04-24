@@ -97,3 +97,30 @@ public class Solution
     }
 }
 ```
+
+
+Hashing (mine) :
+
+```cs
+public int[] TwoSum(int[] nums, int target)
+{
+	int[] result = new int[2];
+	int size = nums.Length;
+    if (nums == null || size < 2) return result;
+    Dictionary<int, int> dic = new();
+
+    for (int i = 0; i < size; i++)
+    {
+        if (dic.ContainsKey(target - nums[i]))
+        {
+            return new int[] { dic[target - nums[i]], i };
+        }
+        else if (!dic.ContainsKey(nums[i]))
+        {
+            dic.Add(nums[i], i);
+        }
+    }
+
+    return result;
+}
+```
