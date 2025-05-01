@@ -41,7 +41,7 @@ public class TestSolution : BaseSolution
     public override void GetResult()
     {
         StyleHelper.Space();
-        StyleHelper.Title("orilla and Permutation");
+        StyleHelper.Title("Gorilla and Permutation");
         ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF900);
     }
 }
