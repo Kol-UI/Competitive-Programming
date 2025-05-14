@@ -60,7 +60,7 @@ public bool CheckOptimalSingleTraversal(int[] array)
 
 	for (int i = 1; i < size; i++)
 	{
-		if (array[i] < array[1 - 1]) return false;
+		if (array[i] < array[i - 1]) return false;
 	}
 
 	return true;
