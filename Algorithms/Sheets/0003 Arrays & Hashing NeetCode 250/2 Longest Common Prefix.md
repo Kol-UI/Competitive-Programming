@@ -32,6 +32,100 @@ Constraints:
 strs[i] consists of only lowercase English letters if it is non-empty.
 
 
+
+
+BF solution
+```cs
+public string LongestCommonPrefix(string[] strs)
+{
+	int size = strs.Length;
+	if (strs is null || size == 0) return "";
+	if (size == 1) return strs[0];
+	StringBuilder result = new();
+
+	for (int i = 0; i < strs[0].Length; i++)
+	{
+		char currentChar = strs[0][i];
+		bool isCommon = true;
+		for (int j = 1; j < size; j++)
+		{
+			if (i >= strs[j].Length || strs[j][i] != currentChar)
+			{
+				isCommon = false;
+				break;
+			}
+		}
+		if (isCommon) result.Append(currentChar);
+		else return result.ToString();
+	}
+
+	return result.ToString();
+}
+```
+
+Sorting
+```cs
+public string LongestCommonPrefixSorting(string[] strs)
+{
+	int size = strs.Length;
+	if (size == 1) return strs[0];
+	Array.Sort(strs);
+	string first = strs[0];
+	string last = strs[size - 1];
+
+	int i = 0;
+	while (i < Math.Min(first.Length, last.Length))
+	{
+		if (first[i] != last[i]) return first.Substring(0, i);
+		i++;
+	}
+
+	return first;
+}
+```
+
+
+Horizontal Scanning
+```cs
+public string LongestCommonPrefixHorizontalScanning(string[] strs)
+{
+	string prefix = strs[0];
+	int size = strs.Length;
+
+	for (int i = 1; i < size; i++)
+	{
+		int j = 0;
+		while (j < Math.Min(prefix.Length, strs[i].Length))
+		{
+			if (prefix[j] != strs[i][j]) break;
+			j++;
+		}
+		prefix = prefix.Substring(0, j);
+	}
+
+	return prefix;
+}
+```
+
+
+Vertical Scanning
+```cs
+public string LongestCommonPrefixVerticalScanning(string[] strs)
+{
+	for (int i = 0; i < strs[0].Length; i++)
+	{
+		foreach (string s in strs)
+		{
+			if (i == s.Length || s[i] != strs[0][i])
+			{
+				return s.Substring(0, i);
+			}
+		}
+	}
+	return strs[0];
+}
+```
+
 Horizontal Scanning (word by word) :
 
 ```cs
