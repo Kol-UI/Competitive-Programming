@@ -59,6 +59,6 @@ public class TestSolution : BaseSolution
     {
         StyleHelper.Space();
         StyleHelper.Title("Alternating Subsequence");
-        ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.HardLC);
+        ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF1200);
     }
 }
