@@ -3,7 +3,6 @@ namespace CompetitiveProgramming.LeetCode.TotalCharactersinStringAfterTransforma
 using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
-using Xunit;
 
 public class Solution
 {
