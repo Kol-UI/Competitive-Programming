@@ -31,7 +31,7 @@ using CompetitiveProgramming;
 using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
-namespace CompetitiveProgramming.FindCriticalandPseudoCriticalEdgesInMinimumSpanningTree;
+namespace CompetitiveProgramming.LeetCode.FindCriticalandPseudoCriticalEdgesInMinimumSpanningTree;
 public class Solution
 {
         internal class UnionFind
