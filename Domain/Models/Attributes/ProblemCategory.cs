@@ -88,4 +88,5 @@ public enum ProblemCategory
     CF1200 = 104,
     CF1300 = 105,
     CF1400 = 104,
+    CF1500 = 105,
 }
