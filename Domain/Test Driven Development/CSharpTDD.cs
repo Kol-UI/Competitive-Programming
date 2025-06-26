@@ -20,7 +20,7 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
                 var tableRows = new List<TableData>
                 {
                     new() { Source = "CodingBlocks", Easy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyCBl) },
-                    new() { Source = "CodeForces", Other = ResultTester.GetCounterDifficulty(ProblemCategory.CF800) + ResultTester.GetCounterDifficulty(ProblemCategory.CF900) + ResultTester.GetCounterDifficulty(ProblemCategory.CF1000) + ResultTester.GetCounterDifficulty(ProblemCategory.CF1100) + ResultTester.GetCounterDifficulty(ProblemCategory.CF1200) },
+                    new() { Source = "CodeForces", Other = ResultTester.GetCounterDifficulty(ProblemCategory.CF800) + ResultTester.GetCounterDifficulty(ProblemCategory.CF900) + ResultTester.GetCounterDifficulty(ProblemCategory.CF1000) + ResultTester.GetCounterDifficulty(ProblemCategory.CF1100) + ResultTester.GetCounterDifficulty(ProblemCategory.CF1200) + ResultTester.GetCounterDifficulty(ProblemCategory.CF1300) + ResultTester.GetCounterDifficulty(ProblemCategory.CF1400) + ResultTester.GetCounterDifficulty(ProblemCategory.CF1500) },
                     new() { Source = "AtCoder", Other = ResultTester.GetCounterDifficulty(ProblemCategory.BeginnerAC) },
                     new() { Source = "CoderByte", Easy = ResultTester.GetCounterDifficulty(ProblemCategory.EasyCBy), Medium = ResultTester.GetCounterDifficulty(ProblemCategory.MediumCBy), Hard = ResultTester.GetCounterDifficulty(ProblemCategory.HardCBy) },
                     new() { Source = "CodeWars", Other = ResultTester.GetCounterDifficulty(ProblemCategory.EightKyu) + ResultTester.GetCounterDifficulty(ProblemCategory.SevenKyu) + ResultTester.GetCounterDifficulty(ProblemCategory.SixKyu) },
