@@ -1,5 +1,5 @@
 // Yaroslav and Permutations
-namespace CompetitiveProgramming.Codeforces.YaroslavandPermutations;
+namespace CompetitiveProgramming.CodeForces.YaroslavandPermutations;
 using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
