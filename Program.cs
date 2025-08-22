@@ -12,7 +12,7 @@ namespace CompetitiveProgramming
         {
             System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
             sw.Start();
-
+            Console.Clear();
             Console.WriteLine("Hello World!");
             // Tests
             CSharpTDD.StartAllTDD();
