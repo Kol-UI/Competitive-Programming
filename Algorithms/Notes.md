@@ -1,14 +1,18 @@
 
 ```cs
+using CompetitiveProgramming.Helpers;
+using CompetitiveProgramming.Models;
+using CompetitiveProgramming.TestDrivenDevelopment;
 
 public class Test
 {
     public static bool[] TestCases()
     {
+        Solution solution = new();
         bool[] results = new bool[]
         {
-            ResultTester.CheckResult<int>(Solution, 1),
-            ResultTester.CheckResult<int>(Solution, 2)
+            ResultTester.CheckResult<int>(solution, 1),
+            ResultTester.CheckResult<int>(solution, 2)
         };
         return results;
     }
