@@ -2,33 +2,9 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>CompetitiveProgramming.Program</StartupObject>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="CoderByte\" />
-    <None Remove="CoderByte\First Factorial\" />
-    <None Remove="CoderByte\First Reverse\" />
-    <None Remove="LeetCode\" />
-    <None Remove="CodeWars\" />
-    <None Remove="CodeWars\6kyu\Replace With Alphabet Position\" />
-    <None Remove="CodeWars\Eight Kyu\" />
-    <None Remove="CodeWars\Eight Kyu\Grasshopper Summation\" />
-    <None Remove="CodeWars\Eight Kyu\Return Hello World\" />
-    <None Remove="LeetCode\1443 Minimum Time to Collect All Apples in a Tree\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CoderByte\" />
-    <Folder Include="CoderByte\First Factorial\" />
-    <Folder Include="CoderByte\First Reverse\" />
-    <Folder Include="LeetCode\" />
-    <Folder Include="CodeWars\" />
-    <Folder Include="CodeWars\Six Kyu\Replace With Alphabet Position\" />
-    <Folder Include="CodeWars\Eight Kyu\" />
-    <Folder Include="CodeWars\Eight Kyu\Grasshopper Summation\" />
-    <Folder Include="CodeWars\Eight Kyu\Return Hello World\" />
-    <Folder Include="LeetCode\1443 Minimum Time to Collect All Apples in a Tree\" />
-  </ItemGroup>
 </Project>
