@@ -1,5 +1,5 @@
 // Unit Conversion I
-namespace CompetitiveProgramming.CodeForces.UnitConversionI;
+namespace CompetitiveProgramming.LeetCode.UnitConversionI;
 using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.Models;
 using CompetitiveProgramming.TestDrivenDevelopment;
