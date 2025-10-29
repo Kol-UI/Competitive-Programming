@@ -50,13 +50,13 @@ namespace CompetitiveProgramming.Algorithms
             }
             return result;
         }
-        
+
         #region LC 2220
         private static int GetXorResult(int start, int goal)
         {
             return start ^ goal;
         }
-        
+
         private static int CountSetBitsToOne(int xorResult)
         {
             int count = 0;
@@ -69,6 +69,20 @@ namespace CompetitiveProgramming.Algorithms
             }
             return count;
         }
+        #endregion
+
+        #region LC3370
+        // Simple arithmetic to generate the next number with all bits set to 1.
+        // (e.g., 3 -> 7, 7 -> 15).
+        private static int NextAllSetBitsNumber(int x) => x * 2 + 1;
+
+        // Efficiently shifts all bits left (multiplies by 2) and sets the new rightmost bit to 1.
+        // This is the bitwise equivalent of the arithmetic version above.
+        private static int NextAllSetBitsNumber_BitManipulation(int x) => (x << 1) | 1;
+
+        // Checks if a number consists only of '1' bits (e.g., 1, 3, 7, 15).
+        // The key operation '& (x + 1)' clears the rightmost '1' bit, so the result is zero only if there was no '0' bit.
+        private static bool IsAllSetBits(int x) => x > 0 && (x & (x + 1)) == 0;
         #endregion
     }
 }
