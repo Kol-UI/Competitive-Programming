@@ -18,6 +18,31 @@ namespace CompetitiveProgramming.Algorithms
         }
         #endregion
 
+        public bool IsNumberPalindrome(int n)
+        {
+            if (n < 0) return false;
+            int revNum = 0;
+            int dup = n;
+            while (n > 0)
+            {
+                int ld = ExtractLastDigit(n);
+                revNum = ShiftAndAppend(revNum, ld);
+                n = RemoveLastDigit(n);
+            }
+            if (dup == revNum) return true;
+            else return false;
+        }
+
+        private static int ExtractLastDigit(int n) => n % 10;
+        private static int RemoveLastDigit(int n) => n / 10;
+        private static int ShiftAndAppend(int n, int lastDigitToAppend)
+        {
+            bool isNegative = n < 0;
+            int absN = Math.Abs(n);
+            int result = (absN * 10) + lastDigitToAppend;
+            return isNegative ? -result : result;
+        }
+
         #region LC564
         public static string NearestPalindromic(string input)
         {
