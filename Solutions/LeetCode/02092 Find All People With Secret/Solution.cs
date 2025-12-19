@@ -1,6 +1,4 @@
 // Find All People With Secret
-
-
 using System;
 using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.Models;
@@ -53,14 +51,74 @@ namespace CompetitiveProgramming.LeetCode.FindAllPeopleWithSecret
             return result;
         }
     }
+    
+    public class Solution2
+    {
+        public IList<int> FindAllPeople(int n, int[][] meetings, int firstPerson)
+        {
+            int[] groups = new int[n];
+            List<int> result = new List<int>();
+
+            for (int k = 0; k < n; k++)
+            {
+                groups[k] = k;
+            }
+            groups[firstPerson] = 0;
+
+            Array.Sort(meetings, (a, b) => a[2].CompareTo(b[2]));
+
+            List<int> temp = new List<int>();
+            int i = 0;
+            while (i < meetings.Length)
+            {
+                int currentTime = meetings[i][2];
+                temp.Clear();
+                while (i < meetings.Length && meetings[i][2] == currentTime)
+                {
+                    int g1 = Find(groups, meetings[i][0]);
+                    int g2 = Find(groups, meetings[i][1]);
+                    groups[Math.Max(g1, g2)] = Math.Min(g1, g2);
+                    temp.Add(meetings[i][0]);
+                    temp.Add(meetings[i][1]);
+                    i++;
+                }
+                foreach (int item in temp)
+                {
+                    if (Find(groups, item) != 0)
+                    {
+                        groups[item] = item;
+                    }
+                }
+            }
+
+            for (int j = 0; j < n; j++)
+            {
+                if (Find(groups, j) == 0)
+                {
+                    result.Add(j);
+                }
+            }
+
+            return result;
+        }
+
+        private int Find(int[] groups, int index)
+        {
+            while (index != groups[index])
+            {
+                index = groups[index];
+            }
+            return index;
+        }
+    }
 
     public class Test
     {
 
         public static bool[] TestCases()
         {
-            IList<int> output1 = new List<int> {0,1,2,3,5};
-            IList<int> output2 = new List<int> {0,1,3};
+            IList<int> output1 = new List<int> { 0, 1, 2, 3, 5 };
+            IList<int> output2 = new List<int> { 0, 1, 3 };
 
             int[][] meetings1 =
             {
@@ -80,6 +138,8 @@ namespace CompetitiveProgramming.LeetCode.FindAllPeopleWithSecret
             {
                 ResultTester.CheckResult<IList<int>>(Solution.FindAllPeople(6, meetings1, 1), output1),
                 ResultTester.CheckResult<IList<int>>(Solution.FindAllPeople(4, meetings2, 3), output2),
+                ResultTester.CheckResult<IList<int>>(Solution.FindAllPeople(6, meetings1, 1), output1),
+                ResultTester.CheckResult<IList<int>>(Solution.FindAllPeople(4, meetings2, 3), output2),
             };
             return results;
         }
@@ -90,7 +150,7 @@ namespace CompetitiveProgramming.LeetCode.FindAllPeopleWithSecret
         public override void GetResult()
         {
             StyleHelper.Space();
-            StyleHelper.Title("2092");
+            StyleHelper.Title("Find All People With Secret");
             ResultTester.CheckCurrentSolution(ProblemOrigin.LeetCode, ProblemCategory.HardLC, Test.TestCases());
         }
     }
