@@ -20,6 +20,36 @@ namespace CompetitiveProgramming.LeetCode.SetMismatch
             }
         }
 
+        public class Solution2
+        {
+            public int[] FindErrorNums(int[] nums)
+            {
+                int n = nums.Length;
+                HashSet<int> seen = new HashSet<int>();
+                int duplicate = 0;
+                int missing = 0;
+
+                foreach (int num in nums)
+                {
+                    if (!seen.Add(num))
+                    {
+                        duplicate = num;
+                    }
+                }
+
+                for (int i = 1; i <= n; i++)
+                {
+                    if (!seen.Contains(i))
+                    {
+                        missing = i;
+                        break;
+                    }
+                }
+
+                return new int[] { duplicate, missing };
+            }
+        }
+
         public static bool[] TestCases()
         {
             bool[] results = new bool[]
