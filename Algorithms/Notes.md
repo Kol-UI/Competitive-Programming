@@ -9,11 +9,11 @@ public class Test
     public static bool[] TestCases()
     {
         Solution solution = new();
-        bool[] results = new bool[]
-        {
+        bool[] results =
+        [
             ResultTester.CheckResult<int>(solution, 1),
             ResultTester.CheckResult<int>(solution, 2)
-        };
+        ];
         return results;
     }
 }
