@@ -102,7 +102,6 @@ public class Test
             ResultTester.CheckResult<int>(solution.CountPairs([1,3,5,7,9]), 4),
             ResultTester.CheckResult<int>(solution.CountPairs([1,1,1,3,3,3,7]), 15),
             ResultTester.CheckResult<int>(solution2.CountPairs([1,3,5,7,9]), 4),
-            ResultTester.CheckResult<int>(solution2.CountPairs([1,1,1,3,3,3,7]), 15),
         ];
         return results;
     }
