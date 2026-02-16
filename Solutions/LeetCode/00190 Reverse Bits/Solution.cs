@@ -29,23 +29,39 @@ using CompetitiveProgramming.TestDrivenDevelopment;
 
 namespace CompetitiveProgramming.LeetCode.ReverseBits
 {
-    public class Solution 
+    public class Solution
     {
-        public static uint ReverseBits(uint n) 
+        public static uint ReverseBits(uint n)
         {
-            const int MostSignificantBit = 31; 
-            
+            const int MostSignificantBit = 31;
+
             uint mask = 1;
             uint bit;
             uint result = 0;
-            
-            for(int i = 0, j = MostSignificantBit; i <= MostSignificantBit; i++, j--)
+
+            for (int i = 0, j = MostSignificantBit; i <= MostSignificantBit; i++, j--)
             {
                 bit = (n >> i) & mask;
                 bit = bit << j;
                 result = result | bit;
             }
-            
+
+            return result;
+        }
+    }
+    
+    public class Solution2
+    {
+        public int ReverseBits(int n)
+        {
+            int result = 0;     
+            for (int i = 0; i < 32; i++)
+            {
+                result = result << 1;
+                result = result | (n & 1);
+                n = n >> 1;
+            }
+
             return result;
         }
     }
@@ -62,10 +78,18 @@ namespace CompetitiveProgramming.LeetCode.ReverseBits
             uint result1 = Solution.ReverseBits(n1);
             uint result2 = Solution.ReverseBits(n2);
 
+            uint n1_2 = 0b0000_0010_1001_0100_0001_1110_1001_1100;
+            uint n2_2 = 0b11111111111111111111111111111101;
+
+            uint result1_2 = Solution.ReverseBits(n1_2);
+            uint result2_2 = Solution.ReverseBits(n2_2);
+
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<uint>(result1, output1),
-                ResultTester.CheckResult<uint>(result2, output2)
+                ResultTester.CheckResult<uint>(result2, output2),
+                ResultTester.CheckResult<uint>(result1_2, output1),
+                ResultTester.CheckResult<uint>(result2_2, output2)
             };
             return results;
         }
