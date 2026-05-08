@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Linq;
 using System.Text;
+using CompetitiveProgramming.CodeForces.BuyaShovel;
 using CompetitiveProgramming.Helpers;
 using CompetitiveProgramming.LeetCode;
 using CompetitiveProgramming.Models;
@@ -563,6 +564,11 @@ namespace CompetitiveProgramming.TestDrivenDevelopment
         public static void GetAllStats()
         {
             StyleHelper.Space();
+            
+            PrintHelper.PrintCodeForcesRanksStats(_counterDifficulty);
+
+            PrintHelper.PrintCodeWarsKyusStats(_counterDifficulty);
+
             PrintHelper.HightLight(GetTestPercentage(), ConsoleColor.Yellow);
 
             PrintHelper.HightLight(GetCounterTotalTestCaseDone(), ConsoleColor.Yellow);

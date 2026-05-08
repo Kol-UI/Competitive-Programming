@@ -94,5 +94,53 @@ namespace CompetitiveProgramming.Helpers
             Console.WriteLine("Expected : " + expected);
             Console.WriteLine("Result : " + result);
         }
+
+        public static void PrintCodeForcesRanksStats(Dictionary<ProblemCategory, int> counterDifficulty)
+        {
+            var targets = new[]
+            {
+                ProblemCategory.CF800, ProblemCategory.CF900, ProblemCategory.CF1000,
+                ProblemCategory.CF1100, ProblemCategory.CF1200, ProblemCategory.CF1300,
+                ProblemCategory.CF1400, ProblemCategory.CF1500
+            };
+
+            Console.WriteLine("┌──────────┬──────────┐");
+            Console.WriteLine("│  Ranks   │  Numbers │");
+            Console.WriteLine("├──────────┼──────────┤");
+
+            foreach (var cat in targets)
+            {
+                string label = cat.ToString().Replace("CF", "");
+                int count = counterDifficulty.GetValueOrDefault(cat);
+                Console.WriteLine($"│ {label,-8} │ {count,8} │");
+            }
+
+            Console.WriteLine("└──────────┴──────────┘");
+            StyleHelper.Space();
+        }
+
+        public static void PrintCodeWarsKyusStats(Dictionary<ProblemCategory, int> counterDifficulty)
+        {
+            var targets = new[]
+            {
+                ProblemCategory.EightKyu, ProblemCategory.SevenKyu, ProblemCategory.SixKyu,
+                ProblemCategory.FiveKyu, ProblemCategory.FourKyu, ProblemCategory.ThreeKyu,
+                ProblemCategory.TwoKyu, ProblemCategory.OneKyu
+            };
+
+            Console.WriteLine("┌──────────┬──────────┐");
+            Console.WriteLine("│   Kyus   │  Numbers │");
+            Console.WriteLine("├──────────┼──────────┤");
+
+            foreach (var cat in targets)
+            {
+                string label = cat.ToString().Replace("Kyu", "");
+                int count = counterDifficulty.GetValueOrDefault(cat);
+                Console.WriteLine($"│ {label,-8} │ {count,8} │");
+            }
+
+            Console.WriteLine("└──────────┴──────────┘");
+            StyleHelper.Space();
+        }
     }
 }
