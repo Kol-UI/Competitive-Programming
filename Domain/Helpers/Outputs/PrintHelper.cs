@@ -104,18 +104,15 @@ namespace CompetitiveProgramming.Helpers
                 ProblemCategory.CF1400, ProblemCategory.CF1500
             };
 
-            Console.WriteLine("┌──────────┬──────────┐");
-            Console.WriteLine("│  Ranks   │  Numbers │");
-            Console.WriteLine("├──────────┼──────────┤");
+            Console.WriteLine("| Ranks | Numbers |");
+            Console.WriteLine("| :--- | :---: |");
 
             foreach (var cat in targets)
             {
                 string label = cat.ToString().Replace("CF", "");
                 int count = counterDifficulty.GetValueOrDefault(cat);
-                Console.WriteLine($"│ {label,-8} │ {count,8} │");
+                Console.WriteLine($"| {label} | {count} |");
             }
-
-            Console.WriteLine("└──────────┴──────────┘");
             StyleHelper.Space();
         }
 
@@ -128,18 +125,15 @@ namespace CompetitiveProgramming.Helpers
                 ProblemCategory.TwoKyu, ProblemCategory.OneKyu
             };
 
-            Console.WriteLine("┌──────────┬──────────┐");
-            Console.WriteLine("│   Kyus   │  Numbers │");
-            Console.WriteLine("├──────────┼──────────┤");
+            Console.WriteLine("| Kyus | Numbers |");
+            Console.WriteLine("| :--- | :---: |");
 
             foreach (var cat in targets)
             {
                 string label = cat.ToString().Replace("Kyu", "");
                 int count = counterDifficulty.GetValueOrDefault(cat);
-                Console.WriteLine($"│ {label,-8} │ {count,8} │");
+                Console.WriteLine($"| {label} | {count} |");
             }
-
-            Console.WriteLine("└──────────┴──────────┘");
             StyleHelper.Space();
         }
     }
