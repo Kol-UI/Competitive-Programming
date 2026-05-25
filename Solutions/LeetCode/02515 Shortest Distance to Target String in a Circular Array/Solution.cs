@@ -8,7 +8,7 @@ namespace CompetitiveProgramming.LeetCode.ShortestDistancetoTargetStringinaCircu
 {
     public class Solution
     {
-        public static int ClosetTarget(string[] words, string target, int startIndex)
+        public static int ClosestTarget(string[] words, string target, int startIndex)
         {
             int result = -1;
             for(int i = 0; i < words.Length; i++)
@@ -28,9 +28,9 @@ namespace CompetitiveProgramming.LeetCode.ShortestDistancetoTargetStringinaCircu
         {
             bool[] results = new bool[]
             {
-                ResultTester.CheckResult<int>(Solution.ClosetTarget(new string[] {"hello","i","am","leetcode","hello"}, "hello", 1), 1),
-                ResultTester.CheckResult<int>(Solution.ClosetTarget(new string[] {"a","b","leetcode"}, "leetcode", 0), 1),
-                ResultTester.CheckResult<int>(Solution.ClosetTarget(new string[] {"i","eat","leetcode"}, "ate", 0), -1),
+                ResultTester.CheckResult<int>(Solution.ClosestTarget(new string[] {"hello","i","am","leetcode","hello"}, "hello", 1), 1),
+                ResultTester.CheckResult<int>(Solution.ClosestTarget(new string[] {"a","b","leetcode"}, "leetcode", 0), 1),
+                ResultTester.CheckResult<int>(Solution.ClosestTarget(new string[] {"i","eat","leetcode"}, "ate", 0), -1),
             };
             return results;
         }

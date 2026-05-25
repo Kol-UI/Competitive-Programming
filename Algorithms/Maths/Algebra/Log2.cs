@@ -1,0 +1,15 @@
+namespace CompetitiveProgramming.Algorithms;
+public static class Log2
+{
+    /// <summary>
+    /// Calculate Log Base 2
+    /// Formula : ln(x) / ln(2)
+    /// </summary>
+    public static double GetLog2(double x)
+    {
+        if (x <= 0) return double.NaN;
+        return Math.Log(x) / Math.Log(2.0);
+    }
+
+    public static double BuiltInLog2(double d) => Math.Log2(d);
+}
