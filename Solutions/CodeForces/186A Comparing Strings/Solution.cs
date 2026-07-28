@@ -64,6 +64,6 @@ public class TestSolution : BaseSolution
     {
         StyleHelper.Space();
         StyleHelper.Title("Comparing Strings");
-        ResultTester.SpecialTestCase(ProblemOrigin.Kattis, ProblemCategory.EasyKAT);
+        ResultTester.SpecialTestCase(ProblemOrigin.CodeForces, ProblemCategory.CF1100);
     }
 }
