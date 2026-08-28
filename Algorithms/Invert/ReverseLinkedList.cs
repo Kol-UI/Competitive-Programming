@@ -1,10 +1,10 @@
 namespace CompetitiveProgramming.Algorithms;
 
-public class ListNode
+public class ListNodeForLinkedList
 {
     public int Val;
-    public ListNode? Next;
-    public ListNode(int val, ListNode? next = null)
+    public ListNodeForLinkedList? Next;
+    public ListNodeForLinkedList(int val, ListNodeForLinkedList? next = null)
     {
         Val = val;
         Next = next;
@@ -14,14 +14,14 @@ public class ListNode
 public class ReverseLinkedList
 {
     // Approach Iterative: rewire Next pointers one by one
-    public ListNode? ReverseIterative(ListNode? head)
+    public ListNodeForLinkedList? ReverseIterative(ListNodeForLinkedList? head)
     {
-        ListNode? prev = null;
-        ListNode? current = head;
+        ListNodeForLinkedList? prev = null;
+        ListNodeForLinkedList? current = head;
 
         while (current != null)
         {
-            ListNode? next = current.Next;
+            ListNodeForLinkedList? next = current.Next;
             current.Next = prev;
             prev = current;
             current = next;
@@ -31,14 +31,14 @@ public class ReverseLinkedList
     }
 
     // Approach Recursive: reverse the rest of the list, then fix current node's link
-    public ListNode? ReverseRecursive(ListNode? head)
+    public ListNodeForLinkedList? ReverseRecursive(ListNodeForLinkedList? head)
     {
         if (head == null || head.Next == null)
         {
             return head;
         }
 
-        ListNode? newHead = ReverseRecursive(head.Next);
+        ListNodeForLinkedList? newHead = ReverseRecursive(head.Next);
         head.Next.Next = head;
         head.Next = null;
 
@@ -46,15 +46,15 @@ public class ReverseLinkedList
     }
 
     // Approach Stack: push all nodes, then pop to rebuild in reverse order
-    public ListNode? ReverseUsingStack(ListNode? head)
+    public ListNodeForLinkedList? ReverseUsingStack(ListNodeForLinkedList? head)
     {
         if (head == null)
         {
             return null;
         }
 
-        var stack = new Stack<ListNode>();
-        ListNode? current = head;
+        var stack = new Stack<ListNodeForLinkedList>();
+        ListNodeForLinkedList? current = head;
 
         while (current != null)
         {
@@ -62,8 +62,8 @@ public class ReverseLinkedList
             current = current.Next;
         }
 
-        ListNode newHead = stack.Pop();
-        ListNode tail = newHead;
+        ListNodeForLinkedList newHead = stack.Pop();
+        ListNodeForLinkedList tail = newHead;
 
         while (stack.Count > 0)
         {
