@@ -34,6 +34,34 @@ namespace CompetitiveProgramming.LeetCode.SortanArray
         }
     }
 
+    public class Solution2
+    {
+        public int[] SortArray(int[] nums)
+        {
+            const int offset = 50_000;
+            Span<int> counts = stackalloc int[100001];
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                counts[nums[i] + offset]++;
+            }
+
+            int[] sorted = new int[nums.Length];
+            int index = 0;
+
+            for (int i = 0; i < counts.Length; i++)
+            {
+                while (counts[i] > 0)
+                {
+                    sorted[index++] = i - offset;
+                    counts[i]--;
+                }
+            }
+
+            return sorted;
+        }
+    }
+
     public class Test
     {
         public static bool[] TestSortanArray()
@@ -138,6 +166,8 @@ namespace CompetitiveProgramming.LeetCode.SortanArray
                                         .Concat(case17_912).Concat(case18_912).Concat(case19_912).ToArray();
             int[] result20_912 = Solution.SortArray(case20_912);
 
+            Solution2 solution2 = new();
+
             bool[] results = new bool[]
             {
                 ResultTester.CheckResult<int[]>(result1_912, expected1),
@@ -160,6 +190,8 @@ namespace CompetitiveProgramming.LeetCode.SortanArray
                 ResultTester.CheckResult<int[]>(result18_912, result18_912),
                 ResultTester.CheckResult<int[]>(result19_912, result19_912),
                 ResultTester.CheckResult<int[]>(result20_912, result20_912),
+                ResultTester.CheckResult<int[]>(solution2.SortArray([5,2,3,1]), [1,2,3,5]),
+                ResultTester.CheckResult<int[]>(solution2.SortArray([5,1,1,2,0,0]), [0,0,1,1,2,5]),
             };
 
             return results;
