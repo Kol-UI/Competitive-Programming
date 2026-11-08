@@ -12,9 +12,9 @@ namespace CompetitiveProgramming.Services
             var namespaces = new string[]
             { 
                 "AtCoder", "CodeChef", "CodeForces", "CoderByte",
-                "CodeWars.EightKyu", "CodeWars.SevenKyu", "CodeWars.SixKyu",
+                "CodeWars", "CodeWars.EightKyu", "CodeWars.SevenKyu", "CodeWars.SixKyu",
                 "CodinGame", "CodingBlocks", "CSAcademy",
-                "GeeksForGeeks.School", "GeeksForGeeks.Basic", "GeeksForGeeks.Easy", "GeeksForGeeks.Medium", "GeeksForGeeks.Hard",
+                "GeeksForGeeks", "GeeksForGeeks.School", "GeeksForGeeks.Basic", "GeeksForGeeks.Easy", "GeeksForGeeks.Medium", "GeeksForGeeks.Hard",
                 "HackerRank", "Kattis", "ProjectEuler", "SphereOnlineJudge", "HackerEarth",
                 "LeetCode"
             };
